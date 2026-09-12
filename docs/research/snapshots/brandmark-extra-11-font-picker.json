@@ -1,0 +1,194 @@
+{
+  "id": "6be2b9df-f1fc-4665-a09e-210c8400b655",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Find fonts...",
+        "role": "combobox"
+      },
+      "e10": {
+        "name": "",
+        "role": "generic"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "",
+        "role": "generic"
+      },
+      "e16": {
+        "name": "Brandmark-Montserrat thumbnail Brandmark Montserrat 300",
+        "role": "option"
+      },
+      "e17": {
+        "name": "Brandmark-Neo-Geometric thumbnail Brandmark Neo Geometric 700",
+        "role": "option"
+      },
+      "e18": {
+        "name": "Brandmark-Startup thumbnail Brandmark Startup 600",
+        "role": "option"
+      },
+      "e19": {
+        "name": "Brandmark-Freestyle-Sans thumbnail Brandmark Freestyle Sans 600",
+        "role": "option"
+      },
+      "e2": {
+        "name": "",
+        "role": "listbox"
+      },
+      "e20": {
+        "name": "Brandmark-Stencil thumbnail Brandmark Stencil 500",
+        "role": "option"
+      },
+      "e21": {
+        "name": "Brandmark-Montserrat-Bold thumbnail Brandmark Montserrat Bold 800",
+        "role": "option"
+      },
+      "e22": {
+        "name": "Brandmark-Modern-Soft-1 thumbnail Brandmark Modern Soft 1 700",
+        "role": "option"
+      },
+      "e23": {
+        "name": "Brandmark-Modern-Soft-2 thumbnail Brandmark Modern Soft 2 700",
+        "role": "option"
+      },
+      "e24": {
+        "name": "Brandmark-Lux-Classic thumbnail Brandmark Lux Classic 400",
+        "role": "option"
+      },
+      "e25": {
+        "name": "Brandmark-Zeta-Poppins thumbnail Brandmark Zeta Poppins 400",
+        "role": "option"
+      },
+      "e26": {
+        "name": "Brandmark-Nasalite thumbnail Brandmark Nasalite 400",
+        "role": "option"
+      },
+      "e27": {
+        "name": "Brandmark-Neo-Edge thumbnail Brandmark Neo Edge 400",
+        "role": "option"
+      },
+      "e28": {
+        "name": "Brandmark-Professional-Stencil thumbnail Brandmark Professional Stencil 400",
+        "role": "option"
+      },
+      "e29": {
+        "name": "Brandmark-Professional thumbnail Brandmark Professional 400",
+        "role": "option"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e30": {
+        "name": "Brandmark-Mint thumbnail Brandmark Mint 700",
+        "role": "option"
+      },
+      "e31": {
+        "name": "Brandmark-Mint-Light thumbnail Brandmark Mint Light 300",
+        "role": "option"
+      },
+      "e32": {
+        "name": "Brandmark-Classic-Serif thumbnail Brandmark Classic Serif 400",
+        "role": "option"
+      },
+      "e33": {
+        "name": "Brandmark-Lineal-Glyphic thumbnail Brandmark Lineal Glyphic 400",
+        "role": "option"
+      },
+      "e34": {
+        "name": "Brandmark-Elegant-Sans thumbnail Brandmark Elegant Sans 300",
+        "role": "option"
+      },
+      "e35": {
+        "name": "Brandmark-Antiqua thumbnail Brandmark Antiqua 700",
+        "role": "option"
+      },
+      "e36": {
+        "name": "Brandmark-Future-Rounded thumbnail Brandmark Future Rounded 300",
+        "role": "option"
+      },
+      "e37": {
+        "name": "Brandmark-New-Bauhaus thumbnail Brandmark New Bauhaus 600",
+        "role": "option"
+      },
+      "e38": {
+        "name": "Brandmark-Transitional-Stencil thumbnail Brandmark Transitional Stencil 700",
+        "role": "option"
+      },
+      "e39": {
+        "name": "Brandmark-Transitional-Stencil-Alt thumbnail Brandmark Transitional Stencil Alt 700",
+        "role": "option"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "Brandmark-Earth-Form thumbnail Brandmark Earth Form 700",
+        "role": "option"
+      },
+      "e41": {
+        "name": "Brandmark-Void-Black thumbnail Brandmark Void Black 900",
+        "role": "option"
+      },
+      "e42": {
+        "name": "Brandmark-Groovy thumbnail Brandmark Groovy 400",
+        "role": "option"
+      },
+      "e43": {
+        "name": "Brandmark-1970-Script thumbnail Brandmark 1970 Script 600",
+        "role": "option"
+      },
+      "e44": {
+        "name": "Brandmark-Polkadot thumbnail Brandmark Polkadot 400",
+        "role": "option"
+      },
+      "e45": {
+        "name": "Brandmark-Polkadot-Diamond thumbnail Brandmark Polkadot Diamond 400",
+        "role": "option"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e7": {
+        "name": "",
+        "role": "generic"
+      },
+      "e8": {
+        "name": "",
+        "role": "generic"
+      },
+      "e9": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- dialog\n  - generic\n    - StaticText \"All\"\n    - generic [ref=e3] clickable [cursor:pointer]\n      - StaticText \"Cyrillic\"\n    - generic [ref=e4] clickable [cursor:pointer]\n      - StaticText \"Chinese\"\n    - generic [ref=e5] clickable [cursor:pointer]\n      - StaticText \"Japanese\"\n    - generic [ref=e6] clickable [cursor:pointer]\n      - StaticText \"Korean\"\n    - generic [ref=e7] clickable [cursor:pointer]\n      - StaticText \"Thin\"\n    - generic [ref=e8] clickable [cursor:pointer]\n      - StaticText \"Light\"\n    - generic [ref=e9] clickable [cursor:pointer]\n      - StaticText \"Regular\"\n    - generic [ref=e10] clickable [cursor:pointer]\n      - StaticText \"Bold\"\n    - generic [ref=e11] clickable [cursor:pointer]\n      - StaticText \"Heavy\"\n    - generic [ref=e12] clickable [cursor:pointer]\n      - StaticText \"Sans/Modern\"\n    - generic [ref=e13] clickable [cursor:pointer]\n      - StaticText \"Serif/Classic\"\n    - generic [ref=e14] clickable [cursor:pointer]\n      - StaticText \"Script\"\n    - generic [ref=e15] clickable [cursor:pointer]\n      - StaticText \"Brush\"\n  - image\n  - combobox \"Find fonts...\" [expanded=true, ref=e1]\n  - listbox [ref=e2]\n    - group\n      - option \"Brandmark-Montserrat thumbnail Brandmark Montserrat 300\" [ref=e16]\n        - image \"Brandmark-Montserrat thumbnail\"\n        - StaticText \"Brandmark Montserrat 300\"\n      - option \"Brandmark-Neo-Geometric thumbnail Brandmark Neo Geometric 700\" [ref=e17]\n        - image \"Brandmark-Neo-Geometric thumbnail\"\n        - StaticText \"Brandmark Neo Geometric 700\"\n      - option \"Brandmark-Startup thumbnail Brandmark Startup 600\" [ref=e18]\n        - image \"Brandmark-Startup thumbnail\"\n        - StaticText \"Brandmark Startup 600\"\n      - option \"Brandmark-Freestyle-Sans thumbnail Brandmark Freestyle Sans 600\" [ref=e19]\n        - image \"Brandmark-Freestyle-Sans thumbnail\"\n        - StaticText \"Brandmark Freestyle Sans 600\"\n      - option \"Brandmark-Stencil thumbnail Brandmark Stencil 500\" [ref=e20]\n        - image \"Brandmark-Stencil thumbnail\"\n        - StaticText \"Brandmark Stencil 500\"\n      - option \"Brandmark-Montserrat-Bold thumbnail Brandmark Montserrat Bold 800\" [ref=e21]\n        - image \"Brandmark-Montserrat-Bold thumbnail\"\n        - StaticText \"Brandmark Montserrat Bold 800\"\n      - option \"Brandmark-Modern-Soft-1 thumbnail Brandmark Modern Soft 1 700\" [ref=e22]\n        - image \"Brandmark-Modern-Soft-1 thumbnail\"\n        - StaticText \"Brandmark Modern Soft 1 700\"\n      - option \"Brandmark-Modern-Soft-2 thumbnail Brandmark Modern Soft 2 700\" [ref=e23]\n        - image \"Brandmark-Modern-Soft-2 thumbnail\"\n        - StaticText \"Brandmark Modern Soft 2 700\"\n      - option \"Brandmark-Lux-Classic thumbnail Brandmark Lux Classic 400\" [ref=e24]\n        - image \"Brandmark-Lux-Classic thumbnail\"\n        - StaticText \"Brandmark Lux Classic 400\"\n      - option \"Brandmark-Zeta-Poppins thumbnail Brandmark Zeta Poppins 400\" [ref=e25]\n        - image \"Brandmark-Zeta-Poppins thumbnail\"\n        - StaticText \"Brandmark Zeta Poppins 400\"\n      - option \"Brandmark-Nasalite thumbnail Brandmark Nasalite 400\" [ref=e26]\n        - image \"Brandmark-Nasalite thumbnail\"\n        - StaticText \"Brandmark Nasalite 400\"\n      - option \"Brandmark-Neo-Edge thumbnail Brandmark Neo Edge 400\" [ref=e27]\n        - image \"Brandmark-Neo-Edge thumbnail\"\n        - StaticText \"Brandmark Neo Edge 400\"\n      - option \"Brandmark-Professional-Stencil thumbnail Brandmark Professional Stencil 400\" [ref=e28]\n        - image \"Brandmark-Professional-Stencil thumbnail\"\n        - StaticText \"Brandmark Professional Stencil 400\"\n      - option \"Brandmark-Professional thumbnail Brandmark Professional 400\" [ref=e29]\n        - image \"Brandmark-Professional thumbnail\"\n        - StaticText \"Brandmark Professional 400\"\n      - option \"Brandmark-Mint thumbnail Brandmark Mint 700\" [ref=e30]\n        - image \"Brandmark-Mint thumbnail\"\n        - StaticText \"Brandmark Mint 700\"\n      - option \"Brandmark-Mint-Light thumbnail Brandmark Mint Light 300\" [ref=e31]\n        - image \"Brandmark-Mint-Light thumbnail\"\n        - StaticText \"Brandmark Mint Light 300\"\n      - option \"Brandmark-Classic-Serif thumbnail Brandmark Classic Serif 400\" [ref=e32]\n        - image \"Brandmark-Classic-Serif thumbnail\"\n        - StaticText \"Brandmark Classic Serif 400\"\n      - option \"Brandmark-Lineal-Glyphic thumbnail Brandmark Lineal Glyphic 400\" [ref=e33]\n        - image \"Brandmark-Lineal-Glyphic thumbnail\"\n        - StaticText \"Brandmark Lineal Glyphic 400\"\n      - option \"Brandmark-Elegant-Sans thumbnail Brandmark Elegant Sans 300\" [ref=e34]\n        - image \"Brandmark-Elegant-Sans thumbnail\"\n        - StaticText \"Brandmark Elegant Sans 300\"\n      - option \"Brandmark-Antiqua thumbnail Brandmark Antiqua 700\" [ref=e35]\n        - image \"Brandmark-Antiqua thumbnail\"\n        - StaticText \"Brandmark Antiqua 700\"\n      - option \"Brandmark-Future-Rounded thumbnail Brandmark Future Rounded 300\" [ref=e36]\n        - image \"Brandmark-Future-Rounded thumbnail\"\n        - StaticText \"Brandmark Future Rounded 300\"\n      - option \"Brandmark-New-Bauhaus thumbnail Brandmark New Bauhaus 600\" [ref=e37]\n        - image \"Brandmark-New-Bauhaus thumbnail\"\n        - StaticText \"Brandmark New Bauhaus 600\"\n      - option \"Brandmark-Transitional-Stencil thumbnail Brandmark Transitional Stencil 700\" [ref=e38]\n        - image \"Brandmark-Transitional-Stencil thumbnail\"\n        - StaticText \"Brandmark Transitional Stencil 700\"\n      - option \"Brandmark-Transitional-Stencil-Alt thumbnail Brandmark Transitional Stencil Alt 700\" [ref=e39]\n        - image \"Brandmark-Transitional-Stencil-Alt thumbnail\"\n        - StaticText \"Brandmark Transitional Stencil Alt 700\"\n      - option \"Brandmark-Earth-Form thumbnail Brandmark Earth Form 700\" [ref=e40]\n        - image \"Brandmark-Earth-Form thumbnail\"\n        - StaticText \"Brandmark Earth Form 700\"\n      - option \"Brandmark-Void-Black thumbnail Brandmark Void Black 900\" [ref=e41]\n        - image \"Brandmark-Void-Black thumbnail\"\n        - StaticText \"Brandmark Void Black 900\"\n      - option \"Brandmark-Groovy thumbnail Brandmark Groovy 400\" [ref=e42]\n        - image \"Brandmark-Groovy thumbnail\"\n        - StaticText \"Brandmark Groovy 400\"\n      - option \"Brandmark-1970-Script thumbnail Brandmark 1970 Script 600\" [ref=e43]\n        - image \"Brandmark-1970-Script thumbnail\"\n        - StaticText \"Brandmark 1970 Script 600\"\n      - option \"Brandmark-Polkadot thumbnail Brandmark Polkadot 400\" [ref=e44]\n        - image \"Brandmark-Polkadot thumbnail\"\n        - StaticText \"Brandmark Polkadot 400\"\n      - option \"Brandmark-Polkadot-Diamond thumbnail Brandmark Polkadot Diamond 400\" [ref=e45]\n        - image \"Brandmark-Polkadot-Diamond thumbnail\"\n        - StaticText \"Brandmark Polkadot Diamond 400\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

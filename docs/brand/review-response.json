@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "logo-land-brand",
+  "revision": 3,
+  "created_at": "2026-09-12T13:23:02.131544Z",
+  "updated_at": "2026-09-12T13:29:13.868123Z",
+  "brief": {
+    "brand_name": "Logo Land",
+    "exact_text": "LOGO LAND",
+    "industry": "Conversational logo creation plugin for Codex",
+    "audience": "Creators and small teams who want to turn ideas into a logo",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "Playful theme-park logo parody",
+      "chunky rounded block letters",
+      "toy building bricks",
+      "LEGOLAND-inspired humor"
+    ],
+    "palette": [
+      "bright red",
+      "sunshine yellow",
+      "black",
+      "white"
+    ],
+    "forbidden": [
+      "the word LEGO",
+      "the word LEGOLAND",
+      "extra slogans",
+      "copyright or registered marks",
+      "photographic scene",
+      "checkerboard"
+    ],
+    "use_cases": [
+      "GitHub README hero at 400px wide",
+      "plugin brand card at 240px wide"
+    ],
+    "assumptions": [
+      "The user chose Logo Land and requested a logo that parodies LEGOLAND.",
+      "One complete brand direction is created for the README and plugin identity."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "f4eb03545ca762db0f5664a3ff35f9580120b058200fbad9d5f89543d5ecf343",
+      "image": {
+        "format": "PNG",
+        "width": 1774,
+        "height": 887,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1573538
+      },
+      "prompt": "Create one combination logo for Logo Land. Industry: Conversational logo creation plugin for Codex. Audience: Creators and small teams who want to turn ideas into a logo.\nExact text (copy verbatim, no other words): 'LOGO LAND'. Exact slogan: ''.\nStyles: Playful theme-park logo parody, chunky rounded block letters, toy building bricks, LEGOLAND-inspired humor. Palette: bright red, sunshine yellow, black, white.\nAvoid: the word LEGO, the word LEGOLAND, extra slogans, copyright or registered marks, photographic scene, checkerboard. Use cases: GitHub README hero at 400px wide, plugin brand card at 240px wide.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A witty theme-park identity for LOGO LAND, a playground for making logos. Parody the joyful LEGOLAND feeling with a CUSTOM red toy-brick badge on the left containing the exact four letters LOGO in chunky white rounded type with black and yellow outlines; beside it LAND in bold black playful rounded block lettering. A sunny yellow arc rising behind the wordmark and a tiny original red building-brick flag integrate into one coherent compact silhouette. The joke is LOGO instead of LEGO. Make LOGO and LAND unmistakably readable. Only those two words. Not an official LEGO or LEGOLAND badge; do not write either of those names. Distinctive custom proportions and arrangement. Minimal, polished, confident, fun, clean graphic logo. Mostly flat shapes with restrained comic extrusion on the red brick badge. Entire image on fully SOLID OPAQUE WHITE including corners. Wide horizontal master identity, generous clear margins. No mockup, no extra text, no mascot, no watermark. Intended to look excellent on an open-source README.. Assumptions: The user chose Logo Land and requested a logo that parodies LEGOLAND., One complete brand direction is created for the README and plugin identity..\n\nFinal art direction: A witty theme-park identity for LOGO LAND, a playground for making logos. Parody the joyful LEGOLAND feeling with a CUSTOM red toy-brick badge on the left containing the exact four letters LOGO in chunky white rounded type with black and yellow outlines; beside it LAND in bold black playful rounded block lettering. A sunny yellow arc rising behind the wordmark and a tiny original red building-brick flag integrate into one coherent compact silhouette. The joke is LOGO instead of LEGO. Make LOGO and LAND unmistakably readable. Only those two words. Not an official LEGO or LEGOLAND badge; do not write either of those names. Distinctive custom proportions and arrangement. Minimal, polished, confident, fun, clean graphic logo. Mostly flat shapes with restrained comic extrusion on the red brick badge. Entire image on fully SOLID OPAQUE WHITE including corners. Wide horizontal master identity, generous clear margins. No mockup, no extra text, no mascot, no watermark. Intended to look excellent on an open-source README.\n",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:24:47.766093Z",
+      "requested_background": "opaque",
+      "review": {
+        "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+        "notes": "원본과 Chrome의 400 및 240 CSS px 표시를 확인했습니다. LOGO LAND 철자가 정확하고 빨간 장난감 블록, 노란 햇살, 검정 LAND, 작은 블록 깃발이 구별됩니다. 외곽선과 사방 여백이 잘리지 않으며 배경은 실제 불투명 흰색입니다. 사용자 요청에 따른 LEGOLAND 분위기의 패러디 방향으로 제작했습니다. 새 시안이므로 부모 이미지 보존 검사는 해당되지 않습니다. 래스터 PNG이며 240px 미만의 파비콘이나 인쇄는 검수하지 않았습니다.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T13:29:13.867893Z"
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

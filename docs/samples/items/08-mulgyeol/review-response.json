@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "sample-08-mulgyeol",
+  "revision": 3,
+  "created_at": "2026-09-12T13:09:31.725858Z",
+  "updated_at": "2026-09-12T13:16:07.307949Z",
+  "brief": {
+    "brand_name": "물결",
+    "exact_text": "물결",
+    "industry": "독립 출판사",
+    "audience": "시와 에세이를 읽는 독자",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "파란색 한글 워드마크",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "바다색, 옅은 청백색"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "da97616502733dcef4b6b082d7746149793a22a576f3ad179a4da641d7ed66cf",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one wordmark logo for 물결. Industry: 독립 출판사. Audience: 시와 에세이를 읽는 독자.\nExact text (copy verbatim, no other words): '물결'. Exact slogan: ''.\nStyles: 파란색 한글 워드마크, flat, clear silhouette. Palette: 바다색, 옅은 청백색.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Exact Korean wordmark 물결, precisely two syllable blocks 물 and 결, no extra text. Thoughtful custom rounded Hangul lettering with subtle rhythmic wave quality while preserving all strokes and readability. Rich sea blue on solid pale blue-white. Text only, no separate waves or icon.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: Exact Korean wordmark 물결, precisely two syllable blocks 물 and 결, no extra text. Thoughtful custom rounded Hangul lettering with subtle rhythmic wave quality while preserving all strokes and readability. Rich sea blue on solid pale blue-white. Text only, no separate waves or icon.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:14:50.994275Z",
+      "requested_background": "opaque",
+      "review": {
+        "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+        "notes": "물결 두 음절의 ㅁ·ㅜ·ㄹ, ㄱ·ㅕ·ㄹ 구성이 정확합니다. 240px에서 한글이 읽히며 물결 같은 획의 리듬과 넉넉한 여백을 확인했습니다. 배경은 불투명 청백색입니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T13:16:07.306955Z"
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

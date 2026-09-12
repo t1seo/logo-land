@@ -1,0 +1,90 @@
+{
+  "id": "d3270ead-4386-42e3-a7ec-0d502a756f94",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Grid View",
+        "role": "button"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "",
+        "role": "generic"
+      },
+      "e16": {
+        "name": "",
+        "role": "generic"
+      },
+      "e17": {
+        "name": "",
+        "role": "generic"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e19": {
+        "name": "",
+        "role": "button"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e3": {
+        "name": "",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e5": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e6": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e8": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Carousel View",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e3]\n        - image\n      - link \"Generate logos\" [ref=e4]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e5]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e6]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e7]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e8]\n        - image\n        - StaticText \"My Account\"\n  - generic\n    - generic\n      - button \"Carousel View\" [ref=e9]\n        - image\n      - button \"Grid View\" [ref=e10]\n        - image\n        - StaticText \"Grid\"\n    - generic [ref=e11] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Gen AI\"\n        - image\n      - image \"Logo 8eb35a97-82a5-487b-89f3-99850d2ebf62\"\n    - generic [ref=e12] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Text\"\n        - image\n      - image \"Logo bc9b3f97-8d73-420d-8f0e-9e06c9910d18\"\n    - generic [ref=e13] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Text\"\n        - image\n      - image \"Logo 9b6e0470-05f2-4a8f-ac18-9623bf2f631c\"\n    - generic [ref=e14] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Gen AI\"\n        - image\n      - image \"Logo c0824d2b-3808-4f8c-ab28-558bc1ddf075\"\n    - generic [ref=e15] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Text\"\n        - image\n      - image \"Logo 239580c5-e5d9-4061-8cb2-e8d428a97dbe\"\n    - generic [ref=e16] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Text\"\n        - image\n      - image \"Logo 03ab0053-71cf-40ac-9274-eed74c4b21cf\"\n    - generic [ref=e17] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Text\"\n        - image\n      - image \"Logo 1c9c0509-ad37-4a70-9275-aeaf0e7769c4\"\n    - generic [ref=e18] clickable [cursor:pointer]\n      - generic\n        - StaticText \"Text\"\n        - image\n      - image \"Logo 385fa463-644a-4e78-a68c-8e24f5b9ddfe\"\n    - generic\n      - generic\n        - button [ref=e19]\n          - image\n        - generic\n          - image\n          - image\n          - image\n          - image\n          - image\n          - image\n          - image\n  - generic [ref=e2] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

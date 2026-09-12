@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "sample-02-loop-lab",
+  "revision": 0,
+  "created_at": "2026-09-12T13:09:28.962711Z",
+  "updated_at": "2026-09-12T13:09:28.962711Z",
+  "brief": {
+    "brand_name": "LOOP LAB",
+    "exact_text": "LL",
+    "industry": "크리에이티브 스튜디오",
+    "audience": "새로운 브랜드를 만드는 창업자",
+    "slogan": "",
+    "logo_type": "monogram",
+    "styles": [
+      "라임색 LL 모노그램",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "라임, 차콜"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": []
+}

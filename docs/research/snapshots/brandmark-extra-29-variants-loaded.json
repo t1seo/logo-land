@@ -1,0 +1,122 @@
+{
+  "id": "0ab40ad3-d389-4973-9c3b-4f7f5a3589a7",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "",
+        "role": "generic"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "",
+        "role": "generic"
+      },
+      "e16": {
+        "name": "",
+        "role": "generic"
+      },
+      "e17": {
+        "name": "",
+        "role": "generic"
+      },
+      "e18": {
+        "name": "",
+        "role": "button"
+      },
+      "e19": {
+        "name": "",
+        "role": "tablist"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "Purchase",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Variants",
+        "role": "button"
+      },
+      "e23": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e24": {
+        "name": "",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Color Variants",
+        "role": "tab"
+      },
+      "e26": {
+        "name": "Icon Variants",
+        "role": "tab"
+      },
+      "e27": {
+        "name": "Font Variants",
+        "role": "tab"
+      },
+      "e3": {
+        "name": "",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e5": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e6": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e8": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e9": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e3]\n        - image\n      - link \"Generate logos\" [ref=e4]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e5]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e6]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e7]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e8]\n        - image\n        - StaticText \"My Account\"\n  - generic\n    - generic\n      - generic\n        - image \"Logo 8eb35a97-82a5-487b-89f3-99850d2ebf62\"\n        - generic\n          - button \"Purchase\" [ref=e20]\n            - image\n            - StaticText \"Purchase\"\n          - button \"Edit\" [ref=e21]\n            - image\n            - StaticText \"Edit\"\n          - button \"Variants\" [ref=e22]\n            - image\n            - StaticText \"Variants\"\n          - button \"Save\" [ref=e23]\n            - image\n            - StaticText \"Save\"\n          - button [expanded=false, ref=e24]\n            - image\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo bc9b3f97-8d73-420d-8f0e-9e06c9910d18\"\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo 9b6e0470-05f2-4a8f-ac18-9623bf2f631c\"\n    - generic\n      - tablist [ref=e19] focusable [tabindex]\n        - tab \"Color Variants\" [selected, ref=e25]\n          - image\n          - StaticText \"Color Variants\"\n        - tab \"Icon Variants\" [ref=e26]\n          - image\n          - StaticText \"Icon Variants\"\n        - tab \"Font Variants\" [ref=e27]\n          - image\n          - StaticText \"Font Variants\"\n      - button [ref=e18]\n        - image\n      - generic [ref=e9] clickable [cursor:pointer]\n        - image \"Variant 9e4304b4-b7a2-4d94-b1f7-0fb449bac75c\"\n      - generic [ref=e10] clickable [cursor:pointer]\n        - image \"Variant fa17e235-819f-48e8-ba8b-39f3179d00ad\"\n      - generic [ref=e11] clickable [cursor:pointer]\n        - image \"Variant 97f11b92-80ad-4ded-af53-c13ade0b5768\"\n      - generic [ref=e12] clickable [cursor:pointer]\n        - image \"Variant c789b6ee-29ab-415c-a48e-22a0f3d7c058\"\n      - generic [ref=e13] clickable [cursor:pointer]\n        - image \"Variant af551b77-e456-41ba-a689-aafcd5b86a61\"\n      - generic [ref=e14] clickable [cursor:pointer]\n        - image \"Variant 0fef68d7-dcc3-49ef-aba8-4675d2bc6b1f\"\n      - generic [ref=e15] clickable [cursor:pointer]\n        - image \"Variant e2bb9ecd-c88f-457a-997b-622b45c6008b\"\n      - generic [ref=e16] clickable [cursor:pointer]\n        - image \"Variant 2416e27a-d25a-4214-a5db-a865fc2542ae\"\n      - generic [ref=e17] clickable [cursor:pointer]\n        - image \"Variant b66dc6e9-c5a1-4eeb-b203-ac3f324ba9bb\"\n  - generic [ref=e2] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "id": "72c1eba4-2ff2-4afa-9460-ce3948c7c9bd",
+  "ok": true,
+  "result": {
+    "origin": "https://www.tailorbrands.com/product-pricing",
+    "refs": {
+      "e1": {
+        "name": "Why customers love Tailor Business Builder ",
+        "role": "heading"
+      },
+      "e10": {
+        "name": "Resources",
+        "role": "heading"
+      },
+      "e100": {
+        "name": "Oklahoma",
+        "role": "option"
+      },
+      "e101": {
+        "name": "Oregon",
+        "role": "option"
+      },
+      "e102": {
+        "name": "Pennsylvania",
+        "role": "option"
+      },
+      "e103": {
+        "name": "Rhode Island",
+        "role": "option"
+      },
+      "e104": {
+        "name": "South Carolina",
+        "role": "option"
+      },
+      "e105": {
+        "name": "South Dakota",
+        "role": "option"
+      },
+      "e106": {
+        "name": "Tennessee",
+        "role": "option"
+      },
+      "e107": {
+        "name": "Texas",
+        "role": "option"
+      },
+      "e108": {
+        "name": "Utah",
+        "role": "option"
+      },
+      "e109": {
+        "name": "Vermont",
+        "role": "option"
+      },
+      "e11": {
+        "name": "Company",
+        "role": "heading"
+      },
+      "e110": {
+        "name": "Virginia",
+        "role": "option"
+      },
+      "e111": {
+        "name": "Washington",
+        "role": "option"
+      },
+      "e112": {
+        "name": "West Virginia",
+        "role": "option"
+      },
+      "e113": {
+        "name": "Wisconsin",
+        "role": "option"
+      },
+      "e114": {
+        "name": "Wyoming",
+        "role": "option"
+      },
+      "e115": {
+        "name": "Facebook",
+        "role": "link"
+      },
+      "e116": {
+        "name": "Instagram",
+        "role": "link"
+      },
+      "e117": {
+        "name": "Pinterest",
+        "role": "link"
+      },
+      "e118": {
+        "name": "Twitter",
+        "role": "link"
+      },
+      "e119": {
+        "name": "YouTube",
+        "role": "link"
+      },
+      "e12": {
+        "name": "Learn",
+        "role": "heading"
+      },
+      "e120": {
+        "name": "TikTok",
+        "role": "link"
+      },
+      "e121": {
+        "name": "Form an LLC",
+        "role": "link"
+      },
+      "e122": {
+        "name": "Choose your LLC state",
+        "role": "option"
+      },
+      "e123": {
+        "name": "Alabama",
+        "role": "option"
+      },
+      "e124": {
+        "name": "Alaska",
+        "role": "option"
+      },
+      "e125": {
+        "name": "Arizona",
+        "role": "option"
+      },
+      "e126": {
+        "name": "Arkansas",
+        "role": "option"
+      },
+      "e127": {
+        "name": "California",
+        "role": "option"
+      },
+      "e128": {
+        "name": "Colorado",
+        "role": "option"
+      },
+      "e129": {
+        "name": "Connecticut",
+        "role": "option"
+      },
+      "e13": {
+        "name": "Language Switcher",
+        "role": "navigation"
+      },
+      "e130": {
+        "name": "Delaware",
+        "role": "option"
+      },
+      "e131": {
+        "name": "District of Columbia",
+        "role": "option"
+      },
+      "e132": {
+        "name": "Florida",
+        "role": "option"
+      },
+      "e133": {
+        "name": "Georgia",
+        "role": "option"
+      },
+      "e134": {
+        "name": "Hawaii",
+        "role": "option"
+      },
+      "e135": {
+        "name": "Idaho",
+        "role": "option"
+      },
+      "e136": {
+        "name": "Illinois",
+        "role": "option"
+      },
+      "e137": {
+        "name": "Indiana",
+        "role": "option"
+      },
+      "e138": {
+        "name": "Iowa",
+        "role": "option"
+      },
+      "e139": {
+        "name": "Kansas",
+        "role": "option"
+      },
+      "e14": {
+        "name": "Tailor Brands logo",
+        "role": "link"
+      },
+      "e140": {
+        "name": "Kentucky",
+        "role": "option"
+      },
+      "e141": {
+        "name": "Louisiana",
+        "role": "option"
+      },
+      "e142": {
+        "name": "Maine",
+        "role": "option"
+      },
+      "e143": {
+        "name": "Maryland",
+        "role": "option"
+      },
+      "e144": {
+        "name": "Massachusetts",
+        "role": "option"
+      },
+      "e145": {
+        "name": "Michigan",
+        "role": "option"
+      },
+      "e146": {
+        "name": "Minnesota",
+        "role": "option"
+      },
+      "e147": {
+        "name": "Mississippi",
+        "role": "option"
+      },
+      "e148": {
+        "name": "Missouri",
+        "role": "option"
+      },
+      "e149": {
+        "name": "Montana",
+        "role": "option"
+      },
+      "e15": {
+        "name": "Login",
+        "role": "link"
+      },
+      "e150": {
+        "name": "Nebraska",
+        "role": "option"
+      },
+      "e151": {
+        "name": "Nevada",
+        "role": "option"
+      },
+      "e152": {
+        "name": "New Hampshire",
+        "role": "option"
+      },
+      "e153": {
+        "name": "New Jersey",
+        "role": "option"
+      },
+      "e154": {
+        "name": "New Mexico",
+        "role": "option"
+      },
+      "e155": {
+        "name": "New York",
+        "role": "option"
+      },
+      "e156": {
+        "name": "North Carolina",
+        "role": "option"
+      },
+      "e157": {
+        "name": "North Dakota",
+        "role": "option"
+      },
+      "e158": {
+        "name": "Ohio",
+        "role": "option"
+      },
+      "e159": {
+        "name": "Oklahoma",
+        "role": "option"
+      },
+      "e16": {
+        "name": "",
+        "role": "combobox"
+      },
+      "e160": {
+        "name": "Oregon",
+        "role": "option"
+      },
+      "e161": {
+        "name": "Pennsylvania",
+        "role": "option"
+      },
+      "e162": {
+        "name": "Rhode Island",
+        "role": "option"
+      },
+      "e163": {
+        "name": "South Carolina",
+        "role": "option"
+      },
+      "e164": {
+        "name": "South Dakota",
+        "role": "option"
+      },
+      "e165": {
+        "name": "Tennessee",
+        "role": "option"
+      },
+      "e166": {
+        "name": "Texas",
+        "role": "option"
+      },
+      "e167": {
+        "name": "Utah",
+        "role": "option"
+      },
+      "e168": {
+        "name": "Vermont",
+        "role": "option"
+      },
+      "e169": {
+        "name": "Virginia",
+        "role": "option"
+      },
+      "e17": {
+        "name": "Customer reviews powered by Trustpilot",
+        "role": "Iframe"
+      },
+      "e170": {
+        "name": "Washington",
+        "role": "option"
+      },
+      "e171": {
+        "name": "West Virginia",
+        "role": "option"
+      },
+      "e172": {
+        "name": "Wisconsin",
+        "role": "option"
+      },
+      "e173": {
+        "name": "Wyoming",
+        "role": "option"
+      },
+      "e174": {
+        "name": "Get started",
+        "role": "link"
+      },
+      "e175": {
+        "name": "01",
+        "role": "heading"
+      },
+      "e176": {
+        "name": "02",
+        "role": "heading"
+      },
+      "e177": {
+        "name": "03",
+        "role": "heading"
+      },
+      "e178": {
+        "name": "Covered by this plan",
+        "role": "button"
+      },
+      "e179": {
+        "name": "Covered by this plan",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Call us at 1-332-286-2770",
+        "role": "link"
+      },
+      "e180": {
+        "name": "Covered by this plan",
+        "role": "button"
+      },
+      "e181": {
+        "name": "TOS",
+        "role": "link"
+      },
+      "e182": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e183": {
+        "name": "Cookie Policy",
+        "role": "link"
+      },
+      "e184": {
+        "name": "Do not sell my personal information",
+        "role": "link"
+      },
+      "e185": {
+        "name": "(332)-286-2770",
+        "role": "link"
+      },
+      "e186": {
+        "name": "Form an LLC",
+        "role": "link"
+      },
+      "e187": {
+        "name": "Get started",
+        "role": "link"
+      },
+      "e188": {
+        "name": "(332)-286-2770",
+        "role": "link"
+      },
+      "e189": {
+        "name": "Trustpilot reviews. Rated Excellent. 4.8 out of 5. Based on 17,301 reviews on Trustpilot. Click to view Trustpilot profile.",
+        "role": "link"
+      },
+      "e19": {
+        "name": "Get your LLC in a few quick steps",
+        "role": "heading"
+      },
+      "e190": {
+        "name": "Read more",
+        "role": "button"
+      },
+      "e191": {
+        "name": "Read more",
+        "role": "button"
+      },
+      "e192": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e193": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e194": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e195": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e196": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e197": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e198": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e199": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e2": {
+        "name": "Ready to form your LLC?",
+        "role": "heading"
+      },
+      "e20": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e200": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e201": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e202": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e203": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e204": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e205": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e206": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e207": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e208": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e209": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e21": {
+        "name": "Tailor Brands logo",
+        "role": "link"
+      },
+      "e210": {
+        "name": "Invited review. Click to learn more about review types",
+        "role": "link"
+      },
+      "e211": {
+        "name": "Trustpilot reviews",
+        "role": "link"
+      },
+      "e22": {
+        "name": "LLC services",
+        "role": "link"
+      },
+      "e23": {
+        "name": "Registered agent",
+        "role": "link"
+      },
+      "e24": {
+        "name": "EIN",
+        "role": "link"
+      },
+      "e25": {
+        "name": "Licenses & permits",
+        "role": "link"
+      },
+      "e26": {
+        "name": "Sales tax permit",
+        "role": "link"
+      },
+      "e27": {
+        "name": "Business insurance",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Business banking",
+        "role": "link"
+      },
+      "e29": {
+        "name": "Logo maker",
+        "role": "link"
+      },
+      "e3": {
+        "name": "Real Tailor Brands reviews, from real business owners",
+        "role": "heading"
+      },
+      "e30": {
+        "name": "Domain",
+        "role": "link"
+      },
+      "e31": {
+        "name": "Website",
+        "role": "link"
+      },
+      "e32": {
+        "name": "Business email",
+        "role": "link"
+      },
+      "e33": {
+        "name": "Taxes & accounting",
+        "role": "link"
+      },
+      "e34": {
+        "name": "Invoices & bookkeeping",
+        "role": "link"
+      },
+      "e35": {
+        "name": "Legal documents",
+        "role": "link"
+      },
+      "e36": {
+        "name": "Trademark",
+        "role": "link"
+      },
+      "e37": {
+        "name": "Business cards",
+        "role": "link"
+      },
+      "e38": {
+        "name": "Digital business card",
+        "role": "link"
+      },
+      "e39": {
+        "name": "Graphic design",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e40": {
+        "name": "Print store",
+        "role": "link"
+      },
+      "e41": {
+        "name": "Blog",
+        "role": "link"
+      },
+      "e42": {
+        "name": "Help center",
+        "role": "link"
+      },
+      "e43": {
+        "name": "Academy",
+        "role": "link"
+      },
+      "e44": {
+        "name": "LLC by state",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e46": {
+        "name": "About",
+        "role": "link"
+      },
+      "e47": {
+        "name": "Careers",
+        "role": "link"
+      },
+      "e48": {
+        "name": "Affiliate program",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Partner with us",
+        "role": "link"
+      },
+      "e5": {
+        "name": "Get your LLC at a great price",
+        "role": "heading"
+      },
+      "e50": {
+        "name": "Press",
+        "role": "link"
+      },
+      "e51": {
+        "name": "What is an LLC",
+        "role": "link"
+      },
+      "e52": {
+        "name": "LLC costs",
+        "role": "link"
+      },
+      "e53": {
+        "name": "Types of LLC",
+        "role": "link"
+      },
+      "e54": {
+        "name": "Start a business",
+        "role": "link"
+      },
+      "e55": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e56": {
+        "name": "Choose the plan that fits your path",
+        "role": "heading"
+      },
+      "e57": {
+        "name": "Lite",
+        "role": "heading"
+      },
+      "e58": {
+        "name": "$0",
+        "role": "heading"
+      },
+      "e59": {
+        "name": "Essential",
+        "role": "heading"
+      },
+      "e6": {
+        "name": "Not sure which LLC pricing plan is right for your goals?",
+        "role": "heading"
+      },
+      "e60": {
+        "name": "$199",
+        "role": "heading"
+      },
+      "e61": {
+        "name": "Elite",
+        "role": "heading"
+      },
+      "e62": {
+        "name": "$249",
+        "role": "heading"
+      },
+      "e63": {
+        "name": "Choose your LLC state",
+        "role": "option"
+      },
+      "e64": {
+        "name": "Alabama",
+        "role": "option"
+      },
+      "e65": {
+        "name": "Alaska",
+        "role": "option"
+      },
+      "e66": {
+        "name": "Arizona",
+        "role": "option"
+      },
+      "e67": {
+        "name": "Arkansas",
+        "role": "option"
+      },
+      "e68": {
+        "name": "California",
+        "role": "option"
+      },
+      "e69": {
+        "name": "Colorado",
+        "role": "option"
+      },
+      "e7": {
+        "name": "Customer reviews powered by Trustpilot",
+        "role": "Iframe"
+      },
+      "e70": {
+        "name": "Connecticut",
+        "role": "option"
+      },
+      "e71": {
+        "name": "Delaware",
+        "role": "option"
+      },
+      "e72": {
+        "name": "District of Columbia",
+        "role": "option"
+      },
+      "e73": {
+        "name": "Florida",
+        "role": "option"
+      },
+      "e74": {
+        "name": "Georgia",
+        "role": "option"
+      },
+      "e75": {
+        "name": "Hawaii",
+        "role": "option"
+      },
+      "e76": {
+        "name": "Idaho",
+        "role": "option"
+      },
+      "e77": {
+        "name": "Illinois",
+        "role": "option"
+      },
+      "e78": {
+        "name": "Indiana",
+        "role": "option"
+      },
+      "e79": {
+        "name": "Iowa",
+        "role": "option"
+      },
+      "e8": {
+        "name": "",
+        "role": "combobox"
+      },
+      "e80": {
+        "name": "Kansas",
+        "role": "option"
+      },
+      "e81": {
+        "name": "Kentucky",
+        "role": "option"
+      },
+      "e82": {
+        "name": "Louisiana",
+        "role": "option"
+      },
+      "e83": {
+        "name": "Maine",
+        "role": "option"
+      },
+      "e84": {
+        "name": "Maryland",
+        "role": "option"
+      },
+      "e85": {
+        "name": "Massachusetts",
+        "role": "option"
+      },
+      "e86": {
+        "name": "Michigan",
+        "role": "option"
+      },
+      "e87": {
+        "name": "Minnesota",
+        "role": "option"
+      },
+      "e88": {
+        "name": "Mississippi",
+        "role": "option"
+      },
+      "e89": {
+        "name": "Missouri",
+        "role": "option"
+      },
+      "e9": {
+        "name": "Products",
+        "role": "heading"
+      },
+      "e90": {
+        "name": "Montana",
+        "role": "option"
+      },
+      "e91": {
+        "name": "Nebraska",
+        "role": "option"
+      },
+      "e92": {
+        "name": "Nevada",
+        "role": "option"
+      },
+      "e93": {
+        "name": "New Hampshire",
+        "role": "option"
+      },
+      "e94": {
+        "name": "New Jersey",
+        "role": "option"
+      },
+      "e95": {
+        "name": "New Mexico",
+        "role": "option"
+      },
+      "e96": {
+        "name": "New York",
+        "role": "option"
+      },
+      "e97": {
+        "name": "North Carolina",
+        "role": "option"
+      },
+      "e98": {
+        "name": "North Dakota",
+        "role": "option"
+      },
+      "e99": {
+        "name": "Ohio",
+        "role": "option"
+      }
+    },
+    "snapshot": "- figure\n  - link \"Tailor Brands logo\" [ref=e14]\n    - image \"Tailor Brands logo\"\n- navigation\n  - list\n    - listitem [level=1]\n      - link \"Form an LLC\" [ref=e121]\n    - listitem [level=1]\n      - paragraph\n        - StaticText \"Services\"\n    - listitem [level=1]\n      - paragraph\n        - StaticText \"Resources\"\n    - listitem [level=1]\n      - paragraph\n        - StaticText \"Why Tailor Brands\"\n    - list\n      - listitem [level=2]\n        - image \"telephone icon\"\n        - link \"(332)-286-2770\" [ref=e185]\n  - generic\n    - figure\n      - image \"Tailor Brands logo\"\n    - list\n      - listitem [level=1]\n        - link \"Form an LLC\" [ref=e186]\n      - listitem [level=1]\n        - paragraph\n          - StaticText \"Services\"\n      - listitem [level=1]\n        - paragraph\n          - StaticText \"Resources\"\n      - listitem [level=1]\n        - paragraph\n          - StaticText \"Why Tailor Brands\"\n      - list\n        - listitem [level=2]\n          - image \"telephone icon\"\n          - link \"(332)-286-2770\" [ref=e188]\n- link \"Login\" [ref=e15]\n- heading \"Get your LLC at a great price\" [level=1, ref=e5]\n- paragraph\n  - StaticText \"Launch a successful business with great pricing starting at $0 + state fee. We’ll guide you every step of the way.\"\n- form\n  - group \"State select llc funnel\"\n    - Legend\n      - StaticText \"State select llc funnel\"\n    - combobox [expanded=false, ref=e16]: Choose your LLC state\n      - MenuListPopup\n        - option \"Choose your LLC state\" [selected, ref=e122]\n        - option \"Alabama\" [ref=e123]\n        - option \"Alaska\" [ref=e124]\n        - option \"Arizona\" [ref=e125]\n        - option \"Arkansas\" [ref=e126]\n        - option \"California\" [ref=e127]\n        - option \"Colorado\" [ref=e128]\n        - option \"Connecticut\" [ref=e129]\n        - option \"Delaware\" [ref=e130]\n        - option \"District of Columbia\" [ref=e131]\n        - option \"Florida\" [ref=e132]\n        - option \"Georgia\" [ref=e133]\n        - option \"Hawaii\" [ref=e134]\n        - option \"Idaho\" [ref=e135]\n        - option \"Illinois\" [ref=e136]\n        - option \"Indiana\" [ref=e137]\n        - option \"Iowa\" [ref=e138]\n        - option \"Kansas\" [ref=e139]\n        - option \"Kentucky\" [ref=e140]\n        - option \"Louisiana\" [ref=e141]\n        - option \"Maine\" [ref=e142]\n        - option \"Maryland\" [ref=e143]\n        - option \"Massachusetts\" [ref=e144]\n        - option \"Michigan\" [ref=e145]\n        - option \"Minnesota\" [ref=e146]\n        - option \"Mississippi\" [ref=e147]\n        - option \"Missouri\" [ref=e148]\n        - option \"Montana\" [ref=e149]\n        - option \"Nebraska\" [ref=e150]\n        - option \"Nevada\" [ref=e151]\n        - option \"New Hampshire\" [ref=e152]\n        - option \"New Jersey\" [ref=e153]\n        - option \"New Mexico\" [ref=e154]\n        - option \"New York\" [ref=e155]\n        - option \"North Carolina\" [ref=e156]\n        - option \"North Dakota\" [ref=e157]\n        - option \"Ohio\" [ref=e158]\n        - option \"Oklahoma\" [ref=e159]\n        - option \"Oregon\" [ref=e160]\n        - option \"Pennsylvania\" [ref=e161]\n        - option \"Rhode Island\" [ref=e162]\n        - option \"South Carolina\" [ref=e163]\n        - option \"South Dakota\" [ref=e164]\n        - option \"Tennessee\" [ref=e165]\n        - option \"Texas\" [ref=e166]\n        - option \"Utah\" [ref=e167]\n        - option \"Vermont\" [ref=e168]\n        - option \"Virginia\" [ref=e169]\n        - option \"Washington\" [ref=e170]\n        - option \"West Virginia\" [ref=e171]\n        - option \"Wisconsin\" [ref=e172]\n        - option \"Wyoming\" [ref=e173]\n    - button \"Get started\" [ref=e55]\n- Iframe \"Customer reviews powered by Trustpilot\" [ref=e17]\n  - generic\n    - generic\n      - link \"Trustpilot reviews\" [ref=e211]\n        - StaticText \"Excellent\"\n        - image \"4.8 out of 5 star rating on Trustpilot\"\n        - generic\n          - generic\n            - strong\n              - StaticText \"17,301\"\n            - StaticText \" reviews on\"\n          - image \"Trustpilot\"\n      - StaticText \"Rated Excellent. 4.8 out of 5. 17301 reviews on Trustpilot\"\n      - StaticText \"Click to view the company's Trustpilot profile\"\n- figure\n  - image \"LLC Formation pricing page main image with a happy llc owner smiling with LLC icons overlaid\"\n- generic\n  - generic\n    - image\n    - paragraph\n      - StaticText \"100% accuracy guaranteed\"\n  - generic\n    - image\n    - paragraph\n      - StaticText \"Faster filing\"\n  - generic\n    - image\n    - paragraph\n      - StaticText \"AI-guided\"\n- generic\n  - generic\n    - heading \"Choose the plan that fits your path\" [level=2, ref=e56]\n    - paragraph\n      - StaticText \"BASIC\"\n    - heading \"Lite\" [level=2, ref=e57]\n    - heading \"$0\" [level=2, ref=e58]\n    - paragraph\n      - StaticText \"*Plus state fees\"\n    - generic\n      - image\n      - paragraph\n        - StaticText \"LLC formation\"\n      - image\n      - paragraph\n        - StaticText \"Bookkeeping \"\n      - paragraph\n        - StaticText \"Free 30-day trial\"\n      - image\n      - paragraph\n        - StaticText \"Business coaching platform\"\n      - image\n      - paragraph\n        - StaticText \"Sales & payments\"\n    - generic\n      - button \"Covered by this plan\" [expanded=false, ref=e178]\n        - StaticText \"Covered by this plan\"\n        - image\n      - image\n      - paragraph\n        - StaticText \"Form your LLC\"\n      - image\n      - paragraph\n        - StaticText \"Process the LLC within 14\"\n        - LineBreak \"\\n\"\n        - StaticText \"business days\"\n      - image\n      - paragraph\n        - StaticText \"Bookkeeping (trial*)\"\n      - image\n      - paragraph\n        - StaticText \"Business and coaching program\"\n      - image\n      - paragraph\n        - StaticText \"Mastery of taxes, compliance, and marketing\"\n      - image\n      - paragraph\n        - StaticText \"On-demand master course\"\n      - image\n      - paragraph\n        - StaticText \"Hands-on activities\"\n      - image\n      - paragraph\n        - StaticText \"Sales & payments\"\n      - image\n      - paragraph\n        - deletion\n          - deletion\n            - StaticText \"Funding search\"\n      - image\n      - paragraph\n        - deletion\n          - StaticText \"Annual compliance: mandatory report filing & updates\"\n      - image\n      - paragraph\n        - deletion\n          - deletion\n            - StaticText \"Establish operating agreement\"\n      - image\n      - paragraph\n        - deletion\n          - deletion\n            - StaticText \"Online business & branding tools\"\n      - list\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"1-year free domain\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"DIY website/online store\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"8 free logos\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"Digital business card\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"Social media post maker\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"Business card tools\"\n    - paragraph\n      - StaticText \"POPULAR\"\n    - heading \"Essential\" [level=2, ref=e59]\n    - heading \"$199\" [level=2, ref=e60]\n    - paragraph\n      - StaticText \"/yr\"\n    - paragraph\n      - StaticText \"*Plus state fees\"\n    - generic\n      - image\n      - StaticText \"$30 Amazon Gift Card\"\n      - image\n      - paragraph\n        - StaticText \"LLC formation\"\n      - image\n      - paragraph\n        - StaticText \"Legal compliance\"\n      - image\n      - paragraph\n        - StaticText \"1 day expedited processing\"\n      - image\n      - paragraph\n        - StaticText \"Bookkeeping \"\n      - paragraph\n        - StaticText \"Free 30-day trial\"\n      - image\n      - paragraph\n        - StaticText \"Business coaching program\"\n      - image\n      - paragraph\n        - StaticText \"Funding search\"\n      - image\n      - paragraph\n        - StaticText \"Sales & payments\"\n    - generic\n      - button \"Covered by this plan\" [expanded=false, ref=e179]\n        - StaticText \"Covered by this plan\"\n        - image\n      - image\n      - paragraph\n        - StaticText \"Form your LLC\"\n      - image\n      - paragraph\n        - StaticText \"Process the LLC within 1\"\n        - LineBreak \"\\n\"\n        - StaticText \"business day\"\n      - image\n      - paragraph\n        - StaticText \"Bookkeeping (trial*)\"\n      - image\n      - paragraph\n        - StaticText \"Business and coaching program\"\n      - image\n      - paragraph\n        - StaticText \"Mastery of taxes, compliance, and marketing\"\n      - image\n      - paragraph\n        - StaticText \"On-demand master course\"\n      - image\n      - paragraph\n        - StaticText \"Hands-on activities\"\n      - image\n      - paragraph\n        - StaticText \"Sales & payments\"\n      - image\n      - paragraph\n        - StaticText \"Funding search\"\n      - image\n      - paragraph\n        - StaticText \"Annual compliance: mandatory report filing & updates\"\n      - image\n      - paragraph\n        - StaticText \"Establish operating agreement\"\n      - image\n      - paragraph\n        - deletion\n          - deletion\n            - StaticText \"Online business & branding tools\"\n      - list\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"1-year free domain\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"DIY website/online store\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"8 free logos\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"Digital business card\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"Social media post maker\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - deletion\n            - StaticText \"Business card tools\"\n    - paragraph\n      - StaticText \"PREMIUM\"\n    - heading \"Elite\" [level=2, ref=e61]\n    - heading \"$249\" [level=2, ref=e62]\n    - paragraph\n      - StaticText \"/yr\"\n    - paragraph\n      - StaticText \"*Plus state fees\"\n    - generic\n      - image\n      - StaticText \"$50 Amazon Gift Card\"\n      - image\n      - paragraph\n        - StaticText \"LLC formation\"\n      - image\n      - paragraph\n        - StaticText \"Legal compliance\"\n      - image\n      - paragraph\n        - StaticText \"1 day expedited processing\"\n      - image\n      - paragraph\n        - StaticText \"Bookkeeping \"\n      - paragraph\n        - StaticText \"Free 30-day trial\"\n      - image\n      - paragraph\n        - StaticText \"Domain\"\n      - image\n      - paragraph\n        - StaticText \"Website\"\n      - image\n      - paragraph\n        - StaticText \"Business coaching program\"\n      - image\n      - paragraph\n        - StaticText \"Funding search\"\n      - image\n      - paragraph\n        - StaticText \"Sales & payments\"\n    - generic\n      - button \"Covered by this plan\" [expanded=false, ref=e180]\n        - StaticText \"Covered by this plan\"\n        - image\n      - image\n      - paragraph\n        - StaticText \"Form your LLC\"\n      - image\n      - paragraph\n        - StaticText \"Process the LLC within 1\"\n        - LineBreak \"\\n\"\n        - StaticText \"business day\"\n      - image\n      - paragraph\n        - StaticText \"Bookkeeping (trial*)\"\n      - image\n      - paragraph\n        - StaticText \"Business and coaching program\"\n      - image\n      - paragraph\n        - StaticText \"Mastery of taxes, compliance, and marketing\"\n      - image\n      - paragraph\n        - StaticText \"On-demand master course\"\n      - image\n      - paragraph\n        - StaticText \"Hands-on activities\"\n      - image\n      - paragraph\n        - StaticText \"Sales & payments\"\n      - image\n      - paragraph\n        - StaticText \"Funding search\"\n      - image\n      - paragraph\n        - StaticText \"Annual compliance: mandatory report filing & updates\"\n      - image\n      - paragraph\n        - StaticText \"Establish operating agreement\"\n      - image\n      - paragraph\n        - StaticText \"Online business & branding tools\"\n      - list\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - StaticText \"1-year free domain\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - StaticText \"DIY website/online store\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - StaticText \"8 free logos\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - StaticText \"Digital business card\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - StaticText \"Social media post maker\"\n        - listitem [level=1]\n          - ListMarker \"• \"\n          - StaticText \"Business card tools\"\n    - link \"Get started\" [ref=e174]\n    - generic\n      - paragraph\n        - StaticText \"PAYMENT SOLUTIONS\"\n      - figure\n        - image \"mastercard logo\"\n      - figure\n        - image \"visa symbol\"\n      - figure\n        - image \"Paypal logo\"\n      - figure\n      - figure\n        - image \"amex payment logo\"\n  - generic\n    - paragraph\n      - StaticText \"*The bookkeeping & invoicing free trial expires after 30 days, you’ll be charged $39/month. Cancel anytime.\"\n    - paragraph\n      - StaticText \"**Disclaimer: The prices displayed on this page are accurate as of the date of publication and are subject to change at Tailor Brands’ sole discretion. The binding price is the one presented to the customer at the time of payment, based on the packages available at that time. Tailor Brands may, at its discretion, offer additional packages in different configurations and at different prices.\"\n- heading \"Not sure which LLC pricing plan is right for your goals?\" [level=2, ref=e6]\n  - strong\n    - StaticText \"Not sure which LLC pricing plan is right for your goals?\"\n- paragraph\n  - StaticText \"Let’s talk! Our team will be happy to assist and guide you on your business journey\"\n- generic\n  - image\n  - link \"Call us at 1-332-286-2770\" [ref=e18]\n- figure\n- heading \"Get your LLC in a few quick steps\" [level=2, ref=e19]\n- image\n- generic\n  - generic\n    - heading \"01\" [level=2, ref=e175]\n    - paragraph\n      - strong\n        - StaticText \"Enter your business name\"\n      - LineBreak \"\\n\"\n      - StaticText \"Not sure yet? No worries, you can change it later.\"\n  - generic\n    - heading \"02\" [level=2, ref=e176]\n    - paragraph\n      - strong\n        - StaticText \"Answer a few quick questions\"\n      - LineBreak \"\\n\"\n      - StaticText \"We’ll personalize your steps based on your goals.\"\n  - generic\n    - heading \"03\" [level=2, ref=e177]\n    - paragraph\n      - strong\n        - StaticText \"Get a custom AI-powered plan\"\n      - LineBreak \"\\n\"\n      - StaticText \"Everything your business needs to launch, tailored to you.\"\n  - link \"Get started\" [ref=e187]\n- generic\n  - heading \"Why customers love Tailor Business Builder \" [level=2, ref=e1]\n    - StaticText \"Why customers love Tailor Business Builder\"\n    - LineBreak \"\\n\"\n  - generic\n    - figure\n    - paragraph\n      - StaticText \"Guided and customized business plan\"\n  - generic\n    - figure\n    - paragraph\n      - StaticText \"Available customer support at any point of the process\"\n  - generic\n    - figure\n    - paragraph\n      - StaticText \"End-to-end business building services\"\n  - generic\n    - figure\n    - paragraph\n      - StaticText \"Relevant for business owners at any stage\"\n- generic\n  - heading \"Ready to form your LLC?\" [level=2, ref=e2]\n  - form\n    - group \"State select llc centered\"\n      - Legend\n        - StaticText \"State select llc centered\"\n      - combobox [expanded=false, ref=e8]: Choose your LLC state\n        - MenuListPopup\n          - option \"Choose your LLC state\" [selected, ref=e63]\n          - option \"Alabama\" [ref=e64]\n          - option \"Alaska\" [ref=e65]\n          - option \"Arizona\" [ref=e66]\n          - option \"Arkansas\" [ref=e67]\n          - option \"California\" [ref=e68]\n          - option \"Colorado\" [ref=e69]\n          - option \"Connecticut\" [ref=e70]\n          - option \"Delaware\" [ref=e71]\n          - option \"District of Columbia\" [ref=e72]\n          - option \"Florida\" [ref=e73]\n          - option \"Georgia\" [ref=e74]\n          - option \"Hawaii\" [ref=e75]\n          - option \"Idaho\" [ref=e76]\n          - option \"Illinois\" [ref=e77]\n          - option \"Indiana\" [ref=e78]\n          - option \"Iowa\" [ref=e79]\n          - option \"Kansas\" [ref=e80]\n          - option \"Kentucky\" [ref=e81]\n          - option \"Louisiana\" [ref=e82]\n          - option \"Maine\" [ref=e83]\n          - option \"Maryland\" [ref=e84]\n          - option \"Massachusetts\" [ref=e85]\n          - option \"Michigan\" [ref=e86]\n          - option \"Minnesota\" [ref=e87]\n          - option \"Mississippi\" [ref=e88]\n          - option \"Missouri\" [ref=e89]\n          - option \"Montana\" [ref=e90]\n          - option \"Nebraska\" [ref=e91]\n          - option \"Nevada\" [ref=e92]\n          - option \"New Hampshire\" [ref=e93]\n          - option \"New Jersey\" [ref=e94]\n          - option \"New Mexico\" [ref=e95]\n          - option \"New York\" [ref=e96]\n          - option \"North Carolina\" [ref=e97]\n          - option \"North Dakota\" [ref=e98]\n          - option \"Ohio\" [ref=e99]\n          - option \"Oklahoma\" [ref=e100]\n          - option \"Oregon\" [ref=e101]\n          - option \"Pennsylvania\" [ref=e102]\n          - option \"Rhode Island\" [ref=e103]\n          - option \"South Carolina\" [ref=e104]\n          - option \"South Dakota\" [ref=e105]\n          - option \"Tennessee\" [ref=e106]\n          - option \"Texas\" [ref=e107]\n          - option \"Utah\" [ref=e108]\n          - option \"Vermont\" [ref=e109]\n          - option \"Virginia\" [ref=e110]\n          - option \"Washington\" [ref=e111]\n          - option \"West Virginia\" [ref=e112]\n          - option \"Wisconsin\" [ref=e113]\n          - option \"Wyoming\" [ref=e114]\n      - button \"Get started\" [ref=e20]\n- generic\n  - heading \"Real Tailor Brands reviews, from real business owners\" [level=2, ref=e3]\n    - StaticText \"Real Tailor Brands reviews,\"\n    - LineBreak \"\\n\"\n    - StaticText \"from real business owners\"\n  - Iframe \"Customer reviews powered by Trustpilot\" [ref=e7]\n    - generic\n      - generic\n        - link \"Trustpilot reviews. Rated Excellent. 4.8 out of 5. Based on 17,301 reviews on Trustpilot. Click to view Trustpilot profile.\" [ref=e189]\n          - StaticText \"Excellent\"\n          - image \"4.8 out of 5 star rating on Trustpilot\"\n          - generic\n            - generic\n              - StaticText \"Rated 4.8 / 5 based on \"\n              - strong\n                - StaticText \"17,301 reviews\"\n              - StaticText \" on\"\n            - image \"Trustpilot\"\n      - generic\n        - StaticText \"Showing our 5 star reviews\"\n        - list\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - StaticText \"Review by\"\n            - StaticText \"David Max,\"\n            - StaticText \"22 minutes ago\"\n            - StaticText \"My experience is owsome but I need help…\"\n            - StaticText \"My experience is owsome but I need help to activated my business. Because I know tailor brand owner must help everyone over full world\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e192]\n            - StaticText \"Review by\"\n            - StaticText \"Fernand Lembenga Ndombi,\"\n            - StaticText \"10 hours ago\"\n            - StaticText \"Very professional\"\n            - StaticText \"Very professional, patient and helpful\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e193]\n            - StaticText \"Review by\"\n            - StaticText \"Andrew Triolo,\"\n            - StaticText \"11 hours ago\"\n            - StaticText \"Rick v was amazing answered all my…\"\n            - StaticText \"Rick v was amazing answered all my questions and was very patient with me\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e194]\n            - StaticText \"Review by\"\n            - StaticText \"Markesha Smith,\"\n            - StaticText \"11 hours ago\"\n            - StaticText \"I appreciate your speedy assistance…\"\n            - StaticText \"I appreciate your speedy assistance with my certifications I highly recommend your services to a new company owner!\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e195]\n            - StaticText \"Review by\"\n            - StaticText \"Lamin Barrow,\"\n            - StaticText \"13 hours ago\"\n            - StaticText \"I have struggled to complete my LLC…\"\n            - StaticText \"I have struggled to complete my LLC application, Lawrence didn’t only stop at helping me troubleshoot to complete but he offered to add free EIN number. This is awesome! Lawrence you are the best!\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e196]\n            - StaticText \"Review by\"\n            - StaticText \"Gina,\"\n            - StaticText \"14 hours ago\"\n            - StaticText \"Easy to understand\"\n            - StaticText \"Easy to understand and fill out. Customer Service was very helpful. Thank you Aaron!\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e197]\n            - StaticText \"Review by\"\n            - StaticText \"Allison Hibbert,\"\n            - StaticText \"15 hours ago\"\n            - StaticText \"Great with answering my question.\"\n            - StaticText \"Great with answering my question.\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e198]\n            - StaticText \"Review by\"\n            - StaticText \"DAVE,\"\n            - StaticText \"16 hours ago\"\n            - StaticText \"I betchu she fine\"\n            - StaticText \"Ann made my experience great. Soothing voice, cute lil accent, I wonder what she looks like.\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e199]\n            - StaticText \"Review by\"\n            - StaticText \"Jeanene Barrett,\"\n            - StaticText \"16 hours ago\"\n            - StaticText \"Efficient and helpful\"\n            - StaticText \"Efficient and helpful. Customer service, listening, and responding to my questions.\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e200]\n            - StaticText \"Review by\"\n            - StaticText \"tammyhurstgmail.com,\"\n            - StaticText \"16 hours ago\"\n            - StaticText \"My concern was answered promptly and…\"\n            - StaticText \"My concern was answered promptly and respectfully. Thank you.\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e201]\n            - StaticText \"Review by\"\n            - StaticText \"Horace Smiley,\"\n            - StaticText \"16 hours ago\"\n            - StaticText \"Thanks good work\"\n            - StaticText \"Thanks good work\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e202]\n            - StaticText \"Review by\"\n            - StaticText \"Shani Brewer,\"\n            - StaticText \"17 hours ago\"\n            - StaticText \"The agent Ann was kind and…\"\n            - StaticText \"The agent Ann was kind and knowledgeable.\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e203]\n            - StaticText \"Review by\"\n            - StaticText \"Lewis B.,\"\n            - StaticText \"17 hours ago\"\n            - StaticText \"Chat & Customer Service\"\n            - StaticText \"Both Allie and customer service reps were personable and easy to deal with. My issues were dealt with quickly and efficiently.\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e204]\n            - StaticText \"Review by\"\n            - StaticText \"Davina Gooden,\"\n            - StaticText \"17 hours ago\"\n            - StaticText \"Danilo was great\"\n            - StaticText \"Danilo was great! Solution without issues and great people skills.\"\n            - LineBreak \"\\n\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e205]\n            - StaticText \"Review by\"\n            - StaticText \"JuliAnn Fox,\"\n            - StaticText \"18 hours ago\"\n            - StaticText \"I have been with Tailor Brands for a…\"\n            - StaticText \"I have been with Tailor Brands for a good year now and every time I’ve ever had a question, concern or issue they’ve been able to provide me with thee best service. Especially today, I spoke with Ric regarding my previous request for a refund and cancellation of Tailor Brand’s services. He was very understanding and extremely helpful. Ric asked if I would check my email for correspondence from another team member that was offering their assistance re: refund. Kamille will be my point of contact regarding this issue as well as Ric. He is very kind, professional and compassionate with his words. I truly felt heard and seen. And that makes a huge difference when trying to resolve stressful financial issues. Thank you again Ric for everything and thank you TB for all that you are and do!\"\n            - LineBreak \"\\n\"\n            - LineBreak \"\\n\"\n            - StaticText \"Best,\"\n            - LineBreak \"\\n\"\n            - LineBreak \"\\n\"\n            - StaticText \"JuliAnn Fox\"\n            - button \"Read more\" [expanded=false, ref=e190]\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e206]\n            - StaticText \"Review by\"\n            - StaticText \"Robert Young,\"\n            - StaticText \"18 hours ago\"\n            - StaticText \"Great customer service\"\n            - StaticText \"Great customer service\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e207]\n            - StaticText \"Review by\"\n            - StaticText \"alexsander rivera,\"\n            - StaticText \"18 hours ago\"\n            - StaticText \"I love the way Tailor Brands has the…\"\n            - StaticText \"I love the way Tailor Brands has the customer support whenever you need it. I was able to streamline the whole process so that I can keep working and doing what I have to do knowing that Tailor Brands has my back!\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e208]\n            - StaticText \"Review by\"\n            - StaticText \"Ms. Tonia Royal,\"\n            - StaticText \"19 hours ago\"\n            - StaticText \"I appreciated the calm replies and…\"\n            - StaticText \"I appreciated the calm replies and responses that Danilo, demonstrated. I'm glad I only had to call once, the wait time was less than 15 minutes. Thank you for having a person available who could assure me that I purchased the right products that are needed upfront. Thanks! Danilo\"\n            - button \"Read more\" [expanded=false, ref=e191]\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e209]\n            - StaticText \"Review by\"\n            - StaticText \"Zack Zaghal,\"\n            - StaticText \"19 hours ago\"\n            - StaticText \"Very helpful\"\n            - StaticText \"Lawrence was helpful\"\n          - listitem [level=1]\n            - image \"5 out of 5 star rating on Trustpilot\"\n            - link \"Invited review. Click to learn more about review types\" [ref=e210]\n            - StaticText \"Review by\"\n            - StaticText \"kay c,\"\n            - StaticText \"20 hours ago\"\n            - StaticText \"the person i was on the phone with\"\n            - StaticText \"the person i was on the phone with, helped me so much ! and i truly appreciate it.. thank you tailor brands ! you’re very understanding\"\n- contentinfo\n  - generic\n    - figure\n      - link \"Tailor Brands logo\" [ref=e21]\n        - image \"Tailor Brands logo\"\n    - generic\n      - emphasis\n        - StaticText \"Tailor Brands is a technology company and is not a bank. Banking services are provided by our banking providers\"\n      - StaticText \". \"\n      - emphasis\n        - StaticText \"Tailor Brands is also not a law firm, and the information on this website does not constitute legal advice.\"\n  - generic\n    - heading \"Products\" [level=6, ref=e9]\n    - generic\n      - link \"LLC services\" [ref=e22]\n      - LineBreak \"\\n\"\n      - link \"Registered agent\" [ref=e23]\n      - LineBreak \"\\n\"\n      - link \"EIN\" [ref=e24]\n      - LineBreak \"\\n\"\n      - link \"Licenses & permits\" [ref=e25]\n      - LineBreak \"\\n\"\n      - link \"Sales tax permit\" [ref=e26]\n      - LineBreak \"\\n\"\n      - link \"Business insurance\" [ref=e27]\n      - LineBreak \"\\n\"\n      - link \"Business banking\" [ref=e28]\n      - LineBreak \"\\n\"\n      - link \"Logo maker\" [ref=e29]\n      - LineBreak \"\\n\"\n      - link \"Domain\" [ref=e30]\n      - LineBreak \"\\n\"\n      - link \"Website\" [ref=e31]\n      - LineBreak \"\\n\"\n      - link \"Business email\" [ref=e32]\n      - LineBreak \"\\n\"\n      - link \"Taxes & accounting\" [ref=e33]\n      - LineBreak \"\\n\"\n      - link \"Invoices & bookkeeping\" [ref=e34]\n      - LineBreak \"\\n\"\n      - link \"Legal documents\" [ref=e35]\n      - LineBreak \"\\n\"\n      - link \"Trademark\" [ref=e36]\n      - LineBreak \"\\n\"\n      - link \"Business cards\" [ref=e37]\n      - LineBreak \"\\n\"\n      - link \"Digital business card\" [ref=e38]\n      - LineBreak \"\\n\"\n      - link \"Graphic design\" [ref=e39]\n      - LineBreak \"\\n\"\n      - link \"Print store\" [ref=e40]\n  - generic\n    - heading \"Resources\" [level=6, ref=e10]\n    - generic\n      - link \"Blog\" [ref=e41]\n      - LineBreak \"\\n\"\n      - link \"Help center\" [ref=e42]\n      - LineBreak \"\\n\"\n      - link \"Academy\" [ref=e43]\n      - LineBreak \"\\n\"\n      - link \"LLC by state\" [ref=e44]\n      - LineBreak \"\\n\"\n      - link \"Pricing\" [ref=e45]\n    - heading \"Company\" [level=6, ref=e11]\n    - generic\n      - link \"About\" [ref=e46]\n      - LineBreak \"\\n\"\n      - link \"Careers\" [ref=e47]\n      - LineBreak \"\\n\"\n      - link \"Affiliate program\" [ref=e48]\n      - LineBreak \"\\n\"\n      - link \"Partner with us\" [ref=e49]\n      - LineBreak \"\\n\"\n      - link \"Press\" [ref=e50]\n    - heading \"Learn\" [level=6, ref=e12]\n    - generic\n      - link \"What is an LLC\" [ref=e51]\n      - LineBreak \"\\n\"\n      - link \"LLC costs\" [ref=e52]\n      - LineBreak \"\\n\"\n      - link \"Types of LLC\" [ref=e53]\n      - LineBreak \"\\n\"\n      - link \"Start a business\" [ref=e54]\n  - generic\n    - list\n      - listitem [level=1]\n        - link \"Facebook\" [ref=e115]\n          - StaticText \"Facebook\"\n      - listitem [level=1]\n        - link \"Instagram\" [ref=e116]\n          - StaticText \"Instagram\"\n      - listitem [level=1]\n        - link \"Pinterest\" [ref=e117]\n          - StaticText \"Pinterest\"\n      - listitem [level=1]\n        - link \"Twitter\" [ref=e118]\n          - StaticText \"Twitter\"\n      - listitem [level=1]\n        - link \"YouTube\" [ref=e119]\n          - StaticText \"YouTube\"\n      - listitem [level=1]\n        - link \"TikTok\" [ref=e120]\n          - StaticText \"TikTok\"\n    - navigation \"Language Switcher\" [ref=e13]\n      - StaticText \"English\"\n  - StaticText \"©2026 Copyright Tailor Brands\"\n  - generic\n    - link \"TOS\" [ref=e181]\n    - link \"Privacy Policy\" [ref=e182]\n    - link \"Cookie Policy\" [ref=e183]\n    - link \"Do not sell my personal information\" [ref=e184]\n- dialog \"Dynamic panel\"\n- button \"Open Intercom Messenger\" [expanded=false, ref=e4]\n  - image",
+    "browserPageId": "df8c8e30-42cb-45dc-a562-bf569f1af20a"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

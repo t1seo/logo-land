@@ -1,0 +1,446 @@
+{
+  "id": "c2163d95-39de-487f-9961-ecf48c659620",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/",
+    "refs": {
+      "e1": {
+        "name": "Logo",
+        "role": "link"
+      },
+      "e10": {
+        "name": "01. Make a logo in minutes",
+        "role": "heading"
+      },
+      "e100": {
+        "name": "Types of Fonts: The Ultimate Guide to Fonts Styles",
+        "role": "link"
+      },
+      "e101": {
+        "name": "USING LOOKA",
+        "role": "link"
+      },
+      "e102": {
+        "name": "What is Looka and How Does it Work?",
+        "role": "link"
+      },
+      "e103": {
+        "name": "How to Design a Logo: A Step-by-Step Guide",
+        "role": "heading"
+      },
+      "e104": {
+        "name": "Brand Identity 101: How to Create a Unique Brand(+ FREE Worksheet!)",
+        "role": "heading"
+      },
+      "e105": {
+        "name": "How to Start a Small Business: A “You Can Do It” Guide",
+        "role": "heading"
+      },
+      "e106": {
+        "name": "60 Stunning Color Combinations to Elevate Your Next Project in 2025",
+        "role": "heading"
+      },
+      "e107": {
+        "name": "Types of Fonts: The Ultimate Guide to Fonts Styles",
+        "role": "heading"
+      },
+      "e108": {
+        "name": "What is Looka and How Does it Work?",
+        "role": "heading"
+      },
+      "e11": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e12": {
+        "name": "02. Bring your brand to life",
+        "role": "heading"
+      },
+      "e13": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e14": {
+        "name": "03. Market your business",
+        "role": "heading"
+      },
+      "e15": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Make a logo you'll be proud of",
+        "role": "heading"
+      },
+      "e17": {
+        "name": "Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Looka is your personal designer",
+        "role": "heading"
+      },
+      "e19": {
+        "name": "1. Logo designs",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "See how to bring your vision to life",
+        "role": "heading"
+      },
+      "e20": {
+        "name": "2. Logo files",
+        "role": "heading"
+      },
+      "e21": {
+        "name": "3. Brand kit",
+        "role": "heading"
+      },
+      "e22": {
+        "name": "4. Social media templates",
+        "role": "heading"
+      },
+      "e23": {
+        "name": "5. Business card designs",
+        "role": "heading"
+      },
+      "e24": {
+        "name": "6. Brand info",
+        "role": "heading"
+      },
+      "e25": {
+        "name": "",
+        "role": "link"
+      },
+      "e26": {
+        "name": "Turn your creative vision into a business and brand you'll love",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Cool brands designed with Looka",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "We’re here to help build your brand",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "Looka explainer video thumbnail",
+        "role": "link"
+      },
+      "e30": {
+        "name": "Contact us",
+        "role": "link"
+      },
+      "e31": {
+        "name": "Learn about design, branding & entrepreneurship",
+        "role": "heading"
+      },
+      "e32": {
+        "name": "Get started for free!",
+        "role": "heading"
+      },
+      "e33": {
+        "name": "Privacy",
+        "role": "link"
+      },
+      "e34": {
+        "name": "Terms",
+        "role": "link"
+      },
+      "e35": {
+        "name": "Cookie Policy",
+        "role": "link"
+      },
+      "e36": {
+        "name": "Site Map",
+        "role": "link"
+      },
+      "e37": {
+        "name": "Logo Maker",
+        "role": "link"
+      },
+      "e38": {
+        "name": "Brand Kit",
+        "role": "link"
+      },
+      "e39": {
+        "name": "How It Works",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Design your own beautiful brand",
+        "role": "heading"
+      },
+      "e40": {
+        "name": "Reviews",
+        "role": "link"
+      },
+      "e41": {
+        "name": "Logo Ideas",
+        "role": "link"
+      },
+      "e42": {
+        "name": "Blog",
+        "role": "link"
+      },
+      "e43": {
+        "name": "Log in",
+        "role": "link"
+      },
+      "e44": {
+        "name": "Sign up",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Start creating a logo by entering your company's name",
+        "role": "textbox"
+      },
+      "e46": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e47": {
+        "name": "Start creating a logo by entering your company's name",
+        "role": "textbox"
+      },
+      "e48": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e49": {
+        "name": "Start creating a logo by entering your company's name",
+        "role": "textbox"
+      },
+      "e5": {
+        "name": "Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot",
+        "role": "link"
+      },
+      "e50": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e51": {
+        "name": "live chat and email",
+        "role": "link"
+      },
+      "e52": {
+        "name": "Read the article",
+        "role": "link"
+      },
+      "e53": {
+        "name": "Read the article",
+        "role": "link"
+      },
+      "e54": {
+        "name": "Read the article",
+        "role": "link"
+      },
+      "e55": {
+        "name": "Read the article",
+        "role": "link"
+      },
+      "e56": {
+        "name": "Read the article",
+        "role": "link"
+      },
+      "e57": {
+        "name": "Read the article",
+        "role": "link"
+      },
+      "e58": {
+        "name": "AI logo generator",
+        "role": "link"
+      },
+      "e59": {
+        "name": "Start creating a logo by entering your company's name",
+        "role": "textbox"
+      },
+      "e6": {
+        "name": "",
+        "role": "link"
+      },
+      "e60": {
+        "name": "Get started",
+        "role": "button"
+      },
+      "e61": {
+        "name": "Logo Maker",
+        "role": "link"
+      },
+      "e62": {
+        "name": "AI Logo Generator",
+        "role": "link"
+      },
+      "e63": {
+        "name": "Brand Kit",
+        "role": "link"
+      },
+      "e64": {
+        "name": "Social Media Kit",
+        "role": "link"
+      },
+      "e65": {
+        "name": "Business Cards",
+        "role": "link"
+      },
+      "e66": {
+        "name": "How it works",
+        "role": "link"
+      },
+      "e67": {
+        "name": "Reviews",
+        "role": "link"
+      },
+      "e68": {
+        "name": "Business Name Generator",
+        "role": "link"
+      },
+      "e69": {
+        "name": "Blog",
+        "role": "link"
+      },
+      "e7": {
+        "name": "",
+        "role": "link"
+      },
+      "e70": {
+        "name": "Logo Ideas",
+        "role": "link"
+      },
+      "e71": {
+        "name": "Logo Colors",
+        "role": "link"
+      },
+      "e72": {
+        "name": "Logo Styles",
+        "role": "link"
+      },
+      "e73": {
+        "name": "Logo Wiki",
+        "role": "link"
+      },
+      "e74": {
+        "name": "Business Name Ideas",
+        "role": "link"
+      },
+      "e75": {
+        "name": "About",
+        "role": "link"
+      },
+      "e76": {
+        "name": "Press",
+        "role": "link"
+      },
+      "e77": {
+        "name": "Careers",
+        "role": "link"
+      },
+      "e78": {
+        "name": "Affiliates",
+        "role": "link"
+      },
+      "e79": {
+        "name": "Vulnerability Disclosure Program",
+        "role": "link"
+      },
+      "e8": {
+        "name": "",
+        "role": "link"
+      },
+      "e80": {
+        "name": "Help Center",
+        "role": "link"
+      },
+      "e81": {
+        "name": "Contact",
+        "role": "link"
+      },
+      "e82": {
+        "name": "support@looka.com",
+        "role": "link"
+      },
+      "e83": {
+        "name": "Facebook icon",
+        "role": "link"
+      },
+      "e84": {
+        "name": "Instagram icon",
+        "role": "link"
+      },
+      "e85": {
+        "name": "Linkedin icon",
+        "role": "link"
+      },
+      "e86": {
+        "name": "X icon",
+        "role": "link"
+      },
+      "e87": {
+        "name": "Dribbble icon",
+        "role": "link"
+      },
+      "e88": {
+        "name": "Pinterest icon",
+        "role": "link"
+      },
+      "e89": {
+        "name": "exclusive partner offers",
+        "role": "link"
+      },
+      "e9": {
+        "name": "The easiest way to design and launch your new business",
+        "role": "heading"
+      },
+      "e90": {
+        "name": "generate and customize business cards",
+        "role": "link"
+      },
+      "e91": {
+        "name": "LOGO DESIGN",
+        "role": "link"
+      },
+      "e92": {
+        "name": "How to Design a Logo: A Step-by-Step Guide",
+        "role": "link"
+      },
+      "e93": {
+        "name": "BRANDING",
+        "role": "link"
+      },
+      "e94": {
+        "name": "Brand Identity 101: How to Create a Unique Brand(+ FREE Worksheet!)",
+        "role": "link"
+      },
+      "e95": {
+        "name": "STARTING A BUSINESS",
+        "role": "link"
+      },
+      "e96": {
+        "name": "How to Start a Small Business: A “You Can Do It” Guide",
+        "role": "link"
+      },
+      "e97": {
+        "name": "GRAPHIC DESIGN",
+        "role": "link"
+      },
+      "e98": {
+        "name": "60 Stunning Color Combinations to Elevate Your Next Project in 2025",
+        "role": "link"
+      },
+      "e99": {
+        "name": "BRANDING",
+        "role": "link"
+      }
+    },
+    "snapshot": "- navigation\n  - link \"Logo\" [ref=e1]\n    - image \"Logo\"\n  - list\n    - listitem [level=1]\n      - link \"Logo Maker\" [ref=e37]\n    - listitem [level=1]\n      - link \"Brand Kit\" [ref=e38]\n    - listitem [level=1]\n      - link \"How It Works\" [ref=e39]\n    - listitem [level=1]\n      - link \"Reviews\" [ref=e40]\n    - listitem [level=1]\n      - link \"Logo Ideas\" [ref=e41]\n    - listitem [level=1]\n      - link \"Blog\" [ref=e42]\n  - list\n    - listitem [level=1]\n      - link \"Log in\" [ref=e43]\n    - listitem [level=1]\n      - link \"Sign up\" [ref=e44]\n- main\n  - sectionheader\n    - heading \"Design your own beautiful brand\" [level=1, ref=e4]\n    - paragraph\n      - StaticText \"Use Looka's AI-powered platform to design a logo and brand you love.\"\n    - form\n      - LabelText\n        - StaticText \"Start creating a logo by entering your company's name\"\n      - textbox \"Start creating a logo by entering your company's name\" [ref=e45]\n      - button \"Get started\" [ref=e46]\n    - link \"Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot\" [ref=e5]\n      - image \"Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot\"\n  - generic\n    - generic\n      - image \"Birdland Brand Identity\"\n      - image \"Mississippi Ricks Brand Identity\"\n      - image \"Glo Brand Identity\"\n    - link [ref=e6]\n    - link [ref=e7]\n    - link [ref=e8]\n  - list\n    - listitem [level=1]\n    - listitem [level=1]\n    - listitem [level=1]\n    - listitem [level=1]\n    - listitem [level=1]\n  - generic\n    - heading \"The easiest way to design and launch your new business\" [level=2, ref=e9]\n    - image \"Kardia brand identity creation process\"\n    - heading \"01.Make a logo in minutes\" [level=2, ref=e10]\n      - StaticText \"01.Make a logo in minutes\"\n    - paragraph\n      - StaticText \"Forget looking generic! Looka’s softwareis powered by AI to create a logo that matches your vision — no design skills required. Generate endless options, and tweak designs to get exactly what you want.\"\n    - button \"Get started\" [ref=e11]\n    - image \"Kardia brand identity business cards\"\n    - heading \"02.Bring your brand to life\" [level=2, ref=e12]\n      - StaticText \"02.Bring your brand to life\"\n    - paragraph\n      - StaticText \"With your logo design finalized, it’s time to start building your brand identity. Looka’s Brand Kit uses your logo, colors, and fonts to instantly create hundreds of branded marketing materials—all in one spot.\"\n    - button \"Get started\" [ref=e13]\n    - image \"Kardia brand identity on custom website\"\n    - heading \"03.Market your business\" [level=2, ref=e14]\n      - StaticText \"03.Market your business\"\n    - paragraph\n      - StaticText \"Choose from 300+ templates made to match your brand identity and industry. Customize the design of your brand’s business cards, social profiles, email signatures, and more in the Brand Kit’s easy-to-use editor.\"\n    - button \"Get started\" [ref=e15]\n  - heading \"Make a logo you'll be proud of\" [level=2, ref=e16]\n  - form\n    - LabelText\n      - StaticText \"Start creating a logo by entering your company's name\"\n    - textbox \"Start creating a logo by entering your company's name\" [ref=e47]\n    - button \"Get started\" [ref=e48]\n  - link \"Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot\" [ref=e17]\n    - image \"Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot\"\n  - generic\n    - heading \"Looka is your personal designer\" [level=2, ref=e18]\n    - paragraph\n      - StaticText \"Looka gives you everything you need to launch your brand and look great from day one. The best part? Artificial intelligence does the heavy graphic design lifting, you have the creative control.\"\n    - image \"shirt icon\"\n    - heading \"1. Logo designs\" [level=2, ref=e19]\n    - list\n      - listitem [level=1]\n        - StaticText \"Instantly generate 100s of custom logo mockups\"\n      - listitem [level=1]\n        - StaticText \"Change colors, symbols, sizing, and more with Looka’s easy-to-use editor\"\n      - listitem [level=1]\n        - StaticText \"See your logo on T-shirts, pens, and other real-life mockups\"\n    - image \"folder icon\"\n    - heading \"2. Logo files\" [level=2, ref=e20]\n    - list\n      - listitem [level=1]\n        - StaticText \"Get 15+ logo files you can use across all mediums\"\n      - listitem [level=1]\n        - StaticText \"High-res file types include SVG, PNG, EPS & PDF\"\n      - listitem [level=1]\n        - StaticText \"Black & white, color, and transparent background variations\"\n    - image \"Palette Icon in Orange\"\n    - heading \"3. Brand kit\" [level=2, ref=e21]\n    - list\n      - listitem [level=1]\n        - StaticText \"Grow your business with professional-quality marketing materials\"\n      - listitem [level=1]\n        - StaticText \"300+ branded templates personalized to your logo’s design—including invoices, flyers, and email signatures\"\n      - listitem [level=1]\n        - StaticText \"Get access to over $3,000 in \"\n        - link \"exclusive partner offers\" [ref=e89]\n        - StaticText \" to accelerate every part of your business\"\n    - image \"social icon\"\n    - heading \"4. Social media templates\" [level=2, ref=e22]\n    - list\n      - listitem [level=1]\n        - StaticText \"Looka’s Brand Kit provides ready-to-go versions of your logo for social media\"\n      - listitem [level=1]\n        - StaticText \"Customize your profile and cover photos for YouTube, Twitter, Facebook, and more\"\n      - listitem [level=1]\n        - StaticText \"Design perfectly-sized posts and stories to use across platforms\"\n    - image \"business card icon\"\n    - heading \"5. Business card designs\" [level=2, ref=e23]\n    - list\n      - listitem [level=1]\n        - StaticText \"Use the Brand Kit to \"\n        - link \"generate and customize business cards\" [ref=e90]\n      - listitem [level=1]\n        - StaticText \"20 professional-quality design templates as your starting point\"\n      - listitem [level=1]\n        - StaticText \"Quickly send your files to any local or on-demand printing service\"\n    - image \"file icon\"\n    - heading \"6. Brand info\" [level=2, ref=e24]\n    - list\n      - listitem [level=1]\n        - StaticText \"A “Getting Started” guide shows your logo’s fonts and colors\"\n      - listitem [level=1]\n        - StaticText \"Find out the best uses for your different logo file types\"\n      - listitem [level=1]\n        - StaticText \"Build a consistent and memorable brand across mediums\"\n  - heading \"See how to bring your vision to life\" [level=2, ref=e2]\n  - link \"Looka explainer video thumbnail\" [ref=e3]\n    - image \"Looka explainer video thumbnail\"\n  - generic\n    - link [ref=e25]\n      - image\n  - heading \"Turn your creative vision into a business and brand you'll love\" [level=2, ref=e26]\n  - form\n    - LabelText\n      - StaticText \"Start creating a logo by entering your company's name\"\n    - textbox \"Start creating a logo by entering your company's name\" [ref=e49]\n    - button \"Get started\" [ref=e50]\n  - link \"Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot\" [ref=e27]\n    - image \"Looka is rated 5 out of 5 stars based on 7,000+ reviews on Trustpilot\"\n  - generic\n    - heading \"Cool brands designed with Looka\" [level=2, ref=e28]\n    - image \"Spoon and Fork Branding\"\n    - paragraph\n      - StaticText \"Spoon & Fork\"\n    - paragraph\n      - StaticText \"New York, USA\"\n    - image \"Vivox Compressed\"\n    - paragraph\n      - StaticText \"Vivox\"\n    - paragraph\n      - StaticText \"Paris, France\"\n    - image \"Gravity Wave Branding\"\n    - paragraph\n      - StaticText \"Gravity Wave\"\n    - paragraph\n      - StaticText \"Sydney, Australia\"\n    - image \"Spacebox Branding\"\n    - paragraph\n      - StaticText \"Spacebox\"\n    - paragraph\n      - StaticText \"Zurich, Switzerland\"\n    - image \"Altessa brand identity logo design\"\n    - paragraph\n      - StaticText \"Altessa\"\n    - paragraph\n      - StaticText \"Munich, Germany\"\n    - image \"Shadow Box Branding\"\n    - paragraph\n      - StaticText \"Shadow Box\"\n    - paragraph\n      - StaticText \"Toronto, Canada\"\n  - generic\n    - heading \"We’re here to help build your brand\" [level=2, ref=e29]\n    - paragraph\n      - StaticText \"Looka’s fun and friendly in-house customer success team is available via \"\n      - link \"live chat and email\" [ref=e51]\n      - StaticText \" to answer all your questions. Get help accessing files, tweaking your logo designs, and more!\"\n    - image \"CS Team Photo\"\n  - link \"Contact us\" [ref=e30]\n  - generic\n    - heading \"Learn about design, branding & entrepreneurship\" [level=2, ref=e31]\n    - article\n      - link \"Read the article\" [ref=e52]\n      - generic\n        - link \"LOGO DESIGN\" [ref=e91]\n        - link \"How to Design a Logo: A Step-by-Step Guide\" [ref=e92]\n          - heading \"How to Design a Logo: A Step-by-Step Guide\" [level=3, ref=e103]\n    - article\n      - link \"Read the article\" [ref=e53]\n      - generic\n        - link \"BRANDING\" [ref=e93]\n        - link \"Brand Identity 101: How to Create a Unique Brand(+ FREE Worksheet!)\" [ref=e94]\n          - heading \"Brand Identity 101: How to Create a Unique Brand(+ FREE Worksheet!)\" [level=3, ref=e104]\n    - article\n      - link \"Read the article\" [ref=e54]\n      - generic\n        - link \"STARTING A BUSINESS\" [ref=e95]\n        - link \"How to Start a Small Business: A “You Can Do It” Guide\" [ref=e96]\n          - heading \"How to Start a Small Business: A “You Can Do It” Guide\" [level=3, ref=e105]\n    - article\n      - link \"Read the article\" [ref=e55]\n      - generic\n        - link \"GRAPHIC DESIGN\" [ref=e97]\n        - link \"60 Stunning Color Combinations to Elevate Your Next Project in 2025\" [ref=e98]\n          - heading \"60 Stunning Color Combinations to Elevate Your Next Project in 2025\" [level=3, ref=e106]\n    - article\n      - link \"Read the article\" [ref=e56]\n      - generic\n        - link \"BRANDING\" [ref=e99]\n        - link \"Types of Fonts: The Ultimate Guide to Fonts Styles\" [ref=e100]\n          - heading \"Types of Fonts: The Ultimate Guide to Fonts Styles\" [level=3, ref=e107]\n    - article\n      - link \"Read the article\" [ref=e57]\n      - generic\n        - link \"USING LOOKA\" [ref=e101]\n        - link \"What is Looka and How Does it Work?\" [ref=e102]\n          - heading \"What is Looka and How Does it Work?\" [level=3, ref=e108]\n  - heading \"Get started for free!\" [level=2, ref=e32]\n  - paragraph\n    - StaticText \"Use Looka's \"\n    - link \"AI logo generator\" [ref=e58]\n    - StaticText \" to make a logo, design a website, and build a brand you love.\"\n  - form\n    - LabelText\n      - StaticText \"Start creating a logo by entering your company's name\"\n    - textbox \"Start creating a logo by entering your company's name\" [ref=e59]\n    - button \"Get started\" [ref=e60]\n- contentinfo\n  - paragraph\n    - StaticText \"Products\"\n  - list\n    - listitem [level=1]\n      - link \"Logo Maker\" [ref=e61]\n    - listitem [level=1]\n      - link \"AI Logo Generator\" [ref=e62]\n    - listitem [level=1]\n      - link \"Brand Kit\" [ref=e63]\n    - listitem [level=1]\n      - link \"Social Media Kit\" [ref=e64]\n    - listitem [level=1]\n      - link \"Business Cards\" [ref=e65]\n    - listitem [level=1]\n      - link \"How it works\" [ref=e66]\n    - listitem [level=1]\n      - link \"Reviews\" [ref=e67]\n    - listitem [level=1]\n      - link \"Business Name Generator\" [ref=e68]\n  - paragraph\n    - StaticText \"Inspiration\"\n  - list\n    - listitem [level=1]\n      - link \"Blog\" [ref=e69]\n    - listitem [level=1]\n      - link \"Logo Ideas\" [ref=e70]\n    - listitem [level=1]\n      - link \"Logo Colors\" [ref=e71]\n    - listitem [level=1]\n      - link \"Logo Styles\" [ref=e72]\n    - listitem [level=1]\n      - link \"Logo Wiki\" [ref=e73]\n    - listitem [level=1]\n      - link \"Business Name Ideas\" [ref=e74]\n  - paragraph\n    - StaticText \"Company\"\n  - list\n    - listitem [level=1]\n      - link \"About\" [ref=e75]\n    - listitem [level=1]\n      - link \"Press\" [ref=e76]\n    - listitem [level=1]\n      - link \"Careers\" [ref=e77]\n    - listitem [level=1]\n      - link \"Affiliates\" [ref=e78]\n    - listitem [level=1]\n      - link \"Vulnerability Disclosure Program\" [ref=e79]\n  - paragraph\n    - StaticText \"Support\"\n  - list\n    - listitem [level=1]\n      - link \"Help Center\" [ref=e80]\n    - listitem [level=1]\n      - link \"Contact\" [ref=e81]\n    - listitem [level=1]\n      - link \"support@looka.com\" [ref=e82]\n  - list\n    - listitem [level=1]\n      - link \"Facebook icon\" [ref=e83]\n        - image \"Facebook icon\"\n    - listitem [level=1]\n      - link \"Instagram icon\" [ref=e84]\n        - image \"Instagram icon\"\n    - listitem [level=1]\n      - link \"Linkedin icon\" [ref=e85]\n        - image \"Linkedin icon\"\n    - listitem [level=1]\n      - link \"X icon\" [ref=e86]\n        - image \"X icon\"\n    - listitem [level=1]\n      - link \"Dribbble icon\" [ref=e87]\n        - image \"Dribbble icon\"\n    - listitem [level=1]\n      - link \"Pinterest icon\" [ref=e88]\n        - image \"Pinterest icon\"\n  - paragraph\n    - StaticText \"© 2026 Looka Inc. \"\n    - link \"Privacy\" [ref=e33]\n    - StaticText \" / \"\n    - link \"Terms\" [ref=e34]\n    - StaticText \" / \"\n    - link \"Cookie Policy\" [ref=e35]\n    - StaticText \" / \"\n    - link \"Site Map\" [ref=e36]",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

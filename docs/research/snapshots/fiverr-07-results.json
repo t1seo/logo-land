@@ -1,0 +1,310 @@
+{
+  "id": "748a7167-15f4-4e44-a5fd-8f0bbb8399c9",
+  "ok": true,
+  "result": {
+    "origin": "https://www.fiverr.com/logo-maker/listing/c7d289b3-2021-4e32-a862-b3d497224144?refCtxId=551d4a3562b84f42a919de9fc2df374f",
+    "refs": {
+      "e1": {
+        "name": "Quick Accessibility Options",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e11": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e12": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e13": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e14": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e19": {
+        "name": "Create a new account",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Skip to main content",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Continue with Google",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Continue with Apple",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Continue with Facebook",
+        "role": "button"
+      },
+      "e23": {
+        "name": "Choose and customize your favorite logo",
+        "role": "heading"
+      },
+      "e24": {
+        "name": "",
+        "role": "button"
+      },
+      "e25": {
+        "name": "",
+        "role": "generic"
+      },
+      "e26": {
+        "name": "",
+        "role": "button"
+      },
+      "e27": {
+        "name": "",
+        "role": "generic"
+      },
+      "e28": {
+        "name": "",
+        "role": "button"
+      },
+      "e29": {
+        "name": "",
+        "role": "generic"
+      },
+      "e3": {
+        "name": "Enable accessibility for low vision",
+        "role": "button"
+      },
+      "e30": {
+        "name": "",
+        "role": "button"
+      },
+      "e31": {
+        "name": "",
+        "role": "generic"
+      },
+      "e32": {
+        "name": "",
+        "role": "button"
+      },
+      "e33": {
+        "name": "",
+        "role": "generic"
+      },
+      "e34": {
+        "name": "",
+        "role": "button"
+      },
+      "e35": {
+        "name": "",
+        "role": "generic"
+      },
+      "e36": {
+        "name": "",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "generic"
+      },
+      "e38": {
+        "name": "",
+        "role": "button"
+      },
+      "e39": {
+        "name": "",
+        "role": "generic"
+      },
+      "e4": {
+        "name": "Open the accessibility menu",
+        "role": "button"
+      },
+      "e40": {
+        "name": "",
+        "role": "button"
+      },
+      "e41": {
+        "name": "",
+        "role": "generic"
+      },
+      "e42": {
+        "name": "",
+        "role": "button"
+      },
+      "e43": {
+        "name": "",
+        "role": "generic"
+      },
+      "e44": {
+        "name": "",
+        "role": "button"
+      },
+      "e45": {
+        "name": "",
+        "role": "generic"
+      },
+      "e46": {
+        "name": "",
+        "role": "button"
+      },
+      "e47": {
+        "name": "",
+        "role": "generic"
+      },
+      "e48": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e50": {
+        "name": "$ USD",
+        "role": "button"
+      },
+      "e51": {
+        "name": "Open accessibility menu",
+        "role": "button"
+      },
+      "e52": {
+        "name": "",
+        "role": "generic"
+      },
+      "e53": {
+        "name": "",
+        "role": "generic"
+      },
+      "e54": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e55": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e56": {
+        "name": "Go to Fiverr",
+        "role": "link"
+      },
+      "e57": {
+        "name": "Sign in",
+        "role": "link"
+      },
+      "e58": {
+        "name": "Join",
+        "role": "link"
+      },
+      "e59": {
+        "name": "",
+        "role": "link"
+      },
+      "e6": {
+        "name": "",
+        "role": "link"
+      },
+      "e60": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e61": {
+        "name": "Join Fiverr",
+        "role": "button"
+      },
+      "e62": {
+        "name": "Sign in",
+        "role": "button"
+      },
+      "e63": {
+        "name": "Fiverr on TikTok",
+        "role": "link"
+      },
+      "e64": {
+        "name": "Fiverr on Instagram",
+        "role": "link"
+      },
+      "e65": {
+        "name": "Fiverr on LinkedIn",
+        "role": "link"
+      },
+      "e66": {
+        "name": "Fiverr on Facebook",
+        "role": "link"
+      },
+      "e67": {
+        "name": "Fiverr on Pinterest",
+        "role": "link"
+      },
+      "e68": {
+        "name": "Fiverr on Twitter",
+        "role": "link"
+      },
+      "e69": {
+        "name": "Testimonials",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e70": {
+        "name": "Tutorials",
+        "role": "link"
+      },
+      "e71": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e72": {
+        "name": "Brand Name",
+        "role": "textbox"
+      },
+      "e73": {
+        "name": "Slogan",
+        "role": "textbox"
+      },
+      "e74": {
+        "name": "Success starts here",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "Watermark",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Watermark",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - region \"Quick Accessibility Options\" [ref=e1]\n    - button \"Skip to main content\" [ref=e2]\n      - StaticText \"Skip to main content\"\n    - button \"Enable accessibility for low vision\" [ref=e3]\n      - StaticText \"Enable accessibility for low vision\"\n    - button \"Open the accessibility menu\" [ref=e4]\n      - StaticText \"Open the accessibility menu\"\n  - generic\n    - banner\n      - link [ref=e6]\n        - image\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Go to Fiverr\" [ref=e56]\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Sign in\" [ref=e57]\n          - listitem [level=1]\n            - link \"Join\" [ref=e58]\n    - generic\n      - dialog\n        - banner\n          - link [ref=e59]\n            - image\n          - button \"Close\" [ref=e60]\n            - image\n        - StaticText \"Explore\"\n        - image\n        - link \"Testimonials\" [ref=e69]\n          - StaticText \"Testimonials\"\n        - link \"Tutorials\" [ref=e70]\n          - StaticText \"Tutorials\"\n        - link \"Pricing\" [ref=e71]\n          - StaticText \"Pricing\"\n        - StaticText \"$\"\n        - StaticText \"USD\"\n        - image\n        - StaticText \"Company\"\n        - image\n        - contentinfo\n          - button \"Join Fiverr\" [ref=e61]\n          - button \"Sign in\" [ref=e62]\n      - banner\n        - heading \"Choose and customize your favorite logo\" [level=3, ref=e23]\n        - StaticText \"Buy your logo as is, or customize colors, layout, and texts to get exactly what you need.\"\n      - LabelText\n        - StaticText \"Brand Name\"\n        - textbox \"Brand Name\" [ref=e72]: Morrow Studio\n          - StaticText \"Morrow Studio\"\n      - LabelText\n        - StaticText \"Slogan\"\n        - textbox \"Slogan\" [ref=e73]\n      - link \"Watermark\" [ref=e7]\n        - button [ref=e24]\n          - image\n        - generic [ref=e25] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"tariklogodesign\"\n        - Figcaption\n          - StaticText \"T\"\n        - image \"tariklogodesign\"\n      - StaticText \"Designed by\"\n      - StaticText \"tariklogodesign\"\n      - generic\n        - StaticText \"8Variations\"\n      - link \"Watermark\" [ref=e8]\n        - button [ref=e26]\n          - image\n        - generic [ref=e27] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"umuarus\"\n        - Figcaption\n          - StaticText \"U\"\n        - image \"umuarus\"\n      - StaticText \"Designed by\"\n      - StaticText \"umuarus\"\n      - generic\n        - StaticText \"12Variations\"\n      - link \"Watermark\" [ref=e9]\n        - button [ref=e28]\n          - image\n        - generic [ref=e29] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"mat_iny\"\n        - Figcaption\n          - StaticText \"M\"\n        - image \"mat_iny\"\n      - StaticText \"Designed by\"\n      - StaticText \"mat_iny\"\n      - generic\n        - StaticText \"8Variations\"\n      - link \"Watermark\" [ref=e10]\n        - button [ref=e30]\n          - image\n        - generic [ref=e31] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"lw_studios\"\n        - Figcaption\n          - StaticText \"L\"\n        - image \"lw_studios\"\n      - StaticText \"Designed by\"\n      - StaticText \"lw_studios\"\n      - generic\n        - StaticText \"6Variations\"\n      - link \"Watermark\" [ref=e11]\n        - button [ref=e32]\n          - image\n        - generic [ref=e33] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"anatomyoflogos\"\n        - Figcaption\n          - StaticText \"A\"\n        - image \"anatomyoflogos\"\n      - StaticText \"Designed by\"\n      - StaticText \"anatomyoflogos\"\n      - generic\n        - StaticText \"3Variations\"\n      - link \"Watermark\" [ref=e12]\n        - button [ref=e34]\n          - image\n        - generic [ref=e35] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"umuarus\"\n        - Figcaption\n          - StaticText \"U\"\n        - image \"umuarus\"\n      - StaticText \"Designed by\"\n      - StaticText \"umuarus\"\n      - generic\n        - StaticText \"13Variations\"\n      - link \"Watermark\" [ref=e13]\n        - button [ref=e36]\n          - image\n        - generic [ref=e37] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"shamlirotem\"\n        - Figcaption\n          - StaticText \"S\"\n        - image \"shamlirotem\"\n      - StaticText \"Designed by\"\n      - StaticText \"shamlirotem\"\n      - generic\n        - StaticText \"19Variations\"\n      - link \"Watermark\" [ref=e14]\n        - button [ref=e38]\n          - image\n        - generic [ref=e39] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"eladcohen111\"\n        - Figcaption\n          - StaticText \"E\"\n        - image \"eladcohen111\"\n      - StaticText \"Designed by\"\n      - StaticText \"eladcohen111\"\n      - generic\n        - StaticText \"8Variations\"\n      - link \"Watermark\" [ref=e15]\n        - button [ref=e40]\n          - image\n        - generic [ref=e41] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"deoxrastudio\"\n        - Figcaption\n          - StaticText \"D\"\n        - image \"deoxrastudio\"\n      - StaticText \"Designed by\"\n      - StaticText \"deoxrastudio\"\n      - generic\n        - StaticText \"90Variations\"\n      - link \"Watermark\" [ref=e16]\n        - button [ref=e42]\n          - image\n        - generic [ref=e43] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"umuarus\"\n        - Figcaption\n          - StaticText \"U\"\n        - image \"umuarus\"\n      - StaticText \"Designed by\"\n      - StaticText \"umuarus\"\n      - generic\n        - StaticText \"12Variations\"\n      - link \"Watermark\" [ref=e17]\n        - button [ref=e44]\n          - image\n        - generic [ref=e45] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"luhisan\"\n        - Figcaption\n          - StaticText \"L\"\n        - image \"luhisan\"\n      - StaticText \"Designed by\"\n      - StaticText \"luhisan\"\n      - generic\n        - StaticText \"5Variations\"\n      - link \"Watermark\" [ref=e18]\n        - button [ref=e46]\n          - image\n        - generic [ref=e47] clickable [cursor:pointer, onclick]\n          - image \"Watermark\"\n          - image\n      - figure \"umuarus\"\n        - Figcaption\n          - StaticText \"U\"\n        - image \"umuarus\"\n      - StaticText \"Designed by\"\n      - StaticText \"umuarus\"\n      - generic\n        - StaticText \"15Variations\"\n      - contentinfo\n        - image\n    - generic\n      - contentinfo\n        - image\n        - paragraph\n          - link \"Privacy Policy\" [ref=e48]\n          - StaticText \" | \"\n          - link \"Terms of Service\" [ref=e49]\n        - paragraph\n          - StaticText \"© Fiverr International Ltd. 2026\"\n        - list\n          - listitem [level=1]\n            - link \"Fiverr on TikTok\" [ref=e63]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Instagram\" [ref=e64]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on LinkedIn\" [ref=e65]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Facebook\" [ref=e66]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Pinterest\" [ref=e67]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Twitter\" [ref=e68]\n              - image\n        - generic\n          - button \"$ USD\" [ref=e50]\n          - button \"Open accessibility menu\" [ref=e51]\n            - image\n  - generic\n    - generic [ref=e5] clickable [onclick]\n    - dialog\n      - generic\n        - generic\n          - heading \"Success starts here\" [level=2, ref=e74]\n          - list\n            - listitem [level=1]\n              - image\n              - paragraph\n                - StaticText \"Over 700 categories\"\n            - listitem [level=1]\n              - image\n              - paragraph\n                - StaticText \"Quality work done faster\"\n            - listitem [level=1]\n              - image\n              - paragraph\n                - StaticText \"Access to talent and businesses across the globe\"\n        - image \"Setup illustration banner\"\n      - heading \"Create a new account\" [level=1, ref=e19]\n        - StaticText \"Create a new account\"\n      - paragraph\n        - StaticText \"Already have an account? \"\n        - generic [ref=e52] clickable [cursor:pointer, onclick]\n          - StaticText \"Sign in\"\n      - button \"Continue with Google\" [ref=e20]\n        - image\n        - paragraph\n          - StaticText \"Continue with Google\"\n      - button \"Continue with Apple\" [ref=e21]\n        - image\n        - paragraph\n          - StaticText \"Continue with Apple\"\n      - button \"Continue with Facebook\" [ref=e22]\n        - image\n        - paragraph\n          - StaticText \"Continue with Facebook\"\n      - paragraph\n        - StaticText \"Or \"\n        - generic [ref=e53] clickable [cursor:pointer, onclick]\n          - StaticText \"sign up using email\"\n      - paragraph\n        - StaticText \"Additional verification may be required at a later stage\"\n      - paragraph\n        - StaticText \"By joining, you agree to the Fiverr \"\n        - link \"Terms of Service\" [ref=e54]\n        - StaticText \" and to occasionally receive emails from us. Please read our \"\n        - link \"Privacy Policy\" [ref=e55]\n        - StaticText \" to learn how we use your personal data.\"\n  - generic",
+    "browserPageId": "187b995b-1439-4f7b-a530-bb33be18f680"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "ae909bb3-66bf-45fd-a093-c69ae56ab2e9",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/design-type?profileStepId=766286286",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Name Based Your company name as a key element of your logo design.",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Initial Based Initials as the main element of your logo design.",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Skip",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e15": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "en",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Icon Based An easy to remember shape in the center of your logo design.",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Style \" [ref=e6]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e7]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e8]\n        - StaticText \"en\"\n      - generic\n        - StaticText \"Choose Logo Type\"\n        - StaticText \"You can only select one logo type\"\n        - button \"Icon Based An easy to remember shape in the center of your logo design.\" [ref=e9]\n          - StaticText \"Icon Based\"\n          - generic\n            - StaticText \"An easy to remember\"\n            - LineBreak \"\\n\"\n            - StaticText \"shape in the center\"\n            - LineBreak \"\\n\"\n            - StaticText \"of your logo design.\"\n        - button \"Name Based Your company name as a key element of your logo design.\" [ref=e10]\n          - StaticText \"Name Based\"\n          - generic\n            - StaticText \"Your company name\"\n            - LineBreak \"\\n\"\n            - StaticText \"as a key element of your\"\n            - LineBreak \"\\n\"\n            - StaticText \"logo design.\"\n        - button \"Initial Based Initials as the main element of your logo design.\" [ref=e11]\n          - StaticText \"Initial Based\"\n          - generic\n            - StaticText \"Initials as the main\"\n            - LineBreak \"\\n\"\n            - StaticText \"element of your\"\n            - LineBreak \"\\n\"\n            - StaticText \"logo design.\"\n        - button \"Back\" [ref=e12]\n          - StaticText \"Back\"\n        - button \"Skip\" [ref=e13]\n          - StaticText \"Skip\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e14]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e15]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

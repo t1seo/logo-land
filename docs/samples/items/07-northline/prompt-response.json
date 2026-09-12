@@ -1,0 +1,9 @@
+{
+  "mode": "generation",
+  "session_id": "sample-07-northline",
+  "revision": 0,
+  "prompt": "Create one lettermark logo for NORTHLINE. Industry: 아웃도어 장비. Audience: 가벼운 하이킹을 즐기는 사람.\nExact text (copy verbatim, no other words): 'NL'. Exact slogan: ''.\nStyles: 명확한 NL 레터마크, flat, clear silhouette. Palette: 네이비, 백색.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A confident utilitarian NL lettermark, two distinct readable uppercase N and L side by side, geometric sans-serif letterforms, one tiny ascending cut integrated into the N, no mountain drawing, navy ink on solid cool off-white. Understated precision, strong silhouette, no extra text.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null
+}

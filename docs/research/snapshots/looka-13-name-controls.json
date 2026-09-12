@@ -1,0 +1,570 @@
+{
+  "id": "712b4014-f801-4b8a-a54e-379d933d3a65",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/editor/235865665",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "generic"
+      },
+      "e10": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e100": {
+        "name": "Your Saved Logos",
+        "role": "heading"
+      },
+      "e101": {
+        "name": "View all",
+        "role": "button"
+      },
+      "e102": {
+        "name": "Facebook",
+        "role": "heading"
+      },
+      "e103": {
+        "name": "Messenger",
+        "role": "heading"
+      },
+      "e104": {
+        "name": "Twitter (X)",
+        "role": "heading"
+      },
+      "e105": {
+        "name": "Email",
+        "role": "heading"
+      },
+      "e106": {
+        "name": "LinkedIn",
+        "role": "heading"
+      },
+      "e107": {
+        "name": "",
+        "role": "generic"
+      },
+      "e108": {
+        "name": "Logos",
+        "role": "heading"
+      },
+      "e109": {
+        "name": "Saved logos",
+        "role": "link"
+      },
+      "e11": {
+        "name": "Sign Up",
+        "role": "button"
+      },
+      "e110": {
+        "name": "Logo Generator",
+        "role": "link"
+      },
+      "e111": {
+        "name": "Upload New Logo",
+        "role": "link"
+      },
+      "e112": {
+        "name": "Account",
+        "role": "link"
+      },
+      "e113": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e114": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e115": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e116": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e117": {
+        "name": "Email",
+        "role": "textbox"
+      },
+      "e118": {
+        "name": "Password",
+        "role": "textbox"
+      },
+      "e119": {
+        "name": "Create Account",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e120": {
+        "name": "Browse unique logos generated just for you. No templates here.",
+        "role": "heading"
+      },
+      "e121": {
+        "name": "Customize your logo with 100s of font, layout, and color options.",
+        "role": "heading"
+      },
+      "e122": {
+        "name": "Get 300+ branded assets from social media posts to flyers.",
+        "role": "heading"
+      },
+      "e123": {
+        "name": "Email",
+        "role": "textbox"
+      },
+      "e124": {
+        "name": "Password",
+        "role": "textbox"
+      },
+      "e125": {
+        "name": "Sign up",
+        "role": "button"
+      },
+      "e126": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e127": {
+        "name": "Stack",
+        "role": "button"
+      },
+      "e128": {
+        "name": "",
+        "role": "generic"
+      },
+      "e129": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "menu",
+        "role": "button"
+      },
+      "e130": {
+        "name": "",
+        "role": "generic"
+      },
+      "e131": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e132": {
+        "name": "Buy",
+        "role": "link"
+      },
+      "e133": {
+        "name": "Help / Contact",
+        "role": "link"
+      },
+      "e134": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e135": {
+        "name": "Privacy",
+        "role": "link"
+      },
+      "e136": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e137": {
+        "name": "",
+        "role": "generic"
+      },
+      "e138": {
+        "name": "",
+        "role": "textbox"
+      },
+      "e139": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Suggested",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Layout",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Palette",
+        "role": "button"
+      },
+      "e18": {
+        "name": "More Ideas",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Background",
+        "role": "button"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "Name",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Slogan",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Symbol",
+        "role": "button"
+      },
+      "e23": {
+        "name": "Container",
+        "role": "button"
+      },
+      "e24": {
+        "name": "History",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Your Logos",
+        "role": "button"
+      },
+      "e26": {
+        "name": "",
+        "role": "generic"
+      },
+      "e27": {
+        "name": "Brand Essentials",
+        "role": "heading"
+      },
+      "e28": {
+        "name": "100+ branded and customizable designs included in your Brand Kit subscription",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "+14 Logo Files",
+        "role": "link"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e30": {
+        "name": "Social Profiles 20 branded designs",
+        "role": "link"
+      },
+      "e31": {
+        "name": "WE ARE OPEN FOR BUSINESS! Social Covers 55 branded designs",
+        "role": "link"
+      },
+      "e32": {
+        "name": "Business Cards 19 branded designs",
+        "role": "link"
+      },
+      "e33": {
+        "name": "Email Signatures 8 branded designs",
+        "role": "link"
+      },
+      "e34": {
+        "name": "Letterheads 10 branded designs",
+        "role": "link"
+      },
+      "e35": {
+        "name": "Brand Guidelines 10 branded designs",
+        "role": "link"
+      },
+      "e36": {
+        "name": "Website of templates",
+        "role": "link"
+      },
+      "e37": {
+        "name": "Your Color Palette",
+        "role": "heading"
+      },
+      "e38": {
+        "name": "These are based on your logo colors. You can change these later.",
+        "role": "heading"
+      },
+      "e39": {
+        "name": "Digital Marketing Essentials",
+        "role": "heading"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "100+ branded and customizable designs included in your Brand Kit subscription",
+        "role": "heading"
+      },
+      "e41": {
+        "name": "LAUNCH SALE! Social Posts 57 branded designs",
+        "role": "link"
+      },
+      "e42": {
+        "name": "We are offering 20 percent off our services. > BOOK NOW Social Stories 10 branded designs",
+        "role": "link"
+      },
+      "e43": {
+        "name": "GREAT SERVICES. GREAT PRICES. THAT’S OUR PROMISE. VISIT US Advertisements 63 branded designs",
+        "role": "link"
+      },
+      "e44": {
+        "name": "To our new friends ALL ABOUT US. We’re quite design savvy! Blog Banners 11 branded designs",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Marketing Essentials",
+        "role": "heading"
+      },
+      "e46": {
+        "name": "100+ branded and customizable designs included in your Brand Kit subscription",
+        "role": "heading"
+      },
+      "e47": {
+        "name": "Invoices 10 branded designs",
+        "role": "link"
+      },
+      "e48": {
+        "name": "LAUNCH SALE 20% OFF! Posters 10 branded designs",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Flyers 10 branded designs",
+        "role": "link"
+      },
+      "e5": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e50": {
+        "name": "OUR COMPANY MISSION Presentations 5 branded designs",
+        "role": "link"
+      },
+      "e51": {
+        "name": "WE'RE YOUR NEW NEIGHBOUR Cards 10 branded designs",
+        "role": "link"
+      },
+      "e52": {
+        "name": "LAUNCH SALE 20% OFF! Proposals 5 branded designs",
+        "role": "link"
+      },
+      "e53": {
+        "name": "THE UPDATE Newsletters 5 branded designs",
+        "role": "link"
+      },
+      "e54": {
+        "name": "About Our Company Brochures 10 branded designs",
+        "role": "link"
+      },
+      "e55": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e56": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e57": {
+        "name": "Share your logo",
+        "role": "heading"
+      },
+      "e58": {
+        "name": "Share your logo on Facebook Facebook",
+        "role": "button"
+      },
+      "e59": {
+        "name": "Share your logo on Facebook Messenger",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e60": {
+        "name": "Share your logo on X Twitter (X)",
+        "role": "button"
+      },
+      "e61": {
+        "name": "Share your logo over email Email",
+        "role": "button"
+      },
+      "e62": {
+        "name": "Share your logo on LinkedIn LinkedIn",
+        "role": "button"
+      },
+      "e63": {
+        "name": "Copy Link",
+        "role": "textbox"
+      },
+      "e64": {
+        "name": "Copy Link",
+        "role": "button"
+      },
+      "e65": {
+        "name": "Visit page (opens in new tab)",
+        "role": "link"
+      },
+      "e66": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e67": {
+        "name": "Sign up",
+        "role": "heading"
+      },
+      "e68": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e69": {
+        "name": "Sign up to access your logo file",
+        "role": "heading"
+      },
+      "e7": {
+        "name": "Saved Logos",
+        "role": "button"
+      },
+      "e70": {
+        "name": "",
+        "role": "button"
+      },
+      "e71": {
+        "name": "",
+        "role": "generic"
+      },
+      "e72": {
+        "name": "",
+        "role": "generic"
+      },
+      "e73": {
+        "name": "Name Options",
+        "role": "heading"
+      },
+      "e74": {
+        "name": "Fullscreen",
+        "role": "button"
+      },
+      "e75": {
+        "name": "Font Types",
+        "role": "button"
+      },
+      "e76": {
+        "name": "Colors",
+        "role": "button"
+      },
+      "e77": {
+        "name": "Recent",
+        "role": "button"
+      },
+      "e78": {
+        "name": "",
+        "role": "generic"
+      },
+      "e79": {
+        "name": "",
+        "role": "generic"
+      },
+      "e8": {
+        "name": "Make a Copy",
+        "role": "button"
+      },
+      "e80": {
+        "name": "",
+        "role": "generic"
+      },
+      "e81": {
+        "name": "",
+        "role": "generic"
+      },
+      "e82": {
+        "name": "",
+        "role": "generic"
+      },
+      "e83": {
+        "name": "",
+        "role": "generic"
+      },
+      "e84": {
+        "name": "Load more logos",
+        "role": "button"
+      },
+      "e85": {
+        "name": "",
+        "role": "generic"
+      },
+      "e86": {
+        "name": "",
+        "role": "generic"
+      },
+      "e87": {
+        "name": "",
+        "role": "generic"
+      },
+      "e88": {
+        "name": "",
+        "role": "generic"
+      },
+      "e89": {
+        "name": "",
+        "role": "generic"
+      },
+      "e9": {
+        "name": "Undo",
+        "role": "button"
+      },
+      "e90": {
+        "name": "ABC",
+        "role": "button"
+      },
+      "e91": {
+        "name": "abc",
+        "role": "button"
+      },
+      "e92": {
+        "name": "",
+        "role": "generic"
+      },
+      "e93": {
+        "name": "",
+        "role": "generic"
+      },
+      "e94": {
+        "name": "",
+        "role": "generic"
+      },
+      "e95": {
+        "name": "",
+        "role": "generic"
+      },
+      "e96": {
+        "name": "",
+        "role": "generic"
+      },
+      "e97": {
+        "name": "",
+        "role": "generic"
+      },
+      "e98": {
+        "name": "",
+        "role": "generic"
+      },
+      "e99": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- generic [ref=e1] clickable [onclick]\n  - generic\n    - button \"Close Modal\" [ref=e5]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e6]\n  - generic\n    - button \"Saved Logos\" [ref=e7]\n      - StaticText \"Saved \"\n      - StaticText \"Logos\"\n    - button \"Make a Copy\" [ref=e8]\n      - tooltip \"Make a Copy\"\n        - StaticText \"Make a Copy\"\n    - button \"Undo\" [ref=e9]\n      - image\n      - StaticText \"Undo\"\n    - tooltip\n      - button [ref=e70]\n        - image\n    - generic\n      - generic [ref=e71] clickable [cursor:pointer]\n        - StaticText \"Logo\"\n      - generic [ref=e72] clickable [cursor:pointer, onclick]\n        - StaticText \"Brand Kit\"\n        - image\n    - button \"Share\" [ref=e10]\n    - button \"Sign Up\" [ref=e11]\n      - StaticText \"Sign Up\"\n    - button \"Download\" [ref=e12]\n    - button \"menu\" [ref=e13]\n      - StaticText \"menu\"\n  - generic\n    - generic\n      - button \"Preview\" [ref=e14]\n        - image\n        - paragraph\n          - StaticText \"Preview\"\n      - button \"Suggested\" [ref=e15]\n        - image\n        - paragraph\n          - StaticText \"Suggested\"\n      - button \"Layout\" [ref=e16]\n        - image\n        - paragraph\n          - StaticText \"Layout\"\n      - button \"Palette\" [ref=e17]\n        - image\n        - paragraph\n          - StaticText \"Palette\"\n      - button \"More Ideas\" [ref=e18]\n        - image\n        - paragraph\n          - StaticText \"More Ideas\"\n      - button \"Background\" [ref=e19]\n        - image\n        - paragraph\n          - StaticText \"Background\"\n      - button \"Name\" [ref=e20]\n        - image\n        - paragraph\n          - StaticText \"Name\"\n      - button \"Slogan\" [ref=e21]\n        - image\n        - paragraph\n          - StaticText \"Slogan\"\n      - button \"Symbol\" [ref=e22]\n        - image\n        - paragraph\n          - StaticText \"Symbol\"\n      - button \"Container\" [ref=e23]\n        - image\n        - paragraph\n          - StaticText \"Container\"\n      - button \"History\" [ref=e24]\n        - image\n        - paragraph\n          - StaticText \"History\"\n      - button \"Your Logos\" [ref=e25]\n        - image\n        - paragraph\n          - StaticText \"Your Logos\"\n      - image\n    - generic\n      - generic\n        - heading \"Name Options\" [level=2, ref=e73]\n          - StaticText \"Name Options\"\n        - button \"Fullscreen\" [ref=e74]\n          - image\n          - paragraph\n            - StaticText \"Fullscreen\"\n        - button \"Font Types\" [ref=e75]\n          - paragraph\n            - StaticText \"Font Types\"\n        - button \"Colors\" [ref=e76]\n          - paragraph\n            - StaticText \"Colors\"\n        - button \"Recent\" [ref=e77]\n          - paragraph\n            - StaticText \"Recent\"\n        - generic [ref=e137] clickable [cursor:pointer, onclick]\n          - paragraph\n            - StaticText \"Suggested (40 Results)\"\n          - StaticText \"expand_more\"\n      - generic\n        - generic [ref=e78] clickable [cursor:pointer, onclick]\n          - StaticText \"CLICK TO CHOOSE\"\n          - image\n        - generic [ref=e79] clickable [cursor:pointer, onclick]\n          - StaticText \"CLICK TO CHOOSE\"\n          - image\n        - generic [ref=e80] clickable [cursor:pointer, onclick]\n          - StaticText \"CLICK TO CHOOSE\"\n          - image\n        - generic [ref=e81] clickable [cursor:pointer, onclick]\n          - StaticText \"CLICK TO CHOOSE\"\n          - image\n        - generic [ref=e82] clickable [cursor:pointer, onclick]\n          - StaticText \"CLICK TO CHOOSE\"\n          - image\n        - generic [ref=e83] clickable [cursor:pointer, onclick]\n          - StaticText \"CLICK TO CHOOSE\"\n          - image\n        - generic\n        - button \"Load more logos\" [ref=e84]\n    - generic\n      - generic [ref=e85] clickable [cursor:pointer]\n      - generic [ref=e86] clickable [cursor:pointer]\n        - textbox [ref=e138]: Morrow Studio\n          - StaticText \"Morrow Studio\"\n        - button \"Stack\" [ref=e127]\n      - generic [ref=e87] clickable [cursor:pointer, onclick]\n        - StaticText \"Size\"\n      - generic [ref=e88] clickable [cursor:pointer, onclick]\n        - image\n      - generic [ref=e89] clickable [cursor:pointer, onclick]\n        - image\n      - button \"ABC\" [ref=e90]\n      - button \"abc\" [ref=e91]\n      - generic [ref=e92] clickable [onclick]\n        - image\n      - generic [ref=e26] clickable [onclick]\n        - generic\n          - generic [ref=e128] clickable [onclick]\n          - generic [ref=e139] clickable [onclick]\n            - image\n      - generic\n        - generic [ref=e93] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - generic\n          - image\n          - image\n          - image\n          - image\n          - image\n          - image\n      - generic\n        - generic [ref=e94] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - generic\n          - image\n      - heading \"Brand Essentials\" [level=1, ref=e27]\n      - heading \"100+ branded and customizable designs included in your Brand Kit subscription\" [level=2, ref=e28]\n      - link \"+14 Logo Files\" [ref=e29]\n        - generic\n          - image\n          - image\n          - image\n          - StaticText \"+14\"\n        - StaticText \"Logo Files\"\n      - link \"Social Profiles 20 branded designs\" [ref=e30]\n        - generic\n          - generic\n            - image\n        - StaticText \"Social Profiles\"\n        - generic\n          - StaticText \"20 branded designs\"\n      - link \"WE ARE OPEN FOR BUSINESS! Social Covers 55 branded designs\" [ref=e31]\n        - generic\n          - generic\n            - StaticText \"WE ARE OPEN\"\n            - LineBreak \"\\n\"\n            - StaticText \"FOR BUSINESS!\"\n        - StaticText \"Social Covers\"\n        - generic\n          - StaticText \"55 branded designs\"\n      - link \"Business Cards 19 branded designs\" [ref=e32]\n        - generic\n          - image\n          - image\n        - StaticText \"Business Cards\"\n        - generic\n          - StaticText \"19 branded designs\"\n      - link \"Email Signatures 8 branded designs\" [ref=e33]\n        - image\n        - StaticText \"Email Signatures\"\n        - generic\n          - StaticText \"8 branded designs\"\n      - link \"Letterheads 10 branded designs\" [ref=e34]\n        - generic\n          - image\n        - StaticText \"Letterheads\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"Brand Guidelines 10 branded designs\" [ref=e35]\n        - image\n        - StaticText \"Brand Guidelines\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"Website of templates\" [ref=e36]\n        - image\n        - StaticText \"Website\"\n        - StaticText \"of templates\"\n      - heading \"Your Color Palette\" [level=1, ref=e37]\n      - heading \"These are based on your logo colors. You can change these later.\" [level=2, ref=e38]\n      - generic\n        - generic\n          - StaticText \"#f0e68c\"\n        - generic\n          - StaticText \"#2e8b57\"\n        - generic\n          - StaticText \"#f6f0b9\"\n        - generic\n          - StaticText \"#eadc5f\"\n        - generic\n          - StaticText \"#3bb16f\"\n        - generic\n          - StaticText \"#21653f\"\n      - generic\n        - generic [ref=e129] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - generic\n          - image\n          - image\n      - heading \"Digital Marketing Essentials\" [level=1, ref=e39]\n      - heading \"100+ branded and customizable designs included in your Brand Kit subscription\" [level=2, ref=e40]\n      - link \"LAUNCH SALE! Social Posts 57 branded designs\" [ref=e41]\n        - generic\n          - generic\n            - StaticText \"LAUNCH\"\n            - LineBreak \"\\n\"\n            - StaticText \"SALE!\"\n        - StaticText \"Social Posts\"\n        - generic\n          - StaticText \"57 branded designs\"\n      - link \"We are offering 20 percent off our services. > BOOK NOW Social Stories 10 branded designs\" [ref=e42]\n        - generic\n          - generic\n            - image\n            - StaticText \"We are offering 20 percent off our services.\"\n            - LineBreak \"\\n\"\n            - StaticText \"> BOOK NOW\"\n        - StaticText \"Social Stories\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"GREAT SERVICES. GREAT PRICES. THAT’S OUR PROMISE. VISIT US Advertisements 63 branded designs\" [ref=e43]\n        - generic\n          - StaticText \"GREAT SERVICES. GREAT PRICES.\"\n          - LineBreak \"\\n\"\n          - StaticText \"THAT’S OUR PROMISE.\"\n          - StaticText \"VISIT US\"\n        - StaticText \"Advertisements\"\n        - generic\n          - StaticText \"63 branded designs\"\n      - link \"To our new friends ALL ABOUT US. We’re quite design savvy! Blog Banners 11 branded designs\" [ref=e44]\n        - generic\n          - StaticText \"To our new friends\"\n          - StaticText \"ALL ABOUT US.\"\n          - StaticText \"We’re quite design savvy!\"\n        - StaticText \"Blog Banners\"\n        - generic\n          - StaticText \"11 branded designs\"\n      - generic\n        - generic [ref=e95] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - image\n      - generic\n        - generic [ref=e96] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - image\n      - generic\n        - generic [ref=e130] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - generic\n          - generic\n            - image\n            - image\n          - generic\n            - image\n      - heading \"Marketing Essentials\" [level=1, ref=e45]\n      - heading \"100+ branded and customizable designs included in your Brand Kit subscription\" [level=2, ref=e46]\n      - link \"Invoices 10 branded designs\" [ref=e47]\n        - generic\n          - image\n        - StaticText \"Invoices\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"LAUNCH SALE 20% OFF! Posters 10 branded designs\" [ref=e48]\n        - generic\n          - generic\n            - image\n            - StaticText \"LAUNCH SALE\"\n            - LineBreak \"\\n\"\n            - StaticText \"20% OFF!\"\n        - StaticText \"Posters\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"Flyers 10 branded designs\" [ref=e49]\n        - generic\n          - generic\n            - image\n        - StaticText \"Flyers\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"OUR COMPANY MISSION Presentations 5 branded designs\" [ref=e50]\n        - generic\n          - generic\n            - StaticText \"OUR COMPANY MISSION\"\n        - StaticText \"Presentations\"\n        - generic\n          - StaticText \"5 branded designs\"\n      - link \"WE'RE YOUR NEW NEIGHBOUR Cards 10 branded designs\" [ref=e51]\n        - generic\n          - StaticText \"WE'RE\"\n          - LineBreak \"\\n\"\n          - StaticText \"YOUR NEW\"\n          - LineBreak \"\\n\"\n          - StaticText \"NEIGHBOUR\"\n        - StaticText \"Cards\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - link \"LAUNCH SALE 20% OFF! Proposals 5 branded designs\" [ref=e52]\n        - generic\n          - generic\n            - image\n            - StaticText \"LAUNCH SALE\"\n            - LineBreak \"\\n\"\n            - StaticText \"20% OFF!\"\n        - StaticText \"Proposals\"\n        - generic\n          - StaticText \"5 branded designs\"\n      - link \"THE UPDATE Newsletters 5 branded designs\" [ref=e53]\n        - generic\n          - image\n          - StaticText \"THE UPDATE\"\n        - StaticText \"Newsletters\"\n        - generic\n          - StaticText \"5 branded designs\"\n      - link \"About Our Company Brochures 10 branded designs\" [ref=e54]\n        - generic\n          - generic\n            - image\n            - StaticText \"About Our\"\n            - LineBreak \"\\n\"\n            - StaticText \"Company\"\n        - StaticText \"Brochures\"\n        - generic\n          - StaticText \"10 branded designs\"\n      - generic\n        - generic [ref=e97] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - generic\n          - generic\n            - image\n            - image\n      - generic\n        - generic [ref=e98] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - generic\n          - image\n      - generic\n        - generic [ref=e99] clickable [cursor:pointer, onclick]\n          - StaticText \"Share\"\n        - image\n  - generic\n    - generic [ref=e3] clickable [onclick]\n    - generic\n      - button \"Close\" [ref=e55]\n        - image \"Close\"\n      - generic\n        - heading \"Your Saved Logos\" [level=5, ref=e100]\n        - button \"View all\" [ref=e101]\n      - generic\n        - generic\n          - button \"Edit\" [ref=e131]\n          - link \"Buy\" [ref=e132]\n  - generic [ref=e2] clickable [onclick]\n    - generic\n      - button \"Close Modal\" [ref=e56]\n        - image \"Close Modal\"\n      - heading \"Share your logo\" [level=3, ref=e57]\n      - button \"Share your logo on Facebook Facebook\" [ref=e58]\n        - image \"Share your logo on Facebook\"\n        - heading \"Facebook\" [level=6, ref=e102]\n      - button \"Share your logo on Facebook Messenger\" [ref=e59]\n        - image \"Share your logo on Facebook\"\n        - heading \"Messenger\" [level=6, ref=e103]\n      - button \"Share your logo on X Twitter (X)\" [ref=e60]\n        - image \"Share your logo on X\"\n        - heading \"Twitter (X)\" [level=6, ref=e104]\n      - button \"Share your logo over email Email\" [ref=e61]\n        - image \"Share your logo over email\"\n        - heading \"Email\" [level=6, ref=e105]\n      - button \"Share your logo on LinkedIn LinkedIn\" [ref=e62]\n        - image \"Share your logo on LinkedIn\"\n        - heading \"LinkedIn\" [level=6, ref=e106]\n      - LabelText\n        - StaticText \"Copy Link\"\n      - textbox \"Copy Link\" [ref=e63]: https://looka.com/s/235865665\n        - StaticText \"https://looka.com/s/235865665\"\n      - button \"Copy Link\" [ref=e64]\n      - link \"Visit page (opens in new tab)\" [ref=e65]\n  - generic\n    - generic [ref=e4] clickable [onclick]\n    - StaticText \"looka-ref-user-name-IhWyl9NkE2\"\n    - generic [ref=e107] clickable [cursor:pointer, onclick]\n      - StaticText \"close\"\n    - heading \"Logos\" [level=4, ref=e108]\n    - link \"Saved logos\" [ref=e109]\n      - paragraph\n        - StaticText \"Saved logos\"\n    - link \"Logo Generator\" [ref=e110]\n      - paragraph\n        - StaticText \"Logo Generator\"\n    - link \"Upload New Logo\" [ref=e111]\n      - paragraph\n        - StaticText \"Upload New Logo\"\n    - list\n      - link \"Account\" [ref=e112]\n        - listitem [level=1]\n          - StaticText \"Account\"\n      - listitem [level=1, ref=e113] clickable [cursor:pointer, onclick]\n        - StaticText \"Log Out\"\n      - listitem [level=1, ref=e114] clickable [cursor:pointer]\n        - link \"Help / Contact\" [ref=e133]\n      - listitem [level=1, ref=e115] clickable [cursor:pointer]\n        - link \"Terms of Service\" [ref=e134]\n      - listitem [level=1, ref=e116] clickable [cursor:pointer]\n        - link \"Privacy\" [ref=e135]\n  - generic\n    - button \"Close Modal\" [ref=e66]\n      - image \"Close Modal\"\n    - heading \"Sign up\" [level=2, ref=e67]\n    - form\n      - textbox \"Email\" [required, ref=e117]\n      - textbox \"Password\" [ref=e118]\n      - button \"Create Account\" [ref=e119]\n    - paragraph\n      - link \"Terms of service\" [ref=e136]\n      - StaticText \" apply\"\n    - generic\n      - image\n      - heading \"Browse unique logos generated just for you. No templates here.\" [level=4, ref=e120]\n        - strong\n          - StaticText \"Browse unique logos\"\n        - StaticText \" generated just for you. No templates here.\"\n      - image\n      - heading \"Customize your logo with 100s of font, layout, and color options.\" [level=4, ref=e121]\n        - strong\n          - StaticText \"Customize your logo\"\n        - StaticText \" with 100s of font, layout, and color options.\"\n      - image\n      - heading \"Get 300+ branded assets from social media posts to flyers.\" [level=4, ref=e122]\n        - strong\n          - StaticText \"Get 300+ branded assets\"\n        - StaticText \" from social media posts to flyers.\"\n  - generic\n    - button \"Close Modal\" [ref=e68]\n      - image \"Close Modal\"\n    - heading \"Sign up to access your logo file\" [level=2, ref=e69]\n    - paragraph\n      - StaticText \"When you sign up you can come back any time to access your designs\"\n    - form\n      - textbox \"Email\" [required, ref=e123]\n      - textbox \"Password\" [ref=e124]\n      - button \"Sign up\" [ref=e125]\n    - paragraph\n      - link \"Terms of service\" [ref=e126]\n      - StaticText \" apply\"\n- image",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

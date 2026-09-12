@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Fiverr | Logo Maker\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 595-653\n~\t\t\t\t\t\t589 container Noto Sans KR Categories Noto Sans KR Morrow Studio\n~\t\t\t\t\t\t\t\t591 text field (settable) Value: Noto Sans KR, Placeholder: Search Fonts\n~\t\t\t\t\t\t\t593 button Noto Sans KR Morrow Studio\n~\t\t\t\t\t\t\t\t594 text Noto Sans KR\n+\t\t\t\t\t\t\t\t595 text Morrow Studio\nThe focused UI element is 591 text field (settable) Value: Noto Sans KR, Placeholder: Search Fonts"
+}

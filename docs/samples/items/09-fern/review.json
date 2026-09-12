@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+  "notes": "문자 없는 고사리 잎 실루엣입니다. 굽은 줄기와 여러 쌍의 잎이 240px에서도 구별되고 녹색 형태가 잘리지 않습니다. 배경은 실제 불투명 세이지색입니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

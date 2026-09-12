@@ -1,0 +1,66 @@
+{
+  "id": "43cbdb80-ce06-432f-9a40-c76633dab024",
+  "ok": true,
+  "result": {
+    "origin": "https://app.brandmark.io/v3/",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Background",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Layout",
+        "role": "button"
+      },
+      "e12": {
+        "name": "",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "",
+        "role": "button"
+      },
+      "e3": {
+        "name": "",
+        "role": "button"
+      },
+      "e4": {
+        "name": "",
+        "role": "button"
+      },
+      "e5": {
+        "name": "",
+        "role": "button"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e7": {
+        "name": "Name",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Slogan",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Icon",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - generic [ref=e13] clickable [cursor:pointer]\n    - image\n- generic\n  - navigation\n    - button \"Name\" [ref=e7]\n      - SvgRoot\n        - StaticText \"N\"\n      - StaticText \"Name\"\n    - button \"Slogan\" [ref=e8]\n      - SvgRoot\n        - StaticText \"S\"\n      - StaticText \"Slogan\"\n    - button \"Icon\" [ref=e9]\n      - image\n      - StaticText \"Icon\"\n    - button \"Background\" [ref=e10]\n      - image\n      - StaticText \"Background\"\n    - button \"Layout\" [ref=e11]\n      - image\n      - StaticText \"Layout\"\n    - button [ref=e12]\n      - image\n  - button [ref=e1]\n    - image\n    - image\n  - button [ref=e2]\n    - image\n    - image\n  - button [ref=e3]\n    - image\n    - image\n  - button [ref=e4]\n    - image\n    - image\n  - button [ref=e5]\n    - image\n    - image\n    - image\n- generic [ref=e6] clickable [cursor:pointer]\n  - image\n- generic\n  - IframePresentational \"reCAPTCHA\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "sample-01-luma",
+  "revision": 1,
+  "created_at": "2026-09-12T13:09:28.358598Z",
+  "updated_at": "2026-09-12T13:13:39.321754Z",
+  "brief": {
+    "brand_name": "LUMA",
+    "exact_text": "LUMA",
+    "industry": "프리미엄 조명",
+    "audience": "차분한 공간을 좋아하는 성인",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "검정과 아이보리의 세리프 워드마크",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "검정, 따뜻한 아이보리"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "29c891de028f14cc8b8a715f105b2dd8b383fa647f691521bd0de25428f561ef",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one wordmark logo for LUMA. Industry: 프리미엄 조명. Audience: 차분한 공간을 좋아하는 성인.\nExact text (copy verbatim, no other words): 'LUMA'. Exact slogan: ''.\nStyles: 검정과 아이보리의 세리프 워드마크, flat, clear silhouette. Palette: 검정, 따뜻한 아이보리.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Create an exceptionally refined editorial wordmark LUMA. High contrast architectural serif lettering, wide optical spacing, elegant and timeless, black ink on solid warm ivory. Only the four exact uppercase letters, no symbol.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: Create an exceptionally refined editorial wordmark LUMA. High contrast architectural serif lettering, wide optical spacing, elegant and timeless, black ink on solid warm ivory. Only the four exact uppercase letters, no symbol.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:13:39.320036Z",
+      "requested_background": "opaque",
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": []
+}

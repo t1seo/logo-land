@@ -1,0 +1,10 @@
+Edit the supplied parent logo a-v1; do not recreate an unrelated logo.
+Requested changes: Preserve the M silhouette, exact Morrow Studio wordmark, spacing and arrangement. Change only the ink to uniform solid navy #183A56. Replace all transparent canvas pixels with an opaque pure white background. Remove gradients and shadows; no transparency anywhere.. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent.
+Create one combination logo for Morrow Studio. Industry: Sustainable brand and product design studio. Audience: Independent businesses seeking thoughtful contemporary design.
+Exact text (copy verbatim, no other words): 'Morrow Studio'. Exact slogan: ''.
+Styles: minimal, geometric, calm. Palette: #174C3C.
+Avoid: gradients, shadows, mockups, extra lettering. Use cases: website header, business card.
+Background: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: Geometric M, selected concept A. Assumptions: Fictional demonstration brand; no slogan requested.
+
+Final edit overrides: navy #183A56 replaces the original green palette. The requested changes take precedence over the historical brief. The entire background must be solid opaque white, including the gaps inside the symbol. Do not return transparent pixels.

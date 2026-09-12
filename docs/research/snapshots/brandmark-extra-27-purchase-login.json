@@ -1,0 +1,114 @@
+{
+  "id": "d1ec7674-4297-4f23-a8cd-0851f5def79d",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Carousel View",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Grid View",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Basic",
+        "role": "heading"
+      },
+      "e13": {
+        "name": "Purchase Basic",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Designer",
+        "role": "heading"
+      },
+      "e15": {
+        "name": "View demo assets",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Purchase Designer",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Enterprise",
+        "role": "heading"
+      },
+      "e18": {
+        "name": "Purchase Enterprise",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Purchase",
+        "role": "button"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Variants",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e23": {
+        "name": "",
+        "role": "button"
+      },
+      "e24": {
+        "name": "More about Vector vs Raster",
+        "role": "button"
+      },
+      "e25": {
+        "name": "More about Real designers, not AI",
+        "role": "button"
+      },
+      "e3": {
+        "name": "",
+        "role": "button"
+      },
+      "e4": {
+        "name": "",
+        "role": "link"
+      },
+      "e5": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e6": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e8": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e9": {
+        "name": "My Account",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e4]\n        - image\n      - link \"Generate logos\" [ref=e5]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e6]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e7]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e8]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e9]\n        - image\n        - StaticText \"My Account\"\n  - generic\n    - generic\n      - button \"Carousel View\" [ref=e10]\n        - image\n        - StaticText \"Carousel\"\n      - button \"Grid View\" [ref=e11]\n        - image\n    - generic\n      - generic\n        - image \"Logo 8eb35a97-82a5-487b-89f3-99850d2ebf62\"\n        - generic\n          - button \"Purchase\" [ref=e19]\n            - image\n            - StaticText \"Purchase\"\n          - button \"Edit\" [ref=e20]\n            - image\n            - StaticText \"Edit\"\n          - button \"Variants\" [ref=e21]\n            - image\n            - StaticText \"Variants\"\n          - button \"Save\" [ref=e22]\n            - image\n            - StaticText \"Save\"\n          - button [expanded=false, ref=e23]\n            - image\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo bc9b3f97-8d73-420d-8f0e-9e06c9910d18\"\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo 9b6e0470-05f2-4a8f-ac18-9623bf2f631c\"\n  - generic [ref=e2] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list\n- generic\n  - generic\n    - button [ref=e3]\n      - image\n    - generic\n      - image \"Logo Preview\"\n      - generic\n        - heading \"Basic\" [level=3, ref=e12]\n          - image\n          - StaticText \"Basic\"\n        - paragraph\n          - StaticText \"Just the Logo\"\n        - generic\n          - StaticText \"$35/one time\"\n        - list\n          - listitem [level=1]\n            - image\n            - StaticText \"Logo in PNG format\"\n        - button \"Purchase Basic\" [ref=e13]\n      - generic\n        - heading \"Designer\" [level=3, ref=e14]\n          - image\n          - StaticText \"Designer\"\n        - paragraph\n          - StaticText \"Logo\"\n          - StaticText \" + \"\n          - StaticText \"Brand Kit\"\n        - StaticText \"$65\"\n        - StaticText \"$95\"\n        - StaticText \"/one time\"\n        - StaticText \"Launch Promo\"\n        - list\n          - listitem [level=1]\n            - image\n            - StaticText \"Vector design files\"\n            - button \"More about Vector vs Raster\" [expanded=false, ref=e24]\n              - image\n          - listitem [level=1]\n            - image\n            - StaticText \"Human design support\"\n            - button \"More about Real designers, not AI\" [expanded=false, ref=e25]\n              - image\n          - listitem [level=1]\n            - image\n            - StaticText \"Unlimited design changes\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Shareable brand guide\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Business card designs\"\n          - listitem [level=1]\n            - image\n            - StaticText \"One-page websites\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Social media designs\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Presentation designs\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Logo mockup tool\"\n          - listitem [level=1]\n            - image\n            - StaticText \"SVG/Lottie animations\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Branded QR codes\"\n        - link \"View demo assets\" [ref=e15]\n          - StaticText \"View demo assets\"\n          - image\n        - button \"Purchase Designer\" [ref=e16]\n      - generic\n        - heading \"Enterprise\" [level=3, ref=e17]\n          - image\n          - StaticText \"Enterprise\"\n        - paragraph\n          - StaticText \"Full service\"\n        - generic\n          - StaticText \"$195/one time\"\n        - list\n          - listitem [level=1]\n            - image\n            - StaticText \"Everything in Designer Package\"\n          - listitem [level=1]\n            - image\n            - StaticText \"10 original non-AI designs\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Priority designer support\"\n          - listitem [level=1]\n            - image\n            - StaticText \"Font download\"\n        - button \"Purchase Enterprise\" [ref=e18]",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

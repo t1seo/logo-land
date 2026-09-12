@@ -1,0 +1,374 @@
+{
+  "id": "c905e771-9e4e-4f6a-b336-fefe597f49e4",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/explore",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "generic"
+      },
+      "e10": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e12": {
+        "name": "We're generating some logos for you",
+        "role": "heading"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "",
+        "role": "generic"
+      },
+      "e16": {
+        "name": "",
+        "role": "generic"
+      },
+      "e17": {
+        "name": "",
+        "role": "generic"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "Start customizing",
+        "role": "button"
+      },
+      "e22": {
+        "name": "",
+        "role": "generic"
+      },
+      "e23": {
+        "name": "menu",
+        "role": "button"
+      },
+      "e24": {
+        "name": "",
+        "role": "generic"
+      },
+      "e25": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Sign up",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e28": {
+        "name": "Thanks for signing up!",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "Download Logo",
+        "role": "button"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e30": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e31": {
+        "name": "",
+        "role": "generic"
+      },
+      "e32": {
+        "name": "Sign up",
+        "role": "button"
+      },
+      "e33": {
+        "name": "Continue as guest",
+        "role": "button"
+      },
+      "e34": {
+        "name": "",
+        "role": "generic"
+      },
+      "e35": {
+        "name": "",
+        "role": "generic"
+      },
+      "e36": {
+        "name": "Update",
+        "role": "button"
+      },
+      "e37": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e38": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e39": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e41": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e42": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e43": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e44": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e45": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e46": {
+        "name": "",
+        "role": "generic"
+      },
+      "e47": {
+        "name": "",
+        "role": "button"
+      },
+      "e48": {
+        "name": "Navigate to dashboard. Caution: this will navigate you away from your current page",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Email",
+        "role": "textbox"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e50": {
+        "name": "Password",
+        "role": "textbox"
+      },
+      "e51": {
+        "name": "Create Account",
+        "role": "button"
+      },
+      "e52": {
+        "name": "Browse unique logos generated just for you. No templates here.",
+        "role": "heading"
+      },
+      "e53": {
+        "name": "Customize your logo with 100s of font, layout, and color options.",
+        "role": "heading"
+      },
+      "e54": {
+        "name": "Get 300+ branded assets from social media posts to flyers.",
+        "role": "heading"
+      },
+      "e55": {
+        "name": "Symbols",
+        "role": "button"
+      },
+      "e56": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e57": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e58": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e59": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e60": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e61": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e62": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e63": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e64": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e65": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e66": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e67": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e68": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e69": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e7": {
+        "name": "",
+        "role": "generic"
+      },
+      "e70": {
+        "name": "Buy logo",
+        "role": "button"
+      },
+      "e71": {
+        "name": "This is logo is favourited",
+        "role": "button"
+      },
+      "e72": {
+        "name": "Your Saved Logos",
+        "role": "heading"
+      },
+      "e73": {
+        "name": "View all",
+        "role": "button"
+      },
+      "e74": {
+        "name": "",
+        "role": "generic"
+      },
+      "e75": {
+        "name": "Logos",
+        "role": "heading"
+      },
+      "e76": {
+        "name": "Saved logos",
+        "role": "link"
+      },
+      "e77": {
+        "name": "Logo Generator",
+        "role": "link"
+      },
+      "e78": {
+        "name": "Upload New Logo",
+        "role": "link"
+      },
+      "e79": {
+        "name": "Account",
+        "role": "link"
+      },
+      "e8": {
+        "name": "",
+        "role": "generic"
+      },
+      "e80": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e81": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e82": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e83": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e84": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e85": {
+        "name": "Company Name",
+        "role": "textbox"
+      },
+      "e86": {
+        "name": "Slogan",
+        "role": "textbox"
+      },
+      "e87": {
+        "name": " ",
+        "role": "button"
+      },
+      "e88": {
+        "name": "Help / Contact",
+        "role": "link"
+      },
+      "e89": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Load more logos!",
+        "role": "button"
+      },
+      "e90": {
+        "name": "Privacy",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - button \"Close Modal\" [ref=e10]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e11]\n  - generic\n    - generic\n      - textbox \"Company Name\" [ref=e85]: Morrow Studio\n        - StaticText \"Morrow Studio\"\n      - textbox \"Slogan\" [ref=e86]\n      - generic [ref=e34] clickable [onclick]\n        - generic\n          - StaticText \"1\"\n          - button \"\" [ref=e87]\n            - image\n      - generic [ref=e35] clickable [onclick]\n        - StaticText \"0\"\n        - button \"Symbols\" [ref=e55]\n          - StaticText \"Symbols\"\n          - image\n      - button \"Update\" [disabled, ref=e36]\n        - image\n        - StaticText \"Update\"\n    - generic\n      - heading \"We're generating some logos for you\" [level=4, ref=e12]\n      - paragraph\n        - StaticText \"Click a design to preview and see different versions\"\n    - generic [ref=e1] clickable [onclick]\n      - generic [ref=e13] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e37]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e56]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e57]\n            - image \"This is logo is favourited\"\n    - generic [ref=e2] clickable [onclick]\n      - generic [ref=e14] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e38]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e58]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e59]\n            - image \"This is logo is favourited\"\n    - generic [ref=e3] clickable [onclick]\n      - generic [ref=e15] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e39]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e60]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e61]\n            - image \"This is logo is favourited\"\n    - generic [ref=e4] clickable [onclick]\n      - generic [ref=e16] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e40]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e62]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e63]\n            - image \"This is logo is favourited\"\n    - generic [ref=e5] clickable [onclick]\n      - generic [ref=e17] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e41]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e64]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e65]\n            - image \"This is logo is favourited\"\n    - generic [ref=e6] clickable [onclick]\n      - generic [ref=e18] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e42]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e66]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e67]\n            - image \"This is logo is favourited\"\n    - generic [ref=e7] clickable [onclick]\n      - generic [ref=e19] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e43]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e68]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e69]\n            - image \"This is logo is favourited\"\n    - generic [ref=e8] clickable [onclick]\n      - generic [ref=e20] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Customize\" [ref=e44]\n          - StaticText \"Customize\"\n        - tooltip \"Buy logo\"\n          - button \"Buy logo\" [ref=e70]\n            - image \"Buy logo\"\n        - tooltip \"This is logo is favourited\"\n          - button \"This is logo is favourited\" [ref=e71]\n            - image \"This is logo is favourited\"\n    - button \"Load more logos!\" [ref=e9]\n    - button \"Start customizing\" [ref=e21]\n    - generic\n      - generic [ref=e22] clickable [onclick]\n      - generic\n        - button \"Close\" [ref=e45]\n          - image \"Close\"\n        - generic\n          - heading \"Your Saved Logos\" [level=5, ref=e72]\n          - button \"View all\" [ref=e73]\n    - generic\n      - generic\n        - generic [ref=e46] clickable [cursor:pointer, onclick]\n          - StaticText \"arrow_back\"\n        - button [ref=e47]\n          - image\n      - link \"Navigate to dashboard. Caution: this will navigate you away from your current page\" [ref=e48]\n        - image \"Navigate to dashboard. Caution: this will navigate you away from your current page\"\n      - button \"menu\" [ref=e23]\n        - StaticText \"menu\"\n    - generic\n      - generic [ref=e24] clickable [onclick]\n      - StaticText \"looka-ref-user-name-IhWyl9NkE2\"\n      - generic [ref=e74] clickable [cursor:pointer, onclick]\n        - StaticText \"close\"\n      - heading \"Logos\" [level=4, ref=e75]\n      - link \"Saved logos\" [ref=e76]\n        - paragraph\n          - StaticText \"Saved logos\"\n      - link \"Logo Generator\" [ref=e77]\n        - paragraph\n          - StaticText \"Logo Generator\"\n      - link \"Upload New Logo\" [ref=e78]\n        - paragraph\n          - StaticText \"Upload New Logo\"\n      - list\n        - link \"Account\" [ref=e79]\n          - listitem [level=1]\n            - StaticText \"Account\"\n        - listitem [level=1, ref=e80] clickable [cursor:pointer, onclick]\n          - StaticText \"Log Out\"\n        - listitem [level=1, ref=e81] clickable [cursor:pointer]\n          - link \"Help / Contact\" [ref=e88]\n        - listitem [level=1, ref=e82] clickable [cursor:pointer]\n          - link \"Terms of Service\" [ref=e89]\n        - listitem [level=1, ref=e83] clickable [cursor:pointer]\n          - link \"Privacy\" [ref=e90]\n  - generic\n    - button \"Close Modal\" [ref=e25]\n      - image \"Close Modal\"\n    - heading \"Sign up\" [level=2, ref=e26]\n    - form\n      - textbox \"Email\" [required, ref=e49]\n      - textbox \"Password\" [ref=e50]\n      - button \"Create Account\" [ref=e51]\n    - paragraph\n      - link \"Terms of service\" [ref=e84]\n      - StaticText \" apply\"\n    - generic\n      - image\n      - heading \"Browse unique logos generated just for you. No templates here.\" [level=4, ref=e52]\n        - strong\n          - StaticText \"Browse unique logos\"\n        - StaticText \" generated just for you. No templates here.\"\n      - image\n      - heading \"Customize your logo with 100s of font, layout, and color options.\" [level=4, ref=e53]\n        - strong\n          - StaticText \"Customize your logo\"\n        - StaticText \" with 100s of font, layout, and color options.\"\n      - image\n      - heading \"Get 300+ branded assets from social media posts to flyers.\" [level=4, ref=e54]\n        - strong\n          - StaticText \"Get 300+ branded assets\"\n        - StaticText \" from social media posts to flyers.\"\n  - generic\n    - button \"Close Modal\" [ref=e27]\n      - image \"Close Modal\"\n    - image\n    - heading \"Thanks for signing up!\" [level=2, ref=e28]\n    - paragraph\n      - StaticText \"Now you can download your logo and come back any time to access your designs\"\n    - button \"Download Logo\" [ref=e29]\n    - button \"Close\" [ref=e30]\n- generic\n  - generic [ref=e31] clickable [onclick]\n    - image \"Close Modal\"\n  - paragraph\n    - StaticText \"You're currently on a guest account. Sign up to save your progress.\"\n  - button \"Sign up\" [ref=e32]\n  - StaticText \"or\"\n  - button \"Continue as guest\" [ref=e33]\n    - StaticText \"Continue as guest\"\n    - image\n- image",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

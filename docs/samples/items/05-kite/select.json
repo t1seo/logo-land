@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "sample-05-kite",
+  "revision": 2,
+  "created_at": "2026-09-12T13:09:30.294166Z",
+  "updated_at": "2026-09-12T13:16:02.623216Z",
+  "brief": {
+    "brand_name": "KITE",
+    "exact_text": "",
+    "industry": "협업 소프트웨어",
+    "audience": "작은 제품 팀",
+    "slogan": "",
+    "logo_type": "abstract",
+    "styles": [
+      "상승감을 표현한 추상 기하학",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "코럴, 백색"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "dffb886a7a72196a42df21e36afe23cfb6e07bd25bad35c69c44f4de5c0232a7",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one abstract logo for KITE. Industry: 협업 소프트웨어. Audience: 작은 제품 팀.\nExact text (copy verbatim, no other words): ''. Exact slogan: ''.\nStyles: 상승감을 표현한 추상 기하학, flat, clear silhouette. Palette: 코럴, 백색.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: One bold abstract brand symbol suggesting lift, collaboration, and a folded kite from two intersecting clean geometric coral shapes with deliberate negative space. Do not draw a literal kite string. No letters or text. Solid near-white background, flat coral mark, distinctive readable silhouette.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: One bold abstract brand symbol suggesting lift, collaboration, and a folded kite from two intersecting clean geometric coral shapes with deliberate negative space. Do not draw a literal kite string. No letters or text. Solid near-white background, flat coral mark, distinctive readable silhouette.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:13:40.138706Z",
+      "requested_background": "opaque",
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

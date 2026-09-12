@@ -1,0 +1,982 @@
+{
+  "id": "f6d6a038-edad-4440-be45-dc0db5953b8c",
+  "ok": true,
+  "result": {
+    "origin": "https://www.design.com/s/maker?code=25OFFSEM",
+    "refs": {
+      "e1": {
+        "name": "LOGO TEMPLATES",
+        "role": "heading"
+      },
+      "e10": {
+        "name": "Download your logo",
+        "role": "heading"
+      },
+      "e100": {
+        "name": "Facebook Ads",
+        "role": "link"
+      },
+      "e101": {
+        "name": "Facebook Profile Pictures",
+        "role": "link"
+      },
+      "e102": {
+        "name": "Instagram Posts",
+        "role": "link"
+      },
+      "e103": {
+        "name": "Instagram Reels",
+        "role": "link"
+      },
+      "e104": {
+        "name": "Instagram Stories",
+        "role": "link"
+      },
+      "e105": {
+        "name": "Instagram Profile Pictures",
+        "role": "link"
+      },
+      "e106": {
+        "name": "LinkedIn Banners",
+        "role": "link"
+      },
+      "e107": {
+        "name": "LinkedIn Posts",
+        "role": "link"
+      },
+      "e108": {
+        "name": "LinkedIn Profile Pictures",
+        "role": "link"
+      },
+      "e109": {
+        "name": "Pinterest Pins",
+        "role": "link"
+      },
+      "e11": {
+        "name": "Get started with Design.com's Logo Maker",
+        "role": "heading"
+      },
+      "e110": {
+        "name": "Pinterest Covers",
+        "role": "link"
+      },
+      "e111": {
+        "name": "Pinterest Profile Pictures",
+        "role": "link"
+      },
+      "e112": {
+        "name": "Snapchat Designs",
+        "role": "link"
+      },
+      "e113": {
+        "name": "SoundCloud Banners",
+        "role": "link"
+      },
+      "e114": {
+        "name": "SoundCloud Profile Pictures",
+        "role": "link"
+      },
+      "e115": {
+        "name": "TikTok Videos",
+        "role": "link"
+      },
+      "e116": {
+        "name": "Tumblr Profile Pictures",
+        "role": "link"
+      },
+      "e117": {
+        "name": "Tumblr Banners",
+        "role": "link"
+      },
+      "e118": {
+        "name": "Twitch Banners",
+        "role": "link"
+      },
+      "e119": {
+        "name": "Twitch Profile Pictures",
+        "role": "link"
+      },
+      "e12": {
+        "name": "FEATURES",
+        "role": "heading"
+      },
+      "e120": {
+        "name": "Twitter Headers",
+        "role": "link"
+      },
+      "e121": {
+        "name": "Twitter Posts",
+        "role": "link"
+      },
+      "e122": {
+        "name": "Whatsapp Stories",
+        "role": "link"
+      },
+      "e123": {
+        "name": "YouTube Banners",
+        "role": "link"
+      },
+      "e124": {
+        "name": "YouTube Shorts",
+        "role": "link"
+      },
+      "e125": {
+        "name": "YouTube Videos",
+        "role": "link"
+      },
+      "e126": {
+        "name": "YouTube Channel Icons",
+        "role": "link"
+      },
+      "e127": {
+        "name": "Zoom Backgrounds",
+        "role": "link"
+      },
+      "e128": {
+        "name": "Email Signatures",
+        "role": "link"
+      },
+      "e129": {
+        "name": "Invoices",
+        "role": "link"
+      },
+      "e13": {
+        "name": "What you get with Design.com's logo maker",
+        "role": "heading"
+      },
+      "e130": {
+        "name": "Menus",
+        "role": "link"
+      },
+      "e131": {
+        "name": "Flyers",
+        "role": "link"
+      },
+      "e132": {
+        "name": "Postcards",
+        "role": "link"
+      },
+      "e133": {
+        "name": "Posters",
+        "role": "link"
+      },
+      "e134": {
+        "name": "Gift Certificates",
+        "role": "link"
+      },
+      "e135": {
+        "name": "Invitations",
+        "role": "link"
+      },
+      "e136": {
+        "name": "Thank You Cards",
+        "role": "link"
+      },
+      "e137": {
+        "name": "T-Shirts",
+        "role": "link"
+      },
+      "e138": {
+        "name": "Videos",
+        "role": "link"
+      },
+      "e139": {
+        "name": "Animations",
+        "role": "link"
+      },
+      "e14": {
+        "name": "Premium Logo Designs",
+        "role": "heading"
+      },
+      "e140": {
+        "name": "Letterheads",
+        "role": "link"
+      },
+      "e141": {
+        "name": "Etsy Banners",
+        "role": "link"
+      },
+      "e142": {
+        "name": "QR Code",
+        "role": "link"
+      },
+      "e143": {
+        "name": "Presentations",
+        "role": "link"
+      },
+      "e144": {
+        "name": "Gaming logo",
+        "role": "link"
+      },
+      "e145": {
+        "name": "Company logo",
+        "role": "link"
+      },
+      "e146": {
+        "name": "Business logo",
+        "role": "link"
+      },
+      "e147": {
+        "name": "Brand logo",
+        "role": "link"
+      },
+      "e148": {
+        "name": "Name logo",
+        "role": "link"
+      },
+      "e149": {
+        "name": "Car logo",
+        "role": "link"
+      },
+      "e15": {
+        "name": "All the files you need",
+        "role": "heading"
+      },
+      "e150": {
+        "name": "Monogram logo",
+        "role": "link"
+      },
+      "e151": {
+        "name": "School logo",
+        "role": "link"
+      },
+      "e152": {
+        "name": "Food logo",
+        "role": "link"
+      },
+      "e153": {
+        "name": "Youtube logo",
+        "role": "link"
+      },
+      "e154": {
+        "name": "Photography logo",
+        "role": "link"
+      },
+      "e155": {
+        "name": "Football logo",
+        "role": "link"
+      },
+      "e156": {
+        "name": "Camera logo",
+        "role": "link"
+      },
+      "e157": {
+        "name": "Crown logo",
+        "role": "link"
+      },
+      "e158": {
+        "name": "Sports logo",
+        "role": "link"
+      },
+      "e159": {
+        "name": "3d logo",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Color and layout variations",
+        "role": "heading"
+      },
+      "e160": {
+        "name": "Construction logo",
+        "role": "link"
+      },
+      "e161": {
+        "name": "Cool logo",
+        "role": "link"
+      },
+      "e162": {
+        "name": "DJ logo",
+        "role": "link"
+      },
+      "e163": {
+        "name": "Restaurant logo",
+        "role": "link"
+      },
+      "e164": {
+        "name": "Letter logo",
+        "role": "link"
+      },
+      "e165": {
+        "name": "Real Estate logo",
+        "role": "link"
+      },
+      "e166": {
+        "name": "Circle logo",
+        "role": "link"
+      },
+      "e167": {
+        "name": "Fashion logo",
+        "role": "link"
+      },
+      "e168": {
+        "name": "Cartoon logo",
+        "role": "link"
+      },
+      "e169": {
+        "name": "Travel logo",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Business card templates",
+        "role": "heading"
+      },
+      "e170": {
+        "name": "Cafe logo",
+        "role": "link"
+      },
+      "e171": {
+        "name": "Eagle logo",
+        "role": "link"
+      },
+      "e172": {
+        "name": "Podcast logo",
+        "role": "link"
+      },
+      "e173": {
+        "name": "Bakery logo",
+        "role": "link"
+      },
+      "e174": {
+        "name": "Text logo",
+        "role": "link"
+      },
+      "e175": {
+        "name": "Icon logo",
+        "role": "link"
+      },
+      "e176": {
+        "name": "Word logo",
+        "role": "link"
+      },
+      "e177": {
+        "name": "Team logo",
+        "role": "link"
+      },
+      "e178": {
+        "name": "App logo",
+        "role": "link"
+      },
+      "e179": {
+        "name": "Barber logo",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Social media templates",
+        "role": "heading"
+      },
+      "e180": {
+        "name": "Font logo",
+        "role": "link"
+      },
+      "e181": {
+        "name": "Web logo",
+        "role": "link"
+      },
+      "e182": {
+        "name": "Pizza logo",
+        "role": "link"
+      },
+      "e183": {
+        "name": "Shop logo",
+        "role": "link"
+      },
+      "e184": {
+        "name": "Simple logo",
+        "role": "link"
+      },
+      "e185": {
+        "name": "Symbol logo",
+        "role": "link"
+      },
+      "e186": {
+        "name": "Beauty logo",
+        "role": "link"
+      },
+      "e187": {
+        "name": "Coffee logo",
+        "role": "link"
+      },
+      "e188": {
+        "name": "Doctor logo",
+        "role": "link"
+      },
+      "e189": {
+        "name": "Gym logo",
+        "role": "link"
+      },
+      "e19": {
+        "name": "Brand identity templates",
+        "role": "heading"
+      },
+      "e190": {
+        "name": "Lion logo",
+        "role": "link"
+      },
+      "e191": {
+        "name": "Music logo",
+        "role": "link"
+      },
+      "e192": {
+        "name": "facebook",
+        "role": "link"
+      },
+      "e193": {
+        "name": "twitter",
+        "role": "link"
+      },
+      "e194": {
+        "name": "instagram",
+        "role": "link"
+      },
+      "e195": {
+        "name": "linkedin",
+        "role": "link"
+      },
+      "e196": {
+        "name": "",
+        "role": "generic"
+      },
+      "e197": {
+        "name": "Enter your business name",
+        "role": "textbox"
+      },
+      "e198": {
+        "name": "Generate Logos",
+        "role": "button"
+      },
+      "e199": {
+        "name": "Enter your business name",
+        "role": "textbox"
+      },
+      "e2": {
+        "name": "Make a logo you'll love, instantly. Try for free.",
+        "role": "heading"
+      },
+      "e20": {
+        "name": "Unlimited customization",
+        "role": "heading"
+      },
+      "e200": {
+        "name": "Generate Logos",
+        "role": "button"
+      },
+      "e201": {
+        "name": "Unique designs",
+        "role": "heading"
+      },
+      "e202": {
+        "name": "Free to use",
+        "role": "heading"
+      },
+      "e203": {
+        "name": "It’s fast - create a logo in 2 seconds",
+        "role": "heading"
+      },
+      "e204": {
+        "name": "Enter your business name",
+        "role": "textbox"
+      },
+      "e205": {
+        "name": "Generate Logos",
+        "role": "button"
+      },
+      "e206": {
+        "name": "What is the Design.com logo maker?",
+        "role": "heading"
+      },
+      "e207": {
+        "name": "Do I get a transparent version of my logo?",
+        "role": "heading"
+      },
+      "e208": {
+        "name": "What layout works best for logos?",
+        "role": "heading"
+      },
+      "e209": {
+        "name": "What text should I choose for my logo?",
+        "role": "heading"
+      },
+      "e21": {
+        "name": "Support",
+        "role": "heading"
+      },
+      "e210": {
+        "name": "How do I find the right logo?",
+        "role": "heading"
+      },
+      "e211": {
+        "name": "How do I add a tagline to my logo?",
+        "role": "heading"
+      },
+      "e212": {
+        "name": "Can I download my logo instantly?",
+        "role": "heading"
+      },
+      "e213": {
+        "name": "Do I get my logo in vector format?",
+        "role": "heading"
+      },
+      "e214": {
+        "name": "English",
+        "role": "option"
+      },
+      "e215": {
+        "name": "Français",
+        "role": "option"
+      },
+      "e216": {
+        "name": "Français (Canada)",
+        "role": "option"
+      },
+      "e217": {
+        "name": "Español",
+        "role": "option"
+      },
+      "e218": {
+        "name": "Deutsch",
+        "role": "option"
+      },
+      "e219": {
+        "name": "Português",
+        "role": "option"
+      },
+      "e22": {
+        "name": "Royalty-free logos",
+        "role": "heading"
+      },
+      "e220": {
+        "name": "Português (Brasil)",
+        "role": "option"
+      },
+      "e221": {
+        "name": "Logos",
+        "role": "link"
+      },
+      "e222": {
+        "name": "Business Cards",
+        "role": "link"
+      },
+      "e223": {
+        "name": "Websites",
+        "role": "link"
+      },
+      "e224": {
+        "name": "AI",
+        "role": "link"
+      },
+      "e225": {
+        "name": "Start Now",
+        "role": "button"
+      },
+      "e226": {
+        "name": "Enter Your Business Name",
+        "role": "textbox"
+      },
+      "e227": {
+        "name": "Minimalist Simple Brand Logo Logo preview image",
+        "role": "link"
+      },
+      "e228": {
+        "name": "Simple Minimalist Boutique Logo Logo preview image",
+        "role": "link"
+      },
+      "e229": {
+        "name": "Professional Generic Firm Logo Logo preview image",
+        "role": "link"
+      },
+      "e23": {
+        "name": "ADVANTAGES",
+        "role": "heading"
+      },
+      "e230": {
+        "name": "Professional Studio Bar Logo Logo preview image",
+        "role": "link"
+      },
+      "e231": {
+        "name": "Generic Brand Letter L Logo Logo preview image",
+        "role": "link"
+      },
+      "e232": {
+        "name": "Simple Minimalist Brand Logo Logo preview image",
+        "role": "link"
+      },
+      "e233": {
+        "name": "Designer Monogram Letters Logo Logo preview image",
+        "role": "link"
+      },
+      "e234": {
+        "name": "Generic Fashion Boutique Logo Logo preview image",
+        "role": "link"
+      },
+      "e235": {
+        "name": "Generic Company Badge Logo Logo preview image",
+        "role": "link"
+      },
+      "e236": {
+        "name": "Professional Studio Brand Logo Logo preview image",
+        "role": "link"
+      },
+      "e237": {
+        "name": "Generic Hexagon Badge Logo Logo preview image",
+        "role": "link"
+      },
+      "e238": {
+        "name": "Premium Brand Enterprise Logo Logo preview image",
+        "role": "link"
+      },
+      "e239": {
+        "name": "Generic Minimalist Boutique Logo Logo preview image",
+        "role": "link"
+      },
+      "e24": {
+        "name": "Your own logo and business branding tool",
+        "role": "heading"
+      },
+      "e240": {
+        "name": "Airflow Wind Ventilation Logo Logo preview image",
+        "role": "link"
+      },
+      "e241": {
+        "name": "Home Cabin Workshop Logo Logo preview image",
+        "role": "link"
+      },
+      "e242": {
+        "name": "Muslim Woman Hijab Logo Logo preview image",
+        "role": "link"
+      },
+      "e25": {
+        "name": "Your business is your logo, your logo is your business",
+        "role": "heading"
+      },
+      "e26": {
+        "name": "Create a beautiful logo with a few clicks",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Build your entire brand, not just the perfect logo",
+        "role": "heading"
+      },
+      "e28": {
+        "name": "Get started with Design.com's Logo Maker",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "Make your dream logo - in seconds!",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "Site Logo",
+        "role": "link"
+      },
+      "e30": {
+        "name": "TESTIMONIALS",
+        "role": "heading"
+      },
+      "e31": {
+        "name": "HOW TO",
+        "role": "heading"
+      },
+      "e32": {
+        "name": "How do I make a logo with Design.com?",
+        "role": "heading"
+      },
+      "e33": {
+        "name": "Start searching",
+        "role": "heading"
+      },
+      "e34": {
+        "name": "Refine your search",
+        "role": "heading"
+      },
+      "e35": {
+        "name": "Create a logo shortlist",
+        "role": "heading"
+      },
+      "e36": {
+        "name": "Edit your logo",
+        "role": "heading"
+      },
+      "e37": {
+        "name": "Preview your logo",
+        "role": "heading"
+      },
+      "e38": {
+        "name": "Download your logo",
+        "role": "heading"
+      },
+      "e39": {
+        "name": "Get started with Design.com's Logo Maker",
+        "role": "heading"
+      },
+      "e4": {
+        "name": "Site Navigation",
+        "role": "navigation"
+      },
+      "e40": {
+        "name": "Frequently asked questions",
+        "role": "heading"
+      },
+      "e41": {
+        "name": "Select language",
+        "role": "combobox"
+      },
+      "e42": {
+        "name": "Logo Maker",
+        "role": "heading"
+      },
+      "e43": {
+        "name": "Make a beautiful logo in seconds. Try it for free!",
+        "role": "heading"
+      },
+      "e44": {
+        "name": "Generate logo designs",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Create My logo",
+        "role": "link"
+      },
+      "e46": {
+        "name": "Browse handcrafted logos",
+        "role": "link"
+      },
+      "e47": {
+        "name": "Create Your Logo",
+        "role": "link"
+      },
+      "e48": {
+        "name": "See More Designs",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Customers say Design.com is the best logo maker",
+        "role": "heading"
+      },
+      "e5": {
+        "name": "Scroll to content",
+        "role": "button"
+      },
+      "e50": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e51": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e52": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e53": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e54": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e55": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e56": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e57": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e58": {
+        "name": "Logo Maker",
+        "role": "link"
+      },
+      "e59": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e6": {
+        "name": "HOW TO",
+        "role": "heading"
+      },
+      "e60": {
+        "name": "Design Templates",
+        "role": "link"
+      },
+      "e61": {
+        "name": "Social Templates",
+        "role": "link"
+      },
+      "e62": {
+        "name": "Print Templates",
+        "role": "link"
+      },
+      "e63": {
+        "name": "Website Templates",
+        "role": "link"
+      },
+      "e64": {
+        "name": "Logo Ideas",
+        "role": "link"
+      },
+      "e65": {
+        "name": "Design Ideas",
+        "role": "link"
+      },
+      "e66": {
+        "name": "Business Cards",
+        "role": "link"
+      },
+      "e67": {
+        "name": "Free Logos",
+        "role": "link"
+      },
+      "e68": {
+        "name": "Free Business Cards",
+        "role": "link"
+      },
+      "e69": {
+        "name": "Free Templates",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Create the perfect logo for your business, in seconds",
+        "role": "heading"
+      },
+      "e70": {
+        "name": "Website Builder",
+        "role": "link"
+      },
+      "e71": {
+        "name": "Website Design",
+        "role": "link"
+      },
+      "e72": {
+        "name": "Link in Bio",
+        "role": "link"
+      },
+      "e73": {
+        "name": "Digital Business Cards",
+        "role": "link"
+      },
+      "e74": {
+        "name": "Domain Names",
+        "role": "link"
+      },
+      "e75": {
+        "name": "About us",
+        "role": "link"
+      },
+      "e76": {
+        "name": "Blog",
+        "role": "link"
+      },
+      "e77": {
+        "name": "Affiliates",
+        "role": "link"
+      },
+      "e78": {
+        "name": "Contact us",
+        "role": "link"
+      },
+      "e79": {
+        "name": "Legals",
+        "role": "link"
+      },
+      "e8": {
+        "name": "Generate logo designs",
+        "role": "heading"
+      },
+      "e80": {
+        "name": "Privacy policy",
+        "role": "link"
+      },
+      "e81": {
+        "name": "Help Center",
+        "role": "link"
+      },
+      "e82": {
+        "name": "Login",
+        "role": "link"
+      },
+      "e83": {
+        "name": "AI Design Tools",
+        "role": "link"
+      },
+      "e84": {
+        "name": "AI Business Name Generator",
+        "role": "link"
+      },
+      "e85": {
+        "name": "AI Logo Generator",
+        "role": "link"
+      },
+      "e86": {
+        "name": "AI Background Remover",
+        "role": "link"
+      },
+      "e87": {
+        "name": "AI Domain Name Generator",
+        "role": "link"
+      },
+      "e88": {
+        "name": "AI Website Builder",
+        "role": "link"
+      },
+      "e89": {
+        "name": "AI Business Card Generator",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Customize your logo",
+        "role": "heading"
+      },
+      "e90": {
+        "name": "AI Flyer Generator",
+        "role": "link"
+      },
+      "e91": {
+        "name": "AI Poster Generator",
+        "role": "link"
+      },
+      "e92": {
+        "name": "AI Link in Bio Generator",
+        "role": "link"
+      },
+      "e93": {
+        "name": "AI Presentation Maker",
+        "role": "link"
+      },
+      "e94": {
+        "name": "AI Social Media Generator",
+        "role": "link"
+      },
+      "e95": {
+        "name": "AI Image Generator",
+        "role": "link"
+      },
+      "e96": {
+        "name": "Facebook Posts",
+        "role": "link"
+      },
+      "e97": {
+        "name": "Facebook Stories",
+        "role": "link"
+      },
+      "e98": {
+        "name": "Facebook Covers",
+        "role": "link"
+      },
+      "e99": {
+        "name": "Facebook Events",
+        "role": "link"
+      }
+    },
+    "snapshot": "- banner\n  - generic\n    - link \"Site Logo\" [ref=e3]\n      - StaticText \"Site Logo\"\n      - image\n    - navigation \"Site Navigation\" [ref=e4]\n      - list\n        - listitem [level=1]\n          - link \"Logos\" [ref=e221]\n        - listitem [level=1]\n          - link \"Business Cards\" [ref=e222]\n        - listitem [level=1]\n          - StaticText \"Social\"\n        - listitem [level=1]\n          - link \"Websites\" [ref=e223]\n        - listitem [level=1]\n          - StaticText \"More\"\n        - listitem [level=1]\n          - link \"AI\" [ref=e224]\n    - list\n      - listitem [level=1]\n        - generic [ref=e196] clickable [cursor:pointer]\n          - StaticText \"Log in\"\n  - generic\n    - heading \"Logo Maker\" [level=1, ref=e42]\n    - heading \"Make a beautiful logo in seconds. Try it for free!\" [level=2, ref=e43]\n    - form\n      - LabelText\n        - StaticText \"Enter Your Business Name\"\n        - textbox \"Enter Your Business Name\" [ref=e226]\n      - button \"Start Now\" [ref=e225]\n        - StaticText \"Start Now\"\n    - figure\n      - image \"hero collage\"\n    - button \"Scroll to content\" [ref=e5]\n- main\n  - generic\n    - generic\n      - heading \"HOW TO\" [level=2, ref=e6]\n      - heading \"Create the perfect logo for your business, in seconds\" [level=3, ref=e7]\n      - paragraph\n        - StaticText \"Design.com’s logo maker has over 449,000+ premium logo Designs created by designers from around the world. Here's how it works:\"\n      - heading \"Generate logo designs\" [level=2, ref=e8]\n      - paragraph\n        - StaticText \"To get started with Design.com's logo maker just enter your business name and let our Logo Maker create amazing logo Designs, instantly. You can Browse thousands of logos tailored with your business name and Find a design that's perfect for you. Looking for a more specific logo? No problem! You can enter keywords to refine the logos and Find a design that really suits your business.\"\n      - link \"Generate logo designs\" [ref=e44]\n        - StaticText \"Generate logo designs\"\n      - figure\n        - image \" Logo maker example Designs\"\n      - heading \"Customize your logo\" [level=2, ref=e9]\n      - paragraph\n        - StaticText \"Once you've found a logo you love it's a breeze to change the logo colors, fonts and layout. Moving the logo icon or adjusting the spacing of the design is simple - there's virtually no limit to what you can do with our logo maker tool. You can create something bespoke by adding gradient colors, additional shapes or some curved text - it's easy to create your perfect logo.\"\n      - link \"Create My logo\" [ref=e45]\n        - StaticText \"Create My logo\"\n      - figure\n        - image \" Logo maker tool preview\"\n      - heading \"Download your logo\" [level=2, ref=e10]\n      - paragraph\n        - StaticText \"Now that you've crafted the perfect logo design it's time to download. Downloading your logo on Design.com is instant and with all your logo design files available in your account you'll have everything you need to get your new brand setup. We'll also send your an email with a link to your logo files so you can find them easily. Your logo comes with the following:\"\n      - list\n        - listitem [level=1]\n          - image \"List item\"\n          - paragraph\n            - StaticText \"High-resolution logo files (PNG and JPG files) - perfect for your website\"\n        - listitem [level=1]\n          - image \"List item\"\n          - paragraph\n            - StaticText \"Vector logo files (SVG, EPS and PDF) - perfect for print\"\n        - listitem [level=1]\n          - image \"List item\"\n          - paragraph\n            - StaticText \"Logo files with transparent backgrounds\"\n        - listitem [level=1]\n          - image \"List item\"\n          - paragraph\n            - StaticText \"Multiple variations of your logo\"\n      - link \"Browse handcrafted logos\" [ref=e46]\n        - StaticText \"Browse handcrafted logos\"\n      - figure\n        - image \" Logo download file types\"\n    - heading \"Get started with Design.com's Logo Maker\" [level=2, ref=e11]\n    - paragraph\n      - StaticText \"Enter your business name and we'll start creating logos in seconds...\"\n    - form\n      - LabelText\n        - StaticText \"Enter your business name\"\n        - textbox \"Enter your business name\" [ref=e197]\n      - button \"Generate Logos\" [ref=e198]\n        - StaticText \"Generate Logos\"\n    - generic\n      - heading \"FEATURES\" [level=2, ref=e12]\n      - heading \"What you get with Design.com's logo maker\" [level=3, ref=e13]\n      - heading \"Premium Logo Designs\" [level=4, ref=e14]\n      - paragraph\n        - StaticText \"Every logo in our library is uniquely handcrafted by professional designers from across the globe.\"\n      - heading \"All the files you need\" [level=4, ref=e15]\n      - paragraph\n        - StaticText \"Get high-res logo files (PNG and JPG) for your website & vector files (SVG, EPS and PDF) ready for print.\"\n      - heading \"Color and layout variations\" [level=4, ref=e16]\n      - paragraph\n        - StaticText \"Choose from several layout options and use any color for your logo.\"\n      - heading \"Business card templates\" [level=4, ref=e17]\n      - paragraph\n        - StaticText \"Choose from thousands of business card templates, customised with your logo colors to match your brand.\"\n      - heading \"Social media templates\" [level=4, ref=e18]\n      - paragraph\n        - StaticText \"Create social media designs including Instagram posts & stories automatically customized with your logo colors.\"\n      - heading \"Brand identity templates\" [level=4, ref=e19]\n      - paragraph\n        - StaticText \"Create letterheads, email signatures matched to your logo colors to complete your brand identity.\"\n      - heading \"Unlimited customization\" [level=4, ref=e20]\n      - paragraph\n        - StaticText \"Change the layout, colors and font on your logo. Get unlimited edits and create as many variations as you want.\"\n      - heading \"Support\" [level=4, ref=e21]\n      - paragraph\n        - StaticText \"With 24/7 support from our team of logo experts, you're always looked after from logo creation to download and beyond.\"\n      - heading \"Royalty-free logos\" [level=4, ref=e22]\n      - paragraph\n        - StaticText \"Get a worldwide, irrevocable license to use your logo for any commercial and non-commercial purpose.\"\n    - heading \"ADVANTAGES\" [level=2, ref=e23]\n    - heading \"Your own logo and business branding tool\" [level=2, ref=e24]\n    - figure\n      - image \"Logo branding\"\n    - heading \"Your business is your logo, your logo is your business\" [level=2, ref=e25]\n    - paragraph\n      - StaticText \"Everyone wants the perfect logo for their business. The good news is you can create a beautiful logo with Design.com's artificial intelligence powered logo maker. Our online logo maker lets you generate designs perfectly suited to your business from using advanced artificial intelligence and huge library of professionally designed logos. There's no stock icons here - every logo has been handcrafted and is exclusive to Design.com. So, if you want the best logo for your business then start customising a logo today. You can edit all our logos for free and make a logo you love in seconds - who doesn't like the sound of that?\"\n    - heading \"Create a beautiful logo with a few clicks\" [level=2, ref=e26]\n    - paragraph\n      - StaticText \"At Design.com we know startups, entrepreneurs and new businesses are short on time - in fact who isn't? We also know that you want an AI logo tool that's not just free to try, but super simple to use. That's why we've spent many hours perfecting our logo maker, so you can get that amazing logo with zero fuss - Simply find a logo, customize it and download the logo files. You can have a beautiful logo for your business in just a few clicks.\"\n    - heading \"Build your entire brand, not just the perfect logo\" [level=2, ref=e27]\n    - paragraph\n      - StaticText \"There's a lot more to starting a successful business than getting a fab logo - but making sure you put that logo to work is still crucial. At Design.com, we make sure that once you've created your new logo you don't miss the opportunity to get branded business cards, social media pics, banners and covers - all easily customisable with our suite of design editors. You can also put your new logo on stationery, including envelopes and letterheads. Want more? We can also get your branded merch, office supplies and stationery printed - making Design.com the one-stop-shop for launching your business.\"\n    - link \"Create Your Logo\" [ref=e47]\n      - StaticText \"Create Your Logo\"\n    - heading \"LOGO TEMPLATES\" [level=2, ref=e1]\n    - heading \"Make a logo you'll love, instantly. Try for free.\" [level=3, ref=e2]\n    - paragraph\n      - StaticText \"Whether you need a beauty logo, a logo for your real estate business or even a logo for your new startup, we help you generate thousands of logo designs in seconds.\"\n    - generic\n      - figure\n        - link \"Minimalist Simple Brand Logo Logo preview image\" [ref=e227]\n          - image \"Minimalist Simple Brand Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Simple Minimalist Boutique Logo Logo preview image\" [ref=e228]\n          - image \"Simple Minimalist Boutique Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Professional Generic Firm Logo Logo preview image\" [ref=e229]\n          - image \"Professional Generic Firm Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Professional Studio Bar Logo Logo preview image\" [ref=e230]\n          - image \"Professional Studio Bar Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Generic Brand Letter L Logo Logo preview image\" [ref=e231]\n          - image \"Generic Brand Letter L Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Simple Minimalist Brand Logo Logo preview image\" [ref=e232]\n          - image \"Simple Minimalist Brand Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Designer Monogram Letters Logo Logo preview image\" [ref=e233]\n          - image \"Designer Monogram Letters Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Generic Fashion Boutique Logo Logo preview image\" [ref=e234]\n          - image \"Generic Fashion Boutique Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Generic Company Badge Logo Logo preview image\" [ref=e235]\n          - image \"Generic Company Badge Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Professional Studio Brand Logo Logo preview image\" [ref=e236]\n          - image \"Professional Studio Brand Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Generic Hexagon Badge Logo Logo preview image\" [ref=e237]\n          - image \"Generic Hexagon Badge Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Premium Brand Enterprise Logo Logo preview image\" [ref=e238]\n          - image \"Premium Brand Enterprise Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Generic Minimalist Boutique Logo Logo preview image\" [ref=e239]\n          - image \"Generic Minimalist Boutique Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Airflow Wind Ventilation Logo Logo preview image\" [ref=e240]\n          - image \"Airflow Wind Ventilation Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Home Cabin Workshop Logo Logo preview image\" [ref=e241]\n          - image \"Home Cabin Workshop Logo\"\n          - StaticText \"Logo preview image\"\n      - figure\n        - link \"Muslim Woman Hijab Logo Logo preview image\" [ref=e242]\n          - image \"Muslim Woman Hijab Logo\"\n          - StaticText \"Logo preview image\"\n      - link \"See More Designs\" [ref=e48]\n        - StaticText \"See More Designs\"\n    - heading \"Get started with Design.com's Logo Maker\" [level=2, ref=e28]\n    - paragraph\n      - StaticText \"Enter your business name and we'll start creating logos in seconds...\"\n    - form\n      - LabelText\n        - StaticText \"Enter your business name\"\n        - textbox \"Enter your business name\" [ref=e199]\n      - button \"Generate Logos\" [ref=e200]\n        - StaticText \"Generate Logos\"\n    - generic\n      - heading [level=2]\n      - heading \"Make your dream logo - in seconds!\" [level=2, ref=e29]\n      - paragraph\n        - StaticText \"Why should you use Design.com logo maker to create your logo?\"\n      - figure\n      - list\n        - listitem [level=1]\n          - heading \"Unique designs\" [level=3, ref=e201]\n          - paragraph\n            - StaticText \"Our 449,000+ designs have all been handcrafted by a community of top designers. Get a stunning logo - always!\"\n        - listitem [level=1]\n          - heading \"Free to use\" [level=3, ref=e202]\n          - paragraph\n            - StaticText \"Design.com logo maker is free to use. Browse thousands of different logo designs, edit and save as many as you like.\"\n        - listitem [level=1]\n          - heading \"It’s fast - create a logo in 2 seconds\" [level=3, ref=e203]\n          - paragraph\n            - StaticText \"Pick a design you like and start editing it. In seconds you can make a logo you will love.\"\n    - heading \"TESTIMONIALS\" [level=2, ref=e30]\n    - heading \"Customers say Design.com is the best logo maker\" [level=2, ref=e49]\n    - generic\n      - blockquote\n        - paragraph\n          - StaticText \"Design.com is hands down the best site for logos and other business designs. Site is easy to use, great pricing, and customer support is excellent and fast.\"\n        - paragraph\n          - StaticText \"Janet\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Design.com is the best for creating logos. It has so many options that once you choose your logo, there are so many other things that are helpful to promote your business.\"\n        - paragraph\n          - StaticText \"Kay\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"The best logo designs I have received compared to using other methods/tools.\"\n        - paragraph\n          - StaticText \"Jonny\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"This was the best experience trying to get a logo for my business and they made me a gorgeous logo!\"\n        - paragraph\n          - StaticText \"Simone\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Excellent logo maker! The graphics are the best I've seen! 5 stars.\"\n        - paragraph\n          - StaticText \"Douglas\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Excellent designing platform for all your business needs. They have one of the best designing tools and especially the ease of use for people who are not creative.\"\n        - paragraph\n          - StaticText \"Adaptive Workspace Solutions\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Brilliantly simple and efficient way to design and incorporate a brand logo. Have tried many other apps and sites to design my logo but Design.com is the best I found. Would use again and highly recommend.\"\n        - paragraph\n          - StaticText \"Travis\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Design.com is the best logo creator site, so easy to use and I was able to make the logo of my choice for my business.\"\n        - paragraph\n          - StaticText \"Scotts Sublimation\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"The best place to create a logo and build a site.\"\n        - paragraph\n          - StaticText \"Ericka\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"I tried a couple other sites, Design.com was the best, very easy to use with great templates to start working with.\"\n        - paragraph\n          - StaticText \"Gisela\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"One of the best services I saw on the internet!!!\"\n        - paragraph\n          - StaticText \"Manel\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"This company rocks! Helpful and attentive customer service. Products and pricing are exceptional. Best I've found. Give them a try. You won't be disappointed!\"\n        - paragraph\n          - StaticText \"Katherine\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Best logo maker I have used.\"\n        - paragraph\n          - StaticText \"Ray\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Perfect for the DIY person who will take the time to work all of the graphic details necessary to design an excellent logo. Design.com is the best user-friendly design site with every option you can think of.\"\n        - paragraph\n          - StaticText \"Edward\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Design.com is an awesome tool with great possibilities at your fingertips. The best so far I have used.\"\n        - paragraph\n          - StaticText \"Nausheen\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Your editing tool is the best I've used personally and, in my humble opinion, is the best part of the website. I'm not the type to leave reviews, but that editing tool wowed me.\"\n        - paragraph\n          - StaticText \"Trey\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Best app out there for help with creating a professional logo that stands out.\"\n        - paragraph\n          - StaticText \"Luiz\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Absolutely incredible. Amazing designs and so many options. Fantastic editing and ease of use. The best!\"\n        - paragraph\n          - StaticText \"Paul\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"OMG the best!! All you have to do is let them know what you're thinking and they've got you! I love my design! It didn't take a long time and until you are satisfied, they got you!\"\n        - paragraph\n          - StaticText \"Deborah\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"The best and fastest logo design experience that I've ever had and liked! Highly recommended.\"\n        - paragraph\n          - StaticText \"Arash\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"The interface is very easy to navigate and the results are easily modified to fit what I was looking for. Start to finish in under 5 minutes with a perfect logo for a company.\"\n        - paragraph\n          - StaticText \"Trahan\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"I was able to create a logo for a not-for-profit quickly and efficiently and deliver 3 high quality options for the board of directors to choose from. Being able to use key words and choose styles and then edit. Amazing!\"\n        - paragraph\n          - StaticText \"Jill\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"I am a newly published author who discovered that Design.com has all the tools available to create promotional material, websites, logos, and more. I have extensive knowledge of computer design work, and this website provides everything I need.\"\n        - paragraph\n          - StaticText \"Robert\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"The logo options are awesome and I found one that was exactly what I was looking for!\"\n        - paragraph\n          - StaticText \"Lazer Focus LLC\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"It was easy and fun to create my logo. They have other services I will use in the future.\"\n        - paragraph\n          - StaticText \"HB\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"I'm new to content streaming and wanted to start my own brand. Design.com not only helped me do that but knocked it out of the park in a major way. Now I have my own logo for people to recognize me by.\"\n        - paragraph\n          - StaticText \"Aaron\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n      - blockquote\n        - paragraph\n          - StaticText \"Design.com helped me build a logo and establish a website all within an hour of work. They had so many good options for my logo based on my business name!\"\n        - paragraph\n          - StaticText \"Sellers\"\n        - list\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n          - listitem [level=1]\n    - generic\n    - generic\n      - heading \"HOW TO\" [level=2, ref=e31]\n      - heading \"How do I make a logo with Design.com?\" [level=3, ref=e32]\n      - paragraph\n        - StaticText \"Creating your dream logo easy with Design.com. Just follow these simple steps and you'll have a logo ready to share with the world in seconds.\"\n      - heading \"Start searching\" [level=4, ref=e33]\n      - paragraph\n        - StaticText \"To find logos relevant to your business enter your business name - We'll automatically show you logos related to your business. You can browse the logos and choose one you love.\"\n      - heading \"Refine your search\" [level=4, ref=e34]\n      - paragraph\n        - StaticText \"If you can't find the perfect logo, you can refine your search by entering related keywords.\"\n      - heading \"Create a logo shortlist\" [level=4, ref=e35]\n      - paragraph\n        - StaticText \"To make life easier you can \\\"shortlist\\\" logos that you like. Simply click the heart symbol and we'll add the logos to your shortlist.\"\n      - heading \"Edit your logo\" [level=4, ref=e36]\n      - paragraph\n        - StaticText \"Once you've found a logo that you love, you can customize the logo colors, fonts and layout. You can even add more embellishments with shapes.\"\n      - heading \"Preview your logo\" [level=4, ref=e37]\n      - paragraph\n        - StaticText \"When you're done editing you can easily preview your logo on apparel, signage and more to see how it looks in real life.\"\n      - heading \"Download your logo\" [level=4, ref=e38]\n      - paragraph\n        - StaticText \"Once you're done customizing, you can download your logo - you'll get access to all the logo files you need, instantly\"\n    - heading \"Get started with Design.com's Logo Maker\" [level=2, ref=e39]\n    - paragraph\n      - StaticText \"Enter your business name and we'll start creating logos in seconds...\"\n    - form\n      - LabelText\n        - StaticText \"Enter your business name\"\n        - textbox \"Enter your business name\" [ref=e204]\n      - button \"Generate Logos\" [ref=e205]\n        - StaticText \"Generate Logos\"\n    - heading \"Frequently asked questions\" [level=3, ref=e40]\n    - paragraph\n      - StaticText \"Creating that perfect logo with Design.com is easy - but just in case, here's some FAQs to help you get started.\"\n    - list\n      - listitem [level=1, ref=e50] clickable [cursor:pointer]\n        - heading \"What is the Design.com logo maker?\" [level=4, ref=e206]\n        - paragraph\n          - StaticText \"Design.com's logo maker allows you to generate and customize stand-out logos in seconds. Design.com gives you access to a professional library of thousands of customizable logo designs - making creating your logo inexpensive and straightforward. Our logos, created by designers around the globe, give you unlimited possibilities.\"\n      - listitem [level=1, ref=e51] clickable [cursor:pointer]\n        - heading \"Do I get a transparent version of my logo?\" [level=4, ref=e207]\n      - listitem [level=1, ref=e52] clickable [cursor:pointer]\n        - heading \"What layout works best for logos?\" [level=4, ref=e208]\n      - listitem [level=1, ref=e53] clickable [cursor:pointer]\n        - heading \"What text should I choose for my logo?\" [level=4, ref=e209]\n      - listitem [level=1, ref=e54] clickable [cursor:pointer]\n        - heading \"How do I find the right logo?\" [level=4, ref=e210]\n      - listitem [level=1, ref=e55] clickable [cursor:pointer]\n        - heading \"How do I add a tagline to my logo?\" [level=4, ref=e211]\n      - listitem [level=1, ref=e56] clickable [cursor:pointer]\n        - heading \"Can I download my logo instantly?\" [level=4, ref=e212]\n      - listitem [level=1, ref=e57] clickable [cursor:pointer]\n        - heading \"Do I get my logo in vector format?\" [level=4, ref=e213]\n- contentinfo\n  - navigation\n    - paragraph\n      - StaticText \"Design.com\"\n    - list\n      - listitem [level=1]\n        - link \"Logo Maker\" [ref=e58]\n      - listitem [level=1]\n        - link \"Logo Templates\" [ref=e59]\n      - listitem [level=1]\n        - link \"Design Templates\" [ref=e60]\n      - listitem [level=1]\n        - link \"Social Templates\" [ref=e61]\n      - listitem [level=1]\n        - link \"Print Templates\" [ref=e62]\n      - listitem [level=1]\n        - link \"Website Templates\" [ref=e63]\n      - listitem [level=1]\n        - link \"Logo Ideas\" [ref=e64]\n      - listitem [level=1]\n        - link \"Design Ideas\" [ref=e65]\n      - listitem [level=1]\n        - link \"Business Cards\" [ref=e66]\n      - listitem [level=1]\n        - link \"Free Logos\" [ref=e67]\n      - listitem [level=1]\n        - link \"Free Business Cards\" [ref=e68]\n      - listitem [level=1]\n        - link \"Free Templates\" [ref=e69]\n      - listitem [level=1]\n        - link \"Website Builder\" [ref=e70]\n      - listitem [level=1]\n        - link \"Website Design\" [ref=e71]\n      - listitem [level=1]\n        - link \"Link in Bio\" [ref=e72]\n      - listitem [level=1]\n        - link \"Digital Business Cards\" [ref=e73]\n      - listitem [level=1]\n        - link \"Domain Names\" [ref=e74]\n    - paragraph\n      - StaticText \"Company\"\n    - list\n      - listitem [level=1]\n        - link \"About us\" [ref=e75]\n      - listitem [level=1]\n        - link \"Blog\" [ref=e76]\n      - listitem [level=1]\n        - link \"Affiliates\" [ref=e77]\n      - listitem [level=1]\n        - link \"Contact us\" [ref=e78]\n      - listitem [level=1]\n        - link \"Legals\" [ref=e79]\n      - listitem [level=1]\n        - link \"Privacy policy\" [ref=e80]\n      - listitem [level=1]\n        - link \"Help Center\" [ref=e81]\n      - listitem [level=1]\n        - link \"Login\" [ref=e82]\n    - paragraph\n      - StaticText \"AI\"\n    - list\n      - listitem [level=1]\n        - link \"AI Design Tools\" [ref=e83]\n      - listitem [level=1]\n        - link \"AI Business Name Generator\" [ref=e84]\n      - listitem [level=1]\n        - link \"AI Logo Generator\" [ref=e85]\n      - listitem [level=1]\n        - link \"AI Background Remover\" [ref=e86]\n      - listitem [level=1]\n        - link \"AI Domain Name Generator\" [ref=e87]\n      - listitem [level=1]\n        - link \"AI Website Builder\" [ref=e88]\n      - listitem [level=1]\n        - link \"AI Business Card Generator\" [ref=e89]\n      - listitem [level=1]\n        - link \"AI Flyer Generator\" [ref=e90]\n      - listitem [level=1]\n        - link \"AI Poster Generator\" [ref=e91]\n      - listitem [level=1]\n        - link \"AI Link in Bio Generator\" [ref=e92]\n      - listitem [level=1]\n        - link \"AI Presentation Maker\" [ref=e93]\n      - listitem [level=1]\n        - link \"AI Social Media Generator\" [ref=e94]\n      - listitem [level=1]\n        - link \"AI Image Generator\" [ref=e95]\n    - paragraph\n      - StaticText \"Create Designs\"\n    - list\n      - listitem [level=1]\n        - link \"Facebook Posts\" [ref=e96]\n      - listitem [level=1]\n        - link \"Facebook Stories\" [ref=e97]\n      - listitem [level=1]\n        - link \"Facebook Covers\" [ref=e98]\n      - listitem [level=1]\n        - link \"Facebook Events\" [ref=e99]\n      - listitem [level=1]\n        - link \"Facebook Ads\" [ref=e100]\n      - listitem [level=1]\n        - link \"Facebook Profile Pictures\" [ref=e101]\n      - listitem [level=1]\n        - link \"Instagram Posts\" [ref=e102]\n      - listitem [level=1]\n        - link \"Instagram Reels\" [ref=e103]\n      - listitem [level=1]\n        - link \"Instagram Stories\" [ref=e104]\n      - listitem [level=1]\n        - link \"Instagram Profile Pictures\" [ref=e105]\n      - listitem [level=1]\n        - link \"LinkedIn Banners\" [ref=e106]\n      - listitem [level=1]\n        - link \"LinkedIn Posts\" [ref=e107]\n      - listitem [level=1]\n        - link \"LinkedIn Profile Pictures\" [ref=e108]\n      - listitem [level=1]\n        - link \"Pinterest Pins\" [ref=e109]\n      - listitem [level=1]\n        - link \"Pinterest Covers\" [ref=e110]\n      - listitem [level=1]\n        - link \"Pinterest Profile Pictures\" [ref=e111]\n    - list\n      - listitem [level=1]\n        - link \"Snapchat Designs\" [ref=e112]\n      - listitem [level=1]\n        - link \"SoundCloud Banners\" [ref=e113]\n      - listitem [level=1]\n        - link \"SoundCloud Profile Pictures\" [ref=e114]\n      - listitem [level=1]\n        - link \"TikTok Videos\" [ref=e115]\n      - listitem [level=1]\n        - link \"Tumblr Profile Pictures\" [ref=e116]\n      - listitem [level=1]\n        - link \"Tumblr Banners\" [ref=e117]\n      - listitem [level=1]\n        - link \"Twitch Banners\" [ref=e118]\n      - listitem [level=1]\n        - link \"Twitch Profile Pictures\" [ref=e119]\n      - listitem [level=1]\n        - link \"Twitter Headers\" [ref=e120]\n      - listitem [level=1]\n        - link \"Twitter Posts\" [ref=e121]\n      - listitem [level=1]\n        - link \"Whatsapp Stories\" [ref=e122]\n      - listitem [level=1]\n        - link \"YouTube Banners\" [ref=e123]\n      - listitem [level=1]\n        - link \"YouTube Shorts\" [ref=e124]\n      - listitem [level=1]\n        - link \"YouTube Videos\" [ref=e125]\n      - listitem [level=1]\n        - link \"YouTube Channel Icons\" [ref=e126]\n      - listitem [level=1]\n        - link \"Zoom Backgrounds\" [ref=e127]\n    - list\n      - listitem [level=1]\n        - link \"Email Signatures\" [ref=e128]\n      - listitem [level=1]\n        - link \"Invoices\" [ref=e129]\n      - listitem [level=1]\n        - link \"Menus\" [ref=e130]\n      - listitem [level=1]\n        - link \"Flyers\" [ref=e131]\n      - listitem [level=1]\n        - link \"Postcards\" [ref=e132]\n      - listitem [level=1]\n        - link \"Posters\" [ref=e133]\n      - listitem [level=1]\n        - link \"Gift Certificates\" [ref=e134]\n      - listitem [level=1]\n        - link \"Invitations\" [ref=e135]\n      - listitem [level=1]\n        - link \"Thank You Cards\" [ref=e136]\n      - listitem [level=1]\n        - link \"T-Shirts\" [ref=e137]\n      - listitem [level=1]\n        - link \"Videos\" [ref=e138]\n      - listitem [level=1]\n        - link \"Animations\" [ref=e139]\n      - listitem [level=1]\n        - link \"Letterheads\" [ref=e140]\n      - listitem [level=1]\n        - link \"Etsy Banners\" [ref=e141]\n      - listitem [level=1]\n        - link \"QR Code\" [ref=e142]\n      - listitem [level=1]\n        - link \"Presentations\" [ref=e143]\n    - paragraph\n      - StaticText \"Logos\"\n    - list\n      - listitem [level=1]\n        - link \"Gaming logo\" [ref=e144]\n      - listitem [level=1]\n        - link \"Company logo\" [ref=e145]\n      - listitem [level=1]\n        - link \"Business logo\" [ref=e146]\n      - listitem [level=1]\n        - link \"Brand logo\" [ref=e147]\n      - listitem [level=1]\n        - link \"Name logo\" [ref=e148]\n      - listitem [level=1]\n        - link \"Car logo\" [ref=e149]\n      - listitem [level=1]\n        - link \"Monogram logo\" [ref=e150]\n      - listitem [level=1]\n        - link \"School logo\" [ref=e151]\n      - listitem [level=1]\n        - link \"Food logo\" [ref=e152]\n      - listitem [level=1]\n        - link \"Youtube logo\" [ref=e153]\n      - listitem [level=1]\n        - link \"Photography logo\" [ref=e154]\n      - listitem [level=1]\n        - link \"Football logo\" [ref=e155]\n      - listitem [level=1]\n        - link \"Camera logo\" [ref=e156]\n      - listitem [level=1]\n        - link \"Crown logo\" [ref=e157]\n      - listitem [level=1]\n        - link \"Sports logo\" [ref=e158]\n      - listitem [level=1]\n        - link \"3d logo\" [ref=e159]\n      - listitem [level=1]\n        - link \"Construction logo\" [ref=e160]\n    - list\n      - listitem [level=1]\n        - link \"Cool logo\" [ref=e161]\n      - listitem [level=1]\n        - link \"DJ logo\" [ref=e162]\n      - listitem [level=1]\n        - link \"Restaurant logo\" [ref=e163]\n      - listitem [level=1]\n        - link \"Letter logo\" [ref=e164]\n      - listitem [level=1]\n        - link \"Real Estate logo\" [ref=e165]\n      - listitem [level=1]\n        - link \"Circle logo\" [ref=e166]\n      - listitem [level=1]\n        - link \"Fashion logo\" [ref=e167]\n      - listitem [level=1]\n        - link \"Cartoon logo\" [ref=e168]\n      - listitem [level=1]\n        - link \"Travel logo\" [ref=e169]\n      - listitem [level=1]\n        - link \"Cafe logo\" [ref=e170]\n      - listitem [level=1]\n        - link \"Eagle logo\" [ref=e171]\n      - listitem [level=1]\n        - link \"Podcast logo\" [ref=e172]\n      - listitem [level=1]\n        - link \"Bakery logo\" [ref=e173]\n      - listitem [level=1]\n        - link \"Text logo\" [ref=e174]\n      - listitem [level=1]\n        - link \"Icon logo\" [ref=e175]\n      - listitem [level=1]\n        - link \"Word logo\" [ref=e176]\n      - listitem [level=1]\n        - link \"Team logo\" [ref=e177]\n    - list\n      - listitem [level=1]\n        - link \"App logo\" [ref=e178]\n      - listitem [level=1]\n        - link \"Barber logo\" [ref=e179]\n      - listitem [level=1]\n        - link \"Font logo\" [ref=e180]\n      - listitem [level=1]\n        - link \"Web logo\" [ref=e181]\n      - listitem [level=1]\n        - link \"Pizza logo\" [ref=e182]\n      - listitem [level=1]\n        - link \"Shop logo\" [ref=e183]\n      - listitem [level=1]\n        - link \"Simple logo\" [ref=e184]\n      - listitem [level=1]\n        - link \"Symbol logo\" [ref=e185]\n      - listitem [level=1]\n        - link \"Beauty logo\" [ref=e186]\n      - listitem [level=1]\n        - link \"Coffee logo\" [ref=e187]\n      - listitem [level=1]\n        - link \"Doctor logo\" [ref=e188]\n      - listitem [level=1]\n        - link \"Gym logo\" [ref=e189]\n      - listitem [level=1]\n        - link \"Lion logo\" [ref=e190]\n      - listitem [level=1]\n        - link \"Music logo\" [ref=e191]\n    - combobox \"Select language\" [expanded=false, ref=e41]: English\n      - MenuListPopup\n        - option \"English\" [selected, ref=e214]\n        - option \"Français\" [ref=e215]\n        - option \"Français (Canada)\" [ref=e216]\n        - option \"Español\" [ref=e217]\n        - option \"Deutsch\" [ref=e218]\n        - option \"Português\" [ref=e219]\n        - option \"Português (Brasil)\" [ref=e220]\n    - paragraph\n      - StaticText \"Copyright © 2026 Design.com. All Rights Reserved.\"\n    - paragraph\n      - StaticText \"All individual works are copyright protected by their respective owners & contributors. Design.com is handcrafted from around the world\"\n    - list\n      - listitem [level=1]\n        - link \"facebook\" [ref=e192]\n          - StaticText \"facebook\"\n      - listitem [level=1]\n        - link \"twitter\" [ref=e193]\n          - StaticText \"twitter\"\n      - listitem [level=1]\n        - link \"instagram\" [ref=e194]\n          - StaticText \"instagram\"\n      - listitem [level=1]\n        - link \"linkedin\" [ref=e195]\n          - StaticText \"linkedin\"",
+    "browserPageId": "bc16e061-695d-43d0-82cf-096cc0e2d4e6"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

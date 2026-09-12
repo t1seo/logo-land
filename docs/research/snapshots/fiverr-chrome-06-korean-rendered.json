@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Fiverr | Logo Maker\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t\t\t\t\t\t\t\t553 text field (settable) 모로 스튜디오\n~\t\t\t\t\t\t\t\t\t\t582 slider Value: 109, Secondary Actions: Increment, Decrement\n~\t\t\t\t\t\t\t\t\t\t583 stepper (settable, float) 109\nThe focused UI element is 553 text field (settable) 모로 스튜디오"
+}

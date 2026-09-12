@@ -1,0 +1,106 @@
+{
+  "id": "9d34a8ef-4cec-46df-9def-12ded6284617",
+  "ok": true,
+  "result": {
+    "origin": "https://app.brandmark.io/v3/",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "generic"
+      },
+      "e10": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Ideas",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Purchase",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Ideas",
+        "role": "button"
+      },
+      "e18": {
+        "name": "",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Purchase",
+        "role": "button"
+      },
+      "e2": {
+        "name": "New logo",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Ideas",
+        "role": "button"
+      },
+      "e23": {
+        "name": "",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Saved logos",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Login",
+        "role": "button"
+      },
+      "e5": {
+        "name": "",
+        "role": "button"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e7": {
+        "name": "",
+        "role": "generic"
+      },
+      "e8": {
+        "name": "",
+        "role": "generic"
+      },
+      "e9": {
+        "name": "Purchase",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - banner\n    - navigation\n      - button \"New logo\" [ref=e2]\n        - image\n        - StaticText \"New logo\"\n      - button \"Saved logos\" [ref=e3]\n        - image\n        - StaticText \"Saved logos\"\n      - button \"Login\" [ref=e4]\n        - image\n        - StaticText \"Login\"\n      - button [ref=e5]\n        - image\n  - generic\n    - generic\n      - generic [ref=e6] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Purchase\" [ref=e9]\n          - image\n          - StaticText \"Purchase\"\n        - button \"Save\" [ref=e10]\n          - image\n          - StaticText \"Save\"\n        - button \"Edit\" [ref=e11]\n          - image\n          - StaticText \"Edit\"\n        - button \"Ideas\" [ref=e12]\n          - image\n          - StaticText \"Ideas\"\n        - button [ref=e13]\n          - image\n    - generic\n      - generic [ref=e7] clickable [cursor:pointer]\n        - image\n      - generic\n        - button \"Purchase\" [ref=e14]\n          - image\n          - StaticText \"Purchase\"\n        - button \"Save\" [ref=e15]\n          - image\n          - StaticText \"Save\"\n        - button \"Edit\" [ref=e16]\n          - image\n          - StaticText \"Edit\"\n        - button \"Ideas\" [ref=e17]\n          - image\n          - StaticText \"Ideas\"\n        - button [ref=e18]\n          - image\n    - generic\n      - generic [ref=e8] clickable [cursor:pointer]\n        - generic\n      - generic\n        - button \"Purchase\" [ref=e19]\n          - image\n          - StaticText \"Purchase\"\n        - button \"Save\" [ref=e20]\n          - image\n          - StaticText \"Save\"\n        - button \"Edit\" [ref=e21]\n          - image\n          - StaticText \"Edit\"\n        - button \"Ideas\" [ref=e22]\n          - image\n          - StaticText \"Ideas\"\n        - button [ref=e23]\n          - image\n  - generic [ref=e1] clickable [cursor:pointer]\n    - image\n- generic\n  - IframePresentational \"reCAPTCHA\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

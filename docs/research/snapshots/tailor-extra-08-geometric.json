@@ -1,0 +1,174 @@
+{
+  "id": "97f57b9d-1e0a-466f-bd2e-6d8ebf35e963",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/icon/abstract?id=766286287",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Select up to 5 icons",
+        "role": "heading"
+      },
+      "e11": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e23": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e24": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e27": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e28": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e30": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e31": {
+        "name": "Search for an icon",
+        "role": "button"
+      },
+      "e32": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e33": {
+        "name": "",
+        "role": "button"
+      },
+      "e34": {
+        "name": "",
+        "role": "button"
+      },
+      "e35": {
+        "name": "",
+        "role": "button"
+      },
+      "e36": {
+        "name": "",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "button"
+      },
+      "e38": {
+        "name": "Skip",
+        "role": "button"
+      },
+      "e39": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e40": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Icon ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e9": {
+        "name": "en",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Icon \" [ref=e6]\n          - generic\n            - StaticText \"Icon \"\n        - button \"Style \" [ref=e7]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e8]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e9]\n        - StaticText \"en\"\n      - generic\n        - heading \"Select up to 5 icons\" [level=1, ref=e10]\n        - button \"Preview\" [ref=e11]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e12]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e13]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e14]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e15]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e16]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e17]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e18]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e19]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e20]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e21]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e22]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e23]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e24]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e25]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e26]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e27]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e28]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e29]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e30]\n          - image \"Preview\"\n        - StaticText \"Didn’t find what you’re looking for?\"\n        - button \"Search for an icon\" [ref=e31]\n        - button \"Back\" [ref=e32]\n          - StaticText \"Back\"\n        - button [ref=e33]\n        - button [ref=e34]\n        - button [ref=e35]\n        - button [ref=e36]\n        - button [ref=e37]\n        - button \"Skip\" [ref=e38]\n          - StaticText \"Skip\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e39]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e40]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

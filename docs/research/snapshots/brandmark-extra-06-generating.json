@@ -1,0 +1,162 @@
+{
+  "id": "a05ef2bd-4639-4570-be96-fca0f0ae6903",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Grid View",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Brand name",
+        "role": "textbox"
+      },
+      "e12": {
+        "name": "Slogan (Optional)",
+        "role": "textbox"
+      },
+      "e13": {
+        "name": "Keywords",
+        "role": "textbox"
+      },
+      "e14": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e15": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e16": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e17": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e18": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e19": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e21": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e22": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e23": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e24": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e25": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e26": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e27": {
+        "name": "Brand Name",
+        "role": "heading"
+      },
+      "e28": {
+        "name": "Keywords",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e3": {
+        "name": "",
+        "role": "link"
+      },
+      "e30": {
+        "name": "Color Style",
+        "role": "heading"
+      },
+      "e31": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e32": {
+        "name": "GENERATING LOGOS",
+        "role": "heading"
+      },
+      "e33": {
+        "name": "Purchase",
+        "role": "button"
+      },
+      "e34": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e35": {
+        "name": "Variants",
+        "role": "button"
+      },
+      "e36": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e5": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e6": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e8": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Carousel View",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e3]\n        - image\n      - link \"Generate logos\" [ref=e4]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e5]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e6]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e7]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e8]\n        - image\n        - StaticText \"My Account\"\n  - generic\n    - generic\n      - generic\n        - heading \"Brand Name\" [level=2, ref=e27]\n        - paragraph\n          - StaticText \"The best brand names are short, memorable and easy to Google\"\n        - textbox \"Brand name\" [ref=e11]: Morrow Studio\n          - StaticText \"Morrow Studio\"\n        - textbox \"Slogan (Optional)\" [ref=e12]\n      - generic\n        - heading \"Keywords\" [level=2, ref=e28]\n        - paragraph\n          - StaticText \"Enter a few nouns that describe your brand\"\n        - button \"Back\" [ref=e29]\n          - image\n          - StaticText \"Back\"\n        - textbox \"Keywords\" [ref=e13]: sustainable design studio, forest, minimal\n          - StaticText \"sustainable design studio, forest, minimal\"\n      - generic\n        - heading \"Color Style\" [level=2, ref=e30]\n        - paragraph\n          - StaticText \"Select a color style\"\n        - button \"Back\" [ref=e31]\n          - image\n          - StaticText \"Back\"\n        - LabelText [ref=e14] clickable [cursor:pointer]\n          - StaticText \"Simple\"\n        - LabelText [ref=e15] clickable [cursor:pointer]\n          - StaticText \"Vibrant\"\n        - LabelText [ref=e16] clickable [cursor:pointer]\n          - StaticText \"Organic\"\n        - LabelText [ref=e17] clickable [cursor:pointer]\n          - StaticText \"High Contrast\"\n        - LabelText [ref=e18] clickable [cursor:pointer]\n          - StaticText \"Dark\"\n        - LabelText [ref=e19] clickable [cursor:pointer]\n          - StaticText \"Soft Pastel\"\n        - LabelText [ref=e20] clickable [cursor:pointer]\n        - LabelText [ref=e21] clickable [cursor:pointer]\n        - LabelText [ref=e22] clickable [cursor:pointer]\n        - LabelText [ref=e23] clickable [cursor:pointer]\n        - LabelText [ref=e24] clickable [cursor:pointer]\n        - LabelText [ref=e25] clickable [cursor:pointer]\n        - LabelText [ref=e26] clickable [cursor:pointer]\n      - generic\n        - image\n        - heading \"GENERATING LOGOS\" [level=2, ref=e32]\n        - StaticText \"100%\"\n    - generic\n      - button \"Carousel View\" [ref=e9]\n        - image\n        - StaticText \"Carousel\"\n      - button \"Grid View\" [ref=e10]\n        - image\n    - generic\n      - generic\n        - generic\n          - generic\n            - StaticText \"Gen AI\"\n            - image\n          - image \"Logo 8eb35a97-82a5-487b-89f3-99850d2ebf62\"\n        - generic\n          - button \"Purchase\" [ref=e33]\n            - image\n            - StaticText \"Purchase\"\n          - button \"Edit\" [ref=e34]\n            - image\n            - StaticText \"Edit\"\n          - button \"Variants\" [ref=e35]\n            - image\n            - StaticText \"Variants\"\n          - button \"Save\" [ref=e36]\n            - image\n            - StaticText \"Save\"\n          - button [expanded=false, ref=e37]\n            - image\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo bc9b3f97-8d73-420d-8f0e-9e06c9910d18\"\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo 9b6e0470-05f2-4a8f-ac18-9623bf2f631c\"\n  - generic [ref=e2] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

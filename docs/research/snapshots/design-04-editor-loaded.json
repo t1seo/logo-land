@@ -1,0 +1,138 @@
+{
+  "id": "05d50ea4-8d53-492a-baf1-42fcf8ad40f1",
+  "ok": true,
+  "result": {
+    "origin": "https://www.design.com/maker/logo/media-arch-studio-4034102?text=Morrow+Studio&layoutOrientation=2-line-break-at-14-with-since-year&isSearch=True&searchImpressionId=0e24f45d-fa28-4790-8139-bdb7d9ec0c0b",
+    "refs": {
+      "e1": {
+        "name": "Design.com",
+        "role": "link"
+      },
+      "e10": {
+        "name": "Delete",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Duplicate",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Save Progress",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e17": {
+        "name": "What would you like to do?",
+        "role": "textbox"
+      },
+      "e18": {
+        "name": "Start voice input",
+        "role": "button"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Back",
+        "role": "link"
+      },
+      "e20": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "",
+        "role": "generic"
+      },
+      "e22": {
+        "name": "",
+        "role": "generic"
+      },
+      "e23": {
+        "name": "",
+        "role": "generic"
+      },
+      "e24": {
+        "name": "",
+        "role": "generic"
+      },
+      "e25": {
+        "name": "",
+        "role": "generic"
+      },
+      "e26": {
+        "name": "",
+        "role": "generic"
+      },
+      "e27": {
+        "name": "Opacity",
+        "role": "button"
+      },
+      "e28": {
+        "name": "Layer",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Flip",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e30": {
+        "name": "",
+        "role": "generic"
+      },
+      "e31": {
+        "name": "Send message",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Save Progress",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Reset",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Undo",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Redo",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - link \"Design.com\" [ref=e1]\n    - image\n  - link \"Back\" [ref=e2]\n    - StaticText \"Back\"\n  - button \"Preview\" [ref=e3]\n    - StaticText \"Preview\"\n  - button \"Share\" [ref=e4]\n    - StaticText \"Share\"\n  - button \"Save Progress\" [ref=e5]\n    - StaticText \"Save Progress\"\n  - button \"Download\" [ref=e6]\n    - StaticText \"Download\"\n- main\n  - generic\n    - button \"Reset\" [ref=e7]\n      - StaticText \"Reset\"\n    - button \"Undo\" [disabled, ref=e8]\n      - StaticText \"Undo\"\n    - button \"Redo\" [disabled, ref=e9]\n      - StaticText \"Redo\"\n    - button \"Delete\" [disabled, ref=e10]\n      - StaticText \"Delete\"\n    - button \"Opacity\" [disabled, ref=e27]\n      - StaticText \"Opacity\"\n    - button \"Layer\" [disabled, ref=e28]\n      - StaticText \"Layer\"\n    - button \"Flip\" [disabled, ref=e29]\n      - StaticText \"Flip\"\n    - button \"Duplicate\" [disabled, ref=e11]\n      - StaticText \"Duplicate\"\n    - generic\n      - generic\n        - Canvas\n        - Canvas\n      - button [ref=e13]\n      - generic [ref=e30] clickable [cursor:pointer]\n        - StaticText \"100%\"\n      - button [ref=e14]\n    - button \"Share\" [ref=e12]\n    - generic\n      - button \"Save Progress\" [ref=e15]\n      - button \"Download\" [ref=e16]\n    - image\n    - StaticText \"What changes would you like to make to the design?\"\n    - image \"Message image\"\n    - textbox \"What would you like to do?\" [ref=e17]\n    - button \"Start voice input\" [ref=e18]\n    - generic [ref=e19] clickable [cursor:pointer]\n      - button \"Send message\" [disabled, ref=e31]\n    - generic [ref=e20] clickable [cursor:pointer]\n      - StaticText \"Text\"\n    - generic [ref=e21] clickable [cursor:pointer]\n      - StaticText \"Layout\"\n    - generic [ref=e22] clickable [cursor:pointer]\n      - StaticText \"Background\"\n    - generic [ref=e23] clickable [cursor:pointer]\n      - StaticText \"Logo\"\n    - generic [ref=e24] clickable [cursor:pointer]\n      - StaticText \"Shape\"\n    - generic [ref=e25] clickable [cursor:pointer]\n      - StaticText \"Animate\"\n    - generic [ref=e26] clickable [cursor:pointer]\n      - StaticText \"AI\"",
+    "browserPageId": "bc16e061-695d-43d0-82cf-096cc0e2d4e6"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

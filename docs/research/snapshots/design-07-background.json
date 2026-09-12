@@ -1,0 +1,306 @@
+{
+  "id": "3bbdfa96-1b6e-4e4a-8196-4dcb20605e71",
+  "ok": true,
+  "result": {
+    "origin": "https://www.design.com/maker/logo/media-arch-studio-4034102?text=Morrow+Studio&layoutOrientation=2-line-break-at-14-with-since-year&isSearch=True&searchImpressionId=0e24f45d-fa28-4790-8139-bdb7d9ec0c0b",
+    "refs": {
+      "e1": {
+        "name": "Design.com",
+        "role": "link"
+      },
+      "e10": {
+        "name": "Delete",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Duplicate",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Save Progress",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e17": {
+        "name": "",
+        "role": "generic"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Back",
+        "role": "link"
+      },
+      "e20": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "",
+        "role": "generic"
+      },
+      "e22": {
+        "name": "",
+        "role": "generic"
+      },
+      "e23": {
+        "name": "",
+        "role": "generic"
+      },
+      "e24": {
+        "name": "Opacity",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Layer",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Flip",
+        "role": "button"
+      },
+      "e27": {
+        "name": "",
+        "role": "generic"
+      },
+      "e28": {
+        "name": "New color",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "Recommended colors",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e30": {
+        "name": "Logo colors",
+        "role": "heading"
+      },
+      "e31": {
+        "name": "Default colors",
+        "role": "heading"
+      },
+      "e32": {
+        "name": "Gradient colors",
+        "role": "heading"
+      },
+      "e33": {
+        "name": "+",
+        "role": "button"
+      },
+      "e34": {
+        "name": "",
+        "role": "button"
+      },
+      "e35": {
+        "name": "",
+        "role": "button"
+      },
+      "e36": {
+        "name": "",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "button"
+      },
+      "e38": {
+        "name": "",
+        "role": "button"
+      },
+      "e39": {
+        "name": "",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e40": {
+        "name": "",
+        "role": "button"
+      },
+      "e41": {
+        "name": "",
+        "role": "button"
+      },
+      "e42": {
+        "name": "",
+        "role": "button"
+      },
+      "e43": {
+        "name": "",
+        "role": "button"
+      },
+      "e44": {
+        "name": "",
+        "role": "button"
+      },
+      "e45": {
+        "name": "",
+        "role": "button"
+      },
+      "e46": {
+        "name": "",
+        "role": "button"
+      },
+      "e47": {
+        "name": "",
+        "role": "button"
+      },
+      "e48": {
+        "name": "",
+        "role": "button"
+      },
+      "e49": {
+        "name": "",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Save Progress",
+        "role": "button"
+      },
+      "e50": {
+        "name": "",
+        "role": "button"
+      },
+      "e51": {
+        "name": "",
+        "role": "button"
+      },
+      "e52": {
+        "name": "",
+        "role": "button"
+      },
+      "e53": {
+        "name": "",
+        "role": "button"
+      },
+      "e54": {
+        "name": "",
+        "role": "button"
+      },
+      "e55": {
+        "name": "",
+        "role": "button"
+      },
+      "e56": {
+        "name": "",
+        "role": "button"
+      },
+      "e57": {
+        "name": "",
+        "role": "button"
+      },
+      "e58": {
+        "name": "",
+        "role": "button"
+      },
+      "e59": {
+        "name": "",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e60": {
+        "name": "",
+        "role": "button"
+      },
+      "e61": {
+        "name": "",
+        "role": "button"
+      },
+      "e62": {
+        "name": "",
+        "role": "button"
+      },
+      "e63": {
+        "name": "",
+        "role": "button"
+      },
+      "e64": {
+        "name": "",
+        "role": "button"
+      },
+      "e65": {
+        "name": "",
+        "role": "button"
+      },
+      "e66": {
+        "name": "",
+        "role": "button"
+      },
+      "e67": {
+        "name": "",
+        "role": "button"
+      },
+      "e68": {
+        "name": "",
+        "role": "button"
+      },
+      "e69": {
+        "name": "",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Reset",
+        "role": "button"
+      },
+      "e70": {
+        "name": "",
+        "role": "button"
+      },
+      "e71": {
+        "name": "",
+        "role": "button"
+      },
+      "e72": {
+        "name": "",
+        "role": "button"
+      },
+      "e73": {
+        "name": "",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Undo",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Redo",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - link \"Design.com\" [ref=e1]\n    - image\n  - link \"Back\" [ref=e2]\n    - StaticText \"Back\"\n  - button \"Preview\" [ref=e3]\n    - StaticText \"Preview\"\n  - button \"Share\" [ref=e4]\n    - StaticText \"Share\"\n  - button \"Save Progress\" [ref=e5]\n    - StaticText \"Save Progress\"\n  - button \"Download\" [ref=e6]\n    - StaticText \"Download\"\n- main\n  - generic\n    - button \"Reset\" [ref=e7]\n      - StaticText \"Reset\"\n    - button \"Undo\" [ref=e8]\n      - StaticText \"Undo\"\n    - button \"Redo\" [disabled, ref=e9]\n      - StaticText \"Redo\"\n    - button \"Delete\" [disabled, ref=e10]\n      - StaticText \"Delete\"\n    - button \"Opacity\" [disabled, ref=e24]\n      - StaticText \"Opacity\"\n    - button \"Layer\" [disabled, ref=e25]\n      - StaticText \"Layer\"\n    - button \"Flip\" [disabled, ref=e26]\n      - StaticText \"Flip\"\n    - button \"Duplicate\" [disabled, ref=e11]\n      - StaticText \"Duplicate\"\n    - generic\n      - generic\n        - Canvas\n        - Canvas\n      - button [ref=e13]\n      - generic [ref=e27] clickable [cursor:pointer]\n        - StaticText \"100%\"\n      - button [ref=e14]\n    - button \"Share\" [ref=e12]\n    - generic\n      - button \"Save Progress\" [ref=e15]\n      - button \"Download\" [ref=e16]\n    - StaticText \"Edit Background\"\n    - heading \"New color\" [level=6, ref=e28]\n      - paragraph\n        - StaticText \"New color\"\n    - button \"+\" [ref=e33]\n      - StaticText \"+\"\n    - heading \"Recommended colors\" [level=6, ref=e29]\n      - paragraph\n        - StaticText \"Recommended colors\"\n    - button [ref=e34]\n    - button [ref=e35]\n    - button [ref=e36]\n    - button [ref=e37]\n    - button [ref=e38]\n    - button [ref=e39]\n    - button [ref=e40]\n    - heading \"Logo colors\" [level=6, ref=e30]\n      - paragraph\n        - StaticText \"Logo colors\"\n    - button [ref=e41]\n    - button [ref=e42]\n    - button [ref=e43]\n    - heading \"Default colors\" [level=6, ref=e31]\n      - paragraph\n        - StaticText \"Default colors\"\n    - button [ref=e44]\n    - button [ref=e45]\n    - button [ref=e46]\n    - button [ref=e47]\n    - button [ref=e48]\n    - button [ref=e49]\n    - button [ref=e50]\n    - button [ref=e51]\n    - button [ref=e52]\n    - button [ref=e53]\n    - button [ref=e54]\n    - button [ref=e55]\n    - button [ref=e56]\n    - button [ref=e57]\n    - button [ref=e58]\n    - button [ref=e59]\n    - button [ref=e60]\n    - button [ref=e61]\n    - heading \"Gradient colors\" [level=6, ref=e32]\n      - paragraph\n        - StaticText \"Gradient colors\"\n    - button [ref=e62]\n    - button [ref=e63]\n    - button [ref=e64]\n    - button [ref=e65]\n    - button [ref=e66]\n    - button [ref=e67]\n    - button [ref=e68]\n    - button [ref=e69]\n    - button [ref=e70]\n    - button [ref=e71]\n    - button [ref=e72]\n    - button [ref=e73]\n    - generic [ref=e17] clickable [cursor:pointer]\n      - StaticText \"Text\"\n    - generic [ref=e18] clickable [cursor:pointer]\n      - StaticText \"Layout\"\n    - generic [ref=e19] clickable [cursor:pointer]\n      - StaticText \"Background\"\n    - generic [ref=e20] clickable [cursor:pointer]\n      - StaticText \"Logo\"\n    - generic [ref=e21] clickable [cursor:pointer]\n      - StaticText \"Shape\"\n    - generic [ref=e22] clickable [cursor:pointer]\n      - StaticText \"Animate\"\n    - generic [ref=e23] clickable [cursor:pointer]\n      - StaticText \"AI\"",
+    "browserPageId": "bc16e061-695d-43d0-82cf-096cc0e2d4e6"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

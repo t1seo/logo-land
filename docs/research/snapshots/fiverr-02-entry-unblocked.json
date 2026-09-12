@@ -1,0 +1,854 @@
+{
+  "id": "3651c798-ea4e-4456-b477-f17ff6c955fc",
+  "ok": true,
+  "result": {
+    "origin": "https://www.fiverr.com/logo-maker",
+    "refs": {
+      "e1": {
+        "name": "Quick Accessibility Options",
+        "role": "region"
+      },
+      "e10": {
+        "name": "How does the Logo Maker work?",
+        "role": "heading"
+      },
+      "e100": {
+        "name": "",
+        "role": "generic"
+      },
+      "e101": {
+        "name": "",
+        "role": "generic"
+      },
+      "e102": {
+        "name": "",
+        "role": "generic"
+      },
+      "e103": {
+        "name": "Check out our customers stories",
+        "role": "link"
+      },
+      "e104": {
+        "name": "Scroll down",
+        "role": "button"
+      },
+      "e105": {
+        "name": "",
+        "role": "generic"
+      },
+      "e106": {
+        "name": "",
+        "role": "button"
+      },
+      "e107": {
+        "name": "",
+        "role": "generic"
+      },
+      "e108": {
+        "name": "",
+        "role": "button"
+      },
+      "e109": {
+        "name": "help you build a strong brand",
+        "role": "link"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e110": {
+        "name": "Social Media >",
+        "role": "link"
+      },
+      "e111": {
+        "name": "Website >",
+        "role": "link"
+      },
+      "e112": {
+        "name": "Email signature >",
+        "role": "link"
+      },
+      "e113": {
+        "name": "Business cards >",
+        "role": "link"
+      },
+      "e114": {
+        "name": "Custom branded apparel and merchandise >",
+        "role": "link"
+      },
+      "e115": {
+        "name": "Promotional products >",
+        "role": "link"
+      },
+      "e116": {
+        "name": "",
+        "role": "generic"
+      },
+      "e117": {
+        "name": "",
+        "role": "generic"
+      },
+      "e118": {
+        "name": "",
+        "role": "generic"
+      },
+      "e119": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e120": {
+        "name": "",
+        "role": "generic"
+      },
+      "e121": {
+        "name": "",
+        "role": "generic"
+      },
+      "e122": {
+        "name": "",
+        "role": "generic"
+      },
+      "e123": {
+        "name": "",
+        "role": "generic"
+      },
+      "e124": {
+        "name": "The 7 types of logos & which is right for your brand",
+        "role": "heading"
+      },
+      "e125": {
+        "name": "The ultimate guide to choosing the right colors for your brand",
+        "role": "heading"
+      },
+      "e126": {
+        "name": "The 4 main font types & how to choose the right logo font",
+        "role": "heading"
+      },
+      "e127": {
+        "name": "How to design a logo: 12 steps to creating a business logo from scratch",
+        "role": "heading"
+      },
+      "e128": {
+        "name": "Open accessibility menu",
+        "role": "button"
+      },
+      "e129": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e130": {
+        "name": "Testimonials",
+        "role": "link"
+      },
+      "e131": {
+        "name": "Tutorials",
+        "role": "link"
+      },
+      "e132": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e133": {
+        "name": "Sign in",
+        "role": "link"
+      },
+      "e134": {
+        "name": "Join",
+        "role": "link"
+      },
+      "e135": {
+        "name": "",
+        "role": "link"
+      },
+      "e136": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e137": {
+        "name": "Join Fiverr",
+        "role": "button"
+      },
+      "e138": {
+        "name": "Sign in",
+        "role": "button"
+      },
+      "e139": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e140": {
+        "name": "How does the Logo Maker work?",
+        "role": "heading"
+      },
+      "e141": {
+        "name": "Watch our easy-to-follow video tutorials",
+        "role": "link"
+      },
+      "e142": {
+        "name": "How long does it take to generate my logo?",
+        "role": "heading"
+      },
+      "e143": {
+        "name": "What do you mean by \"logos made by talented designers on Fiverr\"?",
+        "role": "heading"
+      },
+      "e144": {
+        "name": "Can I use the Logo Maker for free?",
+        "role": "heading"
+      },
+      "e145": {
+        "name": "See all branding packages and pricing",
+        "role": "link"
+      },
+      "e146": {
+        "name": "What's included in the logo branding packages?",
+        "role": "heading"
+      },
+      "e147": {
+        "name": "See our logo branding packages",
+        "role": "link"
+      },
+      "e148": {
+        "name": "I need help from a professional designer to customize my logo. What can I do?",
+        "role": "heading"
+      },
+      "e149": {
+        "name": "Where can I use my logo?",
+        "role": "heading"
+      },
+      "e15": {
+        "name": "",
+        "role": "generic"
+      },
+      "e150": {
+        "name": "How to become a designer on Fiverr Logo Maker?",
+        "role": "heading"
+      },
+      "e151": {
+        "name": "join to start selling.",
+        "role": "link"
+      },
+      "e152": {
+        "name": "Enter your brand name",
+        "role": "textbox"
+      },
+      "e153": {
+        "name": "Logo Ideas",
+        "role": "link"
+      },
+      "e154": {
+        "name": "Branding Hub",
+        "role": "link"
+      },
+      "e155": {
+        "name": "Graphics & Design",
+        "role": "link"
+      },
+      "e156": {
+        "name": "Digital Marketing",
+        "role": "link"
+      },
+      "e157": {
+        "name": "Writing & Translation",
+        "role": "link"
+      },
+      "e158": {
+        "name": "Video & Animation",
+        "role": "link"
+      },
+      "e159": {
+        "name": "Music & Audio",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Use your logo everywhere",
+        "role": "heading"
+      },
+      "e160": {
+        "name": "Programming & Tech",
+        "role": "link"
+      },
+      "e161": {
+        "name": "Data",
+        "role": "link"
+      },
+      "e162": {
+        "name": "Business",
+        "role": "link"
+      },
+      "e163": {
+        "name": "Lifestyle",
+        "role": "link"
+      },
+      "e164": {
+        "name": "Help Center",
+        "role": "link"
+      },
+      "e165": {
+        "name": "Popular FAQs",
+        "role": "link"
+      },
+      "e166": {
+        "name": "Logo Maker Seller Guides",
+        "role": "link"
+      },
+      "e167": {
+        "name": "Become a Seller",
+        "role": "link"
+      },
+      "e168": {
+        "name": "About Fiverr Logo Maker",
+        "role": "link"
+      },
+      "e169": {
+        "name": "Pricing & Packages",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Need a logo for your brand? We made it easy.",
+        "role": "heading"
+      },
+      "e170": {
+        "name": "Careers",
+        "role": "link"
+      },
+      "e171": {
+        "name": "Press & News",
+        "role": "link"
+      },
+      "e172": {
+        "name": "Affiliates",
+        "role": "link"
+      },
+      "e173": {
+        "name": "Partnerships",
+        "role": "link"
+      },
+      "e174": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e175": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e176": {
+        "name": "Intellectual Property Claims",
+        "role": "link"
+      },
+      "e177": {
+        "name": "Investor Relations",
+        "role": "link"
+      },
+      "e178": {
+        "name": "Testimonials",
+        "role": "link"
+      },
+      "e179": {
+        "name": "Meet the Designers",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Start Now",
+        "role": "link"
+      },
+      "e180": {
+        "name": "Tutorials",
+        "role": "link"
+      },
+      "e181": {
+        "name": "How It Works",
+        "role": "link"
+      },
+      "e182": {
+        "name": "Font of The Year 2024",
+        "role": "link"
+      },
+      "e183": {
+        "name": "Guides",
+        "role": "link"
+      },
+      "e184": {
+        "name": "Logo Maker Scholarship",
+        "role": "link"
+      },
+      "e185": {
+        "name": "Events",
+        "role": "link"
+      },
+      "e186": {
+        "name": "Forum",
+        "role": "link"
+      },
+      "e187": {
+        "name": "Community Standards",
+        "role": "link"
+      },
+      "e188": {
+        "name": "Fiverr Marketplace",
+        "role": "link"
+      },
+      "e189": {
+        "name": "Fiverr Pro",
+        "role": "link"
+      },
+      "e19": {
+        "name": "How to create an iconic brand with Fiverr’s logo maker",
+        "role": "heading"
+      },
+      "e190": {
+        "name": "Become an Agency",
+        "role": "link"
+      },
+      "e191": {
+        "name": "Fiverr Enterprise",
+        "role": "link"
+      },
+      "e192": {
+        "name": "Fiverr on TikTok",
+        "role": "link"
+      },
+      "e193": {
+        "name": "Fiverr on Instagram",
+        "role": "link"
+      },
+      "e194": {
+        "name": "Fiverr on LinkedIn",
+        "role": "link"
+      },
+      "e195": {
+        "name": "Fiverr on Facebook",
+        "role": "link"
+      },
+      "e196": {
+        "name": "Fiverr on Pinterest",
+        "role": "link"
+      },
+      "e197": {
+        "name": "Fiverr on Twitter",
+        "role": "link"
+      },
+      "e198": {
+        "name": "Explore",
+        "role": "button"
+      },
+      "e199": {
+        "name": "Testimonials",
+        "role": "link"
+      },
+      "e2": {
+        "name": "Skip to main content",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Why use Fiverr Logo Maker",
+        "role": "heading"
+      },
+      "e200": {
+        "name": "Tutorials",
+        "role": "link"
+      },
+      "e201": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e202": {
+        "name": "Type your brand name",
+        "role": "textbox"
+      },
+      "e203": {
+        "name": "",
+        "role": "generic"
+      },
+      "e204": {
+        "name": "1",
+        "role": "button"
+      },
+      "e205": {
+        "name": "2",
+        "role": "button"
+      },
+      "e206": {
+        "name": "3",
+        "role": "button"
+      },
+      "e207": {
+        "name": "4",
+        "role": "button"
+      },
+      "e208": {
+        "name": "5",
+        "role": "button"
+      },
+      "e209": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "It's Professionally Designed",
+        "role": "heading"
+      },
+      "e210": {
+        "name": "Spencer Rice",
+        "role": "image"
+      },
+      "e22": {
+        "name": "It's Affordable",
+        "role": "heading"
+      },
+      "e23": {
+        "name": "It's Simple",
+        "role": "heading"
+      },
+      "e24": {
+        "name": "It's Fast",
+        "role": "heading"
+      },
+      "e25": {
+        "name": "It's Customizable",
+        "role": "heading"
+      },
+      "e26": {
+        "name": "It's the Full Package",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Get inspired by our logos",
+        "role": "heading"
+      },
+      "e28": {
+        "name": "What our users say",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "",
+        "role": "generic"
+      },
+      "e3": {
+        "name": "Enable accessibility for low vision",
+        "role": "button"
+      },
+      "e30": {
+        "name": "",
+        "role": "generic"
+      },
+      "e31": {
+        "name": "",
+        "role": "generic"
+      },
+      "e32": {
+        "name": "",
+        "role": "generic"
+      },
+      "e33": {
+        "name": "",
+        "role": "generic"
+      },
+      "e34": {
+        "name": "Check out our customers stories",
+        "role": "link"
+      },
+      "e35": {
+        "name": "Browse logo ideas by industry",
+        "role": "heading"
+      },
+      "e36": {
+        "name": "Kids",
+        "role": "link"
+      },
+      "e37": {
+        "name": "Non Profit",
+        "role": "link"
+      },
+      "e38": {
+        "name": "Events Planning",
+        "role": "link"
+      },
+      "e39": {
+        "name": "Environmental",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Open the accessibility menu",
+        "role": "button"
+      },
+      "e40": {
+        "name": "Retail And Wholesale",
+        "role": "link"
+      },
+      "e41": {
+        "name": "Construction",
+        "role": "link"
+      },
+      "e42": {
+        "name": "Services",
+        "role": "link"
+      },
+      "e43": {
+        "name": "Technology",
+        "role": "link"
+      },
+      "e44": {
+        "name": "Science",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Fashion And Apparel",
+        "role": "link"
+      },
+      "e46": {
+        "name": "Animals And Pets",
+        "role": "link"
+      },
+      "e47": {
+        "name": "Education",
+        "role": "link"
+      },
+      "e48": {
+        "name": "Gaming",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Religion And Spirituality",
+        "role": "link"
+      },
+      "e5": {
+        "name": "",
+        "role": "link"
+      },
+      "e50": {
+        "name": "Leisure Or Lifestyle",
+        "role": "link"
+      },
+      "e51": {
+        "name": "Beauty And Cosmetics",
+        "role": "link"
+      },
+      "e52": {
+        "name": "Travel Or Tourism",
+        "role": "link"
+      },
+      "e53": {
+        "name": "Agriculture",
+        "role": "link"
+      },
+      "e54": {
+        "name": "Real Estate",
+        "role": "link"
+      },
+      "e55": {
+        "name": "﹢ Discover more logo ideas",
+        "role": "link"
+      },
+      "e56": {
+        "name": "How to create a logo that stands out",
+        "role": "heading"
+      },
+      "e57": {
+        "name": "",
+        "role": "generic"
+      },
+      "e58": {
+        "name": "",
+        "role": "generic"
+      },
+      "e59": {
+        "name": "",
+        "role": "generic"
+      },
+      "e6": {
+        "name": "Create a logo you'll love for your brand with Fiverr Logo Maker",
+        "role": "heading"
+      },
+      "e60": {
+        "name": "",
+        "role": "generic"
+      },
+      "e61": {
+        "name": "",
+        "role": "generic"
+      },
+      "e62": {
+        "name": "Decide what style you want for your logo",
+        "role": "heading"
+      },
+      "e63": {
+        "name": "Create a logo you'll love for your brand",
+        "role": "heading"
+      },
+      "e64": {
+        "name": "Start Now",
+        "role": "link"
+      },
+      "e65": {
+        "name": "What makes a good logo?",
+        "role": "heading"
+      },
+      "e66": {
+        "name": "1 Simple",
+        "role": "heading"
+      },
+      "e67": {
+        "name": "2 Relevant",
+        "role": "heading"
+      },
+      "e68": {
+        "name": "3 Memorable",
+        "role": "heading"
+      },
+      "e69": {
+        "name": "4 Timeless",
+        "role": "heading"
+      },
+      "e7": {
+        "name": "Your style, Fiverr's designers",
+        "role": "heading"
+      },
+      "e70": {
+        "name": "5 Unique",
+        "role": "heading"
+      },
+      "e71": {
+        "name": "6 Versatile",
+        "role": "heading"
+      },
+      "e72": {
+        "name": "Where should you use your logo",
+        "role": "heading"
+      },
+      "e73": {
+        "name": "Social Media >",
+        "role": "heading"
+      },
+      "e74": {
+        "name": "Website >",
+        "role": "heading"
+      },
+      "e75": {
+        "name": "Email signature >",
+        "role": "heading"
+      },
+      "e76": {
+        "name": "Business cards >",
+        "role": "heading"
+      },
+      "e77": {
+        "name": "Custom branded apparel and merchandise >",
+        "role": "heading"
+      },
+      "e78": {
+        "name": "Promotional products >",
+        "role": "heading"
+      },
+      "e79": {
+        "name": "FAQs",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "Customized to your needs",
+        "role": "heading"
+      },
+      "e80": {
+        "name": "Learn more about logo creation",
+        "role": "heading"
+      },
+      "e81": {
+        "name": "The 7 types of logos which is right for your brand",
+        "role": "link"
+      },
+      "e82": {
+        "name": "The 7 types of logos & which is right for your brand",
+        "role": "link"
+      },
+      "e83": {
+        "name": "Read more",
+        "role": "link"
+      },
+      "e84": {
+        "name": "choosing the right colors for your brand",
+        "role": "link"
+      },
+      "e85": {
+        "name": "The ultimate guide to choosing the right colors for your brand",
+        "role": "link"
+      },
+      "e86": {
+        "name": "Read more",
+        "role": "link"
+      },
+      "e87": {
+        "name": "how to choose the right logo font",
+        "role": "link"
+      },
+      "e88": {
+        "name": "The 4 main font types & how to choose the right logo font",
+        "role": "link"
+      },
+      "e89": {
+        "name": "Read more",
+        "role": "link"
+      },
+      "e9": {
+        "name": "More than just a logo",
+        "role": "heading"
+      },
+      "e90": {
+        "name": "How to design a business logo",
+        "role": "link"
+      },
+      "e91": {
+        "name": "How to design a logo: 12 steps to creating a business logo from scratch",
+        "role": "link"
+      },
+      "e92": {
+        "name": "Read more",
+        "role": "link"
+      },
+      "e93": {
+        "name": "Fiverr Logo Maker",
+        "role": "heading"
+      },
+      "e94": {
+        "name": "Make Your Logo",
+        "role": "button"
+      },
+      "e95": {
+        "name": "Logo Maker",
+        "role": "heading"
+      },
+      "e96": {
+        "name": "Make a professional logo in a few clicks",
+        "role": "heading"
+      },
+      "e97": {
+        "name": "Make Your Logo",
+        "role": "button"
+      },
+      "e98": {
+        "name": "",
+        "role": "generic"
+      },
+      "e99": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- generic\n  - region \"Quick Accessibility Options\" [ref=e1]\n    - button \"Skip to main content\" [ref=e2]\n      - StaticText \"Skip to main content\"\n    - button \"Enable accessibility for low vision\" [ref=e3]\n      - StaticText \"Enable accessibility for low vision\"\n    - button \"Open the accessibility menu\" [ref=e4]\n      - StaticText \"Open the accessibility menu\"\n  - generic\n    - banner\n      - link [ref=e5]\n        - image\n      - navigation\n        - list\n          - listitem [level=1]\n            - generic [ref=e129] clickable [onclick]\n              - button \"Explore\" [ref=e198]\n                - StaticText \"Explore\"\n                - image\n          - listitem [level=1]\n            - link \"Testimonials\" [ref=e130]\n          - listitem [level=1]\n            - link \"Tutorials\" [ref=e131]\n          - listitem [level=1]\n            - link \"Pricing\" [ref=e132]\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Sign in\" [ref=e133]\n          - listitem [level=1]\n            - link \"Join\" [ref=e134]\n    - generic\n      - dialog\n        - banner\n          - link [ref=e135]\n            - image\n          - button \"Close\" [ref=e136]\n            - image\n        - StaticText \"Explore\"\n        - image\n        - link \"Testimonials\" [ref=e199]\n          - StaticText \"Testimonials\"\n        - link \"Tutorials\" [ref=e200]\n          - StaticText \"Tutorials\"\n        - link \"Pricing\" [ref=e201]\n          - StaticText \"Pricing\"\n        - StaticText \"$\"\n        - StaticText \"USD\"\n        - image\n        - StaticText \"Company\"\n        - image\n        - contentinfo\n          - button \"Join Fiverr\" [ref=e137]\n          - button \"Sign in\" [ref=e138]\n      - generic\n        - generic\n          - heading \"Logo Maker\" [level=1, ref=e95]\n          - heading \"Make a professional logo in a few clicks\" [level=2, ref=e96]\n          - textbox \"Type your brand name\" [ref=e202]\n          - button \"Make Your Logo\" [ref=e97]\n          - generic [ref=e98] clickable [onclick]\n            - image\n          - generic [ref=e99] clickable [onclick]\n            - image\n          - generic [ref=e100] clickable [onclick]\n            - image\n          - generic [ref=e101] clickable [onclick]\n            - image\n          - generic [ref=e102] clickable [onclick]\n            - image\n          - StaticText \"4.7\"\n          - StaticText \"/5\"\n          - StaticText \"from 8,892 ratings\"\n          - link \"Check out our customers stories\" [ref=e103]\n            - StaticText \"Check out our customers stories\"\n            - image\n          - generic\n            - image \"Logo Maker Example\"\n            - image \"Logo Maker Example\"\n            - image \"Logo Maker Example\"\n            - image \"Logo Maker Example\"\n          - generic\n            - StaticText \"Logo designed by\"\n            - figure \"budaart\"\n              - Figcaption\n                - StaticText \"B\"\n              - image \"budaart\"\n            - StaticText \"budaart\"\n          - button \"Scroll down\" [ref=e104]\n        - heading \"Create a logo you'll love for your brand with Fiverr Logo Maker\" [level=2, ref=e6]\n        - image \"research icon\"\n        - heading \"Your style, Fiverr's designers\" [level=3, ref=e7]\n        - paragraph\n          - StaticText \"Get a logo with your brand's look & feel, based on beautiful logo designs made by Fiverr's designers.\"\n        - image \"customization icon\"\n        - heading \"Customized to your needs\" [level=3, ref=e8]\n        - paragraph\n          - StaticText \"Edit your logo with our easy-to-use tools or request a designer to add their professional touch.\"\n        - image \"brand guideline icon\"\n        - heading \"More than just a logo\" [level=3, ref=e9]\n        - paragraph\n          - StaticText \"Get brand guidelines, social media designs, and more to create a memorable brand everywhere.\"\n        - heading \"How does the Logo Maker work?\" [level=2, ref=e10]\n        - generic [ref=e11] clickable [cursor:pointer, onclick]\n          - StaticText \"1\"\n        - generic [ref=e12] clickable [cursor:pointer, onclick]\n          - StaticText \"2\"\n        - generic [ref=e13] clickable [cursor:pointer, onclick]\n          - StaticText \"3\"\n        - generic [ref=e14] clickable [cursor:pointer, onclick]\n          - StaticText \"4\"\n        - generic [ref=e15] clickable [cursor:pointer, onclick]\n          - StaticText \"5\"\n        - StaticText \"Step 5\"\n        - heading \"Use your logo everywhere\" [level=3, ref=e16]\n        - paragraph\n          - StaticText \"Love your logo? Now download it and use it across all your printed and digital assets. Choose a branding package with everything you need for your business - from brand guidelines to print quality files to a complete social media kit.\"\n        - image \"download your logo - fiverr logo maker\"\n        - heading \"Need a logo for your brand? We made it easy.\" [level=2, ref=e17]\n        - link \"Start Now\" [ref=e18]\n        - heading \"How to create an iconic brand with Fiverr’s logo maker\" [level=2, ref=e19]\n        - generic\n          - generic [ref=e105] clickable [cursor:pointer, onclick]\n            - image \"how to use Fiverr Logo maker - video\"\n            - button [ref=e139]\n        - generic\n          - heading \"Why use Fiverr Logo Maker\" [level=2, ref=e20]\n          - paragraph\n            - StaticText \"Fiverr Logo Maker is the easiest, fastest, and most reliable way to get the best logo for your brand. Here's why:\"\n          - image \"fiverr logo maker professionally designed icon\"\n          - heading \"It's Professionally Designed\" [level=3, ref=e21]\n          - paragraph\n            - StaticText \"Every logo was created by a top-tier logo designer, hand-picked by Fiverr's Editorial Team. That's why all of our logos look so good.\"\n          - image \"affordable symbol - fiverr logo maker\"\n          - heading \"It's Affordable\" [level=3, ref=e22]\n          - paragraph\n            - StaticText \"It's free to explore hundreds of different options. Then purchase a logo that leaves an impact, not an imprint on your wallet.\"\n          - image \"simple symbol - fiverr logo maker\"\n          - heading \"It's Simple\" [level=3, ref=e23]\n          - paragraph\n            - StaticText \"Answer a few questions about your business and be presented with diverse logo designs. It couldn't be easier.\"\n          - image \"fast symbol - fiverr logo maker\"\n          - heading \"It's Fast\" [level=3, ref=e24]\n          - paragraph\n            - StaticText \"Our AI-backed platform enables you to get the logo you want in minutes, literally. Skip the time-consuming back and forth.\"\n          - image \"customizable symbol - fiverr logo maker\"\n          - heading \"It's Customizable\" [level=3, ref=e25]\n          - paragraph\n            - StaticText \"Our user-friendly smart editor lets you change colors, fonts, and layouts within the logo. No design skills needed to get a beautiful outcome.\"\n          - image \"full package symbol - fiverr logo maker\"\n          - heading \"It's the Full Package\" [level=3, ref=e26]\n          - paragraph\n            - StaticText \"Get a high-quality, resizable logo files on a transparent or colored background, ready for immediate use for websites, social media, apps, print, and much more.\"\n        - heading \"Get inspired by our logos\" [level=2, ref=e27]\n        - image \"fine line leaves green back ground - fiverr logo maker\"\n        - generic\n          - StaticText \"Byartphysis\"\n        - image \"three bowls stacked asian restaurant logo - fiverr logo maker\"\n        - generic\n          - StaticText \"Bytariklogodesign\"\n        - image \"two fish icon, sea food logo - fiverr logo maker\"\n        - generic\n          - StaticText \"Byumaurus\"\n        - image \"c letter logo, colive - fiverr logo maker\"\n        - generic\n          - StaticText \"Bytrag_design\"\n        - image \"smiling flower logo orange background - fiverr logo maker\"\n        - generic\n          - StaticText \"Byyuvall\"\n        - image \"signature logo, f&a - fiverr logo maker\"\n        - generic\n          - StaticText \"Byzlannan\"\n        - image \"three triangles logo living matter - fiverr logo maker\"\n        - generic\n          - StaticText \"Byiiidddooo\"\n        - image \"game over, hippo logo - fiverr logo maker\"\n        - generic\n          - StaticText \"Byclevertypo\"\n        - image \"cat, noodles restaurant logo - fiverr logo maker\"\n        - generic\n          - StaticText \"Byxushxush\"\n        - image \"three palm trees logos, palm house logo - fiverr logo maker\"\n        - generic\n          - StaticText \"Byamitmaman\"\n        - heading \"What our users say\" [level=2, ref=e28]\n        - generic\n          - button [ref=e106]\n          - generic [ref=e107] clickable [onclick]\n            - generic [ref=e203] clickable [onclick]\n              - generic [ref=e209] clickable [onclick]\n                - strong\n                  - StaticText \"5.0\"\n              - figure \"Spencer Rice\"\n                - Figcaption\n                  - StaticText \"S\"\n                - image \"Spencer Rice\" [ref=e210] clickable [onclick]\n              - generic\n                - StaticText \"Spencer Rice, Kraken Code LLC\"\n              - generic\n                - StaticText \"Industry:Data science & Cyber servicesUnited States\"\n              - paragraph\n                - image\n                - StaticText \"I tried 2 other DIY logo platforms but Fiverr gave me the best outcome and the closest design to what I envisioned. I loved the idea that there is a real designer behind the designs… not just AI.\"\n          - button [ref=e108]\n          - list\n            - listitem [level=1]\n              - button \"1\" [ref=e204]\n            - listitem [level=1]\n              - button \"2\" [ref=e205]\n            - listitem [level=1]\n              - button \"3\" [ref=e206]\n            - listitem [level=1]\n              - button \"4\" [ref=e207]\n            - listitem [level=1]\n              - button \"5\" [ref=e208]\n        - generic [ref=e29] clickable [onclick]\n          - image\n        - generic [ref=e30] clickable [onclick]\n          - image\n        - generic [ref=e31] clickable [onclick]\n          - image\n        - generic [ref=e32] clickable [onclick]\n          - image\n        - generic [ref=e33] clickable [onclick]\n          - image\n        - StaticText \"4.7\"\n        - StaticText \"/5\"\n        - StaticText \"from 8,892 ratings\"\n        - link \"Check out our customers stories\" [ref=e34]\n          - StaticText \"Check out our customers stories\"\n          - image\n        - heading \"Browse logo ideas by industry\" [level=2, ref=e35]\n        - link \"Kids\" [ref=e36]\n          - StaticText \"Kids\"\n        - link \"Non Profit\" [ref=e37]\n          - StaticText \"Non Profit\"\n        - link \"Events Planning\" [ref=e38]\n          - StaticText \"Events Planning\"\n        - link \"Environmental\" [ref=e39]\n          - StaticText \"Environmental\"\n        - link \"Retail And Wholesale\" [ref=e40]\n          - StaticText \"Retail And Wholesale\"\n        - link \"Construction\" [ref=e41]\n          - StaticText \"Construction\"\n        - link \"Services\" [ref=e42]\n          - StaticText \"Services\"\n        - link \"Technology\" [ref=e43]\n          - StaticText \"Technology\"\n        - link \"Science\" [ref=e44]\n          - StaticText \"Science\"\n        - link \"Fashion And Apparel\" [ref=e45]\n          - StaticText \"Fashion And Apparel\"\n        - link \"Animals And Pets\" [ref=e46]\n          - StaticText \"Animals And Pets\"\n        - link \"Education\" [ref=e47]\n          - StaticText \"Education\"\n        - link \"Gaming\" [ref=e48]\n          - StaticText \"Gaming\"\n        - link \"Religion And Spirituality\" [ref=e49]\n          - StaticText \"Religion And Spirituality\"\n        - link \"Leisure Or Lifestyle\" [ref=e50]\n          - StaticText \"Leisure Or Lifestyle\"\n        - link \"Beauty And Cosmetics\" [ref=e51]\n          - StaticText \"Beauty And Cosmetics\"\n        - link \"Travel Or Tourism\" [ref=e52]\n          - StaticText \"Travel Or Tourism\"\n        - link \"Agriculture\" [ref=e53]\n          - StaticText \"Agriculture\"\n        - link \"Real Estate\" [ref=e54]\n          - StaticText \"Real Estate\"\n        - link \"﹢ Discover more logo ideas\" [ref=e55]\n          - generic\n            - StaticText \"﹢ Discover more logo ideas\"\n        - generic\n          - heading \"How to create a logo that stands out\" [level=2, ref=e56]\n          - paragraph\n            - StaticText \"We combined the power of Al with the best of human design skills to instantly generate countless custom variations from over 30,000 logos, all handmade by our top designers. We then backed our logo maker with a free, simple-to-use editor to allow you to customize and create your logo with your personal touch, if you choose to do so.\"\n          - paragraph\n            - StaticText \"Learn how to create a professional logo that helps customers find their way to you by following these steps:\"\n          - generic [ref=e57] clickable [cursor:pointer, onclick]\n            - StaticText \"1\"\n          - generic [ref=e58] clickable [cursor:pointer, onclick]\n            - StaticText \"2\"\n          - generic [ref=e59] clickable [cursor:pointer, onclick]\n            - StaticText \"3\"\n          - generic [ref=e60] clickable [cursor:pointer, onclick]\n            - StaticText \"4\"\n          - generic [ref=e61] clickable [cursor:pointer, onclick]\n            - StaticText \"5\"\n          - StaticText \"Step 2\"\n          - heading \"Decide what style you want for your logo\" [level=3, ref=e62]\n          - paragraph\n            - StaticText \"Once you understand your target audience and competitors, you can formulate a better approach for choosing the logo style that matches your brand and conveys who you are and what you do upon first impression.\"\n          - paragraph\n            - StaticText \"There are different logo styles, each representing a range of brand values and personalities, so whether your brand values are classic or modern, accessible or premium, fun or serious, simple or sophisticated, traditional or innovative, make sure to choose the style that best represents your unique brand personality.\"\n          - image \"Decide what style you want for your logo - fiverr logo maker\"\n        - heading \"Create a logo you'll love for your brand\" [level=2, ref=e63]\n        - link \"Start Now\" [ref=e64]\n        - generic\n          - heading \"What makes a good logo?\" [level=2, ref=e65]\n          - paragraph\n            - StaticText \"There is no one-size-fits all solution to creating an impactful logo for your business or service, but there are certain criteria that every good logo should fulfill. These are the following elements that make a successful logo design:\"\n          - heading \"1 Simple\" [level=3, ref=e66]\n            - StaticText \"1\"\n            - StaticText \"Simple\"\n          - paragraph\n            - StaticText \"A simple logo goes a long way. Simple designs are quickly recognizable and easy to work with, which is why many of the world's top brands opt for clean, straightforward logos that leave a lasting impact.\"\n          - heading \"2 Relevant\" [level=3, ref=e67]\n            - StaticText \"2\"\n            - StaticText \"Relevant\"\n          - paragraph\n            - StaticText \"Your logo should communicate key information about your brand and core messaging. This helps position you as an expert in your chosen field while signifying your mission, vision, and values.\"\n          - heading \"3 Memorable\" [level=3, ref=e68]\n            - StaticText \"3\"\n            - StaticText \"Memorable\"\n          - paragraph\n            - StaticText \"Your logo should be instantly and constantly recognizable long after your target audience's first encounter, immediately grabbing their attention as you build your brand recognition.\"\n          - heading \"4 Timeless\" [level=3, ref=e69]\n            - StaticText \"4\"\n            - StaticText \"Timeless\"\n          - paragraph\n            - StaticText \"Your logo will most likely evolve as your company grows and changes. You want to create a solid logo that can be easily adapted and updated when needed.\"\n          - heading \"5 Unique\" [level=3, ref=e70]\n            - StaticText \"5\"\n            - StaticText \"Unique\"\n          - paragraph\n            - StaticText \"Your logo should communicate your unique selling points and be specific to your brand. This places you in a different bracket from the brands that have a stock-standard aesthetic.\"\n          - heading \"6 Versatile\" [level=3, ref=e71]\n            - StaticText \"6\"\n            - StaticText \"Versatile\"\n          - paragraph\n            - StaticText \"Your logo should be scalable so you can use it across multiple platforms and brand assets—be it a simple icon online or a large image for marketing, packaging, print material, or billboards.\"\n        - generic\n          - heading \"Where should you use your logo\" [level=2, ref=e72]\n          - paragraph\n            - StaticText \"Our logo maker offers over 20 high-quality logo files in different formats, that you can use everywhere on your website, social media, in print and much more, to \"\n            - link \"help you build a strong brand\" [ref=e109]\n            - StaticText \".Here's where you should consider using your logo.\"\n          - heading \"Social Media >\" [level=3, ref=e73]\n            - link \"Social Media >\" [ref=e110]\n          - paragraph\n            - StaticText \"Different social platforms such as Facebook, YouTube, Twitter, Instagram and Linkedin have their own specifications for upload, which is why our logo creator generates logos in scalable formats.\"\n          - heading \"Website >\" [level=3, ref=e74]\n            - link \"Website >\" [ref=e111]\n          - paragraph\n            - StaticText \"Your logo should be front and center on your website. Don't forget to design a favicon version of your logo to display in the browser tab.\"\n          - heading \"Email signature >\" [level=3, ref=e75]\n            - link \"Email signature >\" [ref=e112]\n          - paragraph\n            - StaticText \"You'll also want to include your logo in your email signature to signal professionalism, which calls for further research into appropriate dimensions.\"\n          - heading \"Business cards >\" [level=3, ref=e76]\n            - link \"Business cards >\" [ref=e113]\n          - paragraph\n            - StaticText \"Place your logo on your business card to show your potential clients that you're a serious professional. Business cards often get overlooked, so having a logo that stands out on the front of the card is essential.\"\n          - heading \"Custom branded apparel and merchandise >\" [level=3, ref=e77]\n            - link \"Custom branded apparel and merchandise >\" [ref=e114]\n          - paragraph\n            - StaticText \"Before you roll out your custom apparel or merchandise, add your logo to increase your brand awareness.\"\n          - heading \"Promotional products >\" [level=3, ref=e78]\n            - link \"Promotional products >\" [ref=e115]\n          - paragraph\n            - StaticText \"Positioning your logo in a strategic, eye-catching location on promotional material is essential so as not to detract from the main message while still being visible.\"\n          - image \"use your logo everywhere - fiverr logo maker\"\n        - heading \"FAQs\" [level=2, ref=e79]\n        - article\n          - generic [ref=e116] clickable [cursor:pointer, onclick]\n            - heading \"How does the Logo Maker work?\" [level=3, ref=e140]\n          - generic\n            - StaticText \"We'll ask you a few questions about your business and style preferences. Then we'll put to work our powerful AI technology to generate logo designs that best fit your brand, based on a wide selection of hand-made designs. \"\n            - link \"Watch our easy-to-follow video tutorials\" [ref=e141]\n            - StaticText \".\"\n        - article\n          - generic [ref=e117] clickable [cursor:pointer, onclick]\n            - heading \"How long does it take to generate my logo?\" [level=3, ref=e142]\n          - StaticText \"Just a few moments! Our technology reduces the complex process of designing a logo for your business into a matter of seconds.\"\n        - article\n          - generic [ref=e118] clickable [cursor:pointer, onclick]\n            - heading \"What do you mean by \\\"logos made by talented designers on Fiverr\\\"?\" [level=3, ref=e143]\n          - StaticText \"All of the logo designs we suggest are based on the beautiful work of top designers on Fiverr, adjusted to your needs with the power of Artificial Intelligence (AI).\"\n        - article\n          - generic [ref=e119] clickable [cursor:pointer, onclick]\n            - heading \"Can I use the Logo Maker for free?\" [level=3, ref=e144]\n          - generic\n            - StaticText \"You can use the Logo Maker to create a logo and customize it at no cost. Once you have a logo you love, you can buy it by selecting one of our branding packages (starting from US$30) and instantly download the logo in any format you need. \"\n            - link \"See all branding packages and pricing\" [ref=e145]\n            - StaticText \".\"\n        - article\n          - generic [ref=e120] clickable [cursor:pointer, onclick]\n            - heading \"What's included in the logo branding packages?\" [level=3, ref=e146]\n          - generic\n            - StaticText \"You'll get your logo in different formats, sizes, and colors that work across all your digital assets. You can also get a social media kit and brand guidelines - depending on your business needs. \"\n            - link \"See our logo branding packages\" [ref=e147]\n            - StaticText \".\"\n        - article\n          - generic [ref=e121] clickable [cursor:pointer, onclick]\n            - heading \"I need help from a professional designer to customize my logo. What can I do?\" [level=3, ref=e148]\n          - StaticText \"You can order customization services from the designer of your logo after buying the logo.\"\n        - article\n          - generic [ref=e122] clickable [cursor:pointer, onclick]\n            - heading \"Where can I use my logo?\" [level=3, ref=e149]\n          - StaticText \"Anywhere you want! You'll get full commercial and non-commercial rights to use your logo anywhere you want to promote your business or brand.\"\n        - article\n          - generic [ref=e123] clickable [cursor:pointer, onclick]\n            - heading \"How to become a designer on Fiverr Logo Maker?\" [level=3, ref=e150]\n          - generic\n            - StaticText \"Logo Maker is not available to all freelance designers on Fiverr. Only the top Fiverr freelancers are chosen by the Editorial team, based on quality metrics. If you're already a freelancer on Fiverr and wish to start selling logos on Fiverr's Logo Maker, contact Customer Support. If you're not on Fiverr yet, \"\n            - link \"join to start selling.\" [ref=e151]\n        - heading \"Learn more about logo creation\" [level=2, ref=e80]\n        - link \"The 7 types of logos which is right for your brand\" [ref=e81]\n          - image \"The 7 types of logos which is right for your brand\"\n        - link \"The 7 types of logos & which is right for your brand\" [ref=e82]\n          - heading \"The 7 types of logos & which is right for your brand\" [level=3, ref=e124]\n        - paragraph\n          - StaticText \"When it comes to creating a business logo, there are 7 types of logos to consider. Learn how to choose the right type of logo for your brand.\"\n        - link \"Read more\" [ref=e83]\n        - link \"choosing the right colors for your brand\" [ref=e84]\n          - image \"choosing the right colors for your brand\"\n        - link \"The ultimate guide to choosing the right colors for your brand\" [ref=e85]\n          - heading \"The ultimate guide to choosing the right colors for your brand\" [level=3, ref=e125]\n        - paragraph\n          - StaticText \"Learn all you need to know for choosing the right colors for your brand and how to choose your colors strategically to communicate the message you want to deliver to your audience.\"\n        - link \"Read more\" [ref=e86]\n        - link \"how to choose the right logo font\" [ref=e87]\n          - image \"how to choose the right logo font\"\n        - link \"The 4 main font types & how to choose the right logo font\" [ref=e88]\n          - heading \"The 4 main font types & how to choose the right logo font\" [level=3, ref=e126]\n        - paragraph\n          - StaticText \"Learn the four main font types and how to strategically choose a logo font that will reflect your brand identity and maximize your brand awareness.\"\n        - link \"Read more\" [ref=e89]\n        - link \"How to design a business logo\" [ref=e90]\n          - image \"How to design a business logo\"\n        - link \"How to design a logo: 12 steps to creating a business logo from scratch\" [ref=e91]\n          - heading \"How to design a logo: 12 steps to creating a business logo from scratch\" [level=3, ref=e127]\n        - paragraph\n          - StaticText \"Learn how to create a logo for your business with this practical guide that walks you through the key steps to design a logo you love.\"\n        - link \"Read more\" [ref=e92]\n        - heading \"Fiverr Logo Maker\" [level=2, ref=e93]\n        - paragraph\n          - StaticText \"Made by humans, powered by AI.\"\n        - textbox \"Enter your brand name\" [ref=e152]\n        - button \"Make Your Logo\" [ref=e94]\n    - generic\n      - contentinfo\n        - generic\n          - paragraph\n            - StaticText \"Categories\"\n          - list\n            - listitem [level=1]\n              - link \"Logo Ideas\" [ref=e153]\n            - listitem [level=1]\n              - link \"Branding Hub\" [ref=e154]\n            - listitem [level=1]\n              - link \"Graphics & Design\" [ref=e155]\n            - listitem [level=1]\n              - link \"Digital Marketing\" [ref=e156]\n            - listitem [level=1]\n              - link \"Writing & Translation\" [ref=e157]\n            - listitem [level=1]\n              - link \"Video & Animation\" [ref=e158]\n            - listitem [level=1]\n              - link \"Music & Audio\" [ref=e159]\n            - listitem [level=1]\n              - link \"Programming & Tech\" [ref=e160]\n            - listitem [level=1]\n              - link \"Data\" [ref=e161]\n            - listitem [level=1]\n              - link \"Business\" [ref=e162]\n            - listitem [level=1]\n              - link \"Lifestyle\" [ref=e163]\n          - paragraph\n            - StaticText \"Support and Education\"\n          - list\n            - listitem [level=1]\n              - link \"Help Center\" [ref=e164]\n            - listitem [level=1]\n              - link \"Popular FAQs\" [ref=e165]\n            - listitem [level=1]\n              - link \"Logo Maker Seller Guides\" [ref=e166]\n            - listitem [level=1]\n              - link \"Become a Seller\" [ref=e167]\n          - paragraph\n            - StaticText \"Company\"\n          - list\n            - listitem [level=1]\n              - link \"About Fiverr Logo Maker\" [ref=e168]\n            - listitem [level=1]\n              - link \"Pricing & Packages\" [ref=e169]\n            - listitem [level=1]\n              - link \"Careers\" [ref=e170]\n            - listitem [level=1]\n              - link \"Press & News\" [ref=e171]\n            - listitem [level=1]\n              - link \"Affiliates\" [ref=e172]\n            - listitem [level=1]\n              - link \"Partnerships\" [ref=e173]\n            - listitem [level=1]\n              - link \"Privacy Policy\" [ref=e174]\n            - listitem [level=1]\n              - link \"Terms of Service\" [ref=e175]\n            - listitem [level=1]\n              - link \"Intellectual Property Claims\" [ref=e176]\n            - listitem [level=1]\n              - link \"Investor Relations\" [ref=e177]\n          - paragraph\n            - StaticText \"Learn & Discover\"\n          - list\n            - listitem [level=1]\n              - link \"Testimonials\" [ref=e178]\n            - listitem [level=1]\n              - link \"Meet the Designers\" [ref=e179]\n            - listitem [level=1]\n              - link \"Tutorials\" [ref=e180]\n            - listitem [level=1]\n              - link \"How It Works\" [ref=e181]\n            - listitem [level=1]\n              - link \"Font of The Year 2024\" [ref=e182]\n            - listitem [level=1]\n              - link \"Guides\" [ref=e183]\n            - listitem [level=1]\n              - link \"Logo Maker Scholarship\" [ref=e184]\n            - listitem [level=1]\n              - link \"Events\" [ref=e185]\n            - listitem [level=1]\n              - link \"Forum\" [ref=e186]\n            - listitem [level=1]\n              - link \"Community Standards\" [ref=e187]\n          - paragraph\n            - StaticText \"More From Fiverr\"\n          - list\n            - listitem [level=1]\n              - link \"Fiverr Marketplace\" [ref=e188]\n            - listitem [level=1]\n              - link \"Fiverr Pro\" [ref=e189]\n            - listitem [level=1]\n              - link \"Become an Agency\" [ref=e190]\n            - listitem [level=1]\n              - link \"Fiverr Enterprise\" [ref=e191]\n          - image\n          - paragraph\n            - StaticText \"© Fiverr International Ltd. 2026\"\n          - list\n            - listitem [level=1]\n              - link \"Fiverr on TikTok\" [ref=e192]\n                - image\n            - listitem [level=1]\n              - link \"Fiverr on Instagram\" [ref=e193]\n                - image\n            - listitem [level=1]\n              - link \"Fiverr on LinkedIn\" [ref=e194]\n                - image\n            - listitem [level=1]\n              - link \"Fiverr on Facebook\" [ref=e195]\n                - image\n            - listitem [level=1]\n              - link \"Fiverr on Pinterest\" [ref=e196]\n                - image\n            - listitem [level=1]\n              - link \"Fiverr on Twitter\" [ref=e197]\n                - image\n          - button \"Open accessibility menu\" [ref=e128]\n            - image\n  - generic",
+    "browserPageId": "187b995b-1439-4f7b-a530-bb33be18f680"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

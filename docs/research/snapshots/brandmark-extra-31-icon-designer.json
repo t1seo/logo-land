@@ -1,0 +1,58 @@
+{
+  "id": "9963b0aa-6bac-4373-899d-3c28e3fe8966",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/account",
+    "refs": {
+      "e1": {
+        "name": "Login",
+        "role": "heading"
+      },
+      "e10": {
+        "name": "Sign in with Google",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Sign in with email",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e4": {
+        "name": "",
+        "role": "link"
+      },
+      "e5": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e6": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e8": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e9": {
+        "name": "My Account",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e4]\n        - image\n      - link \"Generate logos\" [ref=e5]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e6]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e7]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e8]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e9]\n        - image\n        - StaticText \"My Account\"\n  - heading \"Login\" [level=2, ref=e1]\n  - paragraph\n    - StaticText \"Login to your account\"\n  - generic\n    - form\n      - list\n        - listitem [level=1]\n          - button \"Sign in with Google\" [ref=e10]\n            - StaticText \"Sign in with Google\"\n        - listitem [level=1]\n          - button \"Sign in with email\" [ref=e11]\n            - StaticText \"Sign in with email\"\n  - generic [ref=e3] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e2]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

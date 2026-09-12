@@ -1,0 +1,198 @@
+{
+  "id": "9709fe68-a491-4f23-b633-e979ed9d1941",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/onboarding?company_name=Morrow%20Studio",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "generic"
+      },
+      "e10": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Pick some colors you like",
+        "role": "heading"
+      },
+      "e13": {
+        "name": "menu",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Sign up",
+        "role": "heading"
+      },
+      "e17": {
+        "name": "Continue as guest",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Thanks for signing up!",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "Download Logo",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Skip",
+        "role": "button"
+      },
+      "e23": {
+        "name": "",
+        "role": "generic"
+      },
+      "e24": {
+        "name": "Navigate to dashboard. Caution: this will navigate you away from your current page",
+        "role": "link"
+      },
+      "e25": {
+        "name": "Browse unique logos generated just for you. No templates here.",
+        "role": "heading"
+      },
+      "e26": {
+        "name": "Customize your logo with 100s of font, layout, and color options.",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Get 300+ branded assets from social media posts to flyers.",
+        "role": "heading"
+      },
+      "e28": {
+        "name": "Blue",
+        "role": "heading"
+      },
+      "e29": {
+        "name": "Purple",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e30": {
+        "name": "Pink",
+        "role": "heading"
+      },
+      "e31": {
+        "name": "Red",
+        "role": "heading"
+      },
+      "e32": {
+        "name": "Orange",
+        "role": "heading"
+      },
+      "e33": {
+        "name": "Yellow",
+        "role": "heading"
+      },
+      "e34": {
+        "name": "Green",
+        "role": "heading"
+      },
+      "e35": {
+        "name": "Teal",
+        "role": "heading"
+      },
+      "e36": {
+        "name": "Greyscale",
+        "role": "heading"
+      },
+      "e37": {
+        "name": "",
+        "role": "generic"
+      },
+      "e38": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e39": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e41": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e42": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e43": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e44": {
+        "name": "Help / Contact",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e46": {
+        "name": "Privacy",
+        "role": "link"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e7": {
+        "name": "",
+        "role": "generic"
+      },
+      "e8": {
+        "name": "",
+        "role": "generic"
+      },
+      "e9": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - button \"Close Modal\" [ref=e10]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e11]\n  - generic\n    - generic\n      - heading \"Pick some colors you like\" [level=2, ref=e12]\n      - paragraph\n        - StaticText \"Colors help convey emotion in your logo\"\n      - button \"Skip\" [ref=e22]\n        - StaticText \"Skip\"\n        - image\n    - generic [ref=e1] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Blue\" [level=6, ref=e28]\n        - paragraph\n          - StaticText \"Depth, trust, loyalty, confidence, intelligence, and calmness\"\n    - generic [ref=e2] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Purple\" [level=6, ref=e29]\n        - paragraph\n          - StaticText \"Royalty, power, nobility, luxury, wealth, extravagance, and wisdom\"\n    - generic [ref=e3] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Pink\" [level=6, ref=e30]\n        - paragraph\n          - StaticText \"Sweet, innocent, sensitive, passionate, playful, and loving\"\n    - generic [ref=e4] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Red\" [level=6, ref=e31]\n        - paragraph\n          - StaticText \"Power, energy, passion, desire, speed, strength, love, and intensity\"\n    - generic [ref=e5] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Orange\" [level=6, ref=e32]\n        - paragraph\n          - StaticText \"Joy, enthusiasm, happiness, creativity, determination, and stimulation\"\n    - generic [ref=e6] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Yellow\" [level=6, ref=e33]\n        - paragraph\n          - StaticText \"Sunshine, joy, happiness, intellect, cheerfulness, and energy\"\n    - generic [ref=e7] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Green\" [level=6, ref=e34]\n        - paragraph\n          - StaticText \"Nature, growth, harmony, freshness, safety, and healing\"\n    - generic [ref=e8] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Teal\" [level=6, ref=e35]\n        - paragraph\n          - StaticText \"Creativity, inspiration, excitement, tranquility, and youth\"\n    - generic [ref=e9] clickable [cursor:pointer, onclick]\n      - generic\n        - heading \"Greyscale\" [level=6, ref=e36]\n        - paragraph\n          - StaticText \"Power, elegance, reliability, intelligence, modesty, and maturity\"\n    - generic\n      - generic [ref=e23] clickable [cursor:pointer, onclick]\n        - StaticText \"arrow_back\"\n      - link \"Navigate to dashboard. Caution: this will navigate you away from your current page\" [ref=e24]\n        - image \"Navigate to dashboard. Caution: this will navigate you away from your current page\"\n      - button \"menu\" [ref=e13]\n        - StaticText \"menu\"\n    - generic\n      - generic [ref=e14] clickable [onclick]\n      - generic [ref=e37] clickable [cursor:pointer, onclick]\n        - StaticText \"close\"\n      - paragraph [ref=e38] clickable [cursor:pointer, onclick]\n        - StaticText \"Log in\"\n      - paragraph [ref=e39] clickable [cursor:pointer, onclick]\n        - StaticText \"Register\"\n      - list\n        - listitem [level=1, ref=e40] clickable [cursor:pointer]\n          - link \"Help / Contact\" [ref=e44]\n        - listitem [level=1, ref=e41] clickable [cursor:pointer]\n          - link \"Terms of Service\" [ref=e45]\n        - listitem [level=1, ref=e42] clickable [cursor:pointer]\n          - link \"Privacy\" [ref=e46]\n  - generic\n    - button \"Close Modal\" [ref=e15]\n      - image \"Close Modal\"\n    - heading \"Sign up\" [level=2, ref=e16]\n    - paragraph\n      - StaticText \"Success! Your account has been created.\"\n    - paragraph\n      - link \"Terms of service\" [ref=e43]\n      - StaticText \" apply\"\n    - StaticText \"or\"\n    - button \"Continue as guest\" [ref=e17]\n      - StaticText \"Continue as guest\"\n      - image\n    - generic\n      - image\n      - heading \"Browse unique logos generated just for you. No templates here.\" [level=4, ref=e25]\n        - strong\n          - StaticText \"Browse unique logos\"\n        - StaticText \" generated just for you. No templates here.\"\n      - image\n      - heading \"Customize your logo with 100s of font, layout, and color options.\" [level=4, ref=e26]\n        - strong\n          - StaticText \"Customize your logo\"\n        - StaticText \" with 100s of font, layout, and color options.\"\n      - image\n      - heading \"Get 300+ branded assets from social media posts to flyers.\" [level=4, ref=e27]\n        - strong\n          - StaticText \"Get 300+ branded assets\"\n        - StaticText \" from social media posts to flyers.\"\n  - generic\n    - button \"Close Modal\" [ref=e18]\n      - image \"Close Modal\"\n    - image\n    - heading \"Thanks for signing up!\" [level=2, ref=e19]\n    - paragraph\n      - StaticText \"Now you can download your logo and come back any time to access your designs\"\n    - button \"Download Logo\" [ref=e20]\n    - button \"Close\" [ref=e21]",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Tailor Brands - Real People Creating Real Businesses\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 473\n+\t\t\t\t\t\t\t\t483 text field (settable) MS\nThe focused UI element is 474 button Save"
+}

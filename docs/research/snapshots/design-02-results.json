@@ -1,0 +1,1450 @@
+{
+  "id": "ed213f1c-68e2-403e-936b-ca5d34ce086a",
+  "ok": true,
+  "result": {
+    "origin": "https://www.design.com/maker/logos?text=Morrow+Studio&textChanged=true",
+    "refs": {
+      "e1": {
+        "name": "Business name",
+        "role": "textbox"
+      },
+      "e10": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e100": {
+        "name": "Domain Names",
+        "role": "link"
+      },
+      "e101": {
+        "name": "About us",
+        "role": "link"
+      },
+      "e102": {
+        "name": "Blog",
+        "role": "link"
+      },
+      "e103": {
+        "name": "Affiliates",
+        "role": "link"
+      },
+      "e104": {
+        "name": "Contact us",
+        "role": "link"
+      },
+      "e105": {
+        "name": "Legals",
+        "role": "link"
+      },
+      "e106": {
+        "name": "Privacy policy",
+        "role": "link"
+      },
+      "e107": {
+        "name": "Help Center",
+        "role": "link"
+      },
+      "e108": {
+        "name": "Login",
+        "role": "link"
+      },
+      "e109": {
+        "name": "AI Design Tools",
+        "role": "link"
+      },
+      "e11": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e110": {
+        "name": "AI Business Name Generator",
+        "role": "link"
+      },
+      "e111": {
+        "name": "AI Logo Generator",
+        "role": "link"
+      },
+      "e112": {
+        "name": "AI Background Remover",
+        "role": "link"
+      },
+      "e113": {
+        "name": "AI Domain Name Generator",
+        "role": "link"
+      },
+      "e114": {
+        "name": "AI Website Builder",
+        "role": "link"
+      },
+      "e115": {
+        "name": "AI Business Card Generator",
+        "role": "link"
+      },
+      "e116": {
+        "name": "AI Flyer Generator",
+        "role": "link"
+      },
+      "e117": {
+        "name": "AI Poster Generator",
+        "role": "link"
+      },
+      "e118": {
+        "name": "AI Link in Bio Generator",
+        "role": "link"
+      },
+      "e119": {
+        "name": "AI Presentation Maker",
+        "role": "link"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e120": {
+        "name": "AI Social Media Generator",
+        "role": "link"
+      },
+      "e121": {
+        "name": "AI Image Generator",
+        "role": "link"
+      },
+      "e122": {
+        "name": "Facebook Posts",
+        "role": "link"
+      },
+      "e123": {
+        "name": "Facebook Stories",
+        "role": "link"
+      },
+      "e124": {
+        "name": "Facebook Covers",
+        "role": "link"
+      },
+      "e125": {
+        "name": "Facebook Events",
+        "role": "link"
+      },
+      "e126": {
+        "name": "Facebook Ads",
+        "role": "link"
+      },
+      "e127": {
+        "name": "Facebook Profile Pictures",
+        "role": "link"
+      },
+      "e128": {
+        "name": "Instagram Posts",
+        "role": "link"
+      },
+      "e129": {
+        "name": "Instagram Reels",
+        "role": "link"
+      },
+      "e13": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e130": {
+        "name": "Instagram Stories",
+        "role": "link"
+      },
+      "e131": {
+        "name": "Instagram Profile Pictures",
+        "role": "link"
+      },
+      "e132": {
+        "name": "LinkedIn Banners",
+        "role": "link"
+      },
+      "e133": {
+        "name": "LinkedIn Posts",
+        "role": "link"
+      },
+      "e134": {
+        "name": "LinkedIn Profile Pictures",
+        "role": "link"
+      },
+      "e135": {
+        "name": "Pinterest Pins",
+        "role": "link"
+      },
+      "e136": {
+        "name": "Pinterest Covers",
+        "role": "link"
+      },
+      "e137": {
+        "name": "Pinterest Profile Pictures",
+        "role": "link"
+      },
+      "e138": {
+        "name": "Snapchat Designs",
+        "role": "link"
+      },
+      "e139": {
+        "name": "SoundCloud Banners",
+        "role": "link"
+      },
+      "e14": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e140": {
+        "name": "SoundCloud Profile Pictures",
+        "role": "link"
+      },
+      "e141": {
+        "name": "TikTok Videos",
+        "role": "link"
+      },
+      "e142": {
+        "name": "Tumblr Profile Pictures",
+        "role": "link"
+      },
+      "e143": {
+        "name": "Tumblr Banners",
+        "role": "link"
+      },
+      "e144": {
+        "name": "Twitch Banners",
+        "role": "link"
+      },
+      "e145": {
+        "name": "Twitch Profile Pictures",
+        "role": "link"
+      },
+      "e146": {
+        "name": "Twitter Headers",
+        "role": "link"
+      },
+      "e147": {
+        "name": "Twitter Posts",
+        "role": "link"
+      },
+      "e148": {
+        "name": "Whatsapp Stories",
+        "role": "link"
+      },
+      "e149": {
+        "name": "YouTube Banners",
+        "role": "link"
+      },
+      "e15": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e150": {
+        "name": "YouTube Shorts",
+        "role": "link"
+      },
+      "e151": {
+        "name": "YouTube Videos",
+        "role": "link"
+      },
+      "e152": {
+        "name": "YouTube Channel Icons",
+        "role": "link"
+      },
+      "e153": {
+        "name": "Zoom Backgrounds",
+        "role": "link"
+      },
+      "e154": {
+        "name": "Email Signatures",
+        "role": "link"
+      },
+      "e155": {
+        "name": "Invoices",
+        "role": "link"
+      },
+      "e156": {
+        "name": "Menus",
+        "role": "link"
+      },
+      "e157": {
+        "name": "Flyers",
+        "role": "link"
+      },
+      "e158": {
+        "name": "Postcards",
+        "role": "link"
+      },
+      "e159": {
+        "name": "Posters",
+        "role": "link"
+      },
+      "e16": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e160": {
+        "name": "Gift Certificates",
+        "role": "link"
+      },
+      "e161": {
+        "name": "Invitations",
+        "role": "link"
+      },
+      "e162": {
+        "name": "Thank You Cards",
+        "role": "link"
+      },
+      "e163": {
+        "name": "T-Shirts",
+        "role": "link"
+      },
+      "e164": {
+        "name": "Videos",
+        "role": "link"
+      },
+      "e165": {
+        "name": "Animations",
+        "role": "link"
+      },
+      "e166": {
+        "name": "Letterheads",
+        "role": "link"
+      },
+      "e167": {
+        "name": "Etsy Banners",
+        "role": "link"
+      },
+      "e168": {
+        "name": "QR Code",
+        "role": "link"
+      },
+      "e169": {
+        "name": "Presentations",
+        "role": "link"
+      },
+      "e17": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e170": {
+        "name": "Gaming logo",
+        "role": "link"
+      },
+      "e171": {
+        "name": "Company logo",
+        "role": "link"
+      },
+      "e172": {
+        "name": "Business logo",
+        "role": "link"
+      },
+      "e173": {
+        "name": "Brand logo",
+        "role": "link"
+      },
+      "e174": {
+        "name": "Name logo",
+        "role": "link"
+      },
+      "e175": {
+        "name": "Car logo",
+        "role": "link"
+      },
+      "e176": {
+        "name": "Monogram logo",
+        "role": "link"
+      },
+      "e177": {
+        "name": "School logo",
+        "role": "link"
+      },
+      "e178": {
+        "name": "Food logo",
+        "role": "link"
+      },
+      "e179": {
+        "name": "Youtube logo",
+        "role": "link"
+      },
+      "e18": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e180": {
+        "name": "Photography logo",
+        "role": "link"
+      },
+      "e181": {
+        "name": "Football logo",
+        "role": "link"
+      },
+      "e182": {
+        "name": "Camera logo",
+        "role": "link"
+      },
+      "e183": {
+        "name": "Crown logo",
+        "role": "link"
+      },
+      "e184": {
+        "name": "Sports logo",
+        "role": "link"
+      },
+      "e185": {
+        "name": "3d logo",
+        "role": "link"
+      },
+      "e186": {
+        "name": "Construction logo",
+        "role": "link"
+      },
+      "e187": {
+        "name": "Cool logo",
+        "role": "link"
+      },
+      "e188": {
+        "name": "DJ logo",
+        "role": "link"
+      },
+      "e189": {
+        "name": "Restaurant logo",
+        "role": "link"
+      },
+      "e19": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e190": {
+        "name": "Letter logo",
+        "role": "link"
+      },
+      "e191": {
+        "name": "Real Estate logo",
+        "role": "link"
+      },
+      "e192": {
+        "name": "Circle logo",
+        "role": "link"
+      },
+      "e193": {
+        "name": "Fashion logo",
+        "role": "link"
+      },
+      "e194": {
+        "name": "Cartoon logo",
+        "role": "link"
+      },
+      "e195": {
+        "name": "Travel logo",
+        "role": "link"
+      },
+      "e196": {
+        "name": "Cafe logo",
+        "role": "link"
+      },
+      "e197": {
+        "name": "Eagle logo",
+        "role": "link"
+      },
+      "e198": {
+        "name": "Podcast logo",
+        "role": "link"
+      },
+      "e199": {
+        "name": "Bakery logo",
+        "role": "link"
+      },
+      "e2": {
+        "name": "Search",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Browse thousands of logo templates for any industry",
+        "role": "heading"
+      },
+      "e200": {
+        "name": "Text logo",
+        "role": "link"
+      },
+      "e201": {
+        "name": "Icon logo",
+        "role": "link"
+      },
+      "e202": {
+        "name": "Word logo",
+        "role": "link"
+      },
+      "e203": {
+        "name": "Team logo",
+        "role": "link"
+      },
+      "e204": {
+        "name": "App logo",
+        "role": "link"
+      },
+      "e205": {
+        "name": "Barber logo",
+        "role": "link"
+      },
+      "e206": {
+        "name": "Font logo",
+        "role": "link"
+      },
+      "e207": {
+        "name": "Web logo",
+        "role": "link"
+      },
+      "e208": {
+        "name": "Pizza logo",
+        "role": "link"
+      },
+      "e209": {
+        "name": "Shop logo",
+        "role": "link"
+      },
+      "e21": {
+        "name": "Logo templates by keyword",
+        "role": "heading"
+      },
+      "e210": {
+        "name": "Simple logo",
+        "role": "link"
+      },
+      "e211": {
+        "name": "Symbol logo",
+        "role": "link"
+      },
+      "e212": {
+        "name": "Beauty logo",
+        "role": "link"
+      },
+      "e213": {
+        "name": "Coffee logo",
+        "role": "link"
+      },
+      "e214": {
+        "name": "Doctor logo",
+        "role": "link"
+      },
+      "e215": {
+        "name": "Gym logo",
+        "role": "link"
+      },
+      "e216": {
+        "name": "Lion logo",
+        "role": "link"
+      },
+      "e217": {
+        "name": "Music logo",
+        "role": "link"
+      },
+      "e218": {
+        "name": "facebook",
+        "role": "link"
+      },
+      "e219": {
+        "name": "twitter",
+        "role": "link"
+      },
+      "e22": {
+        "name": "Logo templates by industry",
+        "role": "heading"
+      },
+      "e220": {
+        "name": "instagram",
+        "role": "link"
+      },
+      "e221": {
+        "name": "linkedin",
+        "role": "link"
+      },
+      "e222": {
+        "name": "",
+        "role": "generic"
+      },
+      "e223": {
+        "name": "Generate Logos",
+        "role": "button"
+      },
+      "e224": {
+        "name": "English",
+        "role": "option"
+      },
+      "e225": {
+        "name": "Français",
+        "role": "option"
+      },
+      "e226": {
+        "name": "Français (Canada)",
+        "role": "option"
+      },
+      "e227": {
+        "name": "Español",
+        "role": "option"
+      },
+      "e228": {
+        "name": "Deutsch",
+        "role": "option"
+      },
+      "e229": {
+        "name": "Português",
+        "role": "option"
+      },
+      "e23": {
+        "name": "Browse Categories",
+        "role": "heading"
+      },
+      "e230": {
+        "name": "Português (Brasil)",
+        "role": "option"
+      },
+      "e231": {
+        "name": "Logos",
+        "role": "link"
+      },
+      "e232": {
+        "name": "Business Cards",
+        "role": "link"
+      },
+      "e233": {
+        "name": "Websites",
+        "role": "link"
+      },
+      "e234": {
+        "name": "AI",
+        "role": "link"
+      },
+      "e235": {
+        "name": "Go to previous page",
+        "role": "link"
+      },
+      "e236": {
+        "name": "1",
+        "role": "link"
+      },
+      "e237": {
+        "name": "2",
+        "role": "link"
+      },
+      "e238": {
+        "name": "3",
+        "role": "link"
+      },
+      "e239": {
+        "name": "4",
+        "role": "link"
+      },
+      "e24": {
+        "name": "Site Logo",
+        "role": "link"
+      },
+      "e240": {
+        "name": "5",
+        "role": "link"
+      },
+      "e241": {
+        "name": "300",
+        "role": "link"
+      },
+      "e242": {
+        "name": "Go to next page",
+        "role": "link"
+      },
+      "e243": {
+        "name": "Search by keyword (e.g. restaurant)",
+        "role": "textbox"
+      },
+      "e244": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e245": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e246": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e247": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e248": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e249": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Site Navigation",
+        "role": "navigation"
+      },
+      "e250": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e251": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e252": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e253": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e254": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e255": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e256": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e257": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e258": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e259": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Keywords",
+        "role": "textbox"
+      },
+      "e260": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e261": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e262": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e263": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e264": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e265": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e266": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e267": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e268": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e269": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e27": {
+        "name": "Abstract",
+        "role": "checkbox"
+      },
+      "e270": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e271": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e272": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e273": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e274": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e275": {
+        "name": "Add Logo To Shortlist",
+        "role": "button"
+      },
+      "e276": {
+        "name": "Business Cards",
+        "role": "link"
+      },
+      "e277": {
+        "name": "Websites",
+        "role": "link"
+      },
+      "e278": {
+        "name": "Digital Business Cards",
+        "role": "link"
+      },
+      "e279": {
+        "name": "Link In Bio",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Mascot",
+        "role": "checkbox"
+      },
+      "e280": {
+        "name": "Facebook Posts",
+        "role": "link"
+      },
+      "e281": {
+        "name": "Facebook Stories",
+        "role": "link"
+      },
+      "e282": {
+        "name": "Facebook Covers",
+        "role": "link"
+      },
+      "e283": {
+        "name": "Facebook Event Covers",
+        "role": "link"
+      },
+      "e284": {
+        "name": "Facebook Ads",
+        "role": "link"
+      },
+      "e285": {
+        "name": "Facebook Profile Pictures",
+        "role": "link"
+      },
+      "e286": {
+        "name": "Instagram Posts",
+        "role": "link"
+      },
+      "e287": {
+        "name": "Instagram Reels",
+        "role": "link"
+      },
+      "e288": {
+        "name": "Instagram Stories",
+        "role": "link"
+      },
+      "e289": {
+        "name": "Instagram Profile Pictures",
+        "role": "link"
+      },
+      "e29": {
+        "name": "Emblem",
+        "role": "checkbox"
+      },
+      "e290": {
+        "name": "LinkedIn Banners",
+        "role": "link"
+      },
+      "e291": {
+        "name": "LinkedIn Posts",
+        "role": "link"
+      },
+      "e292": {
+        "name": "LinkedIn Profile Pictures",
+        "role": "link"
+      },
+      "e293": {
+        "name": "Pinterest Pins",
+        "role": "link"
+      },
+      "e294": {
+        "name": "Pinterest Board Covers",
+        "role": "link"
+      },
+      "e295": {
+        "name": "Pinterest Profile Pictures",
+        "role": "link"
+      },
+      "e296": {
+        "name": "Snapchat Designs",
+        "role": "link"
+      },
+      "e297": {
+        "name": "SoundCloud Banners",
+        "role": "link"
+      },
+      "e298": {
+        "name": "SoundCloud Profile Pictures",
+        "role": "link"
+      },
+      "e299": {
+        "name": "TikTok Videos",
+        "role": "link"
+      },
+      "e3": {
+        "name": "Clear All",
+        "role": "button"
+      },
+      "e30": {
+        "name": "Corporate",
+        "role": "checkbox"
+      },
+      "e300": {
+        "name": "Tumblr Profile Pictures",
+        "role": "link"
+      },
+      "e301": {
+        "name": "Tumblr Banners",
+        "role": "link"
+      },
+      "e302": {
+        "name": "Twitch Banners",
+        "role": "link"
+      },
+      "e303": {
+        "name": "Twitch Profile Pictures",
+        "role": "link"
+      },
+      "e304": {
+        "name": "Twitter Headers",
+        "role": "link"
+      },
+      "e305": {
+        "name": "Twitter Posts",
+        "role": "link"
+      },
+      "e306": {
+        "name": "WhatsApp Stories",
+        "role": "link"
+      },
+      "e307": {
+        "name": "YouTube Banners",
+        "role": "link"
+      },
+      "e308": {
+        "name": "YouTube Shorts",
+        "role": "link"
+      },
+      "e309": {
+        "name": "YouTube Videos",
+        "role": "link"
+      },
+      "e31": {
+        "name": "Wordmark",
+        "role": "checkbox"
+      },
+      "e310": {
+        "name": "YouTube Channel Icons",
+        "role": "link"
+      },
+      "e311": {
+        "name": "Zoom Backgrounds",
+        "role": "link"
+      },
+      "e312": {
+        "name": "Email Signatures",
+        "role": "link"
+      },
+      "e313": {
+        "name": "Invoices",
+        "role": "link"
+      },
+      "e314": {
+        "name": "Menus",
+        "role": "link"
+      },
+      "e315": {
+        "name": "Flyers",
+        "role": "link"
+      },
+      "e316": {
+        "name": "Postcards",
+        "role": "link"
+      },
+      "e317": {
+        "name": "Posters",
+        "role": "link"
+      },
+      "e318": {
+        "name": "Gift Certificates",
+        "role": "link"
+      },
+      "e319": {
+        "name": "Invitations",
+        "role": "link"
+      },
+      "e32": {
+        "name": "Vintage",
+        "role": "checkbox"
+      },
+      "e320": {
+        "name": "Thank You Cards",
+        "role": "link"
+      },
+      "e321": {
+        "name": "T-Shirts",
+        "role": "link"
+      },
+      "e322": {
+        "name": "Videos",
+        "role": "link"
+      },
+      "e323": {
+        "name": "Animations",
+        "role": "link"
+      },
+      "e324": {
+        "name": "Letterheads",
+        "role": "link"
+      },
+      "e325": {
+        "name": "Etsy Banners",
+        "role": "link"
+      },
+      "e326": {
+        "name": "QR Codes",
+        "role": "link"
+      },
+      "e327": {
+        "name": "Presentations",
+        "role": "link"
+      },
+      "e328": {
+        "name": "Geometric Media Agency Logo preview image",
+        "role": "link"
+      },
+      "e329": {
+        "name": "Archway Creative Agency Logo preview image",
+        "role": "link"
+      },
+      "e33": {
+        "name": "Classic",
+        "role": "checkbox"
+      },
+      "e330": {
+        "name": "Innovative Media Hub Logo preview image",
+        "role": "link"
+      },
+      "e331": {
+        "name": "Diamond Luxe Lettermark Logo preview image",
+        "role": "link"
+      },
+      "e332": {
+        "name": "RetroCraft Agency Logo preview image",
+        "role": "link"
+      },
+      "e333": {
+        "name": "ArrowVista Analytics Logo preview image",
+        "role": "link"
+      },
+      "e334": {
+        "name": "Turntable Vinyl Record Logo preview image",
+        "role": "link"
+      },
+      "e335": {
+        "name": "Innovative Media Studio Logo preview image",
+        "role": "link"
+      },
+      "e336": {
+        "name": "Minimalist Media Studio Logo preview image",
+        "role": "link"
+      },
+      "e337": {
+        "name": "Creative Media Hub Logo preview image",
+        "role": "link"
+      },
+      "e338": {
+        "name": "Creative Colorful Studio Logo preview image",
+        "role": "link"
+      },
+      "e339": {
+        "name": "Neon Lens Studio Logo preview image",
+        "role": "link"
+      },
+      "e34": {
+        "name": "Grayscale",
+        "role": "checkbox"
+      },
+      "e340": {
+        "name": "Creative Media Marketing Studio Logo preview image",
+        "role": "link"
+      },
+      "e341": {
+        "name": "Optical Splice Innovations Logo preview image",
+        "role": "link"
+      },
+      "e342": {
+        "name": "Digital Media Hub Logo preview image",
+        "role": "link"
+      },
+      "e343": {
+        "name": "Generic Creative Studio Logo preview image",
+        "role": "link"
+      },
+      "e344": {
+        "name": "Celestial Lens Studio Logo preview image",
+        "role": "link"
+      },
+      "e345": {
+        "name": "Innovative Media Solutions Logo preview image",
+        "role": "link"
+      },
+      "e346": {
+        "name": "Vinyl Sound Studio Emblem Logo preview image",
+        "role": "link"
+      },
+      "e347": {
+        "name": "Modern Lens Photography Studio Logo preview image",
+        "role": "link"
+      },
+      "e348": {
+        "name": "Vintage Ink Ornament Studio Logo preview image",
+        "role": "link"
+      },
+      "e349": {
+        "name": "Luxury Construction Co. Logo preview image",
+        "role": "link"
+      },
+      "e35": {
+        "name": "Blue",
+        "role": "checkbox"
+      },
+      "e350": {
+        "name": "Modern Lens Photography Studio Logo preview image",
+        "role": "link"
+      },
+      "e351": {
+        "name": "Radio Station Microphone Logo preview image",
+        "role": "link"
+      },
+      "e352": {
+        "name": "Minimalist Media Studio Logo preview image",
+        "role": "link"
+      },
+      "e353": {
+        "name": "Ink Artistry Studio Logo preview image",
+        "role": "link"
+      },
+      "e354": {
+        "name": "Elegant Tattoo Craft Studio Logo preview image",
+        "role": "link"
+      },
+      "e355": {
+        "name": "Eco Digital Solutions Logo preview image",
+        "role": "link"
+      },
+      "e356": {
+        "name": "Podcast Audio Studio Logo preview image",
+        "role": "link"
+      },
+      "e357": {
+        "name": "Vinyl Record Retro Music Logo preview image",
+        "role": "link"
+      },
+      "e358": {
+        "name": "Capture Lens Studio Logo preview image",
+        "role": "link"
+      },
+      "e359": {
+        "name": "SoundWave Studio Logo preview image",
+        "role": "link"
+      },
+      "e36": {
+        "name": "Purple",
+        "role": "checkbox"
+      },
+      "e37": {
+        "name": "Pink",
+        "role": "checkbox"
+      },
+      "e38": {
+        "name": "Red",
+        "role": "checkbox"
+      },
+      "e39": {
+        "name": "Orange",
+        "role": "checkbox"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "Green",
+        "role": "checkbox"
+      },
+      "e41": {
+        "name": "... or enter any keyword and we will start making logos for you",
+        "role": "heading"
+      },
+      "e42": {
+        "name": "Select language",
+        "role": "combobox"
+      },
+      "e43": {
+        "name": "Alphabet",
+        "role": "link"
+      },
+      "e44": {
+        "name": "Calligraphy",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Cartoon",
+        "role": "link"
+      },
+      "e46": {
+        "name": "Circle",
+        "role": "link"
+      },
+      "e47": {
+        "name": "Cool",
+        "role": "link"
+      },
+      "e48": {
+        "name": "Discord",
+        "role": "link"
+      },
+      "e49": {
+        "name": "Font",
+        "role": "link"
+      },
+      "e5": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e50": {
+        "name": "Fortnite",
+        "role": "link"
+      },
+      "e51": {
+        "name": "Graffiti",
+        "role": "link"
+      },
+      "e52": {
+        "name": "Image",
+        "role": "link"
+      },
+      "e53": {
+        "name": "Instagram",
+        "role": "link"
+      },
+      "e54": {
+        "name": "Mascot",
+        "role": "link"
+      },
+      "e55": {
+        "name": "Minimalist",
+        "role": "link"
+      },
+      "e56": {
+        "name": "Movie",
+        "role": "link"
+      },
+      "e57": {
+        "name": "Neon",
+        "role": "link"
+      },
+      "e58": {
+        "name": "Signature",
+        "role": "link"
+      },
+      "e59": {
+        "name": "Team",
+        "role": "link"
+      },
+      "e6": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e60": {
+        "name": "Transparent",
+        "role": "link"
+      },
+      "e61": {
+        "name": "Typography",
+        "role": "link"
+      },
+      "e62": {
+        "name": "Word",
+        "role": "link"
+      },
+      "e63": {
+        "name": "Airline",
+        "role": "link"
+      },
+      "e64": {
+        "name": "Automotive",
+        "role": "link"
+      },
+      "e65": {
+        "name": "Band",
+        "role": "link"
+      },
+      "e66": {
+        "name": "Brand",
+        "role": "link"
+      },
+      "e67": {
+        "name": "Childcare",
+        "role": "link"
+      },
+      "e68": {
+        "name": "Company",
+        "role": "link"
+      },
+      "e69": {
+        "name": "Dental",
+        "role": "link"
+      },
+      "e7": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e70": {
+        "name": "Education",
+        "role": "link"
+      },
+      "e71": {
+        "name": "Esports",
+        "role": "link"
+      },
+      "e72": {
+        "name": "Fitness",
+        "role": "link"
+      },
+      "e73": {
+        "name": "Gaming",
+        "role": "link"
+      },
+      "e74": {
+        "name": "Medical",
+        "role": "link"
+      },
+      "e75": {
+        "name": "Music",
+        "role": "link"
+      },
+      "e76": {
+        "name": "Non Profit",
+        "role": "link"
+      },
+      "e77": {
+        "name": "Podcast",
+        "role": "link"
+      },
+      "e78": {
+        "name": "Real Estate",
+        "role": "link"
+      },
+      "e79": {
+        "name": "School",
+        "role": "link"
+      },
+      "e8": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e80": {
+        "name": "Shop",
+        "role": "link"
+      },
+      "e81": {
+        "name": "Sport",
+        "role": "link"
+      },
+      "e82": {
+        "name": "Travel",
+        "role": "link"
+      },
+      "e83": {
+        "name": "",
+        "role": "generic"
+      },
+      "e84": {
+        "name": "Logo Maker",
+        "role": "link"
+      },
+      "e85": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e86": {
+        "name": "Design Templates",
+        "role": "link"
+      },
+      "e87": {
+        "name": "Social Templates",
+        "role": "link"
+      },
+      "e88": {
+        "name": "Print Templates",
+        "role": "link"
+      },
+      "e89": {
+        "name": "Website Templates",
+        "role": "link"
+      },
+      "e9": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e90": {
+        "name": "Logo Ideas",
+        "role": "link"
+      },
+      "e91": {
+        "name": "Design Ideas",
+        "role": "link"
+      },
+      "e92": {
+        "name": "Business Cards",
+        "role": "link"
+      },
+      "e93": {
+        "name": "Free Logos",
+        "role": "link"
+      },
+      "e94": {
+        "name": "Free Business Cards",
+        "role": "link"
+      },
+      "e95": {
+        "name": "Free Templates",
+        "role": "link"
+      },
+      "e96": {
+        "name": "Website Builder",
+        "role": "link"
+      },
+      "e97": {
+        "name": "Website Design",
+        "role": "link"
+      },
+      "e98": {
+        "name": "Link in Bio",
+        "role": "link"
+      },
+      "e99": {
+        "name": "Digital Business Cards",
+        "role": "link"
+      }
+    },
+    "snapshot": "- banner\n  - generic\n    - link \"Site Logo\" [ref=e24]\n      - StaticText \"Site Logo\"\n      - image\n    - navigation \"Site Navigation\" [ref=e25]\n      - list\n        - listitem [level=1]\n          - link \"Logos\" [ref=e231]\n        - listitem [level=1]\n          - link \"Business Cards\" [ref=e232]\n        - listitem [level=1]\n          - StaticText \"Social\"\n        - listitem [level=1]\n          - link \"Websites\" [ref=e233]\n        - listitem [level=1]\n          - StaticText \"More\"\n        - listitem [level=1]\n          - link \"AI\" [ref=e234]\n    - list\n      - listitem [level=1]\n        - generic [ref=e222] clickable [cursor:pointer]\n          - StaticText \"Log in\"\n- main\n  - form\n    - LabelText\n      - strong\n        - StaticText \"Business name\"\n    - textbox \"Business name\" [ref=e1]: Morrow Studio\n      - StaticText \"Morrow Studio\"\n    - LabelText\n      - strong\n        - StaticText \"Keywords\"\n      - textbox \"Keywords\" [ref=e26]\n    - button \"Search\" [ref=e2]\n      - StaticText \"Search\"\n  - strong\n    - StaticText \"Filters\"\n  - button \"Clear All\" [ref=e3]\n  - generic [ref=e4] clickable [cursor:pointer]\n    - strong\n      - StaticText \"Logo Styles\"\n  - LabelText [ref=e5] clickable [cursor:pointer]\n    - checkbox \"Abstract\" [checked=false, ref=e27]\n    - StaticText \"Abstract\"\n  - LabelText [ref=e6] clickable [cursor:pointer]\n    - checkbox \"Mascot\" [checked=false, ref=e28]\n    - StaticText \"Mascot\"\n  - LabelText [ref=e7] clickable [cursor:pointer]\n    - checkbox \"Emblem\" [checked=false, ref=e29]\n    - StaticText \"Emblem\"\n  - LabelText [ref=e8] clickable [cursor:pointer]\n    - checkbox \"Corporate\" [checked=false, ref=e30]\n    - StaticText \"Corporate\"\n  - LabelText [ref=e9] clickable [cursor:pointer]\n    - checkbox \"Wordmark\" [checked=false, ref=e31]\n    - StaticText \"Wordmark\"\n  - LabelText [ref=e10] clickable [cursor:pointer]\n    - checkbox \"Vintage\" [checked=false, ref=e32]\n    - StaticText \"Vintage\"\n  - LabelText [ref=e11] clickable [cursor:pointer]\n    - checkbox \"Classic\" [checked=false, ref=e33]\n    - StaticText \"Classic\"\n  - generic [ref=e12] clickable [cursor:pointer]\n    - strong\n      - StaticText \"Color\"\n  - LabelText [ref=e13] clickable [cursor:pointer]\n    - checkbox \"Grayscale\" [checked=false, ref=e34]\n    - StaticText \"Grayscale\"\n  - LabelText [ref=e14] clickable [cursor:pointer]\n    - checkbox \"Blue\" [checked=false, ref=e35]\n    - StaticText \"Blue\"\n  - LabelText [ref=e15] clickable [cursor:pointer]\n    - checkbox \"Purple\" [checked=false, ref=e36]\n    - StaticText \"Purple\"\n  - LabelText [ref=e16] clickable [cursor:pointer]\n    - checkbox \"Pink\" [checked=false, ref=e37]\n    - StaticText \"Pink\"\n  - LabelText [ref=e17] clickable [cursor:pointer]\n    - checkbox \"Red\" [checked=false, ref=e38]\n    - StaticText \"Red\"\n  - LabelText [ref=e18] clickable [cursor:pointer]\n    - checkbox \"Orange\" [checked=false, ref=e39]\n    - StaticText \"Orange\"\n  - LabelText [ref=e19] clickable [cursor:pointer]\n    - checkbox \"Green\" [checked=false, ref=e40]\n    - StaticText \"Green\"\n  - generic\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e244]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Geometric Media Agency Logo preview image\" [ref=e328]\n        - image \"Geometric Media Agency\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e245]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Archway Creative Agency Logo preview image\" [ref=e329]\n        - image \"Archway Creative Agency\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e246]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Innovative Media Hub Logo preview image\" [ref=e330]\n        - image \"Innovative Media Hub\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - StaticText \"FREE\"\n      - button \"Add Logo To Shortlist\" [ref=e247]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Diamond Luxe Lettermark Logo preview image\" [ref=e331]\n        - image \"Diamond Luxe Lettermark\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e248]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"RetroCraft Agency Logo preview image\" [ref=e332]\n        - image \"RetroCraft Agency\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e249]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"ArrowVista Analytics Logo preview image\" [ref=e333]\n        - image \"ArrowVista Analytics\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e250]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Turntable Vinyl Record Logo preview image\" [ref=e334]\n        - image \"Turntable Vinyl Record\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e251]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Innovative Media Studio Logo preview image\" [ref=e335]\n        - image \"Innovative Media Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e252]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Minimalist Media Studio Logo preview image\" [ref=e336]\n        - image \"Minimalist Media Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e253]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Creative Media Hub Logo preview image\" [ref=e337]\n        - image \"Creative Media Hub\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e254]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Creative Colorful Studio Logo preview image\" [ref=e338]\n        - image \"Creative Colorful Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e255]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Neon Lens Studio Logo preview image\" [ref=e339]\n        - image \"Neon Lens Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e256]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Creative Media Marketing Studio Logo preview image\" [ref=e340]\n        - image \"Creative Media Marketing Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e257]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Optical Splice Innovations Logo preview image\" [ref=e341]\n        - image \"Optical Splice Innovations\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e258]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Digital Media Hub Logo preview image\" [ref=e342]\n        - image \"Digital Media Hub\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - StaticText \"FREE\"\n      - button \"Add Logo To Shortlist\" [ref=e259]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Generic Creative Studio Logo preview image\" [ref=e343]\n        - image \"Generic Creative Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e260]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Celestial Lens Studio Logo preview image\" [ref=e344]\n        - image \"Celestial Lens Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e261]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Innovative Media Solutions Logo preview image\" [ref=e345]\n        - image \"Innovative Media Solutions\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e262]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Vinyl Sound Studio Emblem Logo preview image\" [ref=e346]\n        - image \"Vinyl Sound Studio Emblem\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e263]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Modern Lens Photography Studio Logo preview image\" [ref=e347]\n        - image \"Modern Lens Photography Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e264]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Vintage Ink Ornament Studio Logo preview image\" [ref=e348]\n        - image \"Vintage Ink Ornament Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e265]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Luxury Construction Co. Logo preview image\" [ref=e349]\n        - image \"Luxury Construction Co.\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e266]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Modern Lens Photography Studio Logo preview image\" [ref=e350]\n        - image \"Modern Lens Photography Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e267]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Radio Station Microphone Logo preview image\" [ref=e351]\n        - image \"Radio Station Microphone\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e268]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Minimalist Media Studio Logo preview image\" [ref=e352]\n        - image \"Minimalist Media Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e269]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Ink Artistry Studio Logo preview image\" [ref=e353]\n        - image \"Ink Artistry Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e270]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Elegant Tattoo Craft Studio Logo preview image\" [ref=e354]\n        - image \"Elegant Tattoo Craft Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - StaticText \"FREE\"\n      - button \"Add Logo To Shortlist\" [ref=e271]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Eco Digital Solutions Logo preview image\" [ref=e355]\n        - image \"Eco Digital Solutions\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e272]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Podcast Audio Studio Logo preview image\" [ref=e356]\n        - image \"Podcast Audio Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e273]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Vinyl Record Retro Music Logo preview image\" [ref=e357]\n        - image \"Vinyl Record Retro Music\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e274]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"Capture Lens Studio Logo preview image\" [ref=e358]\n        - image \"Capture Lens Studio\"\n        - StaticText \"Logo preview image\"\n    - figure\n      - button \"Add Logo To Shortlist\" [ref=e275]\n        - StaticText \"Add Logo To Shortlist\"\n      - link \"SoundWave Studio Logo preview image\" [ref=e359]\n        - image \"SoundWave Studio\"\n        - StaticText \"Logo preview image\"\n    - list\n      - listitem [level=1]\n        - link \"Go to previous page\" [ref=e235]\n          - StaticText \"Go to previous page\"\n      - listitem [level=1]\n        - link \"1\" [ref=e236]\n      - listitem [level=1]\n        - link \"2\" [ref=e237]\n      - listitem [level=1]\n        - link \"3\" [ref=e238]\n      - listitem [level=1]\n        - link \"4\" [ref=e239]\n      - listitem [level=1]\n        - link \"5\" [ref=e240]\n      - listitem [level=1]\n        - StaticText \"...\"\n      - listitem [level=1]\n        - link \"300\" [ref=e241]\n      - listitem [level=1]\n        - link \"Go to next page\" [ref=e242]\n          - StaticText \"Go to next page\"\n    - paragraph\n      - StaticText \"1 - 32 of 9600 logo designs\"\n  - generic\n    - heading \"Browse thousands of logo templates for any industry\" [level=2, ref=e20]\n    - paragraph\n      - StaticText \"Choose an industry or keyword below and discover beautifully designed logo templates personalized for your business.\"\n    - heading \"Logo templates by keyword\" [level=3, ref=e21]\n    - list\n      - listitem [level=1]\n        - link \"Alphabet\" [ref=e43]\n      - listitem [level=1]\n        - link \"Calligraphy\" [ref=e44]\n      - listitem [level=1]\n        - link \"Cartoon\" [ref=e45]\n      - listitem [level=1]\n        - link \"Circle\" [ref=e46]\n      - listitem [level=1]\n        - link \"Cool\" [ref=e47]\n      - listitem [level=1]\n        - link \"Discord\" [ref=e48]\n      - listitem [level=1]\n        - link \"Font\" [ref=e49]\n      - listitem [level=1]\n        - link \"Fortnite\" [ref=e50]\n      - listitem [level=1]\n        - link \"Graffiti\" [ref=e51]\n      - listitem [level=1]\n        - link \"Image\" [ref=e52]\n      - listitem [level=1]\n        - link \"Instagram\" [ref=e53]\n      - listitem [level=1]\n        - link \"Mascot\" [ref=e54]\n      - listitem [level=1]\n        - link \"Minimalist\" [ref=e55]\n      - listitem [level=1]\n        - link \"Movie\" [ref=e56]\n      - listitem [level=1]\n        - link \"Neon\" [ref=e57]\n      - listitem [level=1]\n        - link \"Signature\" [ref=e58]\n      - listitem [level=1]\n        - link \"Team\" [ref=e59]\n      - listitem [level=1]\n        - link \"Transparent\" [ref=e60]\n      - listitem [level=1]\n        - link \"Typography\" [ref=e61]\n      - listitem [level=1]\n        - link \"Word\" [ref=e62]\n    - heading \"Logo templates by industry\" [level=3, ref=e22]\n    - list\n      - listitem [level=1]\n        - link \"Airline\" [ref=e63]\n      - listitem [level=1]\n        - link \"Automotive\" [ref=e64]\n      - listitem [level=1]\n        - link \"Band\" [ref=e65]\n      - listitem [level=1]\n        - link \"Brand\" [ref=e66]\n      - listitem [level=1]\n        - link \"Childcare\" [ref=e67]\n      - listitem [level=1]\n        - link \"Company\" [ref=e68]\n      - listitem [level=1]\n        - link \"Dental\" [ref=e69]\n      - listitem [level=1]\n        - link \"Education\" [ref=e70]\n      - listitem [level=1]\n        - link \"Esports\" [ref=e71]\n      - listitem [level=1]\n        - link \"Fitness\" [ref=e72]\n      - listitem [level=1]\n        - link \"Gaming\" [ref=e73]\n      - listitem [level=1]\n        - link \"Medical\" [ref=e74]\n      - listitem [level=1]\n        - link \"Music\" [ref=e75]\n      - listitem [level=1]\n        - link \"Non Profit\" [ref=e76]\n      - listitem [level=1]\n        - link \"Podcast\" [ref=e77]\n      - listitem [level=1]\n        - link \"Real Estate\" [ref=e78]\n      - listitem [level=1]\n        - link \"School\" [ref=e79]\n      - listitem [level=1]\n        - link \"Shop\" [ref=e80]\n      - listitem [level=1]\n        - link \"Sport\" [ref=e81]\n      - listitem [level=1]\n        - link \"Travel\" [ref=e82]\n    - heading \"Browse Categories\" [level=2, ref=e23]\n    - generic\n      - generic\n        - link \"Business Cards\" [ref=e276]\n          - StaticText \"Business Cards\"\n        - link \"Websites\" [ref=e277]\n          - StaticText \"Websites\"\n        - link \"Digital Business Cards\" [ref=e278]\n          - StaticText \"Digital Business Cards\"\n        - link \"Link In Bio\" [ref=e279]\n          - StaticText \"Link In Bio\"\n        - link \"Facebook Posts\" [ref=e280]\n          - StaticText \"Facebook Posts\"\n        - link \"Facebook Stories\" [ref=e281]\n          - StaticText \"Facebook Stories\"\n        - link \"Facebook Covers\" [ref=e282]\n          - StaticText \"Facebook Covers\"\n        - link \"Facebook Event Covers\" [ref=e283]\n          - StaticText \"Facebook Event Covers\"\n        - link \"Facebook Ads\" [ref=e284]\n          - StaticText \"Facebook Ads\"\n        - link \"Facebook Profile Pictures\" [ref=e285]\n          - StaticText \"Facebook Profile Pictures\"\n        - link \"Instagram Posts\" [ref=e286]\n          - StaticText \"Instagram Posts\"\n        - link \"Instagram Reels\" [ref=e287]\n          - StaticText \"Instagram Reels\"\n        - link \"Instagram Stories\" [ref=e288]\n          - StaticText \"Instagram Stories\"\n        - link \"Instagram Profile Pictures\" [ref=e289]\n          - StaticText \"Instagram Profile Pictures\"\n        - link \"LinkedIn Banners\" [ref=e290]\n          - StaticText \"LinkedIn Banners\"\n        - link \"LinkedIn Posts\" [ref=e291]\n          - StaticText \"LinkedIn Posts\"\n        - link \"LinkedIn Profile Pictures\" [ref=e292]\n          - StaticText \"LinkedIn Profile Pictures\"\n        - link \"Pinterest Pins\" [ref=e293]\n          - StaticText \"Pinterest Pins\"\n        - link \"Pinterest Board Covers\" [ref=e294]\n          - StaticText \"Pinterest Board Covers\"\n        - link \"Pinterest Profile Pictures\" [ref=e295]\n          - StaticText \"Pinterest Profile Pictures\"\n        - link \"Snapchat Designs\" [ref=e296]\n          - StaticText \"Snapchat Designs\"\n        - link \"SoundCloud Banners\" [ref=e297]\n          - StaticText \"SoundCloud Banners\"\n        - link \"SoundCloud Profile Pictures\" [ref=e298]\n          - StaticText \"SoundCloud Profile Pictures\"\n        - link \"TikTok Videos\" [ref=e299]\n          - StaticText \"TikTok Videos\"\n        - link \"Tumblr Profile Pictures\" [ref=e300]\n          - StaticText \"Tumblr Profile Pictures\"\n        - link \"Tumblr Banners\" [ref=e301]\n          - StaticText \"Tumblr Banners\"\n        - link \"Twitch Banners\" [ref=e302]\n          - StaticText \"Twitch Banners\"\n        - link \"Twitch Profile Pictures\" [ref=e303]\n          - StaticText \"Twitch Profile Pictures\"\n        - link \"Twitter Headers\" [ref=e304]\n          - StaticText \"Twitter Headers\"\n        - link \"Twitter Posts\" [ref=e305]\n          - StaticText \"Twitter Posts\"\n        - link \"WhatsApp Stories\" [ref=e306]\n          - StaticText \"WhatsApp Stories\"\n        - link \"YouTube Banners\" [ref=e307]\n          - StaticText \"YouTube Banners\"\n        - link \"YouTube Shorts\" [ref=e308]\n          - StaticText \"YouTube Shorts\"\n        - link \"YouTube Videos\" [ref=e309]\n          - StaticText \"YouTube Videos\"\n        - link \"YouTube Channel Icons\" [ref=e310]\n          - StaticText \"YouTube Channel Icons\"\n        - link \"Zoom Backgrounds\" [ref=e311]\n          - StaticText \"Zoom Backgrounds\"\n        - link \"Email Signatures\" [ref=e312]\n          - StaticText \"Email Signatures\"\n        - link \"Invoices\" [ref=e313]\n          - StaticText \"Invoices\"\n        - link \"Menus\" [ref=e314]\n          - StaticText \"Menus\"\n        - link \"Flyers\" [ref=e315]\n          - StaticText \"Flyers\"\n        - link \"Postcards\" [ref=e316]\n          - StaticText \"Postcards\"\n        - link \"Posters\" [ref=e317]\n          - StaticText \"Posters\"\n        - link \"Gift Certificates\" [ref=e318]\n          - StaticText \"Gift Certificates\"\n        - link \"Invitations\" [ref=e319]\n          - StaticText \"Invitations\"\n        - link \"Thank You Cards\" [ref=e320]\n          - StaticText \"Thank You Cards\"\n        - link \"T-Shirts\" [ref=e321]\n          - StaticText \"T-Shirts\"\n        - link \"Videos\" [ref=e322]\n          - StaticText \"Videos\"\n        - link \"Animations\" [ref=e323]\n          - StaticText \"Animations\"\n        - link \"Letterheads\" [ref=e324]\n          - StaticText \"Letterheads\"\n        - link \"Etsy Banners\" [ref=e325]\n          - StaticText \"Etsy Banners\"\n        - link \"QR Codes\" [ref=e326]\n          - StaticText \"QR Codes\"\n        - link \"Presentations\" [ref=e327]\n          - StaticText \"Presentations\"\n      - generic [ref=e83] clickable [cursor:pointer]\n    - heading \"... or enter any keyword and we will start making logos for you\" [level=2, ref=e41]\n    - paragraph\n      - StaticText \"Enter any keyword and we'll start generating logos for you\"\n    - form\n      - LabelText\n        - StaticText \"Search by keyword (e.g. restaurant)\"\n        - textbox \"Search by keyword (e.g. restaurant)\" [ref=e243]\n      - button \"Generate Logos\" [ref=e223]\n        - StaticText \"Generate Logos\"\n- contentinfo\n  - navigation\n    - paragraph\n      - StaticText \"Design.com\"\n    - list\n      - listitem [level=1]\n        - link \"Logo Maker\" [ref=e84]\n      - listitem [level=1]\n        - link \"Logo Templates\" [ref=e85]\n      - listitem [level=1]\n        - link \"Design Templates\" [ref=e86]\n      - listitem [level=1]\n        - link \"Social Templates\" [ref=e87]\n      - listitem [level=1]\n        - link \"Print Templates\" [ref=e88]\n      - listitem [level=1]\n        - link \"Website Templates\" [ref=e89]\n      - listitem [level=1]\n        - link \"Logo Ideas\" [ref=e90]\n      - listitem [level=1]\n        - link \"Design Ideas\" [ref=e91]\n      - listitem [level=1]\n        - link \"Business Cards\" [ref=e92]\n      - listitem [level=1]\n        - link \"Free Logos\" [ref=e93]\n      - listitem [level=1]\n        - link \"Free Business Cards\" [ref=e94]\n      - listitem [level=1]\n        - link \"Free Templates\" [ref=e95]\n      - listitem [level=1]\n        - link \"Website Builder\" [ref=e96]\n      - listitem [level=1]\n        - link \"Website Design\" [ref=e97]\n      - listitem [level=1]\n        - link \"Link in Bio\" [ref=e98]\n      - listitem [level=1]\n        - link \"Digital Business Cards\" [ref=e99]\n      - listitem [level=1]\n        - link \"Domain Names\" [ref=e100]\n    - paragraph\n      - StaticText \"Company\"\n    - list\n      - listitem [level=1]\n        - link \"About us\" [ref=e101]\n      - listitem [level=1]\n        - link \"Blog\" [ref=e102]\n      - listitem [level=1]\n        - link \"Affiliates\" [ref=e103]\n      - listitem [level=1]\n        - link \"Contact us\" [ref=e104]\n      - listitem [level=1]\n        - link \"Legals\" [ref=e105]\n      - listitem [level=1]\n        - link \"Privacy policy\" [ref=e106]\n      - listitem [level=1]\n        - link \"Help Center\" [ref=e107]\n      - listitem [level=1]\n        - link \"Login\" [ref=e108]\n    - paragraph\n      - StaticText \"AI\"\n    - list\n      - listitem [level=1]\n        - link \"AI Design Tools\" [ref=e109]\n      - listitem [level=1]\n        - link \"AI Business Name Generator\" [ref=e110]\n      - listitem [level=1]\n        - link \"AI Logo Generator\" [ref=e111]\n      - listitem [level=1]\n        - link \"AI Background Remover\" [ref=e112]\n      - listitem [level=1]\n        - link \"AI Domain Name Generator\" [ref=e113]\n      - listitem [level=1]\n        - link \"AI Website Builder\" [ref=e114]\n      - listitem [level=1]\n        - link \"AI Business Card Generator\" [ref=e115]\n      - listitem [level=1]\n        - link \"AI Flyer Generator\" [ref=e116]\n      - listitem [level=1]\n        - link \"AI Poster Generator\" [ref=e117]\n      - listitem [level=1]\n        - link \"AI Link in Bio Generator\" [ref=e118]\n      - listitem [level=1]\n        - link \"AI Presentation Maker\" [ref=e119]\n      - listitem [level=1]\n        - link \"AI Social Media Generator\" [ref=e120]\n      - listitem [level=1]\n        - link \"AI Image Generator\" [ref=e121]\n    - paragraph\n      - StaticText \"Create Designs\"\n    - list\n      - listitem [level=1]\n        - link \"Facebook Posts\" [ref=e122]\n      - listitem [level=1]\n        - link \"Facebook Stories\" [ref=e123]\n      - listitem [level=1]\n        - link \"Facebook Covers\" [ref=e124]\n      - listitem [level=1]\n        - link \"Facebook Events\" [ref=e125]\n      - listitem [level=1]\n        - link \"Facebook Ads\" [ref=e126]\n      - listitem [level=1]\n        - link \"Facebook Profile Pictures\" [ref=e127]\n      - listitem [level=1]\n        - link \"Instagram Posts\" [ref=e128]\n      - listitem [level=1]\n        - link \"Instagram Reels\" [ref=e129]\n      - listitem [level=1]\n        - link \"Instagram Stories\" [ref=e130]\n      - listitem [level=1]\n        - link \"Instagram Profile Pictures\" [ref=e131]\n      - listitem [level=1]\n        - link \"LinkedIn Banners\" [ref=e132]\n      - listitem [level=1]\n        - link \"LinkedIn Posts\" [ref=e133]\n      - listitem [level=1]\n        - link \"LinkedIn Profile Pictures\" [ref=e134]\n      - listitem [level=1]\n        - link \"Pinterest Pins\" [ref=e135]\n      - listitem [level=1]\n        - link \"Pinterest Covers\" [ref=e136]\n      - listitem [level=1]\n        - link \"Pinterest Profile Pictures\" [ref=e137]\n    - list\n      - listitem [level=1]\n        - link \"Snapchat Designs\" [ref=e138]\n      - listitem [level=1]\n        - link \"SoundCloud Banners\" [ref=e139]\n      - listitem [level=1]\n        - link \"SoundCloud Profile Pictures\" [ref=e140]\n      - listitem [level=1]\n        - link \"TikTok Videos\" [ref=e141]\n      - listitem [level=1]\n        - link \"Tumblr Profile Pictures\" [ref=e142]\n      - listitem [level=1]\n        - link \"Tumblr Banners\" [ref=e143]\n      - listitem [level=1]\n        - link \"Twitch Banners\" [ref=e144]\n      - listitem [level=1]\n        - link \"Twitch Profile Pictures\" [ref=e145]\n      - listitem [level=1]\n        - link \"Twitter Headers\" [ref=e146]\n      - listitem [level=1]\n        - link \"Twitter Posts\" [ref=e147]\n      - listitem [level=1]\n        - link \"Whatsapp Stories\" [ref=e148]\n      - listitem [level=1]\n        - link \"YouTube Banners\" [ref=e149]\n      - listitem [level=1]\n        - link \"YouTube Shorts\" [ref=e150]\n      - listitem [level=1]\n        - link \"YouTube Videos\" [ref=e151]\n      - listitem [level=1]\n        - link \"YouTube Channel Icons\" [ref=e152]\n      - listitem [level=1]\n        - link \"Zoom Backgrounds\" [ref=e153]\n    - list\n      - listitem [level=1]\n        - link \"Email Signatures\" [ref=e154]\n      - listitem [level=1]\n        - link \"Invoices\" [ref=e155]\n      - listitem [level=1]\n        - link \"Menus\" [ref=e156]\n      - listitem [level=1]\n        - link \"Flyers\" [ref=e157]\n      - listitem [level=1]\n        - link \"Postcards\" [ref=e158]\n      - listitem [level=1]\n        - link \"Posters\" [ref=e159]\n      - listitem [level=1]\n        - link \"Gift Certificates\" [ref=e160]\n      - listitem [level=1]\n        - link \"Invitations\" [ref=e161]\n      - listitem [level=1]\n        - link \"Thank You Cards\" [ref=e162]\n      - listitem [level=1]\n        - link \"T-Shirts\" [ref=e163]\n      - listitem [level=1]\n        - link \"Videos\" [ref=e164]\n      - listitem [level=1]\n        - link \"Animations\" [ref=e165]\n      - listitem [level=1]\n        - link \"Letterheads\" [ref=e166]\n      - listitem [level=1]\n        - link \"Etsy Banners\" [ref=e167]\n      - listitem [level=1]\n        - link \"QR Code\" [ref=e168]\n      - listitem [level=1]\n        - link \"Presentations\" [ref=e169]\n    - paragraph\n      - StaticText \"Logos\"\n    - list\n      - listitem [level=1]\n        - link \"Gaming logo\" [ref=e170]\n      - listitem [level=1]\n        - link \"Company logo\" [ref=e171]\n      - listitem [level=1]\n        - link \"Business logo\" [ref=e172]\n      - listitem [level=1]\n        - link \"Brand logo\" [ref=e173]\n      - listitem [level=1]\n        - link \"Name logo\" [ref=e174]\n      - listitem [level=1]\n        - link \"Car logo\" [ref=e175]\n      - listitem [level=1]\n        - link \"Monogram logo\" [ref=e176]\n      - listitem [level=1]\n        - link \"School logo\" [ref=e177]\n      - listitem [level=1]\n        - link \"Food logo\" [ref=e178]\n      - listitem [level=1]\n        - link \"Youtube logo\" [ref=e179]\n      - listitem [level=1]\n        - link \"Photography logo\" [ref=e180]\n      - listitem [level=1]\n        - link \"Football logo\" [ref=e181]\n      - listitem [level=1]\n        - link \"Camera logo\" [ref=e182]\n      - listitem [level=1]\n        - link \"Crown logo\" [ref=e183]\n      - listitem [level=1]\n        - link \"Sports logo\" [ref=e184]\n      - listitem [level=1]\n        - link \"3d logo\" [ref=e185]\n      - listitem [level=1]\n        - link \"Construction logo\" [ref=e186]\n    - list\n      - listitem [level=1]\n        - link \"Cool logo\" [ref=e187]\n      - listitem [level=1]\n        - link \"DJ logo\" [ref=e188]\n      - listitem [level=1]\n        - link \"Restaurant logo\" [ref=e189]\n      - listitem [level=1]\n        - link \"Letter logo\" [ref=e190]\n      - listitem [level=1]\n        - link \"Real Estate logo\" [ref=e191]\n      - listitem [level=1]\n        - link \"Circle logo\" [ref=e192]\n      - listitem [level=1]\n        - link \"Fashion logo\" [ref=e193]\n      - listitem [level=1]\n        - link \"Cartoon logo\" [ref=e194]\n      - listitem [level=1]\n        - link \"Travel logo\" [ref=e195]\n      - listitem [level=1]\n        - link \"Cafe logo\" [ref=e196]\n      - listitem [level=1]\n        - link \"Eagle logo\" [ref=e197]\n      - listitem [level=1]\n        - link \"Podcast logo\" [ref=e198]\n      - listitem [level=1]\n        - link \"Bakery logo\" [ref=e199]\n      - listitem [level=1]\n        - link \"Text logo\" [ref=e200]\n      - listitem [level=1]\n        - link \"Icon logo\" [ref=e201]\n      - listitem [level=1]\n        - link \"Word logo\" [ref=e202]\n      - listitem [level=1]\n        - link \"Team logo\" [ref=e203]\n    - list\n      - listitem [level=1]\n        - link \"App logo\" [ref=e204]\n      - listitem [level=1]\n        - link \"Barber logo\" [ref=e205]\n      - listitem [level=1]\n        - link \"Font logo\" [ref=e206]\n      - listitem [level=1]\n        - link \"Web logo\" [ref=e207]\n      - listitem [level=1]\n        - link \"Pizza logo\" [ref=e208]\n      - listitem [level=1]\n        - link \"Shop logo\" [ref=e209]\n      - listitem [level=1]\n        - link \"Simple logo\" [ref=e210]\n      - listitem [level=1]\n        - link \"Symbol logo\" [ref=e211]\n      - listitem [level=1]\n        - link \"Beauty logo\" [ref=e212]\n      - listitem [level=1]\n        - link \"Coffee logo\" [ref=e213]\n      - listitem [level=1]\n        - link \"Doctor logo\" [ref=e214]\n      - listitem [level=1]\n        - link \"Gym logo\" [ref=e215]\n      - listitem [level=1]\n        - link \"Lion logo\" [ref=e216]\n      - listitem [level=1]\n        - link \"Music logo\" [ref=e217]\n    - combobox \"Select language\" [expanded=false, ref=e42]: English\n      - MenuListPopup\n        - option \"English\" [selected, ref=e224]\n        - option \"Français\" [ref=e225]\n        - option \"Français (Canada)\" [ref=e226]\n        - option \"Español\" [ref=e227]\n        - option \"Deutsch\" [ref=e228]\n        - option \"Português\" [ref=e229]\n        - option \"Português (Brasil)\" [ref=e230]\n    - paragraph\n      - StaticText \"Copyright © 2026 Design.com. All Rights Reserved.\"\n    - paragraph\n      - StaticText \"All individual works are copyright protected by their respective owners & contributors. Design.com is handcrafted from around the world\"\n    - list\n      - listitem [level=1]\n        - link \"facebook\" [ref=e218]\n          - StaticText \"facebook\"\n      - listitem [level=1]\n        - link \"twitter\" [ref=e219]\n          - StaticText \"twitter\"\n      - listitem [level=1]\n        - link \"instagram\" [ref=e220]\n          - StaticText \"instagram\"\n      - listitem [level=1]\n        - link \"linkedin\" [ref=e221]\n          - StaticText \"linkedin\"",
+    "browserPageId": "bc16e061-695d-43d0-82cf-096cc0e2d4e6"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

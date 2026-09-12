@@ -1,0 +1,9 @@
+Create one abstract logo for KITE. Industry: 협업 소프트웨어. Audience: 작은 제품 팀.
+Exact text (copy verbatim, no other words): ''. Exact slogan: ''.
+Styles: 상승감을 표현한 추상 기하학, flat, clear silhouette. Palette: 코럴, 백색.
+Avoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.
+Background: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: One bold abstract brand symbol suggesting lift, collaboration, and a folded kite from two intersecting clean geometric coral shapes with deliberate negative space. Do not draw a literal kite string. No letters or text. Solid near-white background, flat coral mark, distinctive readable silhouette.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..
+
+Art direction: One bold abstract brand symbol suggesting lift, collaboration, and a folded kite from two intersecting clean geometric coral shapes with deliberate negative space. Do not draw a literal kite string. No letters or text. Solid near-white background, flat coral mark, distinctive readable silhouette.
+One independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "01-luma",
+    "session": "sample-01-luma",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-af08d47b-da13-462f-881d-b65dc7955b40.png",
+    "recordedAt": "2026-09-12T13:14:27.353Z",
+    "prompt": "items/01-luma/prompt.txt",
+    "output": "items/01-luma/delivery/logo.png",
+    "sha256": "29c891de028f14cc8b8a715f105b2dd8b383fa647f691521bd0de25428f561ef",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "02-loop-lab",
+    "session": "sample-02-loop-lab",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-83ba1e28-e893-4a87-a92d-629f65fe11f5.png",
+    "recordedAt": "2026-09-12T13:14:27.357Z",
+    "prompt": "items/02-loop-lab/prompt.txt",
+    "output": "items/02-loop-lab/delivery/logo.png",
+    "sha256": "c03e72b2362ed7071f52f441520a73fa9a92be697efa551ae14b3cb43da8aab4",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "03-goyo",
+    "session": "sample-03-goyo",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-2e21bc2e-78be-40b5-b777-53888fc2b6e4.png",
+    "recordedAt": "2026-09-12T13:14:27.360Z",
+    "prompt": "items/03-goyo/prompt.txt",
+    "output": "items/03-goyo/delivery/logo.png",
+    "sha256": "4050303ae1bc5ec5a7741841b36a295ce033ed2be852fb53e893072f998d3174",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "04-bread-bloom",
+    "session": "sample-04-bread-bloom",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-2a692f6e-8923-4359-8bfa-576be80325eb.png",
+    "recordedAt": "2026-09-12T13:14:27.365Z",
+    "prompt": "items/04-bread-bloom/prompt.txt",
+    "output": "items/04-bread-bloom/delivery/logo.png",
+    "sha256": "420ac19545143efbc4681b27b68fd074656da803869c746bd9c1eeb5678c9b8c",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "05-kite",
+    "session": "sample-05-kite",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-bd23b2c4-77b8-427d-9bf3-5186ca6f19d7.png",
+    "recordedAt": "2026-09-12T13:14:27.366Z",
+    "prompt": "items/05-kite/prompt.txt",
+    "output": "items/05-kite/delivery/logo.png",
+    "sha256": "dffb886a7a72196a42df21e36afe23cfb6e07bd25bad35c69c44f4de5c0232a7",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "06-miso",
+    "session": "sample-06-miso",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-c2b585a5-8515-489f-aa42-08eab4daed8a.png",
+    "recordedAt": "2026-09-12T13:14:27.370Z",
+    "prompt": "items/06-miso/prompt.txt",
+    "output": "items/06-miso/delivery/logo.png",
+    "sha256": "10f3e1d9f51e35a1eced51e0efcd08061d03bbc8a184d4399992237e45ec0649",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "07-northline",
+    "session": "sample-07-northline",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-8f776327-d6b4-4d97-93a0-a48322ad2536.png",
+    "recordedAt": "2026-09-12T13:14:27.373Z",
+    "prompt": "items/07-northline/prompt.txt",
+    "output": "items/07-northline/delivery/logo.png",
+    "sha256": "4eb27ce806aab3a32f58337c8b1fd00f6257f1abe970f98f12edfac6be423c06",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "08-mulgyeol",
+    "session": "sample-08-mulgyeol",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-5f715f27-c822-474b-ad67-8ada044b7ed3.png",
+    "recordedAt": "2026-09-12T13:14:27.375Z",
+    "prompt": "items/08-mulgyeol/prompt.txt",
+    "output": "items/08-mulgyeol/delivery/logo.png",
+    "sha256": "da97616502733dcef4b6b082d7746149793a22a576f3ad179a4da641d7ed66cf",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "09-fern",
+    "session": "sample-09-fern",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-642303eb-d134-4e4e-be00-7f1ef675deb6.png",
+    "recordedAt": "2026-09-12T13:14:27.377Z",
+    "prompt": "items/09-fern/prompt.txt",
+    "output": "items/09-fern/delivery/logo.png",
+    "sha256": "db9066ee56c2789324aa7c53e5ba68b9e6c003ba3fe98578ea8b0e6196181e27",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  },
+  {
+    "id": "10-nova-notes",
+    "session": "sample-10-nova-notes",
+    "tool": "image_gen__imagegen",
+    "sourceArtifact": "exec-69c1fbcc-400c-4aab-822d-2de41f26c0c5.png",
+    "recordedAt": "2026-09-12T13:14:27.379Z",
+    "prompt": "items/10-nova-notes/prompt.txt",
+    "output": "items/10-nova-notes/delivery/logo.png",
+    "sha256": "0e26b2354a22faba2128d205c377abe09e590c82f895e2716fe51e0877715553",
+    "pluginVersion": "0.2.0+codex.20260912125753"
+  }
+]

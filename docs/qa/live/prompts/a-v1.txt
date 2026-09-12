@@ -1,0 +1,8 @@
+Use case: logo-brand
+Asset: one standalone master brand logo for a fictional sustainable design studio.
+Brand and text (verbatim): "Morrow Studio". No slogan, no other text.
+Logo type: combination mark. Concept A: a distinctive open geometric M monogram, with two folded ribbon strokes and deliberate white negative space suggesting a path forward. Restrained, sophisticated, memorable; balanced flat shapes with no overly thin details.
+Style: modern minimal geometric identity, crisp edges and careful optical balance.
+Palette: solid forest green #174C3C for mark and text. Solid white background.
+Composition: centered mark above a carefully spaced contemporary sans-serif wordmark. Wide clear margins, no cropping. Square standalone image. The brand should remain legible when displayed at business-card size.
+Avoid: gradients, shadows, 3D, texture, mockups, extra lettering, borders, watermarks, existing brand symbols. Deliver the finished logo only, not a contact sheet.

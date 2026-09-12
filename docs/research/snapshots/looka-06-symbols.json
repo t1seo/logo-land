@@ -1,0 +1,202 @@
+{
+  "id": "01f344fe-3c0d-44a0-a8a9-f48ce8611a55",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/onboarding?company_name=Morrow%20Studio",
+    "refs": {
+      "e1": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e10": {
+        "name": "",
+        "role": "generic"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "",
+        "role": "generic"
+      },
+      "e16": {
+        "name": "",
+        "role": "generic"
+      },
+      "e17": {
+        "name": "",
+        "role": "generic"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e20": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "",
+        "role": "generic"
+      },
+      "e22": {
+        "name": "I want to pick my own symbols",
+        "role": "link"
+      },
+      "e23": {
+        "name": "menu",
+        "role": "button"
+      },
+      "e24": {
+        "name": "",
+        "role": "generic"
+      },
+      "e25": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Sign up",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Continue as guest",
+        "role": "button"
+      },
+      "e28": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Thanks for signing up!",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "Pick some symbol types",
+        "role": "heading"
+      },
+      "e30": {
+        "name": "Download Logo",
+        "role": "button"
+      },
+      "e31": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e32": {
+        "name": "Skip",
+        "role": "button"
+      },
+      "e33": {
+        "name": "",
+        "role": "generic"
+      },
+      "e34": {
+        "name": "Navigate to dashboard. Caution: this will navigate you away from your current page",
+        "role": "link"
+      },
+      "e35": {
+        "name": "Browse unique logos generated just for you. No templates here.",
+        "role": "heading"
+      },
+      "e36": {
+        "name": "Customize your logo with 100s of font, layout, and color options.",
+        "role": "heading"
+      },
+      "e37": {
+        "name": "Get 300+ branded assets from social media posts to flyers.",
+        "role": "heading"
+      },
+      "e38": {
+        "name": "",
+        "role": "generic"
+      },
+      "e39": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e41": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e42": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e43": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e44": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e45": {
+        "name": "Help / Contact",
+        "role": "link"
+      },
+      "e46": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e47": {
+        "name": "Privacy",
+        "role": "link"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e7": {
+        "name": "",
+        "role": "generic"
+      },
+      "e8": {
+        "name": "",
+        "role": "generic"
+      },
+      "e9": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - button \"Close Modal\" [ref=e1]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e2]\n  - generic\n    - generic\n      - heading \"Pick some symbol types\" [level=2, ref=e3]\n      - paragraph\n        - StaticText \"We've hand-curated symbols for these types\"\n      - button \"Skip\" [ref=e32]\n        - StaticText \"Skip\"\n        - image\n    - generic\n      - generic [ref=e4] clickable [cursor:pointer, onclick]\n        - StaticText \"Design Agency\"\n      - generic [ref=e5] clickable [cursor:pointer, onclick]\n        - StaticText \"Creative\"\n      - generic [ref=e6] clickable [cursor:pointer, onclick]\n        - StaticText \"Design\"\n      - generic [ref=e7] clickable [cursor:pointer, onclick]\n        - StaticText \"Create\"\n      - generic [ref=e8] clickable [cursor:pointer, onclick]\n        - StaticText \"Marketing\"\n      - generic [ref=e9] clickable [cursor:pointer, onclick]\n        - StaticText \"Art\"\n      - generic [ref=e10] clickable [cursor:pointer, onclick]\n        - StaticText \"Digital\"\n      - generic [ref=e11] clickable [cursor:pointer, onclick]\n        - StaticText \"Idea\"\n      - generic [ref=e12] clickable [cursor:pointer, onclick]\n        - StaticText \"Computer\"\n      - generic [ref=e13] clickable [cursor:pointer, onclick]\n        - StaticText \"Photography\"\n      - generic [ref=e14] clickable [cursor:pointer, onclick]\n        - StaticText \"Circle\"\n      - generic [ref=e15] clickable [cursor:pointer, onclick]\n        - StaticText \"Diamond\"\n      - generic [ref=e16] clickable [cursor:pointer, onclick]\n        - StaticText \"Abstract\"\n      - generic [ref=e17] clickable [cursor:pointer, onclick]\n        - StaticText \"Innovation\"\n      - generic [ref=e18] clickable [cursor:pointer, onclick]\n        - StaticText \"Strength\"\n      - generic [ref=e19] clickable [cursor:pointer, onclick]\n        - StaticText \"Excellence\"\n      - generic [ref=e20] clickable [cursor:pointer, onclick]\n        - StaticText \"Tranquility\"\n      - generic [ref=e21] clickable [cursor:pointer, onclick]\n        - StaticText \"Creativity\"\n    - link \"I want to pick my own symbols\" [ref=e22]\n    - generic\n      - generic [ref=e33] clickable [cursor:pointer, onclick]\n        - StaticText \"arrow_back\"\n      - link \"Navigate to dashboard. Caution: this will navigate you away from your current page\" [ref=e34]\n        - image \"Navigate to dashboard. Caution: this will navigate you away from your current page\"\n      - button \"menu\" [ref=e23]\n        - StaticText \"menu\"\n    - generic\n      - generic [ref=e24] clickable [onclick]\n      - generic [ref=e38] clickable [cursor:pointer, onclick]\n        - StaticText \"close\"\n      - paragraph [ref=e39] clickable [cursor:pointer, onclick]\n        - StaticText \"Log in\"\n      - paragraph [ref=e40] clickable [cursor:pointer, onclick]\n        - StaticText \"Register\"\n      - list\n        - listitem [level=1, ref=e41] clickable [cursor:pointer]\n          - link \"Help / Contact\" [ref=e45]\n        - listitem [level=1, ref=e42] clickable [cursor:pointer]\n          - link \"Terms of Service\" [ref=e46]\n        - listitem [level=1, ref=e43] clickable [cursor:pointer]\n          - link \"Privacy\" [ref=e47]\n  - generic\n    - button \"Close Modal\" [ref=e25]\n      - image \"Close Modal\"\n    - heading \"Sign up\" [level=2, ref=e26]\n    - paragraph\n      - StaticText \"Success! Your account has been created.\"\n    - paragraph\n      - link \"Terms of service\" [ref=e44]\n      - StaticText \" apply\"\n    - StaticText \"or\"\n    - button \"Continue as guest\" [ref=e27]\n      - StaticText \"Continue as guest\"\n      - image\n    - generic\n      - image\n      - heading \"Browse unique logos generated just for you. No templates here.\" [level=4, ref=e35]\n        - strong\n          - StaticText \"Browse unique logos\"\n        - StaticText \" generated just for you. No templates here.\"\n      - image\n      - heading \"Customize your logo with 100s of font, layout, and color options.\" [level=4, ref=e36]\n        - strong\n          - StaticText \"Customize your logo\"\n        - StaticText \" with 100s of font, layout, and color options.\"\n      - image\n      - heading \"Get 300+ branded assets from social media posts to flyers.\" [level=4, ref=e37]\n        - strong\n          - StaticText \"Get 300+ branded assets\"\n        - StaticText \" from social media posts to flyers.\"\n  - generic\n    - button \"Close Modal\" [ref=e28]\n      - image \"Close Modal\"\n    - image\n    - heading \"Thanks for signing up!\" [level=2, ref=e29]\n    - paragraph\n      - StaticText \"Now you can download your logo and come back any time to access your designs\"\n    - button \"Download Logo\" [ref=e30]\n    - button \"Close\" [ref=e31]",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

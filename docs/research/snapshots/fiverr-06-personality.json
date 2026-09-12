@@ -1,0 +1,270 @@
+{
+  "id": "a7fbd461-e70d-4c32-b73c-4a39f3c818a4",
+  "ok": true,
+  "result": {
+    "origin": "https://www.fiverr.com/logo-maker/brief/brand_personality?source=buyer_landing_page&get_started_brand_name=Morrow+Studio&brief_id=9b467438-ad0b-445d-8ccf-46f4d35c175f",
+    "refs": {
+      "e1": {
+        "name": "Quick Accessibility Options",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "Open accessibility menu",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Go to Fiverr",
+        "role": "link"
+      },
+      "e14": {
+        "name": "Sign in",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Join",
+        "role": "link"
+      },
+      "e16": {
+        "name": "",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Join Fiverr",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Sign in",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Skip to main content",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Fiverr on TikTok",
+        "role": "link"
+      },
+      "e21": {
+        "name": "Fiverr on Instagram",
+        "role": "link"
+      },
+      "e22": {
+        "name": "Fiverr on LinkedIn",
+        "role": "link"
+      },
+      "e23": {
+        "name": "Fiverr on Facebook",
+        "role": "link"
+      },
+      "e24": {
+        "name": "Fiverr on Pinterest",
+        "role": "link"
+      },
+      "e25": {
+        "name": "Fiverr on Twitter",
+        "role": "link"
+      },
+      "e26": {
+        "name": "$ USD",
+        "role": "button"
+      },
+      "e27": {
+        "name": "Testimonials",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Tutorials",
+        "role": "link"
+      },
+      "e29": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e3": {
+        "name": "Enable accessibility for low vision",
+        "role": "button"
+      },
+      "e30": {
+        "name": "",
+        "role": "generic"
+      },
+      "e31": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e32": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e33": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e34": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e35": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e36": {
+        "name": "",
+        "role": "generic"
+      },
+      "e37": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e38": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e39": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e4": {
+        "name": "Open the accessibility menu",
+        "role": "button"
+      },
+      "e40": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e41": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e42": {
+        "name": "",
+        "role": "generic"
+      },
+      "e43": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e44": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e45": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e46": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e47": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e48": {
+        "name": "",
+        "role": "generic"
+      },
+      "e49": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e5": {
+        "name": "",
+        "role": "link"
+      },
+      "e50": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e51": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e52": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e53": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e54": {
+        "name": "",
+        "role": "generic"
+      },
+      "e55": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e56": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e57": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e58": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e59": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e6": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e60": {
+        "name": "",
+        "role": "slider"
+      },
+      "e61": {
+        "name": "",
+        "role": "slider"
+      },
+      "e62": {
+        "name": "",
+        "role": "slider"
+      },
+      "e63": {
+        "name": "",
+        "role": "slider"
+      },
+      "e64": {
+        "name": "",
+        "role": "slider"
+      },
+      "e7": {
+        "name": "Make My Logo",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Define your brand's personality",
+        "role": "heading"
+      },
+      "e9": {
+        "name": "Privacy Policy",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - region \"Quick Accessibility Options\" [ref=e1]\n    - button \"Skip to main content\" [ref=e2]\n      - StaticText \"Skip to main content\"\n    - button \"Enable accessibility for low vision\" [ref=e3]\n      - StaticText \"Enable accessibility for low vision\"\n    - button \"Open the accessibility menu\" [ref=e4]\n      - StaticText \"Open the accessibility menu\"\n  - generic\n    - banner\n      - link [ref=e5]\n        - image\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Go to Fiverr\" [ref=e13]\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Sign in\" [ref=e14]\n          - listitem [level=1]\n            - link \"Join\" [ref=e15]\n    - generic\n      - dialog\n        - banner\n          - link [ref=e16]\n            - image\n          - button \"Close\" [ref=e17]\n            - image\n        - StaticText \"Explore\"\n        - image\n        - link \"Testimonials\" [ref=e27]\n          - StaticText \"Testimonials\"\n        - link \"Tutorials\" [ref=e28]\n          - StaticText \"Tutorials\"\n        - link \"Pricing\" [ref=e29]\n          - StaticText \"Pricing\"\n        - StaticText \"$\"\n        - StaticText \"USD\"\n        - image\n        - StaticText \"Company\"\n        - image\n        - contentinfo\n          - button \"Join Fiverr\" [ref=e18]\n          - button \"Sign in\" [ref=e19]\n      - generic\n        - generic\n          - StaticText \"STEP4 / 4\"\n        - banner\n          - heading \"Define your brand's personality\" [level=2, ref=e8]\n          - paragraph\n            - StaticText \"How strongly do these values represent your brand? Slide left or right.\"\n        - generic\n          - StaticText \"Accessible\"\n          - generic\n            - generic [ref=e30] clickable [cursor:pointer]\n              - slider [ref=e60]: 3\n            - generic\n              - paragraph [ref=e31] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e32] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e33] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e34] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e35] clickable [cursor:pointer, onclick]\n          - StaticText \"Premium\"\n        - generic\n          - StaticText \"Classic\"\n          - generic\n            - generic [ref=e36] clickable [cursor:pointer]\n              - slider [ref=e61]: 3\n            - generic\n              - paragraph [ref=e37] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e38] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e39] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e40] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e41] clickable [cursor:pointer, onclick]\n          - StaticText \"Modern\"\n        - generic\n          - StaticText \"Traditional\"\n          - generic\n            - generic [ref=e42] clickable [cursor:pointer]\n              - slider [ref=e62]: 3\n            - generic\n              - paragraph [ref=e43] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e44] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e45] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e46] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e47] clickable [cursor:pointer, onclick]\n          - StaticText \"Innovative\"\n        - generic\n          - StaticText \"Fun\"\n          - generic\n            - generic [ref=e48] clickable [cursor:pointer]\n              - slider [ref=e63]: 3\n            - generic\n              - paragraph [ref=e49] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e50] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e51] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e52] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e53] clickable [cursor:pointer, onclick]\n          - StaticText \"Serious\"\n        - generic\n          - StaticText \"Simple\"\n          - generic\n            - generic [ref=e54] clickable [cursor:pointer]\n              - slider [ref=e64]: 3\n            - generic\n              - paragraph [ref=e55] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e56] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e57] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e58] clickable [cursor:pointer, onclick]\n              - paragraph [ref=e59] clickable [cursor:pointer, onclick]\n          - StaticText \"Sophisticated\"\n        - image\n        - StaticText \"Made on Fiverr\"\n        - StaticText \" by Alonbraier\"\n        - button \"Back\" [ref=e6]\n        - button \"Make My Logo\" [ref=e7]\n    - generic\n      - contentinfo\n        - image\n        - paragraph\n          - link \"Privacy Policy\" [ref=e9]\n          - StaticText \" | \"\n          - link \"Terms of Service\" [ref=e10]\n        - paragraph\n          - StaticText \"© Fiverr International Ltd. 2026\"\n        - list\n          - listitem [level=1]\n            - link \"Fiverr on TikTok\" [ref=e20]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Instagram\" [ref=e21]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on LinkedIn\" [ref=e22]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Facebook\" [ref=e23]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Pinterest\" [ref=e24]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Twitter\" [ref=e25]\n              - image\n        - generic\n          - generic [ref=e11] clickable [onclick]\n            - button \"$ USD\" [ref=e26]\n          - button \"Open accessibility menu\" [ref=e12]\n            - image\n  - generic",
+    "browserPageId": "187b995b-1439-4f7b-a530-bb33be18f680"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "8355eed2-cd15-423e-9a55-80967de7884b",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/intro",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Services A skill set or expertise, like coaching, real estate, photography, beauty, transportation, construction, etc.",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Leisure & Hospitality Food, hotel, b&b, spa, tourism, etc.",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Original Content Self-made content like blogging, gaming, streaming, YouTube videos, or social media",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Technology and Software Digital products, like apps or online platforms",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Other: Describe it to us :)",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Skip",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Describe it to us :)",
+        "role": "textbox"
+      },
+      "e18": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e19": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "en",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Physical Goods Material products, like candles, clothing, or pet supplies",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Style \" [ref=e6]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e7]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e8]\n        - StaticText \"en\"\n      - generic\n        - StaticText \"What are you offering? (or intend to offer)\"\n        - StaticText \"Select only \"\n        - StaticText \"one option\"\n        - button \"Physical Goods Material products, like candles, clothing, or pet supplies\" [ref=e9]\n          - StaticText \"Physical Goods\"\n          - StaticText \"Material products, like candles, clothing, or pet supplies\"\n        - button \"Services A skill set or expertise, like coaching, real estate, photography, beauty, transportation, construction, etc.\" [ref=e10]\n          - StaticText \"Services\"\n          - StaticText \"A skill set or expertise, like coaching, real estate, photography, beauty, transportation, construction, etc.\"\n        - button \"Leisure & Hospitality Food, hotel, b&b, spa, tourism, etc.\" [ref=e11]\n          - StaticText \"Leisure & Hospitality\"\n          - StaticText \"Food, hotel, b&b, spa, tourism, etc.\"\n        - button \"Original Content Self-made content like blogging, gaming, streaming, YouTube videos, or social media\" [ref=e12]\n          - StaticText \"Original Content\"\n          - StaticText \"Self-made content like blogging, gaming, streaming, YouTube videos, or social media\"\n        - button \"Technology and Software Digital products, like apps or online platforms\" [ref=e13]\n          - StaticText \"Technology and Software\"\n          - StaticText \"Digital products, like apps or online platforms\"\n        - button \"Other: Describe it to us :)\" [ref=e14]\n          - StaticText \"Other:\"\n          - textbox \"Describe it to us :)\" [ref=e17]\n        - button \"Back\" [ref=e15]\n          - StaticText \"Back\"\n        - button \"Skip\" [ref=e16]\n          - StaticText \"Skip\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e18]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e19]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

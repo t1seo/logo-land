@@ -1,0 +1,179 @@
+{
+  "checkedAt": "2026-09-12T13:37:39.521Z",
+  "scope": "Logo Land final artifact checks after link and path cleanup",
+  "packages": {
+    "result": "PASS",
+    "packageCount": 11,
+    "rows": [
+      {
+        "id": "01-luma",
+        "sha256": "29c891de028f14cc8b8a715f105b2dd8b383fa647f691521bd0de25428f561ef",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "02-loop-lab",
+        "sha256": "c03e72b2362ed7071f52f441520a73fa9a92be697efa551ae14b3cb43da8aab4",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "03-goyo",
+        "sha256": "4050303ae1bc5ec5a7741841b36a295ce033ed2be852fb53e893072f998d3174",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "04-bread-bloom",
+        "sha256": "420ac19545143efbc4681b27b68fd074656da803869c746bd9c1eeb5678c9b8c",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "05-kite",
+        "sha256": "dffb886a7a72196a42df21e36afe23cfb6e07bd25bad35c69c44f4de5c0232a7",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "06-miso",
+        "sha256": "10f3e1d9f51e35a1eced51e0efcd08061d03bbc8a184d4399992237e45ec0649",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "07-northline",
+        "sha256": "4eb27ce806aab3a32f58337c8b1fd00f6257f1abe970f98f12edfac6be423c06",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "08-mulgyeol",
+        "sha256": "da97616502733dcef4b6b082d7746149793a22a576f3ad179a4da641d7ed66cf",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "09-fern",
+        "sha256": "db9066ee56c2789324aa7c53e5ba68b9e6c003ba3fe98578ea8b0e6196181e27",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "10-nova-notes",
+        "sha256": "0e26b2354a22faba2128d205c377abe09e590c82f895e2716fe51e0877715553",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "result": "PASS"
+      },
+      {
+        "id": "logo-land-brand",
+        "sha256": "f4eb03545ca762db0f5664a3ff35f9580120b058200fbad9d5f89543d5ecf343",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "result": "PASS"
+      }
+    ],
+    "issues": []
+  },
+  "catalog": {
+    "result": "PASS",
+    "wrapperPrefix": true,
+    "sourceTextEqualIgnoringTerminalNewline": true,
+    "parsedDataEqual": true,
+    "itemCount": 10
+  },
+  "contracts": {
+    "result": "PASS",
+    "checks": {
+      "manifest_name_display_repository": true,
+      "manifest_skills_and_logo_resolve": true,
+      "skill_name_and_agent_invocation": true,
+      "readme_names_and_current_invocation": true,
+      "readme_install_examples_equal": true,
+      "readme_and_reference_current_paths_exist": true,
+      "no_legacy_skill_paths_in_current_contract": true,
+      "eight_types_match_models_and_direction_guide": true,
+      "documented_cli_commands_exist": true,
+      "default_three_and_background_contract": true,
+      "compatibility_paths_match_code": true,
+      "native_schema_and_reference_exclusivity_documented": true,
+      "helper_delivery_matches_png_zip_manifest_guide": true,
+      "byte_preservation_and_export_guard_present": true
+    },
+    "resolvedDocumentedPaths": [
+      "skills/logo-land/SKILL.md",
+      "skills/logo-land/assets/brief.example.json",
+      "skills/logo-land/references/delivery-checks.md",
+      "skills/logo-land/references/logo-directions.md",
+      "skills/logo-land/references/project-files.md",
+      "skills/logo-land/scripts/logo_project.py"
+    ],
+    "cliCommands": [
+      "init",
+      "list",
+      "show",
+      "prompt",
+      "import",
+      "select",
+      "review",
+      "export",
+      "failure"
+    ],
+    "limits": "Static README/skill/manifest/source agreement; no install, generation, test suite, or browser run."
+  },
+  "links": {
+    "result": "PASS",
+    "candidateFiles": 557,
+    "documents": 51,
+    "localReferencesChecked": 770,
+    "externalReferencesSkipped": 226,
+    "fragmentChecks": 11,
+    "legacySkillLinks": 0,
+    "distLinks": 0,
+    "issues": []
+  },
+  "security": {
+    "credentialResult": "PASS",
+    "candidateFiles": 557,
+    "textFilesScanned": 344,
+    "archivesScanned": 12,
+    "archiveTextMembersScanned": 24,
+    "credentialHits": [],
+    "archiveIssues": [],
+    "skipped": [],
+    "personalHomePaths": [],
+    "note": "Historical temporary paths are retained as QA evidence. No personal home paths or credential pattern matches were found."
+  }
+}

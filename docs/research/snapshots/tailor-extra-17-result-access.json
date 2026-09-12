@@ -1,0 +1,58 @@
+{
+  "id": "e0f1a313-085a-4392-96da-45b4bae7d59b",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/generate?prevId=766286289",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e11": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Icon ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e9": {
+        "name": "en",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Icon \" [ref=e6]\n          - generic\n            - StaticText \"Icon \"\n        - button \"Style \" [ref=e7]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e8]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e9]\n        - StaticText \"en\"\n      - generic\n        - generic\n          - generic\n            - generic\n            - image \"Designing your perfect logo\"\n            - image \"Designing your perfect logo\"\n          - StaticText \"Designing your perfect logo\"\n        - generic\n          - generic\n            - image \"Creating your business cards\"\n          - StaticText \"Creating your business cards\"\n        - generic\n          - image \"Planning your social posts\"\n          - StaticText \"Planning your social posts\"\n      - StaticText \"71\"\n      - StaticText \"%\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e10]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e11]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex coordinator / live native-image QA",
+  "notes": "Actual generated A-v2 and Chrome comparison page inspected. Exact Morrow Studio lettering, centered margins and recognizable M preserved overall. Navy and opaque white background applied; alpha decoder reports 255 everywhere. At 256 CSS px the wordmark is legible for the intended web usage; 48 px requires a separate icon variant. Right inner curvature and tiny tonal texture differ from A-v1; this is an acceptable fictional raster demo, not pixel-identical or vector geometry. No user-brand approval is claimed.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

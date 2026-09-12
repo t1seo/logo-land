@@ -1,0 +1,226 @@
+{
+  "id": "539f8984-a65b-4ee7-a665-41d850a9a881",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/templates",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "generic"
+      },
+      "e10": {
+        "name": "",
+        "role": "generic"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "generic"
+      },
+      "e13": {
+        "name": "",
+        "role": "generic"
+      },
+      "e14": {
+        "name": "Close editor",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e16": {
+        "name": "All",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Modern",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Natural",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Industrial",
+        "role": "button"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e20": {
+        "name": "Vintage",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Abstract",
+        "role": "button"
+      },
+      "e22": {
+        "name": "",
+        "role": "menubar"
+      },
+      "e23": {
+        "name": "",
+        "role": "generic"
+      },
+      "e24": {
+        "name": "",
+        "role": "link"
+      },
+      "e25": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e26": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e27": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e29": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e30": {
+        "name": "Save",
+        "role": "menuitem"
+      },
+      "e31": {
+        "name": "File",
+        "role": "menuitem"
+      },
+      "e32": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e33": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e34": {
+        "name": "Snap Snap",
+        "role": "menuitem"
+      },
+      "e35": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e36": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e37": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e38": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e39": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e4": {
+        "name": "",
+        "role": "generic"
+      },
+      "e40": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e41": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e42": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e43": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e44": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e45": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e46": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e47": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e48": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e49": {
+        "name": "Use Template",
+        "role": "button"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e50": {
+        "name": "",
+        "role": "button"
+      },
+      "e51": {
+        "name": "",
+        "role": "button"
+      },
+      "e52": {
+        "name": "Snap",
+        "role": "switch"
+      },
+      "e53": {
+        "name": "",
+        "role": "button"
+      },
+      "e6": {
+        "name": "",
+        "role": "generic"
+      },
+      "e7": {
+        "name": "",
+        "role": "generic"
+      },
+      "e8": {
+        "name": "",
+        "role": "generic"
+      },
+      "e9": {
+        "name": "",
+        "role": "generic"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e24]\n        - image\n      - link \"Generate logos\" [ref=e25]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e26]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e27]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e28]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e29]\n        - image\n        - StaticText \"My Account\"\n  - button \"All\" [ref=e16]\n  - button \"Modern\" [ref=e17]\n  - button \"Natural\" [ref=e18]\n  - button \"Industrial\" [ref=e19]\n  - button \"Vintage\" [ref=e20]\n  - button \"Abstract\" [ref=e21]\n  - generic [ref=e1] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 418\"\n      - button \"Use Template\" [ref=e37]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e2] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 427\"\n      - button \"Use Template\" [ref=e38]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e3] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 428\"\n      - button \"Use Template\" [ref=e39]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e4] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 426\"\n      - button \"Use Template\" [ref=e40]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e5] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 388\"\n      - button \"Use Template\" [ref=e41]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e6] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 419\"\n      - button \"Use Template\" [ref=e42]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e7] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 425\"\n      - button \"Use Template\" [ref=e43]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e8] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 421\"\n      - button \"Use Template\" [ref=e44]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e9] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 424\"\n      - button \"Use Template\" [ref=e45]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e10] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 420\"\n      - button \"Use Template\" [ref=e46]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e11] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 423\"\n      - button \"Use Template\" [ref=e47]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e12] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 417\"\n      - button \"Use Template\" [ref=e48]\n        - image\n        - StaticText \"Use Template\"\n  - generic [ref=e13] clickable [cursor:pointer]\n    - generic\n      - image \"Logo Template 422\"\n      - button \"Use Template\" [ref=e49]\n        - image\n        - StaticText \"Use Template\"\n  - StaticText \"You've reached the end.\"\n  - banner\n  - button \"Close editor\" [ref=e14]\n    - image\n  - main\n    - generic\n      - Canvas\n    - menubar [ref=e22] focusable [tabindex]\n      - menuitem \"Save\" [expanded=false, ref=e30]\n        - image\n        - StaticText \"Save\"\n      - menuitem \"File\" [expanded=false, ref=e31]\n        - image\n        - StaticText \"File\"\n      - separator\n      - button [expanded=false, ref=e50]\n        - button [ref=e51]\n          - button [ref=e53]\n      - separator\n      - menuitem [expanded=false, ref=e32]\n        - image\n      - menuitem [expanded=false, disabled, ref=e33]\n        - image\n      - separator\n      - menuitem \"Snap Snap\" [expanded=false, ref=e34]\n        - LabelText\n          - StaticText \"Snap\"\n          - switch \"Snap\" [checked=true, ref=e52]\n      - menuitem [expanded=false, ref=e35]\n        - image\n      - menuitem [expanded=false, ref=e36]\n        - image\n  - generic [ref=e23] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e15]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

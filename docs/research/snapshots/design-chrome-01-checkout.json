@@ -1,0 +1,11 @@
+{
+  "kind": "observer-notes",
+  "method": "Codex Computer Use / @oai/sky",
+  "observed": [
+    "Chrome existing signed-in session proceeded from Download to Checkout without signup",
+    "Annual displayed equivalent monthly prices: Starter $5, Value $6, Premium $7",
+    "Selected default Value annual total US$72; no payment submitted",
+    "Monthly toggle displayed Starter $15, Value $24, Premium $29; Value monthly total US$24"
+  ],
+  "privacy": "Personal account and payment fields omitted from notes; screenshot is top-of-page pricing only"
+}

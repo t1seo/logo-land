@@ -1,0 +1,14 @@
+{
+  "brand_name": "Logo Land",
+  "exact_text": "LOGO LAND",
+  "industry": "Conversational logo creation plugin for Codex",
+  "audience": "Creators and small teams who want to turn ideas into a logo",
+  "logo_type": "combination",
+  "styles": ["Playful theme-park logo parody", "chunky rounded block letters", "toy building bricks", "LEGOLAND-inspired humor"],
+  "palette": ["bright red", "sunshine yellow", "black", "white"],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": ["GitHub README hero at 400px wide", "plugin brand card at 240px wide"],
+  "forbidden": ["the word LEGO", "the word LEGOLAND", "extra slogans", "copyright or registered marks", "photographic scene", "checkerboard"],
+  "assumptions": ["The user chose Logo Land and requested a logo that parodies LEGOLAND.", "One complete brand direction is created for the README and plugin identity."]
+}

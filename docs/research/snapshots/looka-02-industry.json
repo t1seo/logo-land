@@ -1,0 +1,126 @@
+{
+  "id": "8bac338d-9c0c-4217-b19d-f48c2665756b",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/onboarding?company_name=Morrow%20Studio",
+    "refs": {
+      "e1": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Thanks for signing up!",
+        "role": "heading"
+      },
+      "e11": {
+        "name": "Download Logo",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Continue",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Navigate to dashboard. Caution: this will navigate you away from your current page",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Browse unique logos generated just for you. No templates here.",
+        "role": "heading"
+      },
+      "e16": {
+        "name": "Customize your logo with 100s of font, layout, and color options.",
+        "role": "heading"
+      },
+      "e17": {
+        "name": "Get 300+ branded assets from social media posts to flyers.",
+        "role": "heading"
+      },
+      "e18": {
+        "name": "Restaurant, Consulting, Beauty, Photography, Fitness...",
+        "role": "textbox"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e20": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e21": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e22": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e23": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e24": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e25": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e26": {
+        "name": "Help / Contact",
+        "role": "link"
+      },
+      "e27": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Privacy",
+        "role": "link"
+      },
+      "e3": {
+        "name": "Pick your industry",
+        "role": "heading"
+      },
+      "e4": {
+        "name": "menu",
+        "role": "button"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e6": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Sign up",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "Continue as guest",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Close Modal",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - button \"Close Modal\" [ref=e1]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e2]\n  - generic\n    - generic\n      - heading \"Pick your industry\" [level=2, ref=e3]\n      - paragraph\n        - StaticText \"Knowing your industry will help us pick symbols, colors, and more.\"\n      - button \"Continue\" [disabled, ref=e13]\n        - StaticText \"Continue\"\n        - image\n    - form\n      - generic\n        - LabelText\n          - StaticText \"Restaurant, Consulting, Beauty, Photography, Fitness...\"\n        - textbox \"Restaurant, Consulting, Beauty, Photography, Fitness...\" [ref=e18]\n    - generic\n      - link \"Navigate to dashboard. Caution: this will navigate you away from your current page\" [ref=e14]\n        - image \"Navigate to dashboard. Caution: this will navigate you away from your current page\"\n      - button \"menu\" [ref=e4]\n        - StaticText \"menu\"\n    - generic\n      - generic [ref=e5] clickable [onclick]\n      - generic [ref=e19] clickable [cursor:pointer, onclick]\n        - StaticText \"close\"\n      - paragraph [ref=e20] clickable [cursor:pointer, onclick]\n        - StaticText \"Log in\"\n      - paragraph [ref=e21] clickable [cursor:pointer, onclick]\n        - StaticText \"Register\"\n      - list\n        - listitem [level=1, ref=e22] clickable [cursor:pointer]\n          - link \"Help / Contact\" [ref=e26]\n        - listitem [level=1, ref=e23] clickable [cursor:pointer]\n          - link \"Terms of Service\" [ref=e27]\n        - listitem [level=1, ref=e24] clickable [cursor:pointer]\n          - link \"Privacy\" [ref=e28]\n  - generic\n    - button \"Close Modal\" [ref=e6]\n      - image \"Close Modal\"\n    - heading \"Sign up\" [level=2, ref=e7]\n    - paragraph\n      - StaticText \"Success! Your account has been created.\"\n    - paragraph\n      - link \"Terms of service\" [ref=e25]\n      - StaticText \" apply\"\n    - StaticText \"or\"\n    - button \"Continue as guest\" [ref=e8]\n      - StaticText \"Continue as guest\"\n      - image\n    - generic\n      - image\n      - heading \"Browse unique logos generated just for you. No templates here.\" [level=4, ref=e15]\n        - strong\n          - StaticText \"Browse unique logos\"\n        - StaticText \" generated just for you. No templates here.\"\n      - image\n      - heading \"Customize your logo with 100s of font, layout, and color options.\" [level=4, ref=e16]\n        - strong\n          - StaticText \"Customize your logo\"\n        - StaticText \" with 100s of font, layout, and color options.\"\n      - image\n      - heading \"Get 300+ branded assets from social media posts to flyers.\" [level=4, ref=e17]\n        - strong\n          - StaticText \"Get 300+ branded assets\"\n        - StaticText \" from social media posts to flyers.\"\n  - generic\n    - button \"Close Modal\" [ref=e9]\n      - image \"Close Modal\"\n    - image\n    - heading \"Thanks for signing up!\" [level=2, ref=e10]\n    - paragraph\n      - StaticText \"Now you can download your logo and come back any time to access your designs\"\n    - button \"Download Logo\" [ref=e11]\n    - button \"Close\" [ref=e12]",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

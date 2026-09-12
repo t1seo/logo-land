@@ -1,0 +1,70 @@
+{
+  "id": "4f75d934-98cd-436a-828f-eb47ae80b3d2",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/icon?id=766286287",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Geometric Shape Pick a Geometric shape that best represents your brand.",
+        "role": "button"
+      },
+      "e11": {
+        "name": " Search For Icon Search for any symbol that reflects what your brand is about.",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Back to logo type",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e14": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Icon ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e9": {
+        "name": "en",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Icon \" [ref=e6]\n          - generic\n            - StaticText \"Icon \"\n        - button \"Style \" [ref=e7]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e8]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e9]\n        - StaticText \"en\"\n      - generic\n        - StaticText \"Choose Icon Type\"\n        - StaticText \"You can only select one icon type\"\n        - button \"Geometric Shape Pick a Geometric shape that best represents your brand.\" [ref=e10]\n          - StaticText \"Geometric Shape\"\n          - generic\n            - StaticText \"Pick a Geometric\"\n            - LineBreak \"\\n\"\n            - StaticText \"shape that best represents\"\n            - LineBreak \"\\n\"\n            - StaticText \"your brand.\"\n        - button \" Search For Icon Search for any symbol that reflects what your brand is about.\" [ref=e11]\n          - StaticText \"\"\n          - StaticText \"Search For Icon\"\n          - generic\n            - StaticText \"Search for any symbol\"\n            - LineBreak \"\\n\"\n            - StaticText \"that reflects what your\"\n            - LineBreak \"\\n\"\n            - StaticText \"brand is about.\"\n        - button \"Back to logo type\" [ref=e12]\n          - StaticText \"Back to logo type\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e13]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e14]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

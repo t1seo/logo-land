@@ -1,0 +1,190 @@
+{
+  "id": "d0d81571-f173-4078-8519-414d98246a49",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/logos/766286290?selectedBrandVersionId=9448612715",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e12": {
+        "name": "en",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Email Address",
+        "role": "textbox"
+      },
+      "e14": {
+        "name": "I Agree",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Terms Of Use",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Password (At least 6 characters)",
+        "role": "textbox"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e20": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "",
+        "role": "generic"
+      },
+      "e22": {
+        "name": "",
+        "role": "generic"
+      },
+      "e23": {
+        "name": "",
+        "role": "generic"
+      },
+      "e24": {
+        "name": "",
+        "role": "generic"
+      },
+      "e25": {
+        "name": "",
+        "role": "generic"
+      },
+      "e26": {
+        "name": "",
+        "role": "generic"
+      },
+      "e27": {
+        "name": "",
+        "role": "generic"
+      },
+      "e28": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Facebook",
+        "role": "button"
+      },
+      "e30": {
+        "name": "Love it!",
+        "role": "button"
+      },
+      "e31": {
+        "name": "Customize",
+        "role": "button"
+      },
+      "e32": {
+        "name": "Love it!",
+        "role": "button"
+      },
+      "e33": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e34": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e35": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e36": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e37": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e38": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e39": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Google",
+        "role": "button"
+      },
+      "e40": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e41": {
+        "name": "Logo",
+        "role": "button"
+      },
+      "e42": {
+        "name": "See More",
+        "role": "button"
+      },
+      "e43": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e44": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Already Registered?",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e7": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Icon ",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - main\n      - generic\n        - button \"Tailor Brands\" [ref=e1]\n          - image \"Tailor Brands\"\n        - list\n          - button \"About \" [ref=e7]\n            - generic\n              - StaticText \"About \"\n          - button \"Logo type \" [ref=e8]\n            - generic\n              - StaticText \"Logo type \"\n          - button \"Icon \" [ref=e9]\n            - generic\n              - StaticText \"Icon \"\n          - button \"Style \" [ref=e10]\n            - generic\n              - StaticText \"Style \"\n          - button \"Select \" [ref=e11]\n            - generic\n              - StaticText \"Select \"\n        - button \"Contact us\" [ref=e2]\n          - StaticText \"Contact us\"\n        - button \"en\" [ref=e12]\n          - StaticText \"en\"\n        - generic\n          - generic\n            - StaticText \"Scroll for more!\"\n            - generic\n              - generic [ref=e18] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e33]\n                  - generic\n              - generic [ref=e19] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e34]\n                  - generic\n              - generic [ref=e20] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e35]\n                  - generic\n              - generic [ref=e21] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e36]\n                  - generic\n              - generic [ref=e22] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e37]\n                  - generic\n              - generic [ref=e23] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e38]\n                  - generic\n              - generic [ref=e24] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e39]\n                  - generic\n              - generic [ref=e25] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e40]\n                  - generic\n              - generic [ref=e26] clickable [cursor:pointer]\n                - button \"Logo\" [ref=e41]\n                  - generic\n              - generic [ref=e27] clickable [cursor:pointer]\n                - generic\n                  - StaticText \"Click here to see more logos\"\n                  - button \"See More\" [ref=e42]\n            - generic\n              - generic\n              - button \"Back\" [ref=e28]\n                - StaticText \"Back\"\n              - button \"Customize\" [ref=e29]\n                - StaticText \"Customize\"\n              - button \"Love it!\" [ref=e30]\n                - StaticText \"Love it!\"\n              - generic\n                - generic\n                - image\n              - StaticText \"Your logo is just the beginning!\"\n              - generic\n                - generic\n                  - generic\n                  - generic\n                  - generic\n                - image\n                - image\n              - StaticText \"meet your new\"\n              - StaticText \"Digital business card\"\n              - generic\n                - generic\n                - image\n                - image\n              - StaticText \"These can be your new\"\n              - StaticText \"Business cards\"\n              - generic\n                - generic\n                - image\n                - image\n              - StaticText \"Get your\"\n              - StaticText \"Branded website\"\n              - generic\n                - generic\n                  - generic\n                  - generic\n                - image\n              - StaticText \"Print your\"\n              - StaticText \"Merchandise\"\n              - generic\n                - generic\n                  - generic\n                  - generic\n                  - generic\n                  - generic\n                  - generic\n                - image\n                - image\n              - StaticText \"Go viral with your\"\n              - StaticText \"Social covers\"\n              - generic\n                - generic\n                  - generic\n                  - generic\n                  - generic\n                  - generic\n                - image\n              - generic\n              - StaticText \"What are you waiting for?\"\n              - button \"Customize\" [ref=e31]\n                - StaticText \"Customize\"\n              - button \"Love it!\" [ref=e32]\n                - StaticText \"Love it!\"\n    - generic\n      - StaticText \"Sign up for free\"\n      - LineBreak \"\\n\"\n      - StaticText \"to see your logo options\"\n    - button \"Facebook\" [ref=e3]\n      - StaticText \"Facebook\"\n    - button \"Google\" [ref=e4]\n      - StaticText \"Google\"\n    - separator\n    - StaticText \"or\"\n    - separator\n    - form\n      - LabelText\n        - StaticText \"Email Address\"\n      - textbox \"Email Address\" [ref=e13]\n      - generic\n        - LabelText\n          - StaticText \"Password (At least 6 characters)\"\n        - textbox \"Password (At least 6 characters)\" [ref=e17]\n      - button \"I Agree\" [ref=e14]\n    - button \"Already Registered?\" [ref=e5]\n    - paragraph\n      - StaticText \"By clicking \\\"I Agree\\\" you agree to our \"\n      - link \"Terms Of Use\" [ref=e15]\n      - StaticText \" and \"\n      - link \"Privacy Policy\" [ref=e16]\n      - StaticText \" In addition, you also agree to receive email messages from us about your experience with our service, and features you can use.\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e6]\n      - region \"Intercom messenger\" [ref=e43]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e44]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

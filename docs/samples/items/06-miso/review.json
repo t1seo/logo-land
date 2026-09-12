@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+  "notes": "MISO 철자가 정확하고 고양이 귀·표정·수염이 알아보기 쉽습니다. 240px에서 표정과 이름이 함께 구별되며 크림 배경과 갈색 외곽선에 잘림이 없습니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

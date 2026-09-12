@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "sample-10-nova-notes",
+  "revision": 1,
+  "created_at": "2026-09-12T13:09:32.554084Z",
+  "updated_at": "2026-09-12T13:14:51.391802Z",
+  "brief": {
+    "brand_name": "NOVA NOTES",
+    "exact_text": "NOVA NOTES",
+    "industry": "음악 큐레이션",
+    "audience": "새로운 음악을 찾는 청취자",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "버건디 아르데코 조합형",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "버건디, 블러시"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "0e26b2354a22faba2128d205c377abe09e590c82f895e2716fe51e0877715553",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one combination logo for NOVA NOTES. Industry: 음악 큐레이션. Audience: 새로운 음악을 찾는 청취자.\nExact text (copy verbatim, no other words): 'NOVA NOTES'. Exact slogan: ''.\nStyles: 버건디 아르데코 조합형, flat, clear silhouette. Palette: 버건디, 블러시.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Elegant music identity combining a restrained art-deco fan / sound-wave symbol above exact words NOVA NOTES. Distinctive geometric lettering with generous spacing, burgundy on solid pale blush ivory. Symmetric crisp line weights, no musical staff, no extra text.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: Elegant music identity combining a restrained art-deco fan / sound-wave symbol above exact words NOVA NOTES. Distinctive geometric lettering with generous spacing, burgundy on solid pale blush ivory. Symmetric crisp line weights, no musical staff, no extra text.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:14:51.389444Z",
+      "requested_background": "opaque",
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": []
+}

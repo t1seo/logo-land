@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "sample-07-northline",
+  "revision": 3,
+  "created_at": "2026-09-12T13:09:31.159221Z",
+  "updated_at": "2026-09-12T13:16:05.985505Z",
+  "brief": {
+    "brand_name": "NORTHLINE",
+    "exact_text": "NL",
+    "industry": "아웃도어 장비",
+    "audience": "가벼운 하이킹을 즐기는 사람",
+    "slogan": "",
+    "logo_type": "lettermark",
+    "styles": [
+      "명확한 NL 레터마크",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "네이비, 백색"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "4eb27ce806aab3a32f58337c8b1fd00f6257f1abe970f98f12edfac6be423c06",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one lettermark logo for NORTHLINE. Industry: 아웃도어 장비. Audience: 가벼운 하이킹을 즐기는 사람.\nExact text (copy verbatim, no other words): 'NL'. Exact slogan: ''.\nStyles: 명확한 NL 레터마크, flat, clear silhouette. Palette: 네이비, 백색.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A confident utilitarian NL lettermark, two distinct readable uppercase N and L side by side, geometric sans-serif letterforms, one tiny ascending cut integrated into the N, no mountain drawing, navy ink on solid cool off-white. Understated precision, strong silhouette, no extra text.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: A confident utilitarian NL lettermark, two distinct readable uppercase N and L side by side, geometric sans-serif letterforms, one tiny ascending cut integrated into the N, no mountain drawing, navy ink on solid cool off-white. Understated precision, strong silhouette, no extra text.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:13:40.517463Z",
+      "requested_background": "opaque",
+      "review": {
+        "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+        "notes": "NL 두 글자와 N의 사선 틈을 확인했습니다. 240px에서 글자가 분리되어 읽히고 네이비 형태 및 밝은 불투명 배경의 대비가 충분합니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T13:16:05.985114Z"
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

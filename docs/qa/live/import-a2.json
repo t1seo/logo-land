@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "morrow-live",
+  "revision": 4,
+  "created_at": "2026-09-12T12:23:55.113061Z",
+  "updated_at": "2026-09-12T12:26:43.241590Z",
+  "brief": {
+    "brand_name": "Morrow Studio",
+    "exact_text": "Morrow Studio",
+    "industry": "Sustainable brand and product design studio",
+    "audience": "Independent businesses seeking thoughtful contemporary design",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "minimal",
+      "geometric",
+      "calm"
+    ],
+    "palette": [
+      "#174C3C"
+    ],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "website header",
+      "business card"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; no slogan requested"
+    ],
+    "background": "opaque",
+    "concept_count": 2
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "55a790a078cff75fdc201da383b8006c42107fc7372d4fa6b7d6cc5e14bfe851",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1569371,
+        "visible_pixels": 251254
+      },
+      "prompt": "Use case: logo-brand\nAsset: one standalone master brand logo for a fictional sustainable design studio.\nBrand and text (verbatim): \"Morrow Studio\". No slogan, no other text.\nLogo type: combination mark. Concept A: a distinctive open geometric M monogram, with two folded ribbon strokes and deliberate white negative space suggesting a path forward. Restrained, sophisticated, memorable; balanced flat shapes with no overly thin details.\nStyle: modern minimal geometric identity, crisp edges and careful optical balance.\nPalette: solid forest green #174C3C for mark and text. Solid white background.\nComposition: centered mark above a carefully spaced contemporary sans-serif wordmark. Wide clear margins, no cropping. Square standalone image. The brand should remain legible when displayed at business-card size.\nAvoid: gradients, shadows, 3D, texture, mockups, extra lettering, borders, watermarks, existing brand symbols. Deliver the finished logo only, not a contact sheet.\n",
+      "parent_id": null,
+      "created_at": "2026-09-12T12:24:04.651160Z",
+      "review": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "b-v1",
+      "path": "artifacts/b-v1.png",
+      "sha256": "aab27b586f7b1de90601fc73d97b03f232f46b1a81ca83ec6466c638fba472cf",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1571270,
+        "visible_pixels": 200929
+      },
+      "prompt": "Use case: logo-brand\nAsset: one standalone master brand logo for a fictional sustainable design studio.\nBrand and text (verbatim): \"Morrow Studio\". No slogan, no other text.\nLogo type: combination mark. Concept B: a minimal organic symbol suggesting a folded leaf and an opening seed, built from two broad curved shapes with an elegant negative-space channel. Distinctive simple silhouette, thoughtful and calm, visually different from a geometric M.\nStyle: flat, restrained contemporary organic identity, crisp edges.\nPalette: solid forest green #174C3C for mark and text. Solid white background.\nComposition: symbol centered above an understated, beautifully spaced serif wordmark. Generous clear margins. Square standalone image. Legible at business-card size.\nAvoid: gradients, shadows, 3D, texture, mockups, extra lettering, borders, watermarks, common recycling icons, existing brand symbols. Deliver one finished logo, not a contact sheet.\n",
+      "parent_id": null,
+      "created_at": "2026-09-12T12:24:16.955271Z",
+      "review": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "a-v2",
+      "path": "artifacts/a-v2.png",
+      "sha256": "666eb20feaf67ee3bc4a1c879f5c551a55998bf2b257d5e52c0b142e599ab519",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Edit the supplied parent logo a-v1; do not recreate an unrelated logo.\nRequested changes: Preserve the M silhouette, exact Morrow Studio wordmark, spacing and arrangement. Change only the ink to uniform solid navy #183A56. Replace all transparent canvas pixels with an opaque pure white background. Remove gradients and shadows; no transparency anywhere.. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent.\nCreate one combination logo for Morrow Studio. Industry: Sustainable brand and product design studio. Audience: Independent businesses seeking thoughtful contemporary design.\nExact text (copy verbatim, no other words): 'Morrow Studio'. Exact slogan: ''.\nStyles: minimal, geometric, calm. Palette: #174C3C.\nAvoid: gradients, shadows, mockups, extra lettering. Use cases: website header, business card.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Geometric M, selected concept A. Assumptions: Fictional demonstration brand; no slogan requested.\n\nFinal edit overrides: navy #183A56 replaces the original green palette. The requested changes take precedence over the historical brief. The entire background must be solid opaque white, including the gaps inside the symbol. Do not return transparent pixels.\n",
+      "parent_id": "a-v1",
+      "created_at": "2026-09-12T12:26:43.209620Z",
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

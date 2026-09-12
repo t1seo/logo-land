@@ -1,0 +1,234 @@
+{
+  "id": "6fad0bff-ce85-4462-92d6-3295fafe1949",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/design",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Background",
+        "role": "heading"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "",
+        "role": "link"
+      },
+      "e13": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e14": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e17": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Save",
+        "role": "menuitem"
+      },
+      "e19": {
+        "name": "File",
+        "role": "menuitem"
+      },
+      "e2": {
+        "name": "",
+        "role": "menubar"
+      },
+      "e20": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e21": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e22": {
+        "name": "Snap Snap",
+        "role": "menuitem"
+      },
+      "e23": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e24": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e25": {
+        "name": "Title",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Enter logo text",
+        "role": "textbox"
+      },
+      "e27": {
+        "name": "Font: Select Font",
+        "role": "button"
+      },
+      "e28": {
+        "name": "",
+        "role": "button"
+      },
+      "e29": {
+        "name": "",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Quick Edit",
+        "role": "heading"
+      },
+      "e30": {
+        "name": "",
+        "role": "button"
+      },
+      "e31": {
+        "name": "",
+        "role": "button"
+      },
+      "e32": {
+        "name": "Slogan",
+        "role": "button"
+      },
+      "e33": {
+        "name": "Icon",
+        "role": "button"
+      },
+      "e34": {
+        "name": "Layout",
+        "role": "button"
+      },
+      "e35": {
+        "name": "Background",
+        "role": "button"
+      },
+      "e36": {
+        "name": "",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "button"
+      },
+      "e38": {
+        "name": "",
+        "role": "button"
+      },
+      "e39": {
+        "name": "Snap",
+        "role": "switch"
+      },
+      "e4": {
+        "name": "",
+        "role": "button"
+      },
+      "e40": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e41": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e42": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e43": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e44": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e45": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e46": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e47": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e48": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e49": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Title",
+        "role": "heading"
+      },
+      "e50": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e51": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e52": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e53": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e54": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e55": {
+        "name": "",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Title",
+        "role": "region"
+      },
+      "e7": {
+        "name": "Slogan",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "Icon",
+        "role": "heading"
+      },
+      "e9": {
+        "name": "Layout",
+        "role": "heading"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e12]\n        - image\n      - link \"Generate logos\" [ref=e13]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e14]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e15]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e16]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e17]\n        - image\n        - StaticText \"My Account\"\n  - banner\n  - main\n    - generic\n      - Canvas\n    - menubar [ref=e2] focusable [tabindex]\n      - menuitem \"Save\" [expanded=false, ref=e18]\n        - image\n        - StaticText \"Save\"\n      - menuitem \"File\" [expanded=false, ref=e19]\n        - image\n        - StaticText \"File\"\n      - separator\n      - button [expanded=false, ref=e36]\n        - button [ref=e38]\n          - button [ref=e55]\n      - separator\n      - menuitem [expanded=false, ref=e20]\n        - image\n      - menuitem [expanded=false, disabled, ref=e21]\n        - image\n      - separator\n      - menuitem \"Snap Snap\" [expanded=false, ref=e22]\n        - LabelText\n          - StaticText \"Snap\"\n          - switch \"Snap\" [checked=true, ref=e39]\n      - menuitem [expanded=false, ref=e23]\n        - image\n      - menuitem [expanded=false, ref=e24]\n        - image\n  - generic\n    - heading \"Quick Edit\" [level=2, ref=e3]\n    - button [ref=e4]\n      - image\n    - heading \"Title\" [level=3, ref=e5]\n      - button \"Title\" [expanded=true, ref=e25]\n        - image\n        - StaticText \"Title\"\n        - image\n    - region \"Title\" [ref=e6]\n      - LabelText\n        - StaticText \"Logo Text\"\n      - textbox \"Enter logo text\" [ref=e26]\n      - button \"Font: Select Font\" [expanded=false, ref=e27]\n        - image\n        - StaticText \"Font: Select Font\"\n      - LabelText\n        - StaticText \"Colors\"\n      - button [expanded=false, ref=e28]\n        - button [ref=e37]\n      - LabelText\n        - StaticText \"Size\"\n      - group\n        - generic\n          - button \"Decrease\" [ref=e40]\n            - image\n          - spinbutton [ref=e41]: 72\n            - StaticText \"72\"\n          - button \"Increase\" [ref=e42]\n            - image\n      - LabelText\n        - StaticText \"Spacing\"\n      - group\n        - generic\n          - button \"Decrease\" [ref=e43]\n            - image\n          - spinbutton [ref=e44]: 0\n            - StaticText \"0\"\n          - button \"Increase\" [ref=e45]\n            - image\n      - LabelText\n        - StaticText \"Line Space\"\n      - group\n        - generic\n          - button \"Decrease\" [ref=e46]\n            - image\n          - spinbutton [ref=e47]: 1.159999966621399\n            - StaticText \"1.16\"\n          - button \"Increase\" [ref=e48]\n            - image\n      - LabelText\n        - StaticText \"Align\"\n      - button [ref=e29]\n        - image\n      - button [ref=e30]\n        - image\n      - button [ref=e31]\n        - image\n      - LabelText\n        - StaticText \"Top\"\n      - group\n        - generic\n          - button \"Decrease\" [ref=e49]\n            - image\n          - spinbutton [ref=e50]: 0\n            - StaticText \"0\"\n          - button \"Increase\" [ref=e51]\n            - image\n      - LabelText\n        - StaticText \"Left\"\n      - group\n        - generic\n          - button \"Decrease\" [ref=e52]\n            - image\n          - spinbutton [ref=e53]: 0\n            - StaticText \"0\"\n          - button \"Increase\" [ref=e54]\n            - image\n    - heading \"Slogan\" [level=3, ref=e7]\n      - button \"Slogan\" [expanded=false, ref=e32]\n        - image\n        - StaticText \"Slogan\"\n        - image\n    - heading \"Icon\" [level=3, ref=e8]\n      - button \"Icon\" [expanded=false, ref=e33]\n        - image\n        - StaticText \"Icon\"\n        - image\n    - heading \"Layout\" [level=3, ref=e9]\n      - button \"Layout\" [expanded=false, ref=e34]\n        - image\n        - StaticText \"Layout\"\n        - image\n    - heading \"Background\" [level=3, ref=e10]\n      - button \"Background\" [expanded=false, ref=e35]\n        - image\n        - StaticText \"Background\"\n        - image\n  - generic [ref=e11] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

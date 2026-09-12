@@ -1,0 +1,22 @@
+{
+  "id": "d75d7977-efbe-406c-bfa2-34c5b77ff71e",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/explore",
+    "refs": {
+      "e1": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Close",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - button \"Close Modal\" [ref=e1]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e2]",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

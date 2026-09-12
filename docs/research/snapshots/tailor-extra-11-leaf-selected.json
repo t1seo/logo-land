@@ -1,0 +1,662 @@
+{
+  "id": "31302cad-a41f-424b-9d21-a6e10a0ef3ee",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/icon/search?id=766286287",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e100": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e101": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e102": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e103": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e104": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e105": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e106": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e107": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e108": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e109": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e110": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e111": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e112": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e113": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e114": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e115": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e116": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e117": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e118": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e119": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e120": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e121": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e122": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e123": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e124": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e125": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e126": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e127": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e128": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e129": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e130": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e131": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e132": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e133": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e134": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e135": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e136": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e137": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e138": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e139": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e140": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e141": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e142": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e143": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e144": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e145": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e146": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e147": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e148": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e149": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e150": {
+        "name": "Load more",
+        "role": "button"
+      },
+      "e151": {
+        "name": "eg., bike/sphere",
+        "role": "textbox"
+      },
+      "e152": {
+        "name": "Search",
+        "role": "button"
+      },
+      "e153": {
+        "name": "Reset",
+        "role": "button"
+      },
+      "e154": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e155": {
+        "name": "",
+        "role": "button"
+      },
+      "e156": {
+        "name": "",
+        "role": "button"
+      },
+      "e157": {
+        "name": "",
+        "role": "button"
+      },
+      "e158": {
+        "name": "",
+        "role": "button"
+      },
+      "e159": {
+        "name": "",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e160": {
+        "name": "Next",
+        "role": "button"
+      },
+      "e161": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e162": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e22": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e23": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e24": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e27": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e28": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e30": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e31": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e32": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e33": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e34": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e35": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e36": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e37": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e38": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e39": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e40": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e41": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e42": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e43": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e44": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e45": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e46": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e47": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e48": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e49": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e50": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e51": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e52": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e53": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e54": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e55": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e56": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e57": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e58": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e59": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Icon ",
+        "role": "button"
+      },
+      "e60": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e61": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e62": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e63": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e64": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e65": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e66": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e67": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e68": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e69": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e70": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e71": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e72": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e73": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e74": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e75": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e76": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e77": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e78": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e79": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e80": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e81": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e82": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e83": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e84": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e85": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e86": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e87": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e88": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e89": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e9": {
+        "name": "en",
+        "role": "button"
+      },
+      "e90": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e91": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e92": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e93": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e94": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e95": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e96": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e97": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e98": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e99": {
+        "name": "Preview",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Icon \" [ref=e6]\n          - generic\n            - StaticText \"Icon \"\n        - button \"Style \" [ref=e7]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e8]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e9]\n        - StaticText \"en\"\n      - generic\n        - generic\n          - StaticText \"Find Your Icon\"\n          - textbox \"eg., bike/sphere\" [ref=e151]: leaf\n            - StaticText \"leaf\"\n          - button \"Search\" [ref=e152]\n            - StaticText \"Search\"\n          - button \"Reset\" [ref=e153]\n            - StaticText \"Reset\"\n        - button \"Preview\" [ref=e10]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e11]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e12]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e13]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e14]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e15]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e16]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e17]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e18]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e19]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e20]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e21]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e22]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e23]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e24]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e25]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e26]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e27]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e28]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e29]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e30]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e31]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e32]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e33]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e34]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e35]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e36]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e37]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e38]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e39]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e40]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e41]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e42]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e43]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e44]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e45]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e46]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e47]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e48]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e49]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e50]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e51]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e52]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e53]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e54]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e55]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e56]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e57]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e58]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e59]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e60]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e61]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e62]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e63]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e64]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e65]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e66]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e67]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e68]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e69]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e70]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e71]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e72]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e73]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e74]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e75]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e76]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e77]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e78]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e79]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e80]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e81]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e82]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e83]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e84]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e85]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e86]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e87]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e88]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e89]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e90]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e91]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e92]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e93]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e94]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e95]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e96]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e97]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e98]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e99]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e100]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e101]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e102]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e103]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e104]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e105]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e106]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e107]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e108]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e109]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e110]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e111]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e112]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e113]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e114]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e115]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e116]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e117]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e118]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e119]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e120]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e121]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e122]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e123]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e124]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e125]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e126]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e127]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e128]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e129]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e130]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e131]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e132]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e133]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e134]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e135]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e136]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e137]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e138]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e139]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e140]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e141]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e142]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e143]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e144]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e145]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e146]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e147]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e148]\n          - image \"Preview\"\n        - button \"Preview\" [ref=e149]\n          - image \"Preview\"\n        - button \"Load more\" [ref=e150]\n        - button \"Back\" [ref=e154]\n          - StaticText \"Back\"\n        - button [ref=e155]\n        - button [ref=e156]\n        - button [ref=e157]\n        - button [ref=e158]\n        - button [ref=e159]\n        - button \"Next\" [ref=e160]\n          - StaticText \"Next\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e161]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e162]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

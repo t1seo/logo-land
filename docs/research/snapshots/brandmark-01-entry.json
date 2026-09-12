@@ -1,0 +1,90 @@
+{
+  "id": "7c907ccc-0388-41ae-8541-c478aca9a764",
+  "ok": true,
+  "result": {
+    "origin": "https://brandmark.io/",
+    "refs": {
+      "e1": {
+        "name": "Create my logo",
+        "role": "link"
+      },
+      "e10": {
+        "name": "",
+        "role": "generic"
+      },
+      "e11": {
+        "name": "",
+        "role": "generic"
+      },
+      "e12": {
+        "name": "See example assets",
+        "role": "link"
+      },
+      "e13": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e14": {
+        "name": "Privacy policy",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Menu  ",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Pricing ",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Support ",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Login ",
+        "role": "link"
+      },
+      "e19": {
+        "name": "v3 ",
+        "role": "link"
+      },
+      "e2": {
+        "name": "Create a unique, professional logo for your business",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "Create your logo",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Support",
+        "role": "link"
+      },
+      "e5": {
+        "name": "Tools",
+        "role": "link"
+      },
+      "e6": {
+        "name": "",
+        "role": "link"
+      },
+      "e7": {
+        "name": "",
+        "role": "link"
+      },
+      "e8": {
+        "name": "Brand Mark",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Create my logo",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - image \"Brand Logo\"\n    - link \"\" [ref=e6]\n      - StaticText \"\"\n    - list\n      - listitem [level=1]\n        - link \"Menu  \" [ref=e15]\n          - StaticText \"Menu \"\n          - StaticText \"\"\n          - StaticText \"\"\n        - list\n          - listitem [level=2]\n            - link \"Pricing \" [ref=e16]\n              - StaticText \"Pricing\"\n              - StaticText \"\"\n          - listitem [level=2]\n            - link \"Support \" [ref=e17]\n              - StaticText \"Support\"\n              - StaticText \"\"\n          - listitem [level=2]\n            - link \"Login \" [ref=e18]\n              - StaticText \"Login\"\n              - StaticText \"\"\n          - listitem [level=2]\n            - link \"v3 \" [ref=e19]\n              - StaticText \"v3\"\n              - StaticText \"\"\n  - banner\n    - link [ref=e7]\n      - image\n  - link \"Brand Mark\" [ref=e8]\n    - StaticText \"Brand\"\n    - StaticText \"Mark\"\n  - heading \"Create a unique, professional logo for your business\" [level=2, ref=e2]\n  - StaticText \"Kickstart your brand with business card designs, social media graphics, animations, websites and more\"\n  - link \"Create my logo\" [ref=e9]\n    - generic\n      - StaticText \"Create my logo\"\n  - generic\n    - generic\n      - image \"PubLaw Project brand design\"\n      - generic\n        - generic\n          - StaticText \"I'm not a designer, when I had to make a logo I found myself staring at a blank screen. Brandmark made the process actually enjoyable\"\n          - image\n          - image\n        - image \"Valentyna Kuzmych\"\n        - StaticText \"Valentyna Kuzmych\"\n        - StaticText \"CEO, PubLaw Project\"\n      - image \"NobleTide brand design\"\n      - generic\n        - generic\n          - StaticText \"I tried other logo makers and Brandmark is the best value. Quality is exceptional and includes a complete branding solution for my company\"\n          - image\n          - image\n        - image \"Courtney Costrino\"\n        - StaticText \"Courtney Costrino\"\n        - StaticText \"Founder, Noble Tide LLC\"\n      - image \"Hwear brand design\"\n      - generic\n        - generic\n          - StaticText \"I was afraid to pay thousands for a logo that didn't turn out right for my business. The Brandmark team helped me create a logo that I love!\"\n          - image\n          - image\n        - image \"Sarah Locatelli\"\n        - StaticText \"Sarah Locatelli\"\n        - StaticText \"Founder, Loctia\"\n    - generic\n      - generic [ref=e10] clickable [cursor:pointer]\n      - generic [ref=e11] clickable [cursor:pointer]\n  - list\n    - listitem [level=1]\n      - image \"img\"\n    - listitem [level=1]\n      - image \"img\"\n    - listitem [level=1]\n      - image \"img\"\n    - listitem [level=1]\n      - image \"img\"\n    - listitem [level=1]\n      - image \"img\"\n  - generic\n    - image \"img\"\n    - image\n  - generic\n    - StaticText \"Build a beautiful brand on time and on budget\"\n    - generic\n      - StaticText \"Kickstart your business with thousands of ready-to-use design assets.\"\n    - generic\n      - generic\n        - image\n        - StaticText \"Logo source files\"\n      - image\n      - StaticText \"Brand guide\"\n      - image\n      - StaticText \"One-page websites\"\n      - image\n      - StaticText \"Social profile icons\"\n      - image\n      - StaticText \"Business card designs\"\n      - image\n      - StaticText \"Animated designs\"\n      - image\n      - StaticText \"Invoice templates\"\n      - image\n      - StaticText \"Mockup designs\"\n      - image\n      - StaticText \"Social media designs\"\n      - image\n      - StaticText \"Presentation templates\"\n    - link \"See example assets\" [ref=e12]\n      - generic\n        - image\n        - StaticText \"See example assets\"\n  - StaticText \"Gen AI + Human inspiration\"\n  - StaticText \"Use our exclusive hand-crafted fonts & templates or create a unique icon with Generative AI\"\n  - image \"font select\"\n  - generic\n    - StaticText \"Instantly customize and export\"\n    - StaticText \"Right in your browser, no designer or software needed\"\n    - generic\n      - image\n      - image \"Brandmark.io editor controls\"\n      - generic\n        - StaticText \"EXPORT TO ALL MAJOR FORMATS\"\n        - StaticText \"Publish online or export to SVG, PNG and PDF\"\n        - StaticText \"EDIT AND CUSTOMIZE\"\n        - StaticText \"Tap or click to edit text\"\n        - StaticText \"MOBILE & DESKTOP\"\n        - StaticText \"Use on your mobile device\"\n  - generic\n    - StaticText \"Latest customer creations\"\n    - StaticText \"See why millions of users have created a logo with Brandmark.io\"\n    - image \"CIELA MONTESSORI\"\n    - image \"No BS\"\n    - image \"The Local Know\"\n    - image \"YOUTUI\"\n    - image \"Monkspace\"\n    - image \"COCO\"\n    - image \"funfit\"\n    - image \"GOOMOE\"\n    - image \"Wooly Waif\"\n    - image \"PathBase\"\n    - image \"BENSON\"\n    - image \"Lizzty\"\n    - image \"lighten\"\n  - image\n  - StaticText \"No more designer anxiety\"\n  - StaticText \"Get your logo instantly, not in weeks.\"\n  - image\n  - StaticText \"Need a tweak to your design?\"\n  - StaticText \"We’ll do it for you, absolutely free\"\n  - image\n  - StaticText \"No monthly charges\"\n  - StaticText \"Pay once, get access to our branding tools forever.\"\n  - image\n  - StaticText \"Full copyright included\"\n  - StaticText \"For use in commercial and personal projects\"\n  - image\n  - StaticText \"Unlimited revisions\"\n  - StaticText \"Modify your logo at any time, even after purchase\"\n  - StaticText \"Create your unique logo design\"\n  - StaticText \"generate unlimited logos for free\"\n  - link \"Create my logo\" [ref=e1]\n    - generic\n      - StaticText \"Create my logo\"\n  - contentinfo\n    - link \"Create your logo\" [ref=e3]\n      - StaticText \"Create your logo\"\n    - StaticText \"Try Brandmark for free, no account needed\"\n    - link \"Support\" [ref=e4]\n      - StaticText \"Support\"\n    - StaticText \"Have questions or need help? Start here.\"\n    - link \"Tools\" [ref=e5]\n      - StaticText \"Tools\"\n    - StaticText \"Check out our free tools for color, font and logo design\"\n    - link \"Terms of Service\" [ref=e13]\n      - StaticText \"Terms of Service\"\n    - link \"Privacy policy\" [ref=e14]\n      - StaticText \"Privacy policy\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

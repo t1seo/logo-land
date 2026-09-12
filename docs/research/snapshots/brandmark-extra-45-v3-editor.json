@@ -1,0 +1,86 @@
+{
+  "id": "003292e9-c961-435e-8f1e-3b1e7882b13e",
+  "ok": true,
+  "result": {
+    "origin": "https://app.brandmark.io/v3/",
+    "refs": {
+      "e1": {
+        "name": "Logo text",
+        "role": "textbox"
+      },
+      "e10": {
+        "name": "0.92",
+        "role": "button"
+      },
+      "e11": {
+        "name": "0",
+        "role": "button"
+      },
+      "e12": {
+        "name": "0",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "generic"
+      },
+      "e15": {
+        "name": "0",
+        "role": "button"
+      },
+      "e16": {
+        "name": "1.1",
+        "role": "button"
+      },
+      "e17": {
+        "name": "0",
+        "role": "button"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Fonts",
+        "role": "button"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e4": {
+        "name": "Name",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Slogan",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Icon",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Background",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Layout",
+        "role": "button"
+      },
+      "e9": {
+        "name": "",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - generic [ref=e18] clickable [cursor:pointer]\n    - image\n- generic\n  - navigation\n    - button \"Name\" [ref=e4]\n      - SvgRoot\n        - StaticText \"N\"\n      - StaticText \"Name\"\n    - button \"Slogan\" [ref=e5]\n      - SvgRoot\n        - StaticText \"S\"\n      - StaticText \"Slogan\"\n    - button \"Icon\" [ref=e6]\n      - image\n      - StaticText \"Icon\"\n    - button \"Background\" [ref=e7]\n      - image\n      - StaticText \"Background\"\n    - button \"Layout\" [ref=e8]\n      - image\n      - StaticText \"Layout\"\n    - button [ref=e9]\n      - image\n  - textbox \"Logo text\" [ref=e1]: MORROW S^TUDIO\n    - StaticText \"MORROW S^TUDIO\"\n  - LabelText\n    - StaticText \"Font size\"\n  - generic\n    - button \"0.92\" [ref=e10]\n    - image\n  - LabelText\n    - StaticText \"Letter spacing\"\n  - generic\n    - button \"0\" [ref=e11]\n    - image\n  - LabelText\n    - StaticText \"Left\"\n  - generic\n    - button \"0\" [ref=e12]\n    - image\n  - button \"Fonts\" [ref=e2]\n    - SvgRoot\n      - StaticText \"A\"\n    - StaticText \"Fonts\"\n  - button [ref=e13]\n    - image\n  - LabelText\n  - generic [ref=e14] clickable [cursor:pointer]\n    - image\n  - LabelText\n    - StaticText \"Boldness\"\n  - generic\n    - button \"0\" [ref=e15]\n    - image\n  - LabelText\n    - StaticText \"Line space\"\n  - generic\n    - button \"1.1\" [ref=e16]\n    - image\n  - LabelText\n    - StaticText \"Top\"\n  - generic\n    - button \"0\" [ref=e17]\n    - image\n- generic [ref=e3] clickable [cursor:pointer]\n  - image\n- generic\n  - IframePresentational \"reCAPTCHA\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

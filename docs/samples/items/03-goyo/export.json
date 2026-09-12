@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "sample-03-goyo",
+  "revision": 4,
+  "created_at": "2026-09-12T13:09:29.454906Z",
+  "updated_at": "2026-09-12T13:16:00.895509Z",
+  "brief": {
+    "brand_name": "고요",
+    "exact_text": "고요",
+    "industry": "명상 스튜디오",
+    "audience": "일상에서 쉬어가고 싶은 직장인",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "숲색 심볼과 고요 한글",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "숲색, 아이보리"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "4050303ae1bc5ec5a7741841b36a295ce033ed2be852fb53e893072f998d3174",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one combination logo for 고요. Industry: 명상 스튜디오. Audience: 일상에서 쉬어가고 싶은 직장인.\nExact text (copy verbatim, no other words): '고요'. Exact slogan: ''.\nStyles: 숲색 심볼과 고요 한글, flat, clear silhouette. Palette: 숲색, 아이보리.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Calm combination logo. A simple open circular symbol suggesting still water and a breathing pause above exact Korean text 고요. Elegant clean rounded Korean typography, readable separate syllable blocks 고 and 요. Forest green on solid warm ivory. Restrained, spacious.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: Calm combination logo. A simple open circular symbol suggesting still water and a breathing pause above exact Korean text 고요. Elegant clean rounded Korean typography, readable separate syllable blocks 고 and 요. Forest green on solid warm ivory. Restrained, spacious.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:13:39.752871Z",
+      "requested_background": "opaque",
+      "review": {
+        "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+        "notes": "고요 두 음절이 정확하고 원형 여백과 수면을 암시하는 형태가 분리되어 보입니다. 240px에서 한글 획과 심볼 간 간격이 유지되며 숲색과 불투명 아이보리 배경을 확인했습니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T13:16:00.466122Z"
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": [
+    {
+      "path": "docs/samples/items/03-goyo/delivery",
+      "artifact_id": "a-v1",
+      "created_at": "2026-09-12T13:16:00.895159Z"
+    }
+  ]
+}

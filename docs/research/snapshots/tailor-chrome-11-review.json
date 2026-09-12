@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Tailor Brands - Real People Creating Real Businesses\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n+\t\t\t\t\t\t482 container\n+\t\t\t\t\t\t\t483 container Review your design\n+\t\t\t\t\t\t\t484 text Review your design The next step is to use your design to create your logo files, website, social posts, and more!\n+\t\t\t\t\t\t\t485 button Back to Logo Options\n+\t\t\t\t\t\t\t\t486 text Back to Logo Options\n+\t\t\t\t\t\t\t487 button Keep Editing\n+\t\t\t\t\t\t\t488 button I’m Finished\n+\t\t\t\t\t\t\t\t489 text I’m Finished\nThe focused UI element is 413 button Finish"
+}

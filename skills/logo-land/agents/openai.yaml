@@ -1,0 +1,4 @@
+interface:
+  display_name: "Logo Land"
+  short_description: "대화로 브랜드를 정리하고 로고 시안 생성부터 수정과 파일 전달까지"
+  default_prompt: "$logo-land로 제 브랜드에 맞는 로고를 함께 만들어 주세요."

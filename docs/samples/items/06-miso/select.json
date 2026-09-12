@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "sample-06-miso",
+  "revision": 2,
+  "created_at": "2026-09-12T13:09:30.672688Z",
+  "updated_at": "2026-09-12T13:16:04.089406Z",
+  "brief": {
+    "brand_name": "MISO",
+    "exact_text": "MISO",
+    "industry": "반려동물 간식",
+    "audience": "반려묘와 사는 사람",
+    "slogan": "",
+    "logo_type": "mascot",
+    "styles": [
+      "따뜻한 고양이 캐릭터 로고",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "앰버, 갈색, 크림"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "10f3e1d9f51e35a1eced51e0efcd08061d03bbc8a184d4399992237e45ec0649",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one mascot logo for MISO. Industry: 반려동물 간식. Audience: 반려묘와 사는 사람.\nExact text (copy verbatim, no other words): 'MISO'. Exact slogan: ''.\nStyles: 따뜻한 고양이 캐릭터 로고, flat, clear silhouette. Palette: 앰버, 갈색, 크림.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Friendly iconic orange cat head mascot above exact word MISO in bold friendly rounded uppercase letters. Minimal whiskers, smiling expression, amber orange and deep brown on a fully solid pale cream background. Simple flat shapes, very few details, not a scene.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: Friendly iconic orange cat head mascot above exact word MISO in bold friendly rounded uppercase letters. Minimal whiskers, smiling expression, amber orange and deep brown on a fully solid pale cream background. Simple flat shapes, very few details, not a scene.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:13:40.322848Z",
+      "requested_background": "opaque",
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

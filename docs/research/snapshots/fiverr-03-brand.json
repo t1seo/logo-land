@@ -1,0 +1,134 @@
+{
+  "id": "23dbecbc-057f-4420-a4d9-23a8e618996d",
+  "ok": true,
+  "result": {
+    "origin": "https://www.fiverr.com/logo-maker/brief/logo_name?source=buyer_landing_page&get_started_brand_name=Morrow%20Studio&brief_id=9b467438-ad0b-445d-8ccf-46f4d35c175f",
+    "refs": {
+      "e1": {
+        "name": "Quick Accessibility Options",
+        "role": "region"
+      },
+      "e10": {
+        "name": "",
+        "role": "generic"
+      },
+      "e11": {
+        "name": "Open accessibility menu",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Go to Fiverr",
+        "role": "link"
+      },
+      "e13": {
+        "name": "Sign in",
+        "role": "link"
+      },
+      "e14": {
+        "name": "Join",
+        "role": "link"
+      },
+      "e15": {
+        "name": "",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Join Fiverr",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Sign in",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Fiverr on TikTok",
+        "role": "link"
+      },
+      "e2": {
+        "name": "Skip to main content",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Fiverr on Instagram",
+        "role": "link"
+      },
+      "e21": {
+        "name": "Fiverr on LinkedIn",
+        "role": "link"
+      },
+      "e22": {
+        "name": "Fiverr on Facebook",
+        "role": "link"
+      },
+      "e23": {
+        "name": "Fiverr on Pinterest",
+        "role": "link"
+      },
+      "e24": {
+        "name": "Fiverr on Twitter",
+        "role": "link"
+      },
+      "e25": {
+        "name": "$ USD",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Testimonials",
+        "role": "link"
+      },
+      "e27": {
+        "name": "Tutorials",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e29": {
+        "name": "Add your brand name",
+        "role": "textbox"
+      },
+      "e3": {
+        "name": "Enable accessibility for low vision",
+        "role": "button"
+      },
+      "e30": {
+        "name": "Add your sloganOr add it later",
+        "role": "textbox"
+      },
+      "e4": {
+        "name": "Open the accessibility menu",
+        "role": "button"
+      },
+      "e5": {
+        "name": "",
+        "role": "link"
+      },
+      "e6": {
+        "name": "Next",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Make your logo in a few steps",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Terms of Service",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - region \"Quick Accessibility Options\" [ref=e1]\n    - button \"Skip to main content\" [ref=e2]\n      - StaticText \"Skip to main content\"\n    - button \"Enable accessibility for low vision\" [ref=e3]\n      - StaticText \"Enable accessibility for low vision\"\n    - button \"Open the accessibility menu\" [ref=e4]\n      - StaticText \"Open the accessibility menu\"\n  - generic\n    - banner\n      - link [ref=e5]\n        - image\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Go to Fiverr\" [ref=e12]\n      - navigation\n        - list\n          - listitem [level=1]\n            - link \"Sign in\" [ref=e13]\n          - listitem [level=1]\n            - link \"Join\" [ref=e14]\n    - generic\n      - dialog\n        - banner\n          - link [ref=e15]\n            - image\n          - button \"Close\" [ref=e16]\n            - image\n        - StaticText \"Explore\"\n        - image\n        - link \"Testimonials\" [ref=e26]\n          - StaticText \"Testimonials\"\n        - link \"Tutorials\" [ref=e27]\n          - StaticText \"Tutorials\"\n        - link \"Pricing\" [ref=e28]\n          - StaticText \"Pricing\"\n        - StaticText \"$\"\n        - StaticText \"USD\"\n        - image\n        - StaticText \"Company\"\n        - image\n        - contentinfo\n          - button \"Join Fiverr\" [ref=e17]\n          - button \"Sign in\" [ref=e18]\n      - generic\n        - generic\n          - StaticText \"STEP1 / 4\"\n        - banner\n          - heading \"Make your logo in a few steps\" [level=2, ref=e7]\n          - paragraph\n            - StaticText \"Let's get to know you better and create a logo you love.\"\n        - LabelText\n          - StaticText \"Add your brand name\"\n          - textbox \"Add your brand name\" [ref=e29]: Morrow Studio\n            - StaticText \"Morrow Studio\"\n        - LabelText\n          - StaticText \"Add your sloganOr add it later\"\n          - textbox \"Add your sloganOr add it later\" [ref=e30]\n        - image\n        - StaticText \"Made on Fiverr\"\n        - StaticText \" by Alonbraier\"\n        - button \"Next\" [ref=e6]\n    - generic\n      - contentinfo\n        - image\n        - paragraph\n          - link \"Privacy Policy\" [ref=e8]\n          - StaticText \" | \"\n          - link \"Terms of Service\" [ref=e9]\n        - paragraph\n          - StaticText \"© Fiverr International Ltd. 2026\"\n        - list\n          - listitem [level=1]\n            - link \"Fiverr on TikTok\" [ref=e19]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Instagram\" [ref=e20]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on LinkedIn\" [ref=e21]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Facebook\" [ref=e22]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Pinterest\" [ref=e23]\n              - image\n          - listitem [level=1]\n            - link \"Fiverr on Twitter\" [ref=e24]\n              - image\n        - generic\n          - generic [ref=e10] clickable [onclick]\n            - button \"$ USD\" [ref=e25]\n          - button \"Open accessibility menu\" [ref=e11]\n            - image\n  - generic",
+    "browserPageId": "187b995b-1439-4f7b-a530-bb33be18f680"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

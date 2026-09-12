@@ -1,0 +1,32 @@
+{
+  "brand_name": "KITE",
+  "exact_text": "",
+  "industry": "협업 소프트웨어",
+  "audience": "작은 제품 팀",
+  "logo_type": "abstract",
+  "styles": [
+    "상승감을 표현한 추상 기하학",
+    "flat",
+    "clear silhouette"
+  ],
+  "palette": [
+    "코럴, 백색"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+  ],
+  "forbidden": [
+    "mockup",
+    "photograph",
+    "shadow",
+    "gradient",
+    "extra text",
+    "existing brand logo"
+  ],
+  "assumptions": [
+    "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+    "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+  ]
+}

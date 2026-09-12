@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "sample-04-bread-bloom",
+  "revision": 3,
+  "created_at": "2026-09-12T13:09:29.839631Z",
+  "updated_at": "2026-09-12T13:16:01.795589Z",
+  "brief": {
+    "brand_name": "BREAD & BLOOM",
+    "exact_text": "BREAD & BLOOM",
+    "industry": "동네 베이커리",
+    "audience": "아침 빵을 즐기는 이웃",
+    "slogan": "",
+    "logo_type": "emblem",
+    "styles": [
+      "테라코타 베이커리 배지",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "테라코타, 크림"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "420ac19545143efbc4681b27b68fd074656da803869c746bd9c1eeb5678c9b8c",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one emblem logo for BREAD & BLOOM. Industry: 동네 베이커리. Audience: 아침 빵을 즐기는 이웃.\nExact text (copy verbatim, no other words): 'BREAD & BLOOM'. Exact slogan: ''.\nStyles: 테라코타 베이커리 배지, flat, clear silhouette. Palette: 테라코타, 크림.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: One refined bakery emblem badge. Exact text BREAD & BLOOM follows a generous circular arc around a very simple wheat stem and rising loaf. Terracotta brown on solid cream. Editorial artisan feel, ample spacing. No date, no slogan, no tiny ornament.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: One refined bakery emblem badge. Exact text BREAD & BLOOM follows a generous circular arc around a very simple wheat stem and rising loaf. Terracotta brown on solid cream. Editorial artisan feel, ample spacing. No date, no slogan, no tiny ornament.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+      "parent_id": null,
+      "created_at": "2026-09-12T13:13:39.950508Z",
+      "requested_background": "opaque",
+      "review": {
+        "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+        "notes": "BREAD & BLOOM의 철자와 앰퍼샌드가 정확합니다. 밀·빵·테두리로 구성된 엠블럼이 잘리지 않고 240px에서 원형 문구가 읽힙니다. 더 작은 사용에는 문구 없는 별도 변형을 권장합니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T13:16:01.795259Z"
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": []
+}

@@ -1,0 +1,15 @@
+{
+  "brand_name": "Morrow Studio",
+  "exact_text": "Morrow Studio",
+  "industry": "Sustainable brand and product design studio",
+  "audience": "Independent businesses seeking thoughtful contemporary design",
+  "slogan": "",
+  "logo_type": "combination",
+  "styles": ["minimal", "geometric", "calm"],
+  "palette": ["#174C3C"],
+  "forbidden": ["gradients", "shadows", "mockups", "extra lettering"],
+  "use_cases": ["website header", "business card"],
+  "assumptions": ["Fictional demonstration brand; no slogan requested"],
+  "background": "opaque",
+  "concept_count": 3
+}

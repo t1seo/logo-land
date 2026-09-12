@@ -1,0 +1,222 @@
+{
+  "id": "fc5eb36a-1995-475f-9952-5af36f024b49",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Find icons...",
+        "role": "combobox"
+      },
+      "e10": {
+        "name": "",
+        "role": "option"
+      },
+      "e11": {
+        "name": "",
+        "role": "option"
+      },
+      "e12": {
+        "name": "",
+        "role": "option"
+      },
+      "e13": {
+        "name": "",
+        "role": "option"
+      },
+      "e14": {
+        "name": "",
+        "role": "option"
+      },
+      "e15": {
+        "name": "",
+        "role": "option"
+      },
+      "e16": {
+        "name": "",
+        "role": "option"
+      },
+      "e17": {
+        "name": "",
+        "role": "option"
+      },
+      "e18": {
+        "name": "",
+        "role": "option"
+      },
+      "e19": {
+        "name": "",
+        "role": "option"
+      },
+      "e2": {
+        "name": "",
+        "role": "listbox"
+      },
+      "e20": {
+        "name": "",
+        "role": "option"
+      },
+      "e21": {
+        "name": "",
+        "role": "option"
+      },
+      "e22": {
+        "name": "",
+        "role": "option"
+      },
+      "e23": {
+        "name": "",
+        "role": "option"
+      },
+      "e24": {
+        "name": "",
+        "role": "option"
+      },
+      "e25": {
+        "name": "",
+        "role": "option"
+      },
+      "e26": {
+        "name": "",
+        "role": "option"
+      },
+      "e27": {
+        "name": "",
+        "role": "option"
+      },
+      "e28": {
+        "name": "",
+        "role": "option"
+      },
+      "e29": {
+        "name": "",
+        "role": "option"
+      },
+      "e3": {
+        "name": "",
+        "role": "option"
+      },
+      "e30": {
+        "name": "",
+        "role": "option"
+      },
+      "e31": {
+        "name": "",
+        "role": "option"
+      },
+      "e32": {
+        "name": "",
+        "role": "option"
+      },
+      "e33": {
+        "name": "",
+        "role": "option"
+      },
+      "e34": {
+        "name": "",
+        "role": "option"
+      },
+      "e35": {
+        "name": "",
+        "role": "option"
+      },
+      "e36": {
+        "name": "",
+        "role": "option"
+      },
+      "e37": {
+        "name": "",
+        "role": "option"
+      },
+      "e38": {
+        "name": "",
+        "role": "option"
+      },
+      "e39": {
+        "name": "",
+        "role": "option"
+      },
+      "e4": {
+        "name": "",
+        "role": "option"
+      },
+      "e40": {
+        "name": "",
+        "role": "option"
+      },
+      "e41": {
+        "name": "",
+        "role": "option"
+      },
+      "e42": {
+        "name": "",
+        "role": "option"
+      },
+      "e43": {
+        "name": "",
+        "role": "option"
+      },
+      "e44": {
+        "name": "",
+        "role": "option"
+      },
+      "e45": {
+        "name": "",
+        "role": "option"
+      },
+      "e46": {
+        "name": "",
+        "role": "option"
+      },
+      "e47": {
+        "name": "",
+        "role": "option"
+      },
+      "e48": {
+        "name": "",
+        "role": "option"
+      },
+      "e49": {
+        "name": "",
+        "role": "option"
+      },
+      "e5": {
+        "name": "",
+        "role": "option"
+      },
+      "e50": {
+        "name": "",
+        "role": "option"
+      },
+      "e51": {
+        "name": "",
+        "role": "option"
+      },
+      "e52": {
+        "name": "",
+        "role": "option"
+      },
+      "e6": {
+        "name": "",
+        "role": "option"
+      },
+      "e7": {
+        "name": "",
+        "role": "option"
+      },
+      "e8": {
+        "name": "",
+        "role": "option"
+      },
+      "e9": {
+        "name": "",
+        "role": "option"
+      }
+    },
+    "snapshot": "- dialog\n  - image\n  - combobox \"Find icons...\" [expanded=true, ref=e1]: leaf\n    - StaticText \"leaf\"\n  - listbox [ref=e2]\n    - group\n      - option [ref=e3]\n        - image\n      - option [ref=e4]\n        - image\n      - option [ref=e5]\n        - image\n      - option [ref=e6]\n        - image\n      - option [ref=e7]\n        - image\n      - option [ref=e8]\n        - image\n      - option [ref=e9]\n        - image\n      - option [ref=e10]\n        - image\n      - option [ref=e11]\n        - image\n      - option [ref=e12]\n        - image\n      - option [ref=e13]\n        - image\n      - option [ref=e14]\n        - image\n      - option [ref=e15]\n        - image\n      - option [ref=e16]\n        - image\n      - option [ref=e17]\n        - image\n      - option [ref=e18]\n        - image\n      - option [ref=e19]\n        - image\n      - option [ref=e20]\n        - image\n      - option [ref=e21]\n        - image\n      - option [ref=e22]\n        - image\n      - option [ref=e23]\n        - image\n      - option [ref=e24]\n        - image\n      - option [ref=e25]\n        - image\n      - option [ref=e26]\n        - image\n      - option [ref=e27]\n        - image\n      - option [ref=e28]\n        - image\n      - option [ref=e29]\n        - image\n      - option [ref=e30]\n        - image\n      - option [ref=e31]\n        - image\n      - option [ref=e32]\n        - image\n      - option [ref=e33]\n        - image\n      - option [ref=e34]\n        - image\n      - option [ref=e35]\n        - image\n      - option [ref=e36]\n        - image\n      - option [ref=e37]\n        - image\n      - option [ref=e38]\n        - image\n      - option [ref=e39]\n        - image\n      - option [ref=e40]\n        - image\n      - option [ref=e41]\n        - image\n      - option [ref=e42]\n        - image\n      - option [ref=e43]\n        - image\n      - option [ref=e44]\n        - image\n      - option [ref=e45]\n        - image\n      - option [ref=e46]\n        - image\n      - option [ref=e47]\n        - image\n      - option [ref=e48]\n        - image\n      - option [ref=e49]\n        - image\n      - option [ref=e50]\n        - image\n      - option [ref=e51]\n        - image\n      - option [ref=e52]\n        - image",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mode": "edit",
+  "session_id": "morrow-live",
+  "revision": 3,
+  "prompt": "Edit the supplied parent logo a-v1; do not recreate an unrelated logo.\nRequested changes: Preserve the M silhouette, exact Morrow Studio wordmark, spacing and arrangement. Change only the ink to uniform solid navy #183A56. Replace all transparent canvas pixels with an opaque pure white background. Remove gradients and shadows; no transparency anywhere.. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent.\nCreate one combination logo for Morrow Studio. Industry: Sustainable brand and product design studio. Audience: Independent businesses seeking thoughtful contemporary design.\nExact text (copy verbatim, no other words): 'Morrow Studio'. Exact slogan: ''.\nStyles: minimal, geometric, calm. Palette: #174C3C.\nAvoid: gradients, shadows, mockups, extra lettering. Use cases: website header, business card.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Geometric M, selected concept A. Assumptions: Fictional demonstration brand; no slogan requested.",
+  "parent_id": "a-v1",
+  "parent_image_path": "<workspace>/.logo-generator/sessions/morrow-live/artifacts/a-v1.png"
+}

@@ -1,0 +1,194 @@
+{
+  "id": "e80b675a-4af6-42fc-8059-7047abd75a34",
+  "ok": true,
+  "result": {
+    "origin": "https://www.design.com/maker/logo/media-arch-studio-4034102?text=Morrow+Studio&layoutOrientation=2-line-break-at-14-with-since-year&isSearch=True&searchImpressionId=0e24f45d-fa28-4790-8139-bdb7d9ec0c0b",
+    "refs": {
+      "e1": {
+        "name": "Design.com",
+        "role": "link"
+      },
+      "e10": {
+        "name": "Delete",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Duplicate",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Save Progress",
+        "role": "button"
+      },
+      "e16": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e17": {
+        "name": "",
+        "role": "generic"
+      },
+      "e18": {
+        "name": "",
+        "role": "generic"
+      },
+      "e19": {
+        "name": "",
+        "role": "generic"
+      },
+      "e2": {
+        "name": "Back",
+        "role": "link"
+      },
+      "e20": {
+        "name": "",
+        "role": "generic"
+      },
+      "e21": {
+        "name": "",
+        "role": "generic"
+      },
+      "e22": {
+        "name": "",
+        "role": "generic"
+      },
+      "e23": {
+        "name": "",
+        "role": "generic"
+      },
+      "e24": {
+        "name": "Opacity",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Layer",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Flip",
+        "role": "button"
+      },
+      "e27": {
+        "name": "",
+        "role": "generic"
+      },
+      "e28": {
+        "name": "Page Animations",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Element Animations",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Preview",
+        "role": "button"
+      },
+      "e30": {
+        "name": "",
+        "role": "button"
+      },
+      "e31": {
+        "name": "",
+        "role": "button"
+      },
+      "e32": {
+        "name": "",
+        "role": "button"
+      },
+      "e33": {
+        "name": "",
+        "role": "button"
+      },
+      "e34": {
+        "name": "",
+        "role": "button"
+      },
+      "e35": {
+        "name": "",
+        "role": "button"
+      },
+      "e36": {
+        "name": "",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "button"
+      },
+      "e38": {
+        "name": "",
+        "role": "button"
+      },
+      "e39": {
+        "name": "",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Share",
+        "role": "button"
+      },
+      "e40": {
+        "name": "",
+        "role": "button"
+      },
+      "e41": {
+        "name": "",
+        "role": "button"
+      },
+      "e42": {
+        "name": "",
+        "role": "button"
+      },
+      "e43": {
+        "name": "",
+        "role": "button"
+      },
+      "e44": {
+        "name": "",
+        "role": "button"
+      },
+      "e45": {
+        "name": "",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Save Progress",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Download",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Reset",
+        "role": "button"
+      },
+      "e8": {
+        "name": "Undo",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Redo",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - link \"Design.com\" [ref=e1]\n    - image\n  - link \"Back\" [ref=e2]\n    - StaticText \"Back\"\n  - button \"Preview\" [ref=e3]\n    - StaticText \"Preview\"\n  - button \"Share\" [ref=e4]\n    - StaticText \"Share\"\n  - button \"Save Progress\" [ref=e5]\n    - StaticText \"Save Progress\"\n  - button \"Download\" [ref=e6]\n    - StaticText \"Download\"\n- main\n  - generic\n    - button \"Reset\" [ref=e7]\n      - StaticText \"Reset\"\n    - button \"Undo\" [ref=e8]\n      - StaticText \"Undo\"\n    - button \"Redo\" [disabled, ref=e9]\n      - StaticText \"Redo\"\n    - button \"Delete\" [ref=e10]\n      - StaticText \"Delete\"\n    - button \"Opacity\" [ref=e24]\n      - StaticText \"Opacity\"\n    - button \"Layer\" [ref=e25]\n      - StaticText \"Layer\"\n    - button \"Flip\" [ref=e26]\n      - StaticText \"Flip\"\n    - button \"Duplicate\" [disabled, ref=e11]\n      - StaticText \"Duplicate\"\n    - generic\n      - generic\n        - Canvas\n        - Canvas\n      - button [ref=e13]\n      - generic [ref=e27] clickable [cursor:pointer]\n        - StaticText \"100%\"\n      - button [ref=e14]\n    - button \"Share\" [ref=e12]\n    - generic\n      - button \"Save Progress\" [ref=e15]\n      - button \"Download\" [ref=e16]\n    - button \"Page Animations\" [ref=e28]\n    - button \"Element Animations\" [ref=e29]\n      - StaticText \"Element Animations\"\n    - button [ref=e30]\n      - image\n    - StaticText \"None\"\n    - button [ref=e31]\n      - image\n    - StaticText \"Rise\"\n    - button [ref=e32]\n      - image\n    - StaticText \"Slide\"\n    - button [ref=e33]\n      - image\n    - StaticText \"Bounce\"\n    - button [ref=e34]\n      - image\n    - StaticText \"Shake\"\n    - button [ref=e35]\n      - image\n    - StaticText \"Pop\"\n    - button [ref=e36]\n      - image\n    - StaticText \"Fade\"\n    - button [ref=e37]\n      - image\n    - StaticText \"Scale\"\n    - button [ref=e38]\n      - image\n    - StaticText \"Pulse\"\n    - button [ref=e39]\n      - image\n    - StaticText \"Flicker\"\n    - button [ref=e40]\n      - image\n    - StaticText \"Wipe\"\n    - button [ref=e41]\n      - image\n    - StaticText \"Spin\"\n    - button [ref=e42]\n      - image\n    - StaticText \"Tumble\"\n    - button [ref=e43]\n      - image\n    - StaticText \"Stamp\"\n    - button [ref=e44]\n      - image\n    - StaticText \"Random\"\n    - button [ref=e45]\n      - image\n    - StaticText \"Blur\"\n    - generic [ref=e17] clickable [cursor:pointer]\n      - StaticText \"Text\"\n    - generic [ref=e18] clickable [cursor:pointer]\n      - StaticText \"Layout\"\n    - generic [ref=e19] clickable [cursor:pointer]\n      - StaticText \"Background\"\n    - generic [ref=e20] clickable [cursor:pointer]\n      - StaticText \"Logo\"\n    - generic [ref=e21] clickable [cursor:pointer]\n      - StaticText \"Shape\"\n    - generic [ref=e22] clickable [cursor:pointer]\n      - StaticText \"Animate\"\n    - generic [ref=e23] clickable [cursor:pointer]\n      - StaticText \"AI\"",
+    "browserPageId": "bc16e061-695d-43d0-82cf-096cc0e2d4e6"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+  "notes": "고요 두 음절이 정확하고 원형 여백과 수면을 암시하는 형태가 분리되어 보입니다. 240px에서 한글 획과 심볼 간 간격이 유지되며 숲색과 불투명 아이보리 배경을 확인했습니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

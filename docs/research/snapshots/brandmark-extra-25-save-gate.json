@@ -1,0 +1,30 @@
+{
+  "id": "9b62d446-e398-4a78-9177-9576cdeb6fb6",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Login to Save Your Logo",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Sign in with Google",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Sign in with email",
+        "role": "button"
+      }
+    },
+    "snapshot": "- dialog \"Login to Save Your Logo\"\n  - heading \"Login to Save Your Logo\" [level=2, ref=e1]\n  - generic\n    - form\n      - list\n        - listitem [level=1]\n          - button \"Sign in with Google\" [ref=e3]\n            - StaticText \"Sign in with Google\"\n        - listitem [level=1]\n          - button \"Sign in with email\" [ref=e4]\n            - StaticText \"Sign in with email\"\n  - button \"Close\" [ref=e2]\n    - image\n    - StaticText \"Close\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

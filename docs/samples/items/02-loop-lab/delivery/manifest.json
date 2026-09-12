@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "session_id": "sample-02-loop-lab",
+  "revision": 4,
+  "exported_at": "2026-09-12T13:15:59.703362Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v1",
+    "path": "artifacts/a-v1.png",
+    "sha256": "c03e72b2362ed7071f52f441520a73fa9a92be697efa551ae14b3cb43da8aab4",
+    "image": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1572516
+    },
+    "prompt": "Create one monogram logo for LOOP LAB. Industry: 크리에이티브 스튜디오. Audience: 새로운 브랜드를 만드는 창업자.\nExact text (copy verbatim, no other words): 'LL'. Exact slogan: ''.\nStyles: 라임색 LL 모노그램, flat, clear silhouette. Palette: 라임, 차콜.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Two interlocking L letters forming a clever compact continuous geometric monogram, clearly two L letterforms, vivid lime green on solid very dark charcoal. Only LL, no other wording. Bold functional identity.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..\n\nArt direction: Two interlocking L letters forming a clever compact continuous geometric monogram, clearly two L letterforms, vivid lime green on solid very dark charcoal. Only LL, no other wording. Bold functional identity.\nOne independent standalone logo, not a contact sheet. Square canvas. Mark centered with comfortable clear margins, occupying roughly 65% of the canvas. The ENTIRE background must be a flat SOLID OPAQUE color filling all corners, NOT transparent, no alpha holes. No checkerboard. No extra captions. Crisp professional master identity image.",
+    "parent_id": null,
+    "created_at": "2026-09-12T13:13:39.556046Z",
+    "requested_background": "opaque",
+    "review": {
+      "reviewer": "Codex native image + Chrome Computer Use visual inspection",
+      "notes": "L 두 개가 연결되는 라임색 모노그램입니다. 240px에서 두 수직획과 하단 굴곡, 어두운 배경의 대비가 유지됩니다. LL의 추상 결합이므로 작은 글자 가독성보다는 형태 인지를 목적으로 합니다. 새 시안으로 부모 이미지 보존 검사는 해당되지 않습니다. 기본 출력은 래스터이며 미세한 색면 질감이 있습니다. 모든 검수는 생성 원본의 큰 화면과 실제 Chrome의 240 CSS px 표시를 확인한 뒤 기록했습니다.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-12T13:15:59.434005Z"
+  },
+  "brief": {
+    "brand_name": "LOOP LAB",
+    "exact_text": "LL",
+    "industry": "크리에이티브 스튜디오",
+    "audience": "새로운 브랜드를 만드는 창업자",
+    "slogan": "",
+    "logo_type": "monogram",
+    "styles": [
+      "라임색 LL 모노그램",
+      "flat",
+      "clear silhouette"
+    ],
+    "palette": [
+      "라임, 차콜"
+    ],
+    "forbidden": [
+      "mockup",
+      "photograph",
+      "shadow",
+      "gradient",
+      "extra text",
+      "existing brand logo"
+    ],
+    "use_cases": [
+      "웹사이트 브랜드 소개 이미지, 가로 240px 이상"
+    ],
+    "assumptions": [
+      "실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다.",
+      "샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다."
+    ],
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "media_kind": "raster",
+  "requested_background": "opaque",
+  "transparency_verified": false
+}

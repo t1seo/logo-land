@@ -1,0 +1,122 @@
+{
+  "id": "d61a479e-c450-4249-9780-47a4f55c93fb",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/questions?id=766286287",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "",
+        "role": "button"
+      },
+      "e11": {
+        "name": "",
+        "role": "button"
+      },
+      "e12": {
+        "name": "",
+        "role": "button"
+      },
+      "e13": {
+        "name": "",
+        "role": "button"
+      },
+      "e14": {
+        "name": "",
+        "role": "button"
+      },
+      "e15": {
+        "name": "",
+        "role": "button"
+      },
+      "e16": {
+        "name": "",
+        "role": "button"
+      },
+      "e17": {
+        "name": "",
+        "role": "button"
+      },
+      "e18": {
+        "name": "",
+        "role": "button"
+      },
+      "e19": {
+        "name": "",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e20": {
+        "name": "",
+        "role": "button"
+      },
+      "e21": {
+        "name": "",
+        "role": "button"
+      },
+      "e22": {
+        "name": "",
+        "role": "button"
+      },
+      "e23": {
+        "name": "",
+        "role": "button"
+      },
+      "e24": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e25": {
+        "name": "Next",
+        "role": "button"
+      },
+      "e26": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e27": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "en",
+        "role": "button"
+      },
+      "e9": {
+        "name": "",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Style \" [ref=e6]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e7]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e8]\n        - StaticText \"en\"\n      - generic\n        - StaticText \"Choose 3 Styles You Love\"\n        - StaticText \"Your choices will help us define the look and feel of your logo and brand\"\n        - button [ref=e9]\n        - button [ref=e10]\n        - button [ref=e11]\n        - button [ref=e12]\n        - button [ref=e13]\n        - button [ref=e14]\n        - button [ref=e15]\n        - button [ref=e16]\n        - button [ref=e17]\n        - button [ref=e18]\n        - button [ref=e19]\n        - button [ref=e20]\n        - button [ref=e21]\n        - button [ref=e22]\n        - button [ref=e23]\n        - button \"Back\" [ref=e24]\n          - StaticText \"Back\"\n        - StaticText \"3 of 3\"\n        - button \"Next\" [ref=e25]\n          - StaticText \"Next\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e26]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e27]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

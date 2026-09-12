@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="workflow-en-title workflow-en-desc">
+          <title id="workflow-en-title">From conversation to your logo</title>
+          <desc id="workflow-en-desc">You and Codex turn a conversation into a brief, the native image tool creates and revises logos, and visual review plus PNG checks lead to exported files with the originals and revision history preserved.</desc>
+          <defs>
+            <style>
+              text { font-family: 'Geist', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; fill: #191917; }
+              .heading { font-family: 'Instrument Serif', 'Noto Serif KR', 'AppleMyungjo', 'Batang', serif; font-size: 40px; font-weight: 400; }
+              .body { font-size: 20px; }
+              .label { font-size: 16px; font-weight: 500; }
+              .name { font-size: 24px; font-weight: 600; }
+              .muted { fill: #5f5b52; }
+              .on-ink { fill: #f6f3ec; }
+              .mono { font-family: 'Geist Mono', ui-monospace, monospace; font-size: 20px; }
+            </style>
+            <marker id="workflow-en-arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#5f5b52"/></marker>
+            <marker id="workflow-en-arrow-accent" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#a64b32"/></marker>
+            <marker id="workflow-en-arrow-link" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#5f5b52"/></marker>
+          </defs>
+          <rect width="1280" height="720" fill="#f6f3ec"/>
+          <text x="56" y="56" class="label muted">LOGO LAND / WORKFLOW</text>
+          <text x="56" y="108" class="heading">From conversation to your logo</text>
+          <text x="56" y="152" class="body muted">Describe your brand, choose a concept, and refine the details.</text>
+
+          <text x="56" y="204" class="label">01  Brief · You + Codex</text>
+          <text x="464" y="204" class="label" style="fill: #a64b32">02  Create · Native image tool</text>
+          <text x="936" y="204" class="label">03  Review · Codex + helper</text>
+
+          <path d="M196 328 V392" fill="none" stroke="#5f5b52" stroke-width="1.2" marker-end="url(#workflow-en-arrow)"/>
+          <path d="M336 480 H464" fill="none" stroke="#a64b32" stroke-width="1.2" marker-end="url(#workflow-en-arrow-accent)"/>
+          <path d="M808 440 H936" fill="none" stroke="#5f5b52" stroke-width="1.2" marker-end="url(#workflow-en-arrow)"/>
+          <path d="M1080 560 V592 Q1080 600 1072 600 H644 Q636 600 636 592 V560" fill="none" stroke="#5f5b52" stroke-width="1.2" stroke-dasharray="8,4" marker-end="url(#workflow-en-arrow)"/>
+          <rect x="356" y="448" width="88" height="24" rx="4" fill="#f6f3ec"/>
+          <text x="400" y="468" class="body" text-anchor="middle">Brief</text>
+
+          <rect x="56" y="232" width="280" height="96" rx="8" fill="#eeeadf" stroke="#aaa396"/>
+          <text x="80" y="268" class="name">Your brand</text>
+          <text x="80" y="304" class="body">“고요, meditation”</text>
+
+          <rect x="56" y="392" width="280" height="168" rx="4" fill="#ffffff" stroke="#191917"/>
+          <text x="80" y="428" class="name">A saved brief</text>
+          <text x="80" y="468" class="body">Exact text: 고요</text>
+          <text x="80" y="500" class="body">Field: meditation</text>
+          <text x="80" y="532" class="body muted">Palette: ask next</text>
+
+          <rect x="464" y="320" width="344" height="240" rx="8" fill="#f0e3da" stroke="#a64b32" stroke-width="1.2"/>
+          <text x="488" y="364" font-size="28" font-weight="600">Create and refine</text>
+          <text x="488" y="408" class="body">One image per concept</text>
+          <text x="488" y="440" class="body">Edit the selected image</text>
+          <line x1="488" y1="464" x2="784" y2="464" stroke="#d6d0c4"/>
+          <text x="488" y="500" class="body">Reference → new PNG</text>
+          <text x="488" y="532" class="mono muted">a-v1 → a-v2</text>
+
+          <rect x="936" y="320" width="288" height="240" rx="8" fill="#191917"/>
+          <text x="960" y="364" class="on-ink" font-size="28" font-weight="600">Review &amp; save</text>
+          <text x="960" y="408" class="body on-ink">Text · space · size</text>
+          <text x="960" y="440" class="body on-ink">PNG · alpha · hashes</text>
+          <line x1="960" y1="464" x2="1200" y2="464" stroke="#69655b"/>
+          <text x="960" y="500" class="body on-ink">PNG · ZIP · guide</text>
+          <text x="960" y="532" class="body on-ink">Keep every version</text>
+
+          <line x1="56" y1="640" x2="1224" y2="640" stroke="#d6d0c4"/>
+          <line x1="56" y1="668" x2="104" y2="668" stroke="#5f5b52" stroke-width="1.2" marker-end="url(#workflow-en-arrow)"/>
+          <text x="120" y="676" class="label muted">Create and deliver</text>
+          <line x1="340" y1="668" x2="388" y2="668" stroke="#5f5b52" stroke-width="1.2" stroke-dasharray="8,4" marker-end="url(#workflow-en-arrow)"/>
+          <text x="404" y="676" class="label muted">Revise your choice</text>
+          <text x="748" y="676" class="label muted">The file helper does not generate images.</text>
+        </svg>

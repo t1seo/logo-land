@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="workflow-title workflow-desc">
+          <title id="workflow-title">대화에서 최종 로고까지</title>
+          <desc id="workflow-desc">사용자와 Codex가 대화를 브리프로 정리하면 내장 이미지 도구가 로고를 생성하고 선택한 원본을 수정하며, Codex의 육안 검수와 파일 보조 도구의 PNG 검사를 거쳐 원본과 수정 이력을 보존한 파일을 전달합니다.</desc>
+          <defs>
+            <style>
+              text { font-family: 'Geist', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; fill: #191917; }
+              .heading { font-family: 'Instrument Serif', 'Noto Serif KR', 'AppleMyungjo', 'Batang', serif; font-size: 40px; font-weight: 400; }
+              .body { font-size: 20px; }
+              .label { font-size: 16px; font-weight: 500; }
+              .name { font-size: 24px; font-weight: 600; }
+              .muted { fill: #5f5b52; }
+              .on-ink { fill: #f6f3ec; }
+              .mono { font-family: 'Geist Mono', ui-monospace, monospace; font-size: 20px; }
+            </style>
+            <marker id="workflow-arrow" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#5f5b52"/></marker>
+            <marker id="workflow-arrow-accent" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#a64b32"/></marker>
+            <marker id="workflow-arrow-link" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#5f5b52"/></marker>
+          </defs>
+          <rect width="1280" height="720" fill="#f6f3ec"/>
+          <text x="56" y="56" class="label muted">LOGO LAND / WORKFLOW</text>
+          <text x="56" y="108" class="heading">대화에서 최종 로고까지</text>
+          <text x="56" y="152" class="body muted">원하는 방향을 이야기하고, 시안을 고르고, 필요한 만큼 다듬어 주세요.</text>
+
+          <text x="56" y="204" class="label">01  대화 · 사용자 + Codex</text>
+          <text x="464" y="204" class="label" style="fill: #a64b32">02  생성·수정 · 내장 이미지 도구</text>
+          <text x="936" y="204" class="label">03  검수 · Codex + 파일 도구</text>
+
+          <path d="M196 328 V392" fill="none" stroke="#5f5b52" stroke-width="1.2" marker-end="url(#workflow-arrow)"/>
+          <path d="M336 480 H464" fill="none" stroke="#a64b32" stroke-width="1.2" marker-end="url(#workflow-arrow-accent)"/>
+          <path d="M808 440 H936" fill="none" stroke="#5f5b52" stroke-width="1.2" marker-end="url(#workflow-arrow)"/>
+          <path d="M1080 560 V592 Q1080 600 1072 600 H644 Q636 600 636 592 V560" fill="none" stroke="#5f5b52" stroke-width="1.2" stroke-dasharray="8,4" marker-end="url(#workflow-arrow)"/>
+          <rect x="356" y="448" width="88" height="24" rx="4" fill="#f6f3ec"/>
+          <text x="400" y="468" class="body" text-anchor="middle">브리프</text>
+
+          <rect x="56" y="232" width="280" height="96" rx="8" fill="#eeeadf" stroke="#aaa396"/>
+          <text x="80" y="268" class="name">브랜드 이야기</text>
+          <text x="80" y="304" class="body">“고요, 명상 스튜디오”</text>
+
+          <rect x="56" y="392" width="280" height="168" rx="4" fill="#ffffff" stroke="#191917"/>
+          <text x="80" y="428" class="name">브리프 정리·저장</text>
+          <text x="80" y="468" class="body">정확한 표기: 고요</text>
+          <text x="80" y="500" class="body">업종: 명상 스튜디오</text>
+          <text x="80" y="532" class="body muted">색상: 미정 → 추가 확인</text>
+
+          <rect x="464" y="320" width="344" height="240" rx="8" fill="#f0e3da" stroke="#a64b32" stroke-width="1.2"/>
+          <text x="488" y="364" font-size="28" font-weight="600">생성하고 다듬기</text>
+          <text x="488" y="408" class="body">시안마다 개별 이미지 생성</text>
+          <text x="488" y="440" class="body">선택한 원본을 참조해 수정</text>
+          <line x1="488" y1="464" x2="784" y2="464" stroke="#d6d0c4"/>
+          <text x="488" y="500" class="body">원본 참조 → 새 PNG</text>
+          <text x="488" y="532" class="mono muted">a-v1 → a-v2</text>
+
+          <rect x="936" y="320" width="288" height="240" rx="8" fill="#191917"/>
+          <text x="960" y="364" class="on-ink" font-size="28" font-weight="600">검수·내보내기</text>
+          <text x="960" y="408" class="body on-ink">글자·여백·축소 확인</text>
+          <text x="960" y="440" class="body on-ink">PNG·투명도·해시 검사</text>
+          <line x1="960" y1="464" x2="1200" y2="464" stroke="#69655b"/>
+          <text x="960" y="500" class="body on-ink">최종 PNG · ZIP · 안내</text>
+          <text x="960" y="532" class="body on-ink">원본·수정 이력 보존</text>
+
+          <line x1="56" y1="640" x2="1224" y2="640" stroke="#d6d0c4"/>
+          <line x1="56" y1="668" x2="104" y2="668" stroke="#5f5b52" stroke-width="1.2" marker-end="url(#workflow-arrow)"/>
+          <text x="120" y="676" class="label muted">생성·전달 흐름</text>
+          <line x1="340" y1="668" x2="388" y2="668" stroke="#5f5b52" stroke-width="1.2" stroke-dasharray="8,4" marker-end="url(#workflow-arrow)"/>
+          <text x="404" y="676" class="label muted">선택안 수정</text>
+          <text x="748" y="676" class="label muted">파일 보조 도구는 이미지를 생성하지 않습니다.</text>
+        </svg>

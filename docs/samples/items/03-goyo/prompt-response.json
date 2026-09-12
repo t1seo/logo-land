@@ -1,0 +1,9 @@
+{
+  "mode": "generation",
+  "session_id": "sample-03-goyo",
+  "revision": 0,
+  "prompt": "Create one combination logo for 고요. Industry: 명상 스튜디오. Audience: 일상에서 쉬어가고 싶은 직장인.\nExact text (copy verbatim, no other words): '고요'. Exact slogan: ''.\nStyles: 숲색 심볼과 고요 한글, flat, clear silhouette. Palette: 숲색, 아이보리.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Calm combination logo. A simple open circular symbol suggesting still water and a breathing pause above exact Korean text 고요. Elegant clean rounded Korean typography, readable separate syllable blocks 고 and 요. Forest green on solid warm ivory. Restrained, spacious.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null
+}

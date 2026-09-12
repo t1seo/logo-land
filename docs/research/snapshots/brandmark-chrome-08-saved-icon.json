@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Brandmark - AI brand and logo creator\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 377\n+\t\t\t\t\t\t382 image Logo ffbfbd8c-c7ab-4bcc-97f2-a22b17f49c4e\nThe focused UI element is 372 link Description: Saved logos, Value: chat.brandmark.io/saved"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "416d0e88-928b-40bc-a324-ded90e0c028e",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Find icons...",
+        "role": "combobox"
+      },
+      "e2": {
+        "name": "",
+        "role": "listbox"
+      }
+    },
+    "snapshot": "- dialog\n  - image\n  - combobox \"Find icons...\" [expanded=true, ref=e1]: leaf\n    - StaticText \"leaf\"\n  - listbox [ref=e2]\n    - StaticText \"No results found.\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

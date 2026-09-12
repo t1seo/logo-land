@@ -1,0 +1,134 @@
+{
+  "id": "f15e11b2-79ec-4691-853b-3660b5dbfb99",
+  "ok": true,
+  "result": {
+    "origin": "https://looka.com/onboarding?company_name=Morrow%20Studio",
+    "refs": {
+      "e1": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Thanks for signing up!",
+        "role": "heading"
+      },
+      "e11": {
+        "name": "Download Logo",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Continue",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Company Name",
+        "role": "textbox"
+      },
+      "e15": {
+        "name": "",
+        "role": "textbox"
+      },
+      "e16": {
+        "name": "",
+        "role": "generic"
+      },
+      "e17": {
+        "name": "Navigate to dashboard. Caution: this will navigate you away from your current page",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Browse unique logos generated just for you. No templates here.",
+        "role": "heading"
+      },
+      "e19": {
+        "name": "Customize your logo with 100s of font, layout, and color options.",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Close",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Get 300+ branded assets from social media posts to flyers.",
+        "role": "heading"
+      },
+      "e21": {
+        "name": "",
+        "role": "generic"
+      },
+      "e22": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e23": {
+        "name": "",
+        "role": "paragraph"
+      },
+      "e24": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e25": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e26": {
+        "name": "",
+        "role": "listitem"
+      },
+      "e27": {
+        "name": "Terms of service",
+        "role": "link"
+      },
+      "e28": {
+        "name": "Help / Contact",
+        "role": "link"
+      },
+      "e29": {
+        "name": "Terms of Service",
+        "role": "link"
+      },
+      "e3": {
+        "name": "Enter your company name",
+        "role": "heading"
+      },
+      "e30": {
+        "name": "Privacy",
+        "role": "link"
+      },
+      "e4": {
+        "name": "menu",
+        "role": "button"
+      },
+      "e5": {
+        "name": "",
+        "role": "generic"
+      },
+      "e6": {
+        "name": "Close Modal",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Sign up",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "Continue as guest",
+        "role": "button"
+      },
+      "e9": {
+        "name": "Close Modal",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - button \"Close Modal\" [ref=e1]\n      - image \"Close Modal\"\n    - heading [level=2]\n    - button \"Close\" [ref=e2]\n  - generic\n    - generic\n      - heading \"Enter your company name\" [level=2, ref=e3]\n      - paragraph\n        - StaticText \"You can always change these later\"\n      - button \"Continue\" [ref=e13]\n        - StaticText \"Continue\"\n        - image\n    - form\n      - generic\n        - textbox \"Company Name\" [ref=e14]: Morrow Studio\n          - StaticText \"Morrow Studio\"\n        - LabelText\n          - StaticText \"Company Name\"\n      - generic\n        - textbox [ref=e15]\n        - LabelText\n          - StaticText \"Add a Slogan (Optional)\"\n    - generic\n      - generic [ref=e16] clickable [cursor:pointer, onclick]\n        - StaticText \"arrow_back\"\n      - link \"Navigate to dashboard. Caution: this will navigate you away from your current page\" [ref=e17]\n        - image \"Navigate to dashboard. Caution: this will navigate you away from your current page\"\n      - button \"menu\" [ref=e4]\n        - StaticText \"menu\"\n    - generic\n      - generic [ref=e5] clickable [onclick]\n      - generic [ref=e21] clickable [cursor:pointer, onclick]\n        - StaticText \"close\"\n      - paragraph [ref=e22] clickable [cursor:pointer, onclick]\n        - StaticText \"Log in\"\n      - paragraph [ref=e23] clickable [cursor:pointer, onclick]\n        - StaticText \"Register\"\n      - list\n        - listitem [level=1, ref=e24] clickable [cursor:pointer]\n          - link \"Help / Contact\" [ref=e28]\n        - listitem [level=1, ref=e25] clickable [cursor:pointer]\n          - link \"Terms of Service\" [ref=e29]\n        - listitem [level=1, ref=e26] clickable [cursor:pointer]\n          - link \"Privacy\" [ref=e30]\n  - generic\n    - button \"Close Modal\" [ref=e6]\n      - image \"Close Modal\"\n    - heading \"Sign up\" [level=2, ref=e7]\n    - paragraph\n      - StaticText \"Success! Your account has been created.\"\n    - paragraph\n      - link \"Terms of service\" [ref=e27]\n      - StaticText \" apply\"\n    - StaticText \"or\"\n    - button \"Continue as guest\" [ref=e8]\n      - StaticText \"Continue as guest\"\n      - image\n    - generic\n      - image\n      - heading \"Browse unique logos generated just for you. No templates here.\" [level=4, ref=e18]\n        - strong\n          - StaticText \"Browse unique logos\"\n        - StaticText \" generated just for you. No templates here.\"\n      - image\n      - heading \"Customize your logo with 100s of font, layout, and color options.\" [level=4, ref=e19]\n        - strong\n          - StaticText \"Customize your logo\"\n        - StaticText \" with 100s of font, layout, and color options.\"\n      - image\n      - heading \"Get 300+ branded assets from social media posts to flyers.\" [level=4, ref=e20]\n        - strong\n          - StaticText \"Get 300+ branded assets\"\n        - StaticText \" from social media posts to flyers.\"\n  - generic\n    - button \"Close Modal\" [ref=e9]\n      - image \"Close Modal\"\n    - image\n    - heading \"Thanks for signing up!\" [level=2, ref=e10]\n    - paragraph\n      - StaticText \"Now you can download your logo and come back any time to access your designs\"\n    - button \"Download Logo\" [ref=e11]\n    - button \"Close\" [ref=e12]",
+    "browserPageId": "02657f4a-4ea0-4a74-be5c-12cfb06a7a6c"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "id": "193a19ae-5242-400e-84cf-1b515b2ce0ec",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Unlock All",
+        "role": "menuitem"
+      },
+      "e11": {
+        "name": "Generate Icon",
+        "role": "menuitem"
+      },
+      "e12": {
+        "name": "",
+        "role": "link"
+      },
+      "e13": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e14": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e17": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e18": {
+        "name": "",
+        "role": "menubar"
+      },
+      "e19": {
+        "name": "Quick Edit",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Close editor",
+        "role": "button"
+      },
+      "e20": {
+        "name": "",
+        "role": "button"
+      },
+      "e21": {
+        "name": "Title",
+        "role": "heading"
+      },
+      "e22": {
+        "name": "Slogan",
+        "role": "heading"
+      },
+      "e23": {
+        "name": "Icon",
+        "role": "heading"
+      },
+      "e24": {
+        "name": "Icon",
+        "role": "region"
+      },
+      "e25": {
+        "name": "Layout",
+        "role": "heading"
+      },
+      "e26": {
+        "name": "Background",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "Save",
+        "role": "menuitem"
+      },
+      "e28": {
+        "name": "File",
+        "role": "menuitem"
+      },
+      "e29": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e3": {
+        "name": "",
+        "role": "generic"
+      },
+      "e30": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e31": {
+        "name": "Snap Snap",
+        "role": "menuitem"
+      },
+      "e32": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e33": {
+        "name": "",
+        "role": "menuitem"
+      },
+      "e34": {
+        "name": "Title",
+        "role": "button"
+      },
+      "e35": {
+        "name": "Slogan",
+        "role": "button"
+      },
+      "e36": {
+        "name": "Icon",
+        "role": "button"
+      },
+      "e37": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e38": {
+        "name": "",
+        "role": "switch"
+      },
+      "e39": {
+        "name": "Search Icons",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Add Text",
+        "role": "menuitem"
+      },
+      "e40": {
+        "name": "Generate Icon",
+        "role": "button"
+      },
+      "e41": {
+        "name": "",
+        "role": "button"
+      },
+      "e42": {
+        "name": "",
+        "role": "button"
+      },
+      "e43": {
+        "name": "Layout",
+        "role": "button"
+      },
+      "e44": {
+        "name": "Background",
+        "role": "button"
+      },
+      "e45": {
+        "name": "",
+        "role": "button"
+      },
+      "e46": {
+        "name": "",
+        "role": "button"
+      },
+      "e47": {
+        "name": "",
+        "role": "button"
+      },
+      "e48": {
+        "name": "Snap",
+        "role": "switch"
+      },
+      "e49": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Add Shape",
+        "role": "menuitem"
+      },
+      "e50": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e51": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e52": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e53": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e54": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e55": {
+        "name": "Decrease",
+        "role": "button"
+      },
+      "e56": {
+        "name": "",
+        "role": "spinbutton"
+      },
+      "e57": {
+        "name": "Increase",
+        "role": "button"
+      },
+      "e58": {
+        "name": "",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Add Template",
+        "role": "menuitem"
+      },
+      "e7": {
+        "name": "Add Icon",
+        "role": "menuitem"
+      },
+      "e8": {
+        "name": "Import Image",
+        "role": "menuitem"
+      },
+      "e9": {
+        "name": "Lock Selected",
+        "role": "menuitem"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e12]\n        - image\n      - link \"Generate logos\" [ref=e13]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e14]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e15]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e16]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e17]\n        - image\n        - StaticText \"My Account\"\n  - generic\n    - generic\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo bc9b3f97-8d73-420d-8f0e-9e06c9910d18\"\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo 9b6e0470-05f2-4a8f-ac18-9623bf2f631c\"\n    - banner\n    - button \"Close editor\" [ref=e2]\n      - image\n    - main\n      - generic\n        - Canvas\n      - menubar [ref=e18] focusable [tabindex]\n        - menuitem \"Save\" [expanded=false, ref=e27]\n          - image\n          - StaticText \"Save\"\n        - menuitem \"File\" [expanded=true, ref=e28]\n          - image\n          - StaticText \"File\"\n        - separator\n        - button [expanded=false, ref=e45]\n          - button [ref=e47]\n            - button [ref=e58]\n        - separator\n        - menuitem [expanded=false, ref=e29]\n          - image\n        - menuitem [expanded=false, disabled, ref=e30]\n          - image\n        - separator\n        - menuitem \"Snap Snap\" [expanded=false, ref=e31]\n          - LabelText\n            - StaticText \"Snap\"\n            - switch \"Snap\" [checked=true, ref=e48]\n        - menuitem [expanded=false, ref=e32]\n          - image\n        - menuitem [expanded=false, ref=e33]\n          - image\n    - generic\n      - heading \"Quick Edit\" [level=2, ref=e19]\n      - button [ref=e20]\n        - image\n      - heading \"Title\" [level=3, ref=e21]\n        - button \"Title\" [expanded=false, ref=e34]\n          - image\n          - StaticText \"Title\"\n          - image\n      - heading \"Slogan\" [level=3, ref=e22]\n        - button \"Slogan\" [expanded=false, ref=e35]\n          - image\n          - StaticText \"Slogan\"\n          - image\n      - heading \"Icon\" [level=3, ref=e23]\n        - button \"Icon\" [expanded=true, ref=e36]\n          - image\n          - StaticText \"Icon\"\n          - image\n      - region \"Icon\" [ref=e24]\n        - image\n        - LabelText [ref=e37] clickable [cursor:pointer]\n          - StaticText \"Show Icon\"\n        - switch [checked=true, ref=e38]\n        - button \"Search Icons\" [ref=e39]\n          - image\n          - StaticText \"Search Icons\"\n        - button \"Generate Icon\" [ref=e40]\n          - image\n          - StaticText \"Generate Icon\"\n        - LabelText\n          - StaticText \"Size\"\n        - group\n          - generic\n            - button \"Decrease\" [ref=e49]\n              - image\n            - spinbutton [ref=e50]: 1\n              - StaticText \"1\"\n            - button \"Increase\" [ref=e51]\n              - image\n        - LabelText\n          - StaticText \"Color\"\n        - button [expanded=false, ref=e41]\n          - button [ref=e46]\n        - button [ref=e42]\n          - image\n        - LabelText\n          - StaticText \"Top\"\n        - group\n          - generic\n            - button \"Decrease\" [ref=e52]\n              - image\n            - spinbutton [ref=e53]: 0\n              - StaticText \"0\"\n            - button \"Increase\" [ref=e54]\n              - image\n        - LabelText\n          - StaticText \"Left\"\n        - group\n          - generic\n            - button \"Decrease\" [ref=e55]\n              - image\n            - spinbutton [ref=e56]: 0\n              - StaticText \"0\"\n            - button \"Increase\" [ref=e57]\n              - image\n      - heading \"Layout\" [level=3, ref=e25]\n        - button \"Layout\" [expanded=false, ref=e43]\n          - image\n          - StaticText \"Layout\"\n          - image\n      - heading \"Background\" [level=3, ref=e26]\n        - button \"Background\" [expanded=false, ref=e44]\n          - image\n          - StaticText \"Background\"\n          - image\n  - generic [ref=e3] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list\n- menu \"File\"\n  - menuitem \"Add Text\" [ref=e4]\n    - StaticText \"Add Text\"\n    - image\n  - separator\n  - menuitem \"Add Shape\" [ref=e5]\n    - StaticText \"Add Shape\"\n    - image\n  - separator\n  - menuitem \"Add Template\" [ref=e6]\n    - StaticText \"Add Template\"\n    - image\n  - separator\n  - menuitem \"Add Icon\" [ref=e7]\n    - StaticText \"Add Icon\"\n    - image\n  - separator\n  - menuitem \"Import Image\" [ref=e8]\n    - StaticText \"Import Image\"\n    - image\n  - separator\n  - menuitem \"Lock Selected\" [disabled, ref=e9]\n    - StaticText \"Lock Selected\"\n    - image\n  - menuitem \"Unlock All\" [ref=e10]\n    - StaticText \"Unlock All\"\n    - image\n  - separator\n  - menuitem \"Generate Icon\" [ref=e11]\n    - StaticText \"Generate Icon\"\n    - image",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

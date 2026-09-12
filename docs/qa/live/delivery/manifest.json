@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "session_id": "morrow-live",
+  "revision": 7,
+  "exported_at": "2026-09-12T12:37:33.119608Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v2",
+    "path": "artifacts/a-v2.png",
+    "sha256": "666eb20feaf67ee3bc4a1c879f5c551a55998bf2b257d5e52c0b142e599ab519",
+    "image": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1572516
+    },
+    "prompt": "Edit the supplied parent logo a-v1; do not recreate an unrelated logo.\nRequested changes: Preserve the M silhouette, exact Morrow Studio wordmark, spacing and arrangement. Change only the ink to uniform solid navy #183A56. Replace all transparent canvas pixels with an opaque pure white background. Remove gradients and shadows; no transparency anywhere.. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent.\nCreate one combination logo for Morrow Studio. Industry: Sustainable brand and product design studio. Audience: Independent businesses seeking thoughtful contemporary design.\nExact text (copy verbatim, no other words): 'Morrow Studio'. Exact slogan: ''.\nStyles: minimal, geometric, calm. Palette: #174C3C.\nAvoid: gradients, shadows, mockups, extra lettering. Use cases: website header, business card.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Geometric M, selected concept A. Assumptions: Fictional demonstration brand; no slogan requested.\n\nFinal edit overrides: navy #183A56 replaces the original green palette. The requested changes take precedence over the historical brief. The entire background must be solid opaque white, including the gaps inside the symbol. Do not return transparent pixels.\n",
+    "parent_id": "a-v1",
+    "created_at": "2026-09-12T12:26:43.209620Z",
+    "review": {
+      "reviewer": "Codex coordinator / live native-image QA",
+      "notes": "Actual generated A-v2 and Chrome comparison page inspected. Exact Morrow Studio lettering, centered margins and recognizable M preserved overall. Navy and opaque white background applied; alpha decoder reports 255 everywhere. At 256 CSS px the wordmark is legible for the intended web usage; 48 px requires a separate icon variant. Right inner curvature and tiny tonal texture differ from A-v1; this is an acceptable fictional raster demo, not pixel-identical or vector geometry. No user-brand approval is claimed.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-12T12:37:32.783527Z"
+  },
+  "brief": {
+    "brand_name": "Morrow Studio",
+    "exact_text": "Morrow Studio",
+    "industry": "Sustainable brand and product design studio",
+    "audience": "Independent businesses seeking thoughtful contemporary design",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "minimal",
+      "geometric",
+      "calm"
+    ],
+    "palette": [
+      "#174C3C"
+    ],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "website header",
+      "business card"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; no slogan requested"
+    ],
+    "background": "opaque",
+    "concept_count": 2
+  },
+  "media_kind": "raster",
+  "transparency_verified": false
+}

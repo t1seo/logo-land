@@ -1,0 +1,30 @@
+{
+  "id": "c7957dac-dfb4-4f86-bbad-e2fac47a86b6",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/templates",
+    "refs": {
+      "e1": {
+        "name": "Save changes?",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Save Changes",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Discard",
+        "role": "button"
+      },
+      "e4": {
+        "name": "Close",
+        "role": "button"
+      }
+    },
+    "snapshot": "- dialog \"Save changes?\"\n  - heading \"Save changes?\" [level=2, ref=e1]\n  - button \"Save Changes\" [ref=e2]\n    - image\n    - StaticText \"Save Changes\"\n  - button \"Discard\" [ref=e3]\n    - image\n    - StaticText \"Discard\"\n  - button \"Close\" [ref=e4]\n    - image\n    - StaticText \"Close\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

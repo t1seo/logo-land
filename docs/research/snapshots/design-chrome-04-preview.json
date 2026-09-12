@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Media Arch Studio Logo Logo Maker | Design.com\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n+\t\t\t\t\t\t406 container\n+\t\t\t\t\t\t\t407 button Close\n+\t\t\t\t\t\t\t408 heading Check out how your logo could look, Value: 2\n+\t\t\t\t\t\t\t\t409 text Check out how your logo could look\n+\t\t\t\t\t\t\t410 image\n+\t\t\t\t\t\t\t411 image\n+\t\t\t\t\t\t\t412 image\n+\t\t\t\t\t\t\t413 image\n+\t\t\t\t\t\t\t414 image\n+\t\t\t\t\t\t\t415 button Keep Editing\n+\t\t\t\t\t\t\t416 button Proceed To Download\nThe focused UI element is 367 button Preview"
+}

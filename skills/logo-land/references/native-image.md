@@ -1,0 +1,47 @@
+# Native image tool contract
+
+Use the image tool actually exposed by the host. In the development host the callable tool is `image_gen__imagegen`; tool naming and availability can differ. Read its live schema before invocation. Do not install a fake MCP server for this built-in capability.
+
+The observed schema accepts `prompt`, `referenced_image_paths`, and `num_last_images_to_include` only. Desired size, alpha background, and visual style belong in the prompt when no corresponding tool parameter exists. `model`, `quality`, `size`, `background`, `out`, and Responses API IDs are not parameters of this observed built-in tool.
+
+| Intent | Reference handling |
+|---|---|
+| New image without references | Omit both reference parameters. |
+| All references or edit targets have local paths | Inspect unseen images, then pass the exact `referenced_image_paths`. Label each image's role in the prompt. |
+| At least one required image only exists in the conversation | Use the smallest recent-image count containing all targets, within the current tool limit (5 in the development host). |
+| Required images cannot all be included | Ask for missing images to be attached again. |
+
+Never send both reference mechanisms together. A new design inspired by a reference remains a new design; an edit must identify the existing artifact whose identity is preserved.
+
+## Artifact handling
+
+Use the returned file path or actual returned image bytes. In hosts that save under `CODEX_HOME/generated_images`, identify the exact file from that call's result, then copy/import it into the workspace. Do not scan for “latest” files because concurrent sessions can generate unrelated images.
+
+If only a displayed preview is returned and there is no readable image artifact, explain the file-delivery limitation. Do not invent an absolute path. Copying image bytes does not require another generation request.
+
+For example, a concept prompt may be:
+
+```text
+Use case: logo-brand
+Asset: master brand logo, standalone image
+Brand: Morrow Studio, a sustainable design studio
+Type: combination mark
+Concept: an open geometric M with generous negative space
+Text (verbatim): "Morrow Studio"
+Style: flat, restrained, contemporary; clear at small sizes
+Palette: forest green #174C3C
+Composition: mark above a carefully spaced wordmark, wide clear margins
+Background: solid white
+Avoid: gradients, shadows, mockups, extra lettering, existing brand symbols
+```
+
+An edit prompt should say what changes and what stays:
+
+```text
+The supplied image is the edit target.
+Change only the green logo and lettering to deep navy #183A56.
+Keep the exact words, mark silhouette, composition, margins and white background.
+Return one standalone master logo image, not a comparison sheet or mockup.
+```
+
+The helper can propose a prompt; the assistant must execute the image call and save the actual prompt. It has no network image endpoint and requires no OpenAI API key. An API workflow is a separate user-selected integration, outside this plugin's built-in route.

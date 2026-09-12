@@ -1,0 +1,30 @@
+{
+  "id": "089a53b5-947e-46ca-90dc-3487e8ecaab6",
+  "ok": true,
+  "result": {
+    "origin": "https://www.fiverr.com/logo-maker",
+    "refs": {
+      "e1": {
+        "name": "It needs a human touch",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Human verification challenge",
+        "role": "Iframe"
+      },
+      "e3": {
+        "name": "Quick fixes",
+        "role": "heading"
+      },
+      "e4": {
+        "name": "Press & Hold",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - banner\n  - main\n    - figure\n      - image\n    - generic\n      - heading \"It needs a human touch\" [level=1, ref=e1]\n      - article\n        - paragraph\n          - StaticText \"Complete the task and we’ll get you right back into Fiverr.\"\n        - LineBreak \"\\n\"\n        - generic\n          - Iframe \"Human verification challenge\" [ref=e2]\n            - button \"Press & Hold\" [ref=e4]\n              - LayoutTable\n                - LayoutTable\n                  - paragraph\n                    - StaticText \"PRESS & HOLD\"\n                  - StaticText \"HUMAN CHALLENGE REQUIRES VERIFICATION. PLEASE PRESS AND HOLD THE BUTTON UNTIL VERIFIED\"\n          - alert\n        - LineBreak \"\\n\"\n        - generic\n          - heading \"Quick fixes\" [level=2, ref=e3]\n          - list\n            - listitem [level=1]\n              - ListMarker \"• \"\n              - StaticText \"Disable any browser extensions that could be interfering with the website. This includes Ad blockers, privacy extensions, or VPNs that may modify web traffic.\"\n            - listitem [level=1]\n              - ListMarker \"• \"\n              - StaticText \"Clear your browser's cache and cookies. Outdated or corrupt cache data can cause issues with how the webpage loads and operates.\"\n            - listitem [level=1]\n              - ListMarker \"• \"\n              - StaticText \"Make sure Javascript is enabled in your browser and update your browser to the latest version.\"\n        - LineBreak \"\\n\"\n        - code\n          - StaticText \"ERRCODE PXCR10002539\"\n        - paragraph\n          - StaticText \"Request details:\"\n        - list\n          - listitem [level=1]\n            - StaticText \"ip: 58.142.88.202\"\n          - listitem [level=1]\n            - StaticText \"traceId: 2c30e26c4d4d4f5fbd6b608703d45dd4\"",
+    "browserPageId": "187b995b-1439-4f7b-a530-bb33be18f680"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

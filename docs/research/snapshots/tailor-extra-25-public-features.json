@@ -1,0 +1,718 @@
+{
+  "id": "117ecf1a-7504-4cb5-8f43-26e5a64e2d93",
+  "ok": true,
+  "result": {
+    "origin": "https://www.tailorbrands.com/logo-maker",
+    "refs": {
+      "e1": {
+        "name": "Easily create a logo for your brand",
+        "role": "heading"
+      },
+      "e10": {
+        "name": "4. Sit back and wait",
+        "role": "heading"
+      },
+      "e100": {
+        "name": "Learn",
+        "role": "heading"
+      },
+      "e101": {
+        "name": "Language Switcher",
+        "role": "navigation"
+      },
+      "e102": {
+        "name": "Tailor Brands logo",
+        "role": "link"
+      },
+      "e103": {
+        "name": "Login",
+        "role": "link"
+      },
+      "e104": {
+        "name": "",
+        "role": "textbox"
+      },
+      "e105": {
+        "name": "",
+        "role": "textbox"
+      },
+      "e106": {
+        "name": "15 Iconic ’90’s Logos That Will Take You Back to the Future",
+        "role": "link"
+      },
+      "e107": {
+        "name": "A History of the Starbucks Logo",
+        "role": "link"
+      },
+      "e108": {
+        "name": "From Fruit to Fame: The Evolution of the Apple Logo​",
+        "role": "link"
+      },
+      "e109": {
+        "name": "Microsoft Logo History and Evolution",
+        "role": "link"
+      },
+      "e11": {
+        "name": "5. Customize your logo design",
+        "role": "heading"
+      },
+      "e110": {
+        "name": "Assembling the Pieces of Today’s LEGO Logo",
+        "role": "link"
+      },
+      "e111": {
+        "name": "The History and Evolution of the Pepsi Logo, Spanning 130+ Years",
+        "role": "link"
+      },
+      "e112": {
+        "name": "Adidas Logo History and Evolution",
+        "role": "link"
+      },
+      "e113": {
+        "name": "The Evolution of the Kodak Logo",
+        "role": "link"
+      },
+      "e114": {
+        "name": "The History and Evolution of Levi’s Logo",
+        "role": "link"
+      },
+      "e115": {
+        "name": "The History and Evolution of Walmart’s Logo",
+        "role": "link"
+      },
+      "e116": {
+        "name": "The History and Evolution of Renault’s Logo",
+        "role": "link"
+      },
+      "e117": {
+        "name": "The History and Evolution of the Disney Logo ",
+        "role": "link"
+      },
+      "e118": {
+        "name": "",
+        "role": "textbox"
+      },
+      "e119": {
+        "name": "Tailor Brands logo",
+        "role": "link"
+      },
+      "e12": {
+        "name": "6. Download your logo",
+        "role": "heading"
+      },
+      "e120": {
+        "name": "LLC services",
+        "role": "link"
+      },
+      "e121": {
+        "name": "Registered agent",
+        "role": "link"
+      },
+      "e122": {
+        "name": "EIN",
+        "role": "link"
+      },
+      "e123": {
+        "name": "Licenses & permits",
+        "role": "link"
+      },
+      "e124": {
+        "name": "Sales tax permit",
+        "role": "link"
+      },
+      "e125": {
+        "name": "Business insurance",
+        "role": "link"
+      },
+      "e126": {
+        "name": "Business banking",
+        "role": "link"
+      },
+      "e127": {
+        "name": "Logo maker",
+        "role": "link"
+      },
+      "e128": {
+        "name": "Domain",
+        "role": "link"
+      },
+      "e129": {
+        "name": "Website",
+        "role": "link"
+      },
+      "e13": {
+        "name": "100’s of design varations",
+        "role": "heading"
+      },
+      "e130": {
+        "name": "Business email",
+        "role": "link"
+      },
+      "e131": {
+        "name": "Taxes & accounting",
+        "role": "link"
+      },
+      "e132": {
+        "name": "Invoices & bookkeeping",
+        "role": "link"
+      },
+      "e133": {
+        "name": "Legal documents",
+        "role": "link"
+      },
+      "e134": {
+        "name": "Trademark",
+        "role": "link"
+      },
+      "e135": {
+        "name": "Business cards",
+        "role": "link"
+      },
+      "e136": {
+        "name": "Digital business card",
+        "role": "link"
+      },
+      "e137": {
+        "name": "Graphic design",
+        "role": "link"
+      },
+      "e138": {
+        "name": "Print store",
+        "role": "link"
+      },
+      "e139": {
+        "name": "Blog",
+        "role": "link"
+      },
+      "e14": {
+        "name": "High-resolution logo files",
+        "role": "heading"
+      },
+      "e140": {
+        "name": "Help center",
+        "role": "link"
+      },
+      "e141": {
+        "name": "Academy",
+        "role": "link"
+      },
+      "e142": {
+        "name": "LLC by state",
+        "role": "link"
+      },
+      "e143": {
+        "name": "Pricing",
+        "role": "link"
+      },
+      "e144": {
+        "name": "About",
+        "role": "link"
+      },
+      "e145": {
+        "name": "Careers",
+        "role": "link"
+      },
+      "e146": {
+        "name": "Affiliate program",
+        "role": "link"
+      },
+      "e147": {
+        "name": "Partner with us",
+        "role": "link"
+      },
+      "e148": {
+        "name": "Press",
+        "role": "link"
+      },
+      "e149": {
+        "name": "What is an LLC",
+        "role": "link"
+      },
+      "e15": {
+        "name": "Social media formats",
+        "role": "heading"
+      },
+      "e150": {
+        "name": "LLC costs",
+        "role": "link"
+      },
+      "e151": {
+        "name": "Types of LLC",
+        "role": "link"
+      },
+      "e152": {
+        "name": "Start a business",
+        "role": "link"
+      },
+      "e153": {
+        "name": "Español",
+        "role": "link"
+      },
+      "e154": {
+        "name": "Deutsch",
+        "role": "link"
+      },
+      "e155": {
+        "name": "Français",
+        "role": "link"
+      },
+      "e156": {
+        "name": "Italiano",
+        "role": "link"
+      },
+      "e157": {
+        "name": "Nederlands",
+        "role": "link"
+      },
+      "e158": {
+        "name": "Português (PT)",
+        "role": "link"
+      },
+      "e159": {
+        "name": "Português (BR)",
+        "role": "link"
+      },
+      "e16": {
+        "name": "Branded assets",
+        "role": "heading"
+      },
+      "e160": {
+        "name": "Create a logo",
+        "role": "button"
+      },
+      "e161": {
+        "name": "Create a logo",
+        "role": "button"
+      },
+      "e162": {
+        "name": "Create a logo",
+        "role": "button"
+      },
+      "e163": {
+        "name": "Facebook",
+        "role": "link"
+      },
+      "e164": {
+        "name": "Instagram",
+        "role": "link"
+      },
+      "e165": {
+        "name": "Pinterest",
+        "role": "link"
+      },
+      "e166": {
+        "name": "Twitter",
+        "role": "link"
+      },
+      "e167": {
+        "name": "YouTube",
+        "role": "link"
+      },
+      "e168": {
+        "name": "TikTok",
+        "role": "link"
+      },
+      "e169": {
+        "name": "Form an LLC",
+        "role": "link"
+      },
+      "e17": {
+        "name": "Customer support",
+        "role": "heading"
+      },
+      "e170": {
+        "name": "TOS",
+        "role": "link"
+      },
+      "e171": {
+        "name": "Privacy Policy",
+        "role": "link"
+      },
+      "e172": {
+        "name": "Cookie Policy",
+        "role": "link"
+      },
+      "e173": {
+        "name": "Do not sell my personal information",
+        "role": "link"
+      },
+      "e174": {
+        "name": "(332)-286-2770",
+        "role": "link"
+      },
+      "e175": {
+        "name": "Form an LLC",
+        "role": "link"
+      },
+      "e176": {
+        "name": "(332)-286-2770",
+        "role": "link"
+      },
+      "e18": {
+        "name": "Additional business tools",
+        "role": "heading"
+      },
+      "e19": {
+        "name": "What is a Logo?",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Your in-house logo designer",
+        "role": "heading"
+      },
+      "e20": {
+        "name": "Why is a logo important?",
+        "role": "heading"
+      },
+      "e21": {
+        "name": "What makes a good logo?",
+        "role": "heading"
+      },
+      "e22": {
+        "name": "Colors in logo design",
+        "role": "heading"
+      },
+      "e23": {
+        "name": "Different types of logos",
+        "role": "heading"
+      },
+      "e24": {
+        "name": "How to trademark a logo",
+        "role": "heading"
+      },
+      "e25": {
+        "name": "Logo mistakes to avoid",
+        "role": "heading"
+      },
+      "e26": {
+        "name": "Logo Color Combinations",
+        "role": "heading"
+      },
+      "e27": {
+        "name": "How to make a logo",
+        "role": "heading"
+      },
+      "e28": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e29": {
+        "name": "Tailor Brands Logo Maker",
+        "role": "heading"
+      },
+      "e3": {
+        "name": "FAQs",
+        "role": "heading"
+      },
+      "e30": {
+        "name": "Get your business started with a great logo!",
+        "role": "heading"
+      },
+      "e31": {
+        "name": "Designs created with our logo maker",
+        "role": "heading"
+      },
+      "e32": {
+        "name": "Why choose Tailor Brands’ Logo Maker",
+        "role": "heading"
+      },
+      "e33": {
+        "name": "What our customers say",
+        "role": "heading"
+      },
+      "e34": {
+        "name": "How to Make a Logo",
+        "role": "heading"
+      },
+      "e35": {
+        "name": "What is a Logo?",
+        "role": "link"
+      },
+      "e36": {
+        "name": "Why is a logo important?",
+        "role": "link"
+      },
+      "e37": {
+        "name": "What makes a good logo?",
+        "role": "link"
+      },
+      "e38": {
+        "name": "Colors in logo design",
+        "role": "link"
+      },
+      "e39": {
+        "name": "Different types of logos",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Logo design resources & tips",
+        "role": "heading"
+      },
+      "e40": {
+        "name": "How to trademark a logo",
+        "role": "link"
+      },
+      "e41": {
+        "name": "Logo mistakes to avoid",
+        "role": "link"
+      },
+      "e42": {
+        "name": "Logo Color Combinations",
+        "role": "link"
+      },
+      "e43": {
+        "name": "How to make a logo",
+        "role": "link"
+      },
+      "e44": {
+        "name": "Join hundreds of thousands of businesses that use our logo maker",
+        "role": "heading"
+      },
+      "e45": {
+        "name": "1 / 5",
+        "role": "link"
+      },
+      "e46": {
+        "name": "2 / 5",
+        "role": "link"
+      },
+      "e47": {
+        "name": "3 / 5",
+        "role": "link"
+      },
+      "e48": {
+        "name": "4 / 5",
+        "role": "link"
+      },
+      "e49": {
+        "name": "5 / 5",
+        "role": "link"
+      },
+      "e5": {
+        "name": "Read more logo posts on our blog",
+        "role": "heading"
+      },
+      "e50": {
+        "name": "1 / 5",
+        "role": "link"
+      },
+      "e51": {
+        "name": "2 / 5",
+        "role": "link"
+      },
+      "e52": {
+        "name": "3 / 5",
+        "role": "link"
+      },
+      "e53": {
+        "name": "4 / 5",
+        "role": "link"
+      },
+      "e54": {
+        "name": "5 / 5",
+        "role": "link"
+      },
+      "e55": {
+        "name": "1 / 5",
+        "role": "link"
+      },
+      "e56": {
+        "name": "2 / 5",
+        "role": "link"
+      },
+      "e57": {
+        "name": "3 / 5",
+        "role": "link"
+      },
+      "e58": {
+        "name": "4 / 5",
+        "role": "link"
+      },
+      "e59": {
+        "name": "5 / 5",
+        "role": "link"
+      },
+      "e6": {
+        "name": "LLC formation",
+        "role": "link"
+      },
+      "e60": {
+        "name": "Unique designs",
+        "role": "heading"
+      },
+      "e61": {
+        "name": "Easy and intuitive",
+        "role": "heading"
+      },
+      "e62": {
+        "name": "Fully customizable",
+        "role": "heading"
+      },
+      "e63": {
+        "name": "Loved by businesses",
+        "role": "heading"
+      },
+      "e64": {
+        "name": "reviews page",
+        "role": "link"
+      },
+      "e65": {
+        "name": "1. Know Your Brand Personality",
+        "role": "heading"
+      },
+      "e66": {
+        "name": "2. Analyze Your Competition",
+        "role": "heading"
+      },
+      "e67": {
+        "name": "3. Choose a Design Style",
+        "role": "heading"
+      },
+      "e68": {
+        "name": "4. Decide on a Type of Logo",
+        "role": "heading"
+      },
+      "e69": {
+        "name": "5. Pick Your Fonts Carefully",
+        "role": "heading"
+      },
+      "e7": {
+        "name": "1. Provide business details",
+        "role": "heading"
+      },
+      "e70": {
+        "name": "6. Choose Your Colors Wisely",
+        "role": "heading"
+      },
+      "e71": {
+        "name": "7. Keep it Simple",
+        "role": "heading"
+      },
+      "e72": {
+        "name": "8. Ask for Feedback",
+        "role": "heading"
+      },
+      "e73": {
+        "name": "15 Iconic ’90’s Logos That Will Take You Back to the Future",
+        "role": "link"
+      },
+      "e74": {
+        "name": "15 Iconic ’90’s Logos That Will Take You Back to the Future",
+        "role": "heading"
+      },
+      "e75": {
+        "name": "A History of the Starbucks Logo",
+        "role": "link"
+      },
+      "e76": {
+        "name": "A History of the Starbucks Logo",
+        "role": "heading"
+      },
+      "e77": {
+        "name": "From Fruit to Fame: The Evolution of the Apple Logo​",
+        "role": "link"
+      },
+      "e78": {
+        "name": "From Fruit to Fame: The Evolution of the Apple Logo​",
+        "role": "heading"
+      },
+      "e79": {
+        "name": "Microsoft Logo History and Evolution",
+        "role": "link"
+      },
+      "e8": {
+        "name": "2. Choose your logo style",
+        "role": "heading"
+      },
+      "e80": {
+        "name": "Microsoft Logo History and Evolution",
+        "role": "heading"
+      },
+      "e81": {
+        "name": "Assembling the Pieces of Today’s LEGO Logo",
+        "role": "link"
+      },
+      "e82": {
+        "name": "Assembling the Pieces of Today’s LEGO Logo",
+        "role": "heading"
+      },
+      "e83": {
+        "name": "The History and Evolution of the Pepsi Logo, Spanning 130+ Years",
+        "role": "link"
+      },
+      "e84": {
+        "name": "The History and Evolution of the Pepsi Logo, Spanning 130+ Years",
+        "role": "heading"
+      },
+      "e85": {
+        "name": "Adidas Logo History and Evolution",
+        "role": "link"
+      },
+      "e86": {
+        "name": "Adidas Logo History and Evolution",
+        "role": "heading"
+      },
+      "e87": {
+        "name": "The Evolution of the Kodak Logo",
+        "role": "link"
+      },
+      "e88": {
+        "name": "The Evolution of the Kodak Logo",
+        "role": "heading"
+      },
+      "e89": {
+        "name": "The History and Evolution of Levi’s Logo",
+        "role": "link"
+      },
+      "e9": {
+        "name": "3. Select your favorite fonts",
+        "role": "heading"
+      },
+      "e90": {
+        "name": "The History and Evolution of Levi’s Logo",
+        "role": "heading"
+      },
+      "e91": {
+        "name": "The History and Evolution of Walmart’s Logo",
+        "role": "link"
+      },
+      "e92": {
+        "name": "The History and Evolution of Walmart’s Logo",
+        "role": "heading"
+      },
+      "e93": {
+        "name": "The History and Evolution of Renault’s Logo",
+        "role": "link"
+      },
+      "e94": {
+        "name": "The History and Evolution of Renault’s Logo",
+        "role": "heading"
+      },
+      "e95": {
+        "name": "The History and Evolution of the Disney Logo ",
+        "role": "link"
+      },
+      "e96": {
+        "name": "The History and Evolution of the Disney Logo ",
+        "role": "heading"
+      },
+      "e97": {
+        "name": "Products",
+        "role": "heading"
+      },
+      "e98": {
+        "name": "Resources",
+        "role": "heading"
+      },
+      "e99": {
+        "name": "Company",
+        "role": "heading"
+      }
+    },
+    "snapshot": "- figure\n  - link \"Tailor Brands logo\" [ref=e102]\n    - image \"Tailor Brands logo\"\n- navigation\n  - list\n    - listitem [level=1]\n      - link \"Form an LLC\" [ref=e169]\n    - listitem [level=1]\n      - paragraph\n        - StaticText \"Services\"\n    - listitem [level=1]\n      - paragraph\n        - StaticText \"Resources\"\n    - listitem [level=1]\n      - paragraph\n        - StaticText \"Why Tailor Brands\"\n    - list\n      - listitem [level=2]\n        - image \"telephone icon\"\n        - link \"(332)-286-2770\" [ref=e174]\n  - generic\n    - figure\n      - image \"Tailor Brands logo\"\n    - list\n      - listitem [level=1]\n        - link \"Form an LLC\" [ref=e175]\n      - listitem [level=1]\n        - paragraph\n          - StaticText \"Services\"\n      - listitem [level=1]\n        - paragraph\n          - StaticText \"Resources\"\n      - listitem [level=1]\n        - paragraph\n          - StaticText \"Why Tailor Brands\"\n      - list\n        - listitem [level=2]\n          - image \"telephone icon\"\n          - link \"(332)-286-2770\" [ref=e176]\n- link \"Login\" [ref=e103]\n- heading \"Tailor Brands Logo Maker\" [level=1, ref=e29]\n- paragraph\n  - StaticText \"The easy way to a unique logo design. Our logo creator uses AI to create custom logos in just a few clicks. \"\n  - strong\n    - StaticText \"Try it for free!\"\n- form\n  - group \"Logo Maker\"\n    - Legend\n      - StaticText \"Logo Maker\"\n    - textbox [ref=e104]\n    - button \"Create a logo\" [ref=e160]\n- figure\n  - image \"GJ Jada example logo\"\n- generic\n  - generic\n    - link \"1 / 5\" [ref=e45]\n      - figure\n        - image \"logo example\"\n    - link \"2 / 5\" [ref=e46]\n      - figure\n        - image \"logo example\"\n    - link \"3 / 5\" [ref=e47]\n      - figure\n        - image \"logo example\"\n    - link \"4 / 5\" [ref=e48]\n      - figure\n        - image \"logo example\"\n    - link \"5 / 5\" [ref=e49]\n      - figure\n        - image \"logo example\"\n    - link \"1 / 5\" [ref=e50]\n      - figure\n        - image \"logo example\"\n    - link \"2 / 5\" [ref=e51]\n      - figure\n        - image \"logo example\"\n    - link \"3 / 5\" [ref=e52]\n      - figure\n        - image \"logo example\"\n    - link \"4 / 5\" [ref=e53]\n      - figure\n        - image \"logo example\"\n    - link \"5 / 5\" [ref=e54]\n      - figure\n        - image \"logo example\"\n    - link \"1 / 5\" [ref=e55]\n      - figure\n        - image \"logo example\"\n    - link \"2 / 5\" [ref=e56]\n      - figure\n        - image \"logo example\"\n    - link \"3 / 5\" [ref=e57]\n      - figure\n        - image \"logo example\"\n    - link \"4 / 5\" [ref=e58]\n      - figure\n        - image \"logo example\"\n    - link \"5 / 5\" [ref=e59]\n      - figure\n        - image \"logo example\"\n- heading \"Easily create a logo for your brand\" [level=2, ref=e1]\n- paragraph\n  - StaticText \"Use Tailor Brands’ logo generator to create beautiful custom logo designs in just a few minutes. Head over afterwards to our\"\n  - link \"LLC formation\" [ref=e6]\n  - StaticText \"page to officialize your business.\"\n- generic\n  - heading \"1. Provide business details\" [level=3, ref=e7]\n    - strong\n      - strong\n        - StaticText \"1. Provide business details\"\n  - paragraph\n    - StaticText \"Enter your company name and type of business, then tell us a little about what your business does.\"\n- generic\n  - heading \"2. Choose your logo style\" [level=3, ref=e8]\n    - strong\n      - strong\n        - strong\n          - StaticText \"2. Choose your logo style\"\n  - paragraph\n    - StaticText \"Select the type of logo that best suits your business; you can choose from a wordmark (logotype), monogram, or icon logo.\"\n- generic\n  - heading \"3. Select your favorite fonts\" [level=3, ref=e9]\n    - strong\n      - strong\n        - strong\n          - strong\n            - strong\n              - StaticText \"3. Select your favorite fonts\"\n  - paragraph\n    - StaticText \"Choose your favorite font styles to help our logo creator understand your brand personality better.\"\n- generic\n  - heading \"4. Sit back and wait\" [level=3, ref=e10]\n    - strong\n      - StaticText \"4. Sit back and wait\"\n  - paragraph\n    - StaticText \"Our logo generator will go to work and create a selection of unique logos. It takes less than 1 minute.\"\n- generic\n  - heading \"5. Customize your logo design\" [level=3, ref=e11]\n    - strong\n      - strong\n        - strong\n          - StaticText \"5. Customize your logo design\"\n  - paragraph\n    - StaticText \"Pick your favorite logo and then customize it. You can change the fonts, icons, and colors.\"\n- generic\n  - heading \"6. Download your logo\" [level=3, ref=e12]\n    - strong\n      - StaticText \"6. Download your logo\"\n  - paragraph\n    - StaticText \"Download a high-resolution file of your design – we provide Vector EPS, SVG, and PNG logo files.\"\n- heading \"Get your business started with a great logo!\" [level=2, ref=e30]\n  - strong\n    - strong\n      - strong\n        - StaticText \"Get your business started with a great logo!\"\n- form\n  - group \"Logo Maker\"\n    - Legend\n      - StaticText \"Logo Maker\"\n    - textbox [ref=e105]\n    - button \"Create a logo\" [ref=e161]\n- figure\n  - image \"Over 100K businesses formed\"\n- generic\n  - heading \"Designs created with our logo maker\" [level=2, ref=e31]\n  - figure\n    - figure\n    - figure\n    - figure\n    - figure\n    - figure\n    - figure\n    - figure\n    - figure\n    - figure\n    - figure\n- heading \"Your in-house logo designer\" [level=2, ref=e2]\n- paragraph\n  - StaticText \"Once you create a logo with our logo creator you get access to a full design studio. Here you will find a host of logo resources. It’s like having yourown professional designer.\"\n- paragraph\n  - strong\n    - strong\n      - StaticText \"Here is what you will find inside:\"\n- generic\n  - heading \"100’s of design varations\" [level=3, ref=e13]\n  - paragraph\n    - StaticText \"100s of different logos for you to choose from. With our logo maker you can customize and tweak all of the designs to get them just right for your brand.\"\n- generic\n  - heading \"High-resolution logo files\" [level=3, ref=e14]\n  - paragraph\n    - StaticText \"Vector EPS, SVG with a transparent background. With these files, you can use your logo anywhere – your website, billboards, vehicle signage, and more.\"\n- generic\n  - heading \"Social media formats\" [level=3, ref=e15]\n  - paragraph\n    - StaticText \"We provide you with 21 resizedversions of\"\n    - LineBreak \"\\n\"\n    - StaticText \"your logo that you can use across all the majorsocial media platforms. No need for a resize tool.\"\n- generic\n  - heading \"Branded assets\" [level=3, ref=e16]\n    - strong\n      - StaticText \"Branded assets\"\n  - paragraph\n    - StaticText \"When you design a logo, we also create a suite of branded assets (for free). You get a brand book, branded letterheads, seasonal logos, business cards, and more, to make your business look professional.\"\n- generic\n  - heading \"Customer support\" [level=3, ref=e17]\n  - paragraph\n    - StaticText \"If you have any questions about your account or need some technical help, our friendly and super knowledgeable customer service agents are ready and on hand to assist you.\"\n- generic\n  - heading \"Additional business tools\" [level=3, ref=e18]\n  - paragraph\n    - StaticText \"After you design a logo, you can build a beautiful website, create digital business cards, print branded merchandise, and even form an LLC all from your Tailor Brands studio.\"\n- generic\n  - heading \"Why choose Tailor Brands’ Logo Maker\" [level=2, ref=e32]\n  - paragraph\n    - StaticText \"At Tailor Brands, we love nothing more than seeing people bring their logo idea to life. And in the last five years, this passion has helped us become the leading automated logo design tool for side-hustlers, individuals, and small business owners.\"\n  - paragraph\n    - strong\n      - StaticText \"Here’s why people love making logos with us:\"\n  - generic\n    - heading \"Unique designs\" [level=3, ref=e60]\n    - paragraph\n      - StaticText \"We don’t use pre-made logo templates. Our logos are uniquely designed by our AI algorithm to match your business and brand identity perfectly.\"\n  - generic\n    - heading \"Easy and intuitive\" [level=3, ref=e61]\n    - paragraph\n      - StaticText \"Our products are user friendly, you don’t need any design skills to create your own logo. Just follow 6 steps to bring your brand to life with an awesome logo.\"\n  - generic\n    - heading \"Fully customizable\" [level=3, ref=e62]\n      - strong\n        - StaticText \"Fully customizable\"\n    - paragraph\n      - StaticText \"You have complete control when it comes to customizing your logo design. In the logo editor you can change all of the elements such as colors, fonts, and icons.\"\n  - generic\n    - heading \"Loved by businesses\" [level=3, ref=e63]\n      - strong\n        - StaticText \"Loved by businesses\"\n    - paragraph\n      - StaticText \"We are the go-to logo generator for millions of businesses. Our algorithm matches fonts and colors and analyzes current design trends to create beautiful logos.\"\n- heading \"What our customers say\" [level=2, ref=e33]\n- paragraph\n  - StaticText \"For more reviews from our customers, visit our\"\n  - link \"reviews page\" [ref=e64]\n  - StaticText \".\"\n- generic\n  - image\n  - paragraph\n    - strong\n      - StaticText \"Brent Martin\"\n  - figure\n  - paragraph\n    - StaticText \"makemoneywithbrent\"\n  - paragraph\n    - StaticText \"An exceptional, easy to use logo creator, that can build you the perfect logo in a matter of seconds.\"\n- generic\n  - generic\n    - image \"Michael Review of Tailor Brands\"\n    - image\n  - paragraph\n    - strong\n      - strong\n        - StaticText \"Michael Berner\"\n  - figure\n  - paragraph\n    - StaticText \"Tycoonist.co\"\n  - paragraph\n    - StaticText \"As someone who agonized endlessly over logos for my brands, just do yourself a favor and take 5 minutes to use Tailor Brands.\"\n- generic\n  - generic\n    - image \"Paul Review of Tailor Brands\"\n    - image\n  - paragraph\n    - strong\n      - strong\n        - StaticText \"Paul Mendes\"\n  - figure\n  - paragraph\n    - StaticText \"Profitable Freelancer\"\n  - paragraph\n    - StaticText \"The Tailor Brands logo maker is easy to use and makes the entire process fun! It helped me bring my business idea to life.\"\n- generic\n  - generic\n    - image \"Temera Review of Tailor Brands\"\n    - image\n  - paragraph\n    - strong\n      - strong\n        - StaticText \"Temera Stallworth\"\n  - figure\n  - paragraph\n    - StaticText \"616 Mink Studios\"\n  - paragraph\n    - StaticText \"I needed a new logo and Tailor Brands’ logo tool was amazing. It’s really easy, so I really do love it. I used their logo maker to edit and see what other logos I can create.\"\n- generic\n  - generic\n    - image \"La'Stephanie Review of Tailor Brands\"\n    - image\n  - paragraph\n    - strong\n      - strong\n        - StaticText \"La’Stephanie Brandon\"\n  - figure\n  - paragraph\n    - StaticText \"@creaLAtive\"\n  - paragraph\n    - StaticText \"Tailorbrands is an intuitive artificial intelligence software that understands what you are looking for in a logo/brand. And it has all the necessary business tools you need to succeed.\"\n- generic\n  - generic\n    - image \"Daniela Review of Tailor Brands\"\n    - image\n  - paragraph\n    - strong\n      - strong\n        - StaticText \"Daniela Schrittenlocher\"\n  - figure\n  - paragraph\n    - StaticText \"ELAS Marketing Services LLC\"\n  - paragraph\n    - StaticText \"Tailor Brands is such an easy-to-use tool, anyone can create their own logo and branding with it. Best part, it incorporates current trends in their designs and gives great inspiration. It took me less than 15 minutes to find what I like.\"\n- generic\n  - generic\n    - image \"Tiara Review of Tailor Brands\"\n    - image\n  - paragraph\n    - strong\n      - strong\n        - StaticText \"Tiara Skiner\"\n  - figure\n  - paragraph\n    - StaticText \"Barre Level Fitness\"\n  - paragraph\n    - StaticText \"I created my brand with Tailor Brands and I am\"\n    - LineBreak \"\\n\"\n    - StaticText \"very satisfied with everything that they’ve done\"\n    - LineBreak \"\\n\"\n    - StaticText \"for me – creating my logo, as well as creating my website, and I recommend them to anyone and everyone.\"\n- heading \"FAQs\" [level=2, ref=e3]\n- generic\n  - strong\n    - StaticText \"Can I trademark my logo?\"\n  - paragraph\n    - StaticText \"Yes. If you want to trademark your logo, Tailor Brands provides this service for all of our customers. Please note that this is an additional cost.\"\n- generic\n  - strong\n    - StaticText \"Can I customize my design?\"\n  - paragraph\n    - StaticText \"Yes, you can customize your logo. After it’s created, you will get access to the editor studio, where you can easily change all elements just like a professional designer.\"\n- generic\n  - strong\n    - strong\n      - strong\n        - strong\n          - StaticText \"When can I start using my logo?\"\n  - paragraph\n    - StaticText \"Straightaway! Once you design your logo it’s available for immediate use. Simply go to your design studio dashboard in your Tailor Brands account and download.\"\n- generic\n  - strong\n    - StaticText \"Can I edit my logo after downloading?\"\n  - paragraph\n    - StaticText \"Yes, once you have Tailor Brands account, you will have access your editing studio. Your logo designs are stored here, and you can edit and change them at any time.\"\n- generic\n  - strong\n    - StaticText \"Do I own the rights to my logo?\"\n  - paragraph\n    - StaticText \"Yes, you have full commercial rights. Once you make a logo (and purchase) it’s 100% yours to do as you please.\"\n- generic\n  - strong\n    - strong\n      - StaticText \"Is this a free logo maker?\"\n  - paragraph\n    - StaticText \"You can make a logo for free and download a low-resolution version. However, if you want a high-res Vector file, you will need to pay. But, only if you are 100% happy!\"\n- generic\n  - heading \"How to Make a Logo\" [level=2, ref=e34]\n  - paragraph\n    - StaticText \"The beauty of an automated logo generator is that you don’t need any skills to design a logo. However, understanding some logo design basics will enable you to customize and tweak your logo if you choose to do so.\"\n  - generic\n    - heading \"1. Know Your Brand Personality\" [level=3, ref=e65]\n    - paragraph\n      - StaticText \"You should have a clear idea of the brand personality you want to convey before you start designing a company logo. Your personality will inform every element of your logo design.\"\n  - generic\n    - heading \"2. Analyze Your Competition\" [level=3, ref=e66]\n    - paragraph\n      - StaticText \"Look to your competitors and other businesses that target the same audience as you. See if you can spot patterns in colors, font types, icons, etc.; the aim is not to copy but to gain inspiration and insights.\"\n  - generic\n    - heading \"3. Choose a Design Style\" [level=3, ref=e67]\n      - strong\n        - StaticText \"3. Choose a Design Style\"\n    - paragraph\n      - StaticText \"There are different logo styles: classic or vintage, fun and quirky, modern and minimal, or handcrafted. No one style is right or wrong. It depends on the brand personality your want to convey.\"\n  - generic\n    - heading \"4. Decide on a Type of Logo\" [level=3, ref=e68]\n      - strong\n        - StaticText \"4. Decide on a Type of Logo\"\n    - paragraph\n      - StaticText \"Logo designs usually fall under two categories – icon-based logos and wordmark logos. Many people prefer a simple wordmark logo consisting of words only, while others add an icon plus words.\"\n  - generic\n    - heading \"5. Pick Your Fonts Carefully\" [level=3, ref=e69]\n    - paragraph\n      - StaticText \"There are different logo styles: classic or vintage, fun and quirky, modern and minimal, or handcrafted. No one style is right or wrong. It depends on the brand personality your want to convey.\"\n  - generic\n    - heading \"6. Choose Your Colors Wisely\" [level=3, ref=e70]\n    - paragraph\n      - StaticText \"Color plays a significant role in conveying your brand personality – they have meaning. For example, red conveys energy, warmth, romance, passion, excitement. So, like fonts, choose colors that match your brand image.\"\n  - generic\n    - heading \"7. Keep it Simple\" [level=3, ref=e71]\n    - paragraph\n      - StaticText \"When it comes to creating a professional logo, less is more. Keep the design simple. Don’t use too many colors or fonts, and make sure the elements that you use complement each other.\"\n  - generic\n    - heading \"8. Ask for Feedback\" [level=3, ref=e72]\n    - paragraph\n      - StaticText \"You should always create multiple iterations of your logo design and ask your friends, family, and audience (if possible) for feedback. This will help determine which of your final designs is the winner.\"\n- heading \"Logo design resources & tips\" [level=2, ref=e4]\n- generic\n  - heading \"What is a Logo?\" [level=3, ref=e19]\n    - link \"What is a Logo?\" [ref=e35]\n  - paragraph\n    - StaticText \"When it comes to creating a professional logo, less is more. Keep the design simple. Don’t use too many colors or fonts, and make sure the elements that you use complement each other.\"\n- generic\n  - heading \"Why is a logo important?\" [level=3, ref=e20]\n    - link \"Why is a logo important?\" [ref=e36]\n  - paragraph\n    - StaticText \"Legitimate question! Learn how your logo design can have a positive (or negative) impact on your business, and what you should look out for in the logo creation process.\"\n- generic\n  - heading \"What makes a good logo?\" [level=3, ref=e21]\n    - link \"What makes a good logo?\" [ref=e37]\n  - paragraph\n    - StaticText \"This quick read will give you the 5 main attributes that make up a strong logo, so you can learn how to create a logo that uses best practices.\"\n- generic\n  - heading \"Colors in logo design\" [level=3, ref=e22]\n    - link \"Colors in logo design\" [ref=e38]\n  - paragraph\n    - StaticText \"The colors you choose can make or break the success of your company logo. Read about color psychology so you make informed decisions before you start designing.\"\n- generic\n  - heading \"Different types of logos\" [level=3, ref=e23]\n    - link \"Different types of logos\" [ref=e39]\n  - paragraph\n    - StaticText \"There are different types of logos – word mark logos, initial-based logos or icon-based logo. Here’s a breakdown of what that means and how to make the best choice for you.\"\n- generic\n  - heading \"How to trademark a logo\" [level=3, ref=e24]\n    - link \"How to trademark a logo\" [ref=e40]\n  - paragraph\n    - StaticText \"Protect your logo design from copycats! Here’s how to trademark your design and start your business on the right foot.\"\n- generic\n  - heading \"Logo mistakes to avoid\" [level=3, ref=e25]\n    - link \"Logo mistakes to avoid\" [ref=e41]\n  - paragraph\n    - StaticText \"Learn about the main logo design mistakes people when designing a logo and how to avoid them.\"\n- generic\n  - heading \"Logo Color Combinations\" [level=3, ref=e26]\n    - link \"Logo Color Combinations\" [ref=e42]\n  - paragraph\n    - StaticText \"Inspiration alert! Check out over 50 logo color combinations that will help you get an idea of what your own logo could look like.\"\n- generic\n  - heading \"How to make a logo\" [level=3, ref=e27]\n    - link \"How to make a logo\" [ref=e43]\n  - paragraph\n    - StaticText \"Use this step-by-step walkthrough to help you feel confident about designing your logo when you’re ready.\"\n- heading \"Read more logo posts on our blog\" [level=2, ref=e5]\n- list\n  - listitem [level=1]\n    - figure\n      - link \"15 Iconic ’90’s Logos That Will Take You Back to the Future\" [ref=e73]\n        - image \"15 Iconic ’90’s Logos That Will Take You Back to the Future\"\n    - heading \"15 Iconic ’90’s Logos That Will Take You Back to the Future\" [level=6, ref=e74]\n      - link \"15 Iconic ’90’s Logos That Will Take You Back to the Future\" [ref=e106]\n  - listitem [level=1]\n    - figure\n      - link \"A History of the Starbucks Logo\" [ref=e75]\n        - image \"A History of the Starbucks Logo\"\n    - heading \"A History of the Starbucks Logo\" [level=6, ref=e76]\n      - link \"A History of the Starbucks Logo\" [ref=e107]\n  - listitem [level=1]\n    - figure\n      - link \"From Fruit to Fame: The Evolution of the Apple Logo\" [ref=e77]\n        - image \"From Fruit to Fame: The Evolution of the Apple Logo\"\n    - heading \"From Fruit to Fame: The Evolution of the Apple Logo\" [level=6, ref=e78]\n      - link \"From Fruit to Fame: The Evolution of the Apple Logo\" [ref=e108]\n  - listitem [level=1]\n    - figure\n      - link \"Microsoft Logo History and Evolution\" [ref=e79]\n        - image \"Microsoft Logo History and Evolution\"\n    - heading \"Microsoft Logo History and Evolution\" [level=6, ref=e80]\n      - link \"Microsoft Logo History and Evolution\" [ref=e109]\n  - listitem [level=1]\n    - figure\n      - link \"Assembling the Pieces of Today’s LEGO Logo\" [ref=e81]\n        - image \"Assembling the Pieces of Today’s LEGO Logo\"\n    - heading \"Assembling the Pieces of Today’s LEGO Logo\" [level=6, ref=e82]\n      - link \"Assembling the Pieces of Today’s LEGO Logo\" [ref=e110]\n  - listitem [level=1]\n    - figure\n      - link \"The History and Evolution of the Pepsi Logo, Spanning 130+ Years\" [ref=e83]\n        - image \"The History and Evolution of the Pepsi Logo, Spanning 130+ Years\"\n    - heading \"The History and Evolution of the Pepsi Logo, Spanning 130+ Years\" [level=6, ref=e84]\n      - link \"The History and Evolution of the Pepsi Logo, Spanning 130+ Years\" [ref=e111]\n  - listitem [level=1]\n    - figure\n      - link \"Adidas Logo History and Evolution\" [ref=e85]\n        - image \"Adidas Logo History and Evolution\"\n    - heading \"Adidas Logo History and Evolution\" [level=6, ref=e86]\n      - link \"Adidas Logo History and Evolution\" [ref=e112]\n  - listitem [level=1]\n    - figure\n      - link \"The Evolution of the Kodak Logo\" [ref=e87]\n        - image \"The Evolution of the Kodak Logo\"\n    - heading \"The Evolution of the Kodak Logo\" [level=6, ref=e88]\n      - link \"The Evolution of the Kodak Logo\" [ref=e113]\n  - listitem [level=1]\n    - figure\n      - link \"The History and Evolution of Levi’s Logo\" [ref=e89]\n        - image \"The History and Evolution of Levi’s Logo\"\n    - heading \"The History and Evolution of Levi’s Logo\" [level=6, ref=e90]\n      - link \"The History and Evolution of Levi’s Logo\" [ref=e114]\n  - listitem [level=1]\n    - figure\n      - link \"The History and Evolution of Walmart’s Logo\" [ref=e91]\n        - image \"The History and Evolution of Walmart’s Logo\"\n    - heading \"The History and Evolution of Walmart’s Logo\" [level=6, ref=e92]\n      - link \"The History and Evolution of Walmart’s Logo\" [ref=e115]\n  - listitem [level=1]\n    - figure\n      - link \"The History and Evolution of Renault’s Logo\" [ref=e93]\n        - image \"The History and Evolution of Renault’s Logo\"\n    - heading \"The History and Evolution of Renault’s Logo\" [level=6, ref=e94]\n      - link \"The History and Evolution of Renault’s Logo\" [ref=e116]\n  - listitem [level=1]\n    - figure\n      - link \"The History and Evolution of the Disney Logo\" [ref=e95]\n        - image \"The History and Evolution of the Disney Logo\"\n    - heading \"The History and Evolution of the Disney Logo\" [level=6, ref=e96]\n      - link \"The History and Evolution of the Disney Logo\" [ref=e117]\n- generic\n  - heading \"Join hundreds of thousands of businesses that use our logo maker\" [level=2, ref=e44]\n    - StaticText \"Join hundreds of thousands of businesses\"\n    - LineBreak \"\\n\"\n    - StaticText \"that use our logo maker\"\n  - form\n    - group \"Logo Maker Centered\"\n      - Legend\n        - StaticText \"Logo Maker Centered\"\n      - textbox [ref=e118]\n      - button \"Create a logo\" [ref=e162]\n- contentinfo\n  - generic\n    - figure\n      - link \"Tailor Brands logo\" [ref=e119]\n        - image \"Tailor Brands logo\"\n    - generic\n      - emphasis\n        - StaticText \"Tailor Brands is a technology company and is not a bank. Banking services are provided by our banking providers\"\n      - StaticText \". \"\n      - emphasis\n        - StaticText \"Tailor Brands is also not a law firm, and the information on this website does not constitute legal advice.\"\n  - generic\n    - heading \"Products\" [level=6, ref=e97]\n    - generic\n      - link \"LLC services\" [ref=e120]\n      - LineBreak \"\\n\"\n      - link \"Registered agent\" [ref=e121]\n      - LineBreak \"\\n\"\n      - link \"EIN\" [ref=e122]\n      - LineBreak \"\\n\"\n      - link \"Licenses & permits\" [ref=e123]\n      - LineBreak \"\\n\"\n      - link \"Sales tax permit\" [ref=e124]\n      - LineBreak \"\\n\"\n      - link \"Business insurance\" [ref=e125]\n      - LineBreak \"\\n\"\n      - link \"Business banking\" [ref=e126]\n      - LineBreak \"\\n\"\n      - link \"Logo maker\" [ref=e127]\n      - LineBreak \"\\n\"\n      - link \"Domain\" [ref=e128]\n      - LineBreak \"\\n\"\n      - link \"Website\" [ref=e129]\n      - LineBreak \"\\n\"\n      - link \"Business email\" [ref=e130]\n      - LineBreak \"\\n\"\n      - link \"Taxes & accounting\" [ref=e131]\n      - LineBreak \"\\n\"\n      - link \"Invoices & bookkeeping\" [ref=e132]\n      - LineBreak \"\\n\"\n      - link \"Legal documents\" [ref=e133]\n      - LineBreak \"\\n\"\n      - link \"Trademark\" [ref=e134]\n      - LineBreak \"\\n\"\n      - link \"Business cards\" [ref=e135]\n      - LineBreak \"\\n\"\n      - link \"Digital business card\" [ref=e136]\n      - LineBreak \"\\n\"\n      - link \"Graphic design\" [ref=e137]\n      - LineBreak \"\\n\"\n      - link \"Print store\" [ref=e138]\n  - generic\n    - heading \"Resources\" [level=6, ref=e98]\n    - generic\n      - link \"Blog\" [ref=e139]\n      - LineBreak \"\\n\"\n      - link \"Help center\" [ref=e140]\n      - LineBreak \"\\n\"\n      - link \"Academy\" [ref=e141]\n      - LineBreak \"\\n\"\n      - link \"LLC by state\" [ref=e142]\n      - LineBreak \"\\n\"\n      - link \"Pricing\" [ref=e143]\n    - heading \"Company\" [level=6, ref=e99]\n    - generic\n      - link \"About\" [ref=e144]\n      - LineBreak \"\\n\"\n      - link \"Careers\" [ref=e145]\n      - LineBreak \"\\n\"\n      - link \"Affiliate program\" [ref=e146]\n      - LineBreak \"\\n\"\n      - link \"Partner with us\" [ref=e147]\n      - LineBreak \"\\n\"\n      - link \"Press\" [ref=e148]\n    - heading \"Learn\" [level=6, ref=e100]\n    - generic\n      - link \"What is an LLC\" [ref=e149]\n      - LineBreak \"\\n\"\n      - link \"LLC costs\" [ref=e150]\n      - LineBreak \"\\n\"\n      - link \"Types of LLC\" [ref=e151]\n      - LineBreak \"\\n\"\n      - link \"Start a business\" [ref=e152]\n  - generic\n    - list\n      - listitem [level=1]\n        - link \"Facebook\" [ref=e163]\n          - StaticText \"Facebook\"\n      - listitem [level=1]\n        - link \"Instagram\" [ref=e164]\n          - StaticText \"Instagram\"\n      - listitem [level=1]\n        - link \"Pinterest\" [ref=e165]\n          - StaticText \"Pinterest\"\n      - listitem [level=1]\n        - link \"Twitter\" [ref=e166]\n          - StaticText \"Twitter\"\n      - listitem [level=1]\n        - link \"YouTube\" [ref=e167]\n          - StaticText \"YouTube\"\n      - listitem [level=1]\n        - link \"TikTok\" [ref=e168]\n          - StaticText \"TikTok\"\n    - navigation \"Language Switcher\" [ref=e101]\n      - StaticText \"English\"\n      - link \"Español\" [ref=e153]\n        - StaticText \"Español\"\n      - link \"Deutsch\" [ref=e154]\n        - StaticText \"Deutsch\"\n      - link \"Français\" [ref=e155]\n        - StaticText \"Français\"\n      - link \"Italiano\" [ref=e156]\n        - StaticText \"Italiano\"\n      - link \"Nederlands\" [ref=e157]\n        - StaticText \"Nederlands\"\n      - link \"Português (PT)\" [ref=e158]\n        - StaticText \"Português (PT)\"\n      - link \"Português (BR)\" [ref=e159]\n        - StaticText \"Português (BR)\"\n  - StaticText \"©2026 Copyright Tailor Brands\"\n  - generic\n    - link \"TOS\" [ref=e170]\n    - link \"Privacy Policy\" [ref=e171]\n    - link \"Cookie Policy\" [ref=e172]\n    - link \"Do not sell my personal information\" [ref=e173]\n- dialog \"Dynamic panel\"\n- button \"Open Intercom Messenger\" [expanded=false, ref=e28]\n  - image",
+    "browserPageId": "df8c8e30-42cb-45dc-a562-bf569f1af20a"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

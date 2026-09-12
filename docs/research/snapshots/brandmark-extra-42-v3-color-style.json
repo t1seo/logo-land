@@ -1,0 +1,154 @@
+{
+  "id": "a13d3288-73bf-443c-a68e-aad67943e40e",
+  "ok": true,
+  "result": {
+    "origin": "https://app.brandmark.io/v3/",
+    "refs": {
+      "e1": {
+        "name": "",
+        "role": "button"
+      },
+      "e10": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e11": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e12": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e13": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e14": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e15": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e16": {
+        "name": "BRAND NAME",
+        "role": "heading"
+      },
+      "e17": {
+        "name": "Brand name",
+        "role": "textbox"
+      },
+      "e18": {
+        "name": "Slogan (optional)",
+        "role": "textbox"
+      },
+      "e19": {
+        "name": "BRAND KEYWORDS",
+        "role": "heading"
+      },
+      "e2": {
+        "name": "Keyword Ideas",
+        "role": "heading"
+      },
+      "e20": {
+        "name": "   Back",
+        "role": "button"
+      },
+      "e21": {
+        "name": "×",
+        "role": "link"
+      },
+      "e22": {
+        "name": "",
+        "role": "textbox"
+      },
+      "e23": {
+        "name": "COLOR STYLE",
+        "role": "heading"
+      },
+      "e24": {
+        "name": "   Back",
+        "role": "button"
+      },
+      "e25": {
+        "name": "GENERATING LOGOS",
+        "role": "heading"
+      },
+      "e26": {
+        "name": "See examples",
+        "role": "button"
+      },
+      "e27": {
+        "name": "robot",
+        "role": "button"
+      },
+      "e28": {
+        "name": "rocket",
+        "role": "button"
+      },
+      "e29": {
+        "name": "planet",
+        "role": "button"
+      },
+      "e3": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e30": {
+        "name": "flower",
+        "role": "button"
+      },
+      "e31": {
+        "name": "organic",
+        "role": "button"
+      },
+      "e32": {
+        "name": "heart",
+        "role": "button"
+      },
+      "e33": {
+        "name": "tree",
+        "role": "button"
+      },
+      "e34": {
+        "name": "animal",
+        "role": "button"
+      },
+      "e35": {
+        "name": "abstract",
+        "role": "button"
+      },
+      "e4": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e5": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e6": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e7": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e8": {
+        "name": "",
+        "role": "LabelText"
+      },
+      "e9": {
+        "name": "",
+        "role": "LabelText"
+      }
+    },
+    "snapshot": "- generic\n  - generic\n    - heading \"BRAND NAME\" [level=2, ref=e16]\n    - paragraph\n      - StaticText \"The best brand names are short, memorable and easy to Google\"\n    - paragraph\n      - generic\n        - image\n        - StaticText \"  Login\"\n    - generic\n      - textbox \"Brand name\" [ref=e17]: Morrow Studio\n        - StaticText \"Morrow Studio\"\n      - textbox \"Slogan (optional)\" [ref=e18]\n  - generic\n    - heading \"BRAND KEYWORDS\" [level=2, ref=e19]\n    - paragraph\n      - StaticText \"Enter a few words that describe your brand.\"\n    - paragraph\n      - StaticText \"Not sure what to use?  \"\n      - button \"See examples\" [ref=e26]\n    - button \"   Back\" [ref=e20]\n      - image\n      - StaticText \"   Back\"\n    - generic\n      - StaticText \"leaf\"\n      - link \"×\" [ref=e21]\n        - StaticText \"×\"\n      - textbox [ref=e22]: sustainable design studio forest minimal\n        - StaticText \"sustainable design studio forest minimal\"\n    - heading \"Keyword Ideas\" [level=3, ref=e2]\n    - list\n      - listitem [level=1]\n        - button \"robot\" [ref=e27]\n      - listitem [level=1]\n        - button \"rocket\" [ref=e28]\n      - listitem [level=1]\n        - button \"planet\" [ref=e29]\n      - listitem [level=1]\n        - button \"flower\" [ref=e30]\n      - listitem [level=1]\n        - button \"organic\" [ref=e31]\n      - listitem [level=1]\n        - button \"heart\" [ref=e32]\n      - listitem [level=1]\n        - button \"tree\" [ref=e33]\n      - listitem [level=1]\n        - button \"animal\" [ref=e34]\n      - listitem [level=1]\n        - button \"abstract\" [ref=e35]\n  - generic\n    - heading \"COLOR STYLE\" [level=2, ref=e23]\n    - paragraph\n      - StaticText \"Please select one color or color style\"\n    - button \"   Back\" [ref=e24]\n      - image\n      - StaticText \"   Back\"\n    - LabelText [ref=e3] clickable [cursor:pointer]\n      - StaticText \"Simple\"\n    - LabelText [ref=e4] clickable [cursor:pointer]\n      - StaticText \"Vibrant\"\n    - LabelText [ref=e5] clickable [cursor:pointer]\n      - StaticText \"Organic\"\n    - LabelText [ref=e6] clickable [cursor:pointer]\n      - StaticText \"High Contrast\"\n    - LabelText [ref=e7] clickable [cursor:pointer]\n      - StaticText \"Dark\"\n    - LabelText [ref=e8] clickable [cursor:pointer]\n      - StaticText \"Soft Pastel\"\n    - LabelText [ref=e9] clickable [cursor:pointer]\n    - LabelText [ref=e10] clickable [cursor:pointer]\n    - LabelText [ref=e11] clickable [cursor:pointer]\n    - LabelText [ref=e12] clickable [cursor:pointer]\n    - LabelText [ref=e13] clickable [cursor:pointer]\n    - LabelText [ref=e14] clickable [cursor:pointer]\n    - LabelText [ref=e15] clickable [cursor:pointer]\n  - heading \"GENERATING LOGOS\" [level=2, ref=e25]\n  - button [disabled, ref=e1]\n    - image\n- generic\n  - IframePresentational \"reCAPTCHA\"",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

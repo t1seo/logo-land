@@ -1,0 +1,14 @@
+{
+  "tool": "image_gen__imagegen",
+  "sourceArtifact": "exec-5a8ba132-f90f-4ff8-b52e-a1563a973bab.png",
+  "pluginVersion": "0.3.0+codex.20260912132222",
+  "session": "logo-land-brand",
+  "prompt": "prompt.txt",
+  "output": "../../assets/logo.png",
+  "sha256": "f4eb03545ca762db0f5664a3ff35f9580120b058200fbad9d5f89543d5ecf343",
+  "dimensions": {
+    "width": 1774,
+    "height": 887
+  },
+  "recordedAt": "2026-09-12T13:29:14.073Z"
+}

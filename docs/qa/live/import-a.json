@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "morrow-live",
+  "revision": 1,
+  "created_at": "2026-09-12T12:23:55.113061Z",
+  "updated_at": "2026-09-12T12:24:04.692379Z",
+  "brief": {
+    "brand_name": "Morrow Studio",
+    "exact_text": "Morrow Studio",
+    "industry": "Sustainable brand and product design studio",
+    "audience": "Independent businesses seeking thoughtful contemporary design",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "minimal",
+      "geometric",
+      "calm"
+    ],
+    "palette": [
+      "#174C3C"
+    ],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "website header",
+      "business card"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; no slogan requested"
+    ],
+    "background": "opaque",
+    "concept_count": 2
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "55a790a078cff75fdc201da383b8006c42107fc7372d4fa6b7d6cc5e14bfe851",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1569371,
+        "visible_pixels": 251254
+      },
+      "prompt": "Use case: logo-brand\nAsset: one standalone master brand logo for a fictional sustainable design studio.\nBrand and text (verbatim): \"Morrow Studio\". No slogan, no other text.\nLogo type: combination mark. Concept A: a distinctive open geometric M monogram, with two folded ribbon strokes and deliberate white negative space suggesting a path forward. Restrained, sophisticated, memorable; balanced flat shapes with no overly thin details.\nStyle: modern minimal geometric identity, crisp edges and careful optical balance.\nPalette: solid forest green #174C3C for mark and text. Solid white background.\nComposition: centered mark above a carefully spaced contemporary sans-serif wordmark. Wide clear margins, no cropping. Square standalone image. The brand should remain legible when displayed at business-card size.\nAvoid: gradients, shadows, 3D, texture, mockups, extra lettering, borders, watermarks, existing brand symbols. Deliver the finished logo only, not a contact sheet.\n",
+      "parent_id": null,
+      "created_at": "2026-09-12T12:24:04.651160Z",
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": []
+}

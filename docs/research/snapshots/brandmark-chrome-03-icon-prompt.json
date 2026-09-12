@@ -1,0 +1,5 @@
+{
+  "method": "Codex Computer Use / @oai/sky",
+  "kind": "accessibility-state-or-diff",
+  "text": "The following is a diff from the previous accessibility tree for Window: \"Brandmark - AI brand and logo creator\" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t\t\t\t\t\t\t385 text field (settable) Placeholder: Describe your icon or business/brand..., Value: A simple forest-green sprout forming a geometric M for a sustainable design studio. Flat icon on white, no letters or words.\n~\t\t\t\t\t\t\t\t394 button Generate\nThe focused UI element is 385 text field (settable) Placeholder: Describe your icon or business/brand..., Value: A simple forest-green sprout forming a geometric M for a sustainable design studio. Flat icon on white, no letters or words."
+}

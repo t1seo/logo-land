@@ -1,0 +1,98 @@
+{
+  "id": "f77ee319-0570-48d3-934a-71d8057e3301",
+  "ok": true,
+  "result": {
+    "origin": "https://studio.tailorbrands.com/business/131807094/wizard/channel",
+    "refs": {
+      "e1": {
+        "name": "Tailor Brands",
+        "role": "button"
+      },
+      "e10": {
+        "name": "Facebook",
+        "role": "button"
+      },
+      "e11": {
+        "name": "TV",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Instagram",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Friend or colleague",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Google",
+        "role": "button"
+      },
+      "e15": {
+        "name": "Tiktok",
+        "role": "button"
+      },
+      "e16": {
+        "name": "AI (eg. ChatGPT)",
+        "role": "button"
+      },
+      "e17": {
+        "name": "Other",
+        "role": "button"
+      },
+      "e18": {
+        "name": "Back",
+        "role": "button"
+      },
+      "e19": {
+        "name": "Skip",
+        "role": "button"
+      },
+      "e2": {
+        "name": "Contact us",
+        "role": "button"
+      },
+      "e20": {
+        "name": "Intercom messenger",
+        "role": "region"
+      },
+      "e21": {
+        "name": "Open Intercom Messenger",
+        "role": "button"
+      },
+      "e3": {
+        "name": "Open Intercom Messenger",
+        "role": "Iframe"
+      },
+      "e4": {
+        "name": "About ",
+        "role": "button"
+      },
+      "e5": {
+        "name": "Logo type ",
+        "role": "button"
+      },
+      "e6": {
+        "name": "Style ",
+        "role": "button"
+      },
+      "e7": {
+        "name": "Select ",
+        "role": "button"
+      },
+      "e8": {
+        "name": "en",
+        "role": "button"
+      },
+      "e9": {
+        "name": "YouTube",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - main\n    - generic\n      - button \"Tailor Brands\" [ref=e1]\n        - image \"Tailor Brands\"\n      - list\n        - button \"About \" [ref=e4]\n          - generic\n            - StaticText \"About \"\n        - button \"Logo type \" [ref=e5]\n          - generic\n            - StaticText \"Logo type \"\n        - button \"Style \" [ref=e6]\n          - generic\n            - StaticText \"Style \"\n        - button \"Select \" [ref=e7]\n          - generic\n            - StaticText \"Select \"\n      - button \"Contact us\" [ref=e2]\n        - StaticText \"Contact us\"\n      - button \"en\" [ref=e8]\n        - StaticText \"en\"\n      - generic\n        - StaticText \"How did you discover Tailor Brands?\"\n        - button \"YouTube\" [ref=e9]\n          - StaticText \"YouTube\"\n        - button \"Facebook\" [ref=e10]\n          - StaticText \"Facebook\"\n        - button \"TV\" [ref=e11]\n          - StaticText \"TV\"\n        - button \"Instagram\" [ref=e12]\n          - StaticText \"Instagram\"\n        - button \"Friend or colleague\" [ref=e13]\n          - StaticText \"Friend or\"\n          - LineBreak \"\\n\"\n          - StaticText \"colleague\"\n        - button \"Google\" [ref=e14]\n          - StaticText \"Google\"\n        - button \"Tiktok\" [ref=e15]\n          - StaticText \"Tiktok\"\n        - button \"AI (eg. ChatGPT)\" [ref=e16]\n          - StaticText \"AI (eg. ChatGPT)\"\n        - button \"Other\" [ref=e17]\n          - StaticText \"Other\"\n        - generic\n          - button \"Back\" [ref=e18]\n            - StaticText \"Back\"\n          - button \"Skip\" [ref=e19]\n            - StaticText \"Skip\"\n  - generic\n    - Iframe \"Open Intercom Messenger\" [ref=e3]\n      - region \"Intercom messenger\" [ref=e20]\n        - button \"Open Intercom Messenger\" [expanded=false, ref=e21]\n          - image",
+    "browserPageId": "0e9ddc38-caab-4ff3-94e0-d8e7fc3d1b43"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

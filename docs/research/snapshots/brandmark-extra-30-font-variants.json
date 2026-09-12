@@ -1,0 +1,74 @@
+{
+  "id": "cd9e172a-c45f-4208-9a88-5e9b2e660054",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/generate",
+    "refs": {
+      "e1": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e10": {
+        "name": "Grid View",
+        "role": "button"
+      },
+      "e11": {
+        "name": "Purchase",
+        "role": "button"
+      },
+      "e12": {
+        "name": "Edit",
+        "role": "button"
+      },
+      "e13": {
+        "name": "Variants",
+        "role": "button"
+      },
+      "e14": {
+        "name": "Save",
+        "role": "button"
+      },
+      "e15": {
+        "name": "",
+        "role": "button"
+      },
+      "e2": {
+        "name": "",
+        "role": "generic"
+      },
+      "e3": {
+        "name": "",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Generate logos",
+        "role": "link"
+      },
+      "e5": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e6": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e7": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e8": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Carousel View",
+        "role": "button"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e3]\n        - image\n      - link \"Generate logos\" [ref=e4]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e5]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e6]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e7]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e8]\n        - image\n        - StaticText \"My Account\"\n  - generic\n    - generic\n      - button \"Carousel View\" [ref=e9]\n        - image\n        - StaticText \"Carousel\"\n      - button \"Grid View\" [ref=e10]\n        - image\n    - generic\n      - generic\n        - image \"Logo 8eb35a97-82a5-487b-89f3-99850d2ebf62\"\n        - generic\n          - button \"Purchase\" [ref=e11]\n            - image\n            - StaticText \"Purchase\"\n          - button \"Edit\" [ref=e12]\n            - image\n            - StaticText \"Edit\"\n          - button \"Variants\" [ref=e13]\n            - image\n            - StaticText \"Variants\"\n          - button \"Save\" [ref=e14]\n            - image\n            - StaticText \"Save\"\n          - button [expanded=false, ref=e15]\n            - image\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo bc9b3f97-8d73-420d-8f0e-9e06c9910d18\"\n      - generic\n        - generic\n          - StaticText \"Text\"\n          - image\n        - image \"Logo 9b6e0470-05f2-4a8f-ac18-9623bf2f631c\"\n  - generic [ref=e2] clickable [cursor:pointer]\n    - generic\n      - image\n  - region \"Notifications (F8)\" [ref=e1]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}

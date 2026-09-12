@@ -1,0 +1,9 @@
+{
+  "mode": "generation",
+  "session_id": "sample-02-loop-lab",
+  "revision": 0,
+  "prompt": "Create one monogram logo for LOOP LAB. Industry: 크리에이티브 스튜디오. Audience: 새로운 브랜드를 만드는 창업자.\nExact text (copy verbatim, no other words): 'LL'. Exact slogan: ''.\nStyles: 라임색 LL 모노그램, flat, clear silhouette. Palette: 라임, 차콜.\nAvoid: mockup, photograph, shadow, gradient, extra text, existing brand logo. Use cases: 웹사이트 브랜드 소개 이미지, 가로 240px 이상.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Two interlocking L letters forming a clever compact continuous geometric monogram, clearly two L letterforms, vivid lime green on solid very dark charcoal. Only LL, no other wording. Bold functional identity.. Assumptions: 실제 고객 의뢰가 아닌 사용자가 요청한 시연을 위해 Codex가 만든 가상 브랜드입니다., 샘플당 시안 한 개를 생성하고 Codex가 시연용 결과를 선택합니다..",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null
+}

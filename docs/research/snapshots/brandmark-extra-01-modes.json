@@ -1,0 +1,66 @@
+{
+  "id": "9a634c63-8782-422e-b322-3739e47b018b",
+  "ok": true,
+  "result": {
+    "origin": "https://chat.brandmark.io/",
+    "refs": {
+      "e1": {
+        "name": "Generate Auto-generate hundreds of logos Go",
+        "role": "link"
+      },
+      "e10": {
+        "name": "New Logo",
+        "role": "link"
+      },
+      "e11": {
+        "name": "Icon Designer",
+        "role": "link"
+      },
+      "e12": {
+        "name": "Logo Templates",
+        "role": "link"
+      },
+      "e13": {
+        "name": "My Account",
+        "role": "link"
+      },
+      "e2": {
+        "name": "Templates Start from a logo template Go",
+        "role": "link"
+      },
+      "e3": {
+        "name": "Icon Designer Prompt to create a unique icon Go",
+        "role": "link"
+      },
+      "e4": {
+        "name": "Notifications (F8)",
+        "role": "region"
+      },
+      "e5": {
+        "name": "Generate",
+        "role": "heading"
+      },
+      "e6": {
+        "name": "Templates",
+        "role": "heading"
+      },
+      "e7": {
+        "name": "Icon Designer",
+        "role": "heading"
+      },
+      "e8": {
+        "name": "",
+        "role": "link"
+      },
+      "e9": {
+        "name": "Generate logos",
+        "role": "link"
+      }
+    },
+    "snapshot": "- generic\n  - complementary\n    - navigation\n      - link [ref=e8]\n        - image\n      - link \"Generate logos\" [ref=e9]\n        - image\n        - StaticText \"Generate logos\"\n      - link \"New Logo\" [ref=e10]\n        - image\n        - StaticText \"New Logo\"\n      - link \"Icon Designer\" [ref=e11]\n        - image\n        - StaticText \"Icon Designer\"\n      - link \"Logo Templates\" [ref=e12]\n        - image\n        - StaticText \"Logo Templates\"\n      - link \"My Account\" [ref=e13]\n        - image\n        - StaticText \"My Account\"\n  - link \"Generate Auto-generate hundreds of logos Go\" [ref=e1]\n    - heading \"Generate\" [level=2, ref=e5]\n    - image\n    - paragraph\n      - StaticText \"Auto-generate hundreds of logos\"\n    - StaticText \"Go\"\n    - image\n  - link \"Templates Start from a logo template Go\" [ref=e2]\n    - heading \"Templates\" [level=2, ref=e6]\n    - image\n    - paragraph\n      - StaticText \"Start from a logo template\"\n    - StaticText \"Go\"\n    - image\n  - link \"Icon Designer Prompt to create a unique icon Go\" [ref=e3]\n    - heading \"Icon Designer\" [level=2, ref=e7]\n    - image\n    - paragraph\n      - StaticText \"Prompt to create a unique icon\"\n    - StaticText \"Go\"\n    - image\n  - region \"Notifications (F8)\" [ref=e4]\n    - list",
+    "browserPageId": "89e997f6-caba-4c18-9fc9-10936ec59cef"
+  },
+  "_meta": {
+    "runtimeId": "13daebfc-0889-4dc7-93f5-9ab7562519e8"
+  }
+}
