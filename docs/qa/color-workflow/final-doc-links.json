@@ -1,6 +1,6 @@
 {
-  "scope": "Final current docs; local file targets only, not HTML fragments or browser execution",
-  "files": 50,
-  "checked": 569,
+  "scope": "Final current docs including publication audit; local file targets only, not HTML fragments or browser execution",
+  "files": 52,
+  "checked": 580,
   "missing": []
 }

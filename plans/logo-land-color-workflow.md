@@ -15,6 +15,8 @@ T1–T7 and font research are implemented. The final integrated 315 tests, stati
 
 T8's native success gate remains unmet: restricted-color and white-transparent candidates are indeterminate or failed after the bounded repairs. The white candidate looks clean in Chrome, but its declared alpha sampling policy remains indeterminate. Keep T8/T9 unchecked until the required evidence passes; do not infer completion from a prepared version or passing software tests.
 
+The tested development implementation was committed and pushed as `b391ca8e2b463589efc870ff478a51b9f5f6f32c`. GitHub draft release `387630647` targets that commit and remains unpublished; no v0.4.0 tag exists. See `docs/qa/color-workflow/release.md` for the read-back evidence. All assigned Orca workers are complete and released. Remaining work is the unresolved native acceptance and consequent public release, not an uncommitted implementation.
+
 ## TODOs
 
 - [x] T1 — Typed color/state contracts, v1 compatibility, dependencies and lockup types.

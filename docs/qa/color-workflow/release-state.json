@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-09-12T16:27:40.684Z",
+  "implementation_commit": "b391ca8e2b463589efc870ff478a51b9f5f6f32c",
+  "remote_main_at_implementation_push": "b391ca8e2b463589efc870ff478a51b9f5f6f32c",
+  "source_version": "0.4.0",
+  "installed_version": "0.4.0+codex.20260912161802",
+  "draft": {
+    "id": 387630647,
+    "tag_name": "v0.4.0",
+    "target_commitish": "b391ca8e2b463589efc870ff478a51b9f5f6f32c",
+    "draft": true,
+    "published_at": null,
+    "is_prerelease": false,
+    "html_url": "https://github.com/t1seo/logo-land/releases/tag/untagged-0044a49035267a9661c7"
+  },
+  "public_v040_tag_exists": false,
+  "latest_published_version": "0.3.1",
+  "existing_v031_tag": "b577272a81e377b55cc0620cf301706de50238c5",
+  "existing_v031_peeled_commit": "fd1d89c66e2fb2193954a5ee732cd1a688bdba6d",
+  "repository": {
+    "name": "logo-land",
+    "default_branch": "main",
+    "visibility": "PUBLIC",
+    "description": "Create logos with Codex using conversational color palettes, symbol-and-text layouts, transparent PNGs, and saved revision history."
+  },
+  "source_tests_passed": 315,
+  "installed_cli": {
+    "total": 29,
+    "succeeded": 27,
+    "expected_refusals": 2
+  },
+  "whole_goal_complete": false,
+  "public_release_ready": false,
+  "remaining": [
+    "Approved restricted-color native output",
+    "Approved white-transparent native output"
+  ],
+  "note": "This audit document follows the implementation commit; main can advance with documentation-only evidence while the unpublished draft keeps the tested code target."
+}

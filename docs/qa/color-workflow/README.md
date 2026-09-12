@@ -4,6 +4,8 @@ Date: 2026-09-13 KST. Source version: **0.4.0, unreleased**. Orca run: `run_c076
 
 The color workflow, typography research and symbol-plus-text layout support are implemented. The final integrated suite passed **315 tests**, including the legacy metadata export correction. The complete release goal is **not achieved**: the required restricted-color and white-transparent native samples remain unresolved after the permitted repairs. The latest published release remains 0.3.1.
 
+The implementation is committed and pushed to main. A v0.4.0 GitHub draft is prepared with `published_at=null`; no public v0.4.0 tag exists. See the [commit and release record](release.md).
+
 ## Actual native results
 
 The [eight-case gallery](../../colors/index.html) contains real Codex native images, including unsuccessful candidates. Eight initial requests and eight additional native edits produced sixteen new images. The separate white-variant session also stores a byte-identical copy of the original Korean parent, so its seventeen stored artifacts do not mean seventeen generation calls.
