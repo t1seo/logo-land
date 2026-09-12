@@ -46,3 +46,9 @@ Orca 독립 감사는 11개 PNG의 해시, ZIP CRC, ZIP 내부 PNG·manifest·�
 스테이징 후 공백 검사에서는 보존된 전달 가이드의 빈 문구 뒤 공백과 연구 Markdown의 의도적인 줄바꿈 공백만 보고됐습니다. ZIP·가이드의 바이트 일치를 유지하기 위해 해당 원본은 바꾸지 않았으며, 두 종류의 문서를 제외한 `git diff --cached --check`는 통과했습니다.
 
 최종 설치본의 신규 GUI 대화 자동 발견과 Windows/Linux 실행은 확인하지 않았습니다. 새 대화에서 `$logo-land`로 시작하실 수 있습니다.
+
+## 저장소 반영과 화면 표시
+
+GitHub 저장소를 `t1seo/logo-land`로 변경했으며 기존 비공개 설정과 기본 브랜치 `main`을 유지했습니다. 구현·샘플·문서를 담은 `04e10ac0970e9b2911d3af6e18e2eb4f67a249b7`을 일반 `main` 푸시로 반영한 뒤 `git ls-remote origin refs/heads/main`과 로컬 HEAD의 일치를 확인했습니다.
+
+푸시 후 최종 샘플 HTML을 Chrome에 열었습니다. 마지막 표시 단계에서는 Computer Use의 주소 타이핑 누락과 다른 탭으로 바뀌는 상황이 있어 macOS `open -a 'Google Chrome' docs/samples/index.html`로 파일을 열었으며, 이어서 Computer Use가 `Logo Land (로고랜드) — 로고 샘플 아카이브` 창 제목을 반환했습니다. 이 마지막 조회에는 스크린샷이 제공되지 않았으므로 앞서 완료한 Chrome 화면 검수와 구분합니다.

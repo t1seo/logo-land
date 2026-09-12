@@ -14,8 +14,8 @@
 - [x] 영어 README.md와 한국어 README.ko.md, 언어 전환·사실에 기반한 배지·각 언어 도식·샘플 이미지 완성.
 - [x] 최종 Chrome의 필터·상세·키보드·다운로드와 반응형 레이아웃 확인.
 - [x] 이름 변경 후 테스트·정적 검사·로컬 링크 및 PNG·ZIP 해시 검증.
-- [ ] GitHub 저장소를 `t1seo/logo-land`로 변경하고 `main` 커밋·푸시 및 원격 SHA 확인.
-- [ ] 최종 샘플 HTML을 Chrome에 열어 두기.
+- [x] GitHub 저장소를 `t1seo/logo-land`로 변경하고 `main` 커밋·푸시 및 원격 SHA 확인.
+- [x] 최종 샘플 HTML을 Chrome에 열어 두기.
 
 ## 고정된 자료 계약
 
