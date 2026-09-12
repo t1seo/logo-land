@@ -2,6 +2,8 @@
 
 ## 현재 설치: Logo Land
 
+투명 배경 요청 지침과 시작 문구를 추가한 최신 설치 버전은 `0.3.0+codex.20260912135514`입니다. `codex plugin add logo-land@personal --json`, manifest 검사와 스킬 검사가 모두 통과했습니다. [투명 PNG 샘플과 검증](../transparency/README.md)을 참고해 주세요.
+
 최종 이름은 `logo-land`입니다. 전용 로고를 포함해 `codex plugin add logo-land@personal --json`이 성공했으며 버전은 `0.3.0+codex.20260912133131`입니다. 소스는 `~/plugins/logo-land`, 캐시는 `<codex-home>/plugins/cache/personal/logo-land/0.3.0+codex.20260912133131`입니다. manifest·스킬 검사 및 이 캐시에서 브랜드 세션 revision 4 재개 조회가 통과했습니다.
 
 이전 `logo-generator@personal`과 임시 `logo-kit@personal` 설치본은 CLI로 제거했습니다. 개인 marketplace의 다른 항목은 변경하지 않았습니다. 새 Codex 대화에서는 **`$logo-land`**로 시작하시면 됩니다. 저장소를 새로 내려받아 설치하는 방법은 [English README](../../README.md)와 [한국어 README](../../README.ko.md)에 있습니다.

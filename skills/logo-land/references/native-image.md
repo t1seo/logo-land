@@ -45,3 +45,22 @@ Return one standalone master logo image, not a comparison sheet or mockup.
 ```
 
 The helper can propose a prompt; the assistant must execute the image call and save the actual prompt. It has no network image endpoint and requires no OpenAI API key. An API workflow is a separate user-selected integration, outside this plugin's built-in route.
+
+## Transparent PNG requests
+
+For a new logo, put `"background": "transparent"` in the brief and include this requirement in the final prompt:
+
+```text
+Return one genuine RGBA PNG logo on a fully transparent background.
+Empty exterior space must have alpha 0; keep the foreground visible and edges clean.
+Do not draw a checkerboard, a white backing panel, a background color, or a drop shadow.
+```
+
+For an existing logo, supply its exact image as the edit target and add:
+
+```text
+Remove only the background. Preserve exact lettering, colors, shapes and layout.
+Keep intentional white foreground details; make empty space and letter counters transparent.
+```
+
+Inspect the returned alpha and the actual cutout. Register a transparent edit with `import --parent <id> --background transparent`; later edits must retain that override. An alpha channel or transparent-looking preview alone does not prove a transparent background.

@@ -109,13 +109,34 @@ These fictional brands were generated with the Codex native image tool. The [sam
 
 The samples were created before the Logo Land rename, so their original requests still contain `$logo-generator`. Those records are preserved as created. Start new work with **`$logo-land`**.
 
-| | |
-|---|---|
-| **01 · LUMA** · Wordmark<br><img src="docs/samples/items/01-luma/delivery/logo.png" alt="LUMA wordmark logo" width="240"><br>Black and ivory serif lettering<br>[Original PNG](docs/samples/items/01-luma/delivery/logo.png) | **02 · LOOP LAB** · Monogram<br><img src="docs/samples/items/02-loop-lab/delivery/logo.png" alt="LOOP LAB monogram logo" width="240"><br>Lime LL monogram<br>[Original PNG](docs/samples/items/02-loop-lab/delivery/logo.png) |
-| **03 · 고요** · Combination<br><img src="docs/samples/items/03-goyo/delivery/logo.png" alt="고요 combination logo" width="240"><br>Forest green symbol and Korean lettering<br>[Original PNG](docs/samples/items/03-goyo/delivery/logo.png) | **04 · BREAD & BLOOM** · Emblem<br><img src="docs/samples/items/04-bread-bloom/delivery/logo.png" alt="BREAD &amp; BLOOM emblem logo" width="240"><br>Terracotta bakery badge<br>[Original PNG](docs/samples/items/04-bread-bloom/delivery/logo.png) |
-| **05 · KITE** · Abstract<br><img src="docs/samples/items/05-kite/delivery/logo.png" alt="KITE abstract logo" width="240"><br>Geometric shapes suggesting ascent<br>[Original PNG](docs/samples/items/05-kite/delivery/logo.png) | **06 · MISO** · Mascot<br><img src="docs/samples/items/06-miso/delivery/logo.png" alt="MISO mascot logo" width="240"><br>Warm, friendly cat character<br>[Original PNG](docs/samples/items/06-miso/delivery/logo.png) |
-| **07 · NORTHLINE** · Lettermark<br><img src="docs/samples/items/07-northline/delivery/logo.png" alt="NORTHLINE lettermark logo" width="240"><br>Clear NL initials<br>[Original PNG](docs/samples/items/07-northline/delivery/logo.png) | **08 · 물결** · Wordmark<br><img src="docs/samples/items/08-mulgyeol/delivery/logo.png" alt="물결 wordmark logo" width="240"><br>Blue Korean lettering<br>[Original PNG](docs/samples/items/08-mulgyeol/delivery/logo.png) |
-| **09 · FERN** · Symbol<br><img src="docs/samples/items/09-fern/delivery/logo.png" alt="FERN symbol logo" width="240"><br>A distinct botanical silhouette<br>[Original PNG](docs/samples/items/09-fern/delivery/logo.png) | **10 · NOVA NOTES** · Combination<br><img src="docs/samples/items/10-nova-notes/delivery/logo.png" alt="NOVA NOTES combination logo" width="240"><br>Burgundy art deco identity<br>[Original PNG](docs/samples/items/10-nova-notes/delivery/logo.png) |
+| Brand | Logo type | Generated logo |
+|---|---|---|
+| **01 · LUMA** | Wordmark | <img src="docs/samples/items/01-luma/delivery/logo.png" alt="LUMA wordmark logo" width="240"><br>Black and ivory serif lettering<br>[Original PNG](docs/samples/items/01-luma/delivery/logo.png) |
+| **02 · LOOP LAB** | Monogram | <img src="docs/samples/items/02-loop-lab/delivery/logo.png" alt="LOOP LAB monogram logo" width="240"><br>Lime LL monogram<br>[Original PNG](docs/samples/items/02-loop-lab/delivery/logo.png) |
+| **03 · 고요** | Combination | <img src="docs/samples/items/03-goyo/delivery/logo.png" alt="고요 combination logo" width="240"><br>Forest green symbol and Korean lettering<br>[Original PNG](docs/samples/items/03-goyo/delivery/logo.png) |
+| **04 · BREAD & BLOOM** | Emblem | <img src="docs/samples/items/04-bread-bloom/delivery/logo.png" alt="BREAD &amp; BLOOM emblem logo" width="240"><br>Terracotta bakery badge<br>[Original PNG](docs/samples/items/04-bread-bloom/delivery/logo.png) |
+| **05 · KITE** | Abstract | <img src="docs/samples/items/05-kite/delivery/logo.png" alt="KITE abstract logo" width="240"><br>Geometric shapes suggesting ascent<br>[Original PNG](docs/samples/items/05-kite/delivery/logo.png) |
+| **06 · MISO** | Mascot | <img src="docs/samples/items/06-miso/delivery/logo.png" alt="MISO mascot logo" width="240"><br>Warm, friendly cat character<br>[Original PNG](docs/samples/items/06-miso/delivery/logo.png) |
+| **07 · NORTHLINE** | Lettermark | <img src="docs/samples/items/07-northline/delivery/logo.png" alt="NORTHLINE lettermark logo" width="240"><br>Clear NL initials<br>[Original PNG](docs/samples/items/07-northline/delivery/logo.png) |
+| **08 · 물결** | Wordmark | <img src="docs/samples/items/08-mulgyeol/delivery/logo.png" alt="물결 wordmark logo" width="240"><br>Blue Korean lettering<br>[Original PNG](docs/samples/items/08-mulgyeol/delivery/logo.png) |
+| **09 · FERN** | Symbol | <img src="docs/samples/items/09-fern/delivery/logo.png" alt="FERN symbol logo" width="240"><br>A distinct botanical silhouette<br>[Original PNG](docs/samples/items/09-fern/delivery/logo.png) |
+| **10 · NOVA NOTES** | Combination | <img src="docs/samples/items/10-nova-notes/delivery/logo.png" alt="NOVA NOTES combination logo" width="240"><br>Burgundy art deco identity<br>[Original PNG](docs/samples/items/10-nova-notes/delivery/logo.png) |
+
+## Transparent-background logos
+
+Generate a logo on a transparent background from the start, or remove the background of an existing logo:
+
+> $logo-land Create a logo for Goyo with the exact Korean text 고요. Deliver a transparent-background PNG with no white backing panel or shadow.
+
+> Remove only this logo's background. Keep the lettering, colors, and shape, and deliver a transparent PNG.
+
+Logo Land requests genuine PNG transparency, preserves intentional white foreground details, and checks actual transparent pixels before exporting. You can also request a solid-color background. The same PNG can be previewed on light and dark surfaces without changing its pixels.
+
+<img src="assets/logo-transparent.png" alt="Logo Land logo with a genuinely transparent background" width="400">
+
+[Transparent PNG](assets/logo-transparent.png) · [Light/dark preview](docs/transparency/index.html) · [Generation and verification](docs/transparency/README.md)
+
+This example keeps the original black LAND lettering, so it is best suited to light backgrounds. Ask for a white-lettering variant when needed for dark surfaces.
 
 ## Revisions and delivery
 

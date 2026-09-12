@@ -1,0 +1,33 @@
+{
+  "tool": "image_gen__imagegen",
+  "sourceArtifact": "exec-37c65ef0-ac75-416d-bd96-4dcf03f35045.png",
+  "pluginVersion": "0.3.0+codex.20260912133131",
+  "session": "logo-land-brand",
+  "parentId": "a-v1",
+  "artifactId": "a-v2",
+  "reference": "../../assets/logo.png",
+  "prompt": "prompt.txt",
+  "output": "../../assets/logo-transparent.png",
+  "sha256": "ea31330bccf50bb53337fd118984457d8efc898fd23776b3bcf38717d3f76dd7",
+  "image": {
+    "format": "PNG",
+    "width": 1774,
+    "height": 887,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "transparent_pixels": 1569718,
+    "visible_pixels": 657495
+  },
+  "alpha": {
+    "fullyTransparent": 916043,
+    "partiallyTransparent": 653675,
+    "fullyOpaque": 3820,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "recordedAt": "2026-09-12T13:53:58.695Z"
+}

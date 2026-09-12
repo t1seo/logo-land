@@ -1,5 +1,7 @@
 # Logo Land documentation validation
 
+The sample tables were subsequently changed to three named columns with ten rows. The transparent PNG example and current README table checks are documented in [the transparency follow-up](../transparency/README.md). The two-column layout references below describe the earlier validation snapshot.
+
 Date: 2026-09-12. Scope: `README.md`, `README.ko.md`, and `docs/diagrams/`. This report covers documentation checks, not a new run of the plugin's full test suite or visual approval of generated images.
 
 ## Completed work

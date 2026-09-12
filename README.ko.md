@@ -107,15 +107,36 @@ codex plugin add logo-land@logo-land-local
 
 Codex 내장 이미지 도구로 만든 가상 브랜드 10개입니다. 각 샘플의 요청·프롬프트·검수 상태·전달 파일은 [샘플 갤러리](docs/samples/index.html)와 [카탈로그](docs/samples/catalog.json)에서 확인하실 수 있습니다. 아래 미리보기는 실제 전달 PNG를 가로 240px로 표시합니다.
 
-이 샘플은 이름을 Logo Land로 바꾸기 전에 제작하여 원래 요청에 `$logo-generator`가 남아 있습니다. 제작 기록을 보존하기 위해 당시 요청은 그대로 두었으며, 새 작업은 **`$logo-land`**로 시작하시면 됩니다.
+이 샘플은 이름을 Logo Land로 바꾸기 전에 제작하여 원래 요청에 `$logo-generator`가 남아 있습니다. 제작 기록을 보존하기 위해 당시 요청은 그대로 두었으며, 새 작업은 `$logo-land`로 시작하시면 됩니다.
 
-| | |
-|---|---|
-| **01 · LUMA** · 워드마크<br><img src="docs/samples/items/01-luma/delivery/logo.png" alt="LUMA 워드마크 로고" width="240"><br>검정과 아이보리의 세리프 워드마크<br>[PNG 원본](docs/samples/items/01-luma/delivery/logo.png) | **02 · LOOP LAB** · 모노그램<br><img src="docs/samples/items/02-loop-lab/delivery/logo.png" alt="LOOP LAB 모노그램 로고" width="240"><br>라임색 LL 모노그램<br>[PNG 원본](docs/samples/items/02-loop-lab/delivery/logo.png) |
-| **03 · 고요** · 조합형<br><img src="docs/samples/items/03-goyo/delivery/logo.png" alt="고요 조합형 로고" width="240"><br>숲색 심볼과 고요 한글<br>[PNG 원본](docs/samples/items/03-goyo/delivery/logo.png) | **04 · BREAD & BLOOM** · 엠블럼<br><img src="docs/samples/items/04-bread-bloom/delivery/logo.png" alt="BREAD &amp; BLOOM 엠블럼 로고" width="240"><br>테라코타 베이커리 배지<br>[PNG 원본](docs/samples/items/04-bread-bloom/delivery/logo.png) |
-| **05 · KITE** · 추상형<br><img src="docs/samples/items/05-kite/delivery/logo.png" alt="KITE 추상형 로고" width="240"><br>상승감을 표현한 추상 기하학<br>[PNG 원본](docs/samples/items/05-kite/delivery/logo.png) | **06 · MISO** · 마스코트<br><img src="docs/samples/items/06-miso/delivery/logo.png" alt="MISO 마스코트 로고" width="240"><br>따뜻한 고양이 캐릭터 로고<br>[PNG 원본](docs/samples/items/06-miso/delivery/logo.png) |
-| **07 · NORTHLINE** · 레터마크<br><img src="docs/samples/items/07-northline/delivery/logo.png" alt="NORTHLINE 레터마크 로고" width="240"><br>명확한 NL 레터마크<br>[PNG 원본](docs/samples/items/07-northline/delivery/logo.png) | **08 · 물결** · 워드마크<br><img src="docs/samples/items/08-mulgyeol/delivery/logo.png" alt="물결 워드마크 로고" width="240"><br>파란색 한글 워드마크<br>[PNG 원본](docs/samples/items/08-mulgyeol/delivery/logo.png) |
-| **09 · FERN** · 심볼<br><img src="docs/samples/items/09-fern/delivery/logo.png" alt="FERN 심볼 로고" width="240"><br>잎의 실루엣을 살린 식물 심볼<br>[PNG 원본](docs/samples/items/09-fern/delivery/logo.png) | **10 · NOVA NOTES** · 조합형<br><img src="docs/samples/items/10-nova-notes/delivery/logo.png" alt="NOVA NOTES 조합형 로고" width="240"><br>버건디 아르데코 조합형<br>[PNG 원본](docs/samples/items/10-nova-notes/delivery/logo.png) |
+| 브랜드 | 로고 유형 | 생성 결과 |
+|---|---|---|
+| **01 · LUMA** | 워드마크 | <img src="docs/samples/items/01-luma/delivery/logo.png" alt="LUMA 워드마크 로고" width="240"><br>검정과 아이보리의 세리프 워드마크<br>[PNG 원본](docs/samples/items/01-luma/delivery/logo.png) |
+| **02 · LOOP LAB** | 모노그램 | <img src="docs/samples/items/02-loop-lab/delivery/logo.png" alt="LOOP LAB 모노그램 로고" width="240"><br>라임색 LL 모노그램<br>[PNG 원본](docs/samples/items/02-loop-lab/delivery/logo.png) |
+| **03 · 고요** | 조합형 | <img src="docs/samples/items/03-goyo/delivery/logo.png" alt="고요 조합형 로고" width="240"><br>숲색 심볼과 고요 한글<br>[PNG 원본](docs/samples/items/03-goyo/delivery/logo.png) |
+| **04 · BREAD & BLOOM** | 엠블럼 | <img src="docs/samples/items/04-bread-bloom/delivery/logo.png" alt="BREAD &amp; BLOOM 엠블럼 로고" width="240"><br>테라코타 베이커리 배지<br>[PNG 원본](docs/samples/items/04-bread-bloom/delivery/logo.png) |
+| **05 · KITE** | 추상형 | <img src="docs/samples/items/05-kite/delivery/logo.png" alt="KITE 추상형 로고" width="240"><br>상승감을 표현한 추상 기하학<br>[PNG 원본](docs/samples/items/05-kite/delivery/logo.png) |
+| **06 · MISO** | 마스코트 | <img src="docs/samples/items/06-miso/delivery/logo.png" alt="MISO 마스코트 로고" width="240"><br>따뜻한 고양이 캐릭터 로고<br>[PNG 원본](docs/samples/items/06-miso/delivery/logo.png) |
+| **07 · NORTHLINE** | 레터마크 | <img src="docs/samples/items/07-northline/delivery/logo.png" alt="NORTHLINE 레터마크 로고" width="240"><br>명확한 NL 레터마크<br>[PNG 원본](docs/samples/items/07-northline/delivery/logo.png) |
+| **08 · 물결** | 워드마크 | <img src="docs/samples/items/08-mulgyeol/delivery/logo.png" alt="물결 워드마크 로고" width="240"><br>파란색 한글 워드마크<br>[PNG 원본](docs/samples/items/08-mulgyeol/delivery/logo.png) |
+| **09 · FERN** | 심볼 | <img src="docs/samples/items/09-fern/delivery/logo.png" alt="FERN 심볼 로고" width="240"><br>잎의 실루엣을 살린 식물 심볼<br>[PNG 원본](docs/samples/items/09-fern/delivery/logo.png) |
+| **10 · NOVA NOTES** | 조합형 | <img src="docs/samples/items/10-nova-notes/delivery/logo.png" alt="NOVA NOTES 조합형 로고" width="240"><br>버건디 아르데코 조합형<br>[PNG 원본](docs/samples/items/10-nova-notes/delivery/logo.png) |
+
+## 투명 배경 로고
+
+처음부터 투명 배경 로고를 생성하거나, 기존 로고에서 배경만 제거하실 수 있습니다.
+
+> $logo-land 고요라는 명상 스튜디오의 로고를 만들어 주세요. 한글 고요를 정확히 넣고, 흰 배경판이나 그림자 없이 투명 배경 PNG로 만들어 주세요.
+
+> 이 로고의 배경만 제거해 주세요. 글자·색상·형태는 유지하고 투명 PNG로 전달해 주세요.
+
+Logo Land는 실제 PNG 투명도를 요청하고, 흰색 글자처럼 의도된 전경을 보존하며, 내보내기 전에 실제 투명 픽셀을 확인합니다. 원하시면 불투명 단색 배경도 요청하실 수 있습니다. 같은 PNG를 밝고 어두운 바탕에 미리 표시해도 파일 자체는 바뀌지 않습니다.
+
+<img src="assets/logo-transparent.png" alt="실제 투명 배경을 가진 Logo Land 로고" width="400">
+
+[투명 PNG](assets/logo-transparent.png) · [밝은·어두운 바탕 미리보기](docs/transparency/index.html) · [생성·검수 기록](docs/transparency/README.md)
+
+이 예제는 기존의 검정 LAND 글자를 유지했으므로 밝은 배경에 적합합니다. 어두운 바탕에 사용할 때는 흰 글자 버전을 별도로 요청하실 수 있습니다.
 
 ## 수정과 전달 파일
 

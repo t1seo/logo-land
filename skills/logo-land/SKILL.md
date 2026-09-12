@@ -1,6 +1,6 @@
 ---
 name: logo-land
-description: Create, compare, refine, and export brand logos through conversation using Codex native image generation. Use for new logo concepts, wordmarks, monograms, symbols, mascots, reference-guided logos, revisions to existing logo images, and resuming saved logo projects.
+description: Create, compare, refine, and export brand logos through conversation using Codex native image generation. Use for new logos, transparent-background PNG logos, removing a logo's background, reference-guided revisions, and resuming saved logo projects.
 ---
 
 # Logo Land
@@ -39,6 +39,16 @@ Read [native-image.md](references/native-image.md) before the first image call. 
 - Record each artifact's intended background with import `--background opaque|transparent` when it differs from the original brief, including later edits preserving that variant. Export checks the selected artifact's requirement; do not change it merely because generation returned the wrong background.
 
 ## Verify and deliver
+
+### Transparent backgrounds
+
+- Interpret requests such as “투명 배경”, “배경 없이”, “누끼”, or “transparent PNG” as an actual transparent-background requirement. For a new logo, set the brief's `background` to `transparent`; keep a requested opaque color otherwise.
+- Ask the native image tool for a genuine RGBA PNG with a fully transparent exterior, visible foreground, clean anti-aliased edges, and no painted checkerboard, white backing panel, or background shadow. Preserve intentional white foreground details, such as white lettering.
+- For background removal, edit the exact existing logo with its wording, colors, shape and layout preserved. Import the new child with `--parent <id> --background transparent`; keep this override on later transparent edits even if the initial brief was opaque.
+- Open the result on light and dark CSS backgrounds to check the cutout, letter counters, halos and contrast. Changing the preview background never changes the PNG. If the artwork is too dark on a dark surface, describe that limit or create an inverted variant when requested.
+- Verify actual transparent pixels before delivery. If the image still has a solid or painted background, request another native edit; never remove background pixels with an unrequested script, rename a JPEG to PNG, or weaken the requirement to pass export.
+
+### Final checks
 
 Read [delivery-checks.md](references/delivery-checks.md) for final QA. Inspect exact text (especially Hangul), margins, recognizable shape at small display size, background, and edit preservation. Report actual findings; do not mark every check true by default.
 
