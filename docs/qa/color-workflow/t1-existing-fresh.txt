@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 15 items
+
+tests/test_background_compatibility.py .........                         [ 60%]
+tests/test_transactions.py ......                                        [100%]
+
+============================= 15 passed in 10.11s ==============================

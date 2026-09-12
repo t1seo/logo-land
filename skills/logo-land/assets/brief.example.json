@@ -5,6 +5,13 @@
   "audience": "Independent businesses seeking thoughtful contemporary design",
   "slogan": "",
   "logo_type": "combination",
+  "lockup": {
+    "layout": "horizontal",
+    "symbol_position": "start",
+    "text_alignment": "start",
+    "typography_style": "Calm geometric sans-serif with open counters and generous spacing",
+    "font_reference": "Requested visual reference: Space Grotesk; no font file or exact reproduction promised"
+  },
   "styles": ["minimal", "geometric", "calm"],
   "palette": ["#174C3C"],
   "forbidden": ["gradients", "shadows", "mockups", "extra lettering"],

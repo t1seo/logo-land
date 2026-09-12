@@ -1,7 +1,10 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.12"
-# dependencies = ["pydantic==2.13.5", "pillow==12.3.0", "typer==0.27.2", "rich==14.3.4"]
+# dependencies = [
+#   "coloraide==8.12.1", "pydantic==2.13.5", "pillow==12.3.0",
+#   "typer==0.27.2", "rich==14.3.4",
+# ]
 # ///
 # ─── How to run ───
 # Install uv: https://docs.astral.sh/uv/getting-started/installation/
@@ -16,24 +19,27 @@ from pathlib import Path
 from typing import Annotated, Final, Literal
 
 import typer
-from pydantic import TypeAdapter, ValidationError
+from pydantic import ValidationError
 
 from logo_helper import delivery, workflow
-from logo_helper.models import ArtifactId, Brief, ProjectError, SessionId, VisualReview
+from logo_helper.cli_options import (
+    ArtifactOption,
+    LockupOption,
+    PaletteOption,
+    ParentOption,
+    RevisionOption,
+    SessionOption,
+    parse_lockup,
+    store_from,
+)
+from logo_helper.color_cli import register_color_commands
+from logo_helper.models import ArtifactId, Brief, PaletteId, ProjectError, SessionId, VisualReview
 from logo_helper.prompts import build_prompt
-from logo_helper.storage import Store, read_source
+from logo_helper.storage import read_source
 
 APP: Final = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False)
-SessionOption = Annotated[str, typer.Option("--session")]
-ArtifactOption = Annotated[str, typer.Option("--artifact")]
-RevisionOption = Annotated[int, typer.Option("--revision", min=0)]
-ParentOption = Annotated[str | None, typer.Option("--parent")]
 DEFAULT_WORKSPACE: Final = Path.cwd()
-
-
-def store_from(ctx: typer.Context) -> Store:
-    workspace = ctx.find_root().params.get("workspace")
-    return Store.at(TypeAdapter(Path).validate_python(workspace))
+register_color_commands(APP)
 
 
 @APP.callback()
@@ -81,6 +87,8 @@ def prompt_command(
     concept: Annotated[str, typer.Option("--concept")] = "Distinct, simple brand identity",
     parent: ParentOption = None,
     changes: Annotated[str, typer.Option("--changes")] = "",
+    palette: PaletteOption = None,
+    lockup_file: LockupOption = None,
 ) -> None:
     """Return a generation/edit prompt and exact local parent path; no image is generated."""
     store = store_from(ctx)
@@ -90,6 +98,8 @@ def prompt_command(
         concept=concept,
         parent_id=ArtifactId(parent) if parent is not None else None,
         changes=changes,
+        palette_id=PaletteId(palette) if palette is not None else None,
+        lockup=parse_lockup(lockup_file),
     )
     typer.echo(result.model_dump_json(indent=2))
 
@@ -104,6 +114,8 @@ def import_command(  # noqa: PLR0913 - Typer exposes one parameter per CLI optio
     prompt_file: Annotated[Path, typer.Option("--prompt-file")],
     revision: RevisionOption,
     parent: ParentOption = None,
+    palette: PaletteOption = None,
+    lockup_file: LockupOption = None,
     background: Annotated[
         Literal["opaque", "transparent"] | None,
         typer.Option(
@@ -122,6 +134,8 @@ def import_command(  # noqa: PLR0913 - Typer exposes one parameter per CLI optio
         prompt=read_source(prompt_file).decode("utf-8"),
         parent_id=ArtifactId(parent) if parent is not None else None,
         background=background,
+        palette_id=PaletteId(palette) if palette is not None else None,
+        lockup=parse_lockup(lockup_file),
     )
     typer.echo(state.model_dump_json(indent=2))
 

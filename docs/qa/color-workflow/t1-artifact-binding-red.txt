@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 11 items / 10 deselected / 1 selected
+
+tests/test_palette_compatibility.py F                                    [100%]
+
+=================================== FAILURES ===================================
+________ test_existing_artifact_cannot_gain_retroactive_palette_intent _________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-48/test...$TMPDIR/pytest-of-user/pytest-48/test_existing_artifact_cannot_0/review.json'))
+
+    def test_existing_artifact_cannot_gain_retroactive_palette_intent(harness: Harness) -> None:
+        harness.init()
+        _ = harness.import_image()
+        store = Store.at(harness.workspace)
+        with store.locked(SessionId("demo")):
+            original = store.load(SessionId("demo"))
+            rebound = original.artifacts[0].model_copy(update={"palette_id": "p1"})
+            changed = workflow.advance(original.model_copy(update={"palettes": (palette(),), "artifacts": (rebound,)}))
+            before = harness.state_path.read_bytes()
+>           with pytest.raises(ProjectError, match="immutable_history"):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE ProjectError
+
+tests/test_palette_compatibility.py:194: Failed
+=========================== short test summary info ============================
+FAILED tests/test_palette_compatibility.py::test_existing_artifact_cannot_gain_retroactive_palette_intent
+======================= 1 failed, 10 deselected in 1.06s =======================

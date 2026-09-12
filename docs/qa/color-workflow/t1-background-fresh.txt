@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 8 items / 6 deselected / 2 selected
+
+tests/test_background_variants.py ..                                     [100%]
+
+======================= 2 passed, 6 deselected in 5.35s ========================

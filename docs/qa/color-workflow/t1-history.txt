@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 10 items / 9 deselected / 1 selected
+
+tests/test_palette_compatibility.py .                                    [100%]
+
+======================= 1 passed, 9 deselected in 4.60s ========================

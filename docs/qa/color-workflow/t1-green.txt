@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 41 items
+
+tests/test_color_models.py ..............................                [ 73%]
+tests/test_palette_compatibility.py ...........                          [100%]
+
+============================= 41 passed in 16.63s ==============================

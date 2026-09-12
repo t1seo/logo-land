@@ -1,6 +1,44 @@
 # Installation verification
 
-## Current local installation: Logo Land v0.3.1
+## Current development installation after final corrections
+
+Verified on **2026-09-13 KST**. The repository source, Python project and lock remain **`0.4.0`**. The refreshed personal installation is **`0.4.0+codex.20260912161802`**, incorporating the legacy metadata export correction and matching Dark-preview surface. Version 0.4.0 is unreleased; the published release remains 0.3.1 because required native sample gates are unmet.
+
+The final payload contains **55 files**. All 54 non-manifest files match the source; the manifest differs only by the official local cachebuster. The actual installed helper completed **29 CLI invocations: 27 successes and two expected strict-export refusals**. Original PNG/ZIP integrity, schema-1 metadata compatibility, advisory uncertainty and the generated `#171717` Dark preview were checked.
+
+See the [final installed-cache report](color-workflow/installation-040-final.md) for exact commands, hashes, validation and scope. Existing native originals were reused; this is not new image generation, cold-cache offline installation or a fresh GUI-thread invocation. Start a **new Codex conversation** with **`$logo-land`** to load the refreshed skill.
+
+## Earlier v0.4.0 installation checkpoint
+
+The following record predates the final compatibility correction and cache refresh above. Its original commands and version remain historical evidence.
+
+Verified on **2026-09-13 KST**. The repository source manifest, Python project and locked helper package are **`0.4.0`**. The personal installation is **`0.4.0+codex.20260912153655`**, using the official `plugin-creator` cachebuster helper. The suffix refreshes the local Codex cache; it is not a release version. Version 0.4.0 remains unreleased because required native sample checks did not pass; the latest published release is 0.3.1.
+
+| Location | Plugin manifest version | Python project / locked helper version |
+| --- | --- | --- |
+| Repository working tree | `0.4.0` | `0.4.0` / `0.4.0` |
+| Personal source: `~/plugins/logo-land` | `0.4.0+codex.20260912153655` | `0.4.0` / `0.4.0` |
+| Installed cache: `<codex-home>/plugins/cache/personal/logo-land/0.4.0+codex.20260912153655` | `0.4.0+codex.20260912153655` | `0.4.0` / `0.4.0` |
+
+`<codex-home>` denotes the active Orca Codex account's home. Its `plugins` directory resolves to the user's shared `~/.codex/plugins` directory. Public records use these aliases instead of private account paths.
+
+The personal source had no differences from its previous 21-file installed cache or repository `HEAD`, apart from the expected manifest cachebuster. After checking for personal edits, the release payload was synchronized, the official validator passed for both personal source and installed cache, and `codex plugin add logo-land@personal --json` returned the version and cache path above. Both installed trees contain the same **55 packaged files**; all **54 non-manifest files** match the repository byte-for-byte. The manifest differs from the public version only by its cachebuster. The payload includes the new color, reference, lockup, gallery and export helpers and `THIRD_PARTY_NOTICES.md`, with no runtime caches, project outputs or private files.
+
+The helper was then executed **from that installed cache**, with the working directory and session data in a separate `output/install-040-workspace/`. All 15 CLI calls succeeded: session initialization, palette proposal/save, prompt/lockup binding, real-original import, color analysis, gallery creation, visual review, selection, export, and a separate reference extraction/proposal/save/prompt check. The exact NORTHLINE brief, palette, lockup, final native prompt and existing native PNG were preserved. The stored Chrome large/128 px review supplied visual evidence; the original and both saved 128 px light/dark screenshots were reopened during this installation check.
+
+The exported **schema-2 manifest** records the selected palette, lockup and recomputed color report. ZIP integrity passed, its only entries are `logo.png`, `manifest.json`, and `brand-guide.md`, and the archived PNG is byte-identical to the actual native original:
+
+```text
+SHA-256 3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534
+```
+
+The color report is `pass` under **advisory** palette intent; this is not an exact-pixel or strict-color certification. NORTHLINE is intentionally opaque, and `transparency_verified` is false. Full commands, hashes, observations and limitations are in the [v0.4.0 installed-helper evidence](color-workflow/installation-040.md).
+
+`codex plugin list --json` still exits 1 because the unrelated configured `astral-codex` marketplace lacks a supported manifest. That configuration was not changed. This run did not perform fresh native generation, a cold-cache offline installation, a new GUI-thread skill invocation, commit, push or release. The public plugin files and original NORTHLINE session remained unchanged.
+
+Start a **new Codex thread** and invoke **`$logo-land`** to pick up the refreshed skill. For example: `$logo-land Help me create a logo that fits my brand.`
+
+## Historical records: Logo Land v0.3.1
 
 Verified on **2026-09-12**. The release version is **`0.3.1`**. The local installation uses **`0.3.1+codex.20260912140549`**, generated by the official `plugin-creator` cachebuster helper. The `+codex.<timestamp>` suffix identifies this local Codex cache refresh; it is not a separate release version and does not belong in the repository's release manifest or Python package version.
 
@@ -37,7 +75,7 @@ This record verifies installation files and manifest validity. It does not claim
 
 ## Historical records: Logo Land v0.3.0
 
-The following records describe earlier installations and their checks, not the current v0.3.1 installation. Historical cache paths are retained as evidence and are not current download links.
+The following records describe earlier installations and their checks, not the current v0.4.0 installation. Historical cache paths are retained as evidence and are not current download links.
 
 투명 배경 요청 지침과 시작 문구를 추가한 당시 설치 버전은 `0.3.0+codex.20260912135514`였습니다. 당시 `codex plugin add logo-land@personal --json`, manifest 검사와 스킬 검사가 모두 통과했습니다. [투명 PNG 샘플과 검증](../transparency/README.md)을 참고해 주세요.
 

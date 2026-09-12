@@ -1,15 +1,22 @@
 """Export a reviewed original PNG with truthful provenance and a matching ZIP."""
 
-from __future__ import annotations
-
 import hashlib
-import os
 from datetime import UTC, datetime
 from pathlib import Path
-from tempfile import TemporaryDirectory
 from typing import Literal
-from zipfile import ZIP_DEFLATED, ZipFile
 
+from logo_helper.color_delivery import (
+    COLOR_LIMITS,
+    COLOR_METHOD,
+    ColorDelivery,
+    ColorPolicy,
+    export_colors,
+)
+from logo_helper.color_guide import color_guide, typography_guide
+from logo_helper.color_models import PaletteVersion
+from logo_helper.color_reports import ColorReport
+from logo_helper.export_bundle import publish_bundle
+from logo_helper.lockup_models import LockupIntent
 from logo_helper.models import (
     Artifact,
     Background,
@@ -20,14 +27,14 @@ from logo_helper.models import (
     Session,
     SessionId,
 )
-from logo_helper.storage import Store, read_source, safe_path, write_new
+from logo_helper.storage import Store, read_source, safe_path
 from logo_helper.workflow import advance
 
 
 class Manifest(FrozenModel):
     """Describe the actual exported artifact without promising vector or legal rights."""
 
-    schema_version: Literal[1] = 1
+    schema_version: Literal[2] = 2
     session_id: SessionId
     revision: int
     exported_at: datetime
@@ -37,13 +44,21 @@ class Manifest(FrozenModel):
     media_kind: Literal["raster"] = "raster"
     requested_background: Background
     transparency_verified: bool
+    intended_palette: PaletteVersion | None
+    color_report: ColorReport
+    color_policy: ColorPolicy
+    warnings: tuple[str, ...] = ()
+    color_method: str = COLOR_METHOD
+    color_limits: tuple[str, ...] = COLOR_LIMITS
+    lockup_intent: LockupIntent | None = None
+    font_reference_usage: Literal["appearance-reference-only"] = "appearance-reference-only"
 
 
-def guide(state: Session, artifact: Artifact) -> str:
+def guide(state: Session, artifact: Artifact, evidence: ColorDelivery | None = None) -> str:
     """Separate requested brand choices from measured PNG facts and host review."""
     brief = state.brief
     selected_request = "\n".join(f"> {line}" for line in artifact.prompt.splitlines())
-    return (
+    history = (
         f"# {brief.brand_name}\n\n"
         f"Selected artifact: {artifact.id}\n\n"
         f"Initial brief text: {brief.exact_text}\n\nInitial brief slogan: {brief.slogan}\n\n"
@@ -65,7 +80,17 @@ def guide(state: Session, artifact: Artifact) -> str:
         "artwork. The selected version request is authoritative for changes to the initial brief. "
         "The manifest records the explicit visual review and generation/edit prompt.\n\n"
         "## Selected version request\n\n"
-        f"{selected_request}\n"
+        f"{selected_request}\n\n"
+    )
+    return (
+        history
+        + (
+            color_guide(evidence)
+            if evidence
+            else "Color evidence was not recomputed for this guide.\n"
+        )
+        + "\n"
+        + typography_guide(artifact)
     )
 
 
@@ -103,13 +128,20 @@ def export(store: Store, identifier: SessionId, revision: int, output: str | Non
             )
         if destination.exists():
             raise ProjectError("conflict", f"Export destination already exists: {destination}")
-        destination.parent.mkdir(parents=True, exist_ok=True)
         data = read_source(safe_path(store.session_dir(identifier), artifact.path))
         if hashlib.sha256(data).hexdigest() != artifact.sha256:
             raise ProjectError("hash_mismatch", "Selected image changed during export")
         now = datetime.now(UTC)
+        evidence = export_colors(state, artifact, data, now)
         record = ExportRecord(path=relative, artifact_id=artifact.id, created_at=now)
-        updated = advance(state.model_copy(update={"exports": (*state.exports, record)}))
+        updated = advance(
+            state.model_copy(
+                update={
+                    "exports": (*state.exports, record),
+                    "color_reports": (*state.color_reports, evidence.report),
+                }
+            )
+        )
         manifest = Manifest(
             session_id=identifier,
             revision=updated.revision,
@@ -118,27 +150,17 @@ def export(store: Store, identifier: SessionId, revision: int, output: str | Non
             brief=state.brief,
             requested_background=requested_background,
             transparency_verified=artifact.image.has_transparency,
+            intended_palette=evidence.palette,
+            color_report=evidence.report,
+            color_policy=evidence.policy,
+            warnings=evidence.warnings,
+            lockup_intent=artifact.lockup,
         )
-        with TemporaryDirectory(prefix=".logo-export-", dir=destination.parent) as temporary:
-            staging = Path(temporary) / "bundle"
-            staging.mkdir()
-            write_new(staging / "logo.png", data)
-            write_new(staging / "manifest.json", manifest.model_dump_json(indent=2).encode("utf-8"))
-            write_new(staging / "brand-guide.md", guide(state, artifact).encode("utf-8"))
-            with ZipFile(staging / "logo-package.zip", "x", compression=ZIP_DEFLATED) as archive:
-                for name in ("logo.png", "manifest.json", "brand-guide.md"):
-                    archive.write(staging / name, name)
-            destination.mkdir()
-            published: list[Path] = []
-            try:
-                for file in staging.iterdir():
-                    target = destination / file.name
-                    os.link(file, target)
-                    published.append(target)
-                store.save(updated)
-            except (OSError, ProjectError):
-                for file in published:
-                    file.unlink()
-                destination.rmdir()
-                raise
+        with publish_bundle(
+            destination,
+            data,
+            manifest.model_dump_json(indent=2).encode("utf-8"),
+            guide(state, artifact, evidence).encode("utf-8"),
+        ):
+            store.save(updated)
     return updated

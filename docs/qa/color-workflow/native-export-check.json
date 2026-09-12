@@ -1,0 +1,44 @@
+[
+  {
+    "session": "northline",
+    "sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+    "zip_payloads": [
+      "brand-guide.md",
+      "logo.png",
+      "manifest.json"
+    ],
+    "color_status": "pass",
+    "policy": "advisory",
+    "transparency_verified": false,
+    "font_reference_usage": "appearance-reference-only",
+    "original_bytes_preserved": true
+  },
+  {
+    "session": "grove",
+    "sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+    "zip_payloads": [
+      "brand-guide.md",
+      "logo.png",
+      "manifest.json"
+    ],
+    "color_status": "pass",
+    "policy": "strict",
+    "transparency_verified": true,
+    "font_reference_usage": "appearance-reference-only",
+    "original_bytes_preserved": true
+  },
+  {
+    "session": "tide",
+    "sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+    "zip_payloads": [
+      "brand-guide.md",
+      "logo.png",
+      "manifest.json"
+    ],
+    "color_status": "pass",
+    "policy": "advisory",
+    "transparency_verified": false,
+    "font_reference_usage": "appearance-reference-only",
+    "original_bytes_preserved": true
+  }
+]

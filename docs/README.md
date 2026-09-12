@@ -1,30 +1,40 @@
-# Logo Land 조사·제작 자료
+# Logo Land research and implementation
 
-[English README](../README.md) · [한국어 README](../README.ko.md) · [Logo Land 전용 로고](brand/README.md) · [실제 샘플 10개 갤러리](samples/index.html)
+[English README](../README.md) · [한국어 README](../README.ko.md) · [Logo Land brand](brand/README.md) · [Original ten samples](samples/index.html)
 
-추가 제작한 샘플과 브랜드 변경 검수는 [샘플·브랜드 검증 기록](qa/samples.md)에 정리했습니다. 아래는 최초 조사·구현 기록입니다.
+The current **0.4.0 development update is unreleased**. It adds composable color constraints, font guidance and explicit symbol-plus-text layouts. Required restricted-color and white-transparent native samples remain unapproved; see the [validation record](qa/color-workflow/README.md).
 
-2026-09-12에 다섯 서비스를 조사하고, Codex 내장 이미지 생성으로 대화형 플러그인을 구현했습니다. 브랜드 예제는 가상의 `Morrow Studio`입니다. 캡처 151개, 공식 출처 URL 67개, 최종 테스트 96개와 다섯 독립 검토를 정리했습니다.
-
-| 자료 | 내용 |
+| Current update | Contents |
 |---|---|
-| [다섯 서비스 비교와 제품 반영](research/comparison.md) | 제작 방식·유형·차이와 플러그인으로 가져온 흐름 |
-| [공식 기능 조사](research/official-features.md) | 다섯 사이트의 입력 방식, 로고 유형, 편집, 다운로드·상품 범위와 출처 |
-| [Looka·Fiverr·Design 직접 사용](research/looka-fiverr-design-walkthrough.md) | 실제로 클릭·입력·생성한 흐름과 스크린샷 |
-| [Brandmark·Tailor 직접 사용](research/brandmark-tailor-walkthrough.md) | 직접 확인한 제작 단계와 확인 한계 |
-| [Chrome 로그인 후 추가 조사](research/chrome-followup.md) | Codex Computer Use로 확인한 편집·한글·상품 선택 |
-| [스크린샷 갤러리](research/gallery.html) | 서비스별 화면을 한 페이지에서 탐색 |
-| [원시 캡처 목록](research/captures.jsonl) | URL·시각·PNG/JPEG·접근성 스냅샷 대응 관계 |
-| [출처 목록](research/sources.json) | 공식 URL과 확인 상태 |
-| [제작 계획](../plans/logo-generator.md) | 요구사항, 설계, 구현·검증 범위 |
-| [설계 검토](planning/gap-analysis.md) | 이미지 도구·상태·참조·출력의 주요 판단 |
-| [자동 검사](qa/helper-tests.md) | 정상 흐름과 실패·복구·동시성 검사 |
-| [배경 변형 검사](qa/background-variants.md) | 버전별 투명·불투명 배경과 기존 작업 재개 검사 |
-| [최종 검증 종합](qa/final.md) | 96개 테스트, 독립 검토, 패키지·설치 및 자료 검증 |
-| [설치 기록](qa/installation.md) | 개인 플러그인 설치 위치, ZIP과 새 대화 사용법 |
-| [실제 이미지 도구 테스트](qa/live/README.md) | 개별 시안 생성, 선택안 수정, 파일 검증·전달 |
-| [이미지 비교 화면](qa/live/preview.html) | 원본과 수정본, 크기·배경별 확인 |
+| [Color workflow plan](../plans/logo-land-color-workflow.md) | Implementation contracts, task ownership and release gates |
+| [Font tools and research](research/font-tools.md) | Official APIs, community skills/MCPs, Korean/Latin families and licensing boundaries |
+| [Eight color and typography cases](colors/index.html) | Actual originals, repair histories, measured evidence and three approved deliveries |
+| [Color and typography validation](qa/color-workflow/README.md) | Source tests, native outcomes, Chrome checks and installation evidence |
+| [Independent review integration](qa/color-workflow/review-summary.md) | Five review perspectives, corrections and the blocked publication decision |
 
-직접 실행한 기능과 공식 문서로만 확인한 기능은 각 보고서에서 구분합니다. 로그인·결제가 필요한 모든 기능을 실행했다는 의미는 아닙니다. 가격과 상품 구성은 조사 시점·지역·노출 조건에 따라 달라질 수 있습니다.
+## Earlier research and releases
 
-스크린샷은 제작 흐름의 연구 자료입니다. 사이트 디자인·로고 템플릿을 플러그인 에셋으로 재배포하지 않습니다. 플러그인이 실제 생성하는 로고와 경쟁 사이트의 예시 화면은 별개의 자료입니다.
+The following records describe the initial five-service research and implementation completed on 2026-09-12: 151 captures, 67 official source URLs, 96 tests and five independent reviews. `Morrow Studio` is a fictional example brand. Later samples and the rename are covered by the [sample and branding verification](qa/samples.md). Historical counts below are not the current development update's test totals.
+
+| Material | Contents |
+|---|---|
+| [Five-service comparison](research/comparison.md) | Creation flows, logo types, differences and product decisions |
+| [Official feature research](research/official-features.md) | Inputs, editing, downloads, product scope and sources |
+| [Looka, Fiverr and Design walkthrough](research/looka-fiverr-design-walkthrough.md) | Actual interactions, generation steps and screenshots |
+| [Brandmark and Tailor walkthrough](research/brandmark-tailor-walkthrough.md) | Observed steps and investigation limits |
+| [Chrome follow-up](research/chrome-followup.md) | Editing, Korean lettering and product choices inspected with Computer Use |
+| [Screenshot gallery](research/gallery.html) | Browse the service captures |
+| [Capture index](research/captures.jsonl) | URLs, timestamps, images and accessibility snapshots |
+| [Source index](research/sources.json) | Official URLs and verification status |
+| [Original implementation plan](../plans/logo-generator.md) | Requirements, design and implementation/verification scope |
+| [Design review](planning/gap-analysis.md) | Image-tool, state, reference and delivery decisions |
+| [Original automated checks](qa/helper-tests.md) | Happy paths, failure handling, recovery and concurrency |
+| [Background variant checks](qa/background-variants.md) | Transparent/opaque revisions and legacy project resume |
+| [Original final verification](qa/final.md) | The original 96-test, review, packaging and installation checkpoint |
+| [Installation records](qa/installation.md) | Personal installation, supported routes and new-conversation usage |
+| [Live image-tool checks](qa/live/README.md) | Individual concepts, revisions, original-file verification and delivery |
+| [Original comparison page](qa/live/preview.html) | Images across sizes and backgrounds |
+
+Each report distinguishes observed behavior from documentation-only research. These records do not claim every paid or authenticated feature was exercised. Prices and product availability depend on the recorded date, region and account context.
+
+Service screenshots document the research. Site designs and logo templates are not packaged as plugin assets. The plugin's actual generated logos have their own separate provenance records.

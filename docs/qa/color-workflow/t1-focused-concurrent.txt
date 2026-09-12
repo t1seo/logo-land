@@ -1,0 +1,79 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 56 items
+
+tests/test_color_models.py ..............................                [ 53%]
+tests/test_palette_compatibility.py ...........                          [ 73%]
+tests/test_background_compatibility.py ...F.....                         [ 89%]
+tests/test_transactions.py ......                                        [100%]
+
+=================================== FAILURES ===================================
+_ test_legacy_session_when_background_intent_is_missing_or_null[null-transparent] _
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-49/test...$TMPDIR/pytest-of-user/pytest-49/test_legacy_session_when_backg3/review.json'))
+initial = 'transparent', stored_field = 'null'
+
+    @pytest.mark.parametrize("initial", ["opaque", "transparent"])
+    @pytest.mark.parametrize("stored_field", ["missing", "null"])
+    def test_legacy_session_when_background_intent_is_missing_or_null(
+        harness: Harness, initial: Background, stored_field: Literal["missing", "null"]
+    ) -> None:
+        # Given a reviewed original stored in the old schema or with an unset background intent.
+        prepare_parent(harness, initial)
+        select_and_review(harness, "v1", 1)
+        state = Session.model_validate_json(harness.state_path.read_bytes())
+        legacy_json = state.model_dump_json(
+            exclude={"artifacts": {"__all__": {"requested_background"}}}
+        )
+        if stored_field == "null":
+            legacy_json = legacy_json.replace(
+                '"parent_id":', '"requested_background":null,"parent_id":'
+            )
+        _ = harness.state_path.write_text(legacy_json, encoding="utf-8")
+        before = harness.state_path.read_bytes()
+        # When a fresh CLI resumes, builds a child prompt, and exports the legacy selection.
+        resumed = Session.model_validate_json(harness.ok("show", "--session", "demo"))
+        prompt = PromptResult.model_validate_json(
+            harness.ok("prompt", "--session", "demo", "--parent", "v1", "--changes", "Use navy")
+        )
+        assert harness.state_path.read_bytes() == before
+        _ = harness.ok("export", "--session", "demo", "--revision", "3")
+        # Then the original brief remains the fallback while no per-artifact request is fabricated.
+        output = harness.workspace / "output/logo-generator/demo"
+>       manifest = Manifest.model_validate_json((output / "manifest.json").read_bytes())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       pydantic_core._pydantic_core.ValidationError: 9 validation errors for Manifest
+E       intended_palette
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       color_report
+E         Extra inputs are not permitted [type=extra_forbidden, input_value={'id': 'export-97002dcaca...09-12T15:16:33.946131Z'}, input_type=dict]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       color_policy
+E         Extra inputs are not permitted [type=extra_forbidden, input_value='unverified', input_type=str]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       warnings
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=['Color-unverified: no st...profile confirms this.'], input_type=list]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       color_method
+E         Extra inputs are not permitted [type=extra_forbidden, input_value='sRGB to Lab D50; CIEDE20..., ColorAide method=2000', input_type=str]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       color_limits
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=['Sampled raster evidence...logo AA certification.'], input_type=list]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       lockup_intent
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       font_reference_usage
+E         Extra inputs are not permitted [type=extra_forbidden, input_value='appearance-reference-only', input_type=str]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       schema_version
+E         Input should be 1 [type=literal_error, input_value=2, input_type=int]
+E           For further information visit https://errors.pydantic.dev/2.13/v/literal_error
+
+tests/test_background_compatibility.py:43: ValidationError
+=========================== short test summary info ============================
+FAILED tests/test_background_compatibility.py::test_legacy_session_when_background_intent_is_missing_or_null[null-transparent]
+======================== 1 failed, 55 passed in 43.27s =========================

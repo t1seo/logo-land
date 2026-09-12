@@ -28,7 +28,7 @@ Before creating a tag or release, check whether the intended version already exi
 
 ## Local plugin installations
 
-Personal development installations may use a version such as `0.3.1+codex.<timestamp>` to refresh the Codex cache. Apply the official cachebuster helper to the personal plugin source and reinstall it from its existing marketplace. Keep the repository manifest and release tag at the clean `0.3.1` version; the cachebuster is not a separate public release.
+Personal development installations may use a version such as `0.4.0+codex.<timestamp>` to refresh the Codex cache. Apply the official cachebuster helper to the personal plugin source and reinstall it from its existing marketplace. Keep the repository manifest and release tag at the clean `0.4.0` version; the cachebuster is not a separate public release.
 
 Open a new Codex conversation after reinstalling so the updated plugin is discovered. The [installation record](qa/installation.md) distinguishes release versions from local cache versions.
 

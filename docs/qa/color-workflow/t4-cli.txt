@@ -1,0 +1,209 @@
++ t4_repo=$PROJECT
++ t4_workspace=/tmp/logo-land-t4-7HsSYD
++ helper=(uv run --locked python "$t4_repo/skills/logo-land/scripts/logo_project.py" --workspace "$t4_workspace")
++ cat
++ cat
++ cat
++ uv run --locked python -c 'from PIL import Image; from pathlib import Path; p=Path("/tmp/logo-land-t4-7HsSYD/fixture.png"); image=Image.new("RGBA",(32,32),(36,122,82,255)); image.putpixel((0,0),(255,0,255,0)); image.save(p); image.close()'
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD init --session demo --brief /tmp/logo-land-t4-7HsSYD/brief.json
++ jq '{id,revision}'
+{
+  "id": "demo",
+  "revision": 0
+}
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD reference-add --session demo --reference photo --image /tmp/logo-land-t4-7HsSYD/fixture.png --revision 0
++ jq '{revision,references}'
+{
+  "revision": 1,
+  "references": [
+    {
+      "id": "photo",
+      "path": "references/photo.png",
+      "sha256": "29fd78d2c04d2c82d58d6eae68b0d794a5c15b257b8334ad8a80c8c037d45e34",
+      "format": "PNG",
+      "width": 32,
+      "height": 32,
+      "exif_orientation": 1,
+      "roi": null,
+      "created_at": "2026-09-12T15:21:18.648562Z"
+    }
+  ]
+}
++ cp /tmp/logo-land-t4-7HsSYD/fixture.png /tmp/logo-land-t4-7HsSYD/native-fixture.png
++ mv /tmp/logo-land-t4-7HsSYD/fixture.png /tmp/logo-land-t4-7HsSYD/moved-reference.png
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD palette-propose --session demo --request-file /tmp/logo-land-t4-7HsSYD/request.json --reference photo
++ jq '{session_id,revision,extraction,candidates:[.candidates[]|{swatches,constraints,source}]}' /tmp/logo-land-t4-7HsSYD/proposal.json
+{
+  "session_id": "demo",
+  "revision": 1,
+  "extraction": {
+    "swatches": [
+      {
+        "hex": "#247A52",
+        "samples": 1023,
+        "share": 1.0
+      }
+    ],
+    "sampling": {
+      "width": 32,
+      "height": 32,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "all_pixels",
+      "sampled_positions": 1024,
+      "sampled_fraction": 1.0,
+      "visible_samples": 1023,
+      "core_samples": 1023,
+      "partial_alpha_samples": 0
+    },
+    "profile_treatment": "assumed_srgb",
+    "status": "extracted",
+    "reasons": []
+  },
+  "candidates": [
+    {
+      "swatches": [
+        {
+          "hex": "#247A52",
+          "role": "primary"
+        }
+      ],
+      "constraints": {
+        "locked_hex": [
+          "#247A52"
+        ],
+        "allowed_hex": null,
+        "max_colors": 2,
+        "required_hex": [],
+        "allow_gradients": false
+      },
+      "source": "reference"
+    }
+  ]
+}
++ jq '.candidates[0]' /tmp/logo-land-t4-7HsSYD/proposal.json
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD palette-add --session demo --palette green --palette-file /tmp/logo-land-t4-7HsSYD/selected.json --revision 1
++ jq '{revision,active_palette_id}'
+{
+  "revision": 2,
+  "active_palette_id": "green"
+}
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD prompt --session demo --palette green --lockup-file /tmp/logo-land-t4-7HsSYD/lockup.json
++ jq '{revision,palette_id,palette_digest,lockup}' /tmp/logo-land-t4-7HsSYD/prompt.json
+{
+  "revision": 2,
+  "palette_id": "green",
+  "palette_digest": "b3c7d3bc9d7ff4c70d23cc8f9d0e275cfa82dc6591880bf9d961bce553655f78",
+  "lockup": {
+    "layout": "horizontal",
+    "symbol_position": "end",
+    "text_alignment": "center",
+    "typography_style": "Rounded Hangul and Latin sans",
+    "font_reference": "Pretendard visual direction"
+  }
+}
++ jq -r .prompt /tmp/logo-land-t4-7HsSYD/prompt.json
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD import --session demo --artifact v1 --image /tmp/logo-land-t4-7HsSYD/native-fixture.png --prompt-file /tmp/logo-land-t4-7HsSYD/prompt.txt --revision 2 --palette green --lockup-file /tmp/logo-land-t4-7HsSYD/lockup.json
++ jq '{revision,artifacts:[.artifacts[]|{id,palette_id,lockup,sha256}],reports:[.color_reports[]|{id,status,artifact_id,palette_id,sampling}]}'
+{
+  "revision": 3,
+  "artifacts": [
+    {
+      "id": "v1",
+      "palette_id": "green",
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "end",
+        "text_alignment": "center",
+        "typography_style": "Rounded Hangul and Latin sans",
+        "font_reference": "Pretendard visual direction"
+      },
+      "sha256": "29fd78d2c04d2c82d58d6eae68b0d794a5c15b257b8334ad8a80c8c037d45e34"
+    }
+  ],
+  "reports": [
+    {
+      "id": "report-c6276faa0dfd4e03a33f8abdda965cae",
+      "status": "pass",
+      "artifact_id": "v1",
+      "palette_id": "green",
+      "sampling": {
+        "width": 32,
+        "height": 32,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "all_pixels",
+        "sampled_positions": 1024,
+        "sampled_fraction": 1.0,
+        "visible_samples": 1023,
+        "core_samples": 1023,
+        "partial_alpha_samples": 0
+      }
+    }
+  ]
+}
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD color-analyze --session demo --artifact v1 --revision 3
++ jq '{revision,reports:[.color_reports[]|{id,status,artifact_id,palette_id}]}'
+{
+  "revision": 4,
+  "reports": [
+    {
+      "id": "report-c6276faa0dfd4e03a33f8abdda965cae",
+      "status": "pass",
+      "artifact_id": "v1",
+      "palette_id": "green"
+    },
+    {
+      "id": "report-99c4f4303ba54c43a9b712dfb271552b",
+      "status": "pass",
+      "artifact_id": "v1",
+      "palette_id": "green"
+    }
+  ]
+}
++ shasum -a 256 /tmp/logo-land-t4-7HsSYD/.logo-generator/sessions/demo/session.json
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD color-gallery --session demo --artifacts v1 --output output/color-galleries/demo
+{
+  "path": "output/color-galleries/demo",
+  "index_path": "output/color-galleries/demo/index.html",
+  "artifact_ids": [
+    "v1"
+  ]
+}
++ shasum -a 256 /tmp/logo-land-t4-7HsSYD/.logo-generator/sessions/demo/session.json
++ cmp /tmp/logo-land-t4-7HsSYD/state-before.sha /tmp/logo-land-t4-7HsSYD/state-after.sha
++ cmp /tmp/logo-land-t4-7HsSYD/native-fixture.png /tmp/logo-land-t4-7HsSYD/output/color-galleries/demo/images/v1.png
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD import --session demo --artifact stale --image /tmp/logo-land-t4-7HsSYD/native-fixture.png --prompt-file /tmp/logo-land-t4-7HsSYD/prompt.txt --revision 2
+{"error": "stale_revision: Expected revision 2; current revision is 4"}
++ test '!' -e /tmp/logo-land-t4-7HsSYD/.logo-generator/sessions/demo/artifacts/stale.png
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD color-gallery --session demo --artifacts v1 --output ../escape
+{"error": "unsafe_path: Paths must remain relative to the workspace"}
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD color-gallery --session demo --artifacts v1 --output output/color-galleries/demo
+{"error": "conflict: Gallery destination already exists"}
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD reference-add --help
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD palette-propose --help
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD palette-add --help
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD color-analyze --help
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD color-gallery --help
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD prompt --help
++ for cmd in reference-add palette-propose palette-add color-analyze color-gallery prompt import
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD import --help
++ uv run --locked python $PROJECT/skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t4-7HsSYD show --session demo
++ jq '{revision,active_palette_id,artifacts:[.artifacts[].id],reports:[.color_reports[].id]}'
+{
+  "revision": 4,
+  "active_palette_id": "green",
+  "artifacts": [
+    "v1"
+  ],
+  "reports": [
+    "report-c6276faa0dfd4e03a33f8abdda965cae",
+    "report-99c4f4303ba54c43a9b712dfb271552b"
+  ]
+}

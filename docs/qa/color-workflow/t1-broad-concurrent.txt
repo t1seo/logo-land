@@ -1,0 +1,83 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 136 items
+
+tests/test_color_models.py ..............................                [ 22%]
+tests/test_palette_compatibility.py ..........                           [ 29%]
+tests/test_background_compatibility.py .........                         [ 36%]
+tests/test_transactions.py ......                                        [ 40%]
+tests/test_boundaries.py ........................                        [ 58%]
+tests/test_cli_safety.py .................                               [ 70%]
+tests/test_cli_workflow.py .......                                       [ 75%]
+tests/test_background_variants.py ......FF                               [ 81%]
+tests/test_delivery_guide.py .                                           [ 82%]
+tests/test_reserved_output.py ............                               [ 91%]
+tests/test_resume_and_portability.py ............                        [100%]
+
+=================================== FAILURES ===================================
+___ test_prompt_when_parent_background_differs_from_original[Use navy blue] ____
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-40/test...$TMPDIR/pytest-of-user/pytest-40/test_prompt_when_parent_backgr0/review.json'))
+changes = 'Use navy blue'
+
+    @pytest.mark.parametrize("changes", ["Use navy blue", "Make the background opaque"])
+    def test_prompt_when_parent_background_differs_from_original(
+        harness: Harness, changes: str
+    ) -> None:
+        # Given an opaque brief and a transparent parent whose latest edit may change background.
+        prepare_parent(harness, "opaque")
+        set_fixture_background(harness, "transparent")
+        _ = harness.import_image(1, "v2", "--parent", "v1", "--background", "transparent")
+        before = harness.state_path.read_bytes()
+        # When the next edit prompt is built from that parent.
+>       result = PromptResult.model_validate_json(
+            harness.ok("prompt", "--session", "demo", "--parent", "v2", "--changes", changes)
+        )
+E       pydantic_core._pydantic_core.ValidationError: 3 validation errors for PromptResult
+E       palette_id
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       palette_digest
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       lockup
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+
+tests/test_background_variants.py:140: ValidationError
+_ test_prompt_when_parent_background_differs_from_original[Make the background opaque] _
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-40/test...$TMPDIR/pytest-of-user/pytest-40/test_prompt_when_parent_backgr1/review.json'))
+changes = 'Make the background opaque'
+
+    @pytest.mark.parametrize("changes", ["Use navy blue", "Make the background opaque"])
+    def test_prompt_when_parent_background_differs_from_original(
+        harness: Harness, changes: str
+    ) -> None:
+        # Given an opaque brief and a transparent parent whose latest edit may change background.
+        prepare_parent(harness, "opaque")
+        set_fixture_background(harness, "transparent")
+        _ = harness.import_image(1, "v2", "--parent", "v1", "--background", "transparent")
+        before = harness.state_path.read_bytes()
+        # When the next edit prompt is built from that parent.
+>       result = PromptResult.model_validate_json(
+            harness.ok("prompt", "--session", "demo", "--parent", "v2", "--changes", changes)
+        )
+E       pydantic_core._pydantic_core.ValidationError: 3 validation errors for PromptResult
+E       palette_id
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       palette_digest
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+E       lockup
+E         Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+E           For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden
+
+tests/test_background_variants.py:140: ValidationError
+=========================== short test summary info ============================
+FAILED tests/test_background_variants.py::test_prompt_when_parent_background_differs_from_original[Use navy blue]
+FAILED tests/test_background_variants.py::test_prompt_when_parent_background_differs_from_original[Make the background opaque]
+================== 2 failed, 134 passed in 155.48s (0:02:35) ===================

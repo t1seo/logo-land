@@ -1,7 +1,7 @@
 {
   "name": "logo-land",
-  "version": "0.3.1",
-  "description": "Logo Land turns a conversation into logo concepts, refinements, and verified PNG packages using native Codex image generation.",
+  "version": "0.4.0",
+  "description": "Create and refine logos with native Codex image generation, guided palettes, symbol-plus-text layouts, and verified PNG delivery.",
   "author": {
     "name": "t1seo"
   },
@@ -10,15 +10,16 @@
   "interface": {
     "displayName": "Logo Land",
     "shortDescription": "Your next logo starts with a conversation.",
-    "longDescription": "Create eight logo types through a conversation with Codex. Compare concepts, refine a chosen image, remove backgrounds, and export verified PNG files with their history.",
+    "longDescription": "Create eight logo types through conversation. Choose or constrain colors, extract reference palettes, arrange symbols and lettering, refine exact originals, and export PNGs with sampled color evidence.",
     "developerName": "t1seo",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
       "$logo-land Help me create a logo that fits my brand.",
-      "Change only the colors of the selected logo, preserving its shape and lettering.",
-      "Resume my saved logo project and export the final PNG.",
-      "Create a transparent-background PNG logo. If I provide an existing logo, remove only its background."
+      "Keep #247A52 and suggest warmer companion colors for the selected logo.",
+      "Create a symbol-plus-text logo with the symbol above the exact brand name.",
+      "Create a transparent PNG logo and preserve intentional white lettering.",
+      "Resume my saved logo project and export the selected reviewed PNG."
     ],
     "brandColor": "#E5231D",
     "logo": "./assets/logo.png"

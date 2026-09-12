@@ -1,0 +1,63 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> skills/logo-land/scripts/logo_project.py:15:1
+   |
+13 |   """Workspace-local logo sessions; actual image generation stays with the host tool."""
+14 |
+15 | / from __future__ import annotations
+16 | |
+17 | | import json
+18 | | from pathlib import Path
+19 | | from typing import Annotated, Final, Literal
+20 | |
+21 | | import typer
+22 | | from pydantic import ValidationError
+23 | |
+24 | | from logo_helper import delivery, workflow
+25 | | from logo_helper.cli_options import (
+26 | |     ArtifactOption, LockupOption, PaletteOption, ParentOption, RevisionOption, SessionOption,
+27 | |     parse_lockup, store_from,
+28 | | )
+29 | | from logo_helper.color_cli import register_color_commands
+30 | | from logo_helper.models import ArtifactId, Brief, PaletteId, ProjectError, SessionId, VisualReview
+31 | | from logo_helper.prompts import build_prompt
+32 | | from logo_helper.storage import read_source
+   | |___________________________________________^
+33 |
+34 |   APP: Final = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False)
+   |
+help: Organize imports
+   |
+25 | from logo_helper.cli_options import (
+   -     ArtifactOption, LockupOption, PaletteOption, ParentOption, RevisionOption, SessionOption,
+   -     parse_lockup, store_from,
+26 +     ArtifactOption,
+27 +     LockupOption,
+28 +     PaletteOption,
+29 +     ParentOption,
+30 +     RevisionOption,
+31 +     SessionOption,
+32 +     parse_lockup,
+33 +     store_from,
+34 | )
+   |
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.
+unformatted: File would be reformatted
+  --> skills/logo-land/scripts/logo_project.py:26:20
+   |
+25 | from logo_helper.cli_options import (
+   -     ArtifactOption, LockupOption, PaletteOption, ParentOption, RevisionOption, SessionOption,
+   -     parse_lockup, store_from,
+26 +     ArtifactOption,
+27 +     LockupOption,
+28 +     PaletteOption,
+29 +     ParentOption,
+30 +     RevisionOption,
+31 +     SessionOption,
+32 +     parse_lockup,
+33 +     store_from,
+34 | )
+   |
+
+1 file would be reformatted, 13 files already formatted

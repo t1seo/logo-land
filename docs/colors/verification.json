@@ -1,0 +1,215 @@
+{
+  "verified_at": "2026-09-12T15:42:38.355Z",
+  "html_files": 15,
+  "local_links_and_fragments_checked": 261,
+  "custom_script_syntax_checks": 8,
+  "main_original_hashes_matched": 8,
+  "session_original_hashes_matched": 17,
+  "actual_prompts_matched": 17,
+  "cli_gallery_html_byte_matches": 7,
+  "private_paths_found": 0,
+  "external_resources_found": 0,
+  "font_binaries": [],
+  "raster_edits_performed": false,
+  "artifacts": [
+    {
+      "session": "bamgyeol",
+      "artifact_id": "a-v1",
+      "path": "projects/bamgyeol/images/a-v1.png",
+      "sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+      "source_basename": "exec-3f950424-8c07-418c-b492-b271f08f116b.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "bamgyeol",
+      "artifact_id": "a-v2",
+      "path": "projects/bamgyeol/images/a-v2.png",
+      "sha256": "27e010082310501ac2ca6060aa8835ff3e75cd727bb971fb76f08b153884815b",
+      "source_basename": "exec-9a4a36ae-06a8-449c-9259-b0b71ef0859b.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "bamgyeol",
+      "artifact_id": "a-v3",
+      "path": "projects/bamgyeol/images/a-v3.png",
+      "sha256": "0df1d666d480aae721f6ccab6fa7ff9d2388b015946e8e051381c86e9766c6f3",
+      "source_basename": "exec-7115acab-98dc-4237-b6a3-cced834b05af.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "fieldnote",
+      "artifact_id": "a-v1",
+      "path": "projects/fieldnote/images/a-v1.png",
+      "sha256": "049de07077bb2d4ff222fb4a0d74b17f526e571292b64de804ea990933ee2870",
+      "source_basename": "exec-885c9b3f-1c74-44ba-b5b5-58a4e9104370.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "fieldnote",
+      "artifact_id": "a-v2",
+      "path": "projects/fieldnote/images/a-v2.png",
+      "sha256": "7dacc55d6f90f10f7206729f3f0d7cffc75b36ff6191e7430d8e01e2b76c40cb",
+      "source_basename": "exec-017fe56d-8046-4f6d-a183-7925598e47f8.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "fieldnote",
+      "artifact_id": "a-v3",
+      "path": "projects/fieldnote/images/a-v3.png",
+      "sha256": "05398268ac42aa8d0da04976a9c6367df1bb186e1b3fe46e927db3e494ee65e2",
+      "source_basename": "exec-36945e1c-a2f5-4d9b-b314-a0c7fff74755.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "grove",
+      "artifact_id": "a-v1",
+      "path": "projects/grove/images/a-v1.png",
+      "sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "source_basename": "exec-5317d56e-2a54-4e2c-a74b-c14c4bb640fb.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "grove",
+      "artifact_id": "a-v2",
+      "path": "projects/grove/images/a-v2.png",
+      "sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+      "source_basename": "exec-4d251f3c-2bf6-4716-842b-a5fbffe46860.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "grove",
+      "artifact_id": "a-v3",
+      "path": "projects/grove/images/a-v3.png",
+      "sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+      "source_basename": "exec-b063620c-c792-4ffa-b98f-1290fa617ce7.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "grove",
+      "artifact_id": "a-v4",
+      "path": "projects/grove/images/a-v4.png",
+      "sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+      "source_basename": "exec-37a72da1-42ff-4645-be28-9cff982f6a14.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "northline",
+      "artifact_id": "a-v1",
+      "path": "projects/northline/images/a-v1.png",
+      "sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+      "source_basename": "exec-d7ceda5c-21e3-49de-b6ba-d0e42a8e5fc5.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "sunroom",
+      "artifact_id": "a-v1",
+      "path": "projects/sunroom/images/a-v1.png",
+      "sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+      "source_basename": "exec-a8938371-ad2c-4f27-8c05-63a277c3f741.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "tide",
+      "artifact_id": "a-v1",
+      "path": "projects/tide/images/a-v1.png",
+      "sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+      "source_basename": "exec-faf154a3-6a79-40e7-8ed7-602459a37875.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "white-bamgyeol",
+      "artifact_id": "parent-v1",
+      "path": "projects/white-bamgyeol/images/parent-v1.png",
+      "sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+      "source_basename": "exec-3f950424-8c07-418c-b492-b271f08f116b.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "white-bamgyeol",
+      "artifact_id": "white-v1",
+      "path": "projects/white-bamgyeol/images/white-v1.png",
+      "sha256": "764557003be078c7e83fca85b7b40d43977edefa9ef46caf49f5279c403a3151",
+      "source_basename": "exec-b513369c-0881-4e0c-99bb-15a25e6f3a6c.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "white-bamgyeol",
+      "artifact_id": "white-v2",
+      "path": "projects/white-bamgyeol/images/white-v2.png",
+      "sha256": "fda77d0af6c53c4d0d28099ca6568cbb7e877ac6045ea9ca6898bf77884a29a5",
+      "source_basename": "exec-c99775ad-3b64-41b7-b80d-66b07f82c3a2.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    },
+    {
+      "session": "white-bamgyeol",
+      "artifact_id": "white-v3",
+      "path": "projects/white-bamgyeol/images/white-v3.png",
+      "sha256": "0be9b79a68e2bb9c145e4f9171db84807010be6f2478dd19b724a3dc4c0e73bd",
+      "source_basename": "exec-500af82e-e168-4016-948c-dc4f0b07a2d5.png",
+      "matched_native_source": true,
+      "matched_live_original": true,
+      "matched_prompt": true
+    }
+  ],
+  "deliveries": [
+    {
+      "session": "northline",
+      "zip": "deliveries/northline/logo-package.zip",
+      "zip_sha256": "aae2b39736136b671db4114d88e65f10c44997151fae37a197c390e62c41a472",
+      "png_sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+      "zip_png_matches_original": true,
+      "all_delivery_files_match_source": true
+    },
+    {
+      "session": "grove",
+      "zip": "deliveries/grove/logo-package.zip",
+      "zip_sha256": "61fed8500b5b562fa28e34a65d79bfd585c59132adc298a7af5a0e8413784d12",
+      "png_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "zip_png_matches_original": true,
+      "all_delivery_files_match_source": true
+    },
+    {
+      "session": "tide",
+      "zip": "deliveries/tide/logo-package.zip",
+      "zip_sha256": "b76d0cda7f231e10948cf48a261827d2622bb1b52253e4cd032a34b75ed23a61",
+      "png_sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+      "zip_png_matches_original": true,
+      "all_delivery_files_match_source": true
+    }
+  ],
+  "relocated_http_files_checked": 93,
+  "relocated_http_failures": 0,
+  "relocation_note": "Copied the entire standalone gallery to a new workspace directory and fetched every linked local file through a temporary localhost HTTP server."
+}

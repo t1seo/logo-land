@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-12T15:44:43.185Z",
+  "files": [
+    "README.md",
+    "README.ko.md",
+    "CHANGELOG.md",
+    "docs/qa/color-workflow/README.md",
+    "skills/logo-land/references/project-files.md",
+    "skills/logo-land/references/typography.md",
+    "skills/logo-land/references/color-workflow.md"
+  ],
+  "checked_local_links": 170,
+  "missing": [],
+  "scope": "Markdown targets and HTML src/href; local file existence; remote URLs and fragments excluded. Full gallery fragment checks are recorded separately."
+}

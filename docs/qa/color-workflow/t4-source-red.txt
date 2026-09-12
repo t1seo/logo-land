@@ -1,0 +1,29 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__________________ test_palette_when_reference_has_no_source ___________________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-67/test...$TMPDIR/pytest-of-user/pytest-67/test_palette_when_reference_ha0/review.json'))
+
+    def test_palette_when_reference_has_no_source(harness: Harness) -> None:
+        # Given a palette that claims reference origin without a reference binding.
+        harness.init()
+        candidate = harness.workspace / "candidate.json"
+        _ = candidate.write_text(
+            '{"swatches":[{"hex":"#000000","role":"primary"}],"source":"reference",'
+            '"selected_by":"assistant","rationale":"Fixture"}'
+        )
+        before = harness.state_path.read_bytes()
+        # When persisting that untraceable reference palette.
+        result = harness.run(
+            "palette-add", "--session", "demo", "--palette", "fake",
+            "--palette-file", str(candidate), "--revision", "0",
+        )
+        # Then a reference palette cannot advertise nonexistent extraction provenance.
+>       assert result.returncode != 0
+E       assert 0 != 0
+E        +  where 0 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...dce9fb193c5"\n    }\n  ],\n  "active_palette_id": "fake",\n  "references": [],\n  "color_reports": []\n}\n', stderr='').returncode
+
+tests/test_color_workflow_transactions.py:109: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_color_workflow_transactions.py::test_palette_when_reference_has_no_source
+1 failed in 0.65s

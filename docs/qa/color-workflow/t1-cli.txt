@@ -1,0 +1,356 @@
++zsh:16> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc init --session demo --brief /tmp/logo-land-t1.kstiJc/brief.json
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 0,
+  "created_at": "2026-09-12T15:12:35.916945Z",
+  "updated_at": "2026-09-12T15:12:35.916945Z",
+  "brief": {
+    "brand_name": "모로",
+    "exact_text": "모로  Studio",
+    "industry": "design",
+    "audience": "all",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 3
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
++zsh:17> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc import --session demo --artifact v1 --image /tmp/logo-land-t1.kstiJc/fixture.png --prompt-file /tmp/logo-land-t1.kstiJc/prompt.txt --revision 0
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 1,
+  "created_at": "2026-09-12T15:12:35.916945Z",
+  "updated_at": "2026-09-12T15:12:36.188129Z",
+  "brief": {
+    "brand_name": "모로",
+    "exact_text": "모로  Studio",
+    "industry": "design",
+    "audience": "all",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 3
+  },
+  "artifacts": [
+    {
+      "id": "v1",
+      "path": "artifacts/v1.png",
+      "sha256": "2189abb6075b26e4437dc7e763b2369df037b07f2289ad4c9767d751583bba2f",
+      "image": {
+        "format": "PNG",
+        "width": 16,
+        "height": 16,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 256
+      },
+      "prompt": "Create a navy edited logo; synthetic migration fixture only.",
+      "parent_id": null,
+      "created_at": "2026-09-12T15:12:36.187368Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
++zsh:18> uv run --locked python - /tmp/logo-land-t1.kstiJc
+Prepared strict schema 1 fixture: green brief, navy artifact prompt, missing background override.
++zsh:32> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc show --session demo
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 1,
+  "created_at": "2026-09-12T15:12:35.916945Z",
+  "updated_at": "2026-09-12T15:12:36.188129Z",
+  "brief": {
+    "brand_name": "모로",
+    "exact_text": "모로  Studio",
+    "industry": "design",
+    "audience": "all",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 3
+  },
+  "artifacts": [
+    {
+      "id": "v1",
+      "path": "artifacts/v1.png",
+      "sha256": "2189abb6075b26e4437dc7e763b2369df037b07f2289ad4c9767d751583bba2f",
+      "image": {
+        "format": "PNG",
+        "width": 16,
+        "height": 16,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 256
+      },
+      "prompt": "Create a navy edited logo; synthetic migration fixture only.",
+      "parent_id": null,
+      "created_at": "2026-09-12T15:12:36.187368Z",
+      "requested_background": null,
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
++zsh:33> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc list
+[{"id": "demo", "revision": 1, "selected_id": null}]
++zsh:34> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc prompt --session demo --parent v1 --changes 'Preserve the navy color'
+{
+  "mode": "edit",
+  "session_id": "demo",
+  "revision": 1,
+  "prompt": "Edit the supplied parent logo v1; do not recreate an unrelated logo.\nParent requested background: opaque; preserve it unless the latest requested changes specify another background.\nLatest requested changes (authoritative): Preserve the navy color. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent. Requested changes override conflicting parent intent and fields in the following original brief context; its background is historical, not a new request.\nCreate one combination logo for 모로. Industry: design. Audience: all.\nExact text (copy verbatim, no other words): '모로  Studio'. Exact slogan: ''.\nStyles: . Palette: green.\nAvoid: . Use cases: .\nInitial brief background (historical intent): opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Distinct, simple brand identity. Assumptions: .",
+  "parent_id": "v1",
+  "parent_image_path": "$TMPDIR/logo-land-t1.kstiJc/.logo-generator/sessions/demo/artifacts/v1.png",
+  "parent_requested_background": "opaque"
+}
++zsh:35> uv run --locked python - /tmp/logo-land-t1.kstiJc
+PASS: show/list/prompt preserved v1 bytes and did not create a backup.
++zsh:43> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc select --session demo --artifact v1 --revision 1
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 2,
+  "created_at": "2026-09-12T15:12:35.916945Z",
+  "updated_at": "2026-09-12T15:12:38.272507Z",
+  "brief": {
+    "brand_name": "모로",
+    "exact_text": "모로  Studio",
+    "industry": "design",
+    "audience": "all",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 3
+  },
+  "artifacts": [
+    {
+      "id": "v1",
+      "path": "artifacts/v1.png",
+      "sha256": "2189abb6075b26e4437dc7e763b2369df037b07f2289ad4c9767d751583bba2f",
+      "image": {
+        "format": "PNG",
+        "width": 16,
+        "height": 16,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 256
+      },
+      "prompt": "Create a navy edited logo; synthetic migration fixture only.",
+      "parent_id": null,
+      "created_at": "2026-09-12T15:12:36.187368Z",
+      "requested_background": null,
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": "v1",
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
++zsh:44> uv run --locked python skills/logo-land/scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc review --session demo --artifact v1 --review-file /tmp/logo-land-t1.kstiJc/review.json --revision 2
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 3,
+  "created_at": "2026-09-12T15:12:35.916945Z",
+  "updated_at": "2026-09-12T15:12:39.250864Z",
+  "brief": {
+    "brand_name": "모로",
+    "exact_text": "모로  Studio",
+    "industry": "design",
+    "audience": "all",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 3
+  },
+  "artifacts": [
+    {
+      "id": "v1",
+      "path": "artifacts/v1.png",
+      "sha256": "2189abb6075b26e4437dc7e763b2369df037b07f2289ad4c9767d751583bba2f",
+      "image": {
+        "format": "PNG",
+        "width": 16,
+        "height": 16,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 256
+      },
+      "prompt": "Create a navy edited logo; synthetic migration fixture only.",
+      "parent_id": null,
+      "created_at": "2026-09-12T15:12:36.187368Z",
+      "requested_background": null,
+      "palette_id": null,
+      "lockup": null,
+      "review": {
+        "reviewer": "CLI fixture",
+        "notes": "Not native image QA",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T15:12:39.250502Z"
+    }
+  ],
+  "selected_id": "v1",
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
++zsh:45> uv run --locked python - /tmp/logo-land-t1.kstiJc
+PASS: exact original backup, v2 revision 3, selection/review, image hash and exact text preserved.
++zsh:60> cp -R skills/logo-land/scripts /tmp/logo-land-t1.kstiJc/copied-scripts
++zsh:61> uv run --offline --script /tmp/logo-land-t1.kstiJc/copied-scripts/logo_project.py --workspace /tmp/logo-land-t1.kstiJc show --session demo
+Installed 14 packages in 26ms
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 3,
+  "created_at": "2026-09-12T15:12:35.916945Z",
+  "updated_at": "2026-09-12T15:12:39.250864Z",
+  "brief": {
+    "brand_name": "모로",
+    "exact_text": "모로  Studio",
+    "industry": "design",
+    "audience": "all",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 3
+  },
+  "artifacts": [
+    {
+      "id": "v1",
+      "path": "artifacts/v1.png",
+      "sha256": "2189abb6075b26e4437dc7e763b2369df037b07f2289ad4c9767d751583bba2f",
+      "image": {
+        "format": "PNG",
+        "width": 16,
+        "height": 16,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 256
+      },
+      "prompt": "Create a navy edited logo; synthetic migration fixture only.",
+      "parent_id": null,
+      "created_at": "2026-09-12T15:12:36.187368Z",
+      "requested_background": null,
+      "palette_id": null,
+      "lockup": null,
+      "review": {
+        "reviewer": "CLI fixture",
+        "notes": "Not native image QA",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T15:12:39.250502Z"
+    }
+  ],
+  "selected_id": "v1",
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
++zsh:62> set +x

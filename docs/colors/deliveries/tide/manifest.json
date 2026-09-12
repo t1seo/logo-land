@@ -1,0 +1,331 @@
+{
+  "schema_version": 2,
+  "session_id": "tide",
+  "revision": 6,
+  "exported_at": "2026-09-12T15:36:28.553420Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v1",
+    "path": "artifacts/a-v1.png",
+    "sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+    "image": {
+      "format": "PNG",
+      "width": 1774,
+      "height": 887,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1573538
+    },
+    "prompt": "Create one combination logo for TIDE & TYPE. Industry: Independent print studio. Audience: Creative small businesses.\nExact text (copy verbatim, no other words): 'TIDE & TYPE'. Exact slogan: ''.\nStyles: editorial, playful, minimal. Original brief palette context: .\nAvoid: gradients, shadows, mockups, extra lettering, textures. Use cases: website header, small brand label.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A bold wave-shaped typographic symbol on the left beside the exact words TIDE & TYPE. Use extracted brown #A27C4F for symbol and serif lettering, on solid extracted ivory #F6F3EC. The color reference supplies colors only, not shapes to copy. Clear flat print-studio identity.. Assumptions: Fictional demonstration brand, Font family is a requested visual reference, not an installed font.\nEffective structured palette intent (authoritative over historical palette): {\"swatches\":[{\"hex\":\"#A27C4F\",\"role\":\"wave symbol and wordmark\"},{\"hex\":\"#F6F3EC\",\"role\":\"opaque ivory background\"}],\"constraints\":{\"locked_hex\":[],\"allowed_hex\":null,\"max_colors\":null,\"required_hex\":[],\"allow_gradients\":false},\"source\":\"reference\",\"source_evidence\":{\"reference_id\":\"sunroom-colors\",\"reference_sha256\":\"e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb\",\"provider\":null,\"tool\":\"Pillow median-cut; logo-color-v1\",\"response\":\"{\\\"swatches\\\":[{\\\"hex\\\":\\\"#F6F3EC\\\",\\\"samples\\\":5970,\\\"share\\\":0.3643798828125},{\\\"hex\\\":\\\"#F7F3ED\\\",\\\"samples\\\":2885,\\\"share\\\":0.17608642578125},{\\\"hex\\\":\\\"#F6F2EC\\\",\\\"samples\\\":2723,\\\"share\\\":0.16619873046875},{\\\"hex\\\":\\\"#F5F3EB\\\",\\\"samples\\\":2047,\\\"share\\\":0.12493896484375},{\\\"hex\\\":\\\"#A27C4F\\\",\\\"samples\\\":1383,\\\"share\\\":0.08441162109375},{\\\"hex\\\":\\\"#F6F3ED\\\",\\\"samples\\\":855,\\\"share\\\":0.05218505859375},{\\\"hex\\\":\\\"#F6F3EB\\\",\\\"samples\\\":269,\\\"share\\\":0.01641845703125},{\\\"hex\\\":\\\"#F7F5EE\\\",\\\"samples\\\":252,\\\"share\\\":0.015380859375}],\\\"sampling\\\":{\\\"width\\\":1774,\\\"height\\\":887,\\\"roi\\\":null,\\\"scope\\\":\\\"full_image\\\",\\\"coordinate_policy\\\":\\\"grid_128_pixel_centers\\\",\\\"sampled_positions\\\":16384,\\\"sampled_fraction\\\":0.010412204853012764,\\\"visible_samples\\\":16384,\\\"core_samples\\\":16384,\\\"partial_alpha_samples\\\":0},\\\"profile_treatment\\\":\\\"assumed_srgb\\\",\\\"status\\\":\\\"extracted\\\",\\\"reasons\\\":[]}\",\"notes\":[]},\"selected_by\":\"assistant\",\"rationale\":\"The full reference is dominated by near-identical ivory estimates. Select the extracted brown representative and ivory for a readable two-color print identity. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.\",\"calculation_version\":\"logo-color-v1\",\"id\":\"p1\",\"parent_palette_id\":null,\"digest\":\"0d599765933451550d1e8c184e2fb42c505c8c3375baca31884ba4b60e25ffec\"}. Keep locked and required HEX values exactly in intent; use the declared roles and allowed colors/count. Opaque backgrounds count as visible design colors; transparent pixels do not. No gradients unless allowed. Raster fidelity is measured after generation, never promised as exact pixels.\nEffective symbol-plus-text lockup: {\"layout\":\"horizontal\",\"symbol_position\":\"start\",\"text_alignment\":\"start\",\"typography_style\":\"confident compact editorial serif lettering and expressive ampersand\",\"font_reference\":\"Fraunces\"}. Horizontal start/end means symbol left/right of text; stacked start/end means symbol above/below text. Preserve the exact text and slogan. Font reference is a requested visual direction, not proof of an installed or licensed font file.\nReturn one standalone master PNG. Use broad solid, flat color areas with no texture, shading, gradients or shadows. Keep exact spelling and deliberate, readable letter spacing.\n",
+    "parent_id": null,
+    "created_at": "2026-09-12T15:26:15.405351Z",
+    "requested_background": "opaque",
+    "palette_id": "p1",
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "confident compact editorial serif lettering and expressive ampersand",
+      "font_reference": "Fraunces"
+    },
+    "review": {
+      "reviewer": "Codex host; independent Orca Chrome Computer Use observation",
+      "notes": "Chrome native gallery and original inspected at large and 128 px on light/dark surfaces. Exact TIDE & TYPE text, wave symbol and horizontal layout remain clear; intended opaque ivory background preserved.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-12T15:36:16.418749Z"
+  },
+  "brief": {
+    "brand_name": "TIDE & TYPE",
+    "exact_text": "TIDE & TYPE",
+    "industry": "Independent print studio",
+    "audience": "Creative small businesses",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "editorial",
+      "playful",
+      "minimal"
+    ],
+    "palette": [],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering",
+      "textures"
+    ],
+    "use_cases": [
+      "website header",
+      "small brand label"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand",
+      "Font family is a requested visual reference, not an installed font"
+    ],
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "confident compact editorial serif lettering and expressive ampersand",
+      "font_reference": "Fraunces"
+    },
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "media_kind": "raster",
+  "requested_background": "opaque",
+  "transparency_verified": false,
+  "intended_palette": {
+    "swatches": [
+      {
+        "hex": "#A27C4F",
+        "role": "wave symbol and wordmark"
+      },
+      {
+        "hex": "#F6F3EC",
+        "role": "opaque ivory background"
+      }
+    ],
+    "constraints": {
+      "locked_hex": [],
+      "allowed_hex": null,
+      "max_colors": null,
+      "required_hex": [],
+      "allow_gradients": false
+    },
+    "source": "reference",
+    "source_evidence": {
+      "reference_id": "sunroom-colors",
+      "reference_sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+      "provider": null,
+      "tool": "Pillow median-cut; logo-color-v1",
+      "response": "{\"swatches\":[{\"hex\":\"#F6F3EC\",\"samples\":5970,\"share\":0.3643798828125},{\"hex\":\"#F7F3ED\",\"samples\":2885,\"share\":0.17608642578125},{\"hex\":\"#F6F2EC\",\"samples\":2723,\"share\":0.16619873046875},{\"hex\":\"#F5F3EB\",\"samples\":2047,\"share\":0.12493896484375},{\"hex\":\"#A27C4F\",\"samples\":1383,\"share\":0.08441162109375},{\"hex\":\"#F6F3ED\",\"samples\":855,\"share\":0.05218505859375},{\"hex\":\"#F6F3EB\",\"samples\":269,\"share\":0.01641845703125},{\"hex\":\"#F7F5EE\",\"samples\":252,\"share\":0.015380859375}],\"sampling\":{\"width\":1774,\"height\":887,\"roi\":null,\"scope\":\"full_image\",\"coordinate_policy\":\"grid_128_pixel_centers\",\"sampled_positions\":16384,\"sampled_fraction\":0.010412204853012764,\"visible_samples\":16384,\"core_samples\":16384,\"partial_alpha_samples\":0},\"profile_treatment\":\"assumed_srgb\",\"status\":\"extracted\",\"reasons\":[]}",
+      "notes": []
+    },
+    "selected_by": "assistant",
+    "rationale": "The full reference is dominated by near-identical ivory estimates. Select the extracted brown representative and ivory for a readable two-color print identity. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.",
+    "calculation_version": "logo-color-v1",
+    "id": "p1",
+    "parent_palette_id": null,
+    "digest": "0d599765933451550d1e8c184e2fb42c505c8c3375baca31884ba4b60e25ffec"
+  },
+  "color_report": {
+    "id": "export-a93930d610d74e948324475c62b57ae1",
+    "artifact_id": "a-v1",
+    "artifact_sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+    "palette_id": "p1",
+    "palette_digest": "0d599765933451550d1e8c184e2fb42c505c8c3375baca31884ba4b60e25ffec",
+    "analysis_policy": "logo-color-v1",
+    "color_engine_version": "8.12.1",
+    "pillow_version": "12.3.0",
+    "profile_treatment": "assumed_srgb",
+    "sampling": {
+      "width": 1774,
+      "height": 887,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "grid_128_pixel_centers",
+      "sampled_positions": 16384,
+      "sampled_fraction": 0.010412204853012764,
+      "visible_samples": 16384,
+      "core_samples": 16384,
+      "partial_alpha_samples": 0
+    },
+    "status": "pass",
+    "reasons": [],
+    "measured_swatches": [
+      {
+        "hex": "#F5F1EB",
+        "samples": 5265,
+        "share": 0.32135009765625
+      },
+      {
+        "hex": "#F5F2EB",
+        "samples": 5158,
+        "share": 0.3148193359375
+      },
+      {
+        "hex": "#F4F1EA",
+        "samples": 1844,
+        "share": 0.112548828125
+      },
+      {
+        "hex": "#F5F2EA",
+        "samples": 1751,
+        "share": 0.10687255859375
+      },
+      {
+        "hex": "#BDA282",
+        "samples": 1163,
+        "share": 0.07098388671875
+      },
+      {
+        "hex": "#F6F1EB",
+        "samples": 938,
+        "share": 0.0572509765625
+      },
+      {
+        "hex": "#F4F2EB",
+        "samples": 177,
+        "share": 0.01080322265625
+      },
+      {
+        "hex": "#F7F5EF",
+        "samples": 88,
+        "share": 0.00537109375
+      }
+    ],
+    "targets": [
+      {
+        "hex": "#A27C4F",
+        "matching_samples": 1117,
+        "share": 0.06817626953125,
+        "mean_delta_e": 1.2038144137065403,
+        "max_delta_e": 4.899156359062441
+      },
+      {
+        "hex": "#F6F3EC",
+        "matching_samples": 15184,
+        "share": 0.9267578125,
+        "mean_delta_e": 0.645233799160686,
+        "max_delta_e": 3.988941130157026
+      }
+    ],
+    "matched_fraction": 0.99493408203125,
+    "unmatched_fraction": 0.00506591796875,
+    "observed_colors": 2,
+    "minor_swatches": [],
+    "contrasts": [
+      {
+        "foreground": "#F5F1EB",
+        "surface": "#FFFFFF",
+        "ratio": 1.1251438843083823,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F1EB",
+        "surface": "#171717",
+        "ratio": 15.93382011230298,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F2EB",
+        "surface": "#FFFFFF",
+        "ratio": 1.118031794671625,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F2EB",
+        "surface": "#171717",
+        "ratio": 16.03517926634023,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F1EA",
+        "surface": "#FFFFFF",
+        "ratio": 1.1258392500747751,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F1EA",
+        "surface": "#171717",
+        "ratio": 15.923978713512504,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F6F2EB",
+        "surface": "#FFFFFF",
+        "ratio": 1.1158884672856266,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F6F2EB",
+        "surface": "#171717",
+        "ratio": 16.065978615798997,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F2EA",
+        "surface": "#FFFFFF",
+        "ratio": 1.1187183946573933,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F5F2EA",
+        "surface": "#171717",
+        "ratio": 16.025337867549755,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F4F1EA",
+        "surface": "#FFFFFF",
+        "ratio": 1.1280092278940743,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F4F1EA",
+        "surface": "#171717",
+        "ratio": 15.893345382021211,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F6F2EC",
+        "surface": "#FFFFFF",
+        "ratio": 1.115201486549832,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F6F2EC",
+        "surface": "#171717",
+        "ratio": 16.075875498060956,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F6F1EB",
+        "surface": "#FFFFFF",
+        "ratio": 1.1229732281416498,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#F6F1EB",
+        "surface": "#171717",
+        "ratio": 15.964619461761746,
+        "alpha": 1.0
+      }
+    ],
+    "delta_e_threshold": 5.0,
+    "created_at": "2026-09-12T15:36:28.553420Z"
+  },
+  "color_policy": "advisory",
+  "warnings": [
+    "Advisory color evidence: pass; no strict constraints apply.",
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "color_method": "sRGB to Lab D50; CIEDE2000, ColorAide method=2000",
+  "color_limits": [
+    "Sampled raster evidence, not an exact-pixel, Pantone, or print-proof guarantee.",
+    "At most 16384 original-coordinate samples; small accents may be missed.",
+    "Alpha-zero pixels are excluded; conformance uses alpha >=250 and preserves white.",
+    "Strict evidence needs 128 core samples and at most 10% partial-alpha visible samples.",
+    "Restricted fit requires 99% core coverage within delta-E00 <=5; design colors need 1% share.",
+    "Locks/required colors need 32 matching core samples and 0.5% core share.",
+    "Quantized measured swatches are estimates; conformance uses original sampled colors.",
+    "Color roles, lettering, and placement require visual review; histograms cannot prove them.",
+    "ROI evidence covers only the stated region; opaque full-image evidence includes background.",
+    "Contrast ratios on explicit composited surfaces are guidance, not logo AA certification."
+  ],
+  "lockup_intent": {
+    "layout": "horizontal",
+    "symbol_position": "start",
+    "text_alignment": "start",
+    "typography_style": "confident compact editorial serif lettering and expressive ampersand",
+    "font_reference": "Fraunces"
+  },
+  "font_reference_usage": "appearance-reference-only"
+}

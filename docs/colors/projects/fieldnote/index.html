@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>FIELD NOTE · Logo Land color studies</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { color: #191917; background: #f6f3ec; font: 16px/1.65 system-ui, sans-serif; }
+    body { margin: 0; padding: 0 32px; }
+    a { color: inherit; text-underline-offset: 4px; }
+    .page-shell { max-width: 1320px; margin: auto; }
+    .masthead { padding: 28px 0; border-bottom: 1px solid #c9c6bf; display: flex; justify-content: space-between; gap: 20px; }
+    .wordmark { font-size: 23px; font-weight: 750; letter-spacing: -1px; }
+    .edition, .eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
+    .intro { padding: 62px 0 34px; max-width: 820px; }
+    h1 { font-size: clamp(36px, 5vw, 68px); line-height: 1.07; letter-spacing: -.05em; margin: 16px 0 28px; overflow-wrap: anywhere; }
+    h2 { font-size: 23px; margin: 0; }
+    h3 { font-size: 15px; margin: 0 0 14px; }
+    p { margin: 10px 0; overflow-wrap: anywhere; }
+    .muted { color: #5a5954; font-size: 13px; }
+    .controls-heading { margin: 26px 0 12px; }
+    .control { position: absolute; width: 1px; height: 1px; opacity: 0; }
+    .control + label { display: inline-block; border: 1px solid #89877f; border-radius: 24px; padding: 7px 15px; cursor: pointer; margin: 0 5px 8px 0; font-size: 13px; }
+    .control:checked + label { background: #191917; color: #fff; }
+    .control:focus-visible + label, a:focus-visible { outline: 3px solid #a64b32; outline-offset: 4px; }
+    .control-separator { display: inline-block; width: 18px; }
+    .artifact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; margin: 26px 0 48px; }
+    .artifact-card { border: 1px solid #c9c6bf; min-width: 0; background: #fbf9f4; }
+    .card-heading { display: flex; justify-content: space-between; align-items: baseline; padding: 17px 22px; gap: 12px; }
+    .card-heading span, .provenance { font-size: 12px; color: #5a5954; }
+    .surface { min-height: 340px; padding: 28px; display: grid; place-items: center; background: #fff; border-block: 1px solid #dedbd4; }
+    .surface img { display: block; width: min(100%, 360px); height: auto; max-height: 360px; object-fit: contain; }
+    #surface-dark:checked ~ .artifact-grid .surface { background: #252a32; }
+    #surface-checker:checked ~ .artifact-grid .surface { background-color: #fff; background-image: conic-gradient(#d9d8d2 25%, transparent 0 50%, #d9d8d2 0 75%, transparent 0); background-size: 24px 24px; }
+    #size-small:checked ~ .artifact-grid .surface img { width: min(100%, 128px); max-height: 128px; }
+    .card-body { padding: 18px 22px 24px; }
+    .card-body section { border-top: 1px solid #dedbd4; margin-top: 22px; padding-top: 20px; font-size: 13px; }
+    .swatches { display: flex; flex-wrap: wrap; gap: 12px 18px; list-style: none; padding: 0; }
+    .swatches li { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .swatches li span:last-child { overflow-wrap: anywhere; }
+    .swatch { display: inline-block; flex: 0 0 30px; height: 30px; border-radius: 50%; border: 1px solid #87847e; }
+    code { font-size: 12px; }
+    .status { display: inline-block; padding: 4px 9px; border: 1px solid #8b887e; font-weight: 650; }
+    [data-status="pass"] .status { background: #dfeadd; color: #254a2d; }
+    [data-status="mismatch"] .status { background: #f7dfd2; color: #853119; }
+    [data-status="indeterminate"] .status, [data-status="unverified"] .status { background: #eeebe3; }
+    .table-wrap { max-width: 100%; overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; text-align: left; font-size: 12px; }
+    caption { text-align: left; margin: 14px 0 8px; font-weight: 650; }
+    th, td { padding: 7px 8px 7px 0; border-bottom: 1px solid #dedbd4; white-space: nowrap; }
+    .reasons { padding-left: 18px; overflow-wrap: anywhere; }
+    dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 6px 12px; }
+    dt { color: #5a5954; } dd { margin: 0; overflow-wrap: anywhere; }
+    .download { display: inline-block; margin-top: 18px; font-size: 13px; font-weight: 650; }
+    .note { border-left: 3px solid #a64b32; padding: 8px 20px; margin: 28px 0; max-width: 900px; }
+    footer { border-top: 1px solid #c9c6bf; padding: 24px 0 40px; font-size: 12px; color: #5a5954; }
+    .palette-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .palette-card { border: 1px solid #c9c6bf; padding: 20px; }
+    .palette-card label { font-weight: 650; }
+    @media (max-width: 680px) {
+      body { padding: 0 16px; }
+      .masthead { padding: 20px 0; align-items: center; }
+      .edition { max-width: 120px; text-align: right; }
+      .intro { padding: 36px 0 20px; }
+      .artifact-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+      .surface { min-height: 260px; padding: 20px; }
+      .card-body { padding: 16px; }
+      .card-heading { padding: 14px 16px; }
+      .control-separator { display: block; height: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead"><span class="wordmark">Logo Land.</span><span class="edition">Color &amp; form studies</span></header>
+    <main>
+      <section class="intro"><p class="eyebrow">Intent → measurement / 3 selected versions</p><h1>FIELD NOTE</h1><p>Color choices, measured results, and the form they take.</p><p class="muted">Session fieldnote · revision 5 · A portable snapshot of explicitly selected artwork.</p></section>
+      <p class="controls-heading" id="preview-controls">Preview surface &amp; size</p>
+      <input class="control" type="radio" name="surface" id="surface-light" checked><label for="surface-light">Light</label>
+      <input class="control" type="radio" name="surface" id="surface-dark"><label for="surface-dark">Dark</label>
+      <input class="control" type="radio" name="surface" id="surface-checker"><label for="surface-checker">Transparency</label>
+      <span class="control-separator" aria-hidden="true"></span>
+      <input class="control" type="radio" name="size" id="size-large" checked><label for="size-large">Large · up to 360 px</label>
+      <input class="control" type="radio" name="size" id="size-small"><label for="size-small">Small · 128 px</label>
+      <div class="artifact-grid"><article class="artifact-card" id="artifact-a-v1"><div class="card-heading"><h2>a-v1</h2><span>1536 x 1024 px</span></div><div class="surface"><img src="images/a-v1.png" alt="FIELD NOTE · a-v1" width="1536" height="1024"></div><div class="card-body"><p class="provenance">Parent artifact: None · PNG original bytes</p><section><h3>Intended colors</h3><p>Palette p1 · Parent palette: None</p><p class="eyebrow">Strict constraints · reference</p><ul class="swatches"><li><span class="swatch" style="background-color:#247A52" aria-hidden="true"></span><span><code>#247A52</code> preserved green symbol and wordmark</span></li><li><span class="swatch" style="background-color:#99BCA6" aria-hidden="true"></span><span><code>#99BCA6</code> muted mint accent</span></li></ul><p>Select the more distinct extracted mint estimate as companion while retaining exact locked green; skip near-duplicate green estimates. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.</p><p class="muted">Selected by assistant</p></section><section data-status="indeterminate"><h3>Measured colors</h3><p class="status">indeterminate · Insufficient evidence</p><p>Report report-5aaf0c21d2244f3f8aa3e402f916ed39 · 2026-09-12T15:26:16.025020+00:00</p><p>Scope: <strong>full_image</strong> · 1536 x 1024 px</p><p>grid_128_pixel_centers · 16384 positions (1.0%); 2648 core, 371 partial-alpha samples.</p><ul class="swatches"><li><span class="swatch" style="background-color:#23704F" aria-hidden="true"></span><span><code>#23704F</code> 23.1% · 611 samples</span></li><li><span class="swatch" style="background-color:#226F4F" aria-hidden="true"></span><span><code>#226F4F</code> 20.5% · 542 samples</span></li><li><span class="swatch" style="background-color:#216E4E" aria-hidden="true"></span><span><code>#216E4E</code> 16.0% · 424 samples</span></li><li><span class="swatch" style="background-color:#9FBCA8" aria-hidden="true"></span><span><code>#9FBCA8</code> 15.9% · 421 samples</span></li><li><span class="swatch" style="background-color:#22704F" aria-hidden="true"></span><span><code>#22704F</code> 13.6% · 359 samples</span></li><li><span class="swatch" style="background-color:#226E4E" aria-hidden="true"></span><span><code>#226E4E</code> 6.0% · 160 samples</span></li><li><span class="swatch" style="background-color:#236F4F" aria-hidden="true"></span><span><code>#236F4F</code> 4.5% · 120 samples</span></li><li><span class="swatch" style="background-color:#297554" aria-hidden="true"></span><span><code>#297554</code> 0.4% · 11 samples</span></li></ul><div class="table-wrap"><table><caption>Target color distance (ΔE)</caption><thead><tr><th>Target</th><th>Match share</th><th>Mean ΔE</th><th>Max ΔE</th></tr></thead><tbody><tr><td>#247A52</td><td>83.2%</td><td>4.00</td><td>5.00</td></tr><tr><td>#99BCA6</td><td>15.8%</td><td>1.69</td><td>4.71</td></tr></tbody></table></div><p>ΔE threshold: 5; profile: assumed_srgb; policy: logo-color-v1.</p><ul class="reasons"><li>Partial alpha exceeds 10% of visible samples</li></ul></section><section><h3>Requested lockup</h3><dl><dt>Layout</dt><dd>stacked</dd><dt>Symbol position</dt><dd>start</dd><dt>Text alignment</dt><dd>center</dd><dt>Typography direction</dt><dd>balanced modern sans serif, medium-bold monoline lettering, open counters and even spacing</dd><dt>Requested font reference</dt><dd>Noto Sans KR</dd></dl><p class="muted">This is requested visual direction, not proof of a font file used in the raster. Gallery text uses the CSS system font.</p></section><a class="download" href="images/a-v1.png" download>Download a-v1.png</a></div></article><article class="artifact-card" id="artifact-a-v2"><div class="card-heading"><h2>a-v2</h2><span>1536 x 1024 px</span></div><div class="surface"><img src="images/a-v2.png" alt="FIELD NOTE · a-v2" width="1536" height="1024"></div><div class="card-body"><p class="provenance">Parent artifact: a-v1 · PNG original bytes</p><section><h3>Intended colors</h3><p>Palette p1 · Parent palette: None</p><p class="eyebrow">Strict constraints · reference</p><ul class="swatches"><li><span class="swatch" style="background-color:#247A52" aria-hidden="true"></span><span><code>#247A52</code> preserved green symbol and wordmark</span></li><li><span class="swatch" style="background-color:#99BCA6" aria-hidden="true"></span><span><code>#99BCA6</code> muted mint accent</span></li></ul><p>Select the more distinct extracted mint estimate as companion while retaining exact locked green; skip near-duplicate green estimates. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.</p><p class="muted">Selected by assistant</p></section><section data-status="mismatch"><h3>Measured colors</h3><p class="status">mismatch · Inspect color differences</p><p>Report report-ae8056de0d3e44b0a222bdb23fbcc579 · 2026-09-12T15:29:13.748775+00:00</p><p>Scope: <strong>full_image</strong> · 1536 x 1024 px</p><p>grid_128_pixel_centers · 16384 positions (1.0%); 16384 core, 0 partial-alpha samples.</p><ul class="swatches"><li><span class="swatch" style="background-color:#807F7F" aria-hidden="true"></span><span><code>#807F7F</code> 19.6% · 3217 samples</span></li><li><span class="swatch" style="background-color:#C4C3C3" aria-hidden="true"></span><span><code>#C4C3C3</code> 17.4% · 2844 samples</span></li><li><span class="swatch" style="background-color:#868585" aria-hidden="true"></span><span><code>#868585</code> 16.0% · 2629 samples</span></li><li><span class="swatch" style="background-color:#227751" aria-hidden="true"></span><span><code>#227751</code> 15.9% · 2613 samples</span></li><li><span class="swatch" style="background-color:#CAC9C9" aria-hidden="true"></span><span><code>#CAC9C9</code> 12.8% · 2105 samples</span></li><li><span class="swatch" style="background-color:#99A09B" aria-hidden="true"></span><span><code>#99A09B</code> 9.7% · 1588 samples</span></li><li><span class="swatch" style="background-color:#BBB9B9" aria-hidden="true"></span><span><code>#BBB9B9</code> 8.4% · 1373 samples</span></li><li><span class="swatch" style="background-color:#4D7865" aria-hidden="true"></span><span><code>#4D7865</code> 0.1% · 15 samples</span></li></ul><div class="table-wrap"><table><caption>Target color distance (ΔE)</caption><thead><tr><th>Target</th><th>Match share</th><th>Mean ΔE</th><th>Max ΔE</th></tr></thead><tbody><tr><td>#247A52</td><td>15.9%</td><td>1.20</td><td>4.98</td></tr><tr><td>#99BCA6</td><td>2.6%</td><td>1.38</td><td>4.56</td></tr></tbody></table></div><p>ΔE threshold: 5; profile: assumed_srgb; policy: logo-color-v1.</p><ul class="reasons"><li>Fewer than 99% of sampled core pixels match the target palette</li></ul></section><section><h3>Requested lockup</h3><dl><dt>Layout</dt><dd>stacked</dd><dt>Symbol position</dt><dd>start</dd><dt>Text alignment</dt><dd>center</dd><dt>Typography direction</dt><dd>balanced modern sans serif, medium-bold monoline lettering, open counters and even spacing</dd><dt>Requested font reference</dt><dd>Noto Sans KR</dd></dl><p class="muted">This is requested visual direction, not proof of a font file used in the raster. Gallery text uses the CSS system font.</p></section><a class="download" href="images/a-v2.png" download>Download a-v2.png</a></div></article><article class="artifact-card" id="artifact-a-v3"><div class="card-heading"><h2>a-v3</h2><span>1536 x 1024 px</span></div><div class="surface"><img src="images/a-v3.png" alt="FIELD NOTE · a-v3" width="1536" height="1024"></div><div class="card-body"><p class="provenance">Parent artifact: a-v2 · PNG original bytes</p><section><h3>Intended colors</h3><p>Palette p1 · Parent palette: None</p><p class="eyebrow">Strict constraints · reference</p><ul class="swatches"><li><span class="swatch" style="background-color:#247A52" aria-hidden="true"></span><span><code>#247A52</code> preserved green symbol and wordmark</span></li><li><span class="swatch" style="background-color:#99BCA6" aria-hidden="true"></span><span><code>#99BCA6</code> muted mint accent</span></li></ul><p>Select the more distinct extracted mint estimate as companion while retaining exact locked green; skip near-duplicate green estimates. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.</p><p class="muted">Selected by assistant</p></section><section data-status="mismatch"><h3>Measured colors</h3><p class="status">mismatch · Inspect color differences</p><p>Report report-bfb5fbc88c274283876c782e82632a4b · 2026-09-12T15:34:32.665687+00:00</p><p>Scope: <strong>full_image</strong> · 1536 x 1024 px</p><p>grid_128_pixel_centers · 16384 positions (1.0%); 16384 core, 0 partial-alpha samples.</p><ul class="swatches"><li><span class="swatch" style="background-color:#828182" aria-hidden="true"></span><span><code>#828182</code> 18.5% · 3023 samples</span></li><li><span class="swatch" style="background-color:#11764D" aria-hidden="true"></span><span><code>#11764D</code> 17.6% · 2891 samples</span></li><li><span class="swatch" style="background-color:#C2C1C1" aria-hidden="true"></span><span><code>#C2C1C1</code> 17.4% · 2844 samples</span></li><li><span class="swatch" style="background-color:#7D7C7C" aria-hidden="true"></span><span><code>#7D7C7C</code> 16.9% · 2767 samples</span></li><li><span class="swatch" style="background-color:#C7C6C5" aria-hidden="true"></span><span><code>#C7C6C5</code> 12.7% · 2081 samples</span></li><li><span class="swatch" style="background-color:#919B94" aria-hidden="true"></span><span><code>#919B94</code> 8.4% · 1370 samples</span></li><li><span class="swatch" style="background-color:#BBBAB9" aria-hidden="true"></span><span><code>#BBBAB9</code> 8.3% · 1362 samples</span></li><li><span class="swatch" style="background-color:#3A775E" aria-hidden="true"></span><span><code>#3A775E</code> 0.3% · 46 samples</span></li></ul><div class="table-wrap"><table><caption>Target color distance (ΔE)</caption><thead><tr><th>Target</th><th>Match share</th><th>Mean ΔE</th><th>Max ΔE</th></tr></thead><tbody><tr><td>#247A52</td><td>17.6%</td><td>1.89</td><td>4.95</td></tr><tr><td>#99BCA6</td><td>2.9%</td><td>2.93</td><td>4.78</td></tr></tbody></table></div><p>ΔE threshold: 5; profile: assumed_srgb; policy: logo-color-v1.</p><ul class="reasons"><li>Fewer than 99% of sampled core pixels match the target palette</li></ul></section><section><h3>Requested lockup</h3><dl><dt>Layout</dt><dd>stacked</dd><dt>Symbol position</dt><dd>start</dd><dt>Text alignment</dt><dd>center</dd><dt>Typography direction</dt><dd>balanced modern sans serif, medium-bold monoline lettering, open counters and even spacing</dd><dt>Requested font reference</dt><dd>Noto Sans KR</dd></dl><p class="muted">This is requested visual direction, not proof of a font file used in the raster. Gallery text uses the CSS system font.</p></section><a class="download" href="images/a-v3.png" download>Download a-v3.png</a></div></article></div>
+      <aside class="note"><p>Intended colors are design choices. Measured colors describe only the stated sampling scope; a full-image check is a composition check, and an ROI is a manually chosen region, not an automatic foreground mask. Sampling can miss tiny accents.</p><p>Stored reports are snapshots, not a fresh color verification or export approval. Unknown evidence never counts as passed. Backgrounds and preview sizes are CSS only; downloaded PNG bytes stay unchanged.</p><p>Font references describe a requested appearance. No font file is bundled, and gallery text uses the CSS system font.</p></aside>
+    </main>
+    <footer>Logo Land · Original raster artwork, explicit color evidence.</footer>
+  </div>
+</body>
+</html>

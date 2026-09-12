@@ -1,5 +1,6 @@
 <p align="center">
   <a href="https://github.com/t1seo/logo-land/releases/tag/v0.3.1"><img src="https://img.shields.io/badge/Release-v0.3.1-191917?style=flat-square&amp;labelColor=f6f3ec" alt="v0.3.1 릴리스"></a>
+  <a href="docs/qa/color-workflow/README.md"><img src="https://img.shields.io/badge/Development-v0.4.0-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="Development version 0.4.0; release validation incomplete"></a>
   <img src="https://img.shields.io/badge/Codex-Plugin-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Codex 플러그인">
   <img src="https://img.shields.io/badge/Python-3.12%2B-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Python 3.12 이상">
   <img src="https://img.shields.io/badge/Output-PNG-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="PNG 출력">
@@ -8,6 +9,8 @@
 </p>
 
 # Logo Land (로고랜드)
+
+현재 소스는 미출시 개발 업데이트 0.4.0입니다. 필수 제한색·흰색 투명 샘플이 실물 검증을 통과하지 못해 정식 릴리즈는 0.3.1로 유지합니다. [검증 상태](docs/qa/color-workflow/README.md)를 확인해 주세요.
 
 <p align="center"><img src="assets/logo.png" alt="Logo Land 로고" width="320"></p>
 
@@ -89,6 +92,43 @@ codex plugin add logo-land@logo-land-local
 > 저장한 morrow-live 작업을 이어서 최종 PNG로 내보내 주세요.
 
 시안은 각각 독립된 이미지로 생성합니다. 별도 개수를 정하지 않으면 기본 세 가지 방향을 제안하며, 선택한 시안을 기준으로 수정합니다. 기존 로고 이미지가 있으면 해당 파일을 참조해 작업하실 수도 있습니다.
+
+## 네 가지 방식으로 색상 정하기
+
+| 시작점 | 요청 예시 |
+|---|---|
+| 자동 선택 | “동네 베이커리 SUNROOM에 어울리는 따뜻한 색을 알아서 골라 시안 두 개를 만들어 주세요.” |
+| 기준색 고정 | “GROVE 심볼의 #247A52는 정확히 유지하고, 함께 쓸 색은 더 따뜻하게 제안해 주세요.” |
+| 팔레트 제한 | “투명 배경에 #000000과 #F4EBDD만 사용하고, 보이는 디자인 색은 최대 두 가지로 해 주세요.” |
+| 이미지 참조 | “첨부 사진에서 TIDE의 색상을 제안해 주세요. 배경에서 나온 색은 구분해서 설명해 주세요.” |
+
+“이 사진을 참고하고, #247A52는 유지하고, 최대 두 색으로 알아서 골라 주세요”처럼 함께 요청하실 수 있습니다. 참조 이미지, 고정색, 허용색, 필수색, 최대 색 수를 함께 기록하고, 조건이 충돌하면 생성 전에 해결합니다. 색 이름은 구체적인 HEX 제안으로 바꾸며, 구조화된 입력은 sRGB `#RGB` 또는 `#RRGGBB`를 받으며, 고정색·허용색·필수색 목록은 각각 중복을 제외하고 최대 8색입니다. 그라데이션 요청은 허용색 집합·색 수 제한과 함께 사용할 수 없습니다.
+
+선택을 맡기시면 Codex가 선택과 이유를 기록하고 진행합니다. 생성 전에 직접 고르시려면 “색부터 보여 주세요”라고 요청해 주세요. 팔레트 후보 수 때문에 요청한 로고 시안 수가 늘어나지는 않습니다. 불투명 배경도 보이는 디자인 색에 포함하지만, 투명 영역과 미리보기 바탕은 제외합니다. 의도한 흰색 글자는 로고의 일부로 보존합니다.
+
+각 이미지는 자신의 팔레트 버전을 유지합니다. 초록 로고를 남색으로 수정한 다음 간격만 바꾸면 남색을 이어받으며, 초록 원본을 다시 선택하면 원래의 초록색 의도로 돌아갑니다. 색상 수정은 선택한 부모 이미지, 정확한 글자, 배치, 요청한 배경을 유지하되 사용자가 변경을 요청한 항목을 반영합니다.
+
+**의도한 HEX와 PNG 표본에서 측정한 색은 서로 다른 근거입니다.** 보고서는 원본 이미지, 팔레트, 표본 범위, 측정색, ΔE00 색차와 한계를 밝힙니다. 표본 검사 통과가 모든 픽셀의 정확한 색이나 인쇄 색 일치를 보장하지는 않습니다. 고정색·허용색·필수색·색 수 제한을 지정하면 엄격한 내보내기 검사를 적용합니다. 불일치는 전달을 막고, 판단 불가나 근거 누락은 색상 재검토가 필요합니다. 제한 없는 제안은 참고용입니다. 내보낼 때 선택한 원본을 다시 검사하며 육안 승인으로 엄격한 검사 실패를 무시할 수 없습니다. [색상 작업 안내](skills/logo-land/references/color-workflow.md)와 [전달 전 검사](skills/logo-land/references/delivery-checks.md)에 자세히 설명했습니다.
+
+의존성을 설치한 뒤에는 ColorAide로 로컬 계산을 수행합니다. 최초 준비에는 네트워크가 필요할 수 있습니다. 이미 연결된 Leonardo MCP가 있으면 선택적으로 색상 제안을 받을 수 있으며, 없거나 실패하면 로컬 경로로 계속 진행합니다. 스킬 설치·MCP 서버 실행을 자동으로 수행하거나 새 계정·MCP 연결을 요구하지 않습니다. [외부 도구의 사용 범위](skills/logo-land/references/color-providers.md)를 확인해 주세요.
+
+[색상·타이포그래피 8개 사례 갤러리](docs/colors/index.html)에는 실제 내장 이미지 생성 결과, 팔레트 의도, 전체 수정 기록과 밝음·어두움·128px 미리보기가 있습니다. NORTHLINE·GROVE·TIDE는 기록된 검토와 내보내기를 통과했습니다. 다른 후보의 실패·판단 불가 결과도 그대로 보존하며, 색상 검사 통과만으로 투명도나 글자 가독성이 보장되지는 않습니다. 정확한 결과는 [검증 기록](docs/qa/color-workflow/README.md)을 확인해 주세요.
+
+| 브랜드 | 색상 방식과 배치 | 실제 생성 PNG |
+|---|---|---|
+| NORTHLINE | 로컬 자동 팔레트 · 심볼 위, 글자 아래 | <img src="docs/colors/assets/02-northline.png" alt="NORTHLINE 세로 조합형 로고" width="220"> |
+| GROVE SUPPLY | 초록 고정색 · 가로 조합형 · 밝은 바탕 권장 | <img src="docs/colors/assets/03-grove.png" alt="GROVE SUPPLY 투명 로고" width="220"> |
+| TIDE & TYPE | 참조 이미지 추출색 · 가로 조합형 | <img src="docs/colors/assets/06-tide.png" alt="TIDE and TYPE 가로 조합형 로고" width="220"> |
+
+## 심볼과 정확한 글자 조합하기
+
+> $logo-land NORTHLINE의 가로 조합형 로고를 만들어 주세요. 왼쪽에는 단순한 심볼, 오른쪽에는 정확히 “NORTHLINE”을 넣고 슬로건은 빼 주세요. 차분한 기하학 산세리프 느낌으로 Space Grotesk를 시각적 참고로 사용해 주세요.
+
+> $logo-land 초승달 심볼 아래에 한글 “밤결”을 정확히 넣은 세로 조합형 로고를 만들어 주세요. 글자는 가운데 정렬하고 차분한 한글 산세리프 느낌으로 Noto Sans KR를 시각적 참고로 사용해 주세요. 투명 PNG로 전달해 주세요.
+
+저장되는 조합 정보에는 가로·세로 배치, 심볼 위치, 글자 정렬, 타이포그래피 방향이 포함됩니다. 정확한 브랜드명과 슬로건은 폰트의 외형과 별도로 검사합니다. [타이포그래피 안내](skills/logo-land/references/typography.md), [폰트 조사와 라이선스 범위](docs/research/font-tools.md), [구조화된 후보 목록](docs/research/font-shortlist.json)을 참고해 주세요.
+
+요청한 폰트는 래스터 생성을 위한 **시각적 참고**입니다. 특정 폰트 파일의 사용, 모든 글리프의 일치, 편집 가능한 조판이나 폰트 라이선스 제공을 증명하지는 않습니다. 폰트 설치나 외부 폰트 MCP는 필수가 아닙니다. 실제 폰트 파일을 사용하는 작업은 출처·라이선스·정확한 글자 지원 여부를 별도로 확인해야 합니다.
 
 ## 로고 유형 8가지
 
@@ -181,9 +221,11 @@ uv run --locked basedpyright
 
 ## 릴리스와 버전 관리
 
-현재 릴리스는 [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1)입니다. [변경 이력](CHANGELOG.md)과 [릴리스 가이드](docs/releases.md)에서 버전별 변경 사항과 배포 절차를 확인하실 수 있습니다. 릴리스 태그는 검증한 커밋을 가리키며, 플러그인과 helper는 같은 릴리스 버전을 사용합니다.
+이 문서는 **미출시 v0.4.0 개발 소스**를 대상으로 합니다. 현재 [정식 릴리즈는 v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1)입니다. Release 배지는 정식 버전, Development 배지는 현재 소스 버전을 표시합니다. [변경 이력](CHANGELOG.md), [검증 기록](docs/qa/color-workflow/README.md), [릴리즈 가이드](docs/releases.md)에서 남은 게시 조건을 확인하실 수 있습니다.
 
-이 버전을 설치하려면 저장소를 내려받은 뒤 `git checkout v0.3.1`을 실행하고 위 설치 절차를 따르시면 됩니다. GitHub의 소스 압축 파일은 저장소 스냅샷이며 플러그인 설치 패키지는 아닙니다.
+v0.4.0 태그는 게시되지 않았습니다. 위 저장소 설치 절차는 현재 개발 소스를 사용합니다. GitHub의 소스 압축 파일은 저장소 스냅샷이며 플러그인 설치 패키지는 아닙니다.
+
+스키마 1 프로젝트는 계속 읽을 수 있습니다. `show`, `list`, `prompt`는 기존 상태 파일을 다시 쓰지 않으며, 처음으로 명시적인 변경이 성공할 때 검증된 `session.v1.backup.json`을 저장한 뒤 스키마 2를 원자적으로 기록합니다. 기존 이미지의 구조화된 색상 의도는 미상으로 유지하며 과거 HEX나 통과 보고서를 만들어 내지 않습니다. 백업과 원본 PNG를 보존해 주세요. 이는 이전 프로젝트를 새 버전에서 읽는 호환성이며, **v0.3.1이 스키마 2를 읽는다고 보장하지 않고** 자동 다운그레이드도 제공하지 않습니다. [파일 관리 안내](skills/logo-land/references/project-files.md)에 마이그레이션과 복구 범위를 설명했습니다.
 
 ## 조사와 제작 근거
 
@@ -193,6 +235,10 @@ uv run --locked basedpyright
 - [제작 계획](plans/logo-generator.md)
 - [자동 검사 기록](docs/qa/helper-tests.md)
 - [배경 변형 검사](docs/qa/background-variants.md)
+- [색상 작업 계획](plans/logo-land-color-workflow.md)
+- [색상 작업 검증](docs/qa/color-workflow/README.md)
+- [실행 가능한 팔레트·참조·조합·보고서·갤러리 예제](skills/logo-land/references/project-files.md)
+- [폰트 도구 조사와 검증 범위](docs/research/font-tools.md)
 - [실제 이미지 생성·수정 검증](docs/qa/live/README.md)
 - [다섯 서비스 화면 갤러리](docs/research/gallery.html)
 - [최종 검증 종합](docs/qa/final.md)

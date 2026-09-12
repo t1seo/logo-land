@@ -1,0 +1,338 @@
+{
+  "schema_version": 2,
+  "session_id": "northline",
+  "revision": 5,
+  "exported_at": "2026-09-12T15:36:26.739603Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v1",
+    "path": "artifacts/a-v1.png",
+    "sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+    "image": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1572516
+    },
+    "prompt": "Create one combination logo for NORTHLINE. Industry: Navigation software. Audience: Professional product teams.\nExact text (copy verbatim, no other words): 'NORTHLINE'. Exact slogan: ''.\nStyles: precise, modern, geometric. Original brief palette context: #183A56, #47BDD0, #FFFFFF.\nAvoid: gradients, shadows, mockups, extra lettering, textures. Use cases: website header, small brand label.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A compact abstract north-pointing directional symbol above the single word NORTHLINE. Solid navy #183A56 symbol and wordmark on a solid silver #CDD4DB background. Quiet, rigorous geometric identity using the selected monochromatic local harmony. No cyan or white from the historical brief.. Assumptions: Fictional demonstration brand, Font family is a requested visual reference, not an installed font.\nEffective structured palette intent (authoritative over historical palette): {\"swatches\":[{\"hex\":\"#183A56\",\"role\":\"symbol and wordmark\"},{\"hex\":\"#CDD4DB\",\"role\":\"opaque silver background\"}],\"constraints\":{\"locked_hex\":[],\"allowed_hex\":null,\"max_colors\":null,\"required_hex\":[],\"allow_gradients\":false},\"source\":\"local_harmony\",\"source_evidence\":{\"reference_id\":null,\"reference_sha256\":null,\"provider\":null,\"tool\":null,\"response\":null,\"notes\":[\"Explore three deterministic local harmony recipes before assistant selection\",\"Assistant assigned semantic roles after selecting the local recipe; HEX values unchanged.\"]},\"selected_by\":\"assistant\",\"rationale\":\"Selected the local monochromatic candidate for a precise navy identity on a quiet silver background.\",\"calculation_version\":\"logo-color-v1\",\"id\":\"p1\",\"parent_palette_id\":null,\"digest\":\"fb565c763e30a26c17b0745288cdaa41bbd11713c950856464580cf8f79a2b1f\"}. Keep locked and required HEX values exactly in intent; use the declared roles and allowed colors/count. Opaque backgrounds count as visible design colors; transparent pixels do not. No gradients unless allowed. Raster fidelity is measured after generation, never promised as exact pixels.\nEffective symbol-plus-text lockup: {\"layout\":\"stacked\",\"symbol_position\":\"start\",\"text_alignment\":\"center\",\"typography_style\":\"medium-bold proportional geometric sans-serif with broad open counters and careful tracking\",\"font_reference\":\"Space Grotesk\"}. Horizontal start/end means symbol left/right of text; stacked start/end means symbol above/below text. Preserve the exact text and slogan. Font reference is a requested visual direction, not proof of an installed or licensed font file.\nReturn only one standalone, beautifully balanced master logo image, not a presentation sheet. Use large flat solid areas with no texture, lighting, gradients, shadows or three-dimensional effects. Maintain generous margins.\n",
+    "parent_id": null,
+    "created_at": "2026-09-12T15:20:25.283327Z",
+    "requested_background": "opaque",
+    "palette_id": "p1",
+    "lockup": {
+      "layout": "stacked",
+      "symbol_position": "start",
+      "text_alignment": "center",
+      "typography_style": "medium-bold proportional geometric sans-serif with broad open counters and careful tracking",
+      "font_reference": "Space Grotesk"
+    },
+    "review": {
+      "reviewer": "Codex host; independent Orca Chrome Computer Use observation",
+      "notes": "Chrome native gallery and original inspected at large and 128 px on light/dark surfaces. Exact NORTHLINE text, centered stacked symbol, safe margins and intended opaque silver background are correct.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-12T15:36:15.661027Z"
+  },
+  "brief": {
+    "brand_name": "NORTHLINE",
+    "exact_text": "NORTHLINE",
+    "industry": "Navigation software",
+    "audience": "Professional product teams",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "precise",
+      "modern",
+      "geometric"
+    ],
+    "palette": [
+      "#183A56",
+      "#47BDD0",
+      "#FFFFFF"
+    ],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering",
+      "textures"
+    ],
+    "use_cases": [
+      "website header",
+      "small brand label"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand",
+      "Font family is a requested visual reference, not an installed font"
+    ],
+    "lockup": {
+      "layout": "stacked",
+      "symbol_position": "start",
+      "text_alignment": "center",
+      "typography_style": "medium-bold proportional geometric sans-serif with broad open counters and careful tracking",
+      "font_reference": "Space Grotesk"
+    },
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "media_kind": "raster",
+  "requested_background": "opaque",
+  "transparency_verified": false,
+  "intended_palette": {
+    "swatches": [
+      {
+        "hex": "#183A56",
+        "role": "symbol and wordmark"
+      },
+      {
+        "hex": "#CDD4DB",
+        "role": "opaque silver background"
+      }
+    ],
+    "constraints": {
+      "locked_hex": [],
+      "allowed_hex": null,
+      "max_colors": null,
+      "required_hex": [],
+      "allow_gradients": false
+    },
+    "source": "local_harmony",
+    "source_evidence": {
+      "reference_id": null,
+      "reference_sha256": null,
+      "provider": null,
+      "tool": null,
+      "response": null,
+      "notes": [
+        "Explore three deterministic local harmony recipes before assistant selection",
+        "Assistant assigned semantic roles after selecting the local recipe; HEX values unchanged."
+      ]
+    },
+    "selected_by": "assistant",
+    "rationale": "Selected the local monochromatic candidate for a precise navy identity on a quiet silver background.",
+    "calculation_version": "logo-color-v1",
+    "id": "p1",
+    "parent_palette_id": null,
+    "digest": "fb565c763e30a26c17b0745288cdaa41bbd11713c950856464580cf8f79a2b1f"
+  },
+  "color_report": {
+    "id": "export-ebcbc02f93344a18ba4568016d68980e",
+    "artifact_id": "a-v1",
+    "artifact_sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+    "palette_id": "p1",
+    "palette_digest": "fb565c763e30a26c17b0745288cdaa41bbd11713c950856464580cf8f79a2b1f",
+    "analysis_policy": "logo-color-v1",
+    "color_engine_version": "8.12.1",
+    "pillow_version": "12.3.0",
+    "profile_treatment": "assumed_srgb",
+    "sampling": {
+      "width": 1254,
+      "height": 1254,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "grid_128_pixel_centers",
+      "sampled_positions": 16384,
+      "sampled_fraction": 0.010418971889634192,
+      "visible_samples": 16384,
+      "core_samples": 16384,
+      "partial_alpha_samples": 0
+    },
+    "status": "pass",
+    "reasons": [],
+    "measured_swatches": [
+      {
+        "hex": "#C9D0D8",
+        "samples": 4612,
+        "share": 0.281494140625
+      },
+      {
+        "hex": "#CAD1D9",
+        "samples": 4365,
+        "share": 0.26641845703125
+      },
+      {
+        "hex": "#C9D0D9",
+        "samples": 3246,
+        "share": 0.1981201171875
+      },
+      {
+        "hex": "#C8D0D8",
+        "samples": 1669,
+        "share": 0.10186767578125
+      },
+      {
+        "hex": "#CAD0D9",
+        "samples": 1167,
+        "share": 0.07122802734375
+      },
+      {
+        "hex": "#7C90A3",
+        "samples": 1133,
+        "share": 0.06915283203125
+      },
+      {
+        "hex": "#CED5DC",
+        "samples": 123,
+        "share": 0.00750732421875
+      },
+      {
+        "hex": "#C9D0D7",
+        "samples": 69,
+        "share": 0.00421142578125
+      }
+    ],
+    "targets": [
+      {
+        "hex": "#183A56",
+        "matching_samples": 1093,
+        "share": 0.06671142578125,
+        "mean_delta_e": 1.8007121171546971,
+        "max_delta_e": 4.883320974334305
+      },
+      {
+        "hex": "#CDD4DB",
+        "matching_samples": 15243,
+        "share": 0.93035888671875,
+        "mean_delta_e": 1.122353457509202,
+        "max_delta_e": 4.978921711780706
+      }
+    ],
+    "matched_fraction": 0.9970703125,
+    "unmatched_fraction": 0.0029296875,
+    "observed_colors": 2,
+    "minor_swatches": [],
+    "contrasts": [
+      {
+        "foreground": "#C9D0D8",
+        "surface": "#FFFFFF",
+        "ratio": 1.555857496591898,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D0D8",
+        "surface": "#171717",
+        "ratio": 11.522803529435366,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D0D9",
+        "surface": "#FFFFFF",
+        "ratio": 1.554662347988539,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D0D9",
+        "surface": "#171717",
+        "ratio": 11.531661698904001,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#CAD1D9",
+        "surface": "#FFFFFF",
+        "ratio": 1.5403344810256352,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#CAD1D9",
+        "surface": "#171717",
+        "ratio": 11.638926787570389,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#CAD1D8",
+        "surface": "#FFFFFF",
+        "ratio": 1.5415076936969747,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#CAD1D8",
+        "surface": "#171717",
+        "ratio": 11.630068618101756,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D1D9",
+        "surface": "#FFFFFF",
+        "ratio": 1.543483508894675,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D1D9",
+        "surface": "#171717",
+        "ratio": 11.615180952510563,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C8CFD8",
+        "surface": "#FFFFFF",
+        "ratio": 1.5703835539635325,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C8CFD8",
+        "surface": "#171717",
+        "ratio": 11.4162175270997,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#CAD0D9",
+        "surface": "#FFFFFF",
+        "ratio": 1.5514675878227422,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#CAD0D9",
+        "surface": "#171717",
+        "ratio": 11.555407533963825,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D1D8",
+        "surface": "#FFFFFF",
+        "ratio": 1.5446615252870681,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#C9D1D8",
+        "surface": "#171717",
+        "ratio": 11.60632278304193,
+        "alpha": 1.0
+      }
+    ],
+    "delta_e_threshold": 5.0,
+    "created_at": "2026-09-12T15:36:26.739603Z"
+  },
+  "color_policy": "advisory",
+  "warnings": [
+    "Advisory color evidence: pass; no strict constraints apply.",
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "color_method": "sRGB to Lab D50; CIEDE2000, ColorAide method=2000",
+  "color_limits": [
+    "Sampled raster evidence, not an exact-pixel, Pantone, or print-proof guarantee.",
+    "At most 16384 original-coordinate samples; small accents may be missed.",
+    "Alpha-zero pixels are excluded; conformance uses alpha >=250 and preserves white.",
+    "Strict evidence needs 128 core samples and at most 10% partial-alpha visible samples.",
+    "Restricted fit requires 99% core coverage within delta-E00 <=5; design colors need 1% share.",
+    "Locks/required colors need 32 matching core samples and 0.5% core share.",
+    "Quantized measured swatches are estimates; conformance uses original sampled colors.",
+    "Color roles, lettering, and placement require visual review; histograms cannot prove them.",
+    "ROI evidence covers only the stated region; opaque full-image evidence includes background.",
+    "Contrast ratios on explicit composited surfaces are guidance, not logo AA certification."
+  ],
+  "lockup_intent": {
+    "layout": "stacked",
+    "symbol_position": "start",
+    "text_alignment": "center",
+    "typography_style": "medium-bold proportional geometric sans-serif with broad open counters and careful tracking",
+    "font_reference": "Space Grotesk"
+  },
+  "font_reference_usage": "appearance-reference-only"
+}

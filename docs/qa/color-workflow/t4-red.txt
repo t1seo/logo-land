@@ -1,0 +1,203 @@
+FFFFFF                                                                   [100%]
+=================================== FAILURES ===================================
+_____________________ test_palette_propose_when_read_only ______________________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_palette_propose_when_read0/review.json'))
+
+    def test_palette_propose_when_read_only(harness: Harness) -> None:
+        # Given normalized seed/lock input and untouched state.
+        harness.init()
+        request = harness.workspace / "request.json"
+        _ = request.write_text('{"seed_hex":"#247a52","constraints":{"locked_hex":["#247a52"]}}')
+        before = harness.state_path.read_bytes()
+        # When requesting candidates through the real CLI.
+        result = harness.run("palette-propose", "--session", "demo", "--request-file", str(request))
+        # Then actual normalized candidates are returned without mutation.
+>       assert result.returncode == 0, result.stderr
+E       AssertionError: Usage: logo_project.py [OPTIONS] COMMAND [ARGS]...
+E         Try 'logo_project.py --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such command 'palette-propose'.                                           │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/test_palette_workflow.py:38: AssertionError
+_________________ test_palette_when_parent_differs_from_active _________________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_palette_when_parent_diffe0/review.json'))
+
+    def test_palette_when_parent_differs_from_active(harness: Harness) -> None:
+        # Given green parent, navy child and a newer active green palette.
+        harness.init()
+>       _ = add_palette(harness, "green", 0, "#247A52")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_palette_workflow.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_palette_workflow.py:23: in add_palette
+    return Session.model_validate_json(harness.ok(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_palette_when_parent_diffe0/review.json'))
+args = ('palette-add', '--session', 'demo', '--palette', 'green', '--palette-file', ...)
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Usage: logo_project.py [OPTIONS] COMMAND [ARGS]...
+E         Try 'logo_project.py --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such command 'palette-add'.                                               │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/conftest.py:53: AssertionError
+___________ test_import_when_palette_or_revision_is_invalid[extra0] ____________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_import_when_palette_or_re0/review.json'))
+extra = ('--palette', 'missing')
+
+    @pytest.mark.parametrize("extra", [("--palette", "missing"), ("--revision", "99")])
+    def test_import_when_palette_or_revision_is_invalid(harness: Harness, extra: tuple[str, str]) -> None:
+        # Given valid intent and a pristine artifacts directory.
+        harness.init()
+>       _ = add_palette(harness, "green", 0, "#247A52")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_palette_workflow.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_palette_workflow.py:23: in add_palette
+    return Session.model_validate_json(harness.ok(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_import_when_palette_or_re0/review.json'))
+args = ('palette-add', '--session', 'demo', '--palette', 'green', '--palette-file', ...)
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Usage: logo_project.py [OPTIONS] COMMAND [ARGS]...
+E         Try 'logo_project.py --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such command 'palette-add'.                                               │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/conftest.py:53: AssertionError
+___________ test_import_when_palette_or_revision_is_invalid[extra1] ____________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_import_when_palette_or_re1/review.json'))
+extra = ('--revision', '99')
+
+    @pytest.mark.parametrize("extra", [("--palette", "missing"), ("--revision", "99")])
+    def test_import_when_palette_or_revision_is_invalid(harness: Harness, extra: tuple[str, str]) -> None:
+        # Given valid intent and a pristine artifacts directory.
+        harness.init()
+>       _ = add_palette(harness, "green", 0, "#247A52")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_palette_workflow.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_palette_workflow.py:23: in add_palette
+    return Session.model_validate_json(harness.ok(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_import_when_palette_or_re1/review.json'))
+args = ('palette-add', '--session', 'demo', '--palette', 'green', '--palette-file', ...)
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Usage: logo_project.py [OPTIONS] COMMAND [ARGS]...
+E         Try 'logo_project.py --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such command 'palette-add'.                                               │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/conftest.py:53: AssertionError
+________________ test_lockup_when_parent_has_explicit_override _________________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_lockup_when_parent_has_ex0/review.json'))
+
+    def test_lockup_when_parent_has_explicit_override(harness: Harness) -> None:
+        # Given an explicit symbol/text lockup on a parent.
+        harness.init()
+        lockup = harness.workspace / "lockup.json"
+        _ = lockup.write_text(
+            '{"layout":"horizontal","symbol_position":"end","text_alignment":"center",'
+            '"typography_style":"rounded Hangul sans","font_reference":"Pretendard"}'
+        )
+>       _ = harness.import_image(0, "v1", "--lockup-file", str(lockup))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_palette_workflow.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/conftest.py:60: in import_image
+    return self.ok(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_lockup_when_parent_has_ex0/review.json'))
+args = ('import', '--session', 'demo', '--artifact', 'v1', '--image', ...)
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Usage: logo_project.py import [OPTIONS]
+E         Try 'logo_project.py import --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such option: --lockup-file (Possible options: --prompt-file)              │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...ns: --prompt-file)              │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/conftest.py:53: AssertionError
+_______________________ test_palette_add_when_duplicate ________________________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_palette_add_when_duplicat0/review.json'))
+
+    def test_palette_add_when_duplicate(harness: Harness) -> None:
+        # Given an immutable recorded palette.
+        harness.init()
+>       _ = add_palette(harness, "green", 0, "#247A52")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_palette_workflow.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_palette_workflow.py:23: in add_palette
+    return Session.model_validate_json(harness.ok(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-43/test...$TMPDIR/pytest-of-user/pytest-43/test_palette_add_when_duplicat0/review.json'))
+args = ('palette-add', '--session', 'demo', '--palette', 'green', '--palette-file', ...)
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Usage: logo_project.py [OPTIONS] COMMAND [ARGS]...
+E         Try 'logo_project.py --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such command 'palette-add'.                                               │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['$PROJECT/.venv/bin/python', '$HOME/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/conftest.py:53: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_palette_workflow.py::test_palette_propose_when_read_only - ...
+FAILED tests/test_palette_workflow.py::test_palette_when_parent_differs_from_active
+FAILED tests/test_palette_workflow.py::test_import_when_palette_or_revision_is_invalid[extra0]
+FAILED tests/test_palette_workflow.py::test_import_when_palette_or_revision_is_invalid[extra1]
+FAILED tests/test_palette_workflow.py::test_lockup_when_parent_has_explicit_override
+FAILED tests/test_palette_workflow.py::test_palette_add_when_duplicate - Asse...
+6 failed in 8.93s

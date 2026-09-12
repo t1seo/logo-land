@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "session_id": "demo",
+  "revision": 7,
+  "exported_at": "2026-09-12T15:22:32.511458Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "v1",
+    "path": "artifacts/v1.png",
+    "sha256": "2b108381a45f159737f997e08a3cbe976edce197e588ffed9f383bfdb7ee060c",
+    "image": {
+      "format": "PNG",
+      "width": 40,
+      "height": 40,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 1,
+      "visible_pixels": 1599
+    },
+    "prompt": "Synthetic CLI export fixture only.",
+    "parent_id": null,
+    "created_at": "2026-09-12T15:22:30.807608Z",
+    "requested_background": "transparent",
+    "palette_id": "green",
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "Korean Gothic",
+      "font_reference": "Noto Sans KR"
+    },
+    "review": {
+      "reviewer": "manual CLI fixture",
+      "notes": "Synthetic test, not visual logo QA.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-12T15:22:32.174706Z"
+  },
+  "brief": {
+    "brand_name": "T5 Fixture",
+    "exact_text": "Morrow Studio",
+    "industry": "design",
+    "audience": "small businesses",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "Korean Gothic",
+      "font_reference": "Noto Sans KR"
+    },
+    "background": "transparent",
+    "concept_count": 3
+  },
+  "media_kind": "raster",
+  "requested_background": "transparent",
+  "transparency_verified": true,
+  "intended_palette": {
+    "swatches": [
+      {
+        "hex": "#007832",
+        "role": "symbol"
+      },
+      {
+        "hex": "#FFFFFF",
+        "role": "lettering"
+      }
+    ],
+    "constraints": {
+      "locked_hex": [],
+      "allowed_hex": null,
+      "max_colors": 2,
+      "required_hex": [],
+      "allow_gradients": false
+    },
+    "source": "assistant",
+    "source_evidence": {
+      "reference_id": null,
+      "reference_sha256": null,
+      "provider": null,
+      "tool": null,
+      "response": null,
+      "notes": []
+    },
+    "selected_by": "user",
+    "rationale": "Known synthetic colors",
+    "calculation_version": "logo-color-v1",
+    "id": "green",
+    "parent_palette_id": null,
+    "digest": "a33eb9f527d4f15b2d17f0f8f3a81931f615a9b5f5dd201ecf5ac01f49f2b3c3"
+  },
+  "color_report": {
+    "id": "export-90c45d68135449d88f14df0405af5307",
+    "artifact_id": "v1",
+    "artifact_sha256": "2b108381a45f159737f997e08a3cbe976edce197e588ffed9f383bfdb7ee060c",
+    "palette_id": "green",
+    "palette_digest": "a33eb9f527d4f15b2d17f0f8f3a81931f615a9b5f5dd201ecf5ac01f49f2b3c3",
+    "analysis_policy": "logo-color-v1",
+    "color_engine_version": "8.12.1",
+    "pillow_version": "12.3.0",
+    "profile_treatment": "assumed_srgb",
+    "sampling": {
+      "width": 40,
+      "height": 40,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "all_pixels",
+      "sampled_positions": 1600,
+      "sampled_fraction": 1.0,
+      "visible_samples": 1599,
+      "core_samples": 1599,
+      "partial_alpha_samples": 0
+    },
+    "status": "pass",
+    "reasons": [],
+    "measured_swatches": [
+      {
+        "hex": "#FFFFFF",
+        "samples": 800,
+        "share": 0.5003126954346466
+      },
+      {
+        "hex": "#007832",
+        "samples": 799,
+        "share": 0.4996873045653533
+      }
+    ],
+    "targets": [
+      {
+        "hex": "#007832",
+        "matching_samples": 799,
+        "share": 0.4996873045653533,
+        "mean_delta_e": 0.0,
+        "max_delta_e": 0.0
+      },
+      {
+        "hex": "#FFFFFF",
+        "matching_samples": 800,
+        "share": 0.5003126954346466,
+        "mean_delta_e": 0.0,
+        "max_delta_e": 0.0
+      }
+    ],
+    "matched_fraction": 1.0,
+    "unmatched_fraction": 0.0,
+    "observed_colors": 2,
+    "minor_swatches": [],
+    "contrasts": [
+      {
+        "foreground": "#FFFFFF",
+        "surface": "#FFFFFF",
+        "ratio": 1.0,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#FFFFFF",
+        "surface": "#171717",
+        "ratio": 17.927840253027597,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#007832",
+        "surface": "#FFFFFF",
+        "ratio": 5.626220225198278,
+        "alpha": 1.0
+      },
+      {
+        "foreground": "#007832",
+        "surface": "#171717",
+        "ratio": 3.1864803607817875,
+        "alpha": 1.0
+      }
+    ],
+    "delta_e_threshold": 5.0,
+    "created_at": "2026-09-12T15:22:32.511458Z"
+  },
+  "color_policy": "strict",
+  "warnings": [
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "color_method": "sRGB to Lab D50; CIEDE2000, ColorAide method=2000",
+  "color_limits": [
+    "Sampled raster evidence, not an exact-pixel, Pantone, or print-proof guarantee.",
+    "At most 16384 original-coordinate samples; small accents may be missed.",
+    "Alpha-zero pixels are excluded; conformance uses alpha >=250 and preserves white.",
+    "Strict evidence needs 128 core samples and at most 10% partial-alpha visible samples.",
+    "Restricted fit requires 99% core coverage within delta-E00 <=5; design colors need 1% share.",
+    "Locks/required colors need 32 matching core samples and 0.5% core share.",
+    "Quantized measured swatches are estimates; conformance uses original sampled colors.",
+    "Color roles, lettering, and placement require visual review; histograms cannot prove them.",
+    "ROI evidence covers only the stated region; opaque full-image evidence includes background.",
+    "Contrast ratios on explicit composited surfaces are guidance, not logo AA certification."
+  ],
+  "lockup_intent": {
+    "layout": "horizontal",
+    "symbol_position": "start",
+    "text_alignment": "start",
+    "typography_style": "Korean Gothic",
+    "font_reference": "Noto Sans KR"
+  },
+  "font_reference_usage": "appearance-reference-only"
+}

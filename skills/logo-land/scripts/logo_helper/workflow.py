@@ -6,13 +6,19 @@ import hashlib
 from datetime import UTC, datetime
 from typing import TYPE_CHECKING
 
+from pydantic import ValidationError
+
 from logo_helper.images import inspect_png
+from logo_helper.import_reports import initial_report
+from logo_helper.intent import resolve_intent
 from logo_helper.models import (
     Artifact,
     ArtifactId,
     Background,
     Brief,
     FailedAttempt,
+    LockupIntent,
+    PaletteId,
     ProjectError,
     Session,
     SessionId,
@@ -55,6 +61,8 @@ def import_image(
     prompt: str,
     parent_id: ArtifactId | None,
     background: Background | None = None,
+    palette_id: PaletteId | None = None,
+    lockup: LockupIntent | None = None,
 ) -> Session:
     """Decode first, copy original bytes exclusively, then commit success metadata."""
     _ = validate_id(artifact_id)
@@ -64,8 +72,7 @@ def import_image(
         state = store.expect(identifier, revision)
         if any(item.id == artifact_id for item in state.artifacts):
             raise ProjectError("conflict", f"Artifact {artifact_id} already exists")
-        if parent_id is not None:
-            _ = state.artifact(parent_id)
+        intent = resolve_intent(state, parent_id, palette_id, lockup)
         artifact = Artifact(
             id=artifact_id,
             path=f"artifacts/{artifact_id}.png",
@@ -75,15 +82,28 @@ def import_image(
             parent_id=parent_id,
             created_at=datetime.now(UTC),
             requested_background=background if background is not None else state.brief.background,
+            palette_id=intent.palette.id if intent.palette is not None else None,
+            lockup=intent.lockup,
         )
+        reports = state.color_reports
+        if intent.palette is not None:
+            reports = (*reports, initial_report(data, artifact, intent.palette))
+        updated = advance(
+            state.model_copy(
+                update={
+                    "artifacts": (*state.artifacts, artifact),
+                    "color_reports": reports,
+                }
+            )
+        )
+        updated = Session.model_validate_json(updated.model_dump_json())
         directory = store.session_dir(identifier)
         safe_path(directory, "artifacts").mkdir(exist_ok=True)
         destination = safe_path(directory, artifact.path)
         write_new(destination, data)
-        updated = advance(state.model_copy(update={"artifacts": (*state.artifacts, artifact)}))
         try:
             store.save(updated)
-        except OSError:
+        except (OSError, ProjectError, ValidationError):
             destination.unlink()
             raise
     return updated

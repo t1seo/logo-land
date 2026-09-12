@@ -11,9 +11,7 @@ import pytest
 from PIL import Image
 from pydantic import BaseModel, ConfigDict
 
-SCRIPT: Final = (
-    Path(__file__).resolve().parents[1] / "skills/logo-land/scripts/logo_project.py"
-)
+SCRIPT: Final = Path(__file__).resolve().parents[1] / "skills/logo-land/scripts/logo_project.py"
 
 
 class ArtifactView(BaseModel):

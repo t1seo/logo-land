@@ -8,10 +8,11 @@ import re
 from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
-from typing import TYPE_CHECKING, Final
+from typing import TYPE_CHECKING, Final, assert_never
 from uuid import uuid4
 
 from logo_helper.images import inspect_png
+from logo_helper.legacy_state import LegacySession, parse_session, parse_stored_session
 from logo_helper.models import ProjectError, Session, SessionId
 
 if TYPE_CHECKING:
@@ -129,7 +130,7 @@ class Store:
         """Reparse persisted state and verify all artifact bytes on every resume."""
         directory = self.session_dir(identifier)
         path = safe_path(directory, "session.json")
-        state = Session.model_validate_json(read_source(path))
+        state = parse_session(read_source(path))
         if state.id != identifier:
             raise ProjectError("invalid_state", "Stored session ID differs from its directory")
         for artifact in state.artifacts:
@@ -142,6 +143,10 @@ class Store:
                 raise ProjectError(
                     "invalid_state", f"Artifact {artifact.id} metadata differs from decoded PNG"
                 )
+        for reference in state.references:
+            data = read_source(safe_path(directory, reference.path))
+            if hashlib.sha256(data).hexdigest() != reference.sha256:
+                raise ProjectError("hash_mismatch", f"Reference {reference.id} changed")
         return state
 
     def expect(self, identifier: SessionId, revision: int) -> Session:
@@ -154,7 +159,46 @@ class Store:
         return state
 
     def save(self, state: Session) -> None:
-        atomic_state(safe_path(self.session_dir(state.id), "session.json"), state)
+        """Commit validated v2 state; preserve immutable history and first v1 bytes."""
+        verified = Session.model_validate_json(state.model_dump_json())
+        directory = self.session_dir(verified.id)
+        path = safe_path(directory, "session.json")
+        if path.exists():
+            original = read_source(path)
+            previous = parse_session(original)
+            previous_artifacts = tuple(
+                artifact.model_copy(update={"review": None, "reviewed_at": None})
+                for artifact in previous.artifacts
+            )
+            current_artifacts = tuple(
+                artifact.model_copy(update={"review": None, "reviewed_at": None})
+                for artifact in verified.artifacts[: len(previous.artifacts)]
+            )
+            for old, new in (
+                (previous.palettes, verified.palettes),
+                (previous.references, verified.references),
+                (previous.color_reports, verified.color_reports),
+                (previous_artifacts, current_artifacts),
+            ):
+                if new[: len(old)] != old:
+                    raise ProjectError(
+                        "immutable_history", "Saved provenance and color history are immutable"
+                    )
+            stored = parse_stored_session(original)
+            match stored:
+                case LegacySession():
+                    backup = safe_path(directory, "session.v1.backup.json")
+                    if not backup.exists():
+                        write_new(backup, original)
+                    if read_source(backup) != original:
+                        raise ProjectError(
+                            "backup_conflict", "Legacy backup differs from session bytes"
+                        )
+                case Session():
+                    pass
+                case _:
+                    assert_never(stored)
+        atomic_state(path, verified)
 
     def list_sessions(self) -> tuple[Session, ...]:
         directory = safe_path(self.root, ".logo-generator/sessions")

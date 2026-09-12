@@ -1,0 +1,21 @@
+{
+  "revision": 4,
+  "artifacts": [
+    {
+      "id": "v1",
+      "palette_id": "green"
+    }
+  ],
+  "reports": [
+    {
+      "id": "report-c6276faa0dfd4e03a33f8abdda965cae",
+      "status": "pass",
+      "color_engine_version": "8.12.1"
+    },
+    {
+      "id": "report-99c4f4303ba54c43a9b712dfb271552b",
+      "status": "pass",
+      "color_engine_version": "8.12.1"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+testpaths: tests
+collected 299 items
+
+tests/test_background_compatibility.py .........                         [  3%]
+tests/test_background_variants.py ........                               [  5%]
+tests/test_boundaries.py ........................                        [ 13%]
+tests/test_cli_safety.py .................                               [ 19%]
+tests/test_cli_workflow.py .......                                       [ 21%]
+tests/test_color_analysis.py .............................               [ 31%]
+tests/test_color_cli_integration.py .........                            [ 34%]
+tests/test_color_gallery.py ..........................                   [ 43%]
+tests/test_color_models.py ....................................          [ 55%]
+tests/test_color_reports.py ................                             [ 60%]
+tests/test_color_workflow_transactions.py .....                          [ 62%]
+tests/test_delivery_guide.py ....                                        [ 63%]
+tests/test_palette_compatibility.py ...........                          [ 67%]
+tests/test_palette_engine.py ......................................      [ 79%]
+tests/test_palette_workflow.py ......                                    [ 81%]
+tests/test_reference_colors.py ........................                  [ 89%]
+tests/test_reserved_output.py ............                               [ 93%]
+tests/test_resume_and_portability.py ............                        [ 97%]
+tests/test_transactions.py ......                                        [100%]
+
+======================= 299 passed in 111.67s (0:01:51) ========================

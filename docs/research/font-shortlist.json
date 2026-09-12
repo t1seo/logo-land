@@ -1,0 +1,498 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-09-13",
+  "status": "final",
+  "report_path": "docs/research/font-tools.md",
+  "purpose": "Research data for appearance references in Logo Land; not a font installation or typesetting configuration.",
+  "boundaries": {
+    "font_files_downloaded": false,
+    "font_files_installed": false,
+    "skills_installed": false,
+    "mcp_servers_started": false,
+    "native_image_qa_performed": false,
+    "exact_font_rasterization_verified": false,
+    "generated_image_font_license_proven": false
+  },
+  "tools": [
+    {
+      "id": "google-fonts",
+      "name": "Google Fonts catalog, CSS2 API and Web Fonts Developer API",
+      "provenance": "official_google",
+      "kinds": [
+        "catalog",
+        "web_api"
+      ],
+      "recommendation": "primary_reference",
+      "license": "Per-family font license; selected Google families verified OFL-1.1.",
+      "requirements": "Public catalog/CSS requests require network, no key; Developer metadata API requires a Google API key.",
+      "limits": "CSS axes/weights must exist; text parameter is shared across requested families; metadata subset does not prove exact glyph coverage; no numeric quota verified.",
+      "sources": [
+        "https://developers.google.com/fonts/docs/css2",
+        "https://developers.google.com/fonts/docs/developer_api",
+        "https://github.com/google/fonts/tree/809e4d8b8d7e9364a914909bb777679606c178b8/ofl"
+      ]
+    },
+    {
+      "id": "adobe-fonts",
+      "name": "Adobe Fonts and documented Typekit API",
+      "provenance": "official_adobe",
+      "kinds": [
+        "catalog",
+        "subscription_service",
+        "web_api"
+      ],
+      "recommendation": "optional_reference",
+      "license": "Adobe service terms; individual open-source families may have separate upstream licenses.",
+      "requirements": "Catalog browsing public; activation requires Adobe account/eligible plan and Creative Cloud desktop app; private/kit API operations use X-Typekit-Token over HTTPS.",
+      "limits": "Do not transfer service font files, assume server rights, or treat metadata API as binary redistribution rights; authenticated API not exercised.",
+      "sources": [
+        "https://fonts.adobe.com/",
+        "https://helpx.adobe.com/fonts/web/font-licensing/font-licensing.html",
+        "https://helpx.adobe.com/fonts/web/introduction/system-subscription-requirements.html",
+        "https://fonts.adobe.com/docs/api",
+        "https://fonts.adobe.com/docs/api/auth",
+        "https://fonts.adobe.com/docs/api/pagination"
+      ]
+    },
+    {
+      "id": "sliday-google-fonts",
+      "name": "sliday/google-fonts-skill",
+      "provenance": "community_not_google",
+      "kinds": [
+        "skill",
+        "mcp_server",
+        "cli"
+      ],
+      "recommendation": "optional_advisory_source_only",
+      "license": "MIT",
+      "requirements": "Python >=3.10, FastMCP >=3.4.7,<4 and rich for MCP; local bundled CSV inference needs no Google API key; package retrieval and generated web embeds need network.",
+      "limits": "1923 font rows, 73 pairing rows, 8 scale rows at pin; five tools; query max 500 characters; result limit 1..50; no Hangul shaping test; Subsets omitted from lookup output.",
+      "discovery": {
+        "skill_installs_observed": "193",
+        "github_stars_observed": 13
+      },
+      "sources": [
+        "https://github.com/sliday/google-fonts-skill/blob/f86afc07d1cf28a36ab4f2807cee91c9c651b4da/SKILL.md",
+        "https://github.com/sliday/google-fonts-skill/blob/f86afc07d1cf28a36ab4f2807cee91c9c651b4da/src/google_fonts_mcp/server.py",
+        "https://github.com/sliday/google-fonts-skill/blob/f86afc07d1cf28a36ab4f2807cee91c9c651b4da/src/google_fonts_mcp/core.py",
+        "https://github.com/sliday/google-fonts-skill/blob/f86afc07d1cf28a36ab4f2807cee91c9c651b4da/LICENSE",
+        "https://skills.sh/sliday/google-fonts-skill/google-fonts"
+      ]
+    },
+    {
+      "id": "wondelai-web-typography",
+      "name": "wondelai/skills web-typography",
+      "provenance": "community_not_adobe",
+      "kinds": [
+        "skill"
+      ],
+      "recommendation": "selection_guidance_only",
+      "license": "MIT",
+      "requirements": "Markdown reference; no intrinsic API key or server; remote references and web font use need network.",
+      "limits": "Web reading heuristics are not logo requirements, Korean shaping tests, official Adobe guidance, or license evidence.",
+      "discovery": {
+        "skill_installs_observed": "7.6K",
+        "github_stars_observed": 2155
+      },
+      "sources": [
+        "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/web-typography/SKILL.md",
+        "https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/LICENSE",
+        "https://skills.sh/wondelai/skills/web-typography"
+      ]
+    },
+    {
+      "id": "microck-font-mcp",
+      "name": "Microck/font-mcp",
+      "provenance": "community",
+      "kinds": [
+        "mcp_server"
+      ],
+      "recommendation": "exclude_from_this_workflow",
+      "license": "README claims MIT; linked root LICENSE returned HTTP 404 at pin; license not verified.",
+      "requirements": "Node/npm dependencies; outbound website scraping and font hunting; no key configuration seen in inspected files; not started.",
+      "limits": "Four tools; paid setup branch automatically hunts/downloads font files and writes locally; permission assumed by tool is not checked; no glyph/license verification; 9 GitHub stars observed.",
+      "sources": [
+        "https://github.com/Microck/font-mcp/blob/e73f9befcef48a9d7fcf694a1576495e800fd33d/README.md",
+        "https://github.com/Microck/font-mcp/blob/e73f9befcef48a9d7fcf694a1576495e800fd33d/src/index.ts",
+        "https://github.com/Microck/font-mcp/blob/e73f9befcef48a9d7fcf694a1576495e800fd33d/src/config.ts",
+        "https://github.com/Microck/font-mcp/blob/e73f9befcef48a9d7fcf694a1576495e800fd33d/src/services/ResearchService.ts",
+        "https://github.com/Microck/font-mcp/blob/e73f9befcef48a9d7fcf694a1576495e800fd33d/LICENSE"
+      ]
+    },
+    {
+      "id": "fonttools",
+      "name": "fontTools ttLib",
+      "provenance": "official_upstream_community_library",
+      "kinds": [
+        "python_library"
+      ],
+      "recommendation": "deferred_for_future_font_file_inspection",
+      "license": "MIT",
+      "requirements": "Local font file and installed Python library; no service key or runtime network needed for local cmap inspection.",
+      "limits": "getBestCmap can return None; cmap presence is not shaping/kerning validation; library license does not license input fonts; not installed or run for this research.",
+      "sources": [
+        "https://github.com/fonttools/fonttools/blob/e74dcee6b032586c1b15f8481bd341bc9e3b4a0b/LICENSE",
+        "https://github.com/fonttools/fonttools/blob/e74dcee6b032586c1b15f8481bd341bc9e3b4a0b/Lib/fontTools/ttLib/ttFont.py",
+        "https://fonttools.readthedocs.io/en/latest/ttLib/ttFont.html"
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "notosanskr",
+      "family": "Noto Sans KR",
+      "category": "sans_serif",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "declared",
+        "latin": "declared",
+        "evidence_level": "publisher_declaration_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "variable",
+        "wght_min": 100,
+        "wght_max": 900,
+        "practical_reference": [
+          500,
+          700
+        ]
+      },
+      "mood": "Clear, neutral, professional; horizontal Korean/Latin lockups.",
+      "limitations": "Use Korean regional family; publisher descriptions and subsets do not prove every requested code point.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/notosanskr/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/notosanskr/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/notosanskr/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Noto+Sans+KR"
+      }
+    },
+    {
+      "id": "notoserifkr",
+      "family": "Noto Serif KR",
+      "category": "serif",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "declared",
+        "latin": "declared",
+        "evidence_level": "publisher_declaration_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "variable",
+        "wght_min": 200,
+        "wght_max": 900,
+        "practical_reference": [
+          500,
+          700
+        ]
+      },
+      "mood": "Literary, heritage, premium; stacked editorial or tea branding.",
+      "limitations": "Fine strokes need native image review at intended size; no exact serif/kerning guarantee.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/notoserifkr/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/notoserifkr/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/notoserifkr/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Noto+Serif+KR"
+      }
+    },
+    {
+      "id": "pretendard",
+      "family": "Pretendard",
+      "category": "sans_serif",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "declared",
+        "latin": "declared",
+        "evidence_level": "publisher_readme_and_subset_text_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "variable_plus_static",
+        "wght_min": 45,
+        "wght_max": 920,
+        "practical_reference": [
+          400,
+          600,
+          700
+        ],
+        "evidence": "Pinned current variable CSS declares 45 920; README describes nine static weights. Do not transfer this range to another release."
+      },
+      "mood": "Modern, balanced Korean/Latin; products and technology brands.",
+      "limitations": "Use base Pretendard for Korean; Pretendard Std is Latin-oriented. Pinned source is not equivalent to README's v1.3.9 CDN examples.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/orioncactus/pretendard/blob/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/LICENSE.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Original Pretendard project by Kil Hyung-jin",
+        "repository": "https://github.com/orioncactus/pretendard",
+        "commit": "7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae",
+        "metadata_url": "https://github.com/orioncactus/pretendard/blob/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/dist/web/variable/pretendardvariable.css",
+        "description_url": "https://github.com/orioncactus/pretendard/blob/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/README.md",
+        "glyph_list_url": "https://github.com/orioncactus/pretendard/blob/7aeb0698819be2b4097dae8ec8fe6a795e5cf3ae/packages/pretendard/subset_glyphs.txt"
+      }
+    },
+    {
+      "id": "gowundodum",
+      "family": "Gowun Dodum",
+      "category": "humanist_sans",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "declared",
+        "latin": "declared",
+        "evidence_level": "publisher_declaration_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "static",
+        "available": [
+          400
+        ],
+        "practical_reference": [
+          400
+        ]
+      },
+      "mood": "Warm, gentle, lightly hand-drawn; bakery, wellness, small shops.",
+      "limitations": "One registered weight; do not request an unavailable bold/italic face.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/gowundodum/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/gowundodum/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/gowundodum/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Gowun+Dodum"
+      }
+    },
+    {
+      "id": "blackhansans",
+      "family": "Black Han Sans",
+      "category": "display_sans",
+      "selection_status": "conditional_hangul_display_only",
+      "script_support": {
+        "hangul": "limited_2580_characters_per_description",
+        "latin": "unverified_conflicting_sources",
+        "evidence_level": "conflicting_primary_documents"
+      },
+      "weights": {
+        "kind": "static",
+        "available": [
+          400
+        ],
+        "practical_reference": [
+          400
+        ]
+      },
+      "mood": "Square, heavy, emphatic Hangul display; short compact marks.",
+      "limitations": "METADATA lists latin, but DESCRIPTION explicitly says Latin alphabet is not provided and only 2580 Korean characters are included. Require exact text verification; do not use as Korean+Latin default. CSS 700 request returned 400.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/blackhansans/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/blackhansans/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/blackhansans/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Black+Han+Sans"
+      }
+    },
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "category": "geometric_sans",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "not_declared",
+        "latin": "declared",
+        "evidence_level": "publisher_declaration_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "variable",
+        "wght_min": 100,
+        "wght_max": 900,
+        "italic": true,
+        "practical_reference": [
+          600,
+          700
+        ]
+      },
+      "mood": "Geometric, urban, confident; Latin wordmarks.",
+      "limitations": "Korean text needs a separate Korean-capable family; do not infer Hangul coverage from browser fallback.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/montserrat/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/montserrat/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/montserrat/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Montserrat"
+      }
+    },
+    {
+      "id": "fraunces",
+      "family": "Fraunces",
+      "category": "display_serif",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "not_declared",
+        "latin": "declared",
+        "evidence_level": "publisher_declaration_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "variable",
+        "wght_min": 100,
+        "wght_max": 900,
+        "italic": true,
+        "other_axes": {
+          "SOFT": [
+            0,
+            100
+          ],
+          "WONK": [
+            0,
+            1
+          ],
+          "opsz": [
+            9,
+            144
+          ]
+        },
+        "practical_reference": [
+          600,
+          700
+        ]
+      },
+      "mood": "Soft, expressive, retro; café, food, craft, editorial.",
+      "limitations": "Korean text needs a Korean-capable companion; named axes describe upstream fonts, not controllable native imagegen parameters.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/fraunces/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/fraunces/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/fraunces/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Fraunces"
+      }
+    },
+    {
+      "id": "spacegrotesk",
+      "family": "Space Grotesk",
+      "category": "proportional_sans",
+      "selection_status": "appearance_reference_candidate",
+      "script_support": {
+        "hangul": "not_declared",
+        "latin": "declared",
+        "evidence_level": "publisher_declaration_not_binary_cmap_test"
+      },
+      "weights": {
+        "kind": "variable",
+        "wght_min": 300,
+        "wght_max": 700,
+        "practical_reference": [
+          500,
+          700
+        ]
+      },
+      "mood": "Technical, precise, distinctive; technology and creative studios.",
+      "limitations": "Proportional, not a monospaced font; Hangul not declared in selected distribution.",
+      "license": {
+        "spdx": "OFL-1.1",
+        "url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/spacegrotesk/OFL.txt",
+        "applies_to": "upstream_font_software_not_generated_raster_provenance"
+      },
+      "source": {
+        "publisher": "Google Fonts official distribution; individual authors retain attribution",
+        "repository": "https://github.com/google/fonts",
+        "commit": "809e4d8b8d7e9364a914909bb777679606c178b8",
+        "metadata_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/spacegrotesk/METADATA.pb",
+        "description_url": "https://github.com/google/fonts/blob/809e4d8b8d7e9364a914909bb777679606c178b8/ofl/spacegrotesk/DESCRIPTION.en_us.html",
+        "specimen_url": "https://fonts.google.com/specimen/Space+Grotesk"
+      }
+    }
+  ],
+  "pairing_suggestions": [
+    {
+      "brand_reference": "Noto Serif KR",
+      "secondary_reference": "Noto Sans KR",
+      "use": "Korean/Latin heritage or editorial",
+      "evidence": "researcher_style_judgment"
+    },
+    {
+      "brand_reference": "Fraunces",
+      "secondary_reference": "Gowun Dodum",
+      "use": "Latin main brand with Korean secondary text; warm café",
+      "evidence": "researcher_style_judgment"
+    },
+    {
+      "brand_reference": "Space Grotesk",
+      "secondary_reference": "Pretendard",
+      "use": "Latin technology wordmark with Korean slogan",
+      "evidence": "researcher_style_judgment"
+    },
+    {
+      "brand_reference": "Montserrat",
+      "secondary_reference": "Noto Sans KR",
+      "use": "Geometric Latin brand with Korean explanatory text",
+      "evidence": "researcher_style_judgment"
+    }
+  ],
+  "manual_observations": [
+    {
+      "surface": "Google Fonts CSS2 HTTP",
+      "family": "Noto Sans KR",
+      "requested_weight": 700,
+      "text": "모로 MORROW",
+      "api_key_used": false,
+      "http_status": 200,
+      "font_binary_fetched": false,
+      "proves": "CSS response availability only"
+    },
+    {
+      "surface": "Google Fonts CSS2 HTTP",
+      "family": "Black Han Sans",
+      "requested_weight": 700,
+      "text": "모로",
+      "api_key_used": false,
+      "http_status": 400,
+      "font_binary_fetched": false,
+      "proves": "Unsupported registered weight rejected"
+    },
+    {
+      "surface": "Google Fonts CSS2 HTTP",
+      "family": "Black Han Sans",
+      "requested_weight": 400,
+      "text": "모로",
+      "api_key_used": false,
+      "http_status": 200,
+      "font_binary_fetched": false,
+      "proves": "CSS response availability only; not glyph presence"
+    }
+  ]
+}

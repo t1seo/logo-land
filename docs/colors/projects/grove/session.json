@@ -1,0 +1,2008 @@
+{
+  "id": "grove",
+  "schema_version": 2,
+  "snapshot_revision": 9,
+  "snapshot_updated_at": "2026-09-12T15:36:27.849830Z",
+  "brief": {
+    "brand_name": "GROVE SUPPLY",
+    "exact_text": "GROVE SUPPLY",
+    "industry": "Sustainable outdoor goods",
+    "audience": "Practical outdoor enthusiasts",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "bold",
+      "organic",
+      "flat"
+    ],
+    "palette": [
+      "#247A52",
+      "#F6F3EC"
+    ],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering",
+      "textures"
+    ],
+    "use_cases": [
+      "website header",
+      "small brand label"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand",
+      "Font family is a requested visual reference, not an installed font"
+    ],
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+      "font_reference": "Montserrat"
+    },
+    "background": "transparent",
+    "concept_count": 1
+  },
+  "selected_id_at_snapshot": "a-v1",
+  "review_note": "Saved review fields are frozen evidence. This public sample archive does not select, approve or export a deliverable.",
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "images/a-v1.png",
+      "sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "image": {
+        "format": "PNG",
+        "width": 1942,
+        "height": 809,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1566311,
+        "visible_pixels": 575560
+      },
+      "parent_id": null,
+      "created_at": "2026-09-12T15:20:25.739334Z",
+      "requested_background": "transparent",
+      "palette_id": "p1",
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+        "font_reference": "Montserrat"
+      },
+      "review": {
+        "reviewer": "Codex host; independent Orca Chrome Computer Use observation",
+        "notes": "Chrome native gallery and original inspected at large and 128 px on light/dark surfaces. Exact GROVE SUPPLY text and horizontal layout retained. Transparency composites without visible fringe. Small internal details reduce at 128 px; green lettering has limited contrast on dark surfaces. Recommended for light surfaces.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T15:36:16.084790Z",
+      "prompt_path": "prompts/a-v1.txt",
+      "report_paths": [
+        "reports/report-83b2e7e69e1d441595feae69b9b970ad.json",
+        "reports/export-a8e90d0c7eb74bcfb8bbd6fcbd570a4b.json"
+      ],
+      "latest_report": {
+        "id": "export-a8e90d0c7eb74bcfb8bbd6fcbd570a4b",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+        "palette_id": "p1",
+        "palette_digest": "3a0927ec309683f5d6910dfbe26f4ce63b0d56db55db936fd5a31dc93c64d8c0",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1942,
+          "height": 809,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010428508323584188,
+          "visible_samples": 5999,
+          "core_samples": 5463,
+          "partial_alpha_samples": 536
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#21774D",
+            "samples": 1319,
+            "share": 0.24144243089877357
+          },
+          {
+            "hex": "#21764C",
+            "samples": 793,
+            "share": 0.1451583379095735
+          },
+          {
+            "hex": "#20744B",
+            "samples": 704,
+            "share": 0.12886692293611568
+          },
+          {
+            "hex": "#21754C",
+            "samples": 624,
+            "share": 0.11422295442064799
+          },
+          {
+            "hex": "#99BCA6",
+            "samples": 587,
+            "share": 0.10745011898224419
+          },
+          {
+            "hex": "#20764C",
+            "samples": 544,
+            "share": 0.0995789859051803
+          },
+          {
+            "hex": "#20754C",
+            "samples": 532,
+            "share": 0.09738239062786015
+          },
+          {
+            "hex": "#22764D",
+            "samples": 360,
+            "share": 0.06589785831960461
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 4868,
+            "share": 0.891085484166209,
+            "mean_delta_e": 1.6592432575510603,
+            "max_delta_e": 4.69198228051405
+          },
+          {
+            "hex": "#F6F3EC",
+            "matching_samples": 555,
+            "share": 0.1015925315760571,
+            "mean_delta_e": 1.3395891535997524,
+            "max_delta_e": 4.684403001980644
+          }
+        ],
+        "matched_fraction": 0.9926780157422661,
+        "unmatched_fraction": 0.007321984257733846,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#21764D",
+            "surface": "#FFFFFF",
+            "ratio": 5.535982447208988,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21764D",
+            "surface": "#171717",
+            "ratio": 3.1970037981467856,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21774D",
+            "surface": "#FFFFFF",
+            "ratio": 5.467609817102594,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21774D",
+            "surface": "#171717",
+            "ratio": 3.2371132260909112,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21754C",
+            "surface": "#FFFFFF",
+            "ratio": 5.564366922506259,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21754C",
+            "surface": "#171717",
+            "ratio": 3.1397587988283524,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#20764C",
+            "surface": "#FFFFFF",
+            "ratio": 5.544968460460914,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#20764C",
+            "surface": "#171717",
+            "ratio": 3.1918652659855558,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#FFFFFF",
+            "ratio": 5.495890743474488,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#171717",
+            "ratio": 3.1791330794515424,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#FFFFFF",
+            "ratio": 5.54010510655914,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#171717",
+            "ratio": 3.1946275133984616,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#20764D",
+            "surface": "#FFFFFF",
+            "ratio": 5.540838562519343,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#20764D",
+            "surface": "#171717",
+            "ratio": 3.1942415507338793,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21754B",
+            "surface": "#FFFFFF",
+            "ratio": 5.568496969092006,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21754B",
+            "surface": "#171717",
+            "ratio": 3.1374358521361985,
+            "alpha": 0.9921568627450981
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:36:27.752159Z"
+      },
+      "visual_delivery": {
+        "status": "exported",
+        "label": "Reviewed · exported original",
+        "detail": "Chrome showed exact GROVE / SUPPLY lettering and a cleanly composited leaf-and-trail symbol. Small internal details simplify at 128 px; green text has limited contrast on dark surfaces. The saved pass verifies the green anchor under anchor-only constraints, not a strict two-color palette. Recommended for light surfaces.",
+        "production_ready": true
+      },
+      "provenance": {
+        "tool": "image_gen__imagegen",
+        "source_basename": "exec-5317d56e-2a54-4e2c-a74b-c14c4bb640fb.png",
+        "source_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+        "record_basename": "tool-result.json",
+        "record_sha256": "8f3198d2d3a26ac52e51a5925a69ed83de6ff83ac52e8798ead000ddfcdbfb6f",
+        "independent_native_call": true,
+        "reused_from": null
+      }
+    },
+    {
+      "id": "a-v2",
+      "path": "images/a-v2.png",
+      "sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+      "image": {
+        "format": "PNG",
+        "width": 1945,
+        "height": 809,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1573505
+      },
+      "parent_id": "a-v1",
+      "created_at": "2026-09-12T15:26:14.498908Z",
+      "requested_background": "transparent",
+      "palette_id": "p2",
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+        "font_reference": "Montserrat"
+      },
+      "review": null,
+      "reviewed_at": null,
+      "prompt_path": "prompts/a-v2.txt",
+      "report_paths": [
+        "reports/report-8ad54d5b46074ef999c7083e550f6b12.json"
+      ],
+      "latest_report": {
+        "id": "report-8ad54d5b46074ef999c7083e550f6b12",
+        "artifact_id": "a-v2",
+        "artifact_sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+        "palette_id": "p2",
+        "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1945,
+          "height": 809,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010412423220771462,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#1E7951",
+            "samples": 3590,
+            "share": 0.2191162109375
+          },
+          {
+            "hex": "#828180",
+            "samples": 3165,
+            "share": 0.19317626953125
+          },
+          {
+            "hex": "#C0BFBE",
+            "samples": 2512,
+            "share": 0.1533203125
+          },
+          {
+            "hex": "#C9C8C8",
+            "samples": 2196,
+            "share": 0.134033203125
+          },
+          {
+            "hex": "#8C8C8B",
+            "samples": 1784,
+            "share": 0.10888671875
+          },
+          {
+            "hex": "#1E7750",
+            "samples": 1650,
+            "share": 0.1007080078125
+          },
+          {
+            "hex": "#B4A38D",
+            "samples": 1412,
+            "share": 0.086181640625
+          },
+          {
+            "hex": "#3A795D",
+            "samples": 75,
+            "share": 0.00457763671875
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 5251,
+            "share": 0.32049560546875,
+            "mean_delta_e": 0.8083142119370644,
+            "max_delta_e": 4.976681741140609
+          },
+          {
+            "hex": "#D69D49",
+            "matching_samples": 544,
+            "share": 0.033203125,
+            "mean_delta_e": 2.2409646679842714,
+            "max_delta_e": 4.58008512797503
+          }
+        ],
+        "matched_fraction": 0.35369873046875,
+        "unmatched_fraction": 0.64630126953125,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#1F7951",
+            "surface": "#FFFFFF",
+            "ratio": 5.3682290366230285,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7951",
+            "surface": "#171717",
+            "ratio": 3.3396191054294873,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E7850",
+            "surface": "#FFFFFF",
+            "ratio": 5.4439266238006985,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E7850",
+            "surface": "#171717",
+            "ratio": 3.293181832144388,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7850",
+            "surface": "#FFFFFF",
+            "ratio": 5.439614477028514,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7850",
+            "surface": "#171717",
+            "ratio": 3.2957924368972926,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7950",
+            "surface": "#FFFFFF",
+            "ratio": 5.372319475803372,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7950",
+            "surface": "#171717",
+            "ratio": 3.337076347334442,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E7950",
+            "surface": "#FFFFFF",
+            "ratio": 5.376525547732243,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E7950",
+            "surface": "#171717",
+            "ratio": 3.3344657425815374,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7851",
+            "surface": "#FFFFFF",
+            "ratio": 5.435420960321543,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1F7851",
+            "surface": "#171717",
+            "ratio": 3.2983351949923385,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E7951",
+            "surface": "#FFFFFF",
+            "ratio": 5.372428703550711,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E7951",
+            "surface": "#171717",
+            "ratio": 3.3370085006765833,
+            "alpha": 1
+          },
+          {
+            "foreground": "#207951",
+            "surface": "#FFFFFF",
+            "ratio": 5.363903605838862,
+            "alpha": 1
+          },
+          {
+            "foreground": "#207951",
+            "surface": "#171717",
+            "ratio": 3.3423121611492603,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:26:14.990628Z"
+      },
+      "visual_delivery": {
+        "status": "failed",
+        "label": "FAILED · opaque checkerboard",
+        "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+        "production_ready": false
+      },
+      "provenance": {
+        "tool": "image_gen__imagegen",
+        "source_basename": "exec-4d251f3c-2bf6-4716-842b-a5fbffe46860.png",
+        "source_sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+        "record_basename": "warm-tool-result.json",
+        "record_sha256": "1e63c20384bab2dc8ea819dc15113186c4709fd3c84d0a3f6fce2fad4b409893",
+        "independent_native_call": true,
+        "reused_from": null
+      }
+    },
+    {
+      "id": "a-v3",
+      "path": "images/a-v3.png",
+      "sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+      "image": {
+        "format": "PNG",
+        "width": 1945,
+        "height": 808,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1571560
+      },
+      "parent_id": "a-v2",
+      "created_at": "2026-09-12T15:29:12.661938Z",
+      "requested_background": "transparent",
+      "palette_id": "p2",
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+        "font_reference": "Montserrat"
+      },
+      "review": null,
+      "reviewed_at": null,
+      "prompt_path": "prompts/a-v3.txt",
+      "report_paths": [
+        "reports/report-9b0d511b5f634a83979e706ceb3330d1.json"
+      ],
+      "latest_report": {
+        "id": "report-9b0d511b5f634a83979e706ceb3330d1",
+        "artifact_id": "a-v3",
+        "artifact_sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+        "palette_id": "p2",
+        "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1945,
+          "height": 808,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010425309883173407,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#D4D3D5",
+            "samples": 4919,
+            "share": 0.30023193359375
+          },
+          {
+            "hex": "#1A7950",
+            "samples": 2990,
+            "share": 0.1824951171875
+          },
+          {
+            "hex": "#1D7A52",
+            "samples": 2423,
+            "share": 0.14788818359375
+          },
+          {
+            "hex": "#FEFEFE",
+            "samples": 2236,
+            "share": 0.136474609375
+          },
+          {
+            "hex": "#FCFCFC",
+            "samples": 1490,
+            "share": 0.0909423828125
+          },
+          {
+            "hex": "#FDFDFD",
+            "samples": 1357,
+            "share": 0.08282470703125
+          },
+          {
+            "hex": "#CDC1AE",
+            "samples": 598,
+            "share": 0.0364990234375
+          },
+          {
+            "hex": "#E5E5E6",
+            "samples": 371,
+            "share": 0.02264404296875
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 5348,
+            "share": 0.326416015625,
+            "mean_delta_e": 0.9413995755724458,
+            "max_delta_e": 4.94353667018435
+          },
+          {
+            "hex": "#D69D49",
+            "matching_samples": 549,
+            "share": 0.03350830078125,
+            "mean_delta_e": 2.1102905639460423,
+            "max_delta_e": 4.877225626201665
+          }
+        ],
+        "matched_fraction": 0.35992431640625,
+        "unmatched_fraction": 0.64007568359375,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#FFFFFF",
+            "ratio": 1.008546618925115,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#171717",
+            "ratio": 17.775916270617873,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#FFFFFF",
+            "ratio": 1.0171949045327753,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#171717",
+            "ratio": 17.624783778544717,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1B7950",
+            "surface": "#FFFFFF",
+            "ratio": 5.388394088981566,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1B7950",
+            "surface": "#171717",
+            "ratio": 3.3271212084667794,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1B7951",
+            "surface": "#FFFFFF",
+            "ratio": 5.384279144402578,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1B7951",
+            "surface": "#171717",
+            "ratio": 3.3296639665618253,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#FFFFFF",
+            "ratio": 1,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#171717",
+            "ratio": 17.927840253027597,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1C7A51",
+            "surface": "#FFFFFF",
+            "ratio": 5.313927287239689,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1C7A51",
+            "surface": "#171717",
+            "ratio": 3.373745872676437,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1B7A51",
+            "surface": "#FFFFFF",
+            "ratio": 5.317659256233004,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1B7A51",
+            "surface": "#171717",
+            "ratio": 3.371378155156103,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1C7951",
+            "surface": "#FFFFFF",
+            "ratio": 5.3804531147386125,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1C7951",
+            "surface": "#171717",
+            "ratio": 3.332031684082159,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:29:12.989297Z"
+      },
+      "visual_delivery": {
+        "status": "failed",
+        "label": "FAILED · opaque checkerboard",
+        "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+        "production_ready": false
+      },
+      "provenance": {
+        "tool": "image_gen__imagegen",
+        "source_basename": "exec-b063620c-c792-4ffa-b98f-1290fa617ce7.png",
+        "source_sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+        "record_basename": "warm-repair1-tool-result.json",
+        "record_sha256": "70cbb1e1efe1354e9bd8978850e0fc2dcf34e78d51cc5ea75ac4f67929a91341",
+        "independent_native_call": true,
+        "reused_from": null
+      }
+    },
+    {
+      "id": "a-v4",
+      "path": "images/a-v4.png",
+      "sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+      "image": {
+        "format": "PNG",
+        "width": 1946,
+        "height": 808,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572368
+      },
+      "parent_id": "a-v3",
+      "created_at": "2026-09-12T15:34:31.745819Z",
+      "requested_background": "transparent",
+      "palette_id": "p2",
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+        "font_reference": "Montserrat"
+      },
+      "review": null,
+      "reviewed_at": null,
+      "prompt_path": "prompts/a-v4.txt",
+      "report_paths": [
+        "reports/report-d0483f48d4d24defa8b77f2acf4a46f9.json"
+      ],
+      "latest_report": {
+        "id": "report-d0483f48d4d24defa8b77f2acf4a46f9",
+        "artifact_id": "a-v4",
+        "artifact_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+        "palette_id": "p2",
+        "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1946,
+          "height": 808,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010419952581075169,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#AEACAE",
+            "samples": 4305,
+            "share": 0.26275634765625
+          },
+          {
+            "hex": "#1D784E",
+            "samples": 3439,
+            "share": 0.20989990234375
+          },
+          {
+            "hex": "#FEFEFE",
+            "samples": 2564,
+            "share": 0.156494140625
+          },
+          {
+            "hex": "#FAFAFA",
+            "samples": 2213,
+            "share": 0.13507080078125
+          },
+          {
+            "hex": "#207950",
+            "samples": 1162,
+            "share": 0.0709228515625
+          },
+          {
+            "hex": "#1C764D",
+            "samples": 1005,
+            "share": 0.06134033203125
+          },
+          {
+            "hex": "#AF9F8E",
+            "samples": 950,
+            "share": 0.0579833984375
+          },
+          {
+            "hex": "#CFCECF",
+            "samples": 746,
+            "share": 0.0455322265625
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 5532,
+            "share": 0.337646484375,
+            "mean_delta_e": 1.1599404759090413,
+            "max_delta_e": 4.921355872015571
+          },
+          {
+            "hex": "#D69D49",
+            "matching_samples": 537,
+            "share": 0.03277587890625,
+            "mean_delta_e": 2.7279143317309686,
+            "max_delta_e": 4.9308461554023015
+          }
+        ],
+        "matched_fraction": 0.37042236328125,
+        "unmatched_fraction": 0.62957763671875,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#FFFFFF",
+            "ratio": 1,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#171717",
+            "ratio": 17.927840253027597,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1D784E",
+            "surface": "#FFFFFF",
+            "ratio": 5.456356133514904,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1D784E",
+            "surface": "#171717",
+            "ratio": 3.2856800059124347,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FBFBFB",
+            "surface": "#FFFFFF",
+            "ratio": 1.034802632024247,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FBFBFB",
+            "surface": "#171717",
+            "ratio": 17.324888532567552,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#FFFFFF",
+            "ratio": 1.0171949045327753,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#171717",
+            "ratio": 17.624783778544717,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FCFCFC",
+            "surface": "#FFFFFF",
+            "ratio": 1.025946388977226,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FCFCFC",
+            "surface": "#171717",
+            "ratio": 17.47444159426303,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#FFFFFF",
+            "ratio": 1.008546618925115,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#171717",
+            "ratio": 17.775916270617873,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E794F",
+            "surface": "#FFFFFF",
+            "ratio": 5.380567957868399,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E794F",
+            "surface": "#171717",
+            "ratio": 3.3319605650199815,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E784E",
+            "surface": "#FFFFFF",
+            "ratio": 5.452159766516952,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E784E",
+            "surface": "#171717",
+            "ratio": 3.2882088971652763,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:34:31.972251Z"
+      },
+      "visual_delivery": {
+        "status": "failed",
+        "label": "FAILED · opaque checkerboard",
+        "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+        "production_ready": false
+      },
+      "provenance": {
+        "tool": "image_gen__imagegen",
+        "source_basename": "exec-37a72da1-42ff-4645-be28-9cff982f6a14.png",
+        "source_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+        "record_basename": "warm-repair2-tool-result.json",
+        "record_sha256": "99c5cf737c31ca99e3d8604e91cd8d0863c44dd8951ae436262e71fe8f854951",
+        "independent_native_call": true,
+        "reused_from": null
+      }
+    }
+  ],
+  "palettes": [
+    {
+      "swatches": [
+        {
+          "hex": "#247A52",
+          "role": "primary leaf and lettering"
+        },
+        {
+          "hex": "#F6F3EC",
+          "role": "small companion details"
+        }
+      ],
+      "constraints": {
+        "locked_hex": [
+          "#247A52"
+        ],
+        "allowed_hex": null,
+        "max_colors": null,
+        "required_hex": [],
+        "allow_gradients": false
+      },
+      "source": "assistant",
+      "source_evidence": {
+        "reference_id": null,
+        "reference_sha256": null,
+        "provider": null,
+        "tool": null,
+        "response": null,
+        "notes": [
+          "Palette chosen by the assistant from the brief; not an external provider response"
+        ]
+      },
+      "selected_by": "assistant",
+      "rationale": "Keep the requested green exactly in intent; ivory provides a quiet secondary detail.",
+      "calculation_version": "logo-color-v1",
+      "id": "p1",
+      "parent_palette_id": null,
+      "digest": "3a0927ec309683f5d6910dfbe26f4ce63b0d56db55db936fd5a31dc93c64d8c0"
+    },
+    {
+      "swatches": [
+        {
+          "hex": "#247A52",
+          "role": "preserved leaf and lettering"
+        },
+        {
+          "hex": "#D69D49",
+          "role": "warmer companion detail"
+        }
+      ],
+      "constraints": {
+        "locked_hex": [
+          "#247A52"
+        ],
+        "allowed_hex": null,
+        "max_colors": null,
+        "required_hex": [],
+        "allow_gradients": false
+      },
+      "source": "assistant",
+      "source_evidence": {
+        "reference_id": null,
+        "reference_sha256": null,
+        "provider": null,
+        "tool": null,
+        "response": null,
+        "notes": [
+          "Palette chosen by the assistant from the brief; not an external provider response"
+        ]
+      },
+      "selected_by": "assistant",
+      "rationale": "Warm only the ivory companion toward ochre; preserve exact green and existing identity.",
+      "calculation_version": "logo-color-v1",
+      "id": "p2",
+      "parent_palette_id": "p1",
+      "digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef"
+    }
+  ],
+  "references": [],
+  "color_reports": [
+    {
+      "id": "report-83b2e7e69e1d441595feae69b9b970ad",
+      "artifact_id": "a-v1",
+      "artifact_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "palette_id": "p1",
+      "palette_digest": "3a0927ec309683f5d6910dfbe26f4ce63b0d56db55db936fd5a31dc93c64d8c0",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1942,
+        "height": 809,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010428508323584188,
+        "visible_samples": 5999,
+        "core_samples": 5463,
+        "partial_alpha_samples": 536
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#21774D",
+          "samples": 1319,
+          "share": 0.24144243089877357
+        },
+        {
+          "hex": "#21764C",
+          "samples": 793,
+          "share": 0.1451583379095735
+        },
+        {
+          "hex": "#20744B",
+          "samples": 704,
+          "share": 0.12886692293611568
+        },
+        {
+          "hex": "#21754C",
+          "samples": 624,
+          "share": 0.11422295442064799
+        },
+        {
+          "hex": "#99BCA6",
+          "samples": 587,
+          "share": 0.10745011898224419
+        },
+        {
+          "hex": "#20764C",
+          "samples": 544,
+          "share": 0.0995789859051803
+        },
+        {
+          "hex": "#20754C",
+          "samples": 532,
+          "share": 0.09738239062786015
+        },
+        {
+          "hex": "#22764D",
+          "samples": 360,
+          "share": 0.06589785831960461
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#247A52",
+          "matching_samples": 4868,
+          "share": 0.891085484166209,
+          "mean_delta_e": 1.6592432575510603,
+          "max_delta_e": 4.69198228051405
+        },
+        {
+          "hex": "#F6F3EC",
+          "matching_samples": 555,
+          "share": 0.1015925315760571,
+          "mean_delta_e": 1.3395891535997524,
+          "max_delta_e": 4.684403001980644
+        }
+      ],
+      "matched_fraction": 0.9926780157422661,
+      "unmatched_fraction": 0.007321984257733846,
+      "observed_colors": 2,
+      "minor_swatches": [],
+      "contrasts": [
+        {
+          "foreground": "#21764D",
+          "surface": "#FFFFFF",
+          "ratio": 5.535982447208988,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21764D",
+          "surface": "#171717",
+          "ratio": 3.1970037981467856,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21774D",
+          "surface": "#FFFFFF",
+          "ratio": 5.467609817102594,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21774D",
+          "surface": "#171717",
+          "ratio": 3.2371132260909112,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21754C",
+          "surface": "#FFFFFF",
+          "ratio": 5.564366922506259,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21754C",
+          "surface": "#171717",
+          "ratio": 3.1397587988283524,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#20764C",
+          "surface": "#FFFFFF",
+          "ratio": 5.544968460460914,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#20764C",
+          "surface": "#171717",
+          "ratio": 3.1918652659855558,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#FFFFFF",
+          "ratio": 5.495890743474488,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#171717",
+          "ratio": 3.1791330794515424,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#FFFFFF",
+          "ratio": 5.54010510655914,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#171717",
+          "ratio": 3.1946275133984616,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#20764D",
+          "surface": "#FFFFFF",
+          "ratio": 5.540838562519343,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#20764D",
+          "surface": "#171717",
+          "ratio": 3.1942415507338793,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21754B",
+          "surface": "#FFFFFF",
+          "ratio": 5.568496969092006,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21754B",
+          "surface": "#171717",
+          "ratio": 3.1374358521361985,
+          "alpha": 0.9921568627450981
+        }
+      ],
+      "delta_e_threshold": 5,
+      "created_at": "2026-09-12T15:20:25.854480Z"
+    },
+    {
+      "id": "report-8ad54d5b46074ef999c7083e550f6b12",
+      "artifact_id": "a-v2",
+      "artifact_sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+      "palette_id": "p2",
+      "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1945,
+        "height": 809,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010412423220771462,
+        "visible_samples": 16384,
+        "core_samples": 16384,
+        "partial_alpha_samples": 0
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#1E7951",
+          "samples": 3590,
+          "share": 0.2191162109375
+        },
+        {
+          "hex": "#828180",
+          "samples": 3165,
+          "share": 0.19317626953125
+        },
+        {
+          "hex": "#C0BFBE",
+          "samples": 2512,
+          "share": 0.1533203125
+        },
+        {
+          "hex": "#C9C8C8",
+          "samples": 2196,
+          "share": 0.134033203125
+        },
+        {
+          "hex": "#8C8C8B",
+          "samples": 1784,
+          "share": 0.10888671875
+        },
+        {
+          "hex": "#1E7750",
+          "samples": 1650,
+          "share": 0.1007080078125
+        },
+        {
+          "hex": "#B4A38D",
+          "samples": 1412,
+          "share": 0.086181640625
+        },
+        {
+          "hex": "#3A795D",
+          "samples": 75,
+          "share": 0.00457763671875
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#247A52",
+          "matching_samples": 5251,
+          "share": 0.32049560546875,
+          "mean_delta_e": 0.8083142119370644,
+          "max_delta_e": 4.976681741140609
+        },
+        {
+          "hex": "#D69D49",
+          "matching_samples": 544,
+          "share": 0.033203125,
+          "mean_delta_e": 2.2409646679842714,
+          "max_delta_e": 4.58008512797503
+        }
+      ],
+      "matched_fraction": 0.35369873046875,
+      "unmatched_fraction": 0.64630126953125,
+      "observed_colors": 2,
+      "minor_swatches": [],
+      "contrasts": [
+        {
+          "foreground": "#1F7951",
+          "surface": "#FFFFFF",
+          "ratio": 5.3682290366230285,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7951",
+          "surface": "#171717",
+          "ratio": 3.3396191054294873,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E7850",
+          "surface": "#FFFFFF",
+          "ratio": 5.4439266238006985,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E7850",
+          "surface": "#171717",
+          "ratio": 3.293181832144388,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7850",
+          "surface": "#FFFFFF",
+          "ratio": 5.439614477028514,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7850",
+          "surface": "#171717",
+          "ratio": 3.2957924368972926,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7950",
+          "surface": "#FFFFFF",
+          "ratio": 5.372319475803372,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7950",
+          "surface": "#171717",
+          "ratio": 3.337076347334442,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E7950",
+          "surface": "#FFFFFF",
+          "ratio": 5.376525547732243,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E7950",
+          "surface": "#171717",
+          "ratio": 3.3344657425815374,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7851",
+          "surface": "#FFFFFF",
+          "ratio": 5.435420960321543,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1F7851",
+          "surface": "#171717",
+          "ratio": 3.2983351949923385,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E7951",
+          "surface": "#FFFFFF",
+          "ratio": 5.372428703550711,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E7951",
+          "surface": "#171717",
+          "ratio": 3.3370085006765833,
+          "alpha": 1
+        },
+        {
+          "foreground": "#207951",
+          "surface": "#FFFFFF",
+          "ratio": 5.363903605838862,
+          "alpha": 1
+        },
+        {
+          "foreground": "#207951",
+          "surface": "#171717",
+          "ratio": 3.3423121611492603,
+          "alpha": 1
+        }
+      ],
+      "delta_e_threshold": 5,
+      "created_at": "2026-09-12T15:26:14.990628Z"
+    },
+    {
+      "id": "report-9b0d511b5f634a83979e706ceb3330d1",
+      "artifact_id": "a-v3",
+      "artifact_sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+      "palette_id": "p2",
+      "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1945,
+        "height": 808,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010425309883173407,
+        "visible_samples": 16384,
+        "core_samples": 16384,
+        "partial_alpha_samples": 0
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#D4D3D5",
+          "samples": 4919,
+          "share": 0.30023193359375
+        },
+        {
+          "hex": "#1A7950",
+          "samples": 2990,
+          "share": 0.1824951171875
+        },
+        {
+          "hex": "#1D7A52",
+          "samples": 2423,
+          "share": 0.14788818359375
+        },
+        {
+          "hex": "#FEFEFE",
+          "samples": 2236,
+          "share": 0.136474609375
+        },
+        {
+          "hex": "#FCFCFC",
+          "samples": 1490,
+          "share": 0.0909423828125
+        },
+        {
+          "hex": "#FDFDFD",
+          "samples": 1357,
+          "share": 0.08282470703125
+        },
+        {
+          "hex": "#CDC1AE",
+          "samples": 598,
+          "share": 0.0364990234375
+        },
+        {
+          "hex": "#E5E5E6",
+          "samples": 371,
+          "share": 0.02264404296875
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#247A52",
+          "matching_samples": 5348,
+          "share": 0.326416015625,
+          "mean_delta_e": 0.9413995755724458,
+          "max_delta_e": 4.94353667018435
+        },
+        {
+          "hex": "#D69D49",
+          "matching_samples": 549,
+          "share": 0.03350830078125,
+          "mean_delta_e": 2.1102905639460423,
+          "max_delta_e": 4.877225626201665
+        }
+      ],
+      "matched_fraction": 0.35992431640625,
+      "unmatched_fraction": 0.64007568359375,
+      "observed_colors": 2,
+      "minor_swatches": [],
+      "contrasts": [
+        {
+          "foreground": "#FEFEFE",
+          "surface": "#FFFFFF",
+          "ratio": 1.008546618925115,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FEFEFE",
+          "surface": "#171717",
+          "ratio": 17.775916270617873,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FDFDFD",
+          "surface": "#FFFFFF",
+          "ratio": 1.0171949045327753,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FDFDFD",
+          "surface": "#171717",
+          "ratio": 17.624783778544717,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1B7950",
+          "surface": "#FFFFFF",
+          "ratio": 5.388394088981566,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1B7950",
+          "surface": "#171717",
+          "ratio": 3.3271212084667794,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1B7951",
+          "surface": "#FFFFFF",
+          "ratio": 5.384279144402578,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1B7951",
+          "surface": "#171717",
+          "ratio": 3.3296639665618253,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FFFFFF",
+          "surface": "#FFFFFF",
+          "ratio": 1,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FFFFFF",
+          "surface": "#171717",
+          "ratio": 17.927840253027597,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1C7A51",
+          "surface": "#FFFFFF",
+          "ratio": 5.313927287239689,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1C7A51",
+          "surface": "#171717",
+          "ratio": 3.373745872676437,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1B7A51",
+          "surface": "#FFFFFF",
+          "ratio": 5.317659256233004,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1B7A51",
+          "surface": "#171717",
+          "ratio": 3.371378155156103,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1C7951",
+          "surface": "#FFFFFF",
+          "ratio": 5.3804531147386125,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1C7951",
+          "surface": "#171717",
+          "ratio": 3.332031684082159,
+          "alpha": 1
+        }
+      ],
+      "delta_e_threshold": 5,
+      "created_at": "2026-09-12T15:29:12.989297Z"
+    },
+    {
+      "id": "report-d0483f48d4d24defa8b77f2acf4a46f9",
+      "artifact_id": "a-v4",
+      "artifact_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+      "palette_id": "p2",
+      "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1946,
+        "height": 808,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010419952581075169,
+        "visible_samples": 16384,
+        "core_samples": 16384,
+        "partial_alpha_samples": 0
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#AEACAE",
+          "samples": 4305,
+          "share": 0.26275634765625
+        },
+        {
+          "hex": "#1D784E",
+          "samples": 3439,
+          "share": 0.20989990234375
+        },
+        {
+          "hex": "#FEFEFE",
+          "samples": 2564,
+          "share": 0.156494140625
+        },
+        {
+          "hex": "#FAFAFA",
+          "samples": 2213,
+          "share": 0.13507080078125
+        },
+        {
+          "hex": "#207950",
+          "samples": 1162,
+          "share": 0.0709228515625
+        },
+        {
+          "hex": "#1C764D",
+          "samples": 1005,
+          "share": 0.06134033203125
+        },
+        {
+          "hex": "#AF9F8E",
+          "samples": 950,
+          "share": 0.0579833984375
+        },
+        {
+          "hex": "#CFCECF",
+          "samples": 746,
+          "share": 0.0455322265625
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#247A52",
+          "matching_samples": 5532,
+          "share": 0.337646484375,
+          "mean_delta_e": 1.1599404759090413,
+          "max_delta_e": 4.921355872015571
+        },
+        {
+          "hex": "#D69D49",
+          "matching_samples": 537,
+          "share": 0.03277587890625,
+          "mean_delta_e": 2.7279143317309686,
+          "max_delta_e": 4.9308461554023015
+        }
+      ],
+      "matched_fraction": 0.37042236328125,
+      "unmatched_fraction": 0.62957763671875,
+      "observed_colors": 2,
+      "minor_swatches": [],
+      "contrasts": [
+        {
+          "foreground": "#FFFFFF",
+          "surface": "#FFFFFF",
+          "ratio": 1,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FFFFFF",
+          "surface": "#171717",
+          "ratio": 17.927840253027597,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1D784E",
+          "surface": "#FFFFFF",
+          "ratio": 5.456356133514904,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1D784E",
+          "surface": "#171717",
+          "ratio": 3.2856800059124347,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FBFBFB",
+          "surface": "#FFFFFF",
+          "ratio": 1.034802632024247,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FBFBFB",
+          "surface": "#171717",
+          "ratio": 17.324888532567552,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FDFDFD",
+          "surface": "#FFFFFF",
+          "ratio": 1.0171949045327753,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FDFDFD",
+          "surface": "#171717",
+          "ratio": 17.624783778544717,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FCFCFC",
+          "surface": "#FFFFFF",
+          "ratio": 1.025946388977226,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FCFCFC",
+          "surface": "#171717",
+          "ratio": 17.47444159426303,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FEFEFE",
+          "surface": "#FFFFFF",
+          "ratio": 1.008546618925115,
+          "alpha": 1
+        },
+        {
+          "foreground": "#FEFEFE",
+          "surface": "#171717",
+          "ratio": 17.775916270617873,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E794F",
+          "surface": "#FFFFFF",
+          "ratio": 5.380567957868399,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E794F",
+          "surface": "#171717",
+          "ratio": 3.3319605650199815,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E784E",
+          "surface": "#FFFFFF",
+          "ratio": 5.452159766516952,
+          "alpha": 1
+        },
+        {
+          "foreground": "#1E784E",
+          "surface": "#171717",
+          "ratio": 3.2882088971652763,
+          "alpha": 1
+        }
+      ],
+      "delta_e_threshold": 5,
+      "created_at": "2026-09-12T15:34:31.972251Z"
+    },
+    {
+      "id": "export-a8e90d0c7eb74bcfb8bbd6fcbd570a4b",
+      "artifact_id": "a-v1",
+      "artifact_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "palette_id": "p1",
+      "palette_digest": "3a0927ec309683f5d6910dfbe26f4ce63b0d56db55db936fd5a31dc93c64d8c0",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1942,
+        "height": 809,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010428508323584188,
+        "visible_samples": 5999,
+        "core_samples": 5463,
+        "partial_alpha_samples": 536
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#21774D",
+          "samples": 1319,
+          "share": 0.24144243089877357
+        },
+        {
+          "hex": "#21764C",
+          "samples": 793,
+          "share": 0.1451583379095735
+        },
+        {
+          "hex": "#20744B",
+          "samples": 704,
+          "share": 0.12886692293611568
+        },
+        {
+          "hex": "#21754C",
+          "samples": 624,
+          "share": 0.11422295442064799
+        },
+        {
+          "hex": "#99BCA6",
+          "samples": 587,
+          "share": 0.10745011898224419
+        },
+        {
+          "hex": "#20764C",
+          "samples": 544,
+          "share": 0.0995789859051803
+        },
+        {
+          "hex": "#20754C",
+          "samples": 532,
+          "share": 0.09738239062786015
+        },
+        {
+          "hex": "#22764D",
+          "samples": 360,
+          "share": 0.06589785831960461
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#247A52",
+          "matching_samples": 4868,
+          "share": 0.891085484166209,
+          "mean_delta_e": 1.6592432575510603,
+          "max_delta_e": 4.69198228051405
+        },
+        {
+          "hex": "#F6F3EC",
+          "matching_samples": 555,
+          "share": 0.1015925315760571,
+          "mean_delta_e": 1.3395891535997524,
+          "max_delta_e": 4.684403001980644
+        }
+      ],
+      "matched_fraction": 0.9926780157422661,
+      "unmatched_fraction": 0.007321984257733846,
+      "observed_colors": 2,
+      "minor_swatches": [],
+      "contrasts": [
+        {
+          "foreground": "#21764D",
+          "surface": "#FFFFFF",
+          "ratio": 5.535982447208988,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21764D",
+          "surface": "#171717",
+          "ratio": 3.1970037981467856,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21774D",
+          "surface": "#FFFFFF",
+          "ratio": 5.467609817102594,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21774D",
+          "surface": "#171717",
+          "ratio": 3.2371132260909112,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21754C",
+          "surface": "#FFFFFF",
+          "ratio": 5.564366922506259,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21754C",
+          "surface": "#171717",
+          "ratio": 3.1397587988283524,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#20764C",
+          "surface": "#FFFFFF",
+          "ratio": 5.544968460460914,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#20764C",
+          "surface": "#171717",
+          "ratio": 3.1918652659855558,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#FFFFFF",
+          "ratio": 5.495890743474488,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#171717",
+          "ratio": 3.1791330794515424,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#FFFFFF",
+          "ratio": 5.54010510655914,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21764C",
+          "surface": "#171717",
+          "ratio": 3.1946275133984616,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#20764D",
+          "surface": "#FFFFFF",
+          "ratio": 5.540838562519343,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#20764D",
+          "surface": "#171717",
+          "ratio": 3.1942415507338793,
+          "alpha": 0.996078431372549
+        },
+        {
+          "foreground": "#21754B",
+          "surface": "#FFFFFF",
+          "ratio": 5.568496969092006,
+          "alpha": 0.9921568627450981
+        },
+        {
+          "foreground": "#21754B",
+          "surface": "#171717",
+          "ratio": 3.1374358521361985,
+          "alpha": 0.9921568627450981
+        }
+      ],
+      "delta_e_threshold": 5,
+      "created_at": "2026-09-12T15:36:27.752159Z"
+    }
+  ]
+}

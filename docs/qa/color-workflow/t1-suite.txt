@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+testpaths: tests
+collected 181 items / 1 error
+
+==================================== ERRORS ====================================
+_________________ ERROR collecting tests/test_color_gallery.py _________________
+ImportError while importing test module '$PROJECT/tests/test_color_gallery.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_color_gallery.py:11: in <module>
+    from logo_helper.color_gallery import render_color_gallery, render_palette_cards
+E   ImportError: cannot import name 'render_color_gallery' from 'logo_helper.color_gallery' ($PROJECT/skills/logo-land/scripts/logo_helper/color_gallery.py)
+=========================== short test summary info ============================
+ERROR tests/test_color_gallery.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.16s ===============================

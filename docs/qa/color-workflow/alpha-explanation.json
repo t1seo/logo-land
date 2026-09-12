@@ -1,0 +1,174 @@
+[
+  {
+    "session": "grove",
+    "artifact": "a-v1",
+    "sample_policy": "same original 128x128 pixel-center grid",
+    "visible": 5999,
+    "partial_1_to_249": 536,
+    "alpha_1_to_5_samples": 181,
+    "most_frequent_partial_alpha": [
+      [
+        1,
+        93
+      ],
+      [
+        2,
+        37
+      ],
+      [
+        248,
+        30
+      ],
+      [
+        249,
+        28
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "interpretation": "Diagnostic only: low alpha may be nearly invisible in a composited preview. Existing report thresholds and statuses remain unchanged."
+  },
+  {
+    "session": "bamgyeol",
+    "artifact": "a-v1",
+    "sample_policy": "same original 128x128 pixel-center grid",
+    "visible": 2697,
+    "partial_1_to_249": 615,
+    "alpha_1_to_5_samples": 310,
+    "most_frequent_partial_alpha": [
+      [
+        1,
+        150
+      ],
+      [
+        2,
+        59
+      ],
+      [
+        3,
+        54
+      ],
+      [
+        4,
+        31
+      ],
+      [
+        249,
+        31
+      ],
+      [
+        248,
+        16
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        15
+      ]
+    ],
+    "interpretation": "Diagnostic only: low alpha may be nearly invisible in a composited preview. Existing report thresholds and statuses remain unchanged."
+  },
+  {
+    "session": "fieldnote",
+    "artifact": "a-v1",
+    "sample_policy": "same original 128x128 pixel-center grid",
+    "visible": 3019,
+    "partial_1_to_249": 371,
+    "alpha_1_to_5_samples": 165,
+    "most_frequent_partial_alpha": [
+      [
+        1,
+        108
+      ],
+      [
+        2,
+        33
+      ],
+      [
+        249,
+        29
+      ],
+      [
+        248,
+        21
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        247,
+        12
+      ],
+      [
+        246,
+        9
+      ],
+      [
+        55,
+        7
+      ]
+    ],
+    "interpretation": "Diagnostic only: low alpha may be nearly invisible in a composited preview. Existing report thresholds and statuses remain unchanged."
+  },
+  {
+    "session": "white-bamgyeol",
+    "artifact": "white-v3",
+    "sample_policy": "same original 128x128 pixel-center grid",
+    "visible": 3483,
+    "partial_1_to_249": 923,
+    "alpha_1_to_5_samples": 606,
+    "most_frequent_partial_alpha": [
+      [
+        1,
+        446
+      ],
+      [
+        2,
+        62
+      ],
+      [
+        3,
+        45
+      ],
+      [
+        4,
+        34
+      ],
+      [
+        6,
+        29
+      ],
+      [
+        249,
+        22
+      ],
+      [
+        5,
+        19
+      ],
+      [
+        248,
+        15
+      ]
+    ],
+    "interpretation": "Diagnostic only: low alpha may be nearly invisible in a composited preview. Existing report thresholds and statuses remain unchanged."
+  }
+]

@@ -9,11 +9,13 @@ Use these categories to help the user choose. They are design directions for nat
 | `monogram` | Interwoven or integrated initials | Keep each initial intentional and the silhouette readable. |
 | `symbol` | Recognizable pictorial mark | Establish the subject; an icon-only output may use empty `exact_text`. |
 | `abstract` | Nonliteral geometric or organic mark | Tie shape and negative space to a concept without relying on stock motifs. |
-| `combination` | Symbol plus text | Clarify horizontal versus stacked layout and symbol/text balance. |
+| `combination` | Symbol plus exact brand text and any requested slogan | Record horizontal/stacked layout, symbol position, text alignment and typeface appearance; inspect symbol/text balance. |
 | `emblem` | Text enclosed in a badge or seal | Keep borders and lettering readable at the intended size. |
 | `mascot` | Character represents the brand | Clarify expression, personality and detail level; keep a compact silhouette. |
 
 Styles are a separate list: minimal, geometric, organic, playful, elegant, premium, vintage, hand-drawn, bold, futuristic, or another user-defined direction. Avoid describing a type as universally suitable for an industry. Intended use matters more than a category label.
+
+Combination marks are existing functionality. Their structured layout and typography intent make requested variants and later inheritance explicit; see [typography.md](typography.md). A wordmark does not gain an icon unless requested, and an icon-only variant does not fulfill required lettering. Color direction is independent of logo type: use [color-workflow.md](color-workflow.md) for composable anchor/reference/count constraints and preserve one selected palette per requested concept.
 
 ## Conversation routes
 
@@ -29,7 +31,7 @@ Styles are a separate list: minimal, geometric, organic, playful, elegant, premi
 
 ## Korean lettering
 
-Preserve the exact Hangul, spacing, English capitalization, and punctuation the user supplies. Check the resulting image visually against that source string. If text remains wrong after a targeted correction, report it and propose a text-free mark plus a separately typeset wordmark workflow; do not label the image final while the required lettering is wrong. That additional typesetting is a separate operation requiring suitable fonts and verification.
+Preserve the exact Hangul, spacing, English capitalization, and punctuation in both brand and slogan. Check the actual image against both source strings, including after a horizontal/stacked or color-only edit. If text remains wrong after a targeted correction, report it; a text-free mark plus separately typeset wordmark is a separate user-selected workflow requiring suitable fonts and verification. Do not label the image final while required lettering is wrong or claim that a generated font-like appearance proves use of a font file. See [typography.md](typography.md) for the detailed workflow.
 
 ## Avoiding generic outputs
 

@@ -1,0 +1,13 @@
+173 skills/logo-land/scripts/logo_project.py
+105 skills/logo-land/scripts/logo_helper/prompts.py
+144 skills/logo-land/scripts/logo_helper/workflow.py
+25 skills/logo-land/scripts/logo_helper/intent.py
+44 skills/logo-land/scripts/logo_helper/import_reports.py
+128 skills/logo-land/scripts/logo_helper/color_workflow.py
+67 skills/logo-land/scripts/logo_helper/palette_proposals.py
+21 skills/logo-land/scripts/logo_helper/cli_options.py
+106 skills/logo-land/scripts/logo_helper/color_cli.py
+39 skills/logo-land/scripts/logo_helper/reference_evidence.py
+130 tests/test_palette_workflow.py
+175 tests/test_color_cli_integration.py
+120 tests/test_color_workflow_transactions.py

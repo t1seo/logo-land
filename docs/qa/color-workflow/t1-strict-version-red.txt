@@ -1,0 +1,39 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0
+rootdir: $PROJECT
+configfile: pyproject.toml
+collected 9 items / 6 deselected / 3 selected
+
+tests/test_palette_compatibility.py FF.                                  [100%]
+
+=================================== FAILURES ===================================
+______________ test_legacy_version_requires_a_json_integer[true] _______________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-35/test...$TMPDIR/pytest-of-user/pytest-35/test_legacy_version_requires_a0/review.json'))
+version = b'true'
+
+    @pytest.mark.parametrize("version", [b"true", b"1.0", b'"1"'])
+    def test_legacy_version_requires_a_json_integer(harness: Harness, version: bytes) -> None:
+        before = legacy_fixture(harness)
+>       with pytest.raises(ValidationError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValidationError
+
+tests/test_palette_compatibility.py:134: Failed
+_______________ test_legacy_version_requires_a_json_integer[1.0] _______________
+
+harness = Harness(workspace=PosixPath('$TMPDIR/pytest-of-user/pytest-35/test...$TMPDIR/pytest-of-user/pytest-35/test_legacy_version_requires_a1/review.json'))
+version = b'1.0'
+
+    @pytest.mark.parametrize("version", [b"true", b"1.0", b'"1"'])
+    def test_legacy_version_requires_a_json_integer(harness: Harness, version: bytes) -> None:
+        before = legacy_fixture(harness)
+>       with pytest.raises(ValidationError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValidationError
+
+tests/test_palette_compatibility.py:134: Failed
+=========================== short test summary info ============================
+FAILED tests/test_palette_compatibility.py::test_legacy_version_requires_a_json_integer[true]
+FAILED tests/test_palette_compatibility.py::test_legacy_version_requires_a_json_integer[1.0]
+================== 2 failed, 1 passed, 6 deselected in 1.28s ===================

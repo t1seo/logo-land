@@ -1,0 +1,2722 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-13",
+  "title": "Logo Land · Eight real native color requests",
+  "native_tool": "image_gen__imagegen",
+  "image_policy": "Original PNG bytes only; no drawing, recoloring, background removal or raster editing.",
+  "font_policy": "Font names are requested appearance references only. No font files were installed or bundled.",
+  "review_policy": "Frozen evidence; color sampling does not establish overall visual quality or authorize delivery.",
+  "white_decision": "indeterminate_after_two_native_repairs",
+  "native_requests": 8,
+  "independent_native_calls": 16,
+  "stored_artifacts": 17,
+  "cases": [
+    {
+      "number": 1,
+      "title": "SUNROOM",
+      "entry": "Automatic · warm bakery",
+      "request_summary": "Choose a warm palette for a neighborhood bakery.",
+      "session": "sunroom",
+      "artifact_id": "a-v1",
+      "image": "assets/01-sunroom.png",
+      "sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+      "source_basename": "exec-a8938371-ad2c-4f27-8c05-63a277c3f741.png",
+      "source_sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+      "color_report_status": "pass",
+      "visual_delivery": {
+        "status": "failed",
+        "label": "Not delivered · small lettering fails review",
+        "detail": "Chrome showed exact SUNROOM / BAKERY lettering, balanced horizontal spacing and the intended opaque ivory background. At 128 px, BAKERY is too small for comfortable reading. The recorded visual review has small_size_ok=false; no package was exported.",
+        "production_ready": false
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#D68B32",
+            "role": "sun and loaf symbol"
+          },
+          {
+            "hex": "#28231F",
+            "role": "brand text"
+          },
+          {
+            "hex": "#F6F3EC",
+            "role": "opaque background"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [],
+          "allowed_hex": null,
+          "max_colors": null,
+          "required_hex": [],
+          "allow_gradients": false
+        },
+        "source": "assistant",
+        "source_evidence": {
+          "reference_id": null,
+          "reference_sha256": null,
+          "provider": null,
+          "tool": null,
+          "response": null,
+          "notes": [
+            "Palette chosen by the assistant from the brief; not an external provider response"
+          ]
+        },
+        "selected_by": "assistant",
+        "rationale": "Amber evokes baked crust, charcoal keeps the wordmark readable, and ivory provides a warm background.",
+        "calculation_version": "logo-color-v1",
+        "id": "p1",
+        "parent_palette_id": null,
+        "digest": "e49af185e0c5b60cf7d7a7bee267b06e771847ba40e3c82adce5d3b13407e4ad"
+      },
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "soft confident serif lettering with open counters and gently rounded terminals",
+        "font_reference": "Fraunces"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1774,
+        "height": 887,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1573538
+      },
+      "requested_background": "opaque",
+      "report": {
+        "id": "report-4f44a0b5c1b044659f014370325adac7",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+        "palette_id": "p1",
+        "palette_digest": "e49af185e0c5b60cf7d7a7bee267b06e771847ba40e3c82adce5d3b13407e4ad",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1774,
+          "height": 887,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010412204853012764,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#F6F3EC",
+            "samples": 5970,
+            "share": 0.3643798828125
+          },
+          {
+            "hex": "#F7F3ED",
+            "samples": 2885,
+            "share": 0.17608642578125
+          },
+          {
+            "hex": "#F6F2EC",
+            "samples": 2723,
+            "share": 0.16619873046875
+          },
+          {
+            "hex": "#F5F3EB",
+            "samples": 2047,
+            "share": 0.12493896484375
+          },
+          {
+            "hex": "#A27C4F",
+            "samples": 1383,
+            "share": 0.08441162109375
+          },
+          {
+            "hex": "#F6F3ED",
+            "samples": 855,
+            "share": 0.05218505859375
+          },
+          {
+            "hex": "#F6F3EB",
+            "samples": 269,
+            "share": 0.01641845703125
+          },
+          {
+            "hex": "#F7F5EE",
+            "samples": 252,
+            "share": 0.015380859375
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#D68B32",
+            "matching_samples": 813,
+            "share": 0.04962158203125,
+            "mean_delta_e": 1.8235325605365251,
+            "max_delta_e": 4.780444335343166
+          },
+          {
+            "hex": "#28231F",
+            "matching_samples": 456,
+            "share": 0.02783203125,
+            "mean_delta_e": 2.4176930140717445,
+            "max_delta_e": 4.948684565954815
+          },
+          {
+            "hex": "#F6F3EC",
+            "matching_samples": 14952,
+            "share": 0.91259765625,
+            "mean_delta_e": 0.3790284527443526,
+            "max_delta_e": 4.989365842464452
+          }
+        ],
+        "matched_fraction": 0.99005126953125,
+        "unmatched_fraction": 0.00994873046875,
+        "observed_colors": 3,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#F6F3EC",
+            "surface": "#FFFFFF",
+            "ratio": 1.108176072423285,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F3EC",
+            "surface": "#171717",
+            "ratio": 16.177790424426146,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EC",
+            "surface": "#FFFFFF",
+            "ratio": 1.115201486549832,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EC",
+            "surface": "#171717",
+            "ratio": 16.075875498060956,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F2EB",
+            "surface": "#FFFFFF",
+            "ratio": 1.118031794671625,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F2EB",
+            "surface": "#171717",
+            "ratio": 16.03517926634023,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F7F3ED",
+            "surface": "#FFFFFF",
+            "ratio": 1.105380261940569,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F7F3ED",
+            "surface": "#171717",
+            "ratio": 16.21870850267769,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F7F4ED",
+            "surface": "#FFFFFF",
+            "ratio": 1.0984401971917355,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F7F4ED",
+            "surface": "#171717",
+            "ratio": 16.32118006866627,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F3ED",
+            "surface": "#FFFFFF",
+            "ratio": 1.1074947499995562,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F3ED",
+            "surface": "#171717",
+            "ratio": 16.187742879173722,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F7F3EC",
+            "surface": "#FFFFFF",
+            "ratio": 1.1060589844164512,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F7F3EC",
+            "surface": "#171717",
+            "ratio": 16.208756047930116,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EB",
+            "surface": "#FFFFFF",
+            "ratio": 1.1158884672856266,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EB",
+            "surface": "#171717",
+            "ratio": 16.065978615798997,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:20:24.924417Z"
+      },
+      "comparison": "projects/sunroom/index.html#artifact-a-v1",
+      "full_reports": "projects/sunroom/reports.html",
+      "delivery": null,
+      "session_snapshot": "projects/sunroom/session.json",
+      "prompt": "projects/sunroom/prompts/a-v1.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "Not delivered · small lettering fails review",
+            "detail": "Chrome showed exact SUNROOM / BAKERY lettering, balanced horizontal spacing and the intended opaque ivory background. At 128 px, BAKERY is too small for comfortable reading. The recorded visual review has small_size_ok=false; no package was exported.",
+            "production_ready": false
+          },
+          "comparison": "projects/sunroom/index.html#artifact-a-v1",
+          "prompt": "projects/sunroom/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-a8938371-ad2c-4f27-8c05-63a277c3f741.png",
+            "source_sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+            "record_basename": "tool-result.json",
+            "record_sha256": "772c29d7b505fedcf2a13662c6ecc52461b05c721b03dcb9d46675e12ddc4759",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "NORTHLINE",
+      "entry": "Automatic · local harmony",
+      "request_summary": "Choose a precise professional palette for navigation software.",
+      "session": "northline",
+      "artifact_id": "a-v1",
+      "image": "assets/02-northline.png",
+      "sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+      "source_basename": "exec-d7ceda5c-21e3-49de-b6ba-d0e42a8e5fc5.png",
+      "source_sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+      "color_report_status": "pass",
+      "visual_delivery": {
+        "status": "exported",
+        "label": "Reviewed · exported original",
+        "detail": "Chrome showed exact NORTHLINE lettering, a centered directional symbol and the intended opaque silver background. The word and silhouette remained recognizable at 128 px.",
+        "production_ready": true
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#183A56",
+            "role": "symbol and wordmark"
+          },
+          {
+            "hex": "#CDD4DB",
+            "role": "opaque silver background"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [],
+          "allowed_hex": null,
+          "max_colors": null,
+          "required_hex": [],
+          "allow_gradients": false
+        },
+        "source": "local_harmony",
+        "source_evidence": {
+          "reference_id": null,
+          "reference_sha256": null,
+          "provider": null,
+          "tool": null,
+          "response": null,
+          "notes": [
+            "Explore three deterministic local harmony recipes before assistant selection",
+            "Assistant assigned semantic roles after selecting the local recipe; HEX values unchanged."
+          ]
+        },
+        "selected_by": "assistant",
+        "rationale": "Selected the local monochromatic candidate for a precise navy identity on a quiet silver background.",
+        "calculation_version": "logo-color-v1",
+        "id": "p1",
+        "parent_palette_id": null,
+        "digest": "fb565c763e30a26c17b0745288cdaa41bbd11713c950856464580cf8f79a2b1f"
+      },
+      "lockup": {
+        "layout": "stacked",
+        "symbol_position": "start",
+        "text_alignment": "center",
+        "typography_style": "medium-bold proportional geometric sans-serif with broad open counters and careful tracking",
+        "font_reference": "Space Grotesk"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "requested_background": "opaque",
+      "report": {
+        "id": "export-ebcbc02f93344a18ba4568016d68980e",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+        "palette_id": "p1",
+        "palette_digest": "fb565c763e30a26c17b0745288cdaa41bbd11713c950856464580cf8f79a2b1f",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1254,
+          "height": 1254,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010418971889634192,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#C9D0D8",
+            "samples": 4612,
+            "share": 0.281494140625
+          },
+          {
+            "hex": "#CAD1D9",
+            "samples": 4365,
+            "share": 0.26641845703125
+          },
+          {
+            "hex": "#C9D0D9",
+            "samples": 3246,
+            "share": 0.1981201171875
+          },
+          {
+            "hex": "#C8D0D8",
+            "samples": 1669,
+            "share": 0.10186767578125
+          },
+          {
+            "hex": "#CAD0D9",
+            "samples": 1167,
+            "share": 0.07122802734375
+          },
+          {
+            "hex": "#7C90A3",
+            "samples": 1133,
+            "share": 0.06915283203125
+          },
+          {
+            "hex": "#CED5DC",
+            "samples": 123,
+            "share": 0.00750732421875
+          },
+          {
+            "hex": "#C9D0D7",
+            "samples": 69,
+            "share": 0.00421142578125
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#183A56",
+            "matching_samples": 1093,
+            "share": 0.06671142578125,
+            "mean_delta_e": 1.8007121171546971,
+            "max_delta_e": 4.883320974334305
+          },
+          {
+            "hex": "#CDD4DB",
+            "matching_samples": 15243,
+            "share": 0.93035888671875,
+            "mean_delta_e": 1.122353457509202,
+            "max_delta_e": 4.978921711780706
+          }
+        ],
+        "matched_fraction": 0.9970703125,
+        "unmatched_fraction": 0.0029296875,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#C9D0D8",
+            "surface": "#FFFFFF",
+            "ratio": 1.555857496591898,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D0D8",
+            "surface": "#171717",
+            "ratio": 11.522803529435366,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D0D9",
+            "surface": "#FFFFFF",
+            "ratio": 1.554662347988539,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D0D9",
+            "surface": "#171717",
+            "ratio": 11.531661698904001,
+            "alpha": 1
+          },
+          {
+            "foreground": "#CAD1D9",
+            "surface": "#FFFFFF",
+            "ratio": 1.5403344810256352,
+            "alpha": 1
+          },
+          {
+            "foreground": "#CAD1D9",
+            "surface": "#171717",
+            "ratio": 11.638926787570389,
+            "alpha": 1
+          },
+          {
+            "foreground": "#CAD1D8",
+            "surface": "#FFFFFF",
+            "ratio": 1.5415076936969747,
+            "alpha": 1
+          },
+          {
+            "foreground": "#CAD1D8",
+            "surface": "#171717",
+            "ratio": 11.630068618101756,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D1D9",
+            "surface": "#FFFFFF",
+            "ratio": 1.543483508894675,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D1D9",
+            "surface": "#171717",
+            "ratio": 11.615180952510563,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C8CFD8",
+            "surface": "#FFFFFF",
+            "ratio": 1.5703835539635325,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C8CFD8",
+            "surface": "#171717",
+            "ratio": 11.4162175270997,
+            "alpha": 1
+          },
+          {
+            "foreground": "#CAD0D9",
+            "surface": "#FFFFFF",
+            "ratio": 1.5514675878227422,
+            "alpha": 1
+          },
+          {
+            "foreground": "#CAD0D9",
+            "surface": "#171717",
+            "ratio": 11.555407533963825,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D1D8",
+            "surface": "#FFFFFF",
+            "ratio": 1.5446615252870681,
+            "alpha": 1
+          },
+          {
+            "foreground": "#C9D1D8",
+            "surface": "#171717",
+            "ratio": 11.60632278304193,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:36:26.739603Z"
+      },
+      "comparison": "projects/northline/index.html#artifact-a-v1",
+      "full_reports": "projects/northline/reports.html",
+      "delivery": {
+        "zip": "deliveries/northline/logo-package.zip",
+        "guide": "deliveries/northline/brand-guide.md",
+        "manifest": "deliveries/northline/manifest.json",
+        "png": "deliveries/northline/logo.png"
+      },
+      "session_snapshot": "projects/northline/session.json",
+      "prompt": "projects/northline/prompts/a-v1.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "exported",
+            "label": "Reviewed · exported original",
+            "detail": "Chrome showed exact NORTHLINE lettering, a centered directional symbol and the intended opaque silver background. The word and silhouette remained recognizable at 128 px.",
+            "production_ready": true
+          },
+          "comparison": "projects/northline/index.html#artifact-a-v1",
+          "prompt": "projects/northline/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-d7ceda5c-21e3-49de-b6ba-d0e42a8e5fc5.png",
+            "source_sha256": "3980a1ab42957e6fde56e94ba00419606af5ccb96cfb16f4783b147ef829d534",
+            "record_basename": "tool-result.json",
+            "record_sha256": "fe179590b44acf30844f3053f05e4552ae2b1341704402d3cc98d65ee561493d",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "GROVE SUPPLY",
+      "entry": "Anchor · #247A52",
+      "request_summary": "Keep the exact green anchor in the palette intent, with a transparent background.",
+      "session": "grove",
+      "artifact_id": "a-v1",
+      "image": "assets/03-grove.png",
+      "sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "source_basename": "exec-5317d56e-2a54-4e2c-a74b-c14c4bb640fb.png",
+      "source_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+      "color_report_status": "pass",
+      "visual_delivery": {
+        "status": "exported",
+        "label": "Reviewed · exported original",
+        "detail": "Chrome showed exact GROVE / SUPPLY lettering and a cleanly composited leaf-and-trail symbol. Small internal details simplify at 128 px; green text has limited contrast on dark surfaces. The saved pass verifies the green anchor under anchor-only constraints, not a strict two-color palette. Recommended for light surfaces.",
+        "production_ready": true
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#247A52",
+            "role": "primary leaf and lettering"
+          },
+          {
+            "hex": "#F6F3EC",
+            "role": "small companion details"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [
+            "#247A52"
+          ],
+          "allowed_hex": null,
+          "max_colors": null,
+          "required_hex": [],
+          "allow_gradients": false
+        },
+        "source": "assistant",
+        "source_evidence": {
+          "reference_id": null,
+          "reference_sha256": null,
+          "provider": null,
+          "tool": null,
+          "response": null,
+          "notes": [
+            "Palette chosen by the assistant from the brief; not an external provider response"
+          ]
+        },
+        "selected_by": "assistant",
+        "rationale": "Keep the requested green exactly in intent; ivory provides a quiet secondary detail.",
+        "calculation_version": "logo-color-v1",
+        "id": "p1",
+        "parent_palette_id": null,
+        "digest": "3a0927ec309683f5d6910dfbe26f4ce63b0d56db55db936fd5a31dc93c64d8c0"
+      },
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+        "font_reference": "Montserrat"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1942,
+        "height": 809,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1566311,
+        "visible_pixels": 575560
+      },
+      "requested_background": "transparent",
+      "report": {
+        "id": "export-a8e90d0c7eb74bcfb8bbd6fcbd570a4b",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+        "palette_id": "p1",
+        "palette_digest": "3a0927ec309683f5d6910dfbe26f4ce63b0d56db55db936fd5a31dc93c64d8c0",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1942,
+          "height": 809,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010428508323584188,
+          "visible_samples": 5999,
+          "core_samples": 5463,
+          "partial_alpha_samples": 536
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#21774D",
+            "samples": 1319,
+            "share": 0.24144243089877357
+          },
+          {
+            "hex": "#21764C",
+            "samples": 793,
+            "share": 0.1451583379095735
+          },
+          {
+            "hex": "#20744B",
+            "samples": 704,
+            "share": 0.12886692293611568
+          },
+          {
+            "hex": "#21754C",
+            "samples": 624,
+            "share": 0.11422295442064799
+          },
+          {
+            "hex": "#99BCA6",
+            "samples": 587,
+            "share": 0.10745011898224419
+          },
+          {
+            "hex": "#20764C",
+            "samples": 544,
+            "share": 0.0995789859051803
+          },
+          {
+            "hex": "#20754C",
+            "samples": 532,
+            "share": 0.09738239062786015
+          },
+          {
+            "hex": "#22764D",
+            "samples": 360,
+            "share": 0.06589785831960461
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 4868,
+            "share": 0.891085484166209,
+            "mean_delta_e": 1.6592432575510603,
+            "max_delta_e": 4.69198228051405
+          },
+          {
+            "hex": "#F6F3EC",
+            "matching_samples": 555,
+            "share": 0.1015925315760571,
+            "mean_delta_e": 1.3395891535997524,
+            "max_delta_e": 4.684403001980644
+          }
+        ],
+        "matched_fraction": 0.9926780157422661,
+        "unmatched_fraction": 0.007321984257733846,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#21764D",
+            "surface": "#FFFFFF",
+            "ratio": 5.535982447208988,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21764D",
+            "surface": "#171717",
+            "ratio": 3.1970037981467856,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21774D",
+            "surface": "#FFFFFF",
+            "ratio": 5.467609817102594,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21774D",
+            "surface": "#171717",
+            "ratio": 3.2371132260909112,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21754C",
+            "surface": "#FFFFFF",
+            "ratio": 5.564366922506259,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21754C",
+            "surface": "#171717",
+            "ratio": 3.1397587988283524,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#20764C",
+            "surface": "#FFFFFF",
+            "ratio": 5.544968460460914,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#20764C",
+            "surface": "#171717",
+            "ratio": 3.1918652659855558,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#FFFFFF",
+            "ratio": 5.495890743474488,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#171717",
+            "ratio": 3.1791330794515424,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#FFFFFF",
+            "ratio": 5.54010510655914,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21764C",
+            "surface": "#171717",
+            "ratio": 3.1946275133984616,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#20764D",
+            "surface": "#FFFFFF",
+            "ratio": 5.540838562519343,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#20764D",
+            "surface": "#171717",
+            "ratio": 3.1942415507338793,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#21754B",
+            "surface": "#FFFFFF",
+            "ratio": 5.568496969092006,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#21754B",
+            "surface": "#171717",
+            "ratio": 3.1374358521361985,
+            "alpha": 0.9921568627450981
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:36:27.752159Z"
+      },
+      "comparison": "projects/grove/index.html#artifact-a-v1",
+      "full_reports": "projects/grove/reports.html",
+      "delivery": {
+        "zip": "deliveries/grove/logo-package.zip",
+        "guide": "deliveries/grove/brand-guide.md",
+        "manifest": "deliveries/grove/manifest.json",
+        "png": "deliveries/grove/logo.png"
+      },
+      "session_snapshot": "projects/grove/session.json",
+      "prompt": "projects/grove/prompts/a-v1.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "exported",
+            "label": "Reviewed · exported original",
+            "detail": "Chrome showed exact GROVE / SUPPLY lettering and a cleanly composited leaf-and-trail symbol. Small internal details simplify at 128 px; green text has limited contrast on dark surfaces. The saved pass verifies the green anchor under anchor-only constraints, not a strict two-color palette. Recommended for light surfaces.",
+            "production_ready": true
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v1",
+          "prompt": "projects/grove/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-5317d56e-2a54-4e2c-a74b-c14c4bb640fb.png",
+            "source_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+            "record_basename": "tool-result.json",
+            "record_sha256": "8f3198d2d3a26ac52e51a5925a69ed83de6ff83ac52e8798ead000ddfcdbfb6f",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v2",
+          "parent_id": "a-v1",
+          "sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v2",
+          "prompt": "projects/grove/prompts/a-v2.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-4d251f3c-2bf6-4716-842b-a5fbffe46860.png",
+            "source_sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+            "record_basename": "warm-tool-result.json",
+            "record_sha256": "1e63c20384bab2dc8ea819dc15113186c4709fd3c84d0a3f6fce2fad4b409893",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v3",
+          "parent_id": "a-v2",
+          "sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v3",
+          "prompt": "projects/grove/prompts/a-v3.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-b063620c-c792-4ffa-b98f-1290fa617ce7.png",
+            "source_sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+            "record_basename": "warm-repair1-tool-result.json",
+            "record_sha256": "70cbb1e1efe1354e9bd8978850e0fc2dcf34e78d51cc5ea75ac4f67929a91341",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v4",
+          "parent_id": "a-v3",
+          "sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v4",
+          "prompt": "projects/grove/prompts/a-v4.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-37a72da1-42ff-4645-be28-9cff982f6a14.png",
+            "source_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+            "record_basename": "warm-repair2-tool-result.json",
+            "record_sha256": "99c5cf737c31ca99e3d8604e91cd8d0863c44dd8951ae436262e71fe8f854951",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "GROVE, warmer",
+      "entry": "Edit · warmer companion",
+      "request_summary": "Warm the companion color while preserving the green anchor, lettering and silhouette.",
+      "session": "grove",
+      "artifact_id": "a-v4",
+      "image": "assets/04-grove-warm.png",
+      "sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+      "source_basename": "exec-37a72da1-42ff-4645-be28-9cff982f6a14.png",
+      "source_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+      "color_report_status": "pass",
+      "visual_delivery": {
+        "status": "failed",
+        "label": "FAILED · opaque checkerboard",
+        "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+        "production_ready": false
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#247A52",
+            "role": "preserved leaf and lettering"
+          },
+          {
+            "hex": "#D69D49",
+            "role": "warmer companion detail"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [
+            "#247A52"
+          ],
+          "allowed_hex": null,
+          "max_colors": null,
+          "required_hex": [],
+          "allow_gradients": false
+        },
+        "source": "assistant",
+        "source_evidence": {
+          "reference_id": null,
+          "reference_sha256": null,
+          "provider": null,
+          "tool": null,
+          "response": null,
+          "notes": [
+            "Palette chosen by the assistant from the brief; not an external provider response"
+          ]
+        },
+        "selected_by": "assistant",
+        "rationale": "Warm only the ivory companion toward ochre; preserve exact green and existing identity.",
+        "calculation_version": "logo-color-v1",
+        "id": "p2",
+        "parent_palette_id": "p1",
+        "digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef"
+      },
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "bold geometric sans-serif capitals with clear spacing and open counters",
+        "font_reference": "Montserrat"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1946,
+        "height": 808,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572368
+      },
+      "requested_background": "transparent",
+      "report": {
+        "id": "report-d0483f48d4d24defa8b77f2acf4a46f9",
+        "artifact_id": "a-v4",
+        "artifact_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+        "palette_id": "p2",
+        "palette_digest": "ff849a9b3a389c49e7a0ff92a747370a807f2656940b350709a4534f139b8aef",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1946,
+          "height": 808,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010419952581075169,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#AEACAE",
+            "samples": 4305,
+            "share": 0.26275634765625
+          },
+          {
+            "hex": "#1D784E",
+            "samples": 3439,
+            "share": 0.20989990234375
+          },
+          {
+            "hex": "#FEFEFE",
+            "samples": 2564,
+            "share": 0.156494140625
+          },
+          {
+            "hex": "#FAFAFA",
+            "samples": 2213,
+            "share": 0.13507080078125
+          },
+          {
+            "hex": "#207950",
+            "samples": 1162,
+            "share": 0.0709228515625
+          },
+          {
+            "hex": "#1C764D",
+            "samples": 1005,
+            "share": 0.06134033203125
+          },
+          {
+            "hex": "#AF9F8E",
+            "samples": 950,
+            "share": 0.0579833984375
+          },
+          {
+            "hex": "#CFCECF",
+            "samples": 746,
+            "share": 0.0455322265625
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 5532,
+            "share": 0.337646484375,
+            "mean_delta_e": 1.1599404759090413,
+            "max_delta_e": 4.921355872015571
+          },
+          {
+            "hex": "#D69D49",
+            "matching_samples": 537,
+            "share": 0.03277587890625,
+            "mean_delta_e": 2.7279143317309686,
+            "max_delta_e": 4.9308461554023015
+          }
+        ],
+        "matched_fraction": 0.37042236328125,
+        "unmatched_fraction": 0.62957763671875,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#FFFFFF",
+            "ratio": 1,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#171717",
+            "ratio": 17.927840253027597,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1D784E",
+            "surface": "#FFFFFF",
+            "ratio": 5.456356133514904,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1D784E",
+            "surface": "#171717",
+            "ratio": 3.2856800059124347,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FBFBFB",
+            "surface": "#FFFFFF",
+            "ratio": 1.034802632024247,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FBFBFB",
+            "surface": "#171717",
+            "ratio": 17.324888532567552,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#FFFFFF",
+            "ratio": 1.0171949045327753,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#171717",
+            "ratio": 17.624783778544717,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FCFCFC",
+            "surface": "#FFFFFF",
+            "ratio": 1.025946388977226,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FCFCFC",
+            "surface": "#171717",
+            "ratio": 17.47444159426303,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#FFFFFF",
+            "ratio": 1.008546618925115,
+            "alpha": 1
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#171717",
+            "ratio": 17.775916270617873,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E794F",
+            "surface": "#FFFFFF",
+            "ratio": 5.380567957868399,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E794F",
+            "surface": "#171717",
+            "ratio": 3.3319605650199815,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E784E",
+            "surface": "#FFFFFF",
+            "ratio": 5.452159766516952,
+            "alpha": 1
+          },
+          {
+            "foreground": "#1E784E",
+            "surface": "#171717",
+            "ratio": 3.2882088971652763,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:34:31.972251Z"
+      },
+      "comparison": "projects/grove/index.html#artifact-a-v4",
+      "full_reports": "projects/grove/reports.html",
+      "delivery": null,
+      "session_snapshot": "projects/grove/session.json",
+      "prompt": "projects/grove/prompts/a-v4.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "exported",
+            "label": "Reviewed · exported original",
+            "detail": "Chrome showed exact GROVE / SUPPLY lettering and a cleanly composited leaf-and-trail symbol. Small internal details simplify at 128 px; green text has limited contrast on dark surfaces. The saved pass verifies the green anchor under anchor-only constraints, not a strict two-color palette. Recommended for light surfaces.",
+            "production_ready": true
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v1",
+          "prompt": "projects/grove/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-5317d56e-2a54-4e2c-a74b-c14c4bb640fb.png",
+            "source_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+            "record_basename": "tool-result.json",
+            "record_sha256": "8f3198d2d3a26ac52e51a5925a69ed83de6ff83ac52e8798ead000ddfcdbfb6f",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v2",
+          "parent_id": "a-v1",
+          "sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v2",
+          "prompt": "projects/grove/prompts/a-v2.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-4d251f3c-2bf6-4716-842b-a5fbffe46860.png",
+            "source_sha256": "c60c605176b39f2b26f5299a2c99906dc5cc3e93e4716691e1e2b3154af33809",
+            "record_basename": "warm-tool-result.json",
+            "record_sha256": "1e63c20384bab2dc8ea819dc15113186c4709fd3c84d0a3f6fce2fad4b409893",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v3",
+          "parent_id": "a-v2",
+          "sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v3",
+          "prompt": "projects/grove/prompts/a-v3.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-b063620c-c792-4ffa-b98f-1290fa617ce7.png",
+            "source_sha256": "e0e0ba746f10f1ab0df53b6a2bda9c6d1f27d621efef68c4142d080407d0bc74",
+            "record_basename": "warm-repair1-tool-result.json",
+            "record_sha256": "70cbb1e1efe1354e9bd8978850e0fc2dcf34e78d51cc5ea75ac4f67929a91341",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v4",
+          "parent_id": "a-v3",
+          "sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/grove/index.html#artifact-a-v4",
+          "prompt": "projects/grove/prompts/a-v4.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-37a72da1-42ff-4645-be28-9cff982f6a14.png",
+            "source_sha256": "db4bf9aabea3c44066028d0a1b5fbee0790d3b22181156f64d8ce777169d27f7",
+            "record_basename": "warm-repair2-tool-result.json",
+            "record_sha256": "99c5cf737c31ca99e3d8604e91cd8d0863c44dd8951ae436262e71fe8f854951",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "밤결",
+      "entry": "Restricted · two colors",
+      "request_summary": "Use only near-black and ivory, at most two visible design colors, on transparency.",
+      "session": "bamgyeol",
+      "artifact_id": "a-v1",
+      "image": "assets/05-bamgyeol.png",
+      "sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+      "source_basename": "exec-3f950424-8c07-418c-b492-b271f08f116b.png",
+      "source_sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+      "color_report_status": "indeterminate",
+      "visual_delivery": {
+        "status": "indeterminate",
+        "label": "Indeterminate · not production ready",
+        "detail": "Chrome showed the exact Hangul 밤결 and background changes through the exterior and book gaps. Ivory is weak on light surfaces; black lettering becomes hard to see on dark surfaces. The stored color result remains indeterminate.",
+        "production_ready": false
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#171717",
+            "role": "book and Korean lettering"
+          },
+          {
+            "hex": "#F6F3EC",
+            "role": "crescent detail"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [],
+          "allowed_hex": [
+            "#171717",
+            "#F6F3EC"
+          ],
+          "max_colors": 2,
+          "required_hex": [
+            "#171717",
+            "#F6F3EC"
+          ],
+          "allow_gradients": false
+        },
+        "source": "assistant",
+        "source_evidence": {
+          "reference_id": null,
+          "reference_sha256": null,
+          "provider": null,
+          "tool": null,
+          "response": null,
+          "notes": [
+            "Palette chosen by the assistant from the brief; not an external provider response"
+          ]
+        },
+        "selected_by": "assistant",
+        "rationale": "A restrained black-and-ivory literary identity with both colors visible.",
+        "calculation_version": "logo-color-v1",
+        "id": "p1",
+        "parent_palette_id": null,
+        "digest": "b39b750aaf3a20c05328219b114acb7436f4e1696d439283761ad4dbc5081fa6"
+      },
+      "lockup": {
+        "layout": "stacked",
+        "symbol_position": "start",
+        "text_alignment": "center",
+        "typography_style": "clear sturdy Korean serif lettering, medium-bold strokes, carefully formed Hangul syllables",
+        "font_reference": "Noto Serif KR"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1568927,
+        "visible_pixels": 256632
+      },
+      "requested_background": "transparent",
+      "report": {
+        "id": "report-0da294e689214a569d637c32a14c1026",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+        "palette_id": "p1",
+        "palette_digest": "b39b750aaf3a20c05328219b114acb7436f4e1696d439283761ad4dbc5081fa6",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1254,
+          "height": 1254,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010418971889634192,
+          "visible_samples": 2697,
+          "core_samples": 2082,
+          "partial_alpha_samples": 615
+        },
+        "status": "indeterminate",
+        "reasons": [
+          "Partial alpha exceeds 10% of visible samples"
+        ],
+        "measured_swatches": [
+          {
+            "hex": "#181818",
+            "samples": 506,
+            "share": 0.2430355427473583
+          },
+          {
+            "hex": "#F5F0E8",
+            "samples": 483,
+            "share": 0.23198847262247838
+          },
+          {
+            "hex": "#191918",
+            "samples": 457,
+            "share": 0.21950048030739674
+          },
+          {
+            "hex": "#191818",
+            "samples": 303,
+            "share": 0.14553314121037464
+          },
+          {
+            "hex": "#181918",
+            "samples": 151,
+            "share": 0.07252641690682037
+          },
+          {
+            "hex": "#181717",
+            "samples": 92,
+            "share": 0.04418828049951969
+          },
+          {
+            "hex": "#171717",
+            "samples": 90,
+            "share": 0.043227665706051875
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#171717",
+            "matching_samples": 1599,
+            "share": 0.7680115273775217,
+            "mean_delta_e": 0.8124903489322074,
+            "max_delta_e": 2.2199589783664457
+          },
+          {
+            "hex": "#F6F3EC",
+            "matching_samples": 483,
+            "share": 0.23198847262247838,
+            "mean_delta_e": 1.2630288787615815,
+            "max_delta_e": 2.3536801208201297
+          }
+        ],
+        "matched_fraction": 1,
+        "unmatched_fraction": 0,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#181818",
+            "surface": "#FFFFFF",
+            "ratio": 17.43791716245211,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#181818",
+            "surface": "#171717",
+            "ratio": 1.0095856251962847,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#000000",
+            "surface": "#FFFFFF",
+            "ratio": 1.008546618925115,
+            "alpha": 0.00392156862745098
+          },
+          {
+            "foreground": "#000000",
+            "surface": "#171717",
+            "ratio": 1.000854591048394,
+            "alpha": 0.00392156862745098
+          },
+          {
+            "foreground": "#191918",
+            "surface": "#FFFFFF",
+            "ratio": 17.272592157063283,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#191918",
+            "surface": "#171717",
+            "ratio": 1.0188102054912753,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#181818",
+            "surface": "#FFFFFF",
+            "ratio": 17.5982438188245,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#181818",
+            "surface": "#171717",
+            "ratio": 1.0096242183480022,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#F4EFE7",
+            "surface": "#FFFFFF",
+            "ratio": 1.1439700762942844,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#F4EFE7",
+            "surface": "#171717",
+            "ratio": 15.544347520873727,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#191818",
+            "surface": "#FFFFFF",
+            "ratio": 17.399748322447703,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#191818",
+            "surface": "#171717",
+            "ratio": 1.011699754682366,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#F5F0E8",
+            "surface": "#FFFFFF",
+            "ratio": 1.1338372526272715,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#F5F0E8",
+            "surface": "#171717",
+            "ratio": 15.68369915014524,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#181817",
+            "surface": "#FFFFFF",
+            "ratio": 17.45046814599492,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#181817",
+            "surface": "#171717",
+            "ratio": 1.0088936167191846,
+            "alpha": 0.9921568627450981
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:22:55.706824Z"
+      },
+      "comparison": "projects/bamgyeol/index.html#artifact-a-v1",
+      "full_reports": "projects/bamgyeol/reports.html",
+      "delivery": null,
+      "session_snapshot": "projects/bamgyeol/session.json",
+      "prompt": "projects/bamgyeol/prompts/a-v1.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+          "color_report_status": "indeterminate",
+          "visual_delivery": {
+            "status": "indeterminate",
+            "label": "Indeterminate · not production ready",
+            "detail": "Chrome showed the exact Hangul 밤결 and background changes through the exterior and book gaps. Ivory is weak on light surfaces; black lettering becomes hard to see on dark surfaces. The stored color result remains indeterminate.",
+            "production_ready": false
+          },
+          "comparison": "projects/bamgyeol/index.html#artifact-a-v1",
+          "prompt": "projects/bamgyeol/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-3f950424-8c07-418c-b492-b271f08f116b.png",
+            "source_sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+            "record_basename": "tool-result.json",
+            "record_sha256": "0887f3a17d37d694202241c2eeeaaae32c711d829cfcae848efff2f4e6432a67",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v2",
+          "parent_id": "a-v1",
+          "sha256": "27e010082310501ac2ca6060aa8835ff3e75cd727bb971fb76f08b153884815b",
+          "color_report_status": "mismatch",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/bamgyeol/index.html#artifact-a-v2",
+          "prompt": "projects/bamgyeol/prompts/a-v2.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-9a4a36ae-06a8-449c-9259-b0b71ef0859b.png",
+            "source_sha256": "27e010082310501ac2ca6060aa8835ff3e75cd727bb971fb76f08b153884815b",
+            "record_basename": "repair1-tool-result.json",
+            "record_sha256": "8f45506ad8ee25984232488b930ddb6928b8b0af9f7d108cc82bb7e8859813c4",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v3",
+          "parent_id": "a-v2",
+          "sha256": "0df1d666d480aae721f6ccab6fa7ff9d2388b015946e8e051381c86e9766c6f3",
+          "color_report_status": "mismatch",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/bamgyeol/index.html#artifact-a-v3",
+          "prompt": "projects/bamgyeol/prompts/a-v3.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-7115acab-98dc-4237-b6a3-cced834b05af.png",
+            "source_sha256": "0df1d666d480aae721f6ccab6fa7ff9d2388b015946e8e051381c86e9766c6f3",
+            "record_basename": "repair2-tool-result.json",
+            "record_sha256": "4c52eaa44a31c19e62d182f8d7c9ba850fb5375b915ec36a7de8e1d8f611c493",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "TIDE & TYPE",
+      "entry": "Reference · extracted colors",
+      "request_summary": "Build a new print-studio identity from the actual SUNROOM color reference.",
+      "session": "tide",
+      "artifact_id": "a-v1",
+      "image": "assets/06-tide.png",
+      "sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+      "source_basename": "exec-faf154a3-6a79-40e7-8ed7-602459a37875.png",
+      "source_sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+      "color_report_status": "pass",
+      "visual_delivery": {
+        "status": "exported",
+        "label": "Reviewed · exported original",
+        "detail": "Chrome showed exact TIDE & TYPE lettering, a preserved ampersand and a balanced horizontal wave symbol on the intended opaque ivory background. Fine serifs become small at 128 px.",
+        "production_ready": true
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#A27C4F",
+            "role": "wave symbol and wordmark"
+          },
+          {
+            "hex": "#F6F3EC",
+            "role": "opaque ivory background"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [],
+          "allowed_hex": null,
+          "max_colors": null,
+          "required_hex": [],
+          "allow_gradients": false
+        },
+        "source": "reference",
+        "source_evidence": {
+          "reference_id": "sunroom-colors",
+          "reference_sha256": "e0aeded204e9e6833dbfe027c0589b7f8905f7de8fc7e5c6e11422ab54b8e0bb",
+          "provider": null,
+          "tool": "Pillow median-cut; logo-color-v1",
+          "response": "{\"swatches\":[{\"hex\":\"#F6F3EC\",\"samples\":5970,\"share\":0.3643798828125},{\"hex\":\"#F7F3ED\",\"samples\":2885,\"share\":0.17608642578125},{\"hex\":\"#F6F2EC\",\"samples\":2723,\"share\":0.16619873046875},{\"hex\":\"#F5F3EB\",\"samples\":2047,\"share\":0.12493896484375},{\"hex\":\"#A27C4F\",\"samples\":1383,\"share\":0.08441162109375},{\"hex\":\"#F6F3ED\",\"samples\":855,\"share\":0.05218505859375},{\"hex\":\"#F6F3EB\",\"samples\":269,\"share\":0.01641845703125},{\"hex\":\"#F7F5EE\",\"samples\":252,\"share\":0.015380859375}],\"sampling\":{\"width\":1774,\"height\":887,\"roi\":null,\"scope\":\"full_image\",\"coordinate_policy\":\"grid_128_pixel_centers\",\"sampled_positions\":16384,\"sampled_fraction\":0.010412204853012764,\"visible_samples\":16384,\"core_samples\":16384,\"partial_alpha_samples\":0},\"profile_treatment\":\"assumed_srgb\",\"status\":\"extracted\",\"reasons\":[]}",
+          "notes": []
+        },
+        "selected_by": "assistant",
+        "rationale": "The full reference is dominated by near-identical ivory estimates. Select the extracted brown representative and ivory for a readable two-color print identity. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.",
+        "calculation_version": "logo-color-v1",
+        "id": "p1",
+        "parent_palette_id": null,
+        "digest": "0d599765933451550d1e8c184e2fb42c505c8c3375baca31884ba4b60e25ffec"
+      },
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "confident compact editorial serif lettering and expressive ampersand",
+        "font_reference": "Fraunces"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1774,
+        "height": 887,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1573538
+      },
+      "requested_background": "opaque",
+      "report": {
+        "id": "export-a93930d610d74e948324475c62b57ae1",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+        "palette_id": "p1",
+        "palette_digest": "0d599765933451550d1e8c184e2fb42c505c8c3375baca31884ba4b60e25ffec",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1774,
+          "height": 887,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010412204853012764,
+          "visible_samples": 16384,
+          "core_samples": 16384,
+          "partial_alpha_samples": 0
+        },
+        "status": "pass",
+        "reasons": [],
+        "measured_swatches": [
+          {
+            "hex": "#F5F1EB",
+            "samples": 5265,
+            "share": 0.32135009765625
+          },
+          {
+            "hex": "#F5F2EB",
+            "samples": 5158,
+            "share": 0.3148193359375
+          },
+          {
+            "hex": "#F4F1EA",
+            "samples": 1844,
+            "share": 0.112548828125
+          },
+          {
+            "hex": "#F5F2EA",
+            "samples": 1751,
+            "share": 0.10687255859375
+          },
+          {
+            "hex": "#BDA282",
+            "samples": 1163,
+            "share": 0.07098388671875
+          },
+          {
+            "hex": "#F6F1EB",
+            "samples": 938,
+            "share": 0.0572509765625
+          },
+          {
+            "hex": "#F4F2EB",
+            "samples": 177,
+            "share": 0.01080322265625
+          },
+          {
+            "hex": "#F7F5EF",
+            "samples": 88,
+            "share": 0.00537109375
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#A27C4F",
+            "matching_samples": 1117,
+            "share": 0.06817626953125,
+            "mean_delta_e": 1.2038144137065403,
+            "max_delta_e": 4.899156359062441
+          },
+          {
+            "hex": "#F6F3EC",
+            "matching_samples": 15184,
+            "share": 0.9267578125,
+            "mean_delta_e": 0.645233799160686,
+            "max_delta_e": 3.988941130157026
+          }
+        ],
+        "matched_fraction": 0.99493408203125,
+        "unmatched_fraction": 0.00506591796875,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#F5F1EB",
+            "surface": "#FFFFFF",
+            "ratio": 1.1251438843083823,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F1EB",
+            "surface": "#171717",
+            "ratio": 15.93382011230298,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F2EB",
+            "surface": "#FFFFFF",
+            "ratio": 1.118031794671625,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F2EB",
+            "surface": "#171717",
+            "ratio": 16.03517926634023,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F1EA",
+            "surface": "#FFFFFF",
+            "ratio": 1.1258392500747751,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F1EA",
+            "surface": "#171717",
+            "ratio": 15.923978713512504,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EB",
+            "surface": "#FFFFFF",
+            "ratio": 1.1158884672856266,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EB",
+            "surface": "#171717",
+            "ratio": 16.065978615798997,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F2EA",
+            "surface": "#FFFFFF",
+            "ratio": 1.1187183946573933,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F5F2EA",
+            "surface": "#171717",
+            "ratio": 16.025337867549755,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F4F1EA",
+            "surface": "#FFFFFF",
+            "ratio": 1.1280092278940743,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F4F1EA",
+            "surface": "#171717",
+            "ratio": 15.893345382021211,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EC",
+            "surface": "#FFFFFF",
+            "ratio": 1.115201486549832,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F2EC",
+            "surface": "#171717",
+            "ratio": 16.075875498060956,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F1EB",
+            "surface": "#FFFFFF",
+            "ratio": 1.1229732281416498,
+            "alpha": 1
+          },
+          {
+            "foreground": "#F6F1EB",
+            "surface": "#171717",
+            "ratio": 15.964619461761746,
+            "alpha": 1
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:36:28.553420Z"
+      },
+      "comparison": "projects/tide/index.html#artifact-a-v1",
+      "full_reports": "projects/tide/reports.html",
+      "delivery": {
+        "zip": "deliveries/tide/logo-package.zip",
+        "guide": "deliveries/tide/brand-guide.md",
+        "manifest": "deliveries/tide/manifest.json",
+        "png": "deliveries/tide/logo.png"
+      },
+      "session_snapshot": "projects/tide/session.json",
+      "prompt": "projects/tide/prompts/a-v1.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+          "color_report_status": "pass",
+          "visual_delivery": {
+            "status": "exported",
+            "label": "Reviewed · exported original",
+            "detail": "Chrome showed exact TIDE & TYPE lettering, a preserved ampersand and a balanced horizontal wave symbol on the intended opaque ivory background. Fine serifs become small at 128 px.",
+            "production_ready": true
+          },
+          "comparison": "projects/tide/index.html#artifact-a-v1",
+          "prompt": "projects/tide/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-faf154a3-6a79-40e7-8ed7-602459a37875.png",
+            "source_sha256": "2edc489ad78de497503d91842c83350f6321570d0036b5513e8fb19dd59e5a4d",
+            "record_basename": "tool-result.json",
+            "record_sha256": "76d0e44669052cd05454861e58bae31007f7f13a040e51e5ed10e5e2782df408",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "FIELD NOTE",
+      "entry": "Reference + anchor + limit",
+      "request_summary": "Use the GROVE reference, preserve #247A52 and use at most two colors.",
+      "session": "fieldnote",
+      "artifact_id": "a-v1",
+      "image": "assets/07-fieldnote.png",
+      "sha256": "049de07077bb2d4ff222fb4a0d74b17f526e571292b64de804ea990933ee2870",
+      "source_basename": "exec-885c9b3f-1c74-44ba-b5b5-58a4e9104370.png",
+      "source_sha256": "049de07077bb2d4ff222fb4a0d74b17f526e571292b64de804ea990933ee2870",
+      "color_report_status": "indeterminate",
+      "visual_delivery": {
+        "status": "indeterminate",
+        "label": "Indeterminate · not production ready",
+        "detail": "Chrome showed exact FIELD NOTE lettering and background changes through the exterior and symbol cutout. Small details simplify at 128 px; green text has limited contrast on dark surfaces. The stored color result remains indeterminate.",
+        "production_ready": false
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#247A52",
+            "role": "preserved green symbol and wordmark"
+          },
+          {
+            "hex": "#99BCA6",
+            "role": "muted mint accent"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [
+            "#247A52"
+          ],
+          "allowed_hex": null,
+          "max_colors": 2,
+          "required_hex": [],
+          "allow_gradients": false
+        },
+        "source": "reference",
+        "source_evidence": {
+          "reference_id": "grove-colors",
+          "reference_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+          "provider": null,
+          "tool": "Pillow median-cut; logo-color-v1",
+          "response": "{\"swatches\":[{\"hex\":\"#21774D\",\"samples\":1319,\"share\":0.24144243089877357},{\"hex\":\"#21764C\",\"samples\":793,\"share\":0.1451583379095735},{\"hex\":\"#20744B\",\"samples\":704,\"share\":0.12886692293611568},{\"hex\":\"#21754C\",\"samples\":624,\"share\":0.11422295442064799},{\"hex\":\"#99BCA6\",\"samples\":587,\"share\":0.10745011898224419},{\"hex\":\"#20764C\",\"samples\":544,\"share\":0.0995789859051803},{\"hex\":\"#20754C\",\"samples\":532,\"share\":0.09738239062786015},{\"hex\":\"#22764D\",\"samples\":360,\"share\":0.06589785831960461}],\"sampling\":{\"width\":1942,\"height\":809,\"roi\":null,\"scope\":\"full_image\",\"coordinate_policy\":\"grid_128_pixel_centers\",\"sampled_positions\":16384,\"sampled_fraction\":0.010428508323584188,\"visible_samples\":5999,\"core_samples\":5463,\"partial_alpha_samples\":536},\"profile_treatment\":\"assumed_srgb\",\"status\":\"extracted\",\"reasons\":[]}",
+          "notes": []
+        },
+        "selected_by": "assistant",
+        "rationale": "Select the more distinct extracted mint estimate as companion while retaining exact locked green; skip near-duplicate green estimates. Extraction represents full-image estimates and includes visible background colors; selection is an assistant judgment.",
+        "calculation_version": "logo-color-v1",
+        "id": "p1",
+        "parent_palette_id": null,
+        "digest": "f1343cea345091d5744f1dbd06978843c0c75b2cd536837b2da9d26b7526e6db"
+      },
+      "lockup": {
+        "layout": "stacked",
+        "symbol_position": "start",
+        "text_alignment": "center",
+        "typography_style": "balanced modern sans serif, medium-bold monoline lettering, open counters and even spacing",
+        "font_reference": "Noto Sans KR"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1536,
+        "height": 1024,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 1572864,
+        "visible_pixels": 294030
+      },
+      "requested_background": "transparent",
+      "report": {
+        "id": "report-5aaf0c21d2244f3f8aa3e402f916ed39",
+        "artifact_id": "a-v1",
+        "artifact_sha256": "049de07077bb2d4ff222fb4a0d74b17f526e571292b64de804ea990933ee2870",
+        "palette_id": "p1",
+        "palette_digest": "f1343cea345091d5744f1dbd06978843c0c75b2cd536837b2da9d26b7526e6db",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1536,
+          "height": 1024,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010416666666666666,
+          "visible_samples": 3019,
+          "core_samples": 2648,
+          "partial_alpha_samples": 371
+        },
+        "status": "indeterminate",
+        "reasons": [
+          "Partial alpha exceeds 10% of visible samples"
+        ],
+        "measured_swatches": [
+          {
+            "hex": "#23704F",
+            "samples": 611,
+            "share": 0.23074018126888218
+          },
+          {
+            "hex": "#226F4F",
+            "samples": 542,
+            "share": 0.20468277945619334
+          },
+          {
+            "hex": "#216E4E",
+            "samples": 424,
+            "share": 0.16012084592145015
+          },
+          {
+            "hex": "#9FBCA8",
+            "samples": 421,
+            "share": 0.15898791540785498
+          },
+          {
+            "hex": "#22704F",
+            "samples": 359,
+            "share": 0.1355740181268882
+          },
+          {
+            "hex": "#226E4E",
+            "samples": 160,
+            "share": 0.06042296072507553
+          },
+          {
+            "hex": "#236F4F",
+            "samples": 120,
+            "share": 0.045317220543806644
+          },
+          {
+            "hex": "#297554",
+            "samples": 11,
+            "share": 0.004154078549848943
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#247A52",
+            "matching_samples": 2203,
+            "share": 0.8319486404833837,
+            "mean_delta_e": 4.002396794305502,
+            "max_delta_e": 4.9986080861745155
+          },
+          {
+            "hex": "#99BCA6",
+            "matching_samples": 419,
+            "share": 0.15823262839879154,
+            "mean_delta_e": 1.692591272480102,
+            "max_delta_e": 4.713325575109239
+          }
+        ],
+        "matched_fraction": 0.9901812688821753,
+        "unmatched_fraction": 0.009818731117824773,
+        "observed_colors": 2,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#226F4F",
+            "surface": "#FFFFFF",
+            "ratio": 6.026992420839437,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#226F4F",
+            "surface": "#171717",
+            "ratio": 2.9357072526693897,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#22704F",
+            "surface": "#FFFFFF",
+            "ratio": 5.951844578152625,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#22704F",
+            "surface": "#171717",
+            "ratio": 2.9728855220785966,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#226F4F",
+            "surface": "#FFFFFF",
+            "ratio": 5.975574611950008,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#226F4F",
+            "surface": "#171717",
+            "ratio": 2.9222548104761406,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#226F4E",
+            "surface": "#FFFFFF",
+            "ratio": 6.032029323450142,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#226F4E",
+            "surface": "#171717",
+            "ratio": 2.933257263959367,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#23704F",
+            "surface": "#FFFFFF",
+            "ratio": 5.945909573067963,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#23704F",
+            "surface": "#171717",
+            "ratio": 2.975814895612453,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#22704F",
+            "surface": "#FFFFFF",
+            "ratio": 5.9015283984450395,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#22704F",
+            "surface": "#171717",
+            "ratio": 2.959143047819775,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#9FBCA8",
+            "surface": "#FFFFFF",
+            "ratio": 2.0456811320675765,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#9FBCA8",
+            "surface": "#171717",
+            "ratio": 8.675809660721468,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#237050",
+            "surface": "#FFFFFF",
+            "ratio": 5.940942099660281,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#237050",
+            "surface": "#171717",
+            "ratio": 2.978301976466936,
+            "alpha": 0.996078431372549
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:26:16.025020Z"
+      },
+      "comparison": "projects/fieldnote/index.html#artifact-a-v1",
+      "full_reports": "projects/fieldnote/reports.html",
+      "delivery": null,
+      "session_snapshot": "projects/fieldnote/session.json",
+      "prompt": "projects/fieldnote/prompts/a-v1.txt",
+      "attempts": [
+        {
+          "id": "a-v1",
+          "parent_id": null,
+          "sha256": "049de07077bb2d4ff222fb4a0d74b17f526e571292b64de804ea990933ee2870",
+          "color_report_status": "indeterminate",
+          "visual_delivery": {
+            "status": "indeterminate",
+            "label": "Indeterminate · not production ready",
+            "detail": "Chrome showed exact FIELD NOTE lettering and background changes through the exterior and symbol cutout. Small details simplify at 128 px; green text has limited contrast on dark surfaces. The stored color result remains indeterminate.",
+            "production_ready": false
+          },
+          "comparison": "projects/fieldnote/index.html#artifact-a-v1",
+          "prompt": "projects/fieldnote/prompts/a-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-885c9b3f-1c74-44ba-b5b5-58a4e9104370.png",
+            "source_sha256": "049de07077bb2d4ff222fb4a0d74b17f526e571292b64de804ea990933ee2870",
+            "record_basename": "tool-result.json",
+            "record_sha256": "26c7ade4efa0e608cbfb14a4ccb2bd48244929477ef81fb4017e7895e76fc4da",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v2",
+          "parent_id": "a-v1",
+          "sha256": "7dacc55d6f90f10f7206729f3f0d7cffc75b36ff6191e7430d8e01e2b76c40cb",
+          "color_report_status": "mismatch",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/fieldnote/index.html#artifact-a-v2",
+          "prompt": "projects/fieldnote/prompts/a-v2.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-017fe56d-8046-4f6d-a183-7925598e47f8.png",
+            "source_sha256": "7dacc55d6f90f10f7206729f3f0d7cffc75b36ff6191e7430d8e01e2b76c40cb",
+            "record_basename": "repair1-tool-result.json",
+            "record_sha256": "649d5cb6135dc469c88c012f77b831cd75792298a5b8db8b49da84632e23e1ab",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "a-v3",
+          "parent_id": "a-v2",
+          "sha256": "05398268ac42aa8d0da04976a9c6367df1bb186e1b3fe46e927db3e494ee65e2",
+          "color_report_status": "mismatch",
+          "visual_delivery": {
+            "status": "failed",
+            "label": "FAILED · opaque checkerboard",
+            "detail": "The native PNG contains a baked checkerboard and no transparent pixels (alpha 255 throughout). It fails the requested transparent delivery even when the stored color report says pass.",
+            "production_ready": false
+          },
+          "comparison": "projects/fieldnote/index.html#artifact-a-v3",
+          "prompt": "projects/fieldnote/prompts/a-v3.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-36945e1c-a2f5-4d9b-b314-a0c7fff74755.png",
+            "source_sha256": "05398268ac42aa8d0da04976a9c6367df1bb186e1b3fe46e927db3e494ee65e2",
+            "record_basename": "repair2-tool-result.json",
+            "record_sha256": "4f6add4ee565cecb3dd72d7ebd37201aceb083e2dd95c94843ee3eea08effd4e",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "밤결, in white",
+      "entry": "Reversed · white artwork",
+      "request_summary": "Make the existing logo white for a dark surface while preserving its shape and text.",
+      "session": "white-bamgyeol",
+      "artifact_id": "white-v3",
+      "image": "assets/08-bamgyeol-white.png",
+      "sha256": "0be9b79a68e2bb9c145e4f9171db84807010be6f2478dd19b724a3dc4c0e73bd",
+      "source_basename": "exec-500af82e-e168-4016-948c-dc4f0b07a2d5.png",
+      "source_sha256": "0be9b79a68e2bb9c145e4f9171db84807010be6f2478dd19b724a3dc4c0e73bd",
+      "color_report_status": "indeterminate",
+      "visual_delivery": {
+        "status": "indeterminate",
+        "label": "Not delivered · alpha review required",
+        "detail": "The Chrome gallery preview shows readable white lettering and a clean overall shape. Nevertheless, 923 of 3,483 visible samples (26.50%) have partial alpha, so the report remains indeterminate despite 100% sampled core color coverage. The two-repair limit is reached; no compliant white delivery was produced. Appearance and quantitative evidence are separate checks.",
+        "production_ready": false
+      },
+      "palette": {
+        "swatches": [
+          {
+            "hex": "#FFFFFF",
+            "role": "all visible artwork"
+          }
+        ],
+        "constraints": {
+          "locked_hex": [],
+          "allowed_hex": [
+            "#FFFFFF"
+          ],
+          "max_colors": 1,
+          "required_hex": [
+            "#FFFFFF"
+          ],
+          "allow_gradients": false
+        },
+        "source": "assistant",
+        "source_evidence": {
+          "reference_id": null,
+          "reference_sha256": null,
+          "provider": null,
+          "tool": null,
+          "response": null,
+          "notes": [
+            "Palette chosen by the assistant from the brief; not an external provider response"
+          ]
+        },
+        "selected_by": "assistant",
+        "rationale": "A requested white reversed variant for dark backgrounds; preserve geometry and Korean lettering.",
+        "calculation_version": "logo-color-v1",
+        "id": "p2",
+        "parent_palette_id": "p1",
+        "digest": "a091907fb5e5ed2f92811b941f1d6cab881c87b75ba588aba4b73f765346dbb5"
+      },
+      "lockup": {
+        "layout": "stacked",
+        "symbol_position": "start",
+        "text_alignment": "center",
+        "typography_style": "clear sturdy Korean serif lettering, medium-bold strokes, carefully formed Hangul syllables",
+        "font_reference": "Noto Serif KR"
+      },
+      "image_facts": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1567184,
+        "visible_pixels": 334595
+      },
+      "requested_background": "transparent",
+      "report": {
+        "id": "report-fd183d105dd74c1db560ea63ffffb1bb",
+        "artifact_id": "white-v3",
+        "artifact_sha256": "0be9b79a68e2bb9c145e4f9171db84807010be6f2478dd19b724a3dc4c0e73bd",
+        "palette_id": "p2",
+        "palette_digest": "a091907fb5e5ed2f92811b941f1d6cab881c87b75ba588aba4b73f765346dbb5",
+        "analysis_policy": "logo-color-v1",
+        "color_engine_version": "8.12.1",
+        "pillow_version": "12.3.0",
+        "profile_treatment": "assumed_srgb",
+        "sampling": {
+          "width": 1254,
+          "height": 1254,
+          "roi": null,
+          "scope": "full_image",
+          "coordinate_policy": "grid_128_pixel_centers",
+          "sampled_positions": 16384,
+          "sampled_fraction": 0.010418971889634192,
+          "visible_samples": 3483,
+          "core_samples": 2560,
+          "partial_alpha_samples": 923
+        },
+        "status": "indeterminate",
+        "reasons": [
+          "Partial alpha exceeds 10% of visible samples"
+        ],
+        "measured_swatches": [
+          {
+            "hex": "#FDFDFD",
+            "samples": 1147,
+            "share": 0.448046875
+          },
+          {
+            "hex": "#FDFCFD",
+            "samples": 418,
+            "share": 0.16328125
+          },
+          {
+            "hex": "#FCFDFC",
+            "samples": 303,
+            "share": 0.118359375
+          },
+          {
+            "hex": "#FEFEFE",
+            "samples": 299,
+            "share": 0.116796875
+          },
+          {
+            "hex": "#FEFDFE",
+            "samples": 280,
+            "share": 0.109375
+          },
+          {
+            "hex": "#FDFDFE",
+            "samples": 66,
+            "share": 0.02578125
+          },
+          {
+            "hex": "#FDFDFC",
+            "samples": 37,
+            "share": 0.014453125
+          },
+          {
+            "hex": "#FAFAFA",
+            "samples": 10,
+            "share": 0.00390625
+          }
+        ],
+        "targets": [
+          {
+            "hex": "#FFFFFF",
+            "matching_samples": 2560,
+            "share": 1,
+            "mean_delta_e": 0.5650095828765158,
+            "max_delta_e": 1.679294124208758
+          }
+        ],
+        "matched_fraction": 1,
+        "unmatched_fraction": 0,
+        "observed_colors": 1,
+        "minor_swatches": [],
+        "contrasts": [
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#FFFFFF",
+            "ratio": 1.0171266753350618,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#171717",
+            "ratio": 17.48914611481433,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#FFFFFF",
+            "ratio": 1,
+            "alpha": 0.00392156862745098
+          },
+          {
+            "foreground": "#FFFFFF",
+            "surface": "#171717",
+            "ratio": 1.0087764560132517,
+            "alpha": 0.00392156862745098
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#FFFFFF",
+            "ratio": 1.0170584524847177,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#FDFDFD",
+            "surface": "#171717",
+            "ratio": 17.354150523210883,
+            "alpha": 0.9921568627450981
+          },
+          {
+            "foreground": "#FDFCFD",
+            "surface": "#FFFFFF",
+            "ratio": 1.023345014275726,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FDFCFD",
+            "surface": "#171717",
+            "ratio": 17.382553707322224,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FCFCFC",
+            "surface": "#FFFFFF",
+            "ratio": 1.0258428244445377,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FCFCFC",
+            "surface": "#171717",
+            "ratio": 17.340100986501714,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FEFDFE",
+            "surface": "#FFFFFF",
+            "ratio": 1.014658253638709,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FEFDFE",
+            "surface": "#171717",
+            "ratio": 17.531821875914435,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#FFFFFF",
+            "ratio": 1.008512905200244,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FEFEFE",
+            "surface": "#171717",
+            "ratio": 17.638974304057985,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FDFCFC",
+            "surface": "#FFFFFF",
+            "ratio": 1.023976948695415,
+            "alpha": 0.996078431372549
+          },
+          {
+            "foreground": "#FDFCFC",
+            "surface": "#171717",
+            "ratio": 17.3717937944161,
+            "alpha": 0.996078431372549
+          }
+        ],
+        "delta_e_threshold": 5,
+        "created_at": "2026-09-12T15:39:41.270835Z"
+      },
+      "comparison": "projects/white-bamgyeol/index.html#artifact-white-v3",
+      "full_reports": "projects/white-bamgyeol/reports.html",
+      "delivery": null,
+      "session_snapshot": "projects/white-bamgyeol/session.json",
+      "prompt": "projects/white-bamgyeol/prompts/white-v3.txt",
+      "attempts": [
+        {
+          "id": "parent-v1",
+          "parent_id": null,
+          "sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+          "color_report_status": "indeterminate",
+          "visual_delivery": {
+            "status": "indeterminate",
+            "label": "Indeterminate · not production ready",
+            "detail": "Chrome showed the exact Hangul 밤결 and background changes through the exterior and book gaps. Ivory is weak on light surfaces; black lettering becomes hard to see on dark surfaces. The stored color result remains indeterminate.",
+            "production_ready": false
+          },
+          "comparison": "projects/white-bamgyeol/index.html#artifact-parent-v1",
+          "prompt": "projects/white-bamgyeol/prompts/parent-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-3f950424-8c07-418c-b492-b271f08f116b.png",
+            "source_sha256": "083e3a4bbaa5fae1593879efe6e6336a7727fea7c0a431a3b9e96607bac87941",
+            "record_basename": "tool-result.json",
+            "record_sha256": "0887f3a17d37d694202241c2eeeaaae32c711d829cfcae848efff2f4e6432a67",
+            "independent_native_call": false,
+            "reused_from": "bamgyeol/a-v1"
+          }
+        },
+        {
+          "id": "white-v1",
+          "parent_id": "parent-v1",
+          "sha256": "764557003be078c7e83fca85b7b40d43977edefa9ef46caf49f5279c403a3151",
+          "color_report_status": "indeterminate",
+          "visual_delivery": {
+            "status": "indeterminate",
+            "label": "Not delivered · alpha review required",
+            "detail": "The initial white original retains alpha, but 42.04% of its visible samples have partial alpha. It remains indeterminate and was not delivered. A native tool preview alone is not used to establish visible haze or damaged lettering.",
+            "production_ready": false
+          },
+          "comparison": "projects/white-bamgyeol/index.html#artifact-white-v1",
+          "prompt": "projects/white-bamgyeol/prompts/white-v1.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-b513369c-0881-4e0c-99bb-15a25e6f3a6c.png",
+            "source_sha256": "764557003be078c7e83fca85b7b40d43977edefa9ef46caf49f5279c403a3151",
+            "record_basename": "white-tool-result.json",
+            "record_sha256": "35e9d34bf8ea7eafe17c4cb34cde40c4d9a7c58270295476ff5c3c47de1fd718",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "white-v2",
+          "parent_id": "white-v1",
+          "sha256": "fda77d0af6c53c4d0d28099ca6568cbb7e877ac6045ea9ca6898bf77884a29a5",
+          "color_report_status": "indeterminate",
+          "visual_delivery": {
+            "status": "indeterminate",
+            "label": "Not delivered · alpha review required",
+            "detail": "First native repair; its saved report remains indeterminate with 1,090 partial-alpha samples out of 3,660 visible samples. Preserved as an unresolved attempt.",
+            "production_ready": false
+          },
+          "comparison": "projects/white-bamgyeol/index.html#artifact-white-v2",
+          "prompt": "projects/white-bamgyeol/prompts/white-v2.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-c99775ad-3b64-41b7-b80d-66b07f82c3a2.png",
+            "source_sha256": "fda77d0af6c53c4d0d28099ca6568cbb7e877ac6045ea9ca6898bf77884a29a5",
+            "record_basename": "white-repair1-tool-result.json",
+            "record_sha256": "317ad8cb5e6320cc29497094174482e0a2666c255dedb00ae147b066aa4b0054",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        },
+        {
+          "id": "white-v3",
+          "parent_id": "white-v2",
+          "sha256": "0be9b79a68e2bb9c145e4f9171db84807010be6f2478dd19b724a3dc4c0e73bd",
+          "color_report_status": "indeterminate",
+          "visual_delivery": {
+            "status": "indeterminate",
+            "label": "Not delivered · alpha review required",
+            "detail": "The Chrome gallery preview shows readable white lettering and a clean overall shape. Nevertheless, 923 of 3,483 visible samples (26.50%) have partial alpha, so the report remains indeterminate despite 100% sampled core color coverage. The two-repair limit is reached; no compliant white delivery was produced. Appearance and quantitative evidence are separate checks.",
+            "production_ready": false
+          },
+          "comparison": "projects/white-bamgyeol/index.html#artifact-white-v3",
+          "prompt": "projects/white-bamgyeol/prompts/white-v3.txt",
+          "provenance": {
+            "tool": "image_gen__imagegen",
+            "source_basename": "exec-500af82e-e168-4016-948c-dc4f0b07a2d5.png",
+            "source_sha256": "0be9b79a68e2bb9c145e4f9171db84807010be6f2478dd19b724a3dc4c0e73bd",
+            "record_basename": "white-repair2-tool-result.json",
+            "record_sha256": "45197ec4b8906eadcea275cae8a0de37686741525fabf8d0d5d642a20d18d119",
+            "independent_native_call": true,
+            "reused_from": null
+          }
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "bamgyeol",
+      "snapshot_revision": 4,
+      "snapshot_updated_at": "2026-09-12T15:34:31.332105Z",
+      "artifact_count": 3,
+      "snapshot": "projects/bamgyeol/session.json",
+      "comparison": "projects/bamgyeol/index.html",
+      "reports": "projects/bamgyeol/reports.html"
+    },
+    {
+      "id": "fieldnote",
+      "snapshot_revision": 5,
+      "snapshot_updated_at": "2026-09-12T15:34:32.665882Z",
+      "artifact_count": 3,
+      "snapshot": "projects/fieldnote/session.json",
+      "comparison": "projects/fieldnote/index.html",
+      "reports": "projects/fieldnote/reports.html"
+    },
+    {
+      "id": "grove",
+      "snapshot_revision": 9,
+      "snapshot_updated_at": "2026-09-12T15:36:27.849830Z",
+      "artifact_count": 4,
+      "snapshot": "projects/grove/session.json",
+      "comparison": "projects/grove/index.html",
+      "reports": "projects/grove/reports.html"
+    },
+    {
+      "id": "northline",
+      "snapshot_revision": 5,
+      "snapshot_updated_at": "2026-09-12T15:36:26.860925Z",
+      "artifact_count": 1,
+      "snapshot": "projects/northline/session.json",
+      "comparison": "projects/northline/index.html",
+      "reports": "projects/northline/reports.html"
+    },
+    {
+      "id": "sunroom",
+      "snapshot_revision": 3,
+      "snapshot_updated_at": "2026-09-12T15:36:15.340602Z",
+      "artifact_count": 1,
+      "snapshot": "projects/sunroom/session.json",
+      "comparison": "projects/sunroom/index.html",
+      "reports": "projects/sunroom/reports.html"
+    },
+    {
+      "id": "tide",
+      "snapshot_revision": 6,
+      "snapshot_updated_at": "2026-09-12T15:36:28.673389Z",
+      "artifact_count": 1,
+      "snapshot": "projects/tide/session.json",
+      "comparison": "projects/tide/index.html",
+      "reports": "projects/tide/reports.html"
+    },
+    {
+      "id": "white-bamgyeol",
+      "snapshot_revision": 6,
+      "snapshot_updated_at": "2026-09-12T15:39:41.270949Z",
+      "artifact_count": 4,
+      "snapshot": "projects/white-bamgyeol/session.json",
+      "comparison": "projects/white-bamgyeol/index.html",
+      "reports": "projects/white-bamgyeol/reports.html"
+    }
+  ],
+  "gallery_root": "../../colors/",
+  "paths_relative_to": "gallery_root"
+}

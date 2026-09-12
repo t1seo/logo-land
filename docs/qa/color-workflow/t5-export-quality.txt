@@ -1,0 +1,4 @@
+All checks passed!
+6 files already formatted
+0 errors, 0 warnings, 0 notes
+no violations in 6 file(s)
