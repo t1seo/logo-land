@@ -144,7 +144,7 @@ Each docs worker records a pre-edit link/image/anchor baseline, validates all fi
 - [x] F2 — Independently review code quality.
 - [x] F3 — Independently exercise actual CLI and gallery behavior.
 - [x] F4 — Independently review security and source/context fidelity.
-- [ ] T6 — Commit and push verified development work, record final state and cleanup.
+- [x] T6 — Commit and push verified development work, record final state and cleanup.
 
 Each review reads the full relevant diff against the stated base, exact plan, tests and sample receipts. F1 checks requested coverage and legacy preservation; F2 reviews type boundaries, module responsibility/size and meaningful tests; F3 exercises at least 20 concrete CLI/gallery scenarios; F4 uses separate security and context workers. Reviewers perform actual bounded HTTP/CLI/browser probes appropriate to their domain, retain an artifact and cleanup receipt, and distinguish executed evidence from static reasoning. Any blocking finding returns to its named owner for a regression test and correction, then independent recheck; completion requires all five perspectives to pass the new icon feature scope. Historical color release gates remain outside that verdict.
 

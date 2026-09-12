@@ -23,6 +23,7 @@ The [plan](../../../plans/logo-land-app-icons.md) adds six artwork presets: IP m
 | Non-IP icon quality | [Primary-source research](../../research/app-icon-quality.md), [verified sources](../../research/app-icon-quality-sources.json), [five-style audit](quality-audit.md), [239 affected tests and 47 CLI calls](quality-core.md), [final guidance checks](quality-guidance.md); 24 complete IP prompt expectations and historical images preserved |
 | Concise documentation | [README structure research](../../research/readme-structure.md), [42 bilingual sample pages](readme-pages.md), [24 icon pages](readme-icons.md), [83-line READMEs and 799-link check](readme-rewrite.md), [actual Chrome navigation and downloads](readme-chrome.md) |
 | Independent final review | [Goal](review-goal.md), [code](review-code.md), [actual execution](review-qa.md), [security](review-security.md), [context](review-context.md); all five PASS, [combined result](review-summary.md) |
+| Development delivery | [Verified main push, public HTTP identity and cleanup](final-delivery.md) |
 
 The user authorized research, planning, implementation and real native sample generation. All eleven returned samples remain available as original artwork; an artistic preference did not trigger filtering or an automatic replacement. The comparison masks affect only browser presentation. This feature does not generate an Apple Icon Composer document, Android adaptive resource package or store submission.
 
