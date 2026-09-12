@@ -1,0 +1,19 @@
+{
+  "name": "logo-generator",
+  "version": "0.1.0",
+  "description": "로고 생성 플러그인 개발을 위한 기본 프로젝트입니다.",
+  "author": {
+    "name": "t1seo"
+  },
+  "repository": "https://github.com/t1seo/logo-generator",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Logo Generator",
+    "shortDescription": "로고 생성 플러그인 개발 프로젝트",
+    "longDescription": "로고 생성 워크플로를 구현하기 위한 플러그인 기본 구조입니다. 로고 생성 기능은 아직 구현되지 않았습니다.",
+    "developerName": "t1seo",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": ["로고 생성 플러그인의 기능을 설계해 주세요."]
+  }
+}
