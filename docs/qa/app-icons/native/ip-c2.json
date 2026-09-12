@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ip-c2",
+  "attempt_id": "ip-c2-draw-1",
+  "task_id": "task_113c4fc5f4dc",
+  "dispatch_id": "ctx_6e7d00496f09",
+  "state": "returned",
+  "outcome": "imported",
+  "planned_at": "2026-09-12T17:13:49.509340+00:00",
+  "workspace": "output/app-icons-native/ip-c2",
+  "session_id": "ip-c2",
+  "artifact_id": "ip-c2",
+  "parent": null,
+  "revision": 0,
+  "prompt_path": "output/app-icons-native/ip-c2/prompt.txt",
+  "prompt_result_path": "output/app-icons-native/ip-c2/prompt-result.json",
+  "prompt_sha256": "e5abb62f5d389ab7122b6f8131ac32de4abf912a54c1d96bcde317e6522211f4",
+  "app_icon": {
+    "preset": "ip_mascot",
+    "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+    "placement": "lower_right",
+    "text": null
+  },
+  "resolved_intent": {
+    "app_icon": {
+      "preset": "ip_mascot",
+      "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+      "placement": "lower_right",
+      "text": null
+    },
+    "palette_id": null,
+    "palette_digest": null,
+    "lockup": null,
+    "requested_background": "opaque",
+    "parent_id": null,
+    "parent_requested_background": null
+  },
+  "native": {
+    "tool": "image_gen__imagegen",
+    "provider": "host native image_gen",
+    "model": "unreported",
+    "parameters": [
+      "prompt"
+    ],
+    "reference_arguments_omitted": true,
+    "call_count": 1,
+    "tool_call_id": "unreported",
+    "liveness": "Single awaited call completed in 22.6 seconds; no cancellation, wait-cell resume or replacement call was needed",
+    "returned_source_basename": "exec-d0d7d47e-9949-48a5-acb8-3d7c9ff2451e.png",
+    "source_sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+    "source_artifact_identifier": "exec-d0d7d47e-9949-48a5-acb8-3d7c9ff2451e",
+    "result_receipt": "output/app-icons-native/ip-c2/native-result.json",
+    "returned_image_count": 1,
+    "data_uri_matches_exact_returned_source": true,
+    "data_uri_verification": "8 complete bounded base64 segments compared byte-for-byte against the exact returned file; all matched",
+    "model_identity_basis": "imagegen result exposed only image_url and output_hint, with no model field"
+  },
+  "events": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:13:49.509340+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:14:03.492394+00:00"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:14:51.808412+00:00"
+    },
+    {
+      "state": "imported",
+      "at": "2026-09-12T17:15:02.094949Z",
+      "revision": 1
+    }
+  ],
+  "approval": {
+    "selected": false,
+    "reviewed": false,
+    "exported": false,
+    "platform_ready": false
+  },
+  "cleanup": {
+    "state": "complete",
+    "resource_register": "output/app-icons-native/ip-c2/resource-register.json",
+    "owned_server_pid": 94085,
+    "owned_server_terminated": true,
+    "port_released": true,
+    "port_rebind_succeeded": true,
+    "temporary_files_removed": true,
+    "persistent_deliverables_preserved": true
+  },
+  "started_at": "2026-09-12T17:14:03.492394+00:00",
+  "returned_at": "2026-09-12T17:14:51.808412+00:00",
+  "original": {
+    "path": "output/app-icons-native/ip-c2/original.png",
+    "sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "frames": 1,
+    "bytes": 1089169
+  },
+  "completed_at": "2026-09-12T17:17:09.135923+00:00",
+  "imported_at": "2026-09-12T17:15:02.094949Z",
+  "import": {
+    "successful_count": 1,
+    "artifact_path": "output/app-icons-native/ip-c2/.logo-generator/sessions/ip-c2/artifacts/ip-c2.png",
+    "session_path": "output/app-icons-native/ip-c2/.logo-generator/sessions/ip-c2/session.json",
+    "session_revision": 1,
+    "generation_revision": 0,
+    "sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+    "session_sha256": "181050aa45f75353461c4002ba87d00efebbd968a3490d44e7aaad7fc3f993e0",
+    "prompt_sha256": "e5abb62f5d389ab7122b6f8131ac32de4abf912a54c1d96bcde317e6522211f4",
+    "app_icon": {
+      "preset": "ip_mascot",
+      "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+      "placement": "lower_right",
+      "text": null
+    },
+    "parent": null,
+    "requested_background": "opaque",
+    "show_result_path": "output/app-icons-native/ip-c2/show-result.json",
+    "helper_commands_path": "output/app-icons-native/ip-c2/helper-commands.json"
+  },
+  "verification": {
+    "source_original_import_hashes_agree": true,
+    "source_data_uri_exact_match": true,
+    "final_prompt_equals_helper_and_stored_prompt": true,
+    "intent_equals_prompt_result": true,
+    "parent_null": true,
+    "decoded_format": "PNG",
+    "actual_dimensions": [
+      1254,
+      1254
+    ],
+    "requested_dimensions": [
+      1536,
+      1536
+    ],
+    "native_outputs_preserved": 1,
+    "resampled": false,
+    "recolored": false,
+    "background_modified": false,
+    "actual_helper_surface_exercised": [
+      "init",
+      "prompt",
+      "import",
+      "show"
+    ],
+    "adversarial_evidence": "output/app-icons-native/ip-c2/adversarial-results.json",
+    "helper_command_evidence": "output/app-icons-native/ip-c2/helper-commands.json"
+  },
+  "observations": {
+    "visual_evidence": "Actual image_gen result displayed in this turn",
+    "description": "Golden puppy with both aubergine floppy ears visible, a large cream muzzle patch, open book, and dusty-rose background; body reaches the lower and right boundaries",
+    "preserved_variance": [
+      "1254 square native dimensions differ from the approximate 1536 request",
+      "Cream muzzle/pages, pink tongue, eye highlights and shaded/tonal detail are present",
+      "Open book adds detail beyond the minimal character direction"
+    ],
+    "artistic_retry_count": 0,
+    "approval_claimed": false,
+    "chrome_gallery_qa": "Coordinator T5; not part of this candidate worker"
+  },
+  "http": {
+    "evidence_path": "output/app-icons-native/ip-c2/http-result.json",
+    "bind": "127.0.0.1",
+    "port": 8775,
+    "status": 200,
+    "body_sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+    "original_sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+    "pass": true,
+    "meaning": "Actual local served bytes only; not platform readiness or strict approval"
+  },
+  "scope": {
+    "only_owned_output_and_receipt_modified": true,
+    "preexisting_shared_dirty_worktree": "Preserved; baseline git status recorded in owned baseline.json",
+    "children_spawned": 0,
+    "commits_created": 0,
+    "no_tests_or_source_files_added": true,
+    "native_failure": null
+  }
+}

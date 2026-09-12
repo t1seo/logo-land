@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "id": "manual-monogram",
+  "revision": 0,
+  "created_at": "2026-09-12T18:07:12.072325Z",
+  "updated_at": "2026-09-12T18:07:12.072325Z",
+  "brief": {
+    "brand_name": "모아 Notes",
+    "exact_text": "모",
+    "industry": "Fictional mobile application artwork example",
+    "audience": "People seeking a friendly and immediately recognizable mobile experience",
+    "slogan": "",
+    "logo_type": "monogram",
+    "styles": [],
+    "palette": [
+      "Letter: deep sapphire #153F78",
+      "Solid background: warm ivory #F5EBDD"
+    ],
+    "forbidden": [
+      "watermark",
+      "presentation frame",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "Mobile app icon artwork demonstration"
+    ],
+    "assumptions": [
+      "Fictional product brief chosen by the assistant for sample coverage"
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "monogram",
+      "subject": "one bold rounded Korean letter with a compact balanced silhouette",
+      "placement": "center",
+      "text": "모"
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

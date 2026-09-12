@@ -1,0 +1,6 @@
+Removed exact registered tmux session: ll-icons-core
+Registered pane shell PID 53502 is no longer running.
+Removed exact registered task fixture: /tmp/ll-icons-core-task058008
+Removed exact registered task fixture: /tmp/ll-icons-core-pytest-task058008
+Retained baseline fixtures, exact prompt snapshots and all core QA logs under docs/qa/app-icons/.
+No server, native call, child worker or other persistent process was created.

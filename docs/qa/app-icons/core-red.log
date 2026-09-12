@@ -1,0 +1,157 @@
+FFF.....FF                                                               [100%]
+=================================== FAILURES ===================================
+______________ test_json_init_prompt_import_show_snapshots[False] ______________
+
+harness = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_json_init_prompt_import_s0/review.json'))
+monogram = False
+
+    @pytest.mark.parametrize("monogram", [False, True])
+    def test_json_init_prompt_import_show_snapshots(harness: Harness, monogram: bool) -> None:
+        _ = icon_brief(harness, monogram=monogram)
+>       harness.init()
+
+tests/test_app_icon_workflow.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/conftest.py:55: in init
+    _ = self.ok("init", "--session", "demo", "--brief", str(self.brief))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_json_init_prompt_import_s0/review.json'))
+args = ('init', '--session', 'demo', '--brief', '/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_json_init_prompt_import_s0/brief.json')
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: {"error": "1 validation error for Brief\napp_icon\n  Extra inputs are not permitted [type=extra_forbidden, input_value={'preset': 'ip_mascot', '...wer_left', 'text': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"}
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc...': None}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"}\n').returncode
+
+tests/conftest.py:51: AssertionError
+______________ test_json_init_prompt_import_show_snapshots[True] _______________
+
+harness = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_json_init_prompt_import_s1/review.json'))
+monogram = True
+
+    @pytest.mark.parametrize("monogram", [False, True])
+    def test_json_init_prompt_import_show_snapshots(harness: Harness, monogram: bool) -> None:
+        _ = icon_brief(harness, monogram=monogram)
+>       harness.init()
+
+tests/test_app_icon_workflow.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/conftest.py:55: in init
+    _ = self.ok("init", "--session", "demo", "--brief", str(self.brief))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_json_init_prompt_import_s1/review.json'))
+args = ('init', '--session', 'demo', '--brief', '/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_json_init_prompt_import_s1/brief.json')
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: {"error": "1 validation error for Brief\napp_icon\n  Extra inputs are not permitted [type=extra_forbidden, input_value={'preset': 'monogram', 's...left', 'text': '한글'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"}
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc... \'한글\'}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden"}\n').returncode
+
+tests/conftest.py:51: AssertionError
+_______________ test_explicit_legacy_transform_and_child_inherit _______________
+
+harness = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_explicit_legacy_transform0/review.json'))
+
+    def test_explicit_legacy_transform_and_child_inherit(harness: Harness) -> None:
+        harness.init()
+        path = icon_file(harness)
+        prompt = PromptResult.model_validate_json(
+>           harness.ok("prompt", "--session", "demo", "--app-icon-file", str(path))
+        )
+
+tests/test_app_icon_workflow.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_explicit_legacy_transform0/review.json'))
+args = ('prompt', '--session', 'demo', '--app-icon-file', '/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_explicit_legacy_transform0/icon.json')
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: Usage: logo_project.py prompt [OPTIONS]
+E         Try 'logo_project.py prompt --help' for help.
+E         ╭─ Error ──────────────────────────────────────────────────────────────────────╮
+E         │ No such option: --app-icon-file                                              │
+E         ╰──────────────────────────────────────────────────────────────────────────────╯
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").returncode
+
+tests/conftest.py:51: AssertionError
+_______________ test_explicit_transparent_icon_import_conflicts ________________
+
+harness = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_explicit_transparent_icon0/review.json'))
+
+    def test_explicit_transparent_icon_import_conflicts(harness: Harness) -> None:
+        harness.init()
+        path = icon_file(harness)
+        before = harness.state_path.read_bytes()
+        result = harness.run(*import_args(harness, "--app-icon-file", str(path), "--background", "transparent"))
+        assert result.returncode != 0
+>       assert "intent_conflict" in result.stderr
+E       assert 'intent_conflict' in "Usage: logo_project.py import [OPTIONS]\nTry 'logo_project.py import --help' for help.\n╭─ Error ────────────────────...tions: --prompt-file)            │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+E        +  where "Usage: logo_project.py import [OPTIONS]\nTry 'logo_project.py import --help' for help.\n╭─ Error ────────────────────...tions: --prompt-file)            │\n╰──────────────────────────────────────────────────────────────────────────────╯\n" = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc...ions: --prompt-file)            │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").stderr
+
+tests/test_app_icon_workflow.py:115: AssertionError
+____________________ test_icon_and_explicit_lockup_conflict ____________________
+
+harness = Harness(workspace=PosixPath('/private/var/folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test.../folders/74/9lb4q4vj3ljd6rpr1rxvwnjm0000gn/T/pytest-of-cillian/pytest-84/test_icon_and_explicit_lockup_0/review.json'))
+
+    def test_icon_and_explicit_lockup_conflict(harness: Harness) -> None:
+        harness.init()
+        path = icon_file(harness)
+        lockup = path.with_name("lockup.json")
+        _ = lockup.write_text('{"layout":"horizontal","typography_style":"rounded"}', encoding="utf-8")
+        before = harness.state_path.read_bytes()
+        for args in [("prompt", "--session", "demo"), import_args(harness)]:
+            result = harness.run(*args, "--app-icon-file", str(path), "--lockup-file", str(lockup))
+            assert result.returncode != 0
+>           assert "intent_conflict" in result.stderr
+E           assert 'intent_conflict' in "Usage: logo_project.py prompt [OPTIONS]\nTry 'logo_project.py prompt --help' for help.\n╭─ Error ────────────────────...                                 │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+E            +  where "Usage: logo_project.py prompt [OPTIONS]\nTry 'logo_project.py prompt --help' for help.\n╭─ Error ────────────────────...                                 │\n╰──────────────────────────────────────────────────────────────────────────────╯\n" = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc...                                │\n╰──────────────────────────────────────────────────────────────────────────────╯\n").stderr
+
+tests/test_app_icon_workflow.py:128: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_app_icon_workflow.py::test_json_init_prompt_import_show_snapshots[False]
+FAILED tests/test_app_icon_workflow.py::test_json_init_prompt_import_show_snapshots[True]
+FAILED tests/test_app_icon_workflow.py::test_explicit_legacy_transform_and_child_inherit
+FAILED tests/test_app_icon_workflow.py::test_explicit_transparent_icon_import_conflicts
+FAILED tests/test_app_icon_workflow.py::test_icon_and_explicit_lockup_conflict
+5 failed, 5 passed in 4.56s
+
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/test_app_icon_models.py ________________
+ImportError while importing test module '/Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_models.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_app_icon_models.py:9: in <module>
+    from logo_helper.app_icon_models import AppIconIntent
+E   ModuleNotFoundError: No module named 'logo_helper.app_icon_models'
+_______________ ERROR collecting tests/test_app_icon_prompts.py ________________
+ImportError while importing test module '/Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_prompts.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_app_icon_prompts.py:7: in <module>
+    from logo_helper.app_icon_models import AppIconIntent
+E   ModuleNotFoundError: No module named 'logo_helper.app_icon_models'
+=========================== short test summary info ============================
+ERROR tests/test_app_icon_models.py
+ERROR tests/test_app_icon_prompts.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+2 errors in 0.08s

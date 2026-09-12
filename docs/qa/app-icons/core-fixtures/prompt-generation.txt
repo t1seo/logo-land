@@ -1,0 +1,7 @@
+Create one combination logo for 기존 브랜드. Industry: design. Audience: readers.
+Exact text (copy verbatim, no other words): 'Legacy Ω'. Exact slogan: 'Read more'.
+Styles: minimal. Original brief palette context: green.
+Avoid: . Use cases: .
+Background: transparent. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: Distinct, simple brand identity. Assumptions: .
+Effective symbol-plus-text lockup: {"layout":"horizontal","symbol_position":"start","text_alignment":"start","typography_style":"rounded","font_reference":null}. Horizontal start/end means symbol left/right of text; stacked start/end means symbol above/below text. Preserve the exact text and slogan. Font reference is a requested visual direction, not proof of an installed or licensed font file.

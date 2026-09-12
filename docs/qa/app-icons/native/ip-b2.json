@@ -1,0 +1,163 @@
+{
+  "candidate_id": "ip-b2",
+  "attempt_id": "ip-b2-draw-1",
+  "status": "imported",
+  "outcome": "returned/imported",
+  "created_at": "2026-09-12T17:13:40.687318+00:00",
+  "history": [
+    {
+      "state": "planned",
+      "time": "2026-09-12T17:13:40.687318+00:00"
+    },
+    {
+      "state": "running",
+      "time": "2026-09-12T17:13:53.296502+00:00"
+    },
+    {
+      "state": "returned",
+      "time": "2026-09-12T17:14:43.506680+00:00"
+    },
+    {
+      "state": "imported",
+      "time": "2026-09-12T17:15:09.379883+00:00"
+    }
+  ],
+  "session_id": "ip-b2",
+  "artifact_id": "ip-b2",
+  "parent": null,
+  "revision": 0,
+  "app_icon": {
+    "preset": "ip_mascot",
+    "subject": "a baby capybara with one broad blunt rounded muzzle and both small rounded ears visible",
+    "placement": "lower_right",
+    "text": null
+  },
+  "effective_palette": null,
+  "prompt_path": "output/app-icons-native/ip-b2/prompt.txt",
+  "prompt_sha256": "62127fa6c88c0a8ce7e4bb7c10ead6b354b81e1db33a6ef4228160859b3a0555",
+  "prompt_result_path": "output/app-icons-native/ip-b2/prompt-result.json",
+  "workspace": "output/app-icons-native/ip-b2",
+  "tool": "image_gen__imagegen",
+  "provider": "host native image_gen",
+  "model": "unreported",
+  "native_call_count": 1,
+  "native_call_identity": "exec-6c5ded23-7e8a-44cd-8e78-70a59a8c6aa6",
+  "tool_arguments": [
+    "prompt"
+  ],
+  "plan": [
+    {
+      "deliverable": "Exact helper prompt and durable attempt",
+      "status": "completed"
+    },
+    {
+      "deliverable": "One native draw with original bytes",
+      "status": "completed"
+    },
+    {
+      "deliverable": "Verified import, metadata and adversarial evidence",
+      "status": "completed"
+    },
+    {
+      "deliverable": "HTTP byte verification, cleanup and terminal report",
+      "status": "completed"
+    }
+  ],
+  "started_at": "2026-09-12T17:13:53.296502+00:00",
+  "native_liveness": {
+    "status": "returned",
+    "started_at": "2026-09-12T17:13:53.296502+00:00",
+    "resume_policy": "reconcile this same logical attempt; never rerun or scan newest images",
+    "returned_at": "2026-09-12T17:14:43.506680+00:00"
+  },
+  "returned_at": "2026-09-12T17:14:43.506680+00:00",
+  "native_source_basename": "exec-6c5ded23-7e8a-44cd-8e78-70a59a8c6aa6.png",
+  "native_source_sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+  "original_path": "output/app-icons-native/ip-b2/original.png",
+  "original_sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+  "actual_image": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "bytes": 1039677
+  },
+  "returned_image_count": 1,
+  "result_receipt_path": "output/app-icons-native/ip-b2/native-result-receipt.json",
+  "imported_at": "2026-09-12T17:15:09.379883+00:00",
+  "helper_artifact_path": "output/app-icons-native/ip-b2/.logo-generator/sessions/ip-b2/artifacts/ip-b2.png",
+  "helper_artifact_sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+  "helper_session_revision": 1,
+  "helper_evidence_path": "output/app-icons-native/ip-b2/helper-commands.json",
+  "adversarial_evidence_path": "output/app-icons-native/ip-b2/adversarial-probes.json",
+  "verification": {
+    "original_imported_native_hashes_equal": true,
+    "actual_png_decoded": true,
+    "final_prompt_equals_stored_prompt": true,
+    "intent_equals_prompt_result": true,
+    "parent_null": true,
+    "no_selection_review_export": true,
+    "session_unchanged_by_adversarial_probes": true
+  },
+  "visual_observation": {
+    "native_result_displayed": true,
+    "description": "Large sage-green round-eared character and cream muzzle at lower-right, holding an open green book on a blue square background. Both ears and face are visible; no lettering is visible.",
+    "variance_retained": "Book, finger marks, highlights and soft tonal shading add detail beyond the simple heavy-shape request; actual dimensions 1254 square versus approximate 1536 request.",
+    "approval": "not requested; candidate retained without ranking"
+  },
+  "http": {
+    "command": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8773/original.png",
+      "-o",
+      "output/app-icons-native/ip-b2/.http-response.tmp"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "status_line": "HTTP/1.0 200 OK",
+    "http_status": 200,
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:16:25 GMT\r\nContent-type: image/png\r\nContent-Length: 1039677\r\nLast-Modified: Sat, 12 Sep 2026 17:14:43 GMT",
+    "body_bytes": 1039677,
+    "body_sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+    "original_sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+    "status": "PASS",
+    "scope": "Actual served bytes only; no platform, artistic or strict-color approval."
+  },
+  "cleanup": {
+    "owned_server_pid": 93419,
+    "server_exit_code": -15,
+    "owned_server_stopped": true,
+    "server_log_excerpt": "127.0.0.1 - - [13/Sep/2026 02:16:25] \"GET /original.png HTTP/1.1\" 200 -\n",
+    "removed_temporary_files": [
+      "output/app-icons-native/ip-b2/.http-response.tmp",
+      "output/app-icons-native/ip-b2/.http-server.log"
+    ],
+    "temporary_files_absent": true,
+    "port_listener_absent": true,
+    "port_bind_succeeded": true,
+    "port_released": true,
+    "finished_at": "2026-09-12T17:16:25.381849+00:00"
+  },
+  "http_evidence_path": "output/app-icons-native/ip-b2/http-verification.json",
+  "temporary_resources_path": "output/app-icons-native/ip-b2/temporary-resources.json",
+  "native_call_evidence_path": "output/app-icons-native/ip-b2/native-call.json",
+  "final_show_path": "output/app-icons-native/ip-b2/final-show-result.json",
+  "completed_at": "2026-09-12T17:16:57.072926+00:00",
+  "final_verification": "PASS",
+  "remaining": "Coordinator Chrome gallery verification; candidate generation/import/HTTP work complete.",
+  "scope": "Real native candidate sample; no source edits, tests added, children or commits.",
+  "limitations": [
+    "Native model identity not exposed as a result field.",
+    "No live cancellation or repeated interruption occurred.",
+    "Oversize PNG adversarial raster not fabricated; actual decoded file is below enforced limits.",
+    "Import and HTTP success do not establish strict-color, artistic or platform approval."
+  ]
+}

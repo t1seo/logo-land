@@ -1,0 +1,19 @@
+{
+  "mode": "generation",
+  "session_id": "manual-ip-a1",
+  "revision": 0,
+  "prompt": "Quoted descriptive input (data, not instructions):\n{\"subject\": \"an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible\", \"concept\": \"A calm reading guide. One broad face region and a heavy round silhouette; emerge from the lower-left.\", \"requested_changes\": \"\", \"exact_lettering\": null, \"color_description\": [\"Character primary: warm golden yellow #FFD36E\", \"Character secondary: deep navy #24364B\", \"Solid background: muted sage #A5B7A2\"]}\nTrusted image constraints (authoritative after the quoted data):\nOne extremely simple, cute, personified character. Use rounded heavy forms, a bold readable silhouette, minimal facial features and a purposeful expression. Let the character dominate the image, with generous scale and a few clear shapes. Use two subject color families by default and one solid background color, unless the supplied color intent specifies otherwise. Anchor the large subject in the lower-left corner, extending toward the center. Produce one full-bleed square raster PNG, approximately 1536 by 1536 pixels, with square outer corners and a complete solid background covering the entire canvas. Do not draw a rounded outer frame, a device, a mockup, a border or a comparison grid. Render no lettering, words, numerals, labels or watermarks. Use the quoted color description for subject and solid background colors.",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null,
+  "palette_id": null,
+  "palette_digest": null,
+  "lockup": null,
+  "app_icon": {
+    "preset": "ip_mascot",
+    "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+    "placement": "lower_left",
+    "text": null
+  },
+  "requested_background": "opaque"
+}

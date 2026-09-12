@@ -1,0 +1,33 @@
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_cli.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_cli.py:41:16 - error: Type of "model_dump_json" is unknown (reportUnknownMemberType)
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_cli.py:41:16 - error: Argument type is unknown
+    Argument corresponds to parameter "message" in function "echo" (reportUnknownArgumentType)
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_cli.py:41:23 - error: Cannot access attribute "model_dump_json" for class "GalleryResult"
+    Attribute "model_dump_json" is unknown (reportAttributeAccessIssue)
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_models.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_models.py:42:18 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_presets.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_presets.py:22:21 - error: Implicit string concatenation not allowed (reportImplicitStringConcatenation)
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_prompts.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_prompts.py:52:14 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/app_icon_prompts.py:66:14 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/artifact_models.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/artifact_models.py:67:76 - error: Type of parameter "value" is Any (reportAny)
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/brief_models.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/brief_models.py:29:76 - error: Type of parameter "value" is Any (reportAny)
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/brief_models.py:41:17 - error: Implicit string concatenation not allowed (reportImplicitStringConcatenation)
+/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/prompts.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/prompts.py:38:76 - error: Type of parameter "value" is Any (reportAny)
+  /Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_helper/prompts.py:40:41 - error: Type of parameter "value" is Any (reportAny)
+/Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_delivery.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_delivery.py:11:43 - error: Import "delivery" is not accessed (reportUnusedImport)
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_delivery.py:158:14 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_delivery.py:200:42 - error: "os" is not exported from module "logo_helper.app_icon_publish" (reportPrivateLocalImportUsage)
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_delivery.py:211:46 - error: "os" is not exported from module "logo_helper.app_icon_publish" (reportPrivateLocalImportUsage)
+/Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_gallery.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_gallery.py:242:14 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+/Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_models.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_models.py:4:20 - error: Import "TYPE_CHECKING" is not accessed (reportUnusedImport)
+/Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_workflow.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/test_app_icon_workflow.py:37:9 - error: Implicit string concatenation not allowed (reportImplicitStringConcatenation)
+19 errors, 0 warnings, 0 notes

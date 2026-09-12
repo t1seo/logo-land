@@ -1,0 +1,55 @@
+{
+  "attempt_id": "logo-land-studio-a-v1-20260913",
+  "state": "exported",
+  "prepared_at": "2026-09-12T17:39:49.295335+00:00",
+  "session_id": "logo-land-studio",
+  "artifact_id": "a-v1",
+  "revision": 1,
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "reference_parameters": "omitted",
+  "native_calls_planned": 1,
+  "prompt_path": "docs/brand/2026-identity/prompt.txt",
+  "prompt_sha256": "b9ddaf051eb98c1d65e43a4f2e71a315991266826135b66084edc7e4f1403da7",
+  "palette_id": "studio-v1",
+  "palette_digest": "560cc85d9c81426ef64c1ecb2369a2b0c1d53a168867e92b3b20cf532e395bad",
+  "requested_dimensions": [
+    1536,
+    768
+  ],
+  "actual_dimensions": [
+    1774,
+    887
+  ],
+  "parent_id": null,
+  "continuation_rule": "Resume this attempt and its exact returned artifact after interruptions; never regenerate or use newest-file scans. At most two exact-parent edits only for material lettering/visibility failures.",
+  "returned_at": "2026-09-12T17:40:29.612652+00:00",
+  "native_call_count": 1,
+  "native_cell": "completed in initial functions.exec; no yielded cell ID",
+  "native_source_basename": "exec-e31ec968-1b3d-4680-9253-d709444cda96.png",
+  "source_sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+  "original_path": "assets/logo-land-studio.png",
+  "original_sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+  "actual_image": {
+    "format": "PNG",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGB",
+    "bytes": 835901,
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  "exact_response_private_path": "output/logo-land-brand-refresh/native-result.json",
+  "exact_response_sha256": "2bc23121ed927d8ca2dbb3071d9fd65882699424bf9ba9dd0f8ff8007ae63b4e",
+  "native_data_matches_source": true,
+  "import_revision": 2,
+  "selection_authority": "assistant choice explicitly delegated by the user",
+  "review_path": "docs/brand/2026-identity/review.json",
+  "delivery_path": "docs/brand/2026-identity/delivery",
+  "delivery_revision": 5,
+  "final_session_revision": 5,
+  "original_session_delivery_zip_bytes_equal": true
+}

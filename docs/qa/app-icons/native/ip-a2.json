@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ip-a2",
+  "attempt_id": "ip-a2-draw-1",
+  "session_id": "ip-a2",
+  "artifact_id": "ip-a2",
+  "workspace": "output/app-icons-native/ip-a2",
+  "state": "returned",
+  "import_outcome": "imported",
+  "parent": null,
+  "revision": 0,
+  "intent": {
+    "preset": "ip_mascot",
+    "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+    "placement": "lower_right",
+    "text": null
+  },
+  "requested_background": "opaque",
+  "prompt_path": "output/app-icons-native/ip-a2/prompt.txt",
+  "prompt_sha256": "5a2b308974655d468cb7ce83827c5942e39504771c91fa84ec2e119436fe1b9c",
+  "prompt_result_path": "output/app-icons-native/ip-a2/prompt-result.json",
+  "native_tool": "image_gen.imagegen",
+  "native_provider": "host-native image_gen",
+  "model": "unreported",
+  "tool_arguments": [
+    "prompt"
+  ],
+  "reference_arguments_omitted": true,
+  "calls_started": 1,
+  "native_call_identity": "exec-69f1932c-a98e-4c6c-b9c5-3c64bf120ae1",
+  "created_at": "2026-09-12T17:13:34.052405+00:00",
+  "history": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:13:34.052822+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:13:47.025301+00:00"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:14:36.612992+00:00"
+    },
+    {
+      "state": "imported",
+      "at": "2026-09-12T17:15:14.995558+00:00"
+    }
+  ],
+  "native_source": {
+    "returned_fields": [
+      "image_url",
+      "output_hint"
+    ],
+    "return_payload": "PNG data URL plus exact native source path in output_hint",
+    "source_basename": "exec-69f1932c-a98e-4c6c-b9c5-3c64bf120ae1.png",
+    "call_output_identity": "exec-69f1932c-a98e-4c6c-b9c5-3c64bf120ae1",
+    "identity_kind": "filename reported by exact tool call; not an exposed request ID",
+    "request_id": "unreported",
+    "model": "unreported",
+    "source_sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+    "preserved_image_path": "output/app-icons-native/ip-a2/original.png",
+    "actual_image": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "frames": 1,
+      "byte_size": 1049136
+    },
+    "source_preserved": true,
+    "returned_image_count": 1
+  },
+  "automatic_artistic_retry": false,
+  "public_paths": "repository-relative with native source basename only",
+  "preflight": {
+    "existing_owned_workspace": false,
+    "existing_receipt": false,
+    "shared_dirty_worktree": true,
+    "prompt_source": "implemented helper",
+    "candidate_brief_exact": true
+  },
+  "started_at": "2026-09-12T17:13:47.025301+00:00",
+  "native_liveness": {
+    "status": "returned",
+    "elapsed_tool_seconds": 26.7,
+    "waits": 0,
+    "interruptions": 0,
+    "reruns": 0
+  },
+  "returned_at": "2026-09-12T17:14:36.612992+00:00",
+  "native_call_identity_kind": "filename reported by exact tool call; not an exposed request ID",
+  "original_path": "output/app-icons-native/ip-a2/original.png",
+  "original_sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "format": "PNG",
+  "visual_observation": "One sky-blue baby owl with a pale broad face, dark-teal book and features, visible wings, and lavender background; lower-right composition. Additional pale/cream tones and shading retained without artistic retry.",
+  "approval_status": "unselected and unreviewed; no platform or strict-color approval",
+  "imported_at": "2026-09-12T17:15:14.995558+00:00",
+  "import_revision": 0,
+  "stored_revision": 1,
+  "helper_artifact_path": "output/app-icons-native/ip-a2/.logo-generator/sessions/ip-a2/artifacts/ip-a2.png",
+  "helper_session_path": "output/app-icons-native/ip-a2/.logo-generator/sessions/ip-a2/session.json",
+  "imported_sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+  "verification": {
+    "source_original_imported_receipt_hashes_agree": true,
+    "exact_prompt_matches_stored": true,
+    "intent_matches_prompt": true,
+    "parent_null": true,
+    "actual_dimensions_agree": true,
+    "format_png": true,
+    "not_selected_or_reviewed": true,
+    "no_exports_or_color_reports": true
+  },
+  "helper_evidence_path": "output/app-icons-native/ip-a2/helper-commands.json",
+  "adversarial_probes": [
+    {
+      "name": "stale_revision",
+      "status": "passed",
+      "expected_error": "stale_revision",
+      "observed_stderr": "{\"error\": \"stale_revision: Expected revision 0; current revision is 1\"}\n",
+      "original_and_state_unchanged": true
+    },
+    {
+      "name": "duplicate_import",
+      "status": "passed",
+      "expected_error": "conflict",
+      "observed_stderr": "{\"error\": \"conflict: Artifact ip-a2 already exists\"}\n",
+      "original_and_state_unchanged": true
+    },
+    {
+      "name": "malformed_image_file",
+      "status": "passed",
+      "expected_error": "invalid_png",
+      "observed_stderr": "{\"error\": \"invalid_png: PNG must end with a complete IEND chunk\"}\n",
+      "original_and_state_unchanged": true
+    },
+    {
+      "name": "prompt_injection_as_data",
+      "status": "passed",
+      "details": "Adversarial concept stays JSON-quoted before authoritative lower-right/no-lettering constraints; this local helper check is not model-level injection immunity. No native call used the probe prompt."
+    },
+    {
+      "name": "malformed_receipt_json",
+      "status": "passed",
+      "scope": "Standard JSON parse rejects an in-memory truncated copy of the owned receipt; durable receipt and image bytes unchanged. No product-specific native receipt parser exists in this sample workflow."
+    },
+    {
+      "name": "png_limits",
+      "status": "passed",
+      "actual_bytes": 1049136,
+      "max_file_bytes": 67108864,
+      "actual_pixels": 1572516,
+      "max_pixels": 40000000,
+      "details": "Native PNG decoded successfully through import/show and is within both limits. Oversized/reencoded PNG negative fixture is N/A: no native original corruption or synthetic raster is authorized."
+    },
+    {
+      "name": "cancel_resume",
+      "status": "not_applicable",
+      "reason": "The sole native call returned without interruption; no cancel/unknown call exists to resume. Planned/running/returned history and exact returned basename retained; no replacement draw or newest-file scan."
+    },
+    {
+      "name": "repeated_interruptions",
+      "status": "not_applicable",
+      "reason": "No interruption occurred; stale-revision and duplicate-import rejection were exercised without changing revision or original bytes."
+    },
+    {
+      "name": "dirty_shared_worktree",
+      "status": "passed",
+      "details": "Pre-existing shared changes observed at start; mutations confined to the owned candidate workspace and candidate receipt."
+    },
+    {
+      "name": "artistic_variation",
+      "status": "passed",
+      "details": "One call and one returned image preserved including additional pale tones, book detail and shading; no retry, resize, recolor, background removal or generated substitute."
+    },
+    {
+      "name": "approval_boundary",
+      "status": "passed",
+      "details": "No selection, review, export or color analysis invoked; native artwork and HTTP byte verification do not certify platform readiness or strict color conformity."
+    }
+  ],
+  "http": {
+    "command": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8771/original.png",
+      "-o",
+      "output/app-icons-native/ip-a2/.qa-http-response.tmp"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "status_line": "HTTP/1.0 200 OK",
+    "status": 200,
+    "body_sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+    "original_sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+    "body_bytes": 1049136,
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:16:10 GMT\r\nContent-type: image/png\r\nContent-Length: 1049136\r\nLast-Modified: Sat, 12 Sep 2026 17:14:36 GMT",
+    "result": "passed",
+    "scope": "Actual served bytes only; no visual, strict-color or platform approval"
+  },
+  "cleanup": {
+    "registry_path": "output/app-icons-native/ip-a2/temporary-resources.json",
+    "state": "cleaned",
+    "process_reaped": true,
+    "process_exit_code": -15,
+    "temporary_files_removed": true,
+    "port_released": true,
+    "port_rebind_succeeded": true
+  },
+  "outcome": "returned/imported",
+  "completed_at": "2026-09-12T17:16:39.401789+00:00",
+  "final_show_path": "output/app-icons-native/ip-a2/final-show-result.json",
+  "final_verification": "passed",
+  "remaining_work": "Coordinator-owned Chrome gallery/catalog integration; no work remains in this candidate ownership.",
+  "limitations": [
+    "Returned dimensions are 1254×1254; approximately 1536×1536 was requested in prompt text and no resize was performed.",
+    "Native runtime did not expose a model name or request ID. Returned output filename identity was retained.",
+    "HTTP verifies served bytes only; gallery visual evidence is coordinator-owned.",
+    "No selected/approved export, strict-color conformance or platform readiness claimed."
+  ]
+}

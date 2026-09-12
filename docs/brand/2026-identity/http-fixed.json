@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "curl",
+    "-i",
+    "--fail",
+    "--silent",
+    "--show-error",
+    "--connect-timeout",
+    "2",
+    "--max-time",
+    "10",
+    "http://127.0.0.1:8790/assets/logo-land-studio.png",
+    "-o",
+    "/tmp/ll-brand-refresh-03971906f863/logo.http"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:43:34 GMT\r\nContent-type: image/png\r\nContent-Length: 835901\r\nLast-Modified: Sat, 12 Sep 2026 17:40:29 GMT",
+  "body_bytes": 835901,
+  "body_sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+  "body_exact_native_png": true,
+  "decoded": {
+    "format": "PNG",
+    "width": 1774,
+    "height": 887
+  },
+  "server_pid": 56213,
+  "port": 8790
+}

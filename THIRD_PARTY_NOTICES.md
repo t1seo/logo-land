@@ -1,6 +1,15 @@
 # Third-party guidance notices
 
-Logo Land's color references use small, rewritten portions of upstream guidance. These credits identify the original authors, pinned sources, licenses and changes; they do not imply endorsement. No upstream code, font binaries, palette collection or third-party reference archive is vendored by this documentation change.
+Logo Land's color and IP references adapt portions of upstream guidance. These credits identify the original authors, pinned sources, licenses and changes; they do not imply endorsement. The complete IP guidance MIT notice is included. No upstream executable code, showcase image, font binaries, palette collection or third-party reference archive is vendored by this documentation change.
+
+## IP as Logo
+
+- Author: s1dashu. Copyright (c) 2026 s1dashu.
+- Source: [ip-as-logo-skill SKILL.md](https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md), commit `acb834c717bcd0a487c49732d08397ba280d690b`.
+- License: [pinned upstream MIT License](https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE); the complete, unchanged copyright/permission/warranty notice is included at [skills/logo-land/assets/ip-as-logo.LICENSE](skills/logo-land/assets/ip-as-logo.LICENSE).
+- Location: [IP character reference](skills/logo-land/references/ip-mascot.md), [app icon workflow](skills/logo-land/references/app-icons.md), skill instructions and corresponding native IP prompt guidance.
+- Adaptation: retains three product-related directions, six independent one-pass candidates, heavy rounded forms, lower-corner default and two subject color families plus one background. Adds explicit typed placement, native-tool routing, exact prompt/original receipts, revision-safe imports and original comparison; user creation requests suffice authorization, model identity is unreported unless exposed, and strict color/export rules remain separate. Semantic families are not an implicit exact-color-count constraint.
+- Upstream model preferences, mandatory approval expectations and platform implications are not adopted. No upstream images or executable source are copied.
 
 ## Adobe Leonardo
 

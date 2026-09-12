@@ -1,0 +1,67 @@
+[
+  {
+    "probe": "07-malformed-png",
+    "exit_code": 1,
+    "error": "{\"error\": \"invalid_png: PNG must end with a complete IEND chunk\"}\n",
+    "session_before": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_after": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_unchanged": true,
+    "expected_rejection": true
+  },
+  {
+    "probe": "08-truncated-png",
+    "exit_code": 1,
+    "error": "{\"error\": \"invalid_png: PNG must end with a complete IEND chunk\"}\n",
+    "session_before": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_after": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_unchanged": true,
+    "expected_rejection": true
+  },
+  {
+    "probe": "09-malformed-review",
+    "exit_code": 1,
+    "error": "{\"error\": \"6 validation errors for VisualReview\\nreviewer\\n  Field required [type=missing, input_value={'text_correct': True}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nnotes\\n  Field required [type=missing, input_value={'text_correct': True}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\ncomposition_ok\\n  Field required [type=missing, input_value={'text_correct': True}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsmall_size_ok\\n  Field required [type=missing, input_value={'text_correct': True}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\npreservation_ok\\n  Field required [type=missing, input_value={'text_correct': True}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nbackground_checked\\n  Field required [type=missing, input_value={'text_correct': True}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\"}\n",
+    "session_before": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_after": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_unchanged": true,
+    "expected_rejection": true
+  },
+  {
+    "probe": "10-stale-revision",
+    "exit_code": 1,
+    "error": "{\"error\": \"stale_revision: Expected revision 1; current revision is 3\"}\n",
+    "session_before": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_after": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_unchanged": true,
+    "expected_rejection": true
+  },
+  {
+    "probe": "11-resume-a",
+    "exit_code": 0,
+    "error": "",
+    "session_before": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_after": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_unchanged": true,
+    "expected_rejection": false
+  },
+  {
+    "probe": "12-resume-b",
+    "exit_code": 0,
+    "error": "",
+    "session_before": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_after": "9325a6632bba5e88c2026444baa0351d2638bc3e1c474531822746c0448c762d",
+    "session_unchanged": true,
+    "expected_rejection": false
+  },
+  {
+    "probe": "quoted-exact-brand-data",
+    "status": "literal data present in helper prompt; shell=False argv; no sentinel created",
+    "model_injection_immunity": "not claimed"
+  },
+  {
+    "probe": "unreviewed-export",
+    "exit_code": 1,
+    "error": "{\"error\": \"review_required: All explicit visual review checks must pass\"}\n",
+    "no_delivery_created": true
+  }
+]

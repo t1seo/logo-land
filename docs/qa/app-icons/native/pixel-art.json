@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "candidate_id": "pixel-art",
+  "attempt_id": "pixel-art-draw-1",
+  "task_id": "task_321c7338a8c9",
+  "dispatch_id": "ctx_a644b8197cdf",
+  "workspace": "output/app-icons-native/pixel-art",
+  "session_id": "pixel-art",
+  "artifact_id": "pixel-art",
+  "status": "imported",
+  "native_status": "returned",
+  "import_status": "imported",
+  "created_at": "2026-09-12T17:14:08.917443+00:00",
+  "history": [
+    {
+      "status": "planned",
+      "at": "2026-09-12T17:14:08.917443+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-12T17:14:18.273627+00:00",
+      "note": "Single authorized prompt-only call; do not rerun if interrupted"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-12T17:15:13.764070+00:00",
+      "source_basename": "exec-0402d8c4-45f5-43f8-9755-0b0c1bf928f2.png",
+      "sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5"
+    },
+    {
+      "status": "imported",
+      "at": "2026-09-12T17:15:27.876263+00:00"
+    },
+    {
+      "status": "verified",
+      "at": "2026-09-12T17:18:04.018625+00:00",
+      "native_call_repeated": false
+    }
+  ],
+  "prompt_path": "output/app-icons-native/pixel-art/prompt.txt",
+  "prompt_result_path": "output/app-icons-native/pixel-art/prompt-result.json",
+  "prompt_sha256": "d63cb8b72f9124c68d1b29348e9a5de74ade002e602a70828ee93f56aff4eaad",
+  "revision": 0,
+  "resolved_intent": {
+    "preset": "pixel_art",
+    "subject": "one chunky hourglass with a broad frame and a single visible sand region",
+    "placement": "center",
+    "text": null
+  },
+  "resolved_palette": null,
+  "requested_background": "opaque",
+  "parent": null,
+  "native_tool": "image_gen.imagegen",
+  "provider": "OpenAI built-in native image tool",
+  "model": "unreported",
+  "tool_call_id": null,
+  "calls_per_candidate": 1,
+  "native_calls_started": 1,
+  "automatic_artistic_retry": false,
+  "tool_arguments": [
+    "prompt"
+  ],
+  "verification_plan": [
+    "Generate once and preserve exact returned PNG",
+    "Import with captured prompt, revision and intent; show and verify hashes",
+    "Run owned loopback HTTP byte check and adversarial probes; clean temporary files"
+  ],
+  "helper_commands_path": "output/app-icons-native/pixel-art/helper-commands.json",
+  "scope": {
+    "only_owned_paths_modified": true,
+    "shared_dirty_worktree_preserved": true,
+    "platform_ready": false,
+    "approved_export": false
+  },
+  "started_at": "2026-09-12T17:14:18.273627+00:00",
+  "returned_at": "2026-09-12T17:15:13.764070+00:00",
+  "native_source_basename": "exec-0402d8c4-45f5-43f8-9755-0b0c1bf928f2.png",
+  "native_source_sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+  "original_path": "output/app-icons-native/pixel-art/original.png",
+  "original_sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+  "actual": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "frames": 1,
+    "bytes": 946180
+  },
+  "native_result_path": "output/app-icons-native/pixel-art/native-result.json",
+  "visual_observation": {
+    "inspected": "Native tool inline image in this turn",
+    "description": "Centered turquoise stepped hourglass with peach sand over deep navy background; square canvas and no visible text.",
+    "variation_preserved": "Two visible sand regions plus falling square grains and subtle texture/shading; steps are not perfectly uniform. Kept unchanged without artistic retry.",
+    "classification": "Returned creative candidate, not approved or platform-ready"
+  },
+  "imported_at": "2026-09-12T17:15:27.876263+00:00",
+  "import_result_path": "output/app-icons-native/pixel-art/import-result.json",
+  "show_result_path": "output/app-icons-native/pixel-art/show-result.json",
+  "outcome": "returned_and_imported",
+  "completed_at": "2026-09-12T17:18:04.018625+00:00",
+  "verification_status": "PASS",
+  "hashes": {
+    "returned_inline_png": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "native_source": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "original": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "imported_file": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "session_artifact": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "native_receipt": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "http_response_body": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5"
+  },
+  "hashes_agree": true,
+  "helper_artifact_path": "output/app-icons-native/pixel-art/.logo-generator/sessions/pixel-art/artifacts/pixel-art.png",
+  "helper_session_path": "output/app-icons-native/pixel-art/.logo-generator/sessions/pixel-art/session.json",
+  "session_revision": 1,
+  "verification_path": "output/app-icons-native/pixel-art/verification.json",
+  "http_result": {
+    "status": "PASS",
+    "command": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8780/original.png",
+      "-o",
+      "output/app-icons-native/pixel-art/temporary-http-response.bin"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "http_status_line": "HTTP/1.0 200 OK",
+    "http_status": 200,
+    "response_headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:16:44 GMT\r\nContent-type: image/png\r\nContent-Length: 946180\r\nLast-Modified: Sat, 12 Sep 2026 17:15:13 GMT",
+    "response_body_sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "original_sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "response_body_bytes": 946180,
+    "bounded": {
+      "connect_timeout_seconds": 10,
+      "max_time_seconds": 30,
+      "driver_timeout_seconds": 35
+    },
+    "verification_scope": "HTTP 200 and served bytes match original PNG only; not artwork or platform approval",
+    "server_log": "\"GET /original.png HTTP/1.1\" 200 -\n",
+    "completed_at": "2026-09-12T17:16:44.901746+00:00"
+  },
+  "cleanup": {
+    "http": {
+      "state": "cleaned",
+      "registered_at": "2026-09-12T17:16:44.822458+00:00",
+      "owner": "pixel-art-draw-1",
+      "server_pid": 95217,
+      "server_kind": "Owned temporary HTTP server thread in this driver process",
+      "bind_address": "127.0.0.1",
+      "port": 8780,
+      "root": "output/app-icons-native/pixel-art",
+      "temporary_capture": "output/app-icons-native/pixel-art/temporary-http-response.bin",
+      "temporary_log": "output/app-icons-native/pixel-art/temporary-http-server.log",
+      "started_at": "2026-09-12T17:16:44.830985+00:00",
+      "server_thread_stopped": true,
+      "listener_absent": true,
+      "port_rebind_succeeded": true,
+      "capture_removed": true,
+      "log_removed": true,
+      "cleaned_at": "2026-09-12T17:16:45.397755+00:00",
+      "server_shutdown": "Only this registered in-process server was shut down; no other PID was signaled"
+    },
+    "probes": {
+      "registered_at": "2026-09-12T17:16:44.818738+00:00",
+      "owner": "pixel-art-draw-1",
+      "state": "cleaned",
+      "temporary_files": [
+        "output/app-icons-native/pixel-art/temporary-malformed-intent.json",
+        "output/app-icons-native/pixel-art/temporary-oversized-input.bin"
+      ],
+      "fixture_note": "Malformed text and sparse oversized non-image input only; no synthetic raster and no modified native source",
+      "all_registered_files_removed": true,
+      "cleaned_at": "2026-09-12T17:16:54.370600+00:00"
+    }
+  },
+  "adversarial_probes_path": "output/app-icons-native/pixel-art/adversarial-probes.json",
+  "adversarial_probe_statuses": {
+    "malformed_icon_file": "PASS",
+    "non_image_file": "PASS",
+    "oversized_file_limit": "PASS",
+    "stale_revision_after_return": "PASS",
+    "duplicate_import": "PASS",
+    "duplicate_import_repeated": "PASS",
+    "quoted_prompt_injection": "PASS",
+    "malformed_receipt_in_memory": "PASS",
+    "png_limits": "PASS",
+    "cancel_resume_same_attempt": "N/A",
+    "native_liveness": "PASS",
+    "no_artistic_retry": "PASS",
+    "dirty_worktree": "PASS"
+  },
+  "remaining": "Coordinator aggregate gallery and Chrome verification; no remaining pixel-art worker action",
+  "limitations": [
+    "One native draw only; visual variation preserved",
+    "No live cancellation occurred; no cancellation-resume behavior claimed",
+    "Over-limit pixel-count PNG not fabricated; actual dimensions validated and file size rejection exercised",
+    "Chrome gallery integration belongs to the coordinator; HTTP verifies served bytes only",
+    "Build and source LSP checks are not applicable to this sample-only task; no source or tests were added or edited"
+  ],
+  "deliverable_paths": [
+    "output/app-icons-native/pixel-art/.logo-generator/sessions/pixel-art/artifacts/pixel-art.png",
+    "output/app-icons-native/pixel-art/.logo-generator/sessions/pixel-art/session.json",
+    "output/app-icons-native/pixel-art/adversarial-probes.json",
+    "output/app-icons-native/pixel-art/app-icon.json",
+    "output/app-icons-native/pixel-art/brief.json",
+    "output/app-icons-native/pixel-art/helper-commands.json",
+    "output/app-icons-native/pixel-art/http-resource-registry.json",
+    "output/app-icons-native/pixel-art/http-verification.json",
+    "output/app-icons-native/pixel-art/import-result.json",
+    "output/app-icons-native/pixel-art/init-result.json",
+    "output/app-icons-native/pixel-art/native-result.json",
+    "output/app-icons-native/pixel-art/original.png",
+    "output/app-icons-native/pixel-art/probe-resource-registry.json",
+    "output/app-icons-native/pixel-art/prompt-result.json",
+    "output/app-icons-native/pixel-art/prompt.txt",
+    "output/app-icons-native/pixel-art/show-result.json",
+    "output/app-icons-native/pixel-art/verification.json",
+    "docs/qa/app-icons/native/pixel-art.json"
+  ]
+}

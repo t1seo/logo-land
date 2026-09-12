@@ -1,0 +1,25 @@
+..........................F                                              [100%]
+=================================== FAILURES ===================================
+_____ test_historical_monogram_import_and_gallery_preserve_original_bytes ______
+
+harness = Harness(workspace=PosixPath('/private/tmp/ll-icon-quality-core/pytest-pin/test_historical_monogram_impor0/작업 공간'), bri...pt.txt'), review=PosixPath('/private/tmp/ll-icon-quality-core/pytest-pin/test_historical_monogram_impor0/review.json'))
+
+    def test_historical_monogram_import_and_gallery_preserve_original_bytes(harness: Harness) -> None:
+        # Given: the historical full prompt belongs to synthetic imported artwork.
+        original = (FIXTURES / "prompt-icon-monogram.txt").read_bytes()
+        _ = icon_brief(harness, monogram=True)
+        _ = harness.prompt.write_bytes(original)
+        harness.init()
+        _ = harness.import_image()
+        before = harness.state_path.read_bytes()
+        # When: the original is published through the actual gallery CLI.
+>       result = GalleryResult.model_validate_json(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            harness.ok("icon-gallery", "--session", "demo", "--artifacts", "v1", "--output", "old")
+        )
+E       AttributeError: type object 'GalleryResult' has no attribute 'model_validate_json'
+
+tests/test_app_icon_prompts.py:151: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_app_icon_prompts.py::test_historical_monogram_import_and_gallery_preserve_original_bytes
+1 failed, 26 passed in 0.52s

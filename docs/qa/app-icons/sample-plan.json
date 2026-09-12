@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "plan": "plans/logo-land-app-icons.md",
+  "orca_run": "run_1bb653ce3b14",
+  "purpose": "Fictional examples demonstrating six app-icon artwork presets; not a platform asset package.",
+  "native_tool": "image_gen.imagegen",
+  "model": "unreported",
+  "candidate_count": 11,
+  "calls_per_candidate": 1,
+  "automatic_artistic_retry": false,
+  "candidates": [
+    {
+      "id": "ip-a1",
+      "label": "A1",
+      "name": "Bori Reading · Owl",
+      "direction": "A calm reading guide. One broad face region and a heavy round silhouette; emerge from the lower-left.",
+      "attempt_id": "ip-a1-draw-1",
+      "workspace": "output/app-icons-native/ip-a1",
+      "receipt": "docs/qa/app-icons/native/ip-a1.json",
+      "brief": {
+        "brand_name": "Bori Reading · Owl",
+        "exact_text": "",
+        "industry": "Fictional mobile reading application",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "mascot",
+        "styles": [],
+        "palette": [
+          "Character primary: warm golden yellow #FFD36E",
+          "Character secondary: deep navy #24364B",
+          "Solid background: muted sage #A5B7A2"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "ip_mascot",
+          "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+          "placement": "lower_left",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ip-a2",
+      "label": "A2",
+      "name": "Bori Reading · Owl",
+      "direction": "A calm reading guide. A slightly wider head and a single broad contrasting face region; emerge from the lower-right.",
+      "attempt_id": "ip-a2-draw-1",
+      "workspace": "output/app-icons-native/ip-a2",
+      "receipt": "docs/qa/app-icons/native/ip-a2.json",
+      "brief": {
+        "brand_name": "Bori Reading · Owl",
+        "exact_text": "",
+        "industry": "Fictional mobile reading application",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "mascot",
+        "styles": [],
+        "palette": [
+          "Character primary: clear sky blue #78B7CF",
+          "Character secondary: deep teal #173E4A",
+          "Solid background: muted lavender #B8ABC9"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "ip_mascot",
+          "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+          "placement": "lower_right",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ip-b1",
+      "label": "B1",
+      "name": "Bori Reading · Capybara",
+      "direction": "An unhurried reading companion. A compact large head and a single broad muzzle region; emerge from the lower-left.",
+      "attempt_id": "ip-b1-draw-1",
+      "workspace": "output/app-icons-native/ip-b1",
+      "receipt": "docs/qa/app-icons/native/ip-b1.json",
+      "brief": {
+        "brand_name": "Bori Reading · Capybara",
+        "exact_text": "",
+        "industry": "Fictional mobile reading application",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "mascot",
+        "styles": [],
+        "palette": [
+          "Character primary: warm terracotta #C87655",
+          "Character secondary: light warm cream #FFE2B8",
+          "Solid background: muted sage green #A1B6A5"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "ip_mascot",
+          "subject": "a baby capybara with one broad blunt rounded muzzle and both small rounded ears visible",
+          "placement": "lower_left",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ip-b2",
+      "label": "B2",
+      "name": "Bori Reading · Capybara",
+      "direction": "An unhurried reading companion. A plump rounded cheek silhouette and one large muzzle region; emerge from the lower-right.",
+      "attempt_id": "ip-b2-draw-1",
+      "workspace": "output/app-icons-native/ip-b2",
+      "receipt": "docs/qa/app-icons/native/ip-b2.json",
+      "brief": {
+        "brand_name": "Bori Reading · Capybara",
+        "exact_text": "",
+        "industry": "Fictional mobile reading application",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "mascot",
+        "styles": [],
+        "palette": [
+          "Character primary: lively sage green #88AA91",
+          "Character secondary: pale oat cream #F2DFC0",
+          "Solid background: muted blue #A9BDCC"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "ip_mascot",
+          "subject": "a baby capybara with one broad blunt rounded muzzle and both small rounded ears visible",
+          "placement": "lower_right",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ip-c1",
+      "label": "C1",
+      "name": "Bori Reading · Puppy",
+      "direction": "A friendly companion that encourages returning to a daily reading habit. One round head and broad face patch; emerge from the lower-left.",
+      "attempt_id": "ip-c1-draw-1",
+      "workspace": "output/app-icons-native/ip-c1",
+      "receipt": "docs/qa/app-icons/native/ip-c1.json",
+      "brief": {
+        "brand_name": "Bori Reading · Puppy",
+        "exact_text": "",
+        "industry": "Fictional mobile reading application",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "mascot",
+        "styles": [],
+        "palette": [
+          "Character primary: clear apricot #F0A05D",
+          "Character secondary: deep warm brown #593D32",
+          "Solid background: muted periwinkle #B3B9D2"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "ip_mascot",
+          "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+          "placement": "lower_left",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ip-c2",
+      "label": "C2",
+      "name": "Bori Reading · Puppy",
+      "direction": "A friendly companion that encourages returning to a daily reading habit. A compact head and a continuous large muzzle patch; emerge from the lower-right.",
+      "attempt_id": "ip-c2-draw-1",
+      "workspace": "output/app-icons-native/ip-c2",
+      "receipt": "docs/qa/app-icons/native/ip-c2.json",
+      "brief": {
+        "brand_name": "Bori Reading · Puppy",
+        "exact_text": "",
+        "industry": "Fictional mobile reading application",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "mascot",
+        "styles": [],
+        "palette": [
+          "Character primary: warm golden yellow #EABD4B",
+          "Character secondary: deep aubergine #493447",
+          "Solid background: dusty rose #C7A7B8"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "ip_mascot",
+          "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+          "placement": "lower_right",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "pictogram",
+      "label": "D",
+      "name": "Pocket Forecast",
+      "direction": "A bold centered weather pictogram made from two or three clean filled shapes with generous visual separation.",
+      "attempt_id": "pictogram-draw-1",
+      "workspace": "output/app-icons-native/pictogram",
+      "receipt": "docs/qa/app-icons/native/pictogram.json",
+      "brief": {
+        "brand_name": "Pocket Forecast",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [],
+        "palette": [
+          "Subject primary: sunshine yellow #FFD561",
+          "Subject secondary: warm white #FFFAEE",
+          "Solid background: soft blue #8FBBDD"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "pictogram",
+          "subject": "one simple sun partly behind a single broad rounded cloud",
+          "placement": "center",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "abstract",
+      "label": "E",
+      "name": "Quiet Focus",
+      "direction": "A nonliteral focus motif: two heavy arcs with generous open space and a calm balanced center. No face or figurative objects.",
+      "attempt_id": "abstract-draw-1",
+      "workspace": "output/app-icons-native/abstract",
+      "receipt": "docs/qa/app-icons/native/abstract.json",
+      "brief": {
+        "brand_name": "Quiet Focus",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [],
+        "palette": [
+          "Subject primary: rich indigo #4656CF",
+          "Subject secondary: coral #F08069",
+          "Solid background: pale warm pink #F3E2DE"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "abstract",
+          "subject": "two broad interlocking rounded arcs forming one balanced continuous rhythmic gesture",
+          "placement": "center",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "monogram",
+      "label": "F",
+      "name": "모아 Notes",
+      "direction": "Draw only the exact Korean syllable 모 in a clear heavy rounded letterform, centered with comfortable margins. No other lettering.",
+      "attempt_id": "monogram-draw-1",
+      "workspace": "output/app-icons-native/monogram",
+      "receipt": "docs/qa/app-icons/native/monogram.json",
+      "brief": {
+        "brand_name": "모아 Notes",
+        "exact_text": "모",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "monogram",
+        "styles": [],
+        "palette": [
+          "Letter: deep sapphire #153F78",
+          "Solid background: warm ivory #F5EBDD"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "monogram",
+          "subject": "one bold rounded Korean letter with a compact balanced silhouette",
+          "placement": "center",
+          "text": "모"
+        }
+      }
+    },
+    {
+      "id": "soft-3d",
+      "label": "G",
+      "name": "Pocket Sprout",
+      "direction": "A soft sculpted plant-care motif with broad gentle dimensional shading, a clean silhouette, and a quiet uniform background.",
+      "attempt_id": "soft-3d-draw-1",
+      "workspace": "output/app-icons-native/soft-3d",
+      "receipt": "docs/qa/app-icons/native/soft-3d.json",
+      "brief": {
+        "brand_name": "Pocket Sprout",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [],
+        "palette": [
+          "Subject primary: jade green #5CA585",
+          "Subject secondary: pale leaf green #E7F0C7",
+          "Solid background: warm butter #E9D7A9"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "soft_3d",
+          "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+          "placement": "center",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "pixel-art",
+      "label": "H",
+      "name": "Little Timer",
+      "direction": "Deliberate pixel art with a coarse consistent square grid, broad readable blocks and a centered hourglass. No digits, text, sparkles or scenery.",
+      "attempt_id": "pixel-art-draw-1",
+      "workspace": "output/app-icons-native/pixel-art",
+      "receipt": "docs/qa/app-icons/native/pixel-art.json",
+      "brief": {
+        "brand_name": "Little Timer",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [],
+        "palette": [
+          "Frame: bright turquoise #66C7CA",
+          "Sand: warm peach #F5A98D",
+          "Solid background: deep navy #253C55"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "pixel_art",
+          "subject": "one chunky hourglass with a broad frame and a single visible sand region",
+          "placement": "center",
+          "text": null
+        }
+      }
+    }
+  ]
+}

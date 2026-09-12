@@ -1,0 +1,68 @@
+[
+  {
+    "candidate_id": "ip-a1",
+    "sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "ip-a2",
+    "sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "ip-b1",
+    "sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "ip-b2",
+    "sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "ip-c1",
+    "sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "ip-c2",
+    "sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "pictogram",
+    "sha256": "f02af7a96e63be9756c23a926d1e058e5fb23de485d0627c6be5871a72455b42",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "abstract",
+    "sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "monogram",
+    "sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "soft-3d",
+    "sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  },
+  {
+    "candidate_id": "pixel-art",
+    "sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+    "native_original_import_catalog_gallery_unchanged": true,
+    "source_receipt_session_prompt_unchanged": true
+  }
+]

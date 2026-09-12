@@ -1,0 +1,12 @@
+{
+  "mode": "edit",
+  "session_id": "demo",
+  "revision": 1,
+  "prompt": "Edit the supplied parent logo v1; do not recreate an unrelated logo.\nParent requested background: opaque; preserve it unless the latest requested changes specify another background.\nLatest requested changes (authoritative): Preserve the original. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent. Requested changes override conflicting parent intent and fields in the following original brief context; its background is historical, not a new request.\nCreate one symbol logo for Pocket Sprout. Industry: Fictional mobile application artwork example. Audience: People seeking a friendly and immediately recognizable mobile experience.\nExact text (copy verbatim, no other words): ''. Exact slogan: ''.\nStyles: . Original brief palette context: Subject primary: jade green #5CA585, Subject secondary: pale leaf green #E7F0C7, Solid background: warm butter #E9D7A9.\nAvoid: watermark, presentation frame, extra lettering. Use cases: Mobile app icon artwork demonstration.\nInitial brief background (historical intent): opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Distinct, simple brand identity. Assumptions: Fictional product brief chosen by the assistant for sample coverage.",
+  "parent_id": "v1",
+  "parent_image_path": "/private/tmp/ll-icon-quality-core/workspaces/parent-null/.logo-generator/sessions/demo/artifacts/v1.png",
+  "parent_requested_background": "opaque",
+  "palette_id": null,
+  "palette_digest": null,
+  "lockup": null
+}

@@ -1,0 +1,52 @@
+ M .codex-plugin/plugin.json
+ M CHANGELOG.md
+ M README.ko.md
+ M README.md
+ M THIRD_PARTY_NOTICES.md
+ M docs/README.md
+ M docs/brand/README.md
+ M docs/releases.md
+ M pyproject.toml
+ M skills/logo-land/SKILL.md
+ M skills/logo-land/references/native-image.md
+ M skills/logo-land/references/project-files.md
+ M skills/logo-land/scripts/logo_helper/artifact_models.py
+ M skills/logo-land/scripts/logo_helper/brief_models.py
+ M skills/logo-land/scripts/logo_helper/cli_options.py
+ M skills/logo-land/scripts/logo_helper/delivery.py
+ M skills/logo-land/scripts/logo_helper/intent.py
+ M skills/logo-land/scripts/logo_helper/models.py
+ M skills/logo-land/scripts/logo_helper/prompts.py
+ M skills/logo-land/scripts/logo_helper/workflow.py
+ M skills/logo-land/scripts/logo_project.py
+ M uv.lock
+?? assets/logo-land-studio.png
+?? docs/app-icons/
+?? docs/brand/2026-identity/
+?? docs/brand/legacy.md
+?? docs/qa/app-icons/
+?? docs/research/app-icon-quality-sources.json
+?? docs/research/app-icon-quality.md
+?? docs/research/app-icon-sources.json
+?? docs/research/app-icon-tools.md
+?? plans/logo-land-app-icons.md
+?? skills/logo-land/assets/app-icon-gallery.template.html
+?? skills/logo-land/assets/app-icon.example.json
+?? skills/logo-land/assets/ip-as-logo.LICENSE
+?? skills/logo-land/references/app-icons.md
+?? skills/logo-land/references/ip-mascot.md
+?? skills/logo-land/scripts/logo_helper/app_icon_cli.py
+?? skills/logo-land/scripts/logo_helper/app_icon_gallery.py
+?? skills/logo-land/scripts/logo_helper/app_icon_guide.py
+?? skills/logo-land/scripts/logo_helper/app_icon_models.py
+?? skills/logo-land/scripts/logo_helper/app_icon_presets.py
+?? skills/logo-land/scripts/logo_helper/app_icon_prompts.py
+?? skills/logo-land/scripts/logo_helper/app_icon_publish.py
+?? tests/test_app_icon_compatibility.py
+?? tests/test_app_icon_delivery.py
+?? tests/test_app_icon_gallery.py
+?? tests/test_app_icon_models.py
+?? tests/test_app_icon_prompts.py
+?? tests/test_app_icon_workflow.py
+?? tests/test_app_icon_workflow_invariants.py
+?? tests/test_app_icon_workflow_palette.py

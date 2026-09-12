@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "manual-pixel-art",
+  "revision": 0,
+  "created_at": "2026-09-12T18:07:13.002142Z",
+  "updated_at": "2026-09-12T18:07:13.002142Z",
+  "brief": {
+    "brand_name": "Little Timer",
+    "exact_text": "",
+    "industry": "Fictional mobile application artwork example",
+    "audience": "People seeking a friendly and immediately recognizable mobile experience",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [],
+    "palette": [
+      "Frame: bright turquoise #66C7CA",
+      "Sand: warm peach #F5A98D",
+      "Solid background: deep navy #253C55"
+    ],
+    "forbidden": [
+      "watermark",
+      "presentation frame",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "Mobile app icon artwork demonstration"
+    ],
+    "assumptions": [
+      "Fictional product brief chosen by the assistant for sample coverage"
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "pixel_art",
+      "subject": "one chunky hourglass with a broad frame and a single visible sand region",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

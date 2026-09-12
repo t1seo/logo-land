@@ -1,0 +1,443 @@
+{
+  "id": "soft-3d-quality-v1",
+  "old_id": "soft-3d",
+  "attempt_id": "soft-3d-quality-v1-draw-1",
+  "state": "returned",
+  "session_id": "soft-3d-quality-v1",
+  "artifact_id": "soft-3d-quality-v1",
+  "generation_revision": 0,
+  "tool": "image_gen__imagegen",
+  "provider": "host-native image_gen",
+  "model": "unreported",
+  "prompt_file": "output/app-icons-native/soft-3d-quality-v1/prompt.txt",
+  "prompt_sha256": "4ecbd90914e59d66f3924f50ae7526771ab61e4a4ce4735a442fdda7dfb1ac78",
+  "app_icon": {
+    "preset": "soft_3d",
+    "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+    "placement": "center",
+    "text": null
+  },
+  "original": {
+    "path": "output/app-icons-native/soft-3d-quality-v1/original.png",
+    "sha256": "ae58ba14b66c9953c5fa45456cf54912ed239e0434713edd50c31738cea132e2",
+    "width": 1254,
+    "height": 1254,
+    "native_basename": "exec-ba06ca24-975f-4a2b-96b7-f58a5c748938.png"
+  },
+  "imported": {
+    "path": "output/app-icons-native/soft-3d-quality-v1/.logo-generator/sessions/soft-3d-quality-v1/artifacts/soft-3d-quality-v1.png",
+    "sha256": "ae58ba14b66c9953c5fa45456cf54912ed239e0434713edd50c31738cea132e2",
+    "session_revision": 1,
+    "width": 1254,
+    "height": 1254
+  },
+  "commands": [
+    {
+      "label": "init",
+      "argv": [
+        ".venv/bin/python",
+        "skills/logo-land/scripts/logo_project.py",
+        "--workspace",
+        "output/app-icons-native/soft-3d-quality-v1",
+        "init",
+        "--session",
+        "soft-3d-quality-v1",
+        "--brief",
+        "output/app-icons-native/soft-3d-quality-v1/brief.json"
+      ],
+      "started_at": "2026-09-12T18:17:44Z",
+      "exit_code": 0,
+      "stdout_file": "output/app-icons-native/soft-3d-quality-v1/init.json",
+      "stderr_file": "output/app-icons-native/soft-3d-quality-v1/init.stderr.txt",
+      "timeout_seconds": 30
+    },
+    {
+      "label": "prompt",
+      "argv": [
+        ".venv/bin/python",
+        "skills/logo-land/scripts/logo_project.py",
+        "--workspace",
+        "output/app-icons-native/soft-3d-quality-v1",
+        "prompt",
+        "--session",
+        "soft-3d-quality-v1",
+        "--concept",
+        "Pocket Sprout conveys gentle care through one plump heart-shaped jade leaf, softly asymmetric lobes and one shallow central fold; a smooth matte molded surface and broad upper-left light reveal restrained volume from a near-frontal view. Keep the butter background uniform, with no external cast/contact shadow, botanical pores/veins, wet gloss, extra stem or scene.",
+        "--changes",
+        "",
+        "--app-icon-file",
+        "output/app-icons-native/soft-3d-quality-v1/app-icon.json"
+      ],
+      "started_at": "2026-09-12T18:17:45Z",
+      "exit_code": 0,
+      "stdout_file": "output/app-icons-native/soft-3d-quality-v1/prompt.json",
+      "stderr_file": "output/app-icons-native/soft-3d-quality-v1/prompt.stderr.txt",
+      "timeout_seconds": 30
+    },
+    {
+      "label": "import",
+      "argv": [
+        ".venv/bin/python",
+        "skills/logo-land/scripts/logo_project.py",
+        "--workspace",
+        "output/app-icons-native/soft-3d-quality-v1",
+        "import",
+        "--session",
+        "soft-3d-quality-v1",
+        "--artifact",
+        "soft-3d-quality-v1",
+        "--image",
+        "output/app-icons-native/soft-3d-quality-v1/original.png",
+        "--prompt-file",
+        "output/app-icons-native/soft-3d-quality-v1/prompt.txt",
+        "--app-icon-file",
+        "output/app-icons-native/soft-3d-quality-v1/app-icon.json",
+        "--background",
+        "opaque",
+        "--revision",
+        "0"
+      ],
+      "exit_code": 0,
+      "stdout_file": "output/app-icons-native/soft-3d-quality-v1/import.json",
+      "stderr_file": "output/app-icons-native/soft-3d-quality-v1/import.stderr.txt",
+      "timeout_seconds": 30
+    },
+    {
+      "label": "show",
+      "argv": [
+        ".venv/bin/python",
+        "skills/logo-land/scripts/logo_project.py",
+        "--workspace",
+        "output/app-icons-native/soft-3d-quality-v1",
+        "show",
+        "--session",
+        "soft-3d-quality-v1"
+      ],
+      "exit_code": 0,
+      "stdout_file": "output/app-icons-native/soft-3d-quality-v1/show.json",
+      "stderr_file": "output/app-icons-native/soft-3d-quality-v1/show.stderr.txt",
+      "timeout_seconds": 30
+    },
+    {
+      "label": "fixture-init-before-directory-created",
+      "exit_code": 1,
+      "elapsed_seconds": 0.20598499849438667,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fixture-init",
+      "exit_code": 0,
+      "elapsed_seconds": 0.17343700118362904,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "malformed-json",
+      "exit_code": 1,
+      "elapsed_seconds": 0.17277699895203114,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "malformed-png",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2064089998602867,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "quoted-injection",
+      "exit_code": 0,
+      "elapsed_seconds": 0.22750699892640114,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "synthetic-import",
+      "exit_code": 0,
+      "elapsed_seconds": 0.20182599872350693,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "stale-revision",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2122619990259409,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "duplicate-artifact",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22282700054347515,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fresh-show-1",
+      "exit_code": 0,
+      "elapsed_seconds": 0.22842499986290932,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fresh-prompt-1",
+      "exit_code": 0,
+      "elapsed_seconds": 0.21285399980843067,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fresh-show-2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.22302599996328354,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fresh-prompt-2",
+      "exit_code": 0,
+      "elapsed_seconds": 0.255749998614192,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fresh-show-3",
+      "exit_code": 0,
+      "elapsed_seconds": 0.191813999786973,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "fresh-prompt-3",
+      "exit_code": 0,
+      "elapsed_seconds": 0.19364000111818314,
+      "timeout_seconds": 30,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/probe-evidence.private.json"
+    },
+    {
+      "label": "http-original",
+      "argv": [
+        "curl",
+        "-i",
+        "--fail",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "2",
+        "--max-time",
+        "10",
+        "http://127.0.0.1:8799/original.png",
+        "-o",
+        "${TASK_TEMP}/original.http"
+      ],
+      "temporary_root_name": "ll-soft-3d-quality-v1",
+      "exit_code": 0,
+      "evidence_file": "output/app-icons-native/soft-3d-quality-v1/http-verification.json"
+    }
+  ],
+  "adversarial_classes": {
+    "malformed_input": {
+      "status": "PASS",
+      "actual": "Disposable malformed AppIconIntent JSON and fake PNG rejected by actual helper with no fixture state mutation.",
+      "commands": [
+        "malformed-json",
+        "malformed-png"
+      ]
+    },
+    "prompt_injection": {
+      "status": "PASS",
+      "actual": "Injected description preserved exactly inside quoted JSON before trusted no-lettering constraints; argv processing remained inert and marker absent.",
+      "native_injection_test": "N/A: no extra native draw authorized; prompt hygiene only, no model immunity claim."
+    },
+    "cancel_resume": {
+      "status": "PASS",
+      "actual": "Three fresh processes each re-read show and rebuilt identical saved prompt; persistent original/prompt/session remained byte-identical.",
+      "cancellation": "N/A: actual native call settled normally; no forced cancellation."
+    },
+    "stale_state": {
+      "status": "PASS",
+      "actual": "Stale revision and current-revision duplicate artifact imports rejected in isolated synthetic session without file overwrite.",
+      "commands": [
+        "stale-revision",
+        "duplicate-artifact"
+      ]
+    },
+    "dirty_worktree": {
+      "status": "PASS",
+      "actual": "Already dirty shared tree respected; all 44 old catalog/source original and prompt hashes stayed pinned; changes confined to assigned receipt/workspace and registered temp."
+    },
+    "hung_commands": {
+      "status": "PASS",
+      "actual": "Actual helper subprocesses finished within 30-second bounds; curl used 2-second connect and 10-second total limits; native call returned in the original exec cell without cancellation.",
+      "native_exec_wall_seconds": 21.5,
+      "native_cell_yielded": false,
+      "native_settled": true,
+      "forced_hang": "N/A: no command hung."
+    },
+    "flaky_tests": {
+      "status": "N/A",
+      "reason": "No software tests added or rerun; task changes data and native generation is stochastic. Exactly one native call and no artistic rerolls."
+    },
+    "misleading_success": {
+      "status": "PASS",
+      "actual": "Real native PNG response data and exact native file, copied original and normal import match hash/dimensions; HTTP 200 body matches separately. No selection, review, color compliance, export or store approval."
+    },
+    "repeated_interruptions": {
+      "status": "PASS",
+      "actual": "Three receipt re-reads and fresh show/prompt process pairs retained returned state, fixed attempt ID and call_count 1; no second native invocation.",
+      "real_interruptions": "N/A: none occurred during native call."
+    }
+  },
+  "cleanup": {
+    "state": "complete",
+    "persistent_workspace": "output/app-icons-native/soft-3d-quality-v1",
+    "persistent_receipt": "docs/qa/app-icons/native/soft-3d-quality-v1.json",
+    "temporary_directory_name": "ll-soft-3d-quality-v1",
+    "temporary_root_removed": true,
+    "temporary_files_transcribed_and_removed": 8,
+    "http_host": "127.0.0.1",
+    "http_port": 8799,
+    "owned_server_pid": 28036,
+    "server_identity_verified_before_stop": true,
+    "owned_server_stopped": true,
+    "port_released": true,
+    "native_file_preserved": true,
+    "original_and_session_preserved": true,
+    "private_evidence_file": "output/app-icons-native/soft-3d-quality-v1/cleanup.private.json"
+  },
+  "history": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T18:17:44Z"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T18:18:08Z"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T18:18:49Z"
+    }
+  ],
+  "call_count": 1,
+  "concept": "Pocket Sprout conveys gentle care through one plump heart-shaped jade leaf, softly asymmetric lobes and one shallow central fold; a smooth matte molded surface and broad upper-left light reveal restrained volume from a near-frontal view. Keep the butter background uniform, with no external cast/contact shadow, botanical pores/veins, wet gloss, extra stem or scene.",
+  "changes": "",
+  "parent": null,
+  "references": [
+
+  ],
+  "work_ledger": [
+    {
+      "step": "Pin inputs and save helper generation request",
+      "state": "completed"
+    },
+    {
+      "step": "One native call, preserve original, import and show",
+      "state": "completed"
+    },
+    {
+      "step": "Verify provenance, nine classes and HTTP; cleanup",
+      "state": "completed"
+    }
+  ],
+  "resolved_intent": {
+    "mode": "generation",
+    "session_id": "soft-3d-quality-v1",
+    "revision": 0,
+    "parent_id": null,
+    "parent_image_path": null,
+    "parent_requested_background": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "lockup": null,
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+      "placement": "center",
+      "text": null
+    },
+    "requested_background": "opaque"
+  },
+  "input_verification": {
+    "brief_all_values_equal_old": true,
+    "old_plan_sha256": "a9d544a85d441170129299ef9123cf9e0749df048b7f7cfd0720c3304d6a0f64",
+    "protected_old_file_count": 44,
+    "q2_source_sha256": "d59ff54a2c77a368390be832bda5643af92dbab75d1a6431838687397e847080",
+    "q2_evidence": "docs/qa/app-icons/quality-core.md",
+    "q3_evidence": "docs/qa/app-icons/quality-guidance.md"
+  },
+  "native_call": {
+    "schema_parameters": [
+      "prompt"
+    ],
+    "reference_parameters_omitted": true,
+    "tool": "image_gen__imagegen",
+    "response_file": "output/app-icons-native/soft-3d-quality-v1/native-response.private.json",
+    "response_saved_exactly": true,
+    "data_url_matches_native_file": true,
+    "settled": true,
+    "generated_image_rendered": true
+  },
+  "verification": {
+    "native_source_import_png_sha_equal": true,
+    "native_source_import_dimensions_equal": true,
+    "stored_prompt_sha_equal": true,
+    "app_icon_equal": true,
+    "generation_revision": 0,
+    "post_import_session_revision": 1,
+    "parent_null": true,
+    "requested_background": "opaque",
+    "selected_id": null,
+    "review": null,
+    "exports": [
+
+    ],
+    "color_reports": [
+
+    ],
+    "transparent_pixels": 0,
+    "protected_old_files_unchanged": 44,
+    "repeated_resume_no_mutation": true,
+    "final_native_original_import_hashes_equal": true,
+    "no_artistic_reroll": true,
+    "native_call_count": 1,
+    "public_receipt_portable": true,
+    "all_owned_json_parse": true,
+    "final_request_exact_saved_helper_prompt": true,
+    "final_brief_all_values_equal_old": true
+  },
+  "http": {
+    "status": 200,
+    "status_line": "HTTP/1.0 200 OK",
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 18:18:54 GMT\r\nContent-type: image/png\r\nContent-Length: 1498775\r\nLast-Modified: Sat, 12 Sep 2026 18:18:49 GMT",
+    "body_sha256": "ae58ba14b66c9953c5fa45456cf54912ed239e0434713edd50c31738cea132e2",
+    "body_bytes": 1498775,
+    "matches_native_sha256": true,
+    "url": "http://127.0.0.1:8799/original.png",
+    "curl_exit_code": 0,
+    "connect_timeout_seconds": 2,
+    "max_time_seconds": 10,
+    "scope": "Served original byte transport only; actual native call and image inspection recorded separately."
+  },
+  "native_view": {
+    "tool": "view_image",
+    "native_basename": "exec-ba06ca24-975f-4a2b-96b7-f58a5c748938.png",
+    "native_original_viewed": true,
+    "workspace_original_viewed": true,
+    "exact_native_data_url_displayed": true,
+    "at": "2026-09-12T18:19:31Z",
+    "render_note": "Local view_image previews rendered as small swatches in this host; visual observations use the full unchanged native response PNG displayed separately, whose bytes match the native file and preserved original."
+  },
+  "visual_observation": "One large centered heart-shaped jade-green leaf with softly unequal rounded lobes, a shallow central fold and broad upper-left light on a warm butter square background. Fine matte/grainy surface texture remains visible despite the requested smooth molded finish; background shows slight tonal/grain variation. No obvious external cast/contact shadow, stem, lettering or scene appears in the native image.",
+  "limitations": [
+    "Actual 1254 by 1254 dimensions differ from the approximately 1536-square request; original pixels and PNG metadata retained.",
+    "Native visual observations are descriptive, with no artistic pass, exact palette conformance, selection, review approval, export or store-readiness claim.",
+    "32/64/128px comparative gallery and browser QA belong to Q5; this worker used no GUI."
+  ],
+  "probe_setup_note": "Initial disposable init failed because its pre-registered workspace directory had not yet been created; created that directory and completed probes. No native generation retry occurred.",
+  "replay_policy": "Read this returned fixed attempt and saved helper session; use the native basename/hash and private response to resume. Never re-invoke native generation for this attempt or choose a newest file.",
+  "completed_at": "2026-09-12T18:22:14Z",
+  "remaining": "Per-candidate generation, provenance, helper, adversarial and HTTP QA complete. Q5 catalog and comparative browser checks remain coordinator-owned."
+}

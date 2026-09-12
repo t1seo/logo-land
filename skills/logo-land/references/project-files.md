@@ -30,10 +30,19 @@ Optional fields:
 | `background` | opaque / transparent; opaque |
 | `concept_count` | integer, 3 |
 | `lockup` | `LockupIntent` object or null; null |
+| `app_icon` | `AppIconIntent` object or null; null |
 
 Use [brief.example.json](../assets/brief.example.json) as a starting shape. Do not treat its fictional brand as the user's brand. For an unknown audience or other nonessential field, record a reasonable assumption rather than claiming the user supplied it.
 
 The brief's free-text `palette` is historical intent, not a structured restriction or a measured color report. Save enforceable intent with `palette-add`. `lockup` uses the same object accepted by `--lockup-file` below. The exact text and slogan remain verbatim strings; do not encode replacement lettering in the font reference.
+
+## App icon intent and commands
+
+Read [app-icons.md](app-icons.md) for the complete schema, six preset IDs, runnable `icon-presets` → `init` → `prompt` example and original comparison gallery. The [icon brief example](../assets/app-icon.example.json) renders the exact Unicode monogram `메모`. New icon briefs require opaque background, empty slogan and null lockup; only monograms have nonempty exact text. A standalone `--app-icon-file` contains the complete `app_icon` object, not the whole brief or a `{ "app_icon": ... }` wrapper.
+
+Both `prompt` and `import` accept `--app-icon-file`. Precedence is explicit file, then parent's icon intent including null, then brief intent when no parent exists. An explicit file can transform a legacy brand session, suppressing its historical lettering/slogan/lockup in rendering without changing saved history. Explicit icon plus lockup or transparent import fails `intent_conflict` before mutation. Icon imports with no background option record opaque; non-icon omission retains the background behavior documented below. Prompt responses expose resolved `app_icon` and `requested_background`; the historical `parent_requested_background` stays unchanged. Save the exact returned revision and all effective intent for import.
+
+`icon-presets` emits JSON discovery. `icon-gallery --session ID --artifacts a1,a2 --output output/icon-comparison` publishes only explicitly selected icon artifacts, including their unchanged original PNGs, exact prompts, intent and actual dimensions. It accepts unapproved or color-mismatched originals without changing state; it is independent of approved export. Use a new workspace-relative destination. See [app-icons.md](app-icons.md) for rejected paths, controls and limitations.
 
 ## Runnable color examples
 
@@ -237,7 +246,7 @@ import --session morrow-demo --artifact a-v2 --image /actual/edited/image.png --
 
 Between those commands the assistant must view the actual parent, invoke the native edit tool with it, and inspect the returned image. Saving a prompt or importing an unrelated file does not prove an edit happened.
 
-When the user changes the background requirement, pass `--background opaque` or `--background transparent` on import. This records that artifact's requested background independently of the original brief. For example, a transparent child of an opaque original uses `--parent a-v1 --background transparent`. On subsequent edits retaining that variant, pass the same override again. Omitting it defaults to the original brief, not the parent's override. Never infer or weaken the request from the generated pixels. Legacy sessions without this field remain readable and use their original brief.
+For non-icon work, when the user changes the background requirement, pass `--background opaque` or `--background transparent` on import. This records that artifact's requested background independently of the original brief. For example, a transparent child of an opaque original uses `--parent a-v1 --background transparent`. On subsequent edits retaining that variant, pass the same override again. Omitting it defaults to the original brief, not the parent's override. Icon mode instead requires opaque and records it when the option is omitted. Never infer or weaken the request from the generated pixels. Legacy sessions without this field remain readable and use their original brief.
 
 For a tool failure, preserve the attempt without a fake artifact:
 
@@ -270,6 +279,8 @@ Keep final prompts and failed attempts for reproducibility. The prompt records t
 Schema 2 adds append-only palettes, references and reports, plus active new-generation intent and per-artifact palette/lockup bindings. For schema 1, `show`, `list` and `prompt` read through an in-memory adapter without rewriting bytes or incrementing the revision. The first successful explicit mutation writes a verified, byte-exact `session.v1.backup.json` in the session directory before atomically saving schema 2. A failed save may leave that verified backup available for retry, while preserving the old state bytes; a conflicting backup is never overwritten. Old artifacts keep null structured palettes and do not receive invented HEX or passing evidence.
 
 Keep the backup together with the original files when archiving the project. Forward reading of schema 1 does not promise that v0.3.1 reads schema 2. No automatic downgrade is provided, and the v1 backup does not contain later v2 edits. Do not restore it over current work or hand-edit the schema version to downgrade. Preserve both versions and arrange an explicit recovery workflow if the older tool must be used.
+
+The 0.5.0 development source adds optional `app_icon` snapshots to brief/artifact/effective intent/prompt results while retaining session and manifest schema 2. The frozen v1 parser is unchanged. Reads preserve old v1/v2 state bytes and existing artifact intent cannot be rebound. Older readers are not promised to read new icon-bearing v2 files, even though the schema number is unchanged. Approved icon exports include selected icon metadata and raster/platform limitations while preserving the same three ZIP payload filenames and PNG bytes.
 
 ## Compatibility after the Logo Land rename
 

@@ -1,0 +1,4 @@
+{
+  "stderr": "{\"error\": \"color_mismatch: Fewer than 99% of sampled core pixels match the target palette; Required color #153F78 has no matching core samples; Required color #F5EBDD has no matching core samples\"}\n",
+  "exit": 1
+}

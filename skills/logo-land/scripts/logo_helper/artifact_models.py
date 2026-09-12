@@ -5,6 +5,7 @@ from typing import Annotated, Literal
 
 from pydantic import Field
 
+from logo_helper.app_icon_models import AppIconIntent, omit_absent
 from logo_helper.brief_models import Brief
 from logo_helper.lockup_models import LockupIntent
 from logo_helper.model_base import ArtifactId, Background, Digest, FrozenModel, PaletteId, Text
@@ -63,6 +64,7 @@ class Artifact(FrozenModel):
     requested_background: Background | None = None
     palette_id: PaletteId | None = None
     lockup: LockupIntent | None = None
+    app_icon: AppIconIntent | None = Field(default=None, exclude_if=omit_absent)
     review: VisualReview | None = None
     reviewed_at: datetime | None = None
 

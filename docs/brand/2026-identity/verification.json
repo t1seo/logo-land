@@ -1,0 +1,48 @@
+{
+  "protected_files": 432,
+  "protected_hashes_match": true,
+  "unexpected_changes": [],
+  "source_version": "0.5.0",
+  "manifest_only_authorized_interface_fields_changed": true,
+  "archive_byte_exact": true,
+  "local_links": [
+    {
+      "file": "README.md",
+      "local_link_count": 90,
+      "missing": []
+    },
+    {
+      "file": "README.ko.md",
+      "local_link_count": 90,
+      "missing": []
+    },
+    {
+      "file": "docs/brand/README.md",
+      "local_link_count": 24,
+      "missing": []
+    },
+    {
+      "file": "docs/brand/legacy.md",
+      "local_link_count": 14,
+      "missing": []
+    },
+    {
+      "file": "docs/qa/app-icons/brand-refresh.md",
+      "local_link_count": 19,
+      "missing": []
+    },
+    {
+      "file": "docs/brand/2026-identity/preview.html",
+      "local_link_count": 19,
+      "missing": []
+    },
+    {
+      "file": "docs/brand/2026-identity/delivery/brand-guide.md",
+      "local_link_count": 0,
+      "missing": []
+    }
+  ],
+  "grove_transparency_and_delivery_hash_match": true,
+  "grove_sha256": "768971adfda7f0b41bb36e81c816bf5b3da275f4e54514038dc0ce01b25c6f06",
+  "final_protected_hashes_match": true
+}

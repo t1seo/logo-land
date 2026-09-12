@@ -2,7 +2,7 @@
 
 Use the image tool actually exposed by the host. In the development host the callable tool is `image_gen__imagegen`; tool naming and availability can differ. Read its live schema before invocation. Do not install a fake MCP server for this built-in capability.
 
-The observed schema accepts `prompt`, `referenced_image_paths`, and `num_last_images_to_include` only. Desired size, alpha background, and visual style belong in the prompt when no corresponding tool parameter exists. `model`, `quality`, `size`, `background`, `out`, and Responses API IDs are not parameters of this observed built-in tool.
+The observed schema accepts `prompt`, `referenced_image_paths`, and `num_last_images_to_include` only. Desired size, background, and visual style belong in the prompt when no corresponding tool parameter exists. `model`, `quality`, `size`, `n`, `negative_prompt`, `background`, `out`, and Responses API IDs are not parameters of this observed built-in tool. Record the actual tool/provider; model identity is unreported when the runtime does not expose it. Never infer a model from a product name or an upstream preference.
 
 | Intent | Reference handling |
 |---|---|
@@ -12,6 +12,16 @@ The observed schema accepts `prompt`, `referenced_image_paths`, and `num_last_im
 | Required images cannot all be included | Ask for missing images to be attached again. |
 
 Never send both reference mechanisms together. A new design inspired by a reference remains a new design; an edit must identify the existing artifact whose identity is preserved.
+
+## App icon branch
+
+Follow [app-icons.md](app-icons.md), including the attributed [IP character direction](ip-mascot.md) when relevant. Use the dedicated helper prompt and preserve its final complete text before calling the tool. The helper checks the 20,000-character import limit in advance. For IP, describe the image, character, placement and solid background without logo/app-icon/use-case framing, centered safe-margin boilerplate or alpha/opaque/transparency vocabulary. Other presets have their own rendering directions; only monogram renders exact supplied lettering.
+
+Request one full-bleed square raster, square outer corners and a complete solid background, approximately 1536 × 1536 in prompt text. Record actual returned dimensions. Keep original bytes and dimensions; do not resize, replace backgrounds or manufacture platform layers. CSS rounded/circle previews illustrate possible masks and do not produce OS-native or store-ready assets.
+
+Generate each initial candidate once, independently and without another candidate as a reference. For the usual IP set, use three directions with two separate left/right candidates each. Preserve all results regardless of artistic variance or color/export status. Use a durable receipt per call recording planned/running/returned/failed/unknown state, exact prompt/hash, session/artifact IDs, tool/model provenance and returned paths/hashes/dimensions. Resume that receipt after interruptions. Do not reset an unknown attempt, retry automatically, or scan for the newest file. Catalog copies preserve source receipts and do not count as additional native generation.
+
+The user's creation request authorizes the native operation without an extra palette/model/API-key gate. If the tool is missing or fails, preserve the actual failure and existing work; no external API fallback or fake image result is allowed. Approved export remains a separate later operation with all existing strict gates.
 
 ## Artifact handling
 

@@ -1,0 +1,10 @@
+Edit the supplied parent logo v1; do not recreate an unrelated logo.
+Parent requested background: opaque; preserve it unless the latest requested changes specify another background.
+Latest requested changes (authoritative): Use navy blue. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent. Requested changes override conflicting parent intent and fields in the following original brief context; its background is historical, not a new request.
+Create one combination logo for 기존 브랜드. Industry: design. Audience: readers.
+Exact text (copy verbatim, no other words): 'Legacy Ω'. Exact slogan: 'Read more'.
+Styles: minimal. Original brief palette context: green.
+Avoid: . Use cases: .
+Initial brief background (historical intent): transparent. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: Distinct, simple brand identity. Assumptions: .
+Effective symbol-plus-text lockup: {"layout":"horizontal","symbol_position":"start","text_alignment":"start","typography_style":"rounded","font_reference":null}. Horizontal start/end means symbol left/right of text; stacked start/end means symbol above/below text. Preserve the exact text and slogan. Font reference is a requested visual direction, not proof of an installed or licensed font file.

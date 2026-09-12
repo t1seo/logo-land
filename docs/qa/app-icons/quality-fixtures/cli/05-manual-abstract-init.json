@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "manual-abstract",
+  "revision": 0,
+  "created_at": "2026-09-12T18:07:11.611961Z",
+  "updated_at": "2026-09-12T18:07:11.611961Z",
+  "brief": {
+    "brand_name": "Quiet Focus",
+    "exact_text": "",
+    "industry": "Fictional mobile application artwork example",
+    "audience": "People seeking a friendly and immediately recognizable mobile experience",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [],
+    "palette": [
+      "Subject primary: rich indigo #4656CF",
+      "Subject secondary: coral #F08069",
+      "Solid background: pale warm pink #F3E2DE"
+    ],
+    "forbidden": [
+      "watermark",
+      "presentation frame",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "Mobile app icon artwork demonstration"
+    ],
+    "assumptions": [
+      "Fictional product brief chosen by the assistant for sample coverage"
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "abstract",
+      "subject": "two broad interlocking rounded arcs forming one balanced continuous rhythmic gesture",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

@@ -1,0 +1,1 @@
+Captured before any source edits at ffecf1538963ddca5df1119d4e9d4d8dd2d5aac5. v1 built directly with unchanged LegacySession/LegacyBrief/LegacyArtifact constructors; v2 built with unchanged current constructors. Synthetic 19x23 RGB PNG. No new-model field deletion.

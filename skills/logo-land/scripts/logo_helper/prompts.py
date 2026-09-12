@@ -4,8 +4,13 @@ from __future__ import annotations
 
 from typing import Literal
 
+from pydantic import Field
+
+from logo_helper.app_icon_models import omit_absent
+from logo_helper.app_icon_prompts import build_app_icon_prompt
 from logo_helper.intent import resolve_intent
 from logo_helper.models import (
+    AppIconIntent,
     ArtifactId,
     Background,
     Digest,
@@ -31,9 +36,11 @@ class PromptResult(FrozenModel):
     palette_id: PaletteId | None = None
     palette_digest: Digest | None = None
     lockup: LockupIntent | None = None
+    app_icon: AppIconIntent | None = Field(default=None, exclude_if=omit_absent)
+    requested_background: Background | None = Field(default=None, exclude_if=omit_absent)
 
 
-def build_prompt(
+def build_prompt(  # noqa: PLR0913 - Shared explicit intent options mirror the CLI boundary.
     store: Store,
     state: Session,
     *,
@@ -42,6 +49,7 @@ def build_prompt(
     changes: str,
     palette_id: PaletteId | None = None,
     lockup: LockupIntent | None = None,
+    app_icon: AppIconIntent | None = None,
 ) -> PromptResult:
     """Preserve exact text and bind edits to an existing parent without changing state."""
     if bool(changes.strip()) != (parent_id is not None):
@@ -49,7 +57,33 @@ def build_prompt(
             "invalid_request", "An edit requires both --parent and nonempty --changes"
         )
     brief = state.brief
-    intent = resolve_intent(state, parent_id, palette_id, lockup)
+    intent = resolve_intent(state, parent_id, palette_id, lockup, app_icon)
+    if intent.app_icon is not None:
+        parent = state.artifact(parent_id) if parent_id is not None else None
+        return PromptResult(
+            mode="edit" if parent is not None else "generation",
+            session_id=state.id,
+            revision=state.revision,
+            prompt=build_app_icon_prompt(
+                intent.app_icon,
+                brief,
+                intent.palette,
+                concept,
+                changes,
+                has_parent=parent is not None,
+            ),
+            parent_id=parent_id,
+            parent_image_path=str(safe_path(store.session_dir(state.id), parent.path))
+            if parent is not None
+            else None,
+            parent_requested_background=parent.effective_background(brief)
+            if parent is not None
+            else None,
+            palette_id=intent.palette.id if intent.palette is not None else None,
+            palette_digest=intent.palette.digest if intent.palette is not None else None,
+            app_icon=intent.app_icon,
+            requested_background="opaque",
+        )
     background_label = (
         "Initial brief background (historical intent)" if parent_id is not None else "Background"
     )

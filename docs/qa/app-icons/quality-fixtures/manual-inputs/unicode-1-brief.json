@@ -1,0 +1,35 @@
+{
+  "brand_name": "모아 Notes",
+  "exact_text": "한글",
+  "industry": "Fictional mobile application artwork example",
+  "audience": "People seeking a friendly and immediately recognizable mobile experience",
+  "slogan": "",
+  "logo_type": "monogram",
+  "styles": [
+
+  ],
+  "palette": [
+    "Letter: deep sapphire #153F78",
+    "Solid background: warm ivory #F5EBDD"
+  ],
+  "forbidden": [
+    "watermark",
+    "presentation frame",
+    "extra lettering"
+  ],
+  "use_cases": [
+    "Mobile app icon artwork demonstration"
+  ],
+  "assumptions": [
+    "Fictional product brief chosen by the assistant for sample coverage"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "monogram",
+    "subject": "one bold rounded Korean letter with a compact balanced silhouette",
+    "placement": "lower_right",
+    "text": "한글"
+  }
+}

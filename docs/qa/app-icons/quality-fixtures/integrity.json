@@ -1,0 +1,10 @@
+{
+  "registered": 150,
+  "unchanged": 148,
+  "owned_changes": [
+    "skills/logo-land/scripts/logo_helper/app_icon_prompts.py",
+    "tests/test_app_icon_prompts.py"
+  ],
+  "only_five_return_blocks_changed": true,
+  "old_monogram_sha256": "d0a3101fadf8efc676bcda11c6023b746caf40e06ab1470a2534f7d5cd687af1"
+}

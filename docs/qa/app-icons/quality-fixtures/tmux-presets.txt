@@ -1,0 +1,42 @@
+  ~/Documents/Github/Projects/logo-generator   main !22 ?32 ❯ uv run --locked python skills/logo-land/scripts/logo_project.py icon-presets
+[
+  {
+    "id": "ip_mascot",
+    "label": "IP mascot",
+    "description": "Simple personified character with rounded heavy forms and two subject color families on a solid background.",
+    "default_placement": "lower_left"
+  },
+  {
+    "id": "pictogram",
+    "label": "Pictogram",
+    "description": "One immediately recognizable silhouette with clean flat shapes.",
+    "default_placement": "center"
+  },
+  {
+    "id": "abstract",
+    "label": "Abstract",
+    "description": "A compact geometric composition with clear negative space.",
+    "default_placement": "center"
+  },
+  {
+    "id": "monogram",
+    "label": "Monogram",
+    "description": "One to eight exact Unicode characters shaped as readable lettering.",
+    "default_placement": "center"
+  },
+  {
+    "id": "soft_3d",
+    "label": "Soft 3D",
+    "description": "A tactile, softly rounded object with restrained depth and lighting.",
+    "default_placement": "center"
+  },
+  {
+    "id": "pixel_art",
+    "label": "Pixel art",
+    "description": "Deliberate block geometry on a consistent pixel grid.",
+    "default_placement": "center"
+  }
+]
+  ~/Doc/Github/Projects/logo-generator   main !22 ?32 ❯ printf "exit_status=%s\n" $?                                                    03:05:56
+exit_status=0
+  ~/Doc/Github/Projects/logo-generator   main !22 ?32 ❯                                                                                 03:06:05

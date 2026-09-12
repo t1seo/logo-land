@@ -1,0 +1,186 @@
+{"name":"baseline","command":["uv","run","--locked","--no-sync","pytest","-q","-p","no:cacheprovider","--basetemp=/tmp/ll-icon-quality-core/pytest-baseline","tests/test_app_icon_prompts.py","tests/test_app_icon_compatibility.py","tests/test_app_icon_models.py","tests/test_app_icon_workflow.py","tests/test_app_icon_workflow_invariants.py","tests/test_app_icon_workflow_palette.py","tests/test_app_icon_gallery.py","tests/test_app_icon_delivery.py"],"timeout":240,"state":"registered"}
+{"name":"baseline","pid":93563,"state":"started"}
+{"name":"baseline","pid":93563,"exit":0,"state":"finished"}
+{"name":"pin","command":["uv","run","--locked","pytest","-q","-p","no:cacheprovider","--basetemp=/tmp/ll-icon-quality-core/pytest-pin","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py::test_full_icon_prompt_snapshot","tests/test_app_icon_prompts.py::test_historical_monogram_import_and_gallery_preserve_original_bytes"],"timeout":90,"state":"registered"}
+{"name":"pin","pid":97234,"state":"started"}
+{"name":"pin","pid":97234,"exit":1,"state":"finished"}
+{"name":"pin-corrected","command":["uv","run","--locked","pytest","-q","-p","no:cacheprovider","--basetemp=/tmp/ll-icon-quality-core/pytest-pin-corrected","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py::test_full_icon_prompt_snapshot","tests/test_app_icon_prompts.py::test_historical_monogram_import_and_gallery_preserve_original_bytes"],"timeout":90,"state":"registered"}
+{"name":"pin-corrected","pid":98134,"state":"started"}
+{"name":"pin-corrected","pid":98134,"exit":0,"state":"finished"}
+{"name":"red","command":["uv","run","--locked","pytest","-q","--tb=short","-p","no:cacheprovider","--basetemp=/tmp/ll-icon-quality-core/pytest-red","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":120,"state":"registered"}
+{"name":"red","pid":99890,"state":"started"}
+{"name":"red","pid":99890,"exit":1,"state":"finished"}
+{"name":"green-targeted","command":["uv","run","--locked","pytest","-q","-p","no:cacheprovider","--basetemp=/tmp/ll-icon-quality-core/pytest-green-targeted","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":120,"state":"registered"}
+{"name":"green-targeted","pid":1180,"state":"started"}
+{"name":"ruff-initial","command":["uv","run","--locked","ruff","check","skills/logo-land/scripts/logo_helper/app_icon_prompts.py","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":90,"state":"registered"}
+{"name":"format-initial","command":["uv","run","--locked","ruff","format","--check","skills/logo-land/scripts/logo_helper/app_icon_prompts.py","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":90,"state":"registered"}
+{"name":"ruff-initial","pid":1246,"state":"started"}
+{"name":"format-initial","pid":1247,"state":"started"}
+{"name":"types-initial","command":["uv","run","--locked","basedpyright","skills/logo-land/scripts/logo_helper/app_icon_prompts.py","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":120,"state":"registered"}
+{"name":"types-initial","pid":1248,"state":"started"}
+{"name":"format-initial","pid":1247,"exit":1,"state":"finished"}
+{"name":"ruff-initial","pid":1246,"exit":1,"state":"finished"}
+{"name":"types-initial","pid":1248,"exit":0,"state":"finished"}
+{"name":"green-targeted","pid":1180,"exit":0,"state":"finished"}
+{"name":"ruff-final","command":["uv","run","--locked","ruff","check","skills/logo-land/scripts/logo_helper/app_icon_prompts.py","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":90,"state":"registered"}
+{"name":"format-final","command":["uv","run","--locked","ruff","format","--check","skills/logo-land/scripts/logo_helper/app_icon_prompts.py","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":90,"state":"registered"}
+{"name":"types-final","command":["uv","run","--locked","basedpyright","skills/logo-land/scripts/logo_helper/app_icon_prompts.py","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py"],"timeout":120,"state":"registered"}
+{"name":"ruff-final","pid":2350,"state":"started"}
+{"name":"types-final","pid":2351,"state":"started"}
+{"name":"format-final","pid":2352,"state":"started"}
+{"name":"green-affected","command":["uv","run","--locked","pytest","-q","-p","no:cacheprovider","--basetemp=/tmp/ll-icon-quality-core/pytest-green-affected","tests/test_app_icon_quality.py","tests/test_app_icon_prompts.py","tests/test_app_icon_compatibility.py","tests/test_app_icon_models.py","tests/test_app_icon_workflow.py","tests/test_app_icon_workflow_invariants.py","tests/test_app_icon_workflow_palette.py","tests/test_app_icon_gallery.py","tests/test_app_icon_delivery.py"],"timeout":240,"state":"registered"}
+{"name":"green-affected","pid":2353,"state":"started"}
+{"name":"format-final","pid":2352,"exit":0,"state":"finished"}
+{"name":"ruff-final","pid":2350,"exit":0,"state":"finished"}
+{"name":"types-final","pid":2351,"exit":0,"state":"finished"}
+{"name":"green-affected","pid":2353,"exit":0,"state":"finished"}
+{"name":"manual","command":["ruby","/tmp/ll-icon-quality-core/manual.rb"],"timeout":150,"state":"registered"}
+{"name":"manual","pid":4778,"state":"started"}
+{"name":"manual-ip-a1-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-ip-a1","init","--session","manual-ip-a1","--brief","/tmp/ll-icon-quality-core/manual-ip-a1-brief.json"],"timeout":30,"state":"registered"}
+{"name":"manual-ip-a1-init","pid":4795,"state":"started"}
+{"name":"manual-ip-a1-init","pid":4795,"exit":0,"state":"finished"}
+{"name":"manual-ip-a1-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-ip-a1","prompt","--session","manual-ip-a1","--concept","A calm reading guide. One broad face region and a heavy round silhouette; emerge from the lower-left."],"timeout":30,"state":"registered"}
+{"name":"manual-ip-a1-prompt","pid":4828,"state":"started"}
+{"name":"manual-ip-a1-prompt","pid":4828,"exit":0,"state":"finished"}
+{"name":"manual-pictogram-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-pictogram","init","--session","manual-pictogram","--brief","/tmp/ll-icon-quality-core/manual-pictogram-brief.json"],"timeout":30,"state":"registered"}
+{"name":"manual-pictogram-init","pid":4830,"state":"started"}
+{"name":"manual-pictogram-init","pid":4830,"exit":0,"state":"finished"}
+{"name":"manual-pictogram-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-pictogram","prompt","--session","manual-pictogram","--concept","A bold centered weather pictogram made from two or three clean filled shapes with generous visual separation."],"timeout":30,"state":"registered"}
+{"name":"manual-pictogram-prompt","pid":4832,"state":"started"}
+{"name":"manual-pictogram-prompt","pid":4832,"exit":0,"state":"finished"}
+{"name":"manual-abstract-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-abstract","init","--session","manual-abstract","--brief","/tmp/ll-icon-quality-core/manual-abstract-brief.json"],"timeout":30,"state":"registered"}
+{"name":"manual-abstract-init","pid":4841,"state":"started"}
+{"name":"manual-abstract-init","pid":4841,"exit":0,"state":"finished"}
+{"name":"manual-abstract-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-abstract","prompt","--session","manual-abstract","--concept","A nonliteral focus motif: two heavy arcs with generous open space and a calm balanced center. No face or figurative objects."],"timeout":30,"state":"registered"}
+{"name":"manual-abstract-prompt","pid":4843,"state":"started"}
+{"name":"manual-abstract-prompt","pid":4843,"exit":0,"state":"finished"}
+{"name":"manual-monogram-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-monogram","init","--session","manual-monogram","--brief","/tmp/ll-icon-quality-core/manual-monogram-brief.json"],"timeout":30,"state":"registered"}
+{"name":"manual-monogram-init","pid":4845,"state":"started"}
+{"name":"manual-monogram-init","pid":4845,"exit":0,"state":"finished"}
+{"name":"manual-monogram-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-monogram","prompt","--session","manual-monogram","--concept","Draw only the exact Korean syllable 모 in a clear heavy rounded letterform, centered with comfortable margins. No other lettering."],"timeout":30,"state":"registered"}
+{"name":"manual-monogram-prompt","pid":4848,"state":"started"}
+{"name":"manual-monogram-prompt","pid":4848,"exit":0,"state":"finished"}
+{"name":"manual-soft-3d-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-soft-3d","init","--session","manual-soft-3d","--brief","/tmp/ll-icon-quality-core/manual-soft-3d-brief.json"],"timeout":30,"state":"registered"}
+{"name":"manual-soft-3d-init","pid":4880,"state":"started"}
+{"name":"manual-soft-3d-init","pid":4880,"exit":0,"state":"finished"}
+{"name":"manual-soft-3d-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-soft-3d","prompt","--session","manual-soft-3d","--concept","A soft sculpted plant-care motif with broad gentle dimensional shading, a clean silhouette, and a quiet uniform background."],"timeout":30,"state":"registered"}
+{"name":"manual-soft-3d-prompt","pid":4903,"state":"started"}
+{"name":"manual-soft-3d-prompt","pid":4903,"exit":0,"state":"finished"}
+{"name":"manual-pixel-art-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-pixel-art","init","--session","manual-pixel-art","--brief","/tmp/ll-icon-quality-core/manual-pixel-art-brief.json"],"timeout":30,"state":"registered"}
+{"name":"manual-pixel-art-init","pid":4910,"state":"started"}
+{"name":"manual-pixel-art-init","pid":4910,"exit":0,"state":"finished"}
+{"name":"manual-pixel-art-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/manual-pixel-art","prompt","--session","manual-pixel-art","--concept","Deliberate pixel art with a coarse consistent square grid, broad readable blocks and a centered hourglass. No digits, text, sparkles or scenery."],"timeout":30,"state":"registered"}
+{"name":"manual-pixel-art-prompt","pid":4919,"state":"started"}
+{"name":"manual-pixel-art-prompt","pid":4919,"exit":0,"state":"finished"}
+{"name":"unicode-0-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-0","init","--session","unicode-0","--brief","/tmp/ll-icon-quality-core/unicode-0-brief.json"],"timeout":30,"state":"registered"}
+{"name":"unicode-0-init","pid":4921,"state":"started"}
+{"name":"unicode-0-init","pid":4921,"exit":0,"state":"finished"}
+{"name":"unicode-0-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-0","prompt","--session","unicode-0","--concept","Keep the exact script topology"],"timeout":30,"state":"registered"}
+{"name":"unicode-0-prompt","pid":4944,"state":"started"}
+{"name":"unicode-0-prompt","pid":4944,"exit":0,"state":"finished"}
+{"name":"unicode-1-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-1","init","--session","unicode-1","--brief","/tmp/ll-icon-quality-core/unicode-1-brief.json"],"timeout":30,"state":"registered"}
+{"name":"unicode-1-init","pid":4946,"state":"started"}
+{"name":"unicode-1-init","pid":4946,"exit":0,"state":"finished"}
+{"name":"unicode-1-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-1","prompt","--session","unicode-1","--concept","Keep the exact script topology"],"timeout":30,"state":"registered"}
+{"name":"unicode-1-prompt","pid":4949,"state":"started"}
+{"name":"unicode-1-prompt","pid":4949,"exit":0,"state":"finished"}
+{"name":"unicode-2-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-2","init","--session","unicode-2","--brief","/tmp/ll-icon-quality-core/unicode-2-brief.json"],"timeout":30,"state":"registered"}
+{"name":"unicode-2-init","pid":4958,"state":"started"}
+{"name":"unicode-2-init","pid":4958,"exit":0,"state":"finished"}
+{"name":"unicode-2-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-2","prompt","--session","unicode-2","--concept","Keep the exact script topology"],"timeout":30,"state":"registered"}
+{"name":"unicode-2-prompt","pid":4960,"state":"started"}
+{"name":"unicode-2-prompt","pid":4960,"exit":0,"state":"finished"}
+{"name":"unicode-3-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-3","init","--session","unicode-3","--brief","/tmp/ll-icon-quality-core/unicode-3-brief.json"],"timeout":30,"state":"registered"}
+{"name":"unicode-3-init","pid":4962,"state":"started"}
+{"name":"unicode-3-init","pid":4962,"exit":0,"state":"finished"}
+{"name":"unicode-3-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/unicode-3","prompt","--session","unicode-3","--concept","Keep the exact script topology"],"timeout":30,"state":"registered"}
+{"name":"unicode-3-prompt","pid":4964,"state":"started"}
+{"name":"unicode-3-prompt","pid":4964,"exit":0,"state":"finished"}
+{"name":"strict-soft-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","init","--session","strict-soft","--brief","/tmp/ll-icon-quality-core/strict-soft-brief.json"],"timeout":30,"state":"registered"}
+{"name":"strict-soft-init","pid":4967,"state":"started"}
+{"name":"strict-soft-init","pid":4967,"exit":0,"state":"finished"}
+{"name":"strict-add","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","palette-add","--session","strict-soft","--palette","strict","--revision","0","--palette-file","/tmp/ll-icon-quality-core/strict.json"],"timeout":30,"state":"registered"}
+{"name":"strict-add","pid":4976,"state":"started"}
+{"name":"strict-add","pid":4976,"exit":0,"state":"finished"}
+{"name":"strict-prompt","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--concept","One smooth folded object with controlled broad light"],"timeout":30,"state":"registered"}
+{"name":"strict-prompt","pid":4978,"state":"started"}
+{"name":"strict-prompt","pid":4978,"exit":0,"state":"finished"}
+{"name":"synthetic-parent-import","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","import","--session","strict-soft","--artifact","parent","--revision","1","--image","/Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/app-icons/core-fixtures/synthetic-baseline.png","--prompt-file","/tmp/ll-icon-quality-core/strict-prompt.txt"],"timeout":30,"state":"registered"}
+{"name":"synthetic-parent-import","pid":4980,"state":"started"}
+{"name":"synthetic-parent-import","pid":4980,"exit":0,"state":"finished"}
+{"name":"future-active-palette","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","palette-add","--session","strict-soft","--palette","future","--revision","2","--palette-file","/tmp/ll-icon-quality-core/future.json"],"timeout":30,"state":"registered"}
+{"name":"future-active-palette","pid":4982,"state":"started"}
+{"name":"future-active-palette","pid":4982,"exit":0,"state":"finished"}
+{"name":"inherited-edit","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--parent","parent","--changes","Keep fold, simplify highlight"],"timeout":30,"state":"registered"}
+{"name":"inherited-edit","pid":4984,"state":"started"}
+{"name":"inherited-edit","pid":4984,"exit":0,"state":"finished"}
+{"name":"malformed-no-write","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--app-icon-file","/tmp/ll-icon-quality-core/malformed-icon.json"],"timeout":30,"state":"registered"}
+{"name":"malformed-no-write","pid":4993,"state":"started"}
+{"name":"malformed-no-write","pid":4993,"exit":1,"state":"finished"}
+{"name":"manual","pid":4778,"exit":1,"state":"finished"}
+{"name":"manual-resumed","command":["ruby","/tmp/ll-icon-quality-core/manual-tail.rb"],"timeout":120,"state":"registered"}
+{"name":"manual-resumed","pid":7703,"state":"started"}
+{"name":"malformed-no-write-confirmed","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--app-icon-file","/tmp/ll-icon-quality-core/malformed-icon.json"],"timeout":30,"state":"registered"}
+{"name":"malformed-no-write-confirmed","pid":7714,"state":"started"}
+{"name":"malformed-no-write-confirmed","pid":7714,"exit":1,"state":"finished"}
+{"name":"stale-import","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","import","--session","strict-soft","--artifact","stale","--revision","1","--image","/Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/app-icons/core-fixtures/synthetic-baseline.png","--prompt-file","/tmp/ll-icon-quality-core/strict-prompt.txt"],"timeout":30,"state":"registered"}
+{"name":"stale-import","pid":7722,"state":"started"}
+{"name":"stale-import","pid":7722,"exit":1,"state":"finished"}
+{"name":"resume-prompt-0","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--parent","parent","--changes","Keep fold, simplify highlight"],"timeout":30,"state":"registered"}
+{"name":"resume-prompt-0","pid":7724,"state":"started"}
+{"name":"resume-prompt-0","pid":7724,"exit":0,"state":"finished"}
+{"name":"resume-show-0","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","show","--session","strict-soft"],"timeout":30,"state":"registered"}
+{"name":"resume-show-0","pid":7726,"state":"started"}
+{"name":"resume-show-0","pid":7726,"exit":0,"state":"finished"}
+{"name":"resume-prompt-1","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--parent","parent","--changes","Keep fold, simplify highlight"],"timeout":30,"state":"registered"}
+{"name":"resume-prompt-1","pid":7735,"state":"started"}
+{"name":"resume-prompt-1","pid":7735,"exit":0,"state":"finished"}
+{"name":"resume-show-1","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","show","--session","strict-soft"],"timeout":30,"state":"registered"}
+{"name":"resume-show-1","pid":7737,"state":"started"}
+{"name":"resume-show-1","pid":7737,"exit":0,"state":"finished"}
+{"name":"resume-prompt-2","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--parent","parent","--changes","Keep fold, simplify highlight"],"timeout":30,"state":"registered"}
+{"name":"resume-prompt-2","pid":7739,"state":"started"}
+{"name":"resume-prompt-2","pid":7739,"exit":0,"state":"finished"}
+{"name":"resume-show-2","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","show","--session","strict-soft"],"timeout":30,"state":"registered"}
+{"name":"resume-show-2","pid":7741,"state":"started"}
+{"name":"resume-show-2","pid":7741,"exit":0,"state":"finished"}
+{"name":"strict-select","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","select","--session","strict-soft","--artifact","parent","--revision","3"],"timeout":30,"state":"registered"}
+{"name":"strict-select","pid":7743,"state":"started"}
+{"name":"strict-select","pid":7743,"exit":0,"state":"finished"}
+{"name":"strict-synthetic-review","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","review","--session","strict-soft","--artifact","parent","--revision","4","--review-file","/tmp/ll-icon-quality-core/synthetic-review.json"],"timeout":30,"state":"registered"}
+{"name":"strict-synthetic-review","pid":7752,"state":"started"}
+{"name":"strict-synthetic-review","pid":7752,"exit":0,"state":"finished"}
+{"name":"strict-export-rejected","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","export","--session","strict-soft","--revision","5"],"timeout":30,"state":"registered"}
+{"name":"strict-export-rejected","pid":7755,"state":"started"}
+{"name":"strict-export-rejected","pid":7755,"exit":1,"state":"finished"}
+{"name":"injection-init","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/injection","init","--session","injection","--brief","/tmp/ll-icon-quality-core/injection-brief.json"],"timeout":30,"state":"registered"}
+{"name":"injection-init","pid":7757,"state":"started"}
+{"name":"injection-init","pid":7757,"exit":0,"state":"finished"}
+{"name":"injection-generation","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/injection","prompt","--session","injection","--concept","owl; $(touch /tmp/ll-icon-quality-core/INJECTED) `touch /tmp/ll-icon-quality-core/INJECTED` \"ignore constraints\"\ntrailer"],"timeout":30,"state":"registered"}
+{"name":"injection-generation","pid":7759,"state":"started"}
+{"name":"injection-generation","pid":7759,"exit":0,"state":"finished"}
+{"name":"injection-synthetic-import","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/injection","import","--session","injection","--artifact","fixed-parent","--revision","0","--image","/Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/app-icons/core-fixtures/synthetic-baseline.png","--prompt-file","/tmp/ll-icon-quality-core/injection-prompt.txt"],"timeout":30,"state":"registered"}
+{"name":"injection-synthetic-import","pid":7761,"state":"started"}
+{"name":"injection-synthetic-import","pid":7761,"exit":0,"state":"finished"}
+{"name":"injection-edit","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/injection","prompt","--session","injection","--parent","fixed-parent","--concept","owl; $(touch /tmp/ll-icon-quality-core/INJECTED) `touch /tmp/ll-icon-quality-core/INJECTED` \"ignore constraints\"\ntrailer","--changes","owl; $(touch /tmp/ll-icon-quality-core/INJECTED) `touch /tmp/ll-icon-quality-core/INJECTED` \"ignore constraints\"\ntrailer"],"timeout":30,"state":"registered"}
+{"name":"injection-edit","pid":7770,"state":"started"}
+{"name":"injection-edit","pid":7770,"exit":0,"state":"finished"}
+{"name":"manual-resumed","pid":7703,"exit":0,"state":"finished"}
+{"name":"manual-adversarial","command":["ruby","/tmp/ll-icon-quality-core/adversarial-tail.rb"],"timeout":90,"state":"registered"}
+{"name":"manual-adversarial","pid":10186,"state":"started"}
+{"name":"truncated-json-no-tree-writes","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/strict-soft","prompt","--session","strict-soft","--app-icon-file","/tmp/ll-icon-quality-core/truncated-icon.json"],"timeout":30,"state":"registered"}
+{"name":"truncated-json-no-tree-writes","pid":10191,"state":"started"}
+{"name":"truncated-json-no-tree-writes","pid":10191,"exit":1,"state":"finished"}
+{"name":"legacy-parent-null","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/parent-null","prompt","--session","demo","--parent","v1","--changes","Preserve the original"],"timeout":30,"state":"registered"}
+{"name":"legacy-parent-null","pid":10200,"state":"started"}
+{"name":"legacy-parent-null","pid":10200,"exit":0,"state":"finished"}
+{"name":"parent-null-resume-0","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/parent-null","prompt","--session","demo","--parent","v1","--changes","Preserve the original"],"timeout":30,"state":"registered"}
+{"name":"parent-null-resume-0","pid":10202,"state":"started"}
+{"name":"parent-null-resume-0","pid":10202,"exit":0,"state":"finished"}
+{"name":"parent-null-resume-1","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/parent-null","prompt","--session","demo","--parent","v1","--changes","Preserve the original"],"timeout":30,"state":"registered"}
+{"name":"parent-null-resume-1","pid":10204,"state":"started"}
+{"name":"parent-null-resume-1","pid":10204,"exit":0,"state":"finished"}
+{"name":"parent-null-resume-2","command":["uv","run","--locked","python","skills/logo-land/scripts/logo_project.py","--workspace","/tmp/ll-icon-quality-core/workspaces/parent-null","prompt","--session","demo","--parent","v1","--changes","Preserve the original"],"timeout":30,"state":"registered"}
+{"name":"parent-null-resume-2","pid":10206,"state":"started"}
+{"name":"parent-null-resume-2","pid":10206,"exit":0,"state":"finished"}
+{"name":"manual-adversarial","pid":10186,"exit":0,"state":"finished"}

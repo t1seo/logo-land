@@ -1,0 +1,36 @@
+{
+  "brand_name": "Pocket Sprout",
+  "exact_text": "",
+  "industry": "Fictional mobile application artwork example",
+  "audience": "People seeking a friendly and immediately recognizable mobile experience",
+  "slogan": "",
+  "logo_type": "symbol",
+  "styles": [
+
+  ],
+  "palette": [
+    "Subject primary: jade green #5CA585",
+    "Subject secondary: pale leaf green #E7F0C7",
+    "Solid background: warm butter #E9D7A9"
+  ],
+  "forbidden": [
+    "watermark",
+    "presentation frame",
+    "extra lettering"
+  ],
+  "use_cases": [
+    "Mobile app icon artwork demonstration"
+  ],
+  "assumptions": [
+    "Fictional product brief chosen by the assistant for sample coverage"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "soft_3d",
+    "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+    "placement": "center",
+    "text": null
+  }
+}

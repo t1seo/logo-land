@@ -5,6 +5,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Literal
 
+from logo_helper.app_icon_guide import ARTWORK_LIMITATIONS, app_icon_guide
+from logo_helper.app_icon_models import AppIconIntent
 from logo_helper.color_delivery import (
     COLOR_LIMITS,
     COLOR_METHOD,
@@ -52,6 +54,8 @@ class Manifest(FrozenModel):
     color_limits: tuple[str, ...] = COLOR_LIMITS
     lockup_intent: LockupIntent | None = None
     font_reference_usage: Literal["appearance-reference-only"] = "appearance-reference-only"
+    app_icon: AppIconIntent | None = None
+    artwork_limitations: str | None = None
 
 
 def guide(state: Session, artifact: Artifact, evidence: ColorDelivery | None = None) -> str:
@@ -91,6 +95,7 @@ def guide(state: Session, artifact: Artifact, evidence: ColorDelivery | None = N
         )
         + "\n"
         + typography_guide(artifact)
+        + app_icon_guide(artifact.app_icon)
     )
 
 
@@ -155,6 +160,8 @@ def export(store: Store, identifier: SessionId, revision: int, output: str | Non
             color_policy=evidence.policy,
             warnings=evidence.warnings,
             lockup_intent=artifact.lockup,
+            app_icon=artifact.app_icon,
+            artwork_limitations=ARTWORK_LIMITATIONS if artifact.app_icon is not None else None,
         )
         with publish_bundle(
             destination,

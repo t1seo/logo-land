@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ip-b1",
+  "label": "B1",
+  "logical_attempt_id": "ip-b1-draw-1",
+  "attempt_id": "ip-b1-draw-1",
+  "task_id": "task_9093eb4d2864",
+  "dispatch_id": "ctx_5035dd78477d",
+  "workspace": "output/app-icons-native/ip-b1",
+  "session_id": "ip-b1",
+  "artifact_id": "ip-b1",
+  "status": "imported",
+  "native_state": "returned",
+  "planned_at": "2026-09-12T17:13:55.781529+00:00",
+  "prompt_path": "output/app-icons-native/ip-b1/prompt.txt",
+  "prompt_result_path": "output/app-icons-native/ip-b1/prompt-result.json",
+  "prompt_sha256": "cc2e94e36d4c5c24d5da9cffca145e50e042b472fdd7b0bc4bf7f8e44bad13e3",
+  "revision": 0,
+  "resolved_intent": {
+    "app_icon": {
+      "preset": "ip_mascot",
+      "subject": "a baby capybara with one broad blunt rounded muzzle and both small rounded ears visible",
+      "placement": "lower_left",
+      "text": null
+    },
+    "parent_id": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "lockup": null,
+    "requested_background": "opaque"
+  },
+  "tool": "image_gen__imagegen",
+  "provider": "image_gen",
+  "model": "unreported",
+  "model_identity_exposed": false,
+  "tool_call_identity": "unreported",
+  "native_arguments": [
+    "prompt"
+  ],
+  "native_call_count": 1,
+  "parent": null,
+  "native_outputs": [
+    {
+      "native_source_basename": "exec-46b22cd1-2320-47a0-b4d1-f9a813e87f71.png",
+      "path": "output/app-icons-native/ip-b1/original.png",
+      "sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "bytes": 1083251
+    }
+  ],
+  "history": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:13:55.781529+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:14:05.932422+00:00"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:14:54.986217+00:00"
+    },
+    {
+      "state": "imported",
+      "at": "2026-09-12T17:16:50.286829+00:00",
+      "revision": 1
+    }
+  ],
+  "resume_policy": "Reconcile only ip-b1-draw-1; never rerun a running, unknown, or returned call and never scan for newest images.",
+  "started_at": "2026-09-12T17:14:05.932422+00:00",
+  "returned_at": "2026-09-12T17:14:54.986217+00:00",
+  "native_source_basename": "exec-46b22cd1-2320-47a0-b4d1-f9a813e87f71.png",
+  "tool_result_path": "output/app-icons-native/ip-b1/tool-result.json",
+  "native_source_sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+  "original_path": "output/app-icons-native/ip-b1/original.png",
+  "original_sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+  "actual_image": {
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 1083251
+  },
+  "import_state": "imported",
+  "outcome": "succeeded",
+  "completed_at": "2026-09-12T17:16:50.286829+00:00",
+  "helper_artifact_path": "output/app-icons-native/ip-b1/.logo-generator/sessions/ip-b1/artifacts/ip-b1.png",
+  "helper_artifact_sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+  "helper_session_path": "output/app-icons-native/ip-b1/.logo-generator/sessions/ip-b1/session.json",
+  "helper_commands_path": "output/app-icons-native/ip-b1/helper-commands.json",
+  "verification": {
+    "status": "passed",
+    "hashes": {
+      "native_source": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "original": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "imported": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "native_receipt": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "artifact_snapshot": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "http_body": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a"
+    },
+    "prompt_bytes_equal": true,
+    "intent_equal": true,
+    "parent_null": true,
+    "generation_revision": 0,
+    "imported_session_revision": 1,
+    "session_sha256": "0b6d08fd4d80f02a818bcf4bf1f44150d16e4a4229fec891e68d2c809ece1e46",
+    "actual_dimensions": [
+      1254,
+      1254
+    ],
+    "actual_format": "PNG",
+    "approved": false,
+    "platform_ready": false,
+    "native_call_count": 1,
+    "all_originals_preserved": true,
+    "at": "2026-09-12T17:16:50.286829+00:00"
+  },
+  "http": {
+    "status": "PASS",
+    "scope": "HTTP served-byte integrity only, not native-generation, visual, strict-color or platform approval",
+    "at": "2026-09-12T17:16:13.980823+00:00",
+    "command": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8772/original.png",
+      "-o",
+      "output/app-icons-native/ip-b1/.http-response.tmp"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "response_headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:16:13 GMT\r\nContent-type: image/png\r\nContent-Length: 1083251\r\nLast-Modified: Sat, 12 Sep 2026 17:14:54 GMT",
+    "http_status": 200,
+    "body_sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+    "original_sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+    "body_bytes": 1083251,
+    "server_log": "127.0.0.1 - - [13/Sep/2026 02:16:13] \"GET /original.png HTTP/1.1\" 200 -\n",
+    "cleanup": {
+      "registered_at": "2026-09-12T17:16:13.824420+00:00",
+      "owner": "ip-b1-draw-1",
+      "server": {
+        "pid": 91887,
+        "bind": "127.0.0.1",
+        "port": 8772,
+        "state": "terminated",
+        "exit_code": -15
+      },
+      "temporary_files": [
+        "output/app-icons-native/ip-b1/.http-response.tmp",
+        "output/app-icons-native/ip-b1/.http-server.tmp.log"
+      ],
+      "cleanup": "completed",
+      "cleaned_at": "2026-09-12T17:16:13.982859+00:00",
+      "temporary_files_removed": true,
+      "port_released": true
+    }
+  },
+  "cleanup": {
+    "registered_at": "2026-09-12T17:16:13.824420+00:00",
+    "owner": "ip-b1-draw-1",
+    "server": {
+      "pid": 91887,
+      "bind": "127.0.0.1",
+      "port": 8772,
+      "state": "terminated",
+      "exit_code": -15
+    },
+    "temporary_files": [
+      "output/app-icons-native/ip-b1/.http-response.tmp",
+      "output/app-icons-native/ip-b1/.http-server.tmp.log"
+    ],
+    "cleanup": "completed",
+    "cleaned_at": "2026-09-12T17:16:13.982859+00:00",
+    "temporary_files_removed": true,
+    "port_released": true
+  },
+  "adversarial_probes_path": "output/app-icons-native/ip-b1/adversarial-probes.json",
+  "adversarial_probes": [
+    {
+      "name": "malformed-icon-file",
+      "passed": true,
+      "exit_code": 1,
+      "session_and_original_unchanged": true,
+      "error": "{\"error\": \"18 validation errors for AppIconIntent\\nbrand_name\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='Bori Reading · Capybara', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nexact_text\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nindustry\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='Fictional mobile reading application', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\naudience\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='People seeking a friendl...zable mobile experience', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nslogan\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nlogo_type\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='mascot', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nstyles\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=[], input_type=list]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\npalette\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=['Character primary: warm...ted sage green #A1B6A5'], input_type=list]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nforbidden\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=['watermark', 'presentati...ame', 'extra lettering'], input_type=list]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nuse_cases\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=['Mobile app icon artwork demonstration'], input_type=list]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nassumptions\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=['Fictional product brief...nt for sample coverage'], input_type=list]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nbackground\\n  Extra inputs are not permitted [type=extra_forbidden, input_value='opaque', input_type=str]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nconcept_count\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=1, input_type=int]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\nlockup\\n  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\napp_icon\\n  Extra inputs are not permitted [type=extra_forbidden, input_value={'preset': 'ip_mascot', '...wer_left', 'text': None}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/extra_forbidden\\npreset\\n  Field required [type=missing, input_value={'brand_name': 'Bori Read...er_left', 'text': None}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsubject\\n  Field required [type=missing, input_value={'brand_name': 'Bori Read...er_left', 'text': None}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nplacement\\n  Field required [type=missing, input_value={'brand_name': 'Bori Read...er_left', 'text': None}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\"}\n"
+    },
+    {
+      "name": "non-png-file",
+      "passed": true,
+      "exit_code": 1,
+      "session_and_original_unchanged": true,
+      "error": "{\"error\": \"invalid_png: PNG must end with a complete IEND chunk\"}\n"
+    },
+    {
+      "name": "stale-revision",
+      "passed": true,
+      "exit_code": 1,
+      "session_and_original_unchanged": true,
+      "error": "{\"error\": \"stale_revision: Expected revision 0; current revision is 1\"}\n"
+    },
+    {
+      "name": "duplicate-import",
+      "passed": true,
+      "exit_code": 1,
+      "session_and_original_unchanged": true,
+      "error": "{\"error\": \"conflict: Artifact ip-b1 already exists\"}\n"
+    },
+    {
+      "name": "prompt-injection-data",
+      "passed": true,
+      "exit_code": 0,
+      "session_and_original_unchanged": true,
+      "error": null,
+      "quoted_json_data_preserved": true,
+      "trusted_constraints_follow_data": true,
+      "shell_marker_absent": true,
+      "scope": "Prompt hygiene only; no model-level injection immunity claimed and this probe was not generated."
+    },
+    {
+      "name": "prompt-length-limit",
+      "passed": true,
+      "exit_code": 1,
+      "session_and_original_unchanged": true,
+      "error": "{\"error\": \"prompt_too_long: The complete icon prompt exceeds 20,000 characters\"}\n"
+    },
+    {
+      "name": "malformed-receipt",
+      "passed": true,
+      "method": "Parse truncated receipt copy in memory only",
+      "error": "Expecting ',' delimiter: line 83 column 1 (char 2688)",
+      "native_receipt_unchanged": true
+    },
+    {
+      "name": "png-limits",
+      "passed": true,
+      "actual_bytes": 1083251,
+      "max_file_bytes": 67108864,
+      "actual_pixels": 1572516,
+      "max_pixels": 40000000,
+      "scope": "Actual original decoded/imported below helper limits; oversize rejection N/A because no oversized native return and no native-original corruption or image synthesis permitted."
+    },
+    {
+      "name": "cancel-resume",
+      "status": "not_applicable",
+      "reason": "No cancellation or lost native response occurred; persisted planned/running/returned checkpoints reconciled the same logical attempt and native source without another call."
+    },
+    {
+      "name": "repeated-interruptions",
+      "status": "not_applicable",
+      "reason": "No runtime interruption occurred; duplicate import and stale revision were actively rejected with unchanged session/original."
+    },
+    {
+      "name": "dirty-worktree",
+      "passed": true,
+      "evidence": "baseline-git-status.txt",
+      "scope": "Shared worktree was already dirty; all task file writes were confined to assigned candidate workspace and candidate receipt, with no commits or source edits."
+    },
+    {
+      "name": "artistic-variance",
+      "passed": true,
+      "scope": "Native original retained once, including extra book, shading and 1254-square dimensions; no artistic retry or transformation."
+    },
+    {
+      "name": "misleading-success",
+      "passed": true,
+      "scope": "Import and HTTP byte integrity do not constitute visual selection, strict color conformance or platform readiness; selection/review/export remain unset."
+    }
+  ],
+  "visual_observation": {
+    "viewed": "Actual native tool returned preview",
+    "description": "Large terracotta capybara with both ears and broad muzzle occupies lower-left, holding a green book against sage background. Returned image has cream regions, brown facial details and tonal shading.",
+    "variance_preserved": "1254 square rather than approximately 1536 requested; book and shading retained exactly.",
+    "scope": "Observation only; no selection, visual-review, strict color conformance or platform-ready claim."
+  },
+  "remaining": "Coordinator-owned combined gallery and Chrome QA remain outside this candidate task."
+}

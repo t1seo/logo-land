@@ -1,0 +1,40 @@
+{
+  "swatches": [
+    {
+      "hex": "#153F78",
+      "role": "primary"
+    },
+    {
+      "hex": "#F5EBDD",
+      "role": "background"
+    }
+  ],
+  "constraints": {
+    "locked_hex": [
+      "#153F78"
+    ],
+    "allowed_hex": [
+      "#153F78",
+      "#F5EBDD"
+    ],
+    "max_colors": 2,
+    "required_hex": [
+      "#F5EBDD"
+    ],
+    "allow_gradients": false
+  },
+  "source": "assistant",
+  "source_evidence": {
+    "reference_id": null,
+    "reference_sha256": null,
+    "provider": null,
+    "tool": null,
+    "response": null,
+    "notes": [
+
+    ]
+  },
+  "selected_by": "user",
+  "rationale": "Strict frozen fixture",
+  "calculation_version": "logo-color-v1"
+}

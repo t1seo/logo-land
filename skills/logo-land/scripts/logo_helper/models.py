@@ -1,5 +1,6 @@
 """Stable public imports for focused strict model modules."""
 
+from logo_helper.app_icon_models import AppIconIntent
 from logo_helper.artifact_models import (
     Artifact,
     ExportRecord,
@@ -44,6 +45,7 @@ from logo_helper.reference_models import Reference, RegionOfInterest
 from logo_helper.session_models import Session
 
 __all__ = [
+    "AppIconIntent",
     "Artifact",
     "ArtifactId",
     "Background",

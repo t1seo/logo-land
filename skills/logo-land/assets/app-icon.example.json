@@ -1,0 +1,22 @@
+{
+  "brand_name": "Memo Garden",
+  "exact_text": "메모",
+  "industry": "Fictional notes application",
+  "audience": "People keeping short daily notes",
+  "slogan": "",
+  "logo_type": "monogram",
+  "styles": ["rounded Korean lettering", "simple bold forms"],
+  "palette": ["deep navy lettering", "warm cream background"],
+  "forbidden": ["extra lettering", "device mockups"],
+  "use_cases": ["mobile app icon artwork"],
+  "assumptions": ["Fictional demonstration product; requested lettering is not a font-file claim"],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "monogram",
+    "subject": "Rounded Korean lettering for a daily notes companion",
+    "placement": "center",
+    "text": "메모"
+  }
+}

@@ -1,0 +1,1 @@
+PASS 42 real CLI invocations; six styles, four Unicode cases, strict palette/inherited edit, malformed/stale/export rejection, injection, repeated fresh-process reads; synthetic imports only.

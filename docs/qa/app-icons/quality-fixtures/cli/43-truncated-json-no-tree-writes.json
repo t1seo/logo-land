@@ -1,0 +1,4 @@
+{
+  "stderr": "{\"error\": \"1 validation error for AppIconIntent\\n  Invalid JSON: EOF while parsing a value at line 1 column 10 [type=json_invalid, input_value=b'{\\\"preset\\\":', input_type=bytes]\\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid\"}\n",
+  "exit": 1
+}

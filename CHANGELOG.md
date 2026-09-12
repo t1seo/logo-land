@@ -2,9 +2,38 @@
 
 Logo Land's plugin and local helper share one release version. Tagged releases and their notes are available on [GitHub Releases](https://github.com/t1seo/logo-land/releases). See the [release guide](docs/releases.md) for versioning and publication steps.
 
+## 0.5.0 — Unreleased
+
+Prepared on 2026-09-13 as the app icon artwork development update. Source metadata is 0.5.0; the published release remains 0.3.1, and the prior 0.4.0 draft and its failed color release gates remain unchanged. Sixteen independent native samples are preserved across the original and revised galleries. Samples are artwork, without platform approval claims.
+
+### Added
+
+- Six app icon presets: `ip_mascot`, `pictogram`, `abstract`, `monogram`, `soft_3d` and `pixel_art`, with explicit subject/placement and exact Unicode monogram intent.
+- Dedicated native prompts and original-preserving icon comparison galleries with exact prompts, intent, actual dimensions, CSS masks, display sizes and original downloads.
+- Conversational IP guidance adapted from s1dashu's pinned `acb834c` skill, including three directions, six independent one-pass candidates and the complete MIT notice.
+- English/Korean usage instructions, a runnable Korean monogram brief, native receipt guidance and raster/platform limitations.
+- [Eleven native originals](docs/app-icons/index.html) across six presets, including six IP candidates and the Korean `모` monogram, with exact prompts and [source/session/catalog/download lineage](docs/qa/app-icons/native-samples.md). Every returned 1254 × 1254 PNG is unchanged; catalog imports add no native calls or approval claims.
+- Five fresh same-subject examples in a [sixteen-original comparison gallery](docs/app-icons-quality-v1/index.html), pairing each non-IP style with its earlier result and retaining all six IP originals.
+
+### Changed
+
+- Replaced the parody branding with an original open-frame Logo Land symbol and wordmark, applied to both READMEs and the plugin interface.
+- Refined pictogram, abstract, monogram, soft 3D and pixel-art instructions around recognizable silhouettes, readable gaps, deliberate lettering and consistent materials or grid structure. Existing IP prompts and historical originals remain unchanged.
+- Added product-specific construction guidance before generation, while preserving explicit user colors, lettering and placement.
+- Simplified the English and Korean READMEs into installation, example requests, capabilities and sample links. Individual bilingual sample pages now provide original images and available downloads, with explicit upstream credit on IP character pages.
+
+### Compatibility
+
+- Session and manifest schema 2 gain optional icon snapshots. Existing state reads, frozen v1 parsing and first-mutation byte-exact v1 backups remain; older readers are not promised to read icon-bearing v2 files.
+- Explicit icon transforms preserve legacy history while suppressing old brand lettering/lockups in rendering. Icon background is opaque; conflicting explicit lockup or transparent import is rejected before mutation.
+- Creative galleries preserve all selected icon originals independently of review/color/export status. Optional approved export retains existing gates, fresh strict-color checks, the three ZIP payload filenames and original PNG bytes.
+- Semantic style colors do not create hard constraints or relax explicit palettes. Approximate requested dimensions, font appearance and illustrative masks do not establish exact output size, font-file usage, platform layers or store acceptance.
+
+See the [app icon contract](plans/logo-land-app-icons.md) and [documentation verification](docs/qa/app-icons/docs.md). Existing logo/color sample descriptions and historical validation snapshots remain intact.
+
 ## 0.4.0 — Unreleased
 
-Prepared on 2026-09-13. Publication is withheld because the required restricted-color and white-transparent native samples did not pass after the bounded repair attempts. Source and personal development versions are 0.4.0; the latest published release remains 0.3.1.
+Prepared on 2026-09-13. Publication is withheld because the required restricted-color and white-transparent native samples did not pass after the bounded repair attempts. At that checkpoint source and personal development versions were 0.4.0; the published release was 0.3.1. This historical draft remains unpublished as development continues at 0.5.0.
 
 ### Added
 

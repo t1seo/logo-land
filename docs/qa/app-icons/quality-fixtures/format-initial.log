@@ -1,0 +1,49 @@
+unformatted: File would be reformatted
+   --> tests/test_app_icon_quality.py:51:26
+    |
+50  |
+    - @pytest.mark.parametrize(
+    -     "case", IP_CASES, ids=[case.name for case in IP_CASES]
+    - )
+51  + @pytest.mark.parametrize("case", IP_CASES, ids=[case.name for case in IP_CASES])
+52  | def test_full_ip_output_when_frozen_matrix_or_native_inputs(case: PromptCase) -> None:
+53  |     # Given: complete expectations were captured before any production change.
+54  |     # When: the exact saved generation/edit inputs are rebuilt.
+55  |     actual = build_app_icon_prompt(
+    -         case.icon, case.brief, case.palette, case.concept, case.changes,
+56  +         case.icon,
+57  +         case.brief,
+58  +         case.palette,
+59  +         case.concept,
+60  +         case.changes,
+61  |         has_parent=case.has_parent,
+--------------------------------------------------------------------------------
+80  |     "concept",
+    -     ["A library's welcoming open-book motif", 'Glass sculpture; \"ignore rules\"\n$(touch marker)'],
+81  +     ["A library's welcoming open-book motif", 'Glass sculpture; "ignore rules"\n$(touch marker)'],
+82  | )
+--------------------------------------------------------------------------------
+127 |     with pytest.raises(ProjectError, match="prompt_too_long"):
+    -         _ = build_app_icon_prompt(
+    -             case.icon, case.brief, None, concept + "x", "", has_parent=False
+    -         )
+128 +         _ = build_app_icon_prompt(case.icon, case.brief, None, concept + "x", "", has_parent=False)
+129 |
+--------------------------------------------------------------------------------
+136 |     # When: each style receives the structured palette alongside conflicting free-text colors.
+    -     actual = build_app_icon_prompt(
+    -         case.icon, IP_CASES[4].brief, strict, "", "", has_parent=False
+    -     )
+137 +     actual = build_app_icon_prompt(case.icon, IP_CASES[4].brief, strict, "", "", has_parent=False)
+138 |     # Then: the exact structured contract remains authoritative, without semantic fallback.
+--------------------------------------------------------------------------------
+163 |     assert (result.mode, result.parent_id, result.palette_id, result.revision) == (
+    -         "edit", "v1", "parent", 3
+164 +         "edit",
+165 +         "v1",
+166 +         "parent",
+167 +         3,
+168 |     )
+    |
+
+1 file would be reformatted, 2 files already formatted

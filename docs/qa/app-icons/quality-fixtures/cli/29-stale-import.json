@@ -1,0 +1,4 @@
+{
+  "stderr": "{\"error\": \"stale_revision: Expected revision 1; current revision is 3\"}\n",
+  "exit": 1
+}

@@ -1,0 +1,11 @@
+{
+  "swatches": [
+    {
+      "hex": "#FF0000",
+      "role": "primary"
+    }
+  ],
+  "source": "assistant",
+  "selected_by": "user",
+  "rationale": "Synthetic future active palette"
+}

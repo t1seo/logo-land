@@ -1,0 +1,31 @@
+{
+  "swatches": [
+    {
+      "hex": "#252722",
+      "role": "open frame symbol and exact lettering"
+    },
+    {
+      "hex": "#F6F3EC",
+      "role": "opaque full canvas"
+    },
+    {
+      "hex": "#B75E45",
+      "role": "restrained optional emerging mark accent"
+    }
+  ],
+  "constraints": {
+    "locked_hex": [],
+    "allowed_hex": null,
+    "max_colors": null,
+    "required_hex": [],
+    "allow_gradients": false
+  },
+  "source": "assistant",
+  "source_evidence": {
+    "notes": [
+      "Original brief-led selection, not sampled from another brand image."
+    ]
+  },
+  "selected_by": "assistant",
+  "rationale": "User delegated color choice. Charcoal supports legibility, ivory adds warmth, and an optional terracotta detail shows the transition from open space to a finished mark; no strict palette was requested."
+}

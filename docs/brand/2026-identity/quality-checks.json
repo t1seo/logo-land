@@ -1,0 +1,57 @@
+[
+  {
+    "argv": [
+      "uv",
+      "run",
+      "--locked",
+      "ruff",
+      "check",
+      "output/logo-land-brand-refresh/run-helper.py"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "uv",
+      "run",
+      "--locked",
+      "basedpyright",
+      "output/logo-land-brand-refresh/run-helper.py"
+    ],
+    "exit_code": 0,
+    "stdout": "0 errors, 0 warnings, 0 notes\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "uv",
+      "run",
+      "--locked",
+      "ruff",
+      "format",
+      "--check",
+      "output/logo-land-brand-refresh/run-helper.py"
+    ],
+    "exit_code": 0,
+    "stdout": "1 file already formatted\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      ".codex-plugin/plugin.json",
+      "README.md",
+      "README.ko.md",
+      "docs/brand",
+      "docs/qa/app-icons/brand-refresh.md"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

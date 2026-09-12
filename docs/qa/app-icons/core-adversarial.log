@@ -1,0 +1,122 @@
+.......F                                                                 [100%]
+=================================== FAILURES ===================================
+________________ test_icon_style_keeps_strict_color_export_gate ________________
+
+harness = Harness(workspace=PosixPath('/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0/작업 공간'), bri...pt.txt'), review=PosixPath('/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0/review.json'))
+
+    def test_icon_style_keeps_strict_color_export_gate(harness: Harness) -> None:
+        _ = icon_brief(harness)
+        harness.init()
+        candidate = PaletteContent(
+            swatches=(Swatch(hex="#FFFFFF", role="background"),),
+            constraints=ColorConstraints(
+                allowed_hex=("#FFFFFF",), locked_hex=("#FFFFFF",), max_colors=1
+            ),
+            source="assistant",
+            selected_by="user",
+            rationale="Strict white fixture",
+        )
+        path = harness.brief.with_name("strict.json")
+        _ = path.write_text(candidate.model_dump_json(), encoding="utf-8")
+        _ = harness.ok(
+            "palette-add",
+            "--session",
+            "demo",
+            "--palette",
+            "white",
+            "--revision",
+            "0",
+            "--palette-file",
+            str(path),
+        )
+        prompt = PromptResult.model_validate_json(harness.ok("prompt", "--session", "demo"))
+        assert '"max_colors":1' in prompt.prompt
+        assert '"locked_hex":["#FFFFFF"]' in prompt.prompt
+        assert "warm yellow" not in prompt.prompt
+        with Image.new("RGB", (40, 40), (240, 0, 0)) as image:
+            image.save(harness.png)
+        state = Session.model_validate_json(harness.import_image(1))
+        assert state.color_reports[-1].status != "pass"
+        _ = harness.ok("select", "--session", "demo", "--artifact", "v1", "--revision", "2")
+        _ = harness.ok(
+            "review",
+            "--session",
+            "demo",
+            "--artifact",
+            "v1",
+            "--revision",
+            "3",
+            "--review-file",
+            str(harness.review),
+        )
+        before = harness.state_path.read_bytes()
+        result = harness.run("export", "--session", "demo", "--revision", "4")
+        assert result.returncode != 0
+>       assert "color_review_required" in result.stderr
+E       assert 'color_review_required' in '{"error": "color_mismatch: Fewer than 99% of sampled core pixels match the target palette; Required color #FFFFFF has no matching core samples"}\n'
+E        +  where '{"error": "color_mismatch: Fewer than 99% of sampled core pixels match the target palette; Required color #FFFFFF has no matching core samples"}\n' = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc...wer than 99% of sampled core pixels match the target palette; Required color #FFFFFF has no matching core samples"}\n').stderr
+
+tests/test_app_icon_workflow_palette.py:91: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_app_icon_workflow_palette.py::test_icon_style_keeps_strict_color_export_gate
+1 failed, 7 passed in 10.65s
+........F                                                                [100%]
+=================================== FAILURES ===================================
+________________ test_icon_style_keeps_strict_color_export_gate ________________
+
+harness = Harness(workspace=PosixPath('/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0/작업 공간'), bri...pt.txt'), review=PosixPath('/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0/review.json'))
+
+    def test_icon_style_keeps_strict_color_export_gate(harness: Harness) -> None:
+        _ = icon_brief(harness)
+        harness.init()
+        candidate = PaletteContent(
+            swatches=(Swatch(hex="#FFFFFF", role="background"),),
+            constraints=ColorConstraints(
+                allowed_hex=("#FFFFFF",), locked_hex=("#FFFFFF",), max_colors=1
+            ),
+            source="assistant",
+            selected_by="user",
+            rationale="Strict white fixture",
+        )
+        path = harness.brief.with_name("strict.json")
+        _ = path.write_text(candidate.model_dump_json(), encoding="utf-8")
+        _ = harness.ok(
+            "palette-add",
+            "--session",
+            "demo",
+            "--palette",
+            "white",
+            "--revision",
+            "0",
+            "--palette-file",
+            str(path),
+        )
+        prompt = PromptResult.model_validate_json(harness.ok("prompt", "--session", "demo"))
+        assert '"max_colors":1' in prompt.prompt
+        assert '"locked_hex":["#FFFFFF"]' in prompt.prompt
+        assert "warm yellow" not in prompt.prompt
+        with Image.new("RGB", (40, 40), (240, 0, 0)) as image:
+            image.save(harness.png)
+        state = Session.model_validate_json(harness.import_image(1))
+        assert state.color_reports[-1].status != "pass"
+>       _ = harness.ok("select", "--session", "demo", "--artifact", "v1", "--revision", "2")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_app_icon_workflow_palette.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Harness(workspace=PosixPath('/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0/작업 공간'), bri...pt.txt'), review=PosixPath('/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0/review.json'))
+args = ('select', '--session', 'demo', '--artifact', 'v1', '--revision', ...)
+
+    def ok(self, *args: str) -> str:
+        result = self.run(*args)
+>       assert result.returncode == 0, result.stderr + result.stdout
+E       AssertionError: {"error": "[Errno 2] No such file or directory: '/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0'"}
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Doc...no 2] No such file or directory: \'/private/tmp/ll-icons-core-pytest-task058008/test_icon_style_keeps_strict_c0\'"}\n').returncode
+
+tests/conftest.py:51: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_app_icon_workflow_palette.py::test_icon_style_keeps_strict_color_export_gate
+1 failed, 8 passed in 18.48s

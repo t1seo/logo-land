@@ -1,0 +1,5 @@
+PASS: tmux preset/init/prompt/import/show exits 0; malformed import exits 1.
+PASS: 19x23 synthetic original preserved; source/stored SHA256= f2b10f82ea768cb2669294a3e1bd2dbd8b87afaeff3a66a7df8a17bce9de6e7e
+PASS: prompt/app_icon/requested-background full snapshot equals import and resumed state.
+PASS: malformed import preserved state SHA256= 6e113a8c43da9abdb7c13d5739c4043b1fbf96d4c86081963df3a6723baf0ef0 recorded hash count= 3
+No native image generation was performed by core worker.

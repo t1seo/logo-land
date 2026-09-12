@@ -1,0 +1,2505 @@
+{
+  "schema_version": 1,
+  "title": "App icon quality research evidence",
+  "research_date_kst": "2026-09-13",
+  "retrieval_date_utc": "2026-09-12",
+  "generated_at": "2026-09-12T17:50:43Z",
+  "task_id": "task_94e863839b26",
+  "dispatch_id": "ctx_21bfcb2da276",
+  "report_path": "docs/research/app-icon-quality.md",
+  "ownership": [
+    "docs/research/app-icon-quality.md",
+    "docs/research/app-icon-quality-sources.json"
+  ],
+  "plan_steps": [
+    {
+      "step": "Read baseline and five saved prompts",
+      "status": "completed"
+    },
+    {
+      "step": "Verify official guidance and pinned repository instructions/licenses",
+      "status": "completed"
+    },
+    {
+      "step": "Write per-style recommendations and comparison criteria",
+      "status": "completed"
+    },
+    {
+      "step": "Validate cited links, HTTP evidence, scope, and cleanup",
+      "status": "completed"
+    }
+  ],
+  "search_provenance": {
+    "method": "Web discovery followed by direct bounded HTTP bodies, GitHub commit/tree/raw/HTML verification",
+    "queries": [
+      "app icon design skill github SKILL.md",
+      "app icons Icon Composer design WWDC",
+      "product icons geometry optical corrections",
+      "app-icon SKILL.md github",
+      "pixel art SKILL.md github",
+      "icon prompt LICENSE github soft 3d"
+    ],
+    "scope_limit": "Three relevant publishers inspected; not an exhaustive ecosystem survey or comparative quality benchmark",
+    "selection": "Official platform pages and repository publishers; directory audit scores, unsupported provider matrices, news, and forum claims not used as proof"
+  },
+  "responses": [
+    {
+      "id": "android-current",
+      "url": "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive",
+      "retrieved_at": "2026-09-12T17:45:11Z",
+      "completed_at": "2026-09-12T17:45:13Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\nlast-modified: Thu, 13 Aug 2026 22:16:55 GMT\r\ncontent-type: text/html; charset=utf-8\r\nvary: Cookie\r\ncontent-security-policy: base-uri 'self'; object-src 'none'; script-src 'strict-dynamic' 'unsafe-inline' https: http: 'nonce-NYrNaDUFCtBxwrrIkX6e6/O2ypoAhd' 'unsafe-eval'; frame-ancestors 'self' https://developers.google.com/_d/analytics-iframe; report-uri https://csp.withgoogle.com/csp/devsite/v2\r\nstrict-transport-security: max-age=63072000; includeSubdomains; preload\r\nx-xss-protection: 0\r\nx-content-type-options: nosniff\r\ncache-control: no-cache, must-revalidate\r\nexpires: 0\r\npragma: no-cache\r\nx-cloud-trace-context: a1de477519e6793887a5620be97e5fa0\r\ndate: Sat, 12 Sep 2026 17:45:16 GMT\r\nserver: Google Frontend\r\ncontent-length: 353823\r\nalt-svc: h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000\r\n\r\n",
+      "body_bytes": 353823,
+      "body_sha256": "899e6c4425a077b01980bc0b683242a0002d9120696ff2f5de8d47a3d289d6da",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/android-current.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/android-current.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive"
+      ]
+    },
+    {
+      "id": "apple-2017",
+      "url": "https://developer.apple.com/videos/play/wwdc2017/822/",
+      "retrieved_at": "2026-09-12T17:44:39Z",
+      "completed_at": "2026-09-12T17:44:40Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.apple.com/videos/play/wwdc2017/822/",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/1.1 200 OK\r\nServer: Apple\r\nDate: Sat, 12 Sep 2026 17:44:44 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nReplace-Last-Modified: Sat, 12 Sep 2026 17:44:43 GMT\r\nX-Frame-Options: SAMEORIGIN\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nLast-Modified: Sat, 12 Sep 2026 17:44:43 GMT\r\nX-XSS-Protection: 1; mode=block\r\nContent-Security-Policy: default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://*.apple.com http://*.apple.com https://*.mzstatic.com https://*.apple-mapkit.com https://p-events-delivery.akamaized.net http://p-events-delivery.akamaized.net https://apple-events.akamaized.net https://mediaservices.cdn-apple.com http://mediaservices.cdn-apple.com https://wwdr-aws-dev.apple.com https://bricks.cdn-apple.com https://sfss.cdn-apple.com https://sf-saas.cdn-apple.com https://df-webapp-blue-ausw2.apple.com https://df-webapp-green-ausw2.apple.com https://cdn.captionhub.com https://cdnjs.cloudflare.com\r\nCache-Control: max-age=300, public\r\nHost: developer.apple.com\r\nX-Frame-Options: SAMEORIGIN\r\nrqId: 9a83db37d1ffd5a38002a724bdc00810\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nAge: 2\r\nVia: https/1.1 krsel6-edge-mx-007.ts.apple.com (acdn/331.16659), https/1.1 krsel6-edge-fx-009.ts.apple.com (acdn/331.16659)\r\nX-Cache: hit-stale, hit-stale\r\nCDNUUID: d7c597b4-8380-429d-9522-e6cc9caf9263-1132725982\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\n\r\n",
+      "body_bytes": 145329,
+      "body_sha256": "2542d61d752c5d6e7b03105ca6bdbad01f1b591e281709086c912afd97297865",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/apple-2017.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/apple-2017.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.apple.com/videos/play/wwdc2017/822/"
+      ]
+    },
+    {
+      "id": "apple-2025",
+      "url": "https://developer.apple.com/videos/play/wwdc2025/361/",
+      "retrieved_at": "2026-09-12T17:44:40Z",
+      "completed_at": "2026-09-12T17:44:42Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.apple.com/videos/play/wwdc2025/361/",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/1.1 200 OK\r\nServer: Apple\r\nDate: Sat, 12 Sep 2026 17:44:45 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nReplace-Last-Modified: Sat, 12 Sep 2026 17:44:45 GMT\r\nX-Frame-Options: SAMEORIGIN\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nLast-Modified: Sat, 12 Sep 2026 17:44:45 GMT\r\nX-XSS-Protection: 1; mode=block\r\nContent-Security-Policy: default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://*.apple.com http://*.apple.com https://*.mzstatic.com https://*.apple-mapkit.com https://p-events-delivery.akamaized.net http://p-events-delivery.akamaized.net https://apple-events.akamaized.net https://mediaservices.cdn-apple.com http://mediaservices.cdn-apple.com https://wwdr-aws-dev.apple.com https://bricks.cdn-apple.com https://sfss.cdn-apple.com https://sf-saas.cdn-apple.com https://df-webapp-blue-ausw2.apple.com https://df-webapp-green-ausw2.apple.com https://cdn.captionhub.com https://cdnjs.cloudflare.com\r\nCache-Control: max-age=300, public\r\nHost: developer.apple.com\r\nX-Frame-Options: SAMEORIGIN\r\nrqId: fb8fd7c23bb2a3d3a038f8428e81cec7\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nAge: 2\r\nVia: https/1.1 krsel6-edge-mx-008.ts.apple.com (acdn/331.16659), https/1.1 krsel6-edge-fx-009.ts.apple.com (acdn/331.16659)\r\nX-Cache: hit-stale, miss\r\nCDNUUID: 5678fa9d-366a-4115-b912-ffffbc4b10ea-650268904\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\n\r\n",
+      "body_bytes": 149779,
+      "body_sha256": "753e2711a8e076880cc959460dce9a829cbf6e3b302589760342baa1802add52",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/apple-2025.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/apple-2025.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.apple.com/videos/play/wwdc2025/361/"
+      ]
+    },
+    {
+      "id": "apple-2026",
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8012/",
+      "retrieved_at": "2026-09-12T17:44:40Z",
+      "completed_at": "2026-09-12T17:44:41Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.apple.com/videos/play/wwdc2026/8012/",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/1.1 200 OK\r\nServer: Apple\r\nDate: Sat, 12 Sep 2026 17:44:45 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nReplace-Last-Modified: Sat, 12 Sep 2026 17:44:45 GMT\r\nX-Frame-Options: SAMEORIGIN\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nLast-Modified: Sat, 12 Sep 2026 17:44:45 GMT\r\nX-XSS-Protection: 1; mode=block\r\nContent-Security-Policy: default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://*.apple.com http://*.apple.com https://*.mzstatic.com https://*.apple-mapkit.com https://p-events-delivery.akamaized.net http://p-events-delivery.akamaized.net https://apple-events.akamaized.net https://mediaservices.cdn-apple.com http://mediaservices.cdn-apple.com https://wwdr-aws-dev.apple.com https://bricks.cdn-apple.com https://sfss.cdn-apple.com https://sf-saas.cdn-apple.com https://df-webapp-blue-ausw2.apple.com https://df-webapp-green-ausw2.apple.com https://cdn.captionhub.com https://cdnjs.cloudflare.com\r\nCache-Control: max-age=300, public\r\nHost: developer.apple.com\r\nX-Frame-Options: SAMEORIGIN\r\nrqId: e5f6d325e0b58f79b5ebd627da920d1c\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nAge: 2\r\nVia: https/1.1 krsel6-edge-mx-008.ts.apple.com (acdn/331.16659), https/1.1 krsel6-edge-fx-010.ts.apple.com (acdn/331.16659)\r\nX-Cache: hit-stale, miss\r\nCDNUUID: 5678fa9d-366a-4115-b912-ffffbc4b10ea-650268903\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\n\r\n",
+      "body_bytes": 128611,
+      "body_sha256": "c2257dae818d74d0ce523a462035461a28e3f29aae4d3e81c2ad9c4bfc0c25fb",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/apple-2026.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/apple-2026.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.apple.com/videos/play/wwdc2026/8012/"
+      ]
+    },
+    {
+      "id": "apple-composer",
+      "url": "https://developer.apple.com/icon-composer/",
+      "retrieved_at": "2026-09-12T17:44:39Z",
+      "completed_at": "2026-09-12T17:44:40Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.apple.com/icon-composer/",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/1.1 200 OK\r\nServer: Apple\r\nDate: Sat, 12 Sep 2026 17:44:43 GMT\r\nContent-Type: text/html\r\nX-Frame-Options: SAMEORIGIN\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nCache-Control: max-age=60, public\r\nAccept-Ranges: bytes\r\nX-XSS-Protection: 1; mode=block\r\nContent-Security-Policy: default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://*.apple.com http://*.apple.com https://*.mzstatic.com https://*.apple-mapkit.com https://p-events-delivery.akamaized.net http://p-events-delivery.akamaized.net https://apple-events.akamaized.net https://mediaservices.cdn-apple.com http://mediaservices.cdn-apple.com https://wwdr-aws-dev.apple.com https://bricks.cdn-apple.com https://sfss.cdn-apple.com https://sf-saas.cdn-apple.com https://df-webapp-blue-ausw2.apple.com https://df-webapp-green-ausw2.apple.com https://cdn.captionhub.com https://cdnjs.cloudflare.com\r\nCache-Control: max-age=300, public\r\nHost: developer.apple.com\r\nX-Frame-Options: SAMEORIGIN\r\nrqId: 038875cb66087af540e131c85c499dc5\r\nStrict-Transport-Security: max-age=31536000\r\nVary: Accept-Encoding\r\nAge: 3\r\nVia: https/1.1 krsel6-edge-mx-011.ts.apple.com (acdn/331.16659), https/1.1 krsel6-edge-fx-012.ts.apple.com (acdn/331.16659)\r\nX-Cache: hit-stale, miss\r\nCDNUUID: fe574bd1-d925-4b44-886d-ae973badfa75-762212825\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\n\r\n",
+      "body_bytes": 119005,
+      "body_sha256": "c2008f6b40605ed88099451ef87e63aa9f2c268aead01f26957c8c69de18039c",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/apple-composer.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/apple-composer.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.apple.com/icon-composer/"
+      ]
+    },
+    {
+      "id": "apple-hig-data",
+      "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json",
+      "retrieved_at": "2026-09-12T17:44:39Z",
+      "completed_at": "2026-09-12T17:44:40Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/1.1 200 OK\r\nServer: AppleHttpServer/7b3d349ae60c243cdd677edbde3e93e460f75820\r\nDate: Sat, 12 Sep 2026 17:44:44 GMT\r\nContent-Type: application/json\r\nContent-Length: 46336\r\nLast-Modified: Thu, 06 Aug 2026 02:58:13 GMT\r\nAccept-Ranges: bytes\r\nX-B3-TraceId: f66aad9e966939c7\r\nStrict-Transport-Security: max-age=31536000\r\nCache-Control: max-age=300, public\r\nVary: Accept-Encoding\r\nVia: https/1.1 krsel6-edge-mx-005.ts.apple.com (acdn/331.16659), https/1.1 krsel6-edge-fx-009.ts.apple.com (acdn/331.16659)\r\nX-Cache: hit-stale, hit-stale\r\nCDNUUID: c88adf1c-e3da-4572-8426-4f699e3c9c97-963008934\r\nEtag: \"b500-658580f0f7883\"\r\nAge: 1\r\nConnection: keep-alive\r\n\r\n",
+      "body_bytes": 46336,
+      "body_sha256": "5f67bb7b1e2405ee03526ab83c3f75b63b28473ce39ebf10848655908e2712f7",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/apple-hig-data.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/apple-hig-data.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json"
+      ]
+    },
+    {
+      "id": "apple-hig",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "retrieved_at": "2026-09-12T17:44:39Z",
+      "completed_at": "2026-09-12T17:44:40Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/1.1 200 OK\r\nServer: AppleHttpServer/7b3d349ae60c243cdd677edbde3e93e460f75820\r\nDate: Sat, 12 Sep 2026 17:44:43 GMT\r\nContent-Type: text/html\r\nContent-Length: 17742\r\nLast-Modified: Fri, 11 Sep 2026 20:15:12 GMT\r\nAccept-Ranges: bytes\r\nX-B3-TraceId: a30b2a0ad07a4d7c\r\nStrict-Transport-Security: max-age=31536000\r\nCache-Control: max-age=300, public\r\nVary: Accept-Encoding\r\nEtag: \"454e-65b3abde6f872\"\r\nAge: 3\r\nVia: https/1.1 krsel6-edge-mx-008.ts.apple.com (acdn/331.16659), https/1.1 krsel6-edge-fx-011.ts.apple.com (acdn/331.16659)\r\nX-Cache: hit-stale, miss\r\nCDNUUID: 5678fa9d-366a-4115-b912-ffffbc4b10ea-650268572\r\nConnection: keep-alive\r\n\r\n",
+      "body_bytes": 17742,
+      "body_sha256": "2f41d5d4d7437f07ff412aef3727dd7aba13fda5cbb56f8256a87e49f9652d3c",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/apple-hig.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/apple-hig.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://developer.apple.com/design/human-interface-guidelines/app-icons"
+      ]
+    },
+    {
+      "id": "bad-url",
+      "url": "https://[bad",
+      "retrieved_at": "2026-09-12T17:45:11Z",
+      "completed_at": "2026-09-12T17:45:11Z",
+      "curl_exit": 3,
+      "status": null,
+      "effective_url": null,
+      "redirects": null,
+      "stderr": "curl: (3) bad range in URL position 10:\nhttps://[bad\n         ^\n",
+      "headers": "",
+      "body_bytes": 0,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/bad-url.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/bad-url.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://[bad"
+      ]
+    },
+    {
+      "id": "material-legacy",
+      "url": "https://m1.material.io/style/icons.html",
+      "retrieved_at": "2026-09-12T17:44:40Z",
+      "completed_at": "2026-09-12T17:44:42Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://m1.material.io/style/icons.html",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\nx-cloud-trace-context: 3d0a8834126d2bcfe7899d7f7c671a23\r\nserver: Google Frontend\r\ncontent-length: 136570\r\ndate: Sat, 12 Sep 2026 17:44:45 GMT\r\nexpires: Sat, 12 Sep 2026 17:45:45 GMT\r\ncache-control: public, max-age=60\r\netag: \"Q-jG-A\"\r\ncontent-type: text/html\r\nage: 0\r\n\r\n",
+      "body_bytes": 136570,
+      "body_sha256": "9b52f22a65a0df22d9f4c1800f76a3ae25a29a5d39f33dea1cedcf5ffb8b03e1",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/material-legacy.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/material-legacy.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://m1.material.io/style/icons.html"
+      ]
+    },
+    {
+      "id": "repo-dot-file-0",
+      "url": "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md",
+      "repo": "abagames/agentic-gamedev-skills",
+      "commit": "8b044b32b20510fbdb33513d7473360683058bbc",
+      "path": ".agents/skills/generating-dot-assets/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:38Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"7b24893bf7c9e68eeb2cf962d2f2536ffd8a236f4cb435943b441d6bcba0c32e\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 2AFC:6C4A0:95762:2FD413:6AA58FC3\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450073-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789235142.044060,VS0,VE200\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: 7c8c38fb97064ba472201aa18bb2aa713b87a6b1\r\nexpires: Sat, 12 Sep 2026 17:50:42 GMT\r\nsource-age: 0\r\ncontent-length: 7119\r\n\r\n",
+      "body_bytes": 7119,
+      "body_sha256": "1791e8a9e20f304adcd853305a997ec190bc1bf554408a9feb963d6d69c04f40",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-file-0.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-file-0.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-dot-file-1",
+      "url": "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE",
+      "repo": "abagames/agentic-gamedev-skills",
+      "commit": "8b044b32b20510fbdb33513d7473360683058bbc",
+      "path": "LICENSE",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:38Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"baca22a6f1c78784a6065eb963487f8da708ef8518254d411c276dd69f4c8d98\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 68D8:7212D:8DA58:2F56ED:6AA58FC6\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450051-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789235142.055264,VS0,VE197\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: 737f0bc0a113b3a4cd13ef846628670c8be2d91f\r\nexpires: Sat, 12 Sep 2026 17:50:42 GMT\r\nsource-age: 0\r\ncontent-length: 1065\r\n\r\n",
+      "body_bytes": 1065,
+      "body_sha256": "141037de19d4de87073c3b70f31ab37572b39a94862cba5d0149bbc3d45b9323",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-file-1.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-file-1.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE"
+      ]
+    },
+    {
+      "id": "repo-dot-head",
+      "url": "https://api.github.com/repos/abagames/agentic-gamedev-skills/commits/HEAD",
+      "retrieved_at": "2026-09-12T17:44:42Z",
+      "completed_at": "2026-09-12T17:44:42Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/abagames/agentic-gamedev-skills/commits/HEAD",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:44:46 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"bc7ddc6a4d3c0c3d63722b2debe44d5ae45c04736e11fb4551d1de023bc3313b\"\r\nlast-modified: Tue, 08 Sep 2026 04:00:06 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 58\r\nx-ratelimit-used: 2\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: 4ABE:5CDE4:60DDA6:8D6FEA:6AA58F8E\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 115493,
+      "body_sha256": "d8650648f0debbc838db56a9e6d66fb9c443af8f965a323a4394160006cab419",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-head.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-head.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/abagames/agentic-gamedev-skills/commits/HEAD"
+      ]
+    },
+    {
+      "id": "repo-dot-link-0",
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:38Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/abagames/agentic-gamedev-skills.git\r\nx-raw-download: https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"7235e59fc2c18c87c96825349f35c0a6\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=LzKl0XbmrIuDgvU%2BqD24VYIlK%2BBvPf2esuYaR023PhYiY4orEUSmPzdIUAltnJ9WiGMMeZ1ZW%2FSHS6z9mRouuik1iBesvvQkl%2F6O0qG%2BetRvFGAii%2BE03%2FPVG10egI1SKIYemn0ra9rnTmdMTf27VXlyzuxU64AiFiKRgpekJCimL5NsD6rvly7k3Zm7qsDJnib1tLrQ98dMIioXDI3qEsSypocMaBw5B7ygFfWMXuDJNvMJZrt2W7jJZ1VrVvV921lFFhSpKl5aXh886iJ2XQ%3D%3D--wLTnXRzx3w1TbKf4--ua4gjKZbiTFSJ2456yYJPQ%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.1225742334.1789235142; expires=Sun, 12 Sep 2027 17:45:42 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:42 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: 4EC7:6ADB4:5614E7:9376BE:6AA58FC6\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 295837,
+      "body_sha256": "857d9375cf11d8997e1d58491b746acc8c74148e2ee624ebdcae16362cc1a920",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-link-0.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-link-0.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-dot-link-1",
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:38Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/abagames/agentic-gamedev-skills.git\r\nx-raw-download: https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"bd1ea8a8b8caecdca957c02c8d90392c\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=fJ6Irk3r6P9X7gz957q1fDJojbZpNBU%2B4wAEfBBMCOu6ltwmQoT92I2H3Hv%2FSwpsf1XG8jxkxqAdbyEhSYimpc9xN8aanl5T2wAdoS3lJJUr86ygBmy1JnSLOF1ItoVpvCqd2dZ1HTHImN5%2BHt2GWBlTYzgl6DBGhJyMBJWdxJ5hxV%2FrBHBj%2FJ%2F7B9Y%2Bvo%2FO24Szk55c81Eve%2F%2FIS1%2B45MESnIZmFkkbbVfgA1u04X6qswRGc6QISAheJHtNEupO3LcYKax2FlNN0f7%2FBgLBOw%3D%3D--ZQlAcJdA8QJ8llcB--S%2BGyl94LKfRbmi357NhAOw%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.575091727.1789235142; expires=Sun, 12 Sep 2027 17:45:42 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:42 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: E0DA:0BE0:373C9B:5D1CF5:6AA58FC6\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 239109,
+      "body_sha256": "38fbf2c6c59b3553b52d4e06ebfa0097ff25c61e1a5e5064984bb5158a444234",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-link-1.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-link-1.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE"
+      ]
+    },
+    {
+      "id": "repo-dot-main",
+      "url": "https://api.github.com/repos/abagames/agentic-gamedev-skills/commits/main",
+      "retrieved_at": "2026-09-12T17:46:12Z",
+      "completed_at": "2026-09-12T17:46:12Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/abagames/agentic-gamedev-skills/commits/main",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:46:16 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"bc7ddc6a4d3c0c3d63722b2debe44d5ae45c04736e11fb4551d1de023bc3313b\"\r\nlast-modified: Tue, 08 Sep 2026 04:00:06 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 50\r\nx-ratelimit-used: 10\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: E1BE:95247:69FD74:969E10:6AA58FE8\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 115493,
+      "body_sha256": "d8650648f0debbc838db56a9e6d66fb9c443af8f965a323a4394160006cab419",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-main.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-main.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/abagames/agentic-gamedev-skills/commits/main"
+      ]
+    },
+    {
+      "id": "repo-dot-metadata",
+      "url": "https://api.github.com/repos/abagames/agentic-gamedev-skills",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:37Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/abagames/agentic-gamedev-skills",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:41 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"f5d5249c54dfb435b70c42b6e207567d546ba8284aef7b4b70b8b3a47bd85db2\"\r\nlast-modified: Wed, 09 Sep 2026 20:11:33 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 52\r\nx-ratelimit-used: 8\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\ncontent-length: 6288\r\nx-github-request-id: E0CF:74260:64D1EB:9169BF:6AA58FC5\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 6288,
+      "body_sha256": "02c65ba21d10894d5d99aa725ee959e13348b219e95cd0acec6ac0b5e6a63fff",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-metadata.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-metadata.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/abagames/agentic-gamedev-skills"
+      ]
+    },
+    {
+      "id": "repo-dot-prompts-link",
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md",
+      "retrieved_at": "2026-09-12T17:46:12Z",
+      "completed_at": "2026-09-12T17:46:12Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:46:16 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/abagames/agentic-gamedev-skills.git\r\nx-raw-download: https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"2c9120409d3e7037219a00e7618d0195\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=WwqjT%2Fg4SK%2FkJ8rZzkiSjV1e2SiPmzXdwYdzai4KRjAezGb7Awr1d%2B29GkiTPzV7miD328GnH2oNsM6Hb4QiluoYorN2l25DntBOGqVIbM0g90u1iMWqGAMy1oSl%2F4SOXbKAeljhqpOaVDStVIgByh47LXh%2BKZyjaMF2U8Zkk7mxM4x2vGfx1C26UT%2F4Dsr%2FC4zXbdzEE05fiwwW5SYqNVVsB3HYJugwEZCn9o41bBCQ9A%2F6cYlfh%2Fx4MTW2gG1d%2FOFWh%2B0choLrcdRsOmRTwA%3D%3D--eJMN4I%2BvHeDnosky--sdIknFx8j4Sj4AxJt%2BPjxg%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.1534934923.1789235176; expires=Sun, 12 Sep 2027 17:46:16 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:46:16 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: E1BC:276D22:5660B0:93C5DF:6AA58FE8\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 253948,
+      "body_sha256": "d19286066fae6d79ef896835321c8fe4a373a76ed469c3cc69809ce2244b099f",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-prompts-link.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-prompts-link.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md"
+      ]
+    },
+    {
+      "id": "repo-dot-prompts",
+      "url": "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md",
+      "repo": "abagames/agentic-gamedev-skills",
+      "commit": "8b044b32b20510fbdb33513d7473360683058bbc",
+      "path": ".agents/skills/generating-dot-assets/references/prompt-patterns.md",
+      "retrieved_at": "2026-09-12T17:46:12Z",
+      "completed_at": "2026-09-12T17:46:12Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"1ae882c4292436262dcd81653c4985e3a690578539ebd24fa4862ce13e11faa6\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 3282:0A27:5BED9:1B07BD:6AA58FE4\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:46:16 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450059-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789235176.319828,VS0,VE223\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: e1b33c8b14c18d7f016fe61be1727d170263037d\r\nexpires: Sat, 12 Sep 2026 17:51:16 GMT\r\nsource-age: 0\r\ncontent-length: 1213\r\n\r\n",
+      "body_bytes": 1213,
+      "body_sha256": "05322ec3283c4ad7ef3b9064ed2a99cfad287e30cd1ba9397973987b8142ed45",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-prompts.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-prompts.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/abagames/agentic-gamedev-skills/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md"
+      ]
+    },
+    {
+      "id": "repo-dot-tree",
+      "url": "https://api.github.com/repos/abagames/agentic-gamedev-skills/git/trees/8b044b32b20510fbdb33513d7473360683058bbc?recursive=1",
+      "retrieved_at": "2026-09-12T17:44:57Z",
+      "completed_at": "2026-09-12T17:44:58Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/abagames/agentic-gamedev-skills/git/trees/8b044b32b20510fbdb33513d7473360683058bbc?recursive=1",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:02 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=86400, s-maxage=86400\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"8121ba91a195943492aef8de322c09c40cfed53c6e92e474821ea1a02fb15be3\"\r\nlast-modified: Wed, 09 Sep 2026 20:11:33 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 56\r\nx-ratelimit-used: 4\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: 4F51:2F1E93:63E469:907B4F:6AA58F9D\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 202891,
+      "body_sha256": "e3c8856a51535c7f2d7b6ec88a64711d519dc3f171d5f1c02a9ce6b3bc61d2f4",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-dot-tree.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-dot-tree.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/abagames/agentic-gamedev-skills/git/trees/8b044b32b20510fbdb33513d7473360683058bbc?recursive=1"
+      ]
+    },
+    {
+      "id": "repo-ip-file-0",
+      "url": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "repo": "s1dashu/ip-as-logo-skill",
+      "commit": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "path": "SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:38Z",
+      "completed_at": "2026-09-12T17:45:38Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"105a5e86f0dc023098c41d5f120bc1ad9872343c1ba01f553718182fe12d9364\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 303E:5CD2C:913C5:2E03E7:6AA581B8\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450070-ICN\r\nx-cache: HIT\r\nx-cache-hits: 0\r\nx-timer: S1789235143.760246,VS0,VE181\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: d1971e48c635ad8112d70149c3c07e98d28b7121\r\nexpires: Sat, 12 Sep 2026 17:50:42 GMT\r\nsource-age: 0\r\ncontent-length: 17157\r\n\r\n",
+      "body_bytes": 17157,
+      "body_sha256": "468429f9391c29dc5ead2cde9159a831435afcdae464631498eabce2ff1c9695",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-file-0.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-file-0.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-ip-file-1",
+      "url": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "repo": "s1dashu/ip-as-logo-skill",
+      "commit": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "path": "LICENSE",
+      "retrieved_at": "2026-09-12T17:45:38Z",
+      "completed_at": "2026-09-12T17:45:38Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"286ab39b054db9c32dff69b890ae4ce484c9541e2cb16d6525db6b5872c51b15\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 5ED0:181DBC:95D34:2E4F87:6AA581C2\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450034-ICN\r\nx-cache: HIT\r\nx-cache-hits: 0\r\nx-timer: S1789235143.761589,VS0,VE190\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: e3a69d5929455356724f7e4a4b44bb43fd08a2c0\r\nexpires: Sat, 12 Sep 2026 17:50:42 GMT\r\nsource-age: 0\r\ncontent-length: 1064\r\n\r\n",
+      "body_bytes": 1064,
+      "body_sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-file-1.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-file-1.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE"
+      ]
+    },
+    {
+      "id": "repo-ip-head",
+      "url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/HEAD",
+      "retrieved_at": "2026-09-12T17:44:42Z",
+      "completed_at": "2026-09-12T17:44:42Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/HEAD",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:44:46 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"3ba74503831febc1b7c613dd39eaaec28ced931b313bd7453455142ffed73ccc\"\r\nlast-modified: Sat, 22 Aug 2026 16:48:55 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 57\r\nx-ratelimit-used: 3\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: DECC:17CB3:61B82D:8E4B31:6AA58F8E\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 12388,
+      "body_sha256": "ec51069d4396f7806e8892a9ac94b801727681bb1e4c19653eeae11483481e89",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-head.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-head.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/HEAD"
+      ]
+    },
+    {
+      "id": "repo-ip-link-0",
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:38Z",
+      "completed_at": "2026-09-12T17:45:39Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:43 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/s1dashu/ip-as-logo-skill.git\r\nx-raw-download: https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"94c084e6ade030f528d0aacb6a40a237\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=4FuSW7GnrnwquGlXVBThlGJ2XNOsRaneq4Ma43InFfxATp8R9P6%2BEyPWiuS4Wxzl2zaQ0ait2DppUqj3evie6IOoApVlgxPpkTuQbt47WWz1%2FKXbhVnXRE03E%2B9QGonAN73CbJxtwFvXedygEGZqVYONSxjZDdKjDQ7wxOZXMe7WR7MqlMrjZQQzvjBGcJ%2ByRNGxLmo1j52989Tr10sQLN8Oq7FaEoTH7mMSY059OJQeSkmBN0ammVdPrUfv%2BdG%2FyvaqmGxedpOAWWAWvjsbMQ%3D%3D--Uciq80EhpToll4rc--o7IFq0twXqzOuG4wxGbYgA%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.1187146997.1789235142; expires=Sun, 12 Sep 2027 17:45:42 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:42 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: 4C16:D7B2A:540180:915872:6AA58FC6\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 317899,
+      "body_sha256": "be7b41484b1d27e519f31b328cb258148b000e60e3a4b399a10de76ba20d07eb",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-link-0.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-link-0.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-ip-link-1",
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "retrieved_at": "2026-09-12T17:45:39Z",
+      "completed_at": "2026-09-12T17:45:39Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:43 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/s1dashu/ip-as-logo-skill.git\r\nx-raw-download: https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"0816321422fe6efbc563afb10a59a296\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=yr4VpO3ZKKLrBi8bnyHpA5jsy8rRIbr95QYd0Ts807bjI7UuxlaVWpEULBuCcBbojdEaQ7%2BOsRC33qdfwdCuQzhEA%2BEET33EiBbIosFRpFAvoSKx0ORd8D0BkJxn32rOCxl3tHm%2BeXuRwgCqUkOW6f3XSHbvuYgURaAzW%2B%2F%2BeodWmR3Z1kGawvsiDV%2FTfL5KIBjlz0YRP1WAcxkp8jvBaPdFqwIKZLpuTptTwjTHKarg2yD68%2BvKxdZmav6C%2FgeSQoF11iU6bt8NWaaqYXBmlw%3D%3D--vsAiQ5GabOVg3jJJ--uHVA1vWEsN0kaCnYNm3v3Q%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.797409894.1789235143; expires=Sun, 12 Sep 2027 17:45:43 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:43 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: 4F16:183B83:53AC3A:9101D6:6AA58FC7\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 238106,
+      "body_sha256": "32d918d2eef106e154d0b32834ee96eee047b34f7fb962873825c18f83fd8d62",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-link-1.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-link-1.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE"
+      ]
+    },
+    {
+      "id": "repo-ip-main",
+      "url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/main",
+      "retrieved_at": "2026-09-12T17:46:12Z",
+      "completed_at": "2026-09-12T17:46:13Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/main",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:46:17 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"3ba74503831febc1b7c613dd39eaaec28ced931b313bd7453455142ffed73ccc\"\r\nlast-modified: Sat, 22 Aug 2026 16:48:55 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 48\r\nx-ratelimit-used: 12\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: E1CD:2BC80B:62B31F:8F5344:6AA58FE9\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 12388,
+      "body_sha256": "ec51069d4396f7806e8892a9ac94b801727681bb1e4c19653eeae11483481e89",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-main.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-main.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/main"
+      ]
+    },
+    {
+      "id": "repo-ip-metadata",
+      "url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill",
+      "retrieved_at": "2026-09-12T17:45:38Z",
+      "completed_at": "2026-09-12T17:45:39Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:42 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"171a34315b6348a228d0c47b91feada917da045333d625e1857da0c0376a7516\"\r\nlast-modified: Sat, 12 Sep 2026 17:42:27 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 51\r\nx-ratelimit-used: 9\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\ncontent-length: 6091\r\nx-github-request-id: 4FE7:17CB3:61C4E8:8E5F32:6AA58FC6\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 6091,
+      "body_sha256": "b884ebdc98e7ed289fcf86d2e9ef85462979f2b79e4b42de76e4ef9422b3b0f9",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-metadata.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-metadata.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/s1dashu/ip-as-logo-skill"
+      ]
+    },
+    {
+      "id": "repo-ip-tree",
+      "url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/git/trees/acb834c717bcd0a487c49732d08397ba280d690b?recursive=1",
+      "retrieved_at": "2026-09-12T17:44:57Z",
+      "completed_at": "2026-09-12T17:44:58Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/git/trees/acb834c717bcd0a487c49732d08397ba280d690b?recursive=1",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:02 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=86400, s-maxage=86400\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"676174e358c6b8b4b91e1ffa7b55e7f381dceb71cf642bd4e186fe19a8323342\"\r\nlast-modified: Sat, 12 Sep 2026 17:42:27 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 55\r\nx-ratelimit-used: 5\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\ncontent-length: 1904\r\nx-github-request-id: DF64:17FCFB:668DD8:93260E:6AA58F9D\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 1904,
+      "body_sha256": "0a4b2bafd727f6216293e48c7e37d089e316d7d0ff5487ba1bfd564cecf880fb",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-ip-tree.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-ip-tree.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/s1dashu/ip-as-logo-skill/git/trees/acb834c717bcd0a487c49732d08397ba280d690b?recursive=1"
+      ]
+    },
+    {
+      "id": "repo-prompt-file-0",
+      "url": "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md",
+      "repo": "MohamedAbdallah-14/prompt-to-asset",
+      "commit": "1e66880c2a2a34f35bf9bc55ad64194f8185109f",
+      "path": "skills/app-icon/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:35Z",
+      "completed_at": "2026-09-12T17:45:36Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"39ce139eb687a2eeb97628e2364ed0ef0e11fc7bceb86d1a1cc32ac9c813d856\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: A1B0:2BC75D:92E29:2FAD3F:6AA58FC3\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:40 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450042-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789235140.958906,VS0,VE217\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: c88d7a34d8be824c1e40950ee24faa4a0b03b5ae\r\nexpires: Sat, 12 Sep 2026 17:50:40 GMT\r\nsource-age: 0\r\ncontent-length: 4340\r\n\r\n",
+      "body_bytes": 4340,
+      "body_sha256": "7e47c939d8bf3ce11b9a4b978a0a7e2c145376810a6e2770a15798a9353cbcfa",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-file-0.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-file-0.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-prompt-file-1",
+      "url": "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md",
+      "repo": "MohamedAbdallah-14/prompt-to-asset",
+      "commit": "1e66880c2a2a34f35bf9bc55ad64194f8185109f",
+      "path": "skills/logo/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:35Z",
+      "completed_at": "2026-09-12T17:45:37Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"a4c4fba3eadc63fff6c4ad38289f963af66056c859e6b7483ce49d3294e09398\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: ED5C:10D8A3:9290D:2FA608:6AA58FC2\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:41 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450063-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789235140.958882,VS0,VE1297\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: 321ea7b717107365b41a01d8d49a097822ead5e1\r\nexpires: Sat, 12 Sep 2026 17:50:41 GMT\r\nsource-age: 0\r\ncontent-length: 3683\r\n\r\n",
+      "body_bytes": 3683,
+      "body_sha256": "0b496694fd057cc28ed82d95af37b0452594bbf649b5aac693ee2b58eb5d4f1e",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-file-1.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-file-1.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-prompt-file-2",
+      "url": "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE",
+      "repo": "MohamedAbdallah-14/prompt-to-asset",
+      "commit": "1e66880c2a2a34f35bf9bc55ad64194f8185109f",
+      "path": "LICENSE",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:37Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"99131d23a8d191308e60745a518dfff2e52104f4f966f5b84bc0ef65958b8bc8\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 1F4A:17BFD:92BDC:2FAAEC:6AA58FC5\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 17:45:41 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450035-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789235141.425994,VS0,VE208\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: ffa61dbae6ad3fe9bfed1d7695f7fabbd0407231\r\nexpires: Sat, 12 Sep 2026 17:50:41 GMT\r\nsource-age: 0\r\ncontent-length: 1085\r\n\r\n",
+      "body_bytes": 1085,
+      "body_sha256": "7ed18912c0ddf9330e7bd0d6f037d9337af4ce8e6d8d34388ba9d5a64174c5c0",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-file-2.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-file-2.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE"
+      ]
+    },
+    {
+      "id": "repo-prompt-head",
+      "url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/commits/HEAD",
+      "retrieved_at": "2026-09-12T17:44:40Z",
+      "completed_at": "2026-09-12T17:44:41Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/commits/HEAD",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:44:45 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"6dfc57d3de076b1be43e63ed2c5bd2b7df17974b482bb6ba00a0cd14d7295d98\"\r\nlast-modified: Tue, 21 Jul 2026 08:07:25 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 59\r\nx-ratelimit-used: 1\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\ncontent-length: 7652\r\nx-github-request-id: DEBB:22DC54:603CEB:8CCF53:6AA58F8C\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 7652,
+      "body_sha256": "f0f60849dfdb4f7253f4b088f95609f62d5afcdd7160d4715fe1645f8e8011c1",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-head.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-head.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/commits/HEAD"
+      ]
+    },
+    {
+      "id": "repo-prompt-link-0",
+      "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:35Z",
+      "completed_at": "2026-09-12T17:45:36Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:40 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/MohamedAbdallah-14/prompt-to-asset.git\r\nx-raw-download: https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"f3da9038e4eaccc70bda3fef34fafdde\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=qFCNOOl4I6BJ%2BFbp6%2BDYFGqkOcROQhxy7uEgCm0F1TSZxfrI2Ne44sbAjKwvHpZqdVOHTYqnBVchJDGbZFqcLie9ADKiw%2BHmn3hDFIBjRtVIppuE7WYDlAW0rHXlwQGnMmk7MKc4yr6e3%2FPpQIuEMvY1d83LPAjzBFInxmj04SjTeiyfVYnQzzAqkaFar2KBBKNUXiAYR3pgqP5sA3%2FMjfgWZpQAGVJsTbBm0SNDpjv2jKjcTA2a8zKFnSNSZf143LOqOPOKwf0rrlP6XhibYQ%3D%3D--T91Lke0g3axho0gz--MJKZpxIVozMbXBoZErzA7g%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.1386146452.1789235139; expires=Sun, 12 Sep 2027 17:45:39 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:39 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: E0BA:0C2D:2B352C:489205:6AA58FC3\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 281415,
+      "body_sha256": "8cb956fd679fd6a95f4d2ef411c634017659733dfa0ff90b9becbac944ea8414",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-link-0.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-link-0.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-prompt-link-1",
+      "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:37Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:41 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/MohamedAbdallah-14/prompt-to-asset.git\r\nx-raw-download: https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"e1374b5e3f9dfbf209c949f0b1fe57f4\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=SsedkN1fVK52d4WKMbwtlBoRoyTRy3U4sCvNOerqtnoKyipk8PRHjoeashQoTxCnsHdQA8GyIY1hnEGE4dH%2BfFwO%2BL37eD9psFBCQRJ6MKiNWNxaJnMo5h%2BuQ2%2FTxIx%2BW%2FNK2fj%2F9AA9AanTLQ6i4k8nbc60y6hj7ZcUddIoQDF8K2EWAnrxTTQrFaUHIk2gTjQT6csumUPYn%2FuLvPP5QCo4Uz3BOWLqgFu2WEyl38nZaiYFJ2zoIwOP4ACUT0%2FpSkd%2FwV%2F70W8Qy7dUUP6wuw%3D%3D--YLeOTKw%2F9gwzNjfB--y8Xh%2BDX%2FA%2Bo0EgICLanJGA%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.446242572.1789235141; expires=Sun, 12 Sep 2027 17:45:41 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:41 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: E0CD:10D5CD:5435B5:9194C1:6AA58FC5\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 277566,
+      "body_sha256": "22086c42f1569dc6ddef02379f7a2d94a7444ca97c2c80951e87c8a77a774c10",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-link-1.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-link-1.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md"
+      ]
+    },
+    {
+      "id": "repo-prompt-link-2",
+      "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE",
+      "retrieved_at": "2026-09-12T17:45:37Z",
+      "completed_at": "2026-09-12T17:45:37Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:41 GMT\r\ncontent-type: text/html; charset=utf-8\r\nx-repository-download: git clone https://github.com/MohamedAbdallah-14/prompt-to-asset.git\r\nx-raw-download: https://raw.githubusercontent.com/MohamedAbdallah-14/prompt-to-asset/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE\r\nvary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, X-Requested-With, X-GitHub-Client-Version, Sec-Fetch-Site,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"e2707c4c5fac22de1bd41c043b79bce1\"\r\ncache-control: max-age=0, private, must-revalidate\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: no-referrer-when-downgrade\r\ncontent-security-policy: default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/\r\nserver: github.com\r\naccept-ranges: bytes\r\nset-cookie: _gh_sess=wl74Y130oqMyOZfL%2BxtPRT4LVypJhLCMm4DqVmnSbfWnlhu1NIs1kojwvqSQ8PrWQ8tzk4f5VPBlXwC6VBDOdxkfqKwRPcoyKkGwXM8lPxmbQg1wFq4cyzzD5ndjgCIrAL63f6BJenJDpM6xgAjQ5j26S3Tw%2FI8P7jnGRKuPQioh72kEWUbDnKiGRxFRnpLPgoiefdiUIAR4b3fSDSRWN19vdwpxKfX%2BWmAiPkLXipupALoXabGpfx%2BfmEk4ed088K75UnAA8dAG4GJfEMKvIA%3D%3D--SbtPDRltn4NQisYZ--VrlayUVaqY7aBA9jitUrVw%3D%3D; path=/; HttpOnly; secure; SameSite=Lax\r\nset-cookie: _octo=GH1.1.714576949.1789235141; expires=Sun, 12 Sep 2027 17:45:41 GMT; domain=.github.com; path=/; secure; SameSite=Lax\r\nset-cookie: logged_in=no; expires=Sun, 12 Sep 2027 17:45:41 GMT; domain=.github.com; path=/; HttpOnly; secure; SameSite=Lax\r\nx-github-request-id: E0D0:59C80:5432E7:91912A:6AA58FC5\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 245448,
+      "body_sha256": "db9462554c0497e78019c9cd39aa53b043fd0e8845344499d27793d22fea063d",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-link-2.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-link-2.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE"
+      ]
+    },
+    {
+      "id": "repo-prompt-main",
+      "url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/commits/main",
+      "retrieved_at": "2026-09-12T17:46:12Z",
+      "completed_at": "2026-09-12T17:46:12Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/commits/main",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:46:16 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"6dfc57d3de076b1be43e63ed2c5bd2b7df17974b482bb6ba00a0cd14d7295d98\"\r\nlast-modified: Tue, 21 Jul 2026 08:07:25 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 49\r\nx-ratelimit-used: 11\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\ncontent-length: 7652\r\nx-github-request-id: 5251:DE25A:63782F:90144D:6AA58FE8\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 7652,
+      "body_sha256": "f0f60849dfdb4f7253f4b088f95609f62d5afcdd7160d4715fe1645f8e8011c1",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-main.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-main.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/commits/main"
+      ]
+    },
+    {
+      "id": "repo-prompt-metadata",
+      "url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset",
+      "retrieved_at": "2026-09-12T17:45:35Z",
+      "completed_at": "2026-09-12T17:45:36Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:40 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=60, s-maxage=60\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"2a50e533675e8dc107de77ac9b4383725ac2643e32ed4c98b57dbb023a4e2510\"\r\nlast-modified: Mon, 07 Sep 2026 20:35:05 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 53\r\nx-ratelimit-used: 7\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: E0BB:95247:69F590:969177:6AA58FC3\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 7030,
+      "body_sha256": "a943a63799311ff496072f9d875694a76a46680e4083035bb3f0ab0fb14f7f53",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-metadata.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-metadata.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset"
+      ]
+    },
+    {
+      "id": "repo-prompt-tree",
+      "url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/git/trees/1e66880c2a2a34f35bf9bc55ad64194f8185109f?recursive=1",
+      "retrieved_at": "2026-09-12T17:44:57Z",
+      "completed_at": "2026-09-12T17:44:58Z",
+      "curl_exit": 0,
+      "status": "200",
+      "effective_url": "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/git/trees/1e66880c2a2a34f35bf9bc55ad64194f8185109f?recursive=1",
+      "redirects": "0",
+      "stderr": "",
+      "headers": "HTTP/2 200 \r\ndate: Sat, 12 Sep 2026 17:45:02 GMT\r\ncontent-type: application/json; charset=utf-8\r\ncache-control: public, max-age=86400, s-maxage=86400\r\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\r\netag: W/\"91255830398d96921bb0e6522911ec23658a29c44ccef6d951fbea1437824eba\"\r\nlast-modified: Mon, 07 Sep 2026 20:35:05 GMT\r\nx-github-media-type: github.v3; format=json\r\nx-github-api-version-selected: 2022-11-28\r\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\r\naccess-control-allow-origin: *\r\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\r\nx-frame-options: deny\r\nx-content-type-options: nosniff\r\nx-xss-protection: 0\r\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\r\ncontent-security-policy: default-src 'none'\r\nserver: github.com\r\naccept-ranges: bytes\r\nx-ratelimit-limit: 60\r\nx-ratelimit-remaining: 54\r\nx-ratelimit-used: 6\r\nx-ratelimit-resource: core\r\nx-ratelimit-reset: 1789238684\r\nx-github-request-id: DF62:3D6CAE:6206DB:8E9BF1:6AA58F9D\r\nx-github-edge-region: koreacentral\r\n\r\n",
+      "body_bytes": 307279,
+      "body_sha256": "dc7adaff53bbced1719efcaa584ada294c8f5a1a2e4ba893a4ea90100503bea1",
+      "command": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "5",
+        "--max-time",
+        "30",
+        "-D",
+        "/tmp/ll-icon-quality-research/repo-prompt-tree.headers",
+        "-o",
+        "/tmp/ll-icon-quality-research/repo-prompt-tree.body",
+        "-w",
+        "%{http_code}\n%{url_effective}\n%{num_redirects}\n",
+        "https://api.github.com/repos/MohamedAbdallah-14/prompt-to-asset/git/trees/1e66880c2a2a34f35bf9bc55ad64194f8185109f?recursive=1"
+      ]
+    }
+  ],
+  "primary_content_checks": [
+    {
+      "id": "apple-hig",
+      "markers_found": {
+        "JavaScript": true
+      },
+      "usable_body": false,
+      "content_type": "javascript_shell_only"
+    },
+    {
+      "id": "apple-hig-data",
+      "markers_found": {
+        "Embrace simplicity": true,
+        "June 8, 2026": true,
+        "Include text only": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    },
+    {
+      "id": "apple-composer",
+      "markers_found": {
+        "Icon Composer": true,
+        "Refraction": true,
+        "Mono": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    },
+    {
+      "id": "apple-2017",
+      "markers_found": {
+        "App Icon Design": true,
+        "metaphor": true,
+        "folder": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    },
+    {
+      "id": "apple-2025",
+      "markers_found": {
+        "Create icons with Icon Composer": true,
+        "Export Layers": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    },
+    {
+      "id": "apple-2026",
+      "markers_found": {
+        "Icon Composer for Beginners Group Lab": true,
+        "excessive complexity": true,
+        "0:50:47": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    },
+    {
+      "id": "material-legacy",
+      "markers_found": {
+        "Product icons": true,
+        "Keyline shapes": true,
+        "Optical corrections": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    },
+    {
+      "id": "android-current",
+      "markers_found": {
+        "Adaptive icons": true,
+        "66x66": true,
+        "2026-08-13": true
+      },
+      "usable_body": true,
+      "content_type": "relevant_official_content"
+    }
+  ],
+  "repositories": [
+    {
+      "id": "prompt",
+      "repository": "MohamedAbdallah-14/prompt-to-asset",
+      "publisher": "MohamedAbdallah-14",
+      "classification": "community_repository_publisher",
+      "original_ip_adaptation_upstream": false,
+      "official_platform_source": false,
+      "fork": false,
+      "authorship_caveat": "fork=false is repository metadata, not proof of original authorship of every line",
+      "default_branch": "main",
+      "commit_sha": "1e66880c2a2a34f35bf9bc55ad64194f8185109f",
+      "commit_date": "2026-07-21T08:07:25Z",
+      "commit_message": "deps(deps-dev): bump brace-expansion from 5.0.5 to 5.0.7 (#56)\n\nBumps [brace-expansion](https://github.com/juliangruber/brace-expansion) from 5.0.5 to 5.0.7.\n- [Release notes](https://github.com/juliangruber/brace-expansion/releases)\n- [Commits](https://github.com/juliangruber/brace-expansion/compare/v5.0.5...v5.0.7)\n\n---\nupdated-dependencies:\n- dependency-name: brace-expansion\n  dependency-version: 5.0.7\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "head_equals_main": true,
+      "tree_truncated": false,
+      "reported_license": "MIT",
+      "metadata_pushed_at": "2026-09-11T03:43:46Z",
+      "files": [
+        {
+          "response_id": "repo-prompt-file-0",
+          "path": "skills/app-icon/SKILL.md",
+          "body_sha256": "7e47c939d8bf3ce11b9a4b978a0a7e2c145376810a6e2770a15798a9353cbcfa",
+          "bytes": 4340,
+          "tree_blob_sha": "01c1128b5c4569af86c079038b26496d59d750db",
+          "computed_git_blob_sha": "01c1128b5c4569af86c079038b26496d59d750db",
+          "matches_tree": true
+        },
+        {
+          "response_id": "repo-prompt-file-1",
+          "path": "skills/logo/SKILL.md",
+          "body_sha256": "0b496694fd057cc28ed82d95af37b0452594bbf649b5aac693ee2b58eb5d4f1e",
+          "bytes": 3683,
+          "tree_blob_sha": "4c7b7bb5106405f02b29a3f5c405f961fe788a77",
+          "computed_git_blob_sha": "4c7b7bb5106405f02b29a3f5c405f961fe788a77",
+          "matches_tree": true
+        },
+        {
+          "response_id": "repo-prompt-file-2",
+          "path": "LICENSE",
+          "body_sha256": "7ed18912c0ddf9330e7bd0d6f037d9337af4ce8e6d8d34388ba9d5a64174c5c0",
+          "bytes": 1085,
+          "tree_blob_sha": "3448e3f2b64f898cef58a1a4aca7bc5b76261f1b",
+          "computed_git_blob_sha": "3448e3f2b64f898cef58a1a4aca7bc5b76261f1b",
+          "matches_tree": true,
+          "license_title": "MIT License",
+          "copyright": "Copyright (c) 2026 prompt-to-asset contributors"
+        }
+      ]
+    },
+    {
+      "id": "dot",
+      "repository": "abagames/agentic-gamedev-skills",
+      "publisher": "abagames",
+      "classification": "community_repository_publisher",
+      "original_ip_adaptation_upstream": false,
+      "official_platform_source": false,
+      "fork": false,
+      "authorship_caveat": "fork=false is repository metadata, not proof of original authorship of every line",
+      "default_branch": "main",
+      "commit_sha": "8b044b32b20510fbdb33513d7473360683058bbc",
+      "commit_date": "2026-09-08T04:00:06Z",
+      "commit_message": "Regenerate and version updated plugin bundles",
+      "head_equals_main": true,
+      "tree_truncated": false,
+      "reported_license": "MIT",
+      "metadata_pushed_at": "2026-09-08T04:02:54Z",
+      "files": [
+        {
+          "response_id": "repo-dot-file-0",
+          "path": ".agents/skills/generating-dot-assets/SKILL.md",
+          "body_sha256": "1791e8a9e20f304adcd853305a997ec190bc1bf554408a9feb963d6d69c04f40",
+          "bytes": 7119,
+          "tree_blob_sha": "5970ba200413153e268f9b8602bbe955d67e8130",
+          "computed_git_blob_sha": "5970ba200413153e268f9b8602bbe955d67e8130",
+          "matches_tree": true
+        },
+        {
+          "response_id": "repo-dot-file-1",
+          "path": "LICENSE",
+          "body_sha256": "141037de19d4de87073c3b70f31ab37572b39a94862cba5d0149bbc3d45b9323",
+          "bytes": 1065,
+          "tree_blob_sha": "0cb34e3f6a4fbc564d578beb485d104c2f3aa8ef",
+          "computed_git_blob_sha": "0cb34e3f6a4fbc564d578beb485d104c2f3aa8ef",
+          "matches_tree": true,
+          "license_title": "MIT License",
+          "copyright": "Copyright (c) 2026 abagames"
+        },
+        {
+          "response_id": "repo-dot-prompts",
+          "path": ".agents/skills/generating-dot-assets/references/prompt-patterns.md",
+          "body_sha256": "05322ec3283c4ad7ef3b9064ed2a99cfad287e30cd1ba9397973987b8142ed45",
+          "bytes": 1213,
+          "tree_blob_sha": "1fd20d432185b9a3647fe60ba006221627b861b2",
+          "computed_git_blob_sha": "1fd20d432185b9a3647fe60ba006221627b861b2",
+          "matches_tree": true
+        }
+      ]
+    },
+    {
+      "id": "ip",
+      "repository": "s1dashu/ip-as-logo-skill",
+      "publisher": "s1dashu",
+      "classification": "community_repository_publisher",
+      "original_ip_adaptation_upstream": true,
+      "official_platform_source": false,
+      "fork": false,
+      "authorship_caveat": "fork=false is repository metadata, not proof of original authorship of every line",
+      "default_branch": "main",
+      "commit_sha": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "commit_date": "2026-08-22T16:48:55Z",
+      "commit_message": "docs: require top-tier image models",
+      "head_equals_main": true,
+      "tree_truncated": false,
+      "reported_license": "MIT",
+      "metadata_pushed_at": "2026-08-22T16:48:59Z",
+      "files": [
+        {
+          "response_id": "repo-ip-file-0",
+          "path": "SKILL.md",
+          "body_sha256": "468429f9391c29dc5ead2cde9159a831435afcdae464631498eabce2ff1c9695",
+          "bytes": 17157,
+          "tree_blob_sha": "391a7dc3214a34a4bc2c5e5c77ba40cef5709c19",
+          "computed_git_blob_sha": "391a7dc3214a34a4bc2c5e5c77ba40cef5709c19",
+          "matches_tree": true
+        },
+        {
+          "response_id": "repo-ip-file-1",
+          "path": "LICENSE",
+          "body_sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+          "bytes": 1064,
+          "tree_blob_sha": "234cc2396ef9ed37c4ea1d8c6026ed2e3b6001f6",
+          "computed_git_blob_sha": "234cc2396ef9ed37c4ea1d8c6026ed2e3b6001f6",
+          "matches_tree": true,
+          "license_title": "MIT License",
+          "copyright": "Copyright (c) 2026 s1dashu"
+        }
+      ]
+    }
+  ],
+  "manual_http_qa": {
+    "command": "curl -i --fail --location --silent --show-error --connect-timeout 5 --max-time 30 https://developer.android.com/develop/ui/views/launch/icon_design_adaptive -o /tmp/ll-icon-quality-research/android.http",
+    "source_url": "https://developer.android.com/develop/ui/views/launch/icon_design_adaptive",
+    "effective_url": "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive",
+    "retrieval_date_utc": "2026-09-12",
+    "response_date": "Sat, 12 Sep 2026 17:44:04 GMT",
+    "curl_exit": 0,
+    "status_chain": [
+      301,
+      200
+    ],
+    "outcome": "PASS",
+    "relevant_content": [
+      "Adaptive icons",
+      "Design adaptive icons",
+      "66x66",
+      "foreground",
+      "background"
+    ],
+    "exact_header_blocks": [
+      "HTTP/2 301 \r\ncontent-type: text/html; charset=utf-8\r\nlocation: /develop/ui/compose/system/icon_design_adaptive\r\ncache-control: private, max-age=2592000\r\npragma: \r\nvary: Cookie\r\ncontent-security-policy: base-uri 'self'; object-src 'none'; script-src 'strict-dynamic' 'unsafe-inline' https: http: 'nonce-6h5XfGc/jHWXblVHFQKvYp/XkpBVfg' 'unsafe-eval'; frame-ancestors 'self' https://developers.google.com/_d/analytics-iframe; report-uri https://csp.withgoogle.com/csp/devsite/v2\r\nstrict-transport-security: max-age=63072000; includeSubdomains; preload\r\nx-xss-protection: 0\r\nx-content-type-options: nosniff\r\nexpires: 0\r\nx-cloud-trace-context: 4ed2296290af5827c3965ff3d8092806\r\ndate: Sat, 12 Sep 2026 17:44:04 GMT\r\nserver: Google Frontend\r\ncontent-length: 281\r\nalt-svc: h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000\r\n\r\n",
+      "HTTP/2 200 \r\nlast-modified: Thu, 13 Aug 2026 22:16:55 GMT\r\ncontent-type: text/html; charset=utf-8\r\nvary: Cookie\r\ncontent-security-policy: base-uri 'self'; object-src 'none'; script-src 'strict-dynamic' 'unsafe-inline' https: http: 'nonce-KJk2BKn729R5iDQN7Kyp+HDffTN44s' 'unsafe-eval'; frame-ancestors 'self' https://developers.google.com/_d/analytics-iframe; report-uri https://csp.withgoogle.com/csp/devsite/v2\r\nstrict-transport-security: max-age=63072000; includeSubdomains; preload\r\nx-xss-protection: 0\r\nx-content-type-options: nosniff\r\ncache-control: no-cache, must-revalidate\r\nexpires: 0\r\npragma: no-cache\r\nx-cloud-trace-context: e7a2a880f18dab17c3965ff3d80925df\r\ndate: Sat, 12 Sep 2026 17:44:04 GMT\r\nserver: Google Frontend\r\ncontent-length: 353823\r\nalt-svc: h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000\r\n\r\n"
+    ],
+    "raw_bytes": 355452,
+    "raw_sha256": "4220fa5df2fd197f3def9e47f855119cf160408b49f2727baab820633826a594",
+    "body_bytes": 353823,
+    "body_sha256": "4e0aa515f9a5714729a6632ca801aabf170e079973a0727b32f1adf65f02a03c",
+    "direct_endpoint_response_id": "android-current",
+    "raw_bodies_equal": false,
+    "normalized_article_equal": true,
+    "normalized_article_bytes": 7053,
+    "normalized_article_sha256": "335b11f13ff8250c9fb782699390617ad349729ab1105f31b5ff8754a0e63123",
+    "normalization": "Extract article; remove script and HTML tags; collapse whitespace; decode HTML entities",
+    "inference": "Raw page variation does not indicate article changes; normalized article text is identical",
+    "full_body_retention": "Temporary inspected bodies removed after evidence; hashes and headers retained to avoid copying copyrighted pages"
+  },
+  "citations": [
+    {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "response_id": "apple-hig",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:40Z"
+    },
+    {
+      "url": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json",
+      "response_id": "apple-hig-data",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:40Z"
+    },
+    {
+      "url": "https://developer.apple.com/videos/play/wwdc2017/822/",
+      "response_id": "apple-2017",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:40Z"
+    },
+    {
+      "url": "https://developer.apple.com/videos/play/wwdc2025/361/",
+      "response_id": "apple-2025",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:42Z"
+    },
+    {
+      "url": "https://developer.apple.com/videos/play/wwdc2026/8012/",
+      "response_id": "apple-2026",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:41Z"
+    },
+    {
+      "url": "https://developer.apple.com/icon-composer/",
+      "response_id": "apple-composer",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:40Z"
+    },
+    {
+      "url": "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive",
+      "response_id": "android-current",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:13Z"
+    },
+    {
+      "url": "https://m1.material.io/style/icons.html",
+      "response_id": "material-legacy",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:44:42Z"
+    },
+    {
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "response_id": "repo-ip-link-0",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:39Z"
+    },
+    {
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "response_id": "repo-ip-link-1",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:39Z"
+    },
+    {
+      "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/app-icon/SKILL.md",
+      "response_id": "repo-prompt-link-0",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:36Z"
+    },
+    {
+      "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/skills/logo/SKILL.md",
+      "response_id": "repo-prompt-link-1",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:37Z"
+    },
+    {
+      "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset/blob/1e66880c2a2a34f35bf9bc55ad64194f8185109f/LICENSE",
+      "response_id": "repo-prompt-link-2",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:37Z"
+    },
+    {
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/SKILL.md",
+      "response_id": "repo-dot-link-0",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:38Z"
+    },
+    {
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/.agents/skills/generating-dot-assets/references/prompt-patterns.md",
+      "response_id": "repo-dot-prompts-link",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:46:12Z"
+    },
+    {
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/8b044b32b20510fbdb33513d7473360683058bbc/LICENSE",
+      "response_id": "repo-dot-link-1",
+      "status": "200",
+      "curl_exit": 0,
+      "verified_at": "2026-09-12T17:45:38Z"
+    }
+  ],
+  "local_link_checks": [
+    {
+      "link": "app-icon-quality-sources.json",
+      "exists": true
+    },
+    {
+      "link": "../../plans/logo-land-app-icons.md",
+      "exists": true
+    },
+    {
+      "link": "app-icon-tools.md",
+      "exists": true
+    },
+    {
+      "link": "../app-icons/prompts/pictogram.txt",
+      "exists": true
+    }
+  ],
+  "baseline": [
+    {
+      "path": "plans/logo-land-app-icons.md",
+      "bytes": 21069,
+      "sha256": "04fc3c605d3c8cc4338acdaa49a70897468cf24ef8e8611b9b7f8b15873c5965",
+      "current_sha256": "04fc3c605d3c8cc4338acdaa49a70897468cf24ef8e8611b9b7f8b15873c5965",
+      "unchanged_during_research": true
+    },
+    {
+      "path": ".omo/drafts/app-icon-quality.md",
+      "bytes": 1695,
+      "sha256": "805d2f936f7e765467d102b050283fbeafcef73c9e06ce4f633f2b6cc4e24234",
+      "current_sha256": "929cd5708444a614b09a75dfdc28e46b4faf57c925f7913a78e0acc99be3866b",
+      "unchanged_during_research": false,
+      "concurrent_change_handling": "Reread candidate execution outline; compatible with research; preserved without edits"
+    },
+    {
+      "path": "docs/research/app-icon-tools.md",
+      "bytes": 22722,
+      "sha256": "b7aed578e88356491a2f600c41a55dd686c6956aca680cdc3e6c1dd6d891ab73",
+      "current_sha256": "b7aed578e88356491a2f600c41a55dd686c6956aca680cdc3e6c1dd6d891ab73",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_prompts.py",
+      "bytes": 5372,
+      "sha256": "38fbf3cfdb3efd97da4b96eb554cd392f5ae06cb1d8cb12a27822729b280c015",
+      "current_sha256": "38fbf3cfdb3efd97da4b96eb554cd392f5ae06cb1d8cb12a27822729b280c015",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_presets.py",
+      "bytes": 1811,
+      "sha256": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "current_sha256": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "docs/app-icons/prompts/pictogram.txt",
+      "bytes": 1056,
+      "sha256": "4837c47f11e2af44c80169370b98ef3b00badbf18d81c0319e55677522a3a76f",
+      "current_sha256": "4837c47f11e2af44c80169370b98ef3b00badbf18d81c0319e55677522a3a76f",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "docs/app-icons/prompts/abstract.txt",
+      "bytes": 1097,
+      "sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+      "current_sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "docs/app-icons/prompts/monogram.txt",
+      "bytes": 1060,
+      "sha256": "cb035dcd19846797b1026524540ba8939fe1d17dad10c9e9767f5e2e8ef42b83",
+      "current_sha256": "cb035dcd19846797b1026524540ba8939fe1d17dad10c9e9767f5e2e8ef42b83",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "docs/app-icons/prompts/soft-3d.txt",
+      "bytes": 1091,
+      "sha256": "3f102eb124652015979d134a04a8e33d16b76eaa2a1062564486ce14e1b5c98c",
+      "current_sha256": "3f102eb124652015979d134a04a8e33d16b76eaa2a1062564486ce14e1b5c98c",
+      "unchanged_during_research": true
+    },
+    {
+      "path": "docs/app-icons/prompts/pixel-art.txt",
+      "bytes": 1110,
+      "sha256": "d63cb8b72f9124c68d1b29348e9a5de74ade002e602a70828ee93f56aff4eaad",
+      "current_sha256": "d63cb8b72f9124c68d1b29348e9a5de74ade002e602a70828ee93f56aff4eaad",
+      "unchanged_during_research": true
+    }
+  ],
+  "initial_git_status": " M .codex-plugin/plugin.json\n M CHANGELOG.md\n M README.ko.md\n M README.md\n M THIRD_PARTY_NOTICES.md\n M docs/README.md\n M docs/releases.md\n M pyproject.toml\n M skills/logo-land/SKILL.md\n M skills/logo-land/references/native-image.md\n M skills/logo-land/references/project-files.md\n M skills/logo-land/scripts/logo_helper/artifact_models.py\n M skills/logo-land/scripts/logo_helper/brief_models.py\n M skills/logo-land/scripts/logo_helper/cli_options.py\n M skills/logo-land/scripts/logo_helper/delivery.py\n M skills/logo-land/scripts/logo_helper/intent.py\n M skills/logo-land/scripts/logo_helper/models.py\n M skills/logo-land/scripts/logo_helper/prompts.py\n M skills/logo-land/scripts/logo_helper/workflow.py\n M skills/logo-land/scripts/logo_project.py\n M uv.lock\n?? .omo/drafts/app-icon-quality.md\n?? assets/logo-land-studio.png\n?? docs/app-icons/\n?? docs/brand/2026-identity/\n?? docs/brand/legacy.md\n?? docs/qa/app-icons/\n?? docs/research/app-icon-sources.json\n?? docs/research/app-icon-tools.md\n?? plans/logo-land-app-icons.md\n?? skills/logo-land/assets/app-icon-gallery.template.html\n?? skills/logo-land/assets/app-icon.example.json\n?? skills/logo-land/assets/ip-as-logo.LICENSE\n?? skills/logo-land/references/app-icons.md\n?? skills/logo-land/references/ip-mascot.md\n?? skills/logo-land/scripts/logo_helper/app_icon_cli.py\n?? skills/logo-land/scripts/logo_helper/app_icon_gallery.py\n?? skills/logo-land/scripts/logo_helper/app_icon_guide.py\n?? skills/logo-land/scripts/logo_helper/app_icon_models.py\n?? skills/logo-land/scripts/logo_helper/app_icon_presets.py\n?? skills/logo-land/scripts/logo_helper/app_icon_prompts.py\n?? skills/logo-land/scripts/logo_helper/app_icon_publish.py\n?? tests/test_app_icon_compatibility.py\n?? tests/test_app_icon_delivery.py\n?? tests/test_app_icon_gallery.py\n?? tests/test_app_icon_models.py\n?? tests/test_app_icon_prompts.py\n?? tests/test_app_icon_workflow.py\n?? tests/test_app_icon_workflow_invariants.py\n?? tests/test_app_icon_workflow_palette.py\n",
+  "immutable_sample_snapshot": {
+    "recorded_at": "2026-09-12T17:50:43Z",
+    "purpose": "Before final research verification, not a native receipt or visual review",
+    "files": [
+      {
+        "path": "docs/app-icons/images/abstract.png",
+        "bytes": 961065,
+        "sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4"
+      },
+      {
+        "path": "docs/app-icons/images/ip-a1.png",
+        "bytes": 1060303,
+        "sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b"
+      },
+      {
+        "path": "docs/app-icons/images/ip-a2.png",
+        "bytes": 1049136,
+        "sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd"
+      },
+      {
+        "path": "docs/app-icons/images/ip-b1.png",
+        "bytes": 1083251,
+        "sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a"
+      },
+      {
+        "path": "docs/app-icons/images/ip-b2.png",
+        "bytes": 1039677,
+        "sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069"
+      },
+      {
+        "path": "docs/app-icons/images/ip-c1.png",
+        "bytes": 1096895,
+        "sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28"
+      },
+      {
+        "path": "docs/app-icons/images/ip-c2.png",
+        "bytes": 1089169,
+        "sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916"
+      },
+      {
+        "path": "docs/app-icons/images/monogram.png",
+        "bytes": 832716,
+        "sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b"
+      },
+      {
+        "path": "docs/app-icons/images/pictogram.png",
+        "bytes": 928736,
+        "sha256": "f02af7a96e63be9756c23a926d1e058e5fb23de485d0627c6be5871a72455b42"
+      },
+      {
+        "path": "docs/app-icons/images/pixel-art.png",
+        "bytes": 946180,
+        "sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5"
+      },
+      {
+        "path": "docs/app-icons/images/soft-3d.png",
+        "bytes": 1526612,
+        "sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63"
+      },
+      {
+        "path": "docs/app-icons/prompts/abstract.txt",
+        "bytes": 1097,
+        "sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb"
+      },
+      {
+        "path": "docs/app-icons/prompts/ip-a1.txt",
+        "bytes": 1377,
+        "sha256": "a7a745050d223646d1d0959def17cc4f83b85ed2d0152891617fcdd9ba78c4fd"
+      },
+      {
+        "path": "docs/app-icons/prompts/ip-a2.txt",
+        "bytes": 1393,
+        "sha256": "5a2b308974655d468cb7ce83827c5942e39504771c91fa84ec2e119436fe1b9c"
+      },
+      {
+        "path": "docs/app-icons/prompts/ip-b1.txt",
+        "bytes": 1391,
+        "sha256": "cc2e94e36d4c5c24d5da9cffca145e50e042b472fdd7b0bc4bf7f8e44bad13e3"
+      },
+      {
+        "path": "docs/app-icons/prompts/ip-b2.txt",
+        "bytes": 1394,
+        "sha256": "62127fa6c88c0a8ce7e4bb7c10ead6b354b81e1db33a6ef4228160859b3a0555"
+      },
+      {
+        "path": "docs/app-icons/prompts/ip-c1.txt",
+        "bytes": 1388,
+        "sha256": "020ea558686d1be216adb6edd03abacf71537fe95a36ec7297694c5f9a00ba6e"
+      },
+      {
+        "path": "docs/app-icons/prompts/ip-c2.txt",
+        "bytes": 1403,
+        "sha256": "e5abb62f5d389ab7122b6f8131ac32de4abf912a54c1d96bcde317e6522211f4"
+      },
+      {
+        "path": "docs/app-icons/prompts/monogram.txt",
+        "bytes": 1060,
+        "sha256": "cb035dcd19846797b1026524540ba8939fe1d17dad10c9e9767f5e2e8ef42b83"
+      },
+      {
+        "path": "docs/app-icons/prompts/pictogram.txt",
+        "bytes": 1056,
+        "sha256": "4837c47f11e2af44c80169370b98ef3b00badbf18d81c0319e55677522a3a76f"
+      },
+      {
+        "path": "docs/app-icons/prompts/pixel-art.txt",
+        "bytes": 1110,
+        "sha256": "d63cb8b72f9124c68d1b29348e9a5de74ade002e602a70828ee93f56aff4eaad"
+      },
+      {
+        "path": "docs/app-icons/prompts/soft-3d.txt",
+        "bytes": 1091,
+        "sha256": "3f102eb124652015979d134a04a8e33d16b76eaa2a1062564486ce14e1b5c98c"
+      }
+    ]
+  },
+  "comparison_proposal": {
+    "status": "not_executed",
+    "proposed_new_ids": [
+      "quality-pictogram",
+      "quality-abstract",
+      "quality-monogram",
+      "quality-soft-3d",
+      "quality-pixel-art"
+    ],
+    "draws_per_id": 1,
+    "rerolls": false,
+    "preserve_all_outputs": true,
+    "artistic_judgment_separate_from_prompt_compliance": true,
+    "hidden_model_identity": "unreported unless runtime exposes it"
+  },
+  "adversarial": [
+    {
+      "class": "malformed_input",
+      "observed": "bad-url returned curl 3, zero body bytes, no HTTP status; rejected as a source",
+      "response_id": "bad-url"
+    },
+    {
+      "class": "prompt_injection",
+      "observed": "Inspected upstream tool, recovery, post-processing, regeneration, and subagent instructions as data; executed none",
+      "scope": "research handling, not a product attack test"
+    },
+    {
+      "class": "cancel_resume",
+      "status": "not_applicable",
+      "reason": "No canceled research fetch or native attempt; stable response IDs/hashes persisted without restarting completed retrievals"
+    },
+    {
+      "class": "stale_state",
+      "observed": "HIG 2026-06-08 and Android 2026-08-13 content dates read; current Composer/WWDC26 compared with historical talks; all three HEAD/main SHAs agree"
+    },
+    {
+      "class": "dirty_worktree",
+      "observed": "Initial dirty status captured; preexisting changes preserved; owned mutations restricted to two research files and registered temporary directory"
+    },
+    {
+      "class": "hung_commands",
+      "observed": "All normal HTTP requests bounded to 5s connect / 30s total and completed; no server or background service started"
+    },
+    {
+      "class": "flaky_execution",
+      "observed": "Mixed CLI payload flags rejected before registration; corrected send succeeded before mkdir; missing Ruby closing brace failed job construction before HTTP; corrected multiline construction succeeded; no unchanged failed-network retry"
+    },
+    {
+      "class": "misleading_success",
+      "observed": "Apple HIG shell HTTP 200 rejected as content; official DocC read; community sizing, text-free, model, and readiness claims not adopted"
+    },
+    {
+      "class": "repeated_interruptions",
+      "status": "not_applicable",
+      "reason": "No cancellation or repeated interruption; a later coordinator status message was read and incorporated using the same evidence"
+    }
+  ],
+  "cleanup": {
+    "registered_before_creation": true,
+    "registration_message": "msg_f270c4dd6e2d",
+    "directory": "/tmp/ll-icon-quality-research",
+    "status": "complete",
+    "packages_installed": 0,
+    "servers_started": 0,
+    "browser_contexts_created": 0,
+    "native_calls": 0,
+    "child_workers": 0,
+    "commits": 0,
+    "inventory": [
+      {
+        "path": "/tmp/ll-icon-quality-research/android-current.body",
+        "bytes": 353823,
+        "sha256": "899e6c4425a077b01980bc0b683242a0002d9120696ff2f5de8d47a3d289d6da"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/android-current.headers",
+        "bytes": 814,
+        "sha256": "90f8396c87bdfa8fc2c8e452a04485f65aa258d0683b9a7c498028d02c1ea327"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/android-current.meta.json",
+        "bytes": 1804,
+        "sha256": "90bccd0aefbef513de047bedc7cb99aeafb8a1028a4f25c83d85ede2bc2b7af0"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/android.http",
+        "bytes": 355452,
+        "sha256": "4220fa5df2fd197f3def9e47f855119cf160408b49f2727baab820633826a594"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2017.body",
+        "bytes": 145329,
+        "sha256": "2542d61d752c5d6e7b03105ca6bdbad01f1b591e281709086c912afd97297865"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2017.headers",
+        "bytes": 1457,
+        "sha256": "ab0a533ef562c31d1c210abc79a9e880b6dd5977678c3024613b945203161544"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2017.meta.json",
+        "bytes": 2373,
+        "sha256": "923784082e834bfbd6370733181b95023c7654e68c6290d8256564327b70cf54"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2025.body",
+        "bytes": 149779,
+        "sha256": "753e2711a8e076880cc959460dce9a829cbf6e3b302589760342baa1802add52"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2025.headers",
+        "bytes": 1451,
+        "sha256": "064753a8a28284e1c4be1d338c46781adc0644378719193dab94bff62275e9b9"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2025.meta.json",
+        "bytes": 2367,
+        "sha256": "5f6452d12312004778f0b2e15ea8057a7c4b9fead5a80c0328d4f37392de4b73"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2026.body",
+        "bytes": 128611,
+        "sha256": "c2257dae818d74d0ce523a462035461a28e3f29aae4d3e81c2ad9c4bfc0c25fb"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2026.headers",
+        "bytes": 1451,
+        "sha256": "cdeb385cfebeec6a128c1f6dc69945a272f9e2f1ae162ddac486b9baca5d7e92"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-2026.meta.json",
+        "bytes": 2370,
+        "sha256": "b743ff4afe7a84d13365a81513e3647ffa9d548ce0786a43cab1a34847d38bca"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-composer.body",
+        "bytes": 119005,
+        "sha256": "c2008f6b40605ed88099451ef87e63aa9f2c268aead01f26957c8c69de18039c"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-composer.headers",
+        "bytes": 1393,
+        "sha256": "94032400589ee1f7c769e0c7ddb61462537d55f6019d42bbe42957dd01040a01"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-composer.meta.json",
+        "bytes": 2288,
+        "sha256": "4679a254399f209957416eebcaf6f84ea439a8c43a9aabc4b6696e8503e92be3"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-hig-data.body",
+        "bytes": 46336,
+        "sha256": "5f67bb7b1e2405ee03526ab83c3f75b63b28473ce39ebf10848655908e2712f7"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-hig-data.headers",
+        "bytes": 654,
+        "sha256": "29bce28271eae6bc2da7a46ed9a6816cfa745aa05b0fe1b523f741a2ba0860b0"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-hig-data.meta.json",
+        "bytes": 1685,
+        "sha256": "9c31bae1b7bbb115157894933e2875b706d03259a0c83f83942bc21509856855"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-hig.body",
+        "bytes": 17742,
+        "sha256": "2f41d5d4d7437f07ff412aef3727dd7aba13fda5cbb56f8256a87e49f9652d3c"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-hig.headers",
+        "bytes": 642,
+        "sha256": "17001a50619989ff1ee6f165e0383b0df42615ee8a3e33d126c6f7b1f3aae15f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/apple-hig.meta.json",
+        "bytes": 1598,
+        "sha256": "58962a2ebf80337618a5b8bc401bb5231105b04fe64ef08371ecbdb36fdac59d"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/bad-url.meta.json",
+        "bytes": 788,
+        "sha256": "4077c19563d9bfd38069e80a28c9bc6e9e3e0d6a47dd46c31620dacd1abb2fe5"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/baseline.json",
+        "bytes": 3852,
+        "sha256": "434d29b45e452086c9fe505106eb6c78a92072ba1f9dcb1911c065acdbbc4125"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/build-evidence.rb",
+        "bytes": 11723,
+        "sha256": "8d450e6cb566a46db1bf977a708ea1357353c62320cca2bda91ec390f0e977cc"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/fetch.rb",
+        "bytes": 1304,
+        "sha256": "35489d90dfc91523f0600dda369cac521985981ebb22f4e4d93c1573a83bfc6f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/material-legacy.body",
+        "bytes": 136570,
+        "sha256": "9b52f22a65a0df22d9f4c1800f76a3ae25a29a5d39f33dea1cedcf5ffb8b03e1"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/material-legacy.headers",
+        "bytes": 282,
+        "sha256": "e18f12bac62d965cd6d40bb947d448f05c55a37631d93e28b8e906ffdb68031b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/material-legacy.meta.json",
+        "bytes": 1147,
+        "sha256": "4d4141da09220a263e1cc8296f293c0d79e878c2b3accbcb9d52af9c8eefa0c5"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-file-0.body",
+        "bytes": 7119,
+        "sha256": "1791e8a9e20f304adcd853305a997ec190bc1bf554408a9feb963d6d69c04f40"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-file-0.headers",
+        "bytes": 900,
+        "sha256": "10aae1f3eaeaba303f532b8469231bce0ff4b26d74dbb2f3bed58551045e3db3"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-file-0.meta.json",
+        "bytes": 2292,
+        "sha256": "0d2a017887bfbbc13be38450b068076e01384c7c19166e3d44cfc47840e49a4a"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-file-1.body",
+        "bytes": 1065,
+        "sha256": "141037de19d4de87073c3b70f31ab37572b39a94862cba5d0149bbc3d45b9323"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-file-1.headers",
+        "bytes": 900,
+        "sha256": "a543e0fe15ddf58993c412cdc943041a2c8e5fe9c2881382f8d43e48d27082a2"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-file-1.meta.json",
+        "bytes": 2140,
+        "sha256": "c17962714ff9bdd21aae330c2624761412d1d9a89a61eb0c0e7090ca5228b57b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-head.body",
+        "bytes": 115493,
+        "sha256": "d8650648f0debbc838db56a9e6d66fb9c443af8f965a323a4394160006cab419"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-head.headers",
+        "bytes": 1305,
+        "sha256": "e44217d3e81714e479fd14395bfcbcee87aa71d769c9e40fa593565b5945335c"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-head.meta.json",
+        "bytes": 2298,
+        "sha256": "2164558f76ac1890c25e41e8363f4899084c8a5104eeafca440a34ac6ee9d12f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-link-0.body",
+        "bytes": 295837,
+        "sha256": "857d9375cf11d8997e1d58491b746acc8c74148e2ee624ebdcae16362cc1a920"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-link-0.headers",
+        "bytes": 5286,
+        "sha256": "abc2e6e8e36ddc9467f11f87dc0370705a35b12caaa664e91cd59199ae96da2b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-link-0.meta.json",
+        "bytes": 6482,
+        "sha256": "f6d1aa683341dcfe995879a22b37d9d5d8108a0107f5ab900703347f01400835"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-link-1.body",
+        "bytes": 239109,
+        "sha256": "38fbf2c6c59b3553b52d4e06ebfa0097ff25c61e1a5e5064984bb5158a444234"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-link-1.headers",
+        "bytes": 5258,
+        "sha256": "b6bf1b64d1424e1e329ff2e4504bd49711b9592a3bf91db25770b77bf6d242dd"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-link-1.meta.json",
+        "bytes": 6340,
+        "sha256": "fb93dd726f0f68563f098d0c35ec560ea9b1257d572d603cd56526fd2cdeaec9"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-main.body",
+        "bytes": 115493,
+        "sha256": "d8650648f0debbc838db56a9e6d66fb9c443af8f965a323a4394160006cab419"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-main.headers",
+        "bytes": 1306,
+        "sha256": "e6a72aad37ae7434c1b228f88d2e302b357cabdfdbbc904d0fe9f3d401b5ba3b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-main.meta.json",
+        "bytes": 2299,
+        "sha256": "c065b75d9985b31c34cd26b5973101318b722138d0ad87d728bf1737bf93b556"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-metadata.body",
+        "bytes": 6288,
+        "sha256": "02c65ba21d10894d5d99aa725ee959e13348b219e95cd0acec6ac0b5e6a63fff"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-metadata.headers",
+        "bytes": 1327,
+        "sha256": "04acf3a9354fd97d629783cecb248793acb83ad3f341c1e94c5a693b80b6b12f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-metadata.meta.json",
+        "bytes": 2293,
+        "sha256": "d920d9d9280bfc0bbbb611ae172c0af2cf32a8d94a1b9dbb368e4942a8a2959e"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-prompts-link.body",
+        "bytes": 253948,
+        "sha256": "d19286066fae6d79ef896835321c8fe4a373a76ed469c3cc69809ce2244b099f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-prompts-link.headers",
+        "bytes": 5320,
+        "sha256": "b2880fe52c039f170cc56e857667f69e2bad0fabd85c3ff3ee404014dfa05cb4"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-prompts-link.meta.json",
+        "bytes": 6597,
+        "sha256": "e0d98c958acf5f1d794f9d7a5b62b61c66fdd281af949479720dbd0eb0820b0a"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-prompts.body",
+        "bytes": 1213,
+        "sha256": "05322ec3283c4ad7ef3b9064ed2a99cfad287e30cd1ba9397973987b8142ed45"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-prompts.headers",
+        "bytes": 899,
+        "sha256": "4cd1a59fb27950f8d5d19b147c01db6637849dcd6001387cce2d4c1b770e0d8f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-prompts.meta.json",
+        "bytes": 2378,
+        "sha256": "e2efafa933cf2e3301e97c4fb951fdaf530e9c513ab6d32a0dd70b19bcc7986c"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-tree.body",
+        "bytes": 202891,
+        "sha256": "e3c8856a51535c7f2d7b6ec88a64711d519dc3f171d5f1c02a9ce6b3bc61d2f4"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-tree.headers",
+        "bytes": 1312,
+        "sha256": "c0a47b768d4582c70b1156f68ecb93191aea2cceac299414f01155723a9a4716"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-dot-tree.meta.json",
+        "bytes": 2455,
+        "sha256": "913c0ac6a4a5f749c939d7a87d4e994bf4374b06e35602d682fbdc85c2bbaf0f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-file-0.body",
+        "bytes": 17157,
+        "sha256": "468429f9391c29dc5ead2cde9159a831435afcdae464631498eabce2ff1c9695"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-file-0.headers",
+        "bytes": 900,
+        "sha256": "d667d918e627358b0c7b6b40f8f827ac7bf61e27075ca326c202248a262ab6f0"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-file-0.meta.json",
+        "bytes": 2114,
+        "sha256": "b38bb6c7f5a8243b464e80816d7504bbf36bb64d19cea97052f21011df3bd04b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-file-1.body",
+        "bytes": 1064,
+        "sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-file-1.headers",
+        "bytes": 900,
+        "sha256": "655112d8f1075bf8b420fb389f5c25dba5a3bfafe0341e0bcad282e678655fc4"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-file-1.meta.json",
+        "bytes": 2109,
+        "sha256": "ddbef7c9875c7cd2d65b05bb7058d1bbb14dc3aa20d34fac554bf8de513dfb61"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-head.body",
+        "bytes": 12388,
+        "sha256": "ec51069d4396f7806e8892a9ac94b801727681bb1e4c19653eeae11483481e89"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-head.headers",
+        "bytes": 1305,
+        "sha256": "51f3d6cc9c53ad3276771fe13b3ff6b1e622b764e9206155e936d752d829358b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-head.meta.json",
+        "bytes": 2273,
+        "sha256": "9112a9e98b0a5ff48d2a7f428103fb0d6b0fe6fa38cf1fd77ddd1c4e4eea2ed9"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-link-0.body",
+        "bytes": 317899,
+        "sha256": "be7b41484b1d27e519f31b328cb258148b000e60e3a4b399a10de76ba20d07eb"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-link-0.headers",
+        "bytes": 5233,
+        "sha256": "5f45006633fcfc06fe984e6bcd217b72318bc60a0bf5fcfd395b423d726d009c"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-link-0.meta.json",
+        "bytes": 6294,
+        "sha256": "4a35ccdb6b1664515a421746dbdabf102f75f12e8781904e6bb5f21a8fcdf134"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-link-1.body",
+        "bytes": 238106,
+        "sha256": "32d918d2eef106e154d0b32834ee96eee047b34f7fb962873825c18f83fd8d62"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-link-1.headers",
+        "bytes": 5238,
+        "sha256": "ee0d561eb32e904d8142001b8d270293a15ebe4612a0fd42f50c7a214023bec2"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-link-1.meta.json",
+        "bytes": 6296,
+        "sha256": "0b1b19b2789beb863cbffbe85a511d8d06208ea83f491957c63075963dc04fc3"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-main.body",
+        "bytes": 12388,
+        "sha256": "ec51069d4396f7806e8892a9ac94b801727681bb1e4c19653eeae11483481e89"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-main.headers",
+        "bytes": 1307,
+        "sha256": "b70060123d8e2fb285ef820c537413ba554a455ac3cb46103a1a537d578d36ce"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-main.meta.json",
+        "bytes": 2275,
+        "sha256": "6a4332f49379570c10ee08a0bd13cce0809a9ef6b212ef88fd4715b54cf1edd6"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-metadata.body",
+        "bytes": 6091,
+        "sha256": "b884ebdc98e7ed289fcf86d2e9ef85462979f2b79e4b42de76e4ef9422b3b0f9"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-metadata.headers",
+        "bytes": 1327,
+        "sha256": "0c4779598c01aec961433259109b718fad19cb56601c7ae327fa7e51d8258b51"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-metadata.meta.json",
+        "bytes": 2269,
+        "sha256": "5538b572802188a1d6a1316c1553e1afc904fd46d8d2235724ce625c77d07666"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-tree.body",
+        "bytes": 1904,
+        "sha256": "0a4b2bafd727f6216293e48c7e37d089e316d7d0ff5487ba1bfd564cecf880fb"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-tree.headers",
+        "bytes": 1334,
+        "sha256": "6d91c0721e78cc45dfdc024a2733de4879755acd6109d5d74af0d88d1ad848c4"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-ip-tree.meta.json",
+        "bytes": 2453,
+        "sha256": "8545ff18b075101f0784d666155ea1de593a148fbd0e855141f99184df3791e6"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-jobs.rb",
+        "bytes": 878,
+        "sha256": "fa14ab632218611ee4330bd7fb2671cef60f13b729309c2de8445bb1b2c67d28"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-0.body",
+        "bytes": 4340,
+        "sha256": "7e47c939d8bf3ce11b9a4b978a0a7e2c145376810a6e2770a15798a9353cbcfa"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-0.headers",
+        "bytes": 901,
+        "sha256": "855449e7c0eb804d63e8f8475f93cc0cd1a0d808c5304712bd51c403c889ad98"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-0.meta.json",
+        "bytes": 2230,
+        "sha256": "3c5d60a3c0250fbca1d6c279ff02fceca23577dd259fba0b5ad067b106667e5b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-1.body",
+        "bytes": 3683,
+        "sha256": "0b496694fd057cc28ed82d95af37b0452594bbf649b5aac693ee2b58eb5d4f1e"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-1.headers",
+        "bytes": 902,
+        "sha256": "47203e86d023dc89cf324550e95b3ab95ae7b39a482cc2f4c130b4c90e2f4f55"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-1.meta.json",
+        "bytes": 2215,
+        "sha256": "6049a865e38d180758593876037269c335064c05da27e85040bb8d4c8d1523f4"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-2.body",
+        "bytes": 1085,
+        "sha256": "7ed18912c0ddf9330e7bd0d6f037d9337af4ce8e6d8d34388ba9d5a64174c5c0"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-2.headers",
+        "bytes": 900,
+        "sha256": "cc534a08b0559d2cbf360cee90f131eb8b1f97ced9c9a766f95ddd8f97c1779f"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-file-2.meta.json",
+        "bytes": 2161,
+        "sha256": "22c063e9d64af592dd0f8185ee75c0456e547bc5da24d964418f1203cf52c480"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-head.body",
+        "bytes": 7652,
+        "sha256": "f0f60849dfdb4f7253f4b088f95609f62d5afcdd7160d4715fe1645f8e8011c1"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-head.headers",
+        "bytes": 1328,
+        "sha256": "af34811282afe298875e6dd6ada05b4ad37934ca0de5dff8b122dc6627702640"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-head.meta.json",
+        "bytes": 2339,
+        "sha256": "bebffacb9b10d1bdd6b3f053daa74e999b86583756ae1cf0f45c9173fc90d469"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-0.body",
+        "bytes": 281415,
+        "sha256": "8cb956fd679fd6a95f4d2ef411c634017659733dfa0ff90b9becbac944ea8414"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-0.headers",
+        "bytes": 5266,
+        "sha256": "5953223d8d117e2eeb4d06fe90f3d1414dbc2f1e5229c76dd3090a9b89b19e4b"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-0.meta.json",
+        "bytes": 6417,
+        "sha256": "bf70769848b75221b14c8a76620ae0c2a17862106e61fcf2dfaf976cbdc0aff5"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-1.body",
+        "bytes": 277566,
+        "sha256": "22086c42f1569dc6ddef02379f7a2d94a7444ca97c2c80951e87c8a77a774c10"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-1.headers",
+        "bytes": 5283,
+        "sha256": "0c707fb4bcf21e70970504d1ac892ad769bab506c02dff2a0e0ba82f2f708097"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-1.meta.json",
+        "bytes": 6422,
+        "sha256": "3b040996f3615a55ed76e1f83609d97bc0115474ccd14a60e9bb7e2f720c663c"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-2.body",
+        "bytes": 245448,
+        "sha256": "db9462554c0497e78019c9cd39aa53b043fd0e8845344499d27793d22fea063d"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-2.headers",
+        "bytes": 5247,
+        "sha256": "043a43d80dedd66a8441a7aeee2272b4241324b7d4e341f57d4733274e5fb17d"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-link-2.meta.json",
+        "bytes": 6347,
+        "sha256": "130dda68311439a0ffb82512e1c65e9a83f0bf0f010c3752071bb53658b68dd3"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-main.body",
+        "bytes": 7652,
+        "sha256": "f0f60849dfdb4f7253f4b088f95609f62d5afcdd7160d4715fe1645f8e8011c1"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-main.headers",
+        "bytes": 1328,
+        "sha256": "45cb1d46c1a3106f4fab0d5b3f7b38c38abd0d3ce19e88421fd70abf9c60a1af"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-main.meta.json",
+        "bytes": 2339,
+        "sha256": "96573a4b51264308005f1f6670b41a23dffbdb06b99045f1b8380113ebdc1db2"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-metadata.body",
+        "bytes": 7030,
+        "sha256": "a943a63799311ff496072f9d875694a76a46680e4083035bb3f0ab0fb14f7f53"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-metadata.headers",
+        "bytes": 1305,
+        "sha256": "49fa3fee0c0b5727b8e6ff4c2d498738e81e3579ca804ce8b801da53732773ff"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-metadata.meta.json",
+        "bytes": 2287,
+        "sha256": "82bee159fbecb7eafbee92444ad5c3cf3bd725f6d90dcb7b4921283ca3f34b89"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-tree.body",
+        "bytes": 307279,
+        "sha256": "dc7adaff53bbced1719efcaa584ada294c8f5a1a2e4ba893a4ea90100503bea1"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-tree.headers",
+        "bytes": 1312,
+        "sha256": "1104af9a6e5a0d3dd65be8f85ed7de860137d4dc24a40bd526d8c99503db1551"
+      },
+      {
+        "path": "/tmp/ll-icon-quality-research/repo-prompt-tree.meta.json",
+        "bytes": 2473,
+        "sha256": "74f38994bf14bf0e328abc926f065161ab045786782f294954be93dc39fe6d6b"
+      }
+    ],
+    "inventory_recorded_at": "2026-09-12T17:51:08Z",
+    "removed_files": 114,
+    "directory_absent": true,
+    "completed_at": "2026-09-12T17:51:08Z"
+  },
+  "verification": {
+    "external_citations_verified": 16,
+    "primary_bodies_checked": 7,
+    "pinned_bodies_git_verified": 8,
+    "no_software_tests_added_or_run": true,
+    "json_parse": "PASS",
+    "whitespace": "PASS",
+    "local_links": "PASS",
+    "manual_http": "PASS; required 301 to 200 and direct official 200 with relevant article",
+    "software_build_and_lsp": "N/A: Markdown and JSON only; no source changes; actual JSON parser used",
+    "completed_at": "2026-09-12T17:51:40Z",
+    "immutable_sample_files_rechecked": 22,
+    "report_sha256": "64347d17181d293cb52644ad4661746430f80fc24ed4d2db267b1fda38954bf1"
+  },
+  "limitations": [
+    "No new images generated or visually scored",
+    "No store submission or layered platform asset verification",
+    "No repository installer, generator, or export pipeline executed",
+    "Quality recommendations are hypotheses awaiting same-subject user review",
+    "No exhaustive repository search or model benchmark",
+    "A native raster cannot prove exact Unicode code points or exact font identity"
+  ],
+  "final_git_status": " M .codex-plugin/plugin.json\n M CHANGELOG.md\n M README.ko.md\n M README.md\n M THIRD_PARTY_NOTICES.md\n M docs/README.md\n M docs/brand/README.md\n M docs/releases.md\n M pyproject.toml\n M skills/logo-land/SKILL.md\n M skills/logo-land/references/native-image.md\n M skills/logo-land/references/project-files.md\n M skills/logo-land/scripts/logo_helper/artifact_models.py\n M skills/logo-land/scripts/logo_helper/brief_models.py\n M skills/logo-land/scripts/logo_helper/cli_options.py\n M skills/logo-land/scripts/logo_helper/delivery.py\n M skills/logo-land/scripts/logo_helper/intent.py\n M skills/logo-land/scripts/logo_helper/models.py\n M skills/logo-land/scripts/logo_helper/prompts.py\n M skills/logo-land/scripts/logo_helper/workflow.py\n M skills/logo-land/scripts/logo_project.py\n M uv.lock\n?? .omo/drafts/app-icon-quality.md\n?? assets/logo-land-studio.png\n?? docs/app-icons/\n?? docs/brand/2026-identity/\n?? docs/brand/legacy.md\n?? docs/qa/app-icons/\n?? docs/research/app-icon-quality-sources.json\n?? docs/research/app-icon-quality.md\n?? docs/research/app-icon-sources.json\n?? docs/research/app-icon-tools.md\n?? plans/logo-land-app-icons.md\n?? skills/logo-land/assets/app-icon-gallery.template.html\n?? skills/logo-land/assets/app-icon.example.json\n?? skills/logo-land/assets/ip-as-logo.LICENSE\n?? skills/logo-land/references/app-icons.md\n?? skills/logo-land/references/ip-mascot.md\n?? skills/logo-land/scripts/logo_helper/app_icon_cli.py\n?? skills/logo-land/scripts/logo_helper/app_icon_gallery.py\n?? skills/logo-land/scripts/logo_helper/app_icon_guide.py\n?? skills/logo-land/scripts/logo_helper/app_icon_models.py\n?? skills/logo-land/scripts/logo_helper/app_icon_presets.py\n?? skills/logo-land/scripts/logo_helper/app_icon_prompts.py\n?? skills/logo-land/scripts/logo_helper/app_icon_publish.py\n?? tests/test_app_icon_compatibility.py\n?? tests/test_app_icon_delivery.py\n?? tests/test_app_icon_gallery.py\n?? tests/test_app_icon_models.py\n?? tests/test_app_icon_prompts.py\n?? tests/test_app_icon_workflow.py\n?? tests/test_app_icon_workflow_invariants.py\n?? tests/test_app_icon_workflow_palette.py\n",
+  "coordinator_guidance": {
+    "message_id": "msg_2b72bd5123fb",
+    "subject": "Evaluation boundary for recommendations",
+    "handled": "Exact IP prompt preservation, existing fields, observable per-style criteria, five same-subject new candidates and separate sixteen-original gallery recommendation; no retrieval reset"
+  }
+}

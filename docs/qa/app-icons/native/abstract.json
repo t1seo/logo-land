@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "candidate_id": "abstract",
+  "attempt_id": "abstract-draw-1",
+  "state": "imported",
+  "planned_at": "2026-09-12T17:17:06.859008+00:00",
+  "session_id": "abstract",
+  "artifact_id": "abstract",
+  "parent": null,
+  "revision": 0,
+  "prompt_path": "output/app-icons-native/abstract/prompt.txt",
+  "prompt_sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+  "resolved_intent": {
+    "app_icon": {
+      "preset": "abstract",
+      "subject": "two broad interlocking rounded arcs forming one balanced continuous rhythmic gesture",
+      "placement": "center",
+      "text": null
+    },
+    "palette_id": null,
+    "palette_digest": null,
+    "lockup": null,
+    "requested_background": "opaque"
+  },
+  "native_tool": "image_gen.imagegen",
+  "provider": "host-native image_gen",
+  "model": "unreported",
+  "tool_arguments": [
+    "prompt"
+  ],
+  "native_call_count": 1,
+  "automatic_artistic_retry": false,
+  "preparation_notes": [
+    "Initial evidence writer expected parent rather than the actual parent_id response key; corrected before any native call; successful init/prompt outputs preserved."
+  ],
+  "started_at": "2026-09-12T17:17:20.099498+00:00",
+  "call_identity": "abstract-draw-1",
+  "native_tool_call_id": "unreported",
+  "liveness": "native call returned; original copied from exact output_hint path; no retry",
+  "returned_at": "2026-09-12T17:18:25.087728+00:00",
+  "native_source_basename": "exec-305eb971-5233-4957-a723-75a26bc6bf7a.png",
+  "native_artifact_identity": "exec-305eb971-5233-4957-a723-75a26bc6bf7a",
+  "source_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+  "original_path": "output/app-icons-native/abstract/original.png",
+  "original_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+  "actual_image": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "bytes": 961065,
+    "pixel_count": 1572516
+  },
+  "persistence_recovery": "Whole-result argv exceeded OS length after return; original recovered from exact returned path with no new native call",
+  "native_outcome": "returned",
+  "import_outcome": "imported",
+  "completed_at": "2026-09-12T17:20:52.766938+00:00",
+  "helper_artifact_path": "output/app-icons-native/abstract/.logo-generator/sessions/abstract/artifacts/abstract.png",
+  "helper_session_path": "output/app-icons-native/abstract/.logo-generator/sessions/abstract/session.json",
+  "imported_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+  "verification": {
+    "native_data_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "native_receipt_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "original_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "imported_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "all_image_hashes_equal": true,
+    "actual_image": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 961065,
+      "pixel_count": 1572516
+    },
+    "exact_prompt_equal": true,
+    "native_call_prompt_sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+    "stored_prompt_sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+    "intent_equal": true,
+    "parent": null,
+    "generation_revision": 0,
+    "imported_revision": 1,
+    "selection": null,
+    "review": null,
+    "exports": []
+  },
+  "helper_evidence_path": "output/app-icons-native/abstract/helper-evidence.json",
+  "raw_native_result_path": "output/app-icons-native/abstract/native-tool-result.json",
+  "http": {
+    "command": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8777/original.png",
+      "-o",
+      "output/app-icons-native/abstract/http-response.tmp"
+    ],
+    "exit_code": 0,
+    "status": 200,
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:20:13 GMT\r\nContent-type: image/png\r\nContent-Length: 961065\r\nLast-Modified: Sat, 12 Sep 2026 17:18:25 GMT",
+    "body_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "original_sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+    "bytes_equal": true,
+    "result": "passed",
+    "scope": "Actual served bytes only; not artwork approval or platform acceptance."
+  },
+  "cleanup": {
+    "registered_at": "2026-09-12T17:19:41.632452+00:00",
+    "temporary_paths": [
+      "output/app-icons-native/abstract/qa-temporary",
+      "output/app-icons-native/abstract/http-response.tmp",
+      "output/app-icons-native/abstract/http-server.log.tmp",
+      "output/app-icons-native/abstract/http-server.pid.tmp"
+    ],
+    "server": {
+      "bind": "127.0.0.1",
+      "port": 8777,
+      "pid": 7010,
+      "state": "terminated",
+      "port_free_before_start": true,
+      "command": [
+        "python",
+        "-u",
+        "-c",
+        "import sys; sys.stdin.buffer.read(1); from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler; from functools import partial; ThreadingHTTPServer((\"127.0.0.1\",8777),partial(SimpleHTTPRequestHandler,directory=sys.argv[1])).serve_forever()",
+        "output/app-icons-native/abstract"
+      ],
+      "returncode": -15,
+      "termination_scope": "owned Popen process only",
+      "port_rebind_succeeded": true,
+      "no_listener_after_cleanup": true
+    },
+    "cleanup": "passed",
+    "temporary_paths_removed": true,
+    "cleaned_at": "2026-09-12T17:20:13.827628+00:00"
+  },
+  "adversarial": [
+    {
+      "name": "malformed-icon-json",
+      "status": "passed",
+      "exit_code": 1,
+      "rejection": "{\"error\": \"1 validation error for AppIconIntent\\n  Invalid JSON: EOF while parsing a value at line 1 column 10 [type=json_invalid, input_value=b'{\\\"preset\\\":', input_type=bytes]\\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid\"}\n",
+      "session_bytes_unchanged": true
+    },
+    {
+      "name": "malformed-png",
+      "status": "passed",
+      "exit_code": 1,
+      "rejection": "{\"error\": \"invalid_png: PNG must end with a complete IEND chunk\"}\n",
+      "session_bytes_unchanged": true
+    },
+    {
+      "name": "file-byte-limit",
+      "status": "passed",
+      "exit_code": 1,
+      "rejection": "{\"error\": \"invalid_file: Input exceeds the 64 MiB size limit\"}\n",
+      "session_bytes_unchanged": true
+    },
+    {
+      "name": "stale-revision",
+      "status": "passed",
+      "exit_code": 1,
+      "rejection": "{\"error\": \"stale_revision: Expected revision 1; current revision is 0\"}\n",
+      "session_bytes_unchanged": true
+    },
+    {
+      "name": "prompt-injection-data",
+      "status": "passed",
+      "quoted_input_exact": true,
+      "trusted_constraints_follow_data": true,
+      "native_call_for_probe": false,
+      "limitation": "Prompt structure hygiene only; not model-level injection immunity."
+    },
+    {
+      "name": "duplicate-import",
+      "status": "passed",
+      "exit_code": 1,
+      "rejection": "{\"error\": \"conflict: Artifact abstract already exists\"}\n",
+      "session_bytes_unchanged": true
+    },
+    {
+      "name": "malformed-native-receipt",
+      "status": "not-applicable",
+      "reason": "The native receipt is owned evidence, not an accepted helper input; no malformed receipt was substituted or used to trigger a second call. Exact result JSON and base64 were decoded successfully."
+    },
+    {
+      "name": "png-pixel-limit",
+      "status": "in-range-observed",
+      "actual_pixels": 1572516,
+      "helper_limit_pixels": 40000000,
+      "boundary_failure_probe": "not-applicable",
+      "reason": "Native output is well below the pixel limit; creating a synthetic oversized PNG is outside this one-real-native-sample task. File-byte over-limit rejection was exercised separately."
+    },
+    {
+      "name": "cancel-resume",
+      "status": "reconciled-same-returned-call",
+      "evidence": "After the OS argv-size failure during result persistence, recovered the existing functions-store result and exact output_hint PNG; complete raw result persisted in chunks; no second native call.",
+      "explicit_cancel": "not-applicable: no cancellation requested and native call had already returned"
+    },
+    {
+      "name": "repeated-interruptions",
+      "status": "not-applicable",
+      "reason": "No repeated dispatch interruption occurred. Planned/running/returned receipts, complete returned data and stable logical attempt ID were preserved; duplicate import was actually rejected."
+    },
+    {
+      "name": "dirty-shared-worktree",
+      "status": "respected",
+      "reason": "Read existing dirty status and confined all authored artifacts and temporary resources to the assigned abstract workspace and public receipt; no source edits, commits or changes to other samples."
+    },
+    {
+      "name": "bounded-http-and-native-liveness",
+      "status": "passed",
+      "native_call_count": 1,
+      "native_completion": "returned",
+      "heartbeat_sent": true,
+      "http_connect_timeout_seconds": 10,
+      "http_max_time_seconds": 30,
+      "subprocess_timeout_seconds": 35
+    },
+    {
+      "name": "no-artistic-retry",
+      "status": "passed",
+      "native_call_count": 1,
+      "reason": "Preserved the one 1254-square return, including soft shading and output size variance."
+    },
+    {
+      "name": "misleading-success",
+      "status": "respected",
+      "reason": "Import and HTTP success establish integrity and delivery bytes only. Selection/review/export remain unset; no platform, strict-color or artistic approval is claimed."
+    }
+  ],
+  "visual_observation": "Two heavy rounded indigo and coral arcs surround open central space on a pale warm background; slight soft shading retained. No visible lettering. Observed directly from the actual native tool return.",
+  "artwork_approval": "not-requested",
+  "platform_readiness": "not-established",
+  "remaining": "Coordinator T5 Chrome gallery verification and catalog publication are outside this candidate task."
+}

@@ -1,0 +1,546 @@
+{
+  "schema_version": 2,
+  "id": "logo-land-studio",
+  "revision": 5,
+  "created_at": "2026-09-12T17:39:29.378626Z",
+  "updated_at": "2026-09-12T17:45:38.027208Z",
+  "brief": {
+    "brand_name": "Logo Land",
+    "exact_text": "LOGO LAND",
+    "industry": "Conversational logo and app icon creation plugin for Codex",
+    "audience": "Independent builders and small teams turning an idea into a clear visual identity",
+    "slogan": "",
+    "logo_type": "combination",
+    "styles": [
+      "minimal",
+      "geometric",
+      "warm",
+      "refined"
+    ],
+    "palette": [
+      "Charcoal #252722 for the frame and lettering",
+      "Ivory #F6F3EC for the complete opaque canvas",
+      "Muted terracotta #B75E45 as one restrained optional mark accent"
+    ],
+    "forbidden": [
+      "gradients",
+      "shadows",
+      "mockups",
+      "extra lettering",
+      "generic AI sparkles",
+      "complex decorative detail"
+    ],
+    "use_cases": [
+      "README hero at 320 and 240 CSS pixels wide",
+      "plugin identity"
+    ],
+    "assumptions": [
+      "User delegated one original master concept, color selection and application",
+      "An open drawing frame suggests an idea becoming a finished symbol",
+      "Wide opaque master is the requested deliverable; no transparent variant requested",
+      "Colors are advisory suggestions, with no locked/required/allowed HEX or maximum count"
+    ],
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "Confident warm geometric sans-serif appearance, medium-bold weight, open round counters, carefully balanced spacing; exact uppercase LOGO LAND on one line",
+      "font_reference": null
+    },
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+      "image": {
+        "format": "PNG",
+        "width": 1774,
+        "height": 887,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1573538
+      },
+      "prompt": "Create one combination logo for Logo Land. Industry: Conversational logo and app icon creation plugin for Codex. Audience: Independent builders and small teams turning an idea into a clear visual identity.\nExact text (copy verbatim, no other words): 'LOGO LAND'. Exact slogan: ''.\nStyles: minimal, geometric, warm, refined. Original brief palette context: Charcoal #252722 for the frame and lettering, Ivory #F6F3EC for the complete opaque canvas, Muted terracotta #B75E45 as one restrained optional mark accent.\nAvoid: gradients, shadows, mockups, extra lettering, generic AI sparkles, complex decorative detail. Use cases: README hero at 320 and 240 CSS pixels wide, plugin identity.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A distinctive open drawing frame with generous negative space: a thick charcoal almost-square contour, intentionally open at the upper-right corner, and one small restrained warm geometric piece aligned with that opening, suggesting an idea taking its final shape. Pair this simple symbol at the left with LOGO LAND on one line. Refined yet approachable, clean flat geometry and confident legible letterforms. Compose one wide master canvas approximately 1536 by 768 pixels, opaque ivory edge to edge. Let the complete horizontal lockup occupy about 80 percent of the width with calm clear margins; the mark and wordmark must remain clear when the entire image is displayed at 320 and 240 CSS pixels wide. No extra words, slogans, decorative scenery, or alternate concepts.. Assumptions: User delegated one original master concept, color selection and application, An open drawing frame suggests an idea becoming a finished symbol, Wide opaque master is the requested deliverable; no transparent variant requested, Colors are advisory suggestions, with no locked/required/allowed HEX or maximum count.\nEffective structured palette intent (authoritative over historical palette): {\"swatches\":[{\"hex\":\"#252722\",\"role\":\"open frame symbol and exact lettering\"},{\"hex\":\"#F6F3EC\",\"role\":\"opaque full canvas\"},{\"hex\":\"#B75E45\",\"role\":\"restrained optional emerging mark accent\"}],\"constraints\":{\"locked_hex\":[],\"allowed_hex\":null,\"max_colors\":null,\"required_hex\":[],\"allow_gradients\":false},\"source\":\"assistant\",\"source_evidence\":{\"reference_id\":null,\"reference_sha256\":null,\"provider\":null,\"tool\":null,\"response\":null,\"notes\":[\"Original brief-led selection, not sampled from another brand image.\"]},\"selected_by\":\"assistant\",\"rationale\":\"User delegated color choice. Charcoal supports legibility, ivory adds warmth, and an optional terracotta detail shows the transition from open space to a finished mark; no strict palette was requested.\",\"calculation_version\":\"logo-color-v1\",\"id\":\"studio-v1\",\"parent_palette_id\":null,\"digest\":\"560cc85d9c81426ef64c1ecb2369a2b0c1d53a168867e92b3b20cf532e395bad\"}. Keep locked and required HEX values exactly in intent; use the declared roles and allowed colors/count. Opaque backgrounds count as visible design colors; transparent pixels do not. No gradients unless allowed. Raster fidelity is measured after generation, never promised as exact pixels.\nEffective symbol-plus-text lockup: {\"layout\":\"horizontal\",\"symbol_position\":\"start\",\"text_alignment\":\"start\",\"typography_style\":\"Confident warm geometric sans-serif appearance, medium-bold weight, open round counters, carefully balanced spacing; exact uppercase LOGO LAND on one line\",\"font_reference\":null}. Horizontal start/end means symbol left/right of text; stacked start/end means symbol above/below text. Preserve the exact text and slogan. Font reference is a requested visual direction, not proof of an installed or licensed font file.",
+      "parent_id": null,
+      "created_at": "2026-09-12T17:40:41.691798Z",
+      "requested_background": "opaque",
+      "palette_id": "studio-v1",
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "Confident warm geometric sans-serif appearance, medium-bold weight, open round counters, carefully balanced spacing; exact uppercase LOGO LAND on one line",
+        "font_reference": null
+      },
+      "review": {
+        "reviewer": "Codex original inspection; independent Orca Chrome worker ctx_2eca32f05e06",
+        "notes": "Original PNG opened with view_image: exact uppercase LOGO LAND, no extra lettering, open charcoal frame at left and small terracotta corner square, horizontal wordmark with clear margins. Independent Chrome observation relayed by coordinator msg_7134e1fbc6b9 from worker msg_631e20c5c58e confirms exact lettering remains clear at 320 and 240 CSS px, no clipping of lettering/frame/corner square, margins on all sides, and opaque ivory PNG background retained on a dark page. Evidence: docs/qa/app-icons/brand-chrome/overview.jpg, also inspected by this worker. New independent generation, no edit invariants or reference image. Actual opaque RGB pixels and subtle native raster variation are preserved. Palette is advisory; this review does not certify exact RGB or a particular font file.",
+        "text_correct": true,
+        "composition_ok": true,
+        "small_size_ok": true,
+        "preservation_ok": true,
+        "background_checked": true
+      },
+      "reviewed_at": "2026-09-12T17:45:36.870317Z"
+    }
+  ],
+  "selected_id": "a-v1",
+  "failures": [],
+  "exports": [
+    {
+      "path": "docs/brand/2026-identity/delivery",
+      "artifact_id": "a-v1",
+      "created_at": "2026-09-12T17:45:37.804317Z"
+    }
+  ],
+  "palettes": [
+    {
+      "swatches": [
+        {
+          "hex": "#252722",
+          "role": "open frame symbol and exact lettering"
+        },
+        {
+          "hex": "#F6F3EC",
+          "role": "opaque full canvas"
+        },
+        {
+          "hex": "#B75E45",
+          "role": "restrained optional emerging mark accent"
+        }
+      ],
+      "constraints": {
+        "locked_hex": [],
+        "allowed_hex": null,
+        "max_colors": null,
+        "required_hex": [],
+        "allow_gradients": false
+      },
+      "source": "assistant",
+      "source_evidence": {
+        "reference_id": null,
+        "reference_sha256": null,
+        "provider": null,
+        "tool": null,
+        "response": null,
+        "notes": [
+          "Original brief-led selection, not sampled from another brand image."
+        ]
+      },
+      "selected_by": "assistant",
+      "rationale": "User delegated color choice. Charcoal supports legibility, ivory adds warmth, and an optional terracotta detail shows the transition from open space to a finished mark; no strict palette was requested.",
+      "calculation_version": "logo-color-v1",
+      "id": "studio-v1",
+      "parent_palette_id": null,
+      "digest": "560cc85d9c81426ef64c1ecb2369a2b0c1d53a168867e92b3b20cf532e395bad"
+    }
+  ],
+  "active_palette_id": "studio-v1",
+  "references": [],
+  "color_reports": [
+    {
+      "id": "report-f4d12549ebab4ba7b8c8c159497ac0ee",
+      "artifact_id": "a-v1",
+      "artifact_sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+      "palette_id": "studio-v1",
+      "palette_digest": "560cc85d9c81426ef64c1ecb2369a2b0c1d53a168867e92b3b20cf532e395bad",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1774,
+        "height": 887,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010412204853012764,
+        "visible_samples": 16384,
+        "core_samples": 16384,
+        "partial_alpha_samples": 0
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#F6F3EC",
+          "samples": 4361,
+          "share": 0.26617431640625
+        },
+        {
+          "hex": "#F6F2EC",
+          "samples": 3410,
+          "share": 0.2081298828125
+        },
+        {
+          "hex": "#F5F2EC",
+          "samples": 3031,
+          "share": 0.18499755859375
+        },
+        {
+          "hex": "#F5F3EC",
+          "samples": 2888,
+          "share": 0.17626953125
+        },
+        {
+          "hex": "#5B5853",
+          "samples": 1233,
+          "share": 0.07525634765625
+        },
+        {
+          "hex": "#F6F3EB",
+          "samples": 909,
+          "share": 0.05548095703125
+        },
+        {
+          "hex": "#F7F3ED",
+          "samples": 427,
+          "share": 0.02606201171875
+        },
+        {
+          "hex": "#F8F6EF",
+          "samples": 125,
+          "share": 0.00762939453125
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#252722",
+          "matching_samples": 1137,
+          "share": 0.06939697265625,
+          "mean_delta_e": 3.265410287382049,
+          "max_delta_e": 4.982655300305325
+        },
+        {
+          "hex": "#F6F3EC",
+          "matching_samples": 15134,
+          "share": 0.9237060546875,
+          "mean_delta_e": 0.45136164846751325,
+          "max_delta_e": 4.97281810124479
+        },
+        {
+          "hex": "#B75E45",
+          "matching_samples": 28,
+          "share": 0.001708984375,
+          "mean_delta_e": 4.7171583987395165,
+          "max_delta_e": 4.997750287442011
+        }
+      ],
+      "matched_fraction": 0.99481201171875,
+      "unmatched_fraction": 0.00518798828125,
+      "observed_colors": 2,
+      "minor_swatches": [
+        {
+          "hex": "#B75E45",
+          "samples": 28,
+          "share": 0.001708984375
+        }
+      ],
+      "contrasts": [
+        {
+          "foreground": "#F6F3EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.108176072423285,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F3EC",
+          "surface": "#171717",
+          "ratio": 16.177790424426146,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.115201486549832,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EC",
+          "surface": "#171717",
+          "ratio": 16.075875498060956,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.110289847179086,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EC",
+          "surface": "#171717",
+          "ratio": 16.14699107496738,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.118031794671625,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EB",
+          "surface": "#171717",
+          "ratio": 16.03517926634023,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.1109707881070472,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EB",
+          "surface": "#171717",
+          "ratio": 16.137094192705423,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.117342173199311,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EC",
+          "surface": "#171717",
+          "ratio": 16.04507614860219,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.1158884672856266,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EB",
+          "surface": "#171717",
+          "ratio": 16.065978615798997,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F3EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.108854422270511,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F3EB",
+          "surface": "#171717",
+          "ratio": 16.16789354216419,
+          "alpha": 1.0
+        }
+      ],
+      "delta_e_threshold": 5.0,
+      "created_at": "2026-09-12T17:40:41.928651Z"
+    },
+    {
+      "id": "export-81739c082d634774910f5ba36e3e83f2",
+      "artifact_id": "a-v1",
+      "artifact_sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+      "palette_id": "studio-v1",
+      "palette_digest": "560cc85d9c81426ef64c1ecb2369a2b0c1d53a168867e92b3b20cf532e395bad",
+      "analysis_policy": "logo-color-v1",
+      "color_engine_version": "8.12.1",
+      "pillow_version": "12.3.0",
+      "profile_treatment": "assumed_srgb",
+      "sampling": {
+        "width": 1774,
+        "height": 887,
+        "roi": null,
+        "scope": "full_image",
+        "coordinate_policy": "grid_128_pixel_centers",
+        "sampled_positions": 16384,
+        "sampled_fraction": 0.010412204853012764,
+        "visible_samples": 16384,
+        "core_samples": 16384,
+        "partial_alpha_samples": 0
+      },
+      "status": "pass",
+      "reasons": [],
+      "measured_swatches": [
+        {
+          "hex": "#F6F3EC",
+          "samples": 4361,
+          "share": 0.26617431640625
+        },
+        {
+          "hex": "#F6F2EC",
+          "samples": 3410,
+          "share": 0.2081298828125
+        },
+        {
+          "hex": "#F5F2EC",
+          "samples": 3031,
+          "share": 0.18499755859375
+        },
+        {
+          "hex": "#F5F3EC",
+          "samples": 2888,
+          "share": 0.17626953125
+        },
+        {
+          "hex": "#5B5853",
+          "samples": 1233,
+          "share": 0.07525634765625
+        },
+        {
+          "hex": "#F6F3EB",
+          "samples": 909,
+          "share": 0.05548095703125
+        },
+        {
+          "hex": "#F7F3ED",
+          "samples": 427,
+          "share": 0.02606201171875
+        },
+        {
+          "hex": "#F8F6EF",
+          "samples": 125,
+          "share": 0.00762939453125
+        }
+      ],
+      "targets": [
+        {
+          "hex": "#252722",
+          "matching_samples": 1137,
+          "share": 0.06939697265625,
+          "mean_delta_e": 3.265410287382049,
+          "max_delta_e": 4.982655300305325
+        },
+        {
+          "hex": "#F6F3EC",
+          "matching_samples": 15134,
+          "share": 0.9237060546875,
+          "mean_delta_e": 0.45136164846751325,
+          "max_delta_e": 4.97281810124479
+        },
+        {
+          "hex": "#B75E45",
+          "matching_samples": 28,
+          "share": 0.001708984375,
+          "mean_delta_e": 4.7171583987395165,
+          "max_delta_e": 4.997750287442011
+        }
+      ],
+      "matched_fraction": 0.99481201171875,
+      "unmatched_fraction": 0.00518798828125,
+      "observed_colors": 2,
+      "minor_swatches": [
+        {
+          "hex": "#B75E45",
+          "samples": 28,
+          "share": 0.001708984375
+        }
+      ],
+      "contrasts": [
+        {
+          "foreground": "#F6F3EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.108176072423285,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F3EC",
+          "surface": "#171717",
+          "ratio": 16.177790424426146,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.115201486549832,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EC",
+          "surface": "#171717",
+          "ratio": 16.075875498060956,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.110289847179086,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EC",
+          "surface": "#171717",
+          "ratio": 16.14699107496738,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.118031794671625,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EB",
+          "surface": "#171717",
+          "ratio": 16.03517926634023,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.1109707881070472,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F3EB",
+          "surface": "#171717",
+          "ratio": 16.137094192705423,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EC",
+          "surface": "#FFFFFF",
+          "ratio": 1.117342173199311,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F5F2EC",
+          "surface": "#171717",
+          "ratio": 16.04507614860219,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.1158884672856266,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F2EB",
+          "surface": "#171717",
+          "ratio": 16.065978615798997,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F3EB",
+          "surface": "#FFFFFF",
+          "ratio": 1.108854422270511,
+          "alpha": 1.0
+        },
+        {
+          "foreground": "#F6F3EB",
+          "surface": "#171717",
+          "ratio": 16.16789354216419,
+          "alpha": 1.0
+        }
+      ],
+      "delta_e_threshold": 5.0,
+      "created_at": "2026-09-12T17:45:37.804317Z"
+    }
+  ]
+}

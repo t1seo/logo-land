@@ -1,0 +1,20 @@
+{
+  "owned_fixtures": [
+    {
+      "registered_temp": "/private/tmp/logo-land-brand-task_03971906f863",
+      "files_in_inventory": 10,
+      "removed": true
+    },
+    {
+      "registered_temp": "/tmp/ll-brand-refresh-03971906f863",
+      "files_in_inventory": 3,
+      "removed": true
+    }
+  ],
+  "owned_servers_terminated_and_reaped": [
+    51833,
+    56213
+  ],
+  "port_8790_unbound": true,
+  "native_originals_sessions_preview_and_persistent_output": "retained as deliverables"
+}

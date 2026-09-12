@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "id": "strict-soft",
+  "revision": 1,
+  "created_at": "2026-09-12T18:07:14.986496Z",
+  "updated_at": "2026-09-12T18:07:15.182468Z",
+  "brief": {
+    "brand_name": "Pocket Sprout",
+    "exact_text": "",
+    "industry": "Fictional mobile application artwork example",
+    "audience": "People seeking a friendly and immediately recognizable mobile experience",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [],
+    "palette": [
+      "Subject primary: jade green #5CA585",
+      "Subject secondary: pale leaf green #E7F0C7",
+      "Solid background: warm butter #E9D7A9"
+    ],
+    "forbidden": [
+      "watermark",
+      "presentation frame",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "Mobile app icon artwork demonstration"
+    ],
+    "assumptions": [
+      "Fictional product brief chosen by the assistant for sample coverage"
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [
+    {
+      "swatches": [
+        {
+          "hex": "#153F78",
+          "role": "primary"
+        },
+        {
+          "hex": "#F5EBDD",
+          "role": "background"
+        }
+      ],
+      "constraints": {
+        "locked_hex": [
+          "#153F78"
+        ],
+        "allowed_hex": [
+          "#153F78",
+          "#F5EBDD"
+        ],
+        "max_colors": 2,
+        "required_hex": [
+          "#F5EBDD"
+        ],
+        "allow_gradients": false
+      },
+      "source": "assistant",
+      "source_evidence": {
+        "reference_id": null,
+        "reference_sha256": null,
+        "provider": null,
+        "tool": null,
+        "response": null,
+        "notes": []
+      },
+      "selected_by": "user",
+      "rationale": "Strict frozen fixture",
+      "calculation_version": "logo-color-v1",
+      "id": "strict",
+      "parent_palette_id": null,
+      "digest": "a165daf5e174382148acf767605950369e4d1882b620f76ab0918b9593504d93"
+    }
+  ],
+  "active_palette_id": "strict",
+  "references": [],
+  "color_reports": []
+}

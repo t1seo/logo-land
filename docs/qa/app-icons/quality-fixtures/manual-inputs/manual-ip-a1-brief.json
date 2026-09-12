@@ -1,0 +1,36 @@
+{
+  "brand_name": "Bori Reading · Owl",
+  "exact_text": "",
+  "industry": "Fictional mobile reading application",
+  "audience": "People seeking a friendly and immediately recognizable mobile experience",
+  "slogan": "",
+  "logo_type": "mascot",
+  "styles": [
+
+  ],
+  "palette": [
+    "Character primary: warm golden yellow #FFD36E",
+    "Character secondary: deep navy #24364B",
+    "Solid background: muted sage #A5B7A2"
+  ],
+  "forbidden": [
+    "watermark",
+    "presentation frame",
+    "extra lettering"
+  ],
+  "use_cases": [
+    "Mobile app icon artwork demonstration"
+  ],
+  "assumptions": [
+    "Fictional product brief chosen by the assistant for sample coverage"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "ip_mascot",
+    "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+    "placement": "lower_left",
+    "text": null
+  }
+}

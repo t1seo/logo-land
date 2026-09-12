@@ -1,0 +1,36 @@
+{
+  "brand_name": "Quiet Focus",
+  "exact_text": "",
+  "industry": "Fictional mobile application artwork example",
+  "audience": "People seeking a friendly and immediately recognizable mobile experience",
+  "slogan": "",
+  "logo_type": "symbol",
+  "styles": [
+
+  ],
+  "palette": [
+    "Subject primary: rich indigo #4656CF",
+    "Subject secondary: coral #F08069",
+    "Solid background: pale warm pink #F3E2DE"
+  ],
+  "forbidden": [
+    "watermark",
+    "presentation frame",
+    "extra lettering"
+  ],
+  "use_cases": [
+    "Mobile app icon artwork demonstration"
+  ],
+  "assumptions": [
+    "Fictional product brief chosen by the assistant for sample coverage"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "abstract",
+    "subject": "two broad interlocking rounded arcs forming one balanced continuous rhythmic gesture",
+    "placement": "center",
+    "text": null
+  }
+}

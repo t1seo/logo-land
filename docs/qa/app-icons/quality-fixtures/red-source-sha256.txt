@@ -1,0 +1,6 @@
+38fbf3cfdb3efd97da4b96eb554cd392f5ae06cb1d8cb12a27822729b280c015  skills/logo-land/scripts/logo_helper/app_icon_prompts.py
+93ad7c7deb626584cf4d9c40037753023f3f32cba181de4660b02e0b3d058688  tests/test_app_icon_quality.py
+60bbe0a8bf9fe06651029ab4a12844b4c4ace79b79372b8fd9c05324d47339f4  tests/test_app_icon_prompts.py
+002d67d4ce7f946fc70751aa807d19a25aa10030f5b54315e2b88d153a4e9b4f  docs/qa/app-icons/quality-fixtures/directions-v1.json
+b5cfd6a1c5d94ce5a89ea2dfd03fb67da0bfc7430904dafa7e790e05b40c329d  docs/qa/app-icons/quality-fixtures/quality-cases-v1.json
+04755e95e8788c3b5d5be519a860918ba477a075a193401f8fbf5b4c89f83481  docs/qa/app-icons/quality-fixtures/prompt-icon-monogram-v1.txt

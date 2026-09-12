@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "kind": "app_icon_gallery",
+  "session_id": "icon-collection",
+  "revision": 11,
+  "artifacts": [
+    {
+      "artifact_id": "ip-a1",
+      "parent_id": null,
+      "image_file": "images/ip-a1.png",
+      "prompt_file": "prompts/ip-a1.txt",
+      "sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+      "prompt_sha256": "a7a745050d223646d1d0959def17cc4f83b85ed2d0152891617fcdd9ba78c4fd",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+        "placement": "lower_left",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "ip-a2",
+      "parent_id": null,
+      "image_file": "images/ip-a2.png",
+      "prompt_file": "prompts/ip-a2.txt",
+      "sha256": "74cccbfda855b1a1f623b7bb25103a9adec2d3a075df13fcabb9b3d46c72f1fd",
+      "prompt_sha256": "5a2b308974655d468cb7ce83827c5942e39504771c91fa84ec2e119436fe1b9c",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+        "placement": "lower_right",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "ip-b1",
+      "parent_id": null,
+      "image_file": "images/ip-b1.png",
+      "prompt_file": "prompts/ip-b1.txt",
+      "sha256": "1407715a0df952115cc3ed40c8a0398d7fc0afe0661d78b0f2c6d3b8983a081a",
+      "prompt_sha256": "cc2e94e36d4c5c24d5da9cffca145e50e042b472fdd7b0bc4bf7f8e44bad13e3",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "a baby capybara with one broad blunt rounded muzzle and both small rounded ears visible",
+        "placement": "lower_left",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "ip-b2",
+      "parent_id": null,
+      "image_file": "images/ip-b2.png",
+      "prompt_file": "prompts/ip-b2.txt",
+      "sha256": "c7f4618ecdaaf828760f6b81deb40674b8f62126f1ffc934e452a86c86f3f069",
+      "prompt_sha256": "62127fa6c88c0a8ce7e4bb7c10ead6b354b81e1db33a6ef4228160859b3a0555",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "a baby capybara with one broad blunt rounded muzzle and both small rounded ears visible",
+        "placement": "lower_right",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "ip-c1",
+      "parent_id": null,
+      "image_file": "images/ip-c1.png",
+      "prompt_file": "prompts/ip-c1.txt",
+      "sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+      "prompt_sha256": "020ea558686d1be216adb6edd03abacf71537fe95a36ec7297694c5f9a00ba6e",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+        "placement": "lower_left",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "ip-c2",
+      "parent_id": null,
+      "image_file": "images/ip-c2.png",
+      "prompt_file": "prompts/ip-c2.txt",
+      "sha256": "64de02e82dc46635efcdce46d51d1aefe5501c0b075495af8d063ef901416916",
+      "prompt_sha256": "e5abb62f5d389ab7122b6f8131ac32de4abf912a54c1d96bcde317e6522211f4",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+        "placement": "lower_right",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "pictogram",
+      "parent_id": null,
+      "image_file": "images/pictogram.png",
+      "prompt_file": "prompts/pictogram.txt",
+      "sha256": "f02af7a96e63be9756c23a926d1e058e5fb23de485d0627c6be5871a72455b42",
+      "prompt_sha256": "4837c47f11e2af44c80169370b98ef3b00badbf18d81c0319e55677522a3a76f",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "pictogram",
+        "subject": "one simple sun partly behind a single broad rounded cloud",
+        "placement": "center",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "abstract",
+      "parent_id": null,
+      "image_file": "images/abstract.png",
+      "prompt_file": "prompts/abstract.txt",
+      "sha256": "7e4ee1c24856ccea76e46111fa3a09a0e75b8cd958a029a764cad9a38192f0c4",
+      "prompt_sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "abstract",
+        "subject": "two broad interlocking rounded arcs forming one balanced continuous rhythmic gesture",
+        "placement": "center",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "monogram",
+      "parent_id": null,
+      "image_file": "images/monogram.png",
+      "prompt_file": "prompts/monogram.txt",
+      "sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+      "prompt_sha256": "cb035dcd19846797b1026524540ba8939fe1d17dad10c9e9767f5e2e8ef42b83",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "monogram",
+        "subject": "one bold rounded Korean letter with a compact balanced silhouette",
+        "placement": "center",
+        "text": "모"
+      }
+    },
+    {
+      "artifact_id": "soft-3d",
+      "parent_id": null,
+      "image_file": "images/soft-3d.png",
+      "prompt_file": "prompts/soft-3d.txt",
+      "sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63",
+      "prompt_sha256": "3f102eb124652015979d134a04a8e33d16b76eaa2a1062564486ce14e1b5c98c",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "soft_3d",
+        "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+        "placement": "center",
+        "text": null
+      }
+    },
+    {
+      "artifact_id": "pixel-art",
+      "parent_id": null,
+      "image_file": "images/pixel-art.png",
+      "prompt_file": "prompts/pixel-art.txt",
+      "sha256": "87b243cde70955743793b88f0ed5aaa1b747ff8ec2b1e4b5654b0fa835991cf5",
+      "prompt_sha256": "d63cb8b72f9124c68d1b29348e9a5de74ade002e602a70828ee93f56aff4eaad",
+      "width": 1254,
+      "height": 1254,
+      "app_icon": {
+        "preset": "pixel_art",
+        "subject": "one chunky hourglass with a broad frame and a single visible sand region",
+        "placement": "center",
+        "text": null
+      }
+    }
+  ],
+  "preview_note": "Masks are illustrative CSS previews; original PNG bytes are unchanged."
+}

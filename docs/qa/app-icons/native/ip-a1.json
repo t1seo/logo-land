@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ip-a1",
+  "attempt_id": "ip-a1-draw-1",
+  "task_id": "task_676b770c8ccd",
+  "dispatch_id": "ctx_ebb95a4ebed6",
+  "state": "returned",
+  "outcome": "imported",
+  "session_id": "ip-a1",
+  "artifact_id": "ip-a1",
+  "workspace": "output/app-icons-native/ip-a1",
+  "brief_path": "output/app-icons-native/ip-a1/brief.json",
+  "prompt_path": "output/app-icons-native/ip-a1/prompt.txt",
+  "prompt_result_path": "output/app-icons-native/ip-a1/prompt-result.json",
+  "prompt_sha256": "a7a745050d223646d1d0959def17cc4f83b85ed2d0152891617fcdd9ba78c4fd",
+  "prompt_characters": 1377,
+  "generation_revision": 0,
+  "resolved_intent": {
+    "parent_id": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "lockup": null,
+    "app_icon": {
+      "preset": "ip_mascot",
+      "subject": "an extremely simple baby owl with a broad rounded face disk and both short rounded wings visible",
+      "placement": "lower_left",
+      "text": null
+    },
+    "requested_background": "opaque"
+  },
+  "parent": null,
+  "native_tool": "image_gen.imagegen",
+  "native_callable": "image_gen__imagegen",
+  "provider": "host built-in image_gen",
+  "model": "unreported",
+  "model_controls_exposed": false,
+  "native_arguments": [
+    "prompt"
+  ],
+  "reference_arguments_omitted": true,
+  "call_count": 1,
+  "automatic_artistic_retry": false,
+  "created_at": "2026-09-12T17:13:58.233823+00:00",
+  "started_at": "2026-09-12T17:14:01.548257+00:00",
+  "native_tool_call_id": null,
+  "native_tool_call_id_status": "unreported",
+  "history": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:13:58.233823+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:14:01.548257+00:00",
+      "note": "Exact prompt only; next operation is the single native call; reconcile this attempt after any interruption."
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:14:51.581576+00:00",
+      "source_basename": "exec-444bd22d-69ea-4e81-98f4-1dc7ebd416fd.png",
+      "sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b"
+    },
+    {
+      "state": "returned",
+      "outcome": "imported",
+      "at": "2026-09-12T17:15:35.746299+00:00",
+      "revision": 1
+    },
+    {
+      "state": "returned",
+      "outcome": "imported",
+      "at": "2026-09-12T17:17:23.560246+00:00",
+      "note": "Final source/prompt/intent/HTTP/adversarial checks complete; owned temporary resources removed."
+    }
+  ],
+  "work_ledger": [
+    {
+      "step": "exact brief and helper prompt",
+      "status": "completed"
+    },
+    {
+      "step": "one native call with durable receipt",
+      "status": "completed"
+    },
+    {
+      "step": "byte-preserving import and CLI checks",
+      "status": "completed"
+    },
+    {
+      "step": "bounded HTTP, adversarial probes, cleanup",
+      "status": "completed"
+    }
+  ],
+  "returned_at": "2026-09-12T17:14:51.581576+00:00",
+  "native_source_basename": "exec-444bd22d-69ea-4e81-98f4-1dc7ebd416fd.png",
+  "native_source_sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+  "original_path": "output/app-icons-native/ip-a1/original.png",
+  "original_sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+  "original_bytes": 1060303,
+  "dimensions": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "frames": 1,
+    "pixels": 1572516
+  },
+  "runtime_output_id": "exec-444bd22d-69ea-4e81-98f4-1dc7ebd416fd",
+  "native_result_path": "output/app-icons-native/ip-a1/native-result.json",
+  "imported_at": "2026-09-12T17:15:35.746299+00:00",
+  "imported_path": "output/app-icons-native/ip-a1/.logo-generator/sessions/ip-a1/artifacts/ip-a1.png",
+  "imported_sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+  "session_path": "output/app-icons-native/ip-a1/.logo-generator/sessions/ip-a1/session.json",
+  "import_revision": 1,
+  "helper_commands_path": "output/app-icons-native/ip-a1/helper-commands.json",
+  "helper_artifact_path": "output/app-icons-native/ip-a1/.logo-generator/sessions/ip-a1/artifacts/ip-a1.png",
+  "verification": {
+    "native_original_imported_receipt_hashes_equal": true,
+    "exact_prompt_equal": true,
+    "app_icon_intent_equal": true,
+    "resolved_intent_equal": true,
+    "parent_is_null": true,
+    "actual_dimensions_preserved": true,
+    "native_source_rechecked": true,
+    "submitted_native_prompt_equals_persisted_prompt": true,
+    "http_response_body_equals_original": true,
+    "session_unchanged_by_negative_probes": true,
+    "duplicate_and_stale_errors_confirmed": true
+  },
+  "visual_observation": {
+    "method": "actual native tool displayed image",
+    "description": "Large warm yellow baby owl in lower-left, both wings visible around a navy book, broad pale face region, navy eyes/beak/feet, sage background, no lettering observed. Returned cream region, white eye highlights, book, shading and texture are retained as artistic variance.",
+    "style_approval": null,
+    "platform_readiness_claim": false
+  },
+  "completed_at": "2026-09-12T17:17:23.560246+00:00",
+  "native_returned_image_count": 1,
+  "all_returned_images_preserved": true,
+  "http_verification": {
+    "url": "http://127.0.0.1:8770/original.png",
+    "server_pid": 91001,
+    "bind": "127.0.0.1",
+    "port": 8770,
+    "timeout_seconds": 30,
+    "connect_timeout_seconds": 10,
+    "status": "PASS",
+    "argv": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8770/original.png",
+      "-o",
+      "output/app-icons-native/ip-a1/qa-temporary/http-response.bin"
+    ],
+    "curl_exit_code": 0,
+    "curl_stdout": "",
+    "curl_stderr": "",
+    "http_status": 200,
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:16:02 GMT\r\nContent-type: image/png\r\nContent-Length: 1060303\r\nLast-Modified: Sat, 12 Sep 2026 17:14:51 GMT",
+    "body_bytes": 1060303,
+    "body_sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+    "original_sha256": "7dfbdf7195d5cb2d4c01116bc8e6a92f814f4a1b0ff87ca340af0549d4ae739b",
+    "response_capture_sha256": "00d147f82c099eac48d3dc44bdde989a2e16fb07f07661be10d2966c85f01772",
+    "body_matches_original": true,
+    "cleanup": {
+      "terminated_owned_pid": 91001,
+      "no_listener": true,
+      "port_rebind_succeeded": true,
+      "removed_files": [
+        "output/app-icons-native/ip-a1/qa-temporary/http-response.bin",
+        "output/app-icons-native/ip-a1/qa-temporary/http-server.log"
+      ]
+    },
+    "server_log": "Serving HTTP on 127.0.0.1 port 8770 (http://127.0.0.1:8770/) ...\n127.0.0.1 - - [13/Sep/2026 02:16:02] \"GET /original.png HTTP/1.1\" 200 -\n"
+  },
+  "adversarial_evidence_path": "output/app-icons-native/ip-a1/adversarial-results.json",
+  "adversarial_summary": {
+    "passed": 13,
+    "not_applicable": [
+      {
+        "name": "actual native cancellation and repeated interruptions",
+        "reason": "Single native call returned normally. Receipt reconciliation repeated twice without resetting call count; no cancellation or interrupted transport occurred."
+      },
+      {
+        "name": "unknown native attempt recovery",
+        "reason": "No unknown attempt existed at baseline and call returned normally. No new call or newest-file search performed."
+      }
+    ]
+  },
+  "cleanup": {
+    "temporary_files_removed": true,
+    "temporary_directory_removed": true,
+    "only_owned_pid_terminated": 91001,
+    "port_8770_no_listener": true,
+    "port_rebind_succeeded": true
+  },
+  "resource_registry_path": "output/app-icons-native/ip-a1/resource-registry.json",
+  "approval": {
+    "selected": false,
+    "visually_approved": false,
+    "strict_color_approved": false,
+    "platform_ready": false
+  },
+  "remaining_work": "Coordinator-owned catalog import and Chrome gallery verification; no candidate work remains."
+}

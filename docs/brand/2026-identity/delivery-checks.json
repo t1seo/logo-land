@@ -1,0 +1,20 @@
+{
+  "selected_id": "a-v1",
+  "session_revision": 5,
+  "export_revision": 5,
+  "source_session_master_delivery_zip_png_sha256": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+  "byte_exact_all": true,
+  "zip_payload": [
+    "logo.png",
+    "manifest.json",
+    "brand-guide.md"
+  ],
+  "color_policy": "advisory",
+  "color_status": "pass",
+  "transparency_verified": false,
+  "warnings": [
+    "Advisory color evidence: pass; no strict constraints apply.",
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "prompt_and_intent_match": true
+}

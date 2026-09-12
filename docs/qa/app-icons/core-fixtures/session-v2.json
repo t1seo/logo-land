@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "id": "demo",
+  "revision": 1,
+  "created_at": "2026-09-13T00:00:00Z",
+  "updated_at": "2026-09-13T00:00:00Z",
+  "brief": {
+    "brand_name": "기존 브랜드",
+    "exact_text": "Legacy Ω",
+    "industry": "design",
+    "audience": "readers",
+    "slogan": "Read more",
+    "logo_type": "combination",
+    "styles": [
+      "minimal"
+    ],
+    "palette": [
+      "green"
+    ],
+    "forbidden": [],
+    "use_cases": [],
+    "assumptions": [],
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "rounded",
+      "font_reference": null
+    },
+    "background": "transparent",
+    "concept_count": 3
+  },
+  "artifacts": [
+    {
+      "id": "v1",
+      "path": "artifacts/v1.png",
+      "sha256": "f2b10f82ea768cb2669294a3e1bd2dbd8b87afaeff3a66a7df8a17bce9de6e7e",
+      "image": {
+        "format": "PNG",
+        "width": 19,
+        "height": 23,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 437
+      },
+      "prompt": "Baseline original prompt; synthetic evidence.",
+      "parent_id": null,
+      "created_at": "2026-09-13T00:00:00Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

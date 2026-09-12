@@ -1,0 +1,98 @@
+{
+  "scope": "Actual helper init/prompt for eleven planned briefs; no native generation, no image conformance claim",
+  "native_calls": 0,
+  "results": [
+    {
+      "id": "ip-a1",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "a7a745050d223646d1d0959def17cc4f83b85ed2d0152891617fcdd9ba78c4fd",
+      "prompt_characters": 1377
+    },
+    {
+      "id": "ip-a2",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "5a2b308974655d468cb7ce83827c5942e39504771c91fa84ec2e119436fe1b9c",
+      "prompt_characters": 1393
+    },
+    {
+      "id": "ip-b1",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "cc2e94e36d4c5c24d5da9cffca145e50e042b472fdd7b0bc4bf7f8e44bad13e3",
+      "prompt_characters": 1391
+    },
+    {
+      "id": "ip-b2",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "62127fa6c88c0a8ce7e4bb7c10ead6b354b81e1db33a6ef4228160859b3a0555",
+      "prompt_characters": 1394
+    },
+    {
+      "id": "ip-c1",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "020ea558686d1be216adb6edd03abacf71537fe95a36ec7297694c5f9a00ba6e",
+      "prompt_characters": 1388
+    },
+    {
+      "id": "ip-c2",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "e5abb62f5d389ab7122b6f8131ac32de4abf912a54c1d96bcde317e6522211f4",
+      "prompt_characters": 1403
+    },
+    {
+      "id": "pictogram",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "4837c47f11e2af44c80169370b98ef3b00badbf18d81c0319e55677522a3a76f",
+      "prompt_characters": 1056
+    },
+    {
+      "id": "abstract",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "a1e1beb899e0c01a417e2c93e7327af94ddfe0215d1ed0fb31e7ec266ba32efb",
+      "prompt_characters": 1097
+    },
+    {
+      "id": "monogram",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "cb035dcd19846797b1026524540ba8939fe1d17dad10c9e9767f5e2e8ef42b83",
+      "prompt_characters": 1056
+    },
+    {
+      "id": "soft-3d",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "3f102eb124652015979d134a04a8e33d16b76eaa2a1062564486ce14e1b5c98c",
+      "prompt_characters": 1091
+    },
+    {
+      "id": "pixel-art",
+      "init_exit": 0,
+      "prompt_exit": 0,
+      "pass": true,
+      "prompt_sha256": "d63cb8b72f9124c68d1b29348e9a5de74ade002e602a70828ee93f56aff4eaad",
+      "prompt_characters": 1110
+    }
+  ],
+  "cleanup": {
+    "fixture_root": "/tmp/ll-icons-coordinator-preflight",
+    "removed": true
+  }
+}

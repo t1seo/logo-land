@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "candidate_id": "soft-3d",
+  "attempt_id": "soft-3d-draw-1",
+  "task_id": "task_6cf41b81a635",
+  "dispatch_id": "ctx_01d2f855cffd",
+  "workspace": "output/app-icons-native/soft-3d",
+  "status": "imported",
+  "outcome": "returned/imported",
+  "created_at": "2026-09-12T17:14:00.366057+00:00",
+  "native": {
+    "tool": "image_gen.imagegen",
+    "provider": "host built-in image_gen",
+    "model": "unreported",
+    "call_identity": "unreported",
+    "calls": 1,
+    "reference_arguments": false,
+    "started_at": "2026-09-12T17:14:12.861714+00:00",
+    "arguments": [
+      "prompt"
+    ],
+    "logical_call_identity": "soft-3d-draw-1",
+    "returned_at": "2026-09-12T17:14:53.852102+00:00",
+    "source_basename": "exec-0877f8d4-36ca-4f37-845d-e9063d2b0fd4.png",
+    "source_sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63",
+    "returned_image_count": 1,
+    "result_receipt_path": "output/app-icons-native/soft-3d/native-result.json",
+    "returned_file_identity": "exec-0877f8d4-36ca-4f37-845d-e9063d2b0fd4",
+    "call_identity_note": "No independent native invocation identifier was exposed; returned_file_identity is the exact returned PNG filename stem.",
+    "elapsed_tool_seconds": 21.9
+  },
+  "history": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:14:00.368908+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:14:12.861714+00:00"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:14:53.852102+00:00"
+    },
+    {
+      "state": "imported",
+      "at": "2026-09-12T17:15:23.395781+00:00"
+    }
+  ],
+  "plan": [
+    {
+      "step": "prepare exact helper prompt and intent",
+      "status": "completed"
+    },
+    {
+      "step": "one native call and original preservation",
+      "status": "completed"
+    },
+    {
+      "step": "import integrity and HTTP byte verification",
+      "status": "completed"
+    },
+    {
+      "step": "adversarial probes and owned cleanup",
+      "status": "completed"
+    }
+  ],
+  "temporary_resources": [
+    {
+      "kind": "temporary_http_server",
+      "host": "127.0.0.1",
+      "port": 8779,
+      "pid": 89600,
+      "state": "cleaned",
+      "serve_directory": "output/app-icons-native/soft-3d",
+      "temporary_paths": [
+        "output/app-icons-native/soft-3d/.http-response.tmp",
+        "output/app-icons-native/soft-3d/.http-server.log",
+        "output/app-icons-native/soft-3d/.http-server.pid"
+      ],
+      "registered_at": "2026-09-12T17:15:47.975990+00:00",
+      "started_at": "2026-09-12T17:15:47.980261+00:00",
+      "command": [
+        "python",
+        "-m",
+        "http.server",
+        "8779",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "output/app-icons-native/soft-3d"
+      ],
+      "server_exit_code": -15,
+      "server_log": "127.0.0.1 - - [13/Sep/2026 02:15:48] \"GET /original.png HTTP/1.1\" 200 -\n",
+      "cleaned_at": "2026-09-12T17:15:48.180080+00:00",
+      "port_bind_after_cleanup": true,
+      "connection_refused_after_cleanup": true,
+      "temporary_paths_absent": true,
+      "terminated_only_owned_pid": true
+    },
+    {
+      "kind": "adversarial_probe_inputs",
+      "state": "cleaned",
+      "paths": [
+        "output/app-icons-native/soft-3d/.qa-malformed-icon.json",
+        "output/app-icons-native/soft-3d/.qa-oversize.dat"
+      ],
+      "registered_at": "2026-09-12T17:17:10.202017+00:00",
+      "paths_absent": true,
+      "cleaned_at": "2026-09-12T17:17:16.827198+00:00"
+    }
+  ],
+  "session_id": "soft-3d",
+  "artifact_id": "soft-3d",
+  "revision": 0,
+  "resolved_intent": {
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+      "placement": "center",
+      "text": null
+    },
+    "palette": null,
+    "lockup": null,
+    "requested_background": "opaque",
+    "parent_id": null
+  },
+  "prompt_path": "output/app-icons-native/soft-3d/prompt.txt",
+  "prompt_result_path": "output/app-icons-native/soft-3d/prompt-result.json",
+  "prompt_sha256": "3f102eb124652015979d134a04a8e33d16b76eaa2a1062564486ce14e1b5c98c",
+  "brief_path": "output/app-icons-native/soft-3d/brief.json",
+  "intent_path": "output/app-icons-native/soft-3d/app-icon.json",
+  "helper_evidence_path": "output/app-icons-native/soft-3d/helper-evidence.json",
+  "baseline": {
+    "receipt_existed": false,
+    "workspace_existed": false,
+    "T1_checked_complete": true,
+    "shared_worktree_dirty": true,
+    "source_writes": false
+  },
+  "original_path": "output/app-icons-native/soft-3d/original.png",
+  "actual_image": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "frames": 1
+  },
+  "helper_artifact_path": "output/app-icons-native/soft-3d/.logo-generator/sessions/soft-3d/artifacts/soft-3d.png",
+  "session_path": "output/app-icons-native/soft-3d/.logo-generator/sessions/soft-3d/session.json",
+  "imported_revision": 1,
+  "verification": {
+    "native_original_import_receipt_sha256_equal": true,
+    "final_prompt_equals_stored_prompt": true,
+    "intent_equals_prompt_result": true,
+    "parent_null": true,
+    "artifact_count": 1,
+    "selected_id": null,
+    "approved_export_performed": false,
+    "platform_ready": false,
+    "sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63",
+    "adversarial_session_original_prompt_unchanged": true,
+    "final_native_source_original_import_http_sha256_equal": true,
+    "all_owned_json_valid_and_no_personal_paths": true,
+    "final_show_exit_code": 0
+  },
+  "visual_observation": "One large centered heart-shaped jade-green leaf with a shallow central fold, dimensional lighting, surface texture and contact shadow on a warm butter-colored square canvas; preserved without artistic retry or adjustment.",
+  "http": {
+    "result": "PASS",
+    "url": "http://127.0.0.1:8779/original.png",
+    "argv": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8779/original.png",
+      "-o",
+      "output/app-icons-native/soft-3d/.http-response.tmp"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "server_pid": 89600,
+    "at": "2026-09-12T17:15:48.166086+00:00",
+    "status": 200,
+    "status_line": "HTTP/1.0 200 OK",
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:15:48 GMT\r\nContent-type: image/png\r\nContent-Length: 1526612\r\nLast-Modified: Sat, 12 Sep 2026 17:14:53 GMT",
+    "body_sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63",
+    "original_sha256": "da5ad53245b728c0d9d44cada1394a1e3d4dfab985b3bf79d9d57ccf7673dc63",
+    "body_bytes": 1526612,
+    "body_matches_original": true,
+    "scope": "Actual locally served original bytes only; no platform or strict approval."
+  },
+  "cleanup": {
+    "owned_server_pid": 89600,
+    "port": 8779,
+    "port_released": true,
+    "temporary_http_files_removed": true,
+    "native_original_preserved": true,
+    "temporary_probe_files_removed": true,
+    "helper_locks_released": true
+  },
+  "adversarial_probes": [
+    {
+      "name": "malformed_receipt_json",
+      "result": "PASS",
+      "actual": "JSON parser rejected truncated in-memory receipt",
+      "error": "Expecting value: line 1 column 41 (char 40)",
+      "scope": "JSON syntax only; no dedicated receipt schema validator is claimed."
+    },
+    {
+      "name": "malformed_icon_file",
+      "result": "PASS",
+      "actual": "Extra field rejected by actual prompt CLI before any native call; session unchanged."
+    },
+    {
+      "name": "malformed_png",
+      "result": "PASS",
+      "actual": "invalid_png: PNG must end with a complete IEND chunk",
+      "original_unmodified": true
+    },
+    {
+      "name": "truncated_png_copy",
+      "result": "PASS",
+      "actual": "invalid_png: PNG must end with a complete IEND chunk",
+      "original_unmodified": true
+    },
+    {
+      "name": "file_size_limit",
+      "result": "PASS",
+      "actual": "invalid_file: Input exceeds the 64 MiB size limit",
+      "fixture_bytes": 67108865
+    },
+    {
+      "name": "png_pixel_limit",
+      "result": "PASS",
+      "actual_pixels": 1572516,
+      "limit": 40000000,
+      "scope": "Actual decoded native image below limit; over-limit PNG fixture N/A because no synthetic raster is created."
+    },
+    {
+      "name": "prompt_injection_data",
+      "result": "PASS",
+      "actual": "Input remains a JSON-quoted concept, trusted no-lettering constraints follow; argv execution used; no native invocation.",
+      "scope": "Prompt structure and shell-data handling only; model immunity not claimed."
+    },
+    {
+      "name": "prompt_limit",
+      "result": "PASS",
+      "actual": "21000-character concept rejected before native generation."
+    },
+    {
+      "name": "stale_revision",
+      "result": "PASS",
+      "actual": "Replayed revision 0 import rejected stale_revision, returned source preserved, no rerun."
+    },
+    {
+      "name": "duplicate_import",
+      "result": "PASS",
+      "actual": "Current revision 1 duplicate artifact import rejected conflict without changing session or original."
+    },
+    {
+      "name": "cancel_resume_repeated_interruptions",
+      "result": "N/A",
+      "reason": "Native call returned normally; no cancellation or interruption occurred. Running/returned receipt and exact call identity are durable; no second call or newest-image scan occurred."
+    },
+    {
+      "name": "native_liveness",
+      "result": "PASS",
+      "actual": "One synchronous tool completion in 21.9 seconds, preceded by durable running receipt and coordinator heartbeat."
+    },
+    {
+      "name": "artistic_retry",
+      "result": "PASS",
+      "actual": "Exactly one call, every returned image preserved; no reference, resampling, recoloring, background removal, selection or approval."
+    },
+    {
+      "name": "dirty_shared_worktree",
+      "result": "PASS",
+      "actual": "All authored data stayed within owned workspace and candidate receipt; shared source files were read only."
+    },
+    {
+      "name": "http_semantics",
+      "result": "PASS",
+      "actual": "Bounded curl HTTP 200 and byte equality verified; no platform or strict approval inference."
+    }
+  ],
+  "completed_at": "2026-09-12T17:17:54.069247+00:00",
+  "remaining": "Candidate task complete; aggregate Chrome gallery verification belongs to coordinator T5. This original has no platform, visual-approval or strict-color approval claim.",
+  "artifact_inventory": [
+    "output/app-icons-native/soft-3d/.logo-generator/sessions/soft-3d/artifacts/soft-3d.png",
+    "output/app-icons-native/soft-3d/.logo-generator/sessions/soft-3d/session.json",
+    "output/app-icons-native/soft-3d/app-icon.json",
+    "output/app-icons-native/soft-3d/brief.json",
+    "output/app-icons-native/soft-3d/helper-evidence.json",
+    "output/app-icons-native/soft-3d/import-result.json",
+    "output/app-icons-native/soft-3d/init-result.json",
+    "output/app-icons-native/soft-3d/native-result.json",
+    "output/app-icons-native/soft-3d/original.png",
+    "output/app-icons-native/soft-3d/prompt-result.json",
+    "output/app-icons-native/soft-3d/prompt.txt",
+    "output/app-icons-native/soft-3d/show-result.json"
+  ]
+}

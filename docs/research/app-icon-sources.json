@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "researchDate": "2026-09-13",
+  "timezone": "Asia/Seoul",
+  "task": {
+    "taskId": "task_02b70858ca00",
+    "dispatchId": "ctx_5fd84d2c11ee",
+    "name": "icons_research",
+    "scope": "Research only; no product implementation, native image generation, install, child worker, native packaging, or store upload.",
+    "reportPath": "docs/research/app-icon-tools.md",
+    "ownedPaths": [
+      "docs/research/app-icon-tools.md",
+      "docs/research/app-icon-sources.json"
+    ]
+  },
+  "upstream": {
+    "repository": "https://github.com/s1dashu/ip-as-logo-skill",
+    "headResolutionUrl": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/HEAD",
+    "mainResolutionUrl": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/main",
+    "commitSha": "acb834c717bcd0a487c49732d08397ba280d690b",
+    "commitDate": "2026-08-22T16:48:55Z",
+    "commitMessage": "docs: require top-tier image models",
+    "mainMatchedHead": true,
+    "treeSha": "cc0eeceb21b78b31cb64a6e1df1ae0158e8e4980",
+    "treeUrl": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/git/trees/cc0eeceb21b78b31cb64a6e1df1ae0158e8e4980?recursive=1",
+    "treeTruncated": false,
+    "treeFiles": [
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "SKILL.md",
+      "assets/ip-as-logo-wall.webp"
+    ],
+    "kind": "Markdown instruction skill with showcase image; no generation SDK, executable renderer, MCP server, or native export pipeline in inspected tree.",
+    "localInstalledDirectory": "/Users/cillian/.agents/skills/ip-as-logo",
+    "localComparison": [
+      {
+        "path": "SKILL.md",
+        "upstreamUrl": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+        "bytes": 17157,
+        "upstreamSha256": "468429f9391c29dc5ead2cde9159a831435afcdae464631498eabce2ff1c9695",
+        "localSha256": "468429f9391c29dc5ead2cde9159a831435afcdae464631498eabce2ff1c9695",
+        "byteEqual": true
+      },
+      {
+        "path": "LICENSE",
+        "upstreamUrl": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+        "bytes": 1064,
+        "upstreamSha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+        "localSha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+        "byteEqual": true
+      },
+      {
+        "path": "README.md",
+        "upstreamUrl": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/README.md",
+        "bytes": 7963,
+        "upstreamSha256": "01fdc4729a1d7c13c5f5a71414d4a28756b142458a727a1f75e41c161fba4179",
+        "localSha256": "01fdc4729a1d7c13c5f5a71414d4a28756b142458a727a1f75e41c161fba4179",
+        "byteEqual": true
+      }
+    ],
+    "localComparisonMethod": "Bounded curl retrieval; Ruby Digest SHA-256 and binary String comparison (body.b == File.binread).",
+    "installationDateVerified": false,
+    "workflow": {
+      "sourceId": "upstream-skill",
+      "directions": 3,
+      "defaultDraws": 6,
+      "independentCalls": true,
+      "defaultDistribution": [
+        {
+          "label": "A1",
+          "direction": "A",
+          "corner": "lower-left"
+        },
+        {
+          "label": "A2",
+          "direction": "A",
+          "corner": "lower-right"
+        },
+        {
+          "label": "B1",
+          "direction": "B",
+          "corner": "lower-left"
+        },
+        {
+          "label": "B2",
+          "direction": "B",
+          "corner": "lower-right"
+        },
+        {
+          "label": "C1",
+          "direction": "C",
+          "corner": "lower-left"
+        },
+        {
+          "label": "C2",
+          "direction": "C",
+          "corner": "lower-right"
+        }
+      ],
+      "singleDirectionAlternative": "If one direction is selected with six draws, label A1 through A6 and alternate lower-left/lower-right.",
+      "proposalRule": "Present three directions and six-image proposal; existing authorization for six or proceeding without another confirmation is an explicit exception.",
+      "subjectRule": "Specified subject: three treatments. Unspecified subject: three product-related subjects/metaphors with different rationales.",
+      "composition": {
+        "upright": true,
+        "dominantLowerCorner": true,
+        "occupancyIntentPercent": [
+          85,
+          95
+        ],
+        "pairedFeaturesVisible": true,
+        "defaultCentered": false,
+        "basicShapeBudget": [
+          4,
+          7
+        ],
+        "recognitionIntentPixels": [
+          32,
+          32
+        ]
+      },
+      "semanticColors": {
+        "total": 3,
+        "characterFamilies": 2,
+        "background": 1,
+        "faceReusesCharacterColors": true,
+        "strictUniqueRasterColorCount": false,
+        "incidentalTonalVariationAccepted": true
+      },
+      "preserveEveryReturnedDraw": true,
+      "automaticAppearanceFiltering": false,
+      "automaticAppearanceRetry": false,
+      "silentPostProcessing": false,
+      "generationContactSheet": false,
+      "previousCandidateReferencesForPromptOnlyDraw": false,
+      "promptAvoidsUseCaseTerms": [
+        "logo",
+        "brand mark",
+        "app icon",
+        "icon asset"
+      ],
+      "promptAvoidsImageModeTerms": [
+        "opaque",
+        "alpha",
+        "transparency"
+      ],
+      "upstreamRequestedDimensions": [
+        1536,
+        1536
+      ],
+      "upstreamPermittedExampleNativeDimensions": [
+        1254,
+        1254
+      ],
+      "dimensionsAreVerifiedServiceLimits": false,
+      "upstreamModelAssertions": [
+        "GPT Image 2 (preferred)",
+        "Seedance 5.0 Pro",
+        "Nano Banana Pro (Gemini Image Pro)",
+        "Nano Banana 2 (Gemini Image Flash)"
+      ],
+      "modelAssertionsIndependentlyVerified": false,
+      "upstreamRasterWorkflowAllowsSvgFallback": false
+    }
+  },
+  "license": {
+    "sourceId": "upstream-license",
+    "spdx": "MIT",
+    "copyright": "Copyright (c) 2026 s1dashu",
+    "bytes": 1064,
+    "sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+    "text": "MIT License\n\nCopyright (c) 2026 s1dashu\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "proposedAdaptationNotice": "Adapted from ip-as-logo-skill by s1dashu, commit acb834c717bcd0a487c49732d08397ba280d690b, under the MIT License. Local adaptation: native Codex routing, explicit separation of artwork styles, and platform-preparation boundaries.",
+    "retainFullOriginalLicenseForSubstantialCopies": true,
+    "generatedArtworkRightsOrStoreAcceptanceEstablished": false
+  },
+  "nativeRuntime": {
+    "evidenceKind": "Tool schema exposed in this session; no generation call was made.",
+    "tool": "image_gen.imagegen",
+    "exposedArguments": [
+      "prompt",
+      "referenced_image_paths",
+      "num_last_images_to_include"
+    ],
+    "unexposedControlsNotToInvent": [
+      "model",
+      "size",
+      "seed",
+      "quality",
+      "n",
+      "negative_prompt"
+    ],
+    "providerModelIdentityVerified": false,
+    "generationPerformed": false,
+    "externalProvidersEnabled": false,
+    "proposedNewDrawBehavior": "Use independent native jobs, omit reference-image arguments for new prompt-only draws, put exclusions in the prompt, preserve all returned assets and record real dimensions."
+  },
+  "sources": [
+    {
+      "id": "upstream-head",
+      "title": "GitHub HEAD commit resolution",
+      "url": "https://api.github.com/repos/s1dashu/ip-as-logo-skill/commits/acb834c717bcd0a487c49732d08397ba280d690b",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Full SHA, commit time and message; HEAD and main separately resolved to this SHA."
+      ],
+      "pinnedCommit": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "retrieval": "curl with connect timeout 10s and total timeout 30s"
+    },
+    {
+      "id": "upstream-skill",
+      "title": "ip-as-logo SKILL.md",
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Three directions and six independent one-pass candidates; lower-corner composition; three semantic colors; preserve every returned image; prompt avoids logo/app-icon wording."
+      ],
+      "pinnedCommit": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "rawUrl": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md",
+      "retrieval": "web browse plus exact raw bytes and local binary comparison"
+    },
+    {
+      "id": "upstream-readme",
+      "title": "ip-as-logo README.md",
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/README.md",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Instruction-skill context, showcase, installation examples, model assertions and delivery workflow."
+      ],
+      "pinnedCommit": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "rawUrl": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/README.md",
+      "retrieval": "raw curl and local binary comparison; examples not executed"
+    },
+    {
+      "id": "upstream-license",
+      "title": "ip-as-logo MIT LICENSE",
+      "url": "https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "MIT license with Copyright (c) 2026 s1dashu; permission/copyright notice retention and warranty disclaimer."
+      ],
+      "pinnedCommit": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "rawUrl": "https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE",
+      "retrieval": "web browse, required live floating HTTP capture, pinned raw bytes and local binary comparison"
+    },
+    {
+      "id": "apple-hig",
+      "title": "Apple Human Interface Guidelines: App icons",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "iOS/iPadOS/macOS 1024 square source; system mask; center primary content; full-bleed opaque imported background while foreground transparency is supported; layered and flattened artwork routes; current appearance variants."
+      ],
+      "officialStructuredContentUrl": "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json",
+      "retrieval": "HTML was JavaScript shell; official DocC JSON fetched with curl and parsed; JSON URL also browsed",
+      "latestChangeDateInDocument": "2026-06-08"
+    },
+    {
+      "id": "apple-composer-overview",
+      "title": "Apple Icon Composer overview",
+      "url": "https://developer.apple.com/icon-composer/",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Multilayer design for Apple platforms; artwork layer effects; flattened export for marketing/communication is distinct from multilayer document."
+      ],
+      "retrieval": "web browse"
+    },
+    {
+      "id": "apple-composer-xcode",
+      "title": "Xcode: Creating your app icon using Icon Composer",
+      "url": "https://developer.apple.com/documentation/xcode/creating-your-app-icon-using-icon-composer",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "SVG/PNG artwork layers; 1024 canvas for iPhone/iPad/Mac, 1088 for Watch; no baked canvas mask; add Composer file to Xcode; simulated/physical-device checks; replacement of catalog and older-release fallback behavior."
+      ],
+      "officialStructuredContentUrl": "https://developer.apple.com/tutorials/data/documentation/xcode/creating-your-app-icon-using-icon-composer.json",
+      "retrieval": "Official indexed content browsed; direct HTML JS shell and Markdown tool error; official DocC JSON fetched with bounded curl and parsed"
+    },
+    {
+      "id": "apple-asset-catalog",
+      "title": "Xcode: Configuring your app icon using an asset catalog",
+      "url": "https://developer.apple.com/documentation/xcode/configuring-your-app-icon",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "iOS/iPadOS single 1024 square image size-variant route; dark transparent background and grayscale tinted image guidance; asset-catalog configuration remains distinct from image creation."
+      ],
+      "officialStructuredContentUrl": "https://developer.apple.com/tutorials/data/documentation/xcode/configuring-your-app-icon.json",
+      "retrieval": "Official indexed content browsed; direct HTML JS shell and Markdown tool error; official DocC JSON fetched with bounded curl and parsed"
+    },
+    {
+      "id": "apple-store-icon",
+      "title": "App Store Connect: Add an app icon",
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/add-an-app-icon",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Add icon through Composer or catalog in Xcode, then upload build; changing a published icon requires new app version and review."
+      ],
+      "retrieval": "web browse; main content lines 403-410"
+    },
+    {
+      "id": "android-adaptive",
+      "title": "Android Developers: Adaptive icons",
+      "url": "https://developer.android.com/develop/ui/compose/system/icon_design_adaptive",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Foreground/background layers; optional intentional monochrome artwork for theming; 108dp layer canvas; central 66dp safe region; 48-66dp icon content; outer 18dp for masking/effects; adaptive XML and manifest resources; Android 16 QPR 2 automatic theming note."
+      ],
+      "requestedUrl": "https://developer.android.com/develop/ui/views/launch/icon_design_adaptive",
+      "retrieval": "web browse with official redirect",
+      "pageUpdatedDate": "2026-08-13"
+    },
+    {
+      "id": "google-play-listing",
+      "title": "Android Developers: Google Play icon design specifications",
+      "url": "https://developer.android.com/distribute/google-play/resources/icon-design-specifications",
+      "primary": true,
+      "accessedDate": "2026-09-13",
+      "claims": [
+        "Listing icon is distinct from APK launcher icon; 512 square, 32-bit PNG, sRGB, max 1024KB; full square without baked outer mask/drop shadow; internal shading allowed; nontransparent background recommended."
+      ],
+      "retrieval": "web browse",
+      "pageUpdatedDate": "2026-06-15"
+    }
+  ],
+  "platformDeliverables": {
+    "artwork": {
+      "classification": "proposal",
+      "label": "Generated artwork",
+      "proves": [
+        "A returned image and its recorded provenance when generation actually runs"
+      ],
+      "doesNotProve": [
+        "Icon Composer document",
+        "Separated editable layers",
+        "Android adaptive resources",
+        "App build",
+        "Store acceptance"
+      ]
+    },
+    "apple": {
+      "sourceIds": [
+        "apple-hig",
+        "apple-composer-overview",
+        "apple-composer-xcode",
+        "apple-asset-catalog",
+        "apple-store-icon"
+      ],
+      "iosIpadOsCanvasPixels": [
+        1024,
+        1024
+      ],
+      "systemAppliesMask": true,
+      "layeredComposerAndCatalogRoutesDistinct": true,
+      "flattenedImageAllowed": true,
+      "blanketNoAlphaForEveryLayer": false,
+      "uploadBuildRequired": true
+    },
+    "android": {
+      "sourceIds": [
+        "android-adaptive"
+      ],
+      "layerCanvasDp": [
+        108,
+        108
+      ],
+      "centralSafeZoneDp": [
+        66,
+        66
+      ],
+      "iconContentMinDp": [
+        48,
+        48
+      ],
+      "iconContentMaxDp": [
+        66,
+        66
+      ],
+      "outerEffectInsetDp": 18,
+      "colorLayers": [
+        "foreground",
+        "background"
+      ],
+      "themedLayer": "monochrome",
+      "monochromeUniversalStoreRequirement": false,
+      "xmlResourcesAndManifestRequiredForIntegration": true,
+      "dpEqualsRasterPixels": false
+    },
+    "googlePlay": {
+      "sourceIds": [
+        "google-play-listing"
+      ],
+      "listingPixels": [
+        512,
+        512
+      ],
+      "format": "32-bit PNG",
+      "colorSpace": "sRGB",
+      "maxFileSizeInSource": "1024KB",
+      "outerShape": "full square",
+      "bakedOuterDropShadow": false,
+      "bakedRoundedCorners": false,
+      "internalArtworkShadowsAllowed": true,
+      "nontransparentBackground": "recommended, not a categorical prohibition of transparency on this page",
+      "separateFromLauncherIcon": true
+    },
+    "cornerConflict": {
+      "classification": "inference",
+      "sourceIds": [
+        "upstream-skill",
+        "apple-hig",
+        "android-adaptive"
+      ],
+      "finding": "IP lower-corner occupancy can place identity features outside preferred center or safe masks.",
+      "proposal": "Keep original draw intact; make any requested platform adaptation a separately labeled derivative with mask checks."
+    }
+  },
+  "styleRecommendations": [
+    {
+      "id": "ip-mascot",
+      "classification": "proposal",
+      "upstreamDerived": true,
+      "construction": "Personified soft silhouette, two character colors plus background, lower-corner emergence, minimal depth."
+    },
+    {
+      "id": "flat-geometric",
+      "classification": "proposal",
+      "upstreamDerived": false,
+      "construction": "Centered filled non-character circles/blocks/arcs; no depth."
+    },
+    {
+      "id": "negative-space",
+      "classification": "proposal",
+      "upstreamDerived": false,
+      "construction": "Heavy solid outer shape with one meaningful internal cutout."
+    },
+    {
+      "id": "rounded-monoline",
+      "classification": "proposal",
+      "upstreamDerived": false,
+      "construction": "Thick continuous rounded stroke with open interior; no filled masses."
+    },
+    {
+      "id": "paper-cut",
+      "classification": "proposal",
+      "upstreamDerived": false,
+      "construction": "A few overlapping flat paper forms with restrained internal depth."
+    },
+    {
+      "id": "soft-sculpted",
+      "classification": "proposal",
+      "upstreamDerived": false,
+      "construction": "One smoothly volumetric object with broad light/shade; static raster, not native layers."
+    }
+  ],
+  "samplePlan": {
+    "status": "proposed_not_executed",
+    "sharedProductBrief": true,
+    "initialTotalDraws": 11,
+    "ipMascotDraws": 6,
+    "otherStyleDraws": 5,
+    "otherStyleDrawsEach": 1,
+    "optionalExpandedTotal": 16,
+    "generationContactSheets": false,
+    "preserveAllOriginals": true,
+    "previewDerivativesMustBeLabeled": true,
+    "noAppearanceBasedSuppression": true,
+    "noAutomaticAppearanceRetry": true,
+    "unknownOrFailedJobsNotMarkedComplete": true,
+    "exactFontClaim": false,
+    "nativePackagesCreated": false,
+    "storeUploadsPerformed": false
+  },
+  "manualQa": {
+    "id": "required-license-http",
+    "command": "curl -i --fail --silent --show-error --connect-timeout 10 --max-time 30 https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/main/LICENSE",
+    "result": "PASS",
+    "exitCode": 0,
+    "httpStatus": 200,
+    "statusLine": "HTTP/2 200",
+    "contentType": "text/plain; charset=utf-8",
+    "contentLength": 1064,
+    "serverDate": "Sat, 12 Sep 2026 16:45:33 GMT",
+    "rawResponse": "HTTP/2 200 \r\ncache-control: max-age=300\r\ncontent-security-policy: default-src 'none'; style-src 'unsafe-inline'; sandbox\r\ncontent-type: text/plain; charset=utf-8\r\netag: \"286ab39b054db9c32dff69b890ae4ce484c9541e2cb16d6525db6b5872c51b15\"\r\nstrict-transport-security: max-age=31536000\r\nx-content-type-options: nosniff\r\nx-frame-options: deny\r\nx-xss-protection: 1; mode=block\r\nx-github-request-id: 303E:5CD2C:91384:2E024C:6AA58192\r\nx-github-edge-region: koreacentral\r\naccept-ranges: bytes\r\ndate: Sat, 12 Sep 2026 16:45:33 GMT\r\nvia: 1.1 varnish\r\nx-served-by: cache-icn1450082-ICN\r\nx-cache: MISS\r\nx-cache-hits: 0\r\nx-timer: S1789231533.112028,VS0,VE229\r\nvary: Authorization,Accept-Encoding\r\naccess-control-allow-origin: *\r\ncross-origin-resource-policy: cross-origin\r\nx-fastly-request-id: 56df7068a15fa5a888e860a362270aee8115f4e5\r\nexpires: Sat, 12 Sep 2026 16:50:33 GMT\r\nsource-age: 0\r\ncontent-length: 1064\r\n\r\nMIT License\n\nCopyright (c) 2026 s1dashu\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "pinnedLicenseBodyMatched": true,
+    "notEvidenceOfImageGeneration": true
+  },
+  "probes": [
+    {
+      "probe": "floating_main_vs_pinned_HEAD",
+      "sha": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "matches": true
+    },
+    {
+      "probe": "malformed_json",
+      "result": "PASS: rejected by JSON parser",
+      "mutation": false
+    },
+    {
+      "probe": "unexpected_html",
+      "result": "PASS: rejected by JSON parser",
+      "mutation": false
+    },
+    {
+      "probe": "untrusted_instruction_fixture",
+      "type": "String",
+      "executed": false,
+      "result": "kept as quoted research data; no eval, shell interpolation, install or generation"
+    },
+    {
+      "probe": "missing_source_http_error",
+      "exit_code": 56,
+      "status_line": "HTTP/2 404",
+      "error": "curl: (56) The requested URL returned error: 404",
+      "accepted_as_source": false
+    },
+    {
+      "probe": "forced_timeout",
+      "exit_code": 28,
+      "bytes": 0,
+      "error": "curl: (28) Resolving timed out after 1 milliseconds",
+      "accepted_as_source": false
+    }
+  ],
+  "additionalVerification": {
+    "binaryComparison": {
+      "result": "PASS",
+      "files": [
+        {
+          "name": "SKILL.md",
+          "byte_equal": true,
+          "upstream_bytes": 17157,
+          "sha256": "468429f9391c29dc5ead2cde9159a831435afcdae464631498eabce2ff1c9695"
+        },
+        {
+          "name": "LICENSE",
+          "byte_equal": true,
+          "upstream_bytes": 1064,
+          "sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546"
+        },
+        {
+          "name": "README.md",
+          "byte_equal": true,
+          "upstream_bytes": 7963,
+          "sha256": "01fdc4729a1d7c13c5f5a71414d4a28756b142458a727a1f75e41c161fba4179"
+        }
+      ],
+      "note": "Initial String equality compared different encodings and returned false for two UTF-8 documents despite equal hashes. Binary-string comparison then confirmed all exact bytes equal."
+    },
+    "researchInterruption": {
+      "surface": "overbroad read-only rg file search",
+      "exitCode": 130,
+      "resumedUsing": "Exact ancestor/path reads",
+      "filesMutated": false,
+      "notGenerationCancelResumeTest": true
+    },
+    "dirtyWorktree": {
+      "baselineStatus": "clean",
+      "observedConcurrentPaths": [
+        ".omo/drafts/logo-land-app-icons.md",
+        "plans/logo-land-app-icons.md",
+        "docs/qa/app-icons/"
+      ],
+      "action": "untouched; no reverts"
+    },
+    "flakiness": {
+      "observed": "Repeated pinned fetches had equal lengths and hashes; Apple DocC fallback recovered content after HTML/tool retrieval limitations.",
+      "networkReliabilityGuarantee": false
+    },
+    "misleadingSuccess": {
+      "result": "PASS for research wording only",
+      "generationRun": false,
+      "nativeBuildRun": false,
+      "storeSubmissionRun": false
+    },
+    "redTddBuildLsp": {
+      "status": "not_applicable",
+      "reason": "Only Markdown/JSON research artifacts; no product code or behavior changed. JSON parse and document checks replace code diagnostics for this deliverable."
+    }
+  },
+  "artifactVerification": {
+    "result": "PASS",
+    "exitCode": 0,
+    "checks": [
+      "JSON parse and task/dispatch IDs",
+      "HTTP 200 response and exact 1064-byte MIT license hash",
+      "Full license and pinned SHA in Markdown",
+      "Local source hashes unchanged",
+      "All source IDs resolve",
+      "Six unique artwork style IDs",
+      "11-image sample arithmetic and six mascot labels",
+      "No trailing whitespace; final newlines"
+    ],
+    "sourceCount": 11,
+    "styleCount": 6,
+    "plannedDrawCount": 11,
+    "productBehaviorTested": false
+  },
+  "cleanup": {
+    "registeredTemporaryPaths": [],
+    "createdTemporaryPaths": [],
+    "removedTemporaryPaths": [],
+    "persistentServicesStarted": [],
+    "childWorkersCreated": 0,
+    "installsPerformed": 0,
+    "nativeGenerationCalls": 0,
+    "unrelatedChangesReverted": 0,
+    "interruptedSearchSettled": true
+  },
+  "remaining": "Coordinator-owned implementation, native samples and product QA; any platform packaging or store submission must be a distinct scoped deliverable."
+}

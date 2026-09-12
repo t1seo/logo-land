@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "plan": "plans/logo-land-app-icons.md",
+  "orca_run": "run_1bb653ce3b14",
+  "created_at": "2026-09-12T18:01:39Z",
+  "purpose": "Five fresh fictional same-subject cases with revised non-IP construction instructions; preserve all eleven original samples.",
+  "contract": "docs/qa/app-icons/quality-metis.md",
+  "original_sample_plan_sha256": "a9d544a85d441170129299ef9123cf9e0749df048b7f7cfd0720c3304d6a0f64",
+  "native_tool": "image_gen.imagegen",
+  "model": "unreported",
+  "candidate_count": 5,
+  "calls_per_candidate": 1,
+  "automatic_artistic_retry": false,
+  "candidates": [
+    {
+      "id": "pictogram-quality-v1",
+      "old_id": "pictogram",
+      "name": "Pocket Forecast",
+      "direction": "Pocket Forecast gives a calm immediate weather glance: one broad asymmetric cloud with a stable flat base partially covers a single sun, leaving a clear substantial sun crescent nestled into its upper-left contour; no detached rays or extra shapes. Treat the combined sun/cloud as one optically balanced flat mark.",
+      "comparison_criteria": "Weather still reads; the sun/cloud relationship and characteristic cloud shoulder are clear; reduced ray fragments do not weaken recognition; no new clutter.",
+      "attempt_id": "pictogram-quality-v1-draw-1",
+      "workspace": "output/app-icons-native/pictogram-quality-v1",
+      "receipt": "docs/qa/app-icons/native/pictogram-quality-v1.json",
+      "http_port": 8796,
+      "brief": {
+        "brand_name": "Pocket Forecast",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [
+
+        ],
+        "palette": [
+          "Subject primary: sunshine yellow #FFD561",
+          "Subject secondary: warm white #FFFAEE",
+          "Solid background: soft blue #8FBBDD"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "pictogram",
+          "subject": "one simple sun partly behind a single broad rounded cloud",
+          "placement": "center",
+          "text": null
+        }
+      },
+      "changes": "",
+      "parent": null,
+      "references": [
+
+      ]
+    },
+    {
+      "id": "abstract-quality-v1",
+      "old_id": "abstract",
+      "name": "Quiet Focus",
+      "direction": "Quiet Focus gathers attention into one calm rhythm: two broad interlocking rounded arcs share a coherent curvature and substantial weight around an open quiet center; opposing ends leave two deliberate openings, with no almost-touching tips, over/under shading, target dot, arrows or face. Preserve the current bold overall presence.",
+      "comparison_criteria": "One coherent gesture and intended openings; arcs remain distinct; assess whether gathering/focus reads more clearly than a generic cycle without claiming literal semantic recognition.",
+      "attempt_id": "abstract-quality-v1-draw-1",
+      "workspace": "output/app-icons-native/abstract-quality-v1",
+      "receipt": "docs/qa/app-icons/native/abstract-quality-v1.json",
+      "http_port": 8797,
+      "brief": {
+        "brand_name": "Quiet Focus",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [
+
+        ],
+        "palette": [
+          "Subject primary: rich indigo #4656CF",
+          "Subject secondary: coral #F08069",
+          "Solid background: pale warm pink #F3E2DE"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "abstract",
+          "subject": "two broad interlocking rounded arcs forming one balanced continuous rhythmic gesture",
+          "placement": "center",
+          "text": null
+        }
+      },
+      "changes": "",
+      "parent": null,
+      "references": [
+
+      ]
+    },
+    {
+      "id": "monogram-quality-v1",
+      "old_id": "monogram",
+      "name": "모아 Notes",
+      "direction": "모아 Notes feels compact and welcoming: draw only `모` (U+BAA8) with greater optical presence, an open upper ㅁ counter, controlled central stem and balanced broad ㅗ base; use one rounded terminal/corner family while retaining normal Hangul structure and comfortable breathing room. Add no other symbol or lettering.",
+      "comparison_criteria": "Exact `모`, open counter and distinguishable structure; greater presence without cramped/cropped strokes; optical upper/lower balance. Component descriptions never replace the stored syllable with jamo.",
+      "attempt_id": "monogram-quality-v1-draw-1",
+      "workspace": "output/app-icons-native/monogram-quality-v1",
+      "receipt": "docs/qa/app-icons/native/monogram-quality-v1.json",
+      "http_port": 8798,
+      "brief": {
+        "brand_name": "모아 Notes",
+        "exact_text": "모",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "monogram",
+        "styles": [
+
+        ],
+        "palette": [
+          "Letter: deep sapphire #153F78",
+          "Solid background: warm ivory #F5EBDD"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "monogram",
+          "subject": "one bold rounded Korean letter with a compact balanced silhouette",
+          "placement": "center",
+          "text": "모"
+        }
+      },
+      "changes": "",
+      "parent": null,
+      "references": [
+
+      ]
+    },
+    {
+      "id": "soft-3d-quality-v1",
+      "old_id": "soft-3d",
+      "name": "Pocket Sprout",
+      "direction": "Pocket Sprout conveys gentle care through one plump heart-shaped jade leaf, softly asymmetric lobes and one shallow central fold; a smooth matte molded surface and broad upper-left light reveal restrained volume from a near-frontal view. Keep the butter background uniform, with no external cast/contact shadow, botanical pores/veins, wet gloss, extra stem or scene.",
+      "comparison_criteria": "Leaf silhouette leads; smooth intentional material replaces distracting botanical detail; shallow fold/light explain volume without dominating; shape remains readable small.",
+      "attempt_id": "soft-3d-quality-v1-draw-1",
+      "workspace": "output/app-icons-native/soft-3d-quality-v1",
+      "receipt": "docs/qa/app-icons/native/soft-3d-quality-v1.json",
+      "http_port": 8799,
+      "brief": {
+        "brand_name": "Pocket Sprout",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [
+
+        ],
+        "palette": [
+          "Subject primary: jade green #5CA585",
+          "Subject secondary: pale leaf green #E7F0C7",
+          "Solid background: warm butter #E9D7A9"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "soft_3d",
+          "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+          "placement": "center",
+          "text": null
+        }
+      },
+      "changes": "",
+      "parent": null,
+      "references": [
+
+      ]
+    },
+    {
+      "id": "pixel-art-quality-v1",
+      "old_id": "pixel-art",
+      "name": "Little Timer",
+      "direction": "Little Timer makes time tangible: one chunky hourglass uses a single coarse square module, equally substantial turquoise top/bottom caps, matching side thickness and repeated staircase rhythm; one connected peach sand mass occupies only the upper chamber, while the lower chamber remains empty. No falling grains, secondary sand reservoir, smoothing, texture, glow, dithering, numerals or scenery.",
+      "comparison_criteria": "Hourglass recognition; one upper sand region and empty lower region; coherent frame/steps and broad connected clusters; observe any remaining blur/grid inconsistency without claiming integer-perfect pixels.",
+      "attempt_id": "pixel-art-quality-v1-draw-1",
+      "workspace": "output/app-icons-native/pixel-art-quality-v1",
+      "receipt": "docs/qa/app-icons/native/pixel-art-quality-v1.json",
+      "http_port": 8800,
+      "brief": {
+        "brand_name": "Little Timer",
+        "exact_text": "",
+        "industry": "Fictional mobile application artwork example",
+        "audience": "People seeking a friendly and immediately recognizable mobile experience",
+        "slogan": "",
+        "logo_type": "symbol",
+        "styles": [
+
+        ],
+        "palette": [
+          "Frame: bright turquoise #66C7CA",
+          "Sand: warm peach #F5A98D",
+          "Solid background: deep navy #253C55"
+        ],
+        "forbidden": [
+          "watermark",
+          "presentation frame",
+          "extra lettering"
+        ],
+        "use_cases": [
+          "Mobile app icon artwork demonstration"
+        ],
+        "assumptions": [
+          "Fictional product brief chosen by the assistant for sample coverage"
+        ],
+        "background": "opaque",
+        "concept_count": 1,
+        "lockup": null,
+        "app_icon": {
+          "preset": "pixel_art",
+          "subject": "one chunky hourglass with a broad frame and a single visible sand region",
+          "placement": "center",
+          "text": null
+        }
+      },
+      "changes": "",
+      "parent": null,
+      "references": [
+
+      ]
+    }
+  ]
+}

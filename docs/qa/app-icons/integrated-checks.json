@@ -1,0 +1,354 @@
+{
+  "date": "2026-09-12T17:14:58.677Z",
+  "scope": "Complete source suite and required static checks; native/browser/install evidence separate",
+  "pytest": {
+    "passed": 433,
+    "seconds": 281.33,
+    "exit": 0
+  },
+  "ruff": {
+    "exit": 0
+  },
+  "basedpyright": {
+    "errors": 0,
+    "warnings": 0,
+    "notes": 0,
+    "exit": 0
+  },
+  "format": {
+    "files": 176,
+    "exit": 0
+  },
+  "lock": {
+    "exit": 0,
+    "packages": 23
+  },
+  "logs": [
+    {
+      "path": "docs/qa/app-icons/integrated-tests.txt",
+      "sha256": "90cbf6cd566795d5acf9e05b1a006a4c6d863deb94eebe2c3fa7de658e0e6345"
+    },
+    {
+      "path": "docs/qa/app-icons/integrated-ruff.txt",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "path": "docs/qa/app-icons/integrated-types.txt",
+      "sha256": "56882e01cb80173ef053c4096e4ee43e3123a15f5c0a06715f96988d48fbd91c"
+    },
+    {
+      "path": "docs/qa/app-icons/integrated-format.txt",
+      "sha256": "7ed2a52ec9286d1418f4415096030fecc1defe016d0bcb347088ae7a4cc45589"
+    },
+    {
+      "path": "docs/qa/app-icons/integrated-lock.txt",
+      "sha256": "89efddb71a98cd46bb3268528f9a911de91f597a71a62e620881068a592a22db"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "skills/logo-land/scripts/logo_helper/__init__.py",
+      "sha256": "23c8d2ce225a99efe9832a41c20b46d139f5b31049dd641a04e13ff83b84f4d0"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_cli.py",
+      "sha256": "e09075977adfd8c0b98202242ab3759fb1145227df987aeaac33c31896d35ada"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_gallery.py",
+      "sha256": "71a2a7873af195cdeefe312f6d0462552fd1bb8856c117b5a20349649371e43f"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_guide.py",
+      "sha256": "c063bf22bbcfa82c982caa2c066db2b069b34f8d633ba3f6afdb1e9d4fd17012"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_models.py",
+      "sha256": "21ba823e490677f5e70ce9d05c782b1fa12884f405c4ba4601fd052bb1209c2d"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_presets.py",
+      "sha256": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_prompts.py",
+      "sha256": "38fbf3cfdb3efd97da4b96eb554cd392f5ae06cb1d8cb12a27822729b280c015"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_publish.py",
+      "sha256": "fb4dea5c484a4c617e898626d324a1aed5335e7b853299f45827d15d8a652ae5"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/artifact_models.py",
+      "sha256": "f35d32f2da234e92dd5144d48eb62fbddfac3039dd079b4d0a5d35eccd3231f0"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/brief_models.py",
+      "sha256": "caea33b207c181391fde6d9bc4fc7826335a8d2eb47f7124b51e5fbb18d16b12"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/cli_options.py",
+      "sha256": "e3f697458b482079c27b446cbb56aef4c6cf38ce3cd49ca94f1600ab76f4c8d3"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_analysis.py",
+      "sha256": "cfcef1c51c0f7a4067b7e9317df5b6f4acdb5312036e37516c9aab16f2d0ba30"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_cli.py",
+      "sha256": "d731f309d0dc877eb9f0ec71bf733c2461cda8757f9f15ac38fe7d0d7b9e3809"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_delivery.py",
+      "sha256": "7e7f0a4745def5b15ad08699dc57b113eca97eeeaa9b2aefaba35ef138d98f55"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_gallery.py",
+      "sha256": "05076788df31137f3ca6576a58346533130f2dd710779e35eb9311370ae6b56d"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_gallery_cards.py",
+      "sha256": "253ba8f0a439a4bb8129d2cb43463d5897df2d42cc9528ee627f8c709d669a53"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_gallery_data.py",
+      "sha256": "81dbf0876dc5cdc6e21493e80098489f54bc8e39dcb13bd3e61a38c5b998a030"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_guide.py",
+      "sha256": "34cdb38dddc6b398376fe5b492eef1799052b0b82a47bb48f3f4b801ea6f424a"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_math.py",
+      "sha256": "aa677d064632e48a9d108ba5d0b818c57f589ba1bcb61406261d8502cdc86288"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_models.py",
+      "sha256": "d3b4093611e2aa2d095c6c4f9027e65c794ef8b836c89d4a24c554f4a720f547"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_profiles.py",
+      "sha256": "055a299c1bd6738add1b44ad8977ffb48b9a3310bb9387665daa6efe04ca34df"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_reports.py",
+      "sha256": "95cf4f2605c8ca248a489d4e53fafee9f18b663d6effd38f3b5e5d080dd5596d"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_sampling.py",
+      "sha256": "71946e9eda8b329b5cafffc0163161abd2b17ddab3c92184bc5d4ba99ad94330"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_workflow.py",
+      "sha256": "7ef6e5c33c7f56d2320a643f5cd99428555b9eb4fa24fe65857b96147379cc42"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/delivery.py",
+      "sha256": "ed3713421b316e43568641451f41fc5a71332608acc8b8b2bf6c1db6f4469859"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/export_bundle.py",
+      "sha256": "33de44fb7677569d65c7b883c6d5b098c998e19bd9f731a6138ee9c09a1de612"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/images.py",
+      "sha256": "bd3d03ce8ab8fc7c6767da8fe8269e688ee63f16e14f04bf21d0e9d631a15f0a"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/import_reports.py",
+      "sha256": "69ffb9f6a9dbe5ac149fb9113f36ff63067cbad244c8c3a48af919e30223691c"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/intent.py",
+      "sha256": "244d7f1f4b0b07fa733c968ad130b84f9084719059f562385d55891e749b47fa"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/legacy_state.py",
+      "sha256": "09119091b50d9a4b8d9e4782636a8cddbd93b0d0fd197c774c129d2bc8ac3c5d"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/lockup_models.py",
+      "sha256": "0c0fb574ca59d4e6bb72ef26df4dcc36e013e354901840f4bf7cb30291c035cc"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/model_base.py",
+      "sha256": "0051b0fc239944f0143da201848f98d8c414c9d2d520f5de4f4718c88756c49e"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/models.py",
+      "sha256": "dc28d55027542510328ebdf80a820ed3456e6f6cfbd00cae102395026a0079ca"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/palette_proposals.py",
+      "sha256": "6968ca4356be8197ffdd68500ea2f53c72dff935c743e57305bb7ae4e10aca4b"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/palettes.py",
+      "sha256": "6c60dffcca290bd390e1259600cdd91e190589995af6c42152ba42f719d77e08"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/prompts.py",
+      "sha256": "340974db2816c5f0deecc766cfcabd8036d8e59e2608be5f1688657b57967a1b"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/reference_decode.py",
+      "sha256": "b55055f40a5fee8a01943acd082bfe8b7a521b61bb1773f36a208f5e5f9c453f"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/reference_evidence.py",
+      "sha256": "ab80fa6b9a19f77b525566c9f4b8129720dee403daea9994155e0888e2d0d1f4"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/reference_models.py",
+      "sha256": "87da637a01602f5dd0655ff6e8bfefae9ca2c609513dcbfe43a9f5e07553064e"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/references.py",
+      "sha256": "a02f6d9bf3775820bc4d394d539186c64da7ce96cb00a359e34e266acec4d3b7"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/session_models.py",
+      "sha256": "3d5917431dd8c8f7f43c2acc91dd845682b0d8483e1de835ba5794eda3dcdaea"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/storage.py",
+      "sha256": "e0a9bd8c18458beeda1a0ad9479afbec68ac6c4690b42f795dc3cdbd813b42a6"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/workflow.py",
+      "sha256": "a82d1cd1c02a16b4c202c1a01d08a6a5e44f18491d297bc01857c663dbbbd6d6"
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_project.py",
+      "sha256": "1bc33dbe2f06accd050aa069315d4b7bed0470a95bed10e18b5090b98eddd5fa"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "89cc3f2e22ed8f3dbd08b88635752c1cf11d3dd53a5350cec8e5fcd1281c1fb9"
+    },
+    {
+      "path": "tests/test_app_icon_compatibility.py",
+      "sha256": "2e34d3f8e9f4cb223039b6bd676c788781133b79b5e6cd6a26d267476b93c65c"
+    },
+    {
+      "path": "tests/test_app_icon_delivery.py",
+      "sha256": "90fc8d5693de59cf4c2c8e0ab267d0db145f8066d01090c93c87067ca46d3035"
+    },
+    {
+      "path": "tests/test_app_icon_gallery.py",
+      "sha256": "b8dd4d265a753048d5b342b6d99e6099669e78f8b795390a8f89a2e44964a833"
+    },
+    {
+      "path": "tests/test_app_icon_models.py",
+      "sha256": "4eb296854189a5fe697a87e0230206fabef7d899eaf02456cea7c1c95202d185"
+    },
+    {
+      "path": "tests/test_app_icon_prompts.py",
+      "sha256": "2758b692e87f4f24f18811dd36b77b0aaa60ad6a78ac623ca2d28afb218ccc03"
+    },
+    {
+      "path": "tests/test_app_icon_workflow.py",
+      "sha256": "f7c7e97c4f63c50805134fefc054e5241e55cd4d3744bd2a6d1d699ab99c05e9"
+    },
+    {
+      "path": "tests/test_app_icon_workflow_invariants.py",
+      "sha256": "966bc8f442fc3fe84f8341564f1c40bcbfbdcace1bcf9598221a9bfdec748e33"
+    },
+    {
+      "path": "tests/test_app_icon_workflow_palette.py",
+      "sha256": "720cf9a14c10ed4ad066da086b94468a057b1cadf6cb6d3004bc9e06e61f7483"
+    },
+    {
+      "path": "tests/test_background_compatibility.py",
+      "sha256": "4c0b4da445a31a3924e2e8f56af0661144043713faf2ae7f45fe24e512211a67"
+    },
+    {
+      "path": "tests/test_background_variants.py",
+      "sha256": "f94c2f2d077142c41b6334e621d9618a9954c6b9e72836d0bec447e99cfdd703"
+    },
+    {
+      "path": "tests/test_boundaries.py",
+      "sha256": "2bce877bcfe86c3f091f1d3dce4045b503bb7f6616a791e0c1b06505cd22d9a8"
+    },
+    {
+      "path": "tests/test_cli_safety.py",
+      "sha256": "e8c622858d3c1d488b17098b29cb7eb9bc134c658f7c0011b806d8e65e7b1f42"
+    },
+    {
+      "path": "tests/test_cli_workflow.py",
+      "sha256": "fcd1cbd925284bd25dda6ea6426b0efa436b2c18fe13d9e67338d3cd6800090a"
+    },
+    {
+      "path": "tests/test_color_analysis.py",
+      "sha256": "8b044a012e30abf789676e9e1d92600a9ceb3353f25dc2e6b853f511ed81ea45"
+    },
+    {
+      "path": "tests/test_color_cli_integration.py",
+      "sha256": "a9b46e50f0da5f8145f58a39edf63cad2889a5a31eb0c6c09de60147e3287715"
+    },
+    {
+      "path": "tests/test_color_export_compatibility.py",
+      "sha256": "1727d1e149202482a305d95f61cf0d01fd03f59b5e27ec652b8b8fca759fec6d"
+    },
+    {
+      "path": "tests/test_color_gallery.py",
+      "sha256": "6031cdceffdedc34a62f8ee7d68c2ea12bb2bf020d6abeea1e2a568b7955605c"
+    },
+    {
+      "path": "tests/test_color_models.py",
+      "sha256": "549d3efe0d7fb5aad7ef7a6d4bb214ac4f10c9cae7b5439f8d79c7c23bd3eb88"
+    },
+    {
+      "path": "tests/test_color_reports.py",
+      "sha256": "7b10e0cd7142e00c106b4b023969cf223eb25d90fc466ef3082d290b07780879"
+    },
+    {
+      "path": "tests/test_color_workflow_transactions.py",
+      "sha256": "b5cbc631279fc4d05a0747cf41dfcc3396744c28ec4500a0c1f129ebdfeb5ad7"
+    },
+    {
+      "path": "tests/test_delivery_guide.py",
+      "sha256": "d02d4adc162340acb240b146e6aa29091d0ea5ae74034fad0c57f9154da1149f"
+    },
+    {
+      "path": "tests/test_palette_compatibility.py",
+      "sha256": "aabc9590708bada0e34f426f417456ed587a30e39650a460a07d5c2c9c764157"
+    },
+    {
+      "path": "tests/test_palette_engine.py",
+      "sha256": "8f0c35d2fdaf3a6a47efac3c586c58bcc6d752f3256ff68981832a140cce5407"
+    },
+    {
+      "path": "tests/test_palette_workflow.py",
+      "sha256": "99b0882b2318ed202fc8db20c3ed46cffe0a1fbb13b63e75c95143f8eed4aac6"
+    },
+    {
+      "path": "tests/test_reference_colors.py",
+      "sha256": "57dc9f4477a3e2cb48256abc722b2beace65bd1094458729bc2580afc233c86a"
+    },
+    {
+      "path": "tests/test_reserved_output.py",
+      "sha256": "9558a839146238c8d9fa10827a0492b44478e200b973495720ea87cbc82d1a15"
+    },
+    {
+      "path": "tests/test_resume_and_portability.py",
+      "sha256": "cfa664ea0733fb2f3ff18f1c4b12eb25495a8a8f51b65ba835ac7f3f274871dc"
+    },
+    {
+      "path": "tests/test_transactions.py",
+      "sha256": "a093a5fb091e09b8ca0e3eb76fbef22140c48265d7cf496ba0d5683c3a612263"
+    },
+    {
+      "path": "skills/logo-land/assets/app-icon-gallery.template.html",
+      "sha256": "960c682d45807c8a7f1a0dfb5f031f6a17f3fb6d4ca0c84501514375bd8cb9dd"
+    }
+  ],
+  "cleanup": {
+    "fixture_root": "/tmp/ll-icons-integrated-pytest",
+    "removed": true
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ip-c1",
+  "attempt_id": "ip-c1-draw-1",
+  "session_id": "ip-c1",
+  "artifact_id": "ip-c1",
+  "state": "returned",
+  "outcome": "imported",
+  "planned_at": "2026-09-12T17:13:43.515201+00:00",
+  "workspace": "output/app-icons-native/ip-c1",
+  "brief_path": "output/app-icons-native/ip-c1/brief.json",
+  "prompt_result_path": "output/app-icons-native/ip-c1/prompt-result.json",
+  "prompt_path": "output/app-icons-native/ip-c1/prompt.txt",
+  "prompt_sha256": "020ea558686d1be216adb6edd03abacf71537fe95a36ec7297694c5f9a00ba6e",
+  "revision": 0,
+  "resolved_intent": {
+    "preset": "ip_mascot",
+    "subject": "a lovable baby puppy with both broad rounded floppy ears visible",
+    "placement": "lower_left",
+    "text": null
+  },
+  "parent_id": null,
+  "native": {
+    "tool": "image_gen.imagegen",
+    "provider": "host-native image_gen",
+    "model": "unreported",
+    "tool_call_id": "unreported",
+    "arguments": [
+      "prompt"
+    ],
+    "reference_arguments_omitted": true,
+    "liveness": "Completed same single call after 23.7 seconds; no wait cell or interruption occurred.",
+    "source_basename": "exec-fcd63f18-bfca-4dca-bb67-b27effbd7ab7.png",
+    "source_sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+    "result_receipt_path": "output/app-icons-native/ip-c1/native-result.json",
+    "returned_image_count": 1,
+    "model_reason": "Native return fields exposed image_url and output_hint only; no explicit model field.",
+    "source_output_identity": "exec-fcd63f18-bfca-4dca-bb67-b27effbd7ab7.png"
+  },
+  "native_call_count": 1,
+  "automatic_artistic_retry": false,
+  "events": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:13:43.515201+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:13:56.157076+00:00"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:14:42.445643+00:00"
+    },
+    {
+      "state": "imported",
+      "at": "2026-09-12T17:15:33.632751+00:00",
+      "helper_revision": 1
+    }
+  ],
+  "temporary_resources": [
+    {
+      "kind": "probe_files",
+      "directory": "output/app-icons-native/ip-c1/temporary-probes",
+      "paths": [
+        "output/app-icons-native/ip-c1/temporary-probes/malformed-icon.json",
+        "output/app-icons-native/ip-c1/temporary-probes/invalid-image.bin",
+        "output/app-icons-native/ip-c1/temporary-probes/oversized-input.bin"
+      ],
+      "state": "removed",
+      "all_paths_absent": true
+    },
+    {
+      "kind": "local-http-server",
+      "bind": "127.0.0.1",
+      "port": 8774,
+      "pid": 90641,
+      "pid_registration": "Assigned immediately after Popen returns and before HTTP use.",
+      "server_argv": [
+        "python",
+        "-u",
+        "-m",
+        "http.server",
+        "8774",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "output/app-icons-native/ip-c1"
+      ],
+      "capture_path": "output/app-icons-native/ip-c1/temporary-http-response.bin",
+      "log_path": "output/app-icons-native/ip-c1/temporary-http-server.log",
+      "state": "cleaned",
+      "registered_at": "2026-09-12T17:15:58.776147+00:00",
+      "server_exit_code": -15,
+      "terminated_owned_pid": 90641,
+      "server_log": "Serving HTTP on 127.0.0.1 port 8774 (http://127.0.0.1:8774/) ...\n127.0.0.1 - - [13/Sep/2026 02:15:59] \"GET /original.png HTTP/1.1\" 200 -\n",
+      "no_listener": true,
+      "port_bind_released": true,
+      "temporary_paths_removed": true,
+      "cleaned_at": "2026-09-12T17:15:59.289722+00:00"
+    }
+  ],
+  "limitations": [
+    "Raster artwork sample; not approved or platform-ready."
+  ],
+  "started_at": "2026-09-12T17:13:56.157076+00:00",
+  "returned_at": "2026-09-12T17:14:42.445643+00:00",
+  "original_path": "output/app-icons-native/ip-c1/original.png",
+  "original_sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+  "image": {
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "frames": 1,
+    "bytes": 1096895
+  },
+  "visual_observations": [
+    "One rounded puppy with both floppy ears visible; lower-left crop and periwinkle background.",
+    "Returned image includes a book, dimensional shading, muzzle cream and tongue pink beyond the requested very sparse two-family character recipe; retained unchanged without artistic retry.",
+    "No visible lettering or watermark; visual observations are not strict conformance or platform approval."
+  ],
+  "imported_at": "2026-09-12T17:15:33.632751+00:00",
+  "helper_artifact_path": "output/app-icons-native/ip-c1/.logo-generator/sessions/ip-c1/artifacts/ip-c1.png",
+  "session_path": "output/app-icons-native/ip-c1/.logo-generator/sessions/ip-c1/session.json",
+  "helper_revision_after_import": 1,
+  "helper_artifact_sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+  "verification": {
+    "native_original_imported_hashes_equal": true,
+    "prompt_exactly_equal": true,
+    "intent_exactly_equal": true,
+    "parent_id_is_null": true,
+    "session_brief_equals_candidate_brief": true,
+    "selected_id": null,
+    "artifact_review": null,
+    "color_report_count": 0,
+    "png_format": "PNG",
+    "decoded_image_facts": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1572516
+    },
+    "png_pixels_within_40000000": true,
+    "original_bytes_after_probes": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+    "adversarial_probe_count": 16,
+    "adversarial_pass_count": 13,
+    "adversarial_na_count": 3,
+    "actual_tool_prompt_exactly_equal": true,
+    "native_source_rechecked_after_cleanup": true,
+    "public_receipt_has_no_personal_absolute_path": true
+  },
+  "adversarial_evidence_path": "output/app-icons-native/ip-c1/adversarial-probes.json",
+  "http": {
+    "result": "PASS",
+    "argv": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8774/original.png",
+      "-o",
+      "output/app-icons-native/ip-c1/temporary-http-response.bin"
+    ],
+    "exit_code": 0,
+    "status_line": "HTTP/1.0 200 OK",
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:15:59 GMT\r\nContent-type: image/png\r\nContent-Length: 1096895\r\nLast-Modified: Sat, 12 Sep 2026 17:14:42 GMT",
+    "response_body_sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+    "response_body_bytes": 1096895,
+    "original_sha256": "93d5a457e440c05802006d908299b427771f53e61dfd51cb4c7b1316c9504f28",
+    "hashes_equal": true,
+    "stderr": "",
+    "scope": "Verifies served original bytes only; no platform, artistic, strict-color or export approval.",
+    "completed_at": "2026-09-12T17:15:59.283649+00:00"
+  },
+  "cleanup": {
+    "owned_server_terminated": true,
+    "port": 8774,
+    "bind": "127.0.0.1",
+    "port_released": true,
+    "temporary_files_removed": true,
+    "original_retained": true,
+    "port_no_listener_final_recheck": true
+  },
+  "completed_at": "2026-09-12T17:16:34.921696+00:00",
+  "status": "completed",
+  "helper_commands_path": "output/app-icons-native/ip-c1/helper-commands.json",
+  "show_result_path": "output/app-icons-native/ip-c1/show-result.json",
+  "followup": "Coordinator may include this retained original in the planned Chrome gallery; no gallery was published by this worker."
+}

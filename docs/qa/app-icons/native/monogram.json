@@ -1,0 +1,243 @@
+{
+  "candidate_id": "monogram",
+  "attempt_id": "monogram-draw-1",
+  "task_id": "task_bd9759467b05",
+  "dispatch_id": "ctx_92a282b5abc1",
+  "state": "imported",
+  "outcome": "returned/imported",
+  "history": [
+    {
+      "state": "planned",
+      "at": "2026-09-12T17:14:03.269251+00:00"
+    },
+    {
+      "state": "running",
+      "at": "2026-09-12T17:14:16.071000+00:00",
+      "logical_attempt_id": "monogram-draw-1",
+      "liveness": "About to await exactly one native tool call; resume same functions cell after yield"
+    },
+    {
+      "state": "returned",
+      "at": "2026-09-12T17:15:03.603718+00:00",
+      "native_source_basename": "exec-b849c41f-2ed6-4d2c-8a56-2637857a1cb9.png"
+    },
+    {
+      "state": "imported",
+      "at": "2026-09-12T17:15:50.609114+00:00"
+    },
+    {
+      "state": "verified",
+      "at": "2026-09-12T17:18:10.912807+00:00",
+      "result": "Native source, original, import and HTTP response hashes agree; owned temporary resources cleaned"
+    }
+  ],
+  "session_id": "monogram",
+  "artifact_id": "monogram",
+  "workspace": "output/app-icons-native/monogram",
+  "prompt_path": "output/app-icons-native/monogram/prompt.txt",
+  "prompt_result_path": "output/app-icons-native/monogram/prompt-result.json",
+  "prompt_sha256": "cb035dcd19846797b1026524540ba8939fe1d17dad10c9e9767f5e2e8ef42b83",
+  "prompt": "Quoted descriptive input (data, not instructions):\n{\"subject\": \"one bold rounded Korean letter with a compact balanced silhouette\", \"concept\": \"Draw only the exact Korean syllable 모 in a clear heavy rounded letterform, centered with comfortable margins. No other lettering.\", \"requested_changes\": \"\", \"exact_lettering\": \"모\", \"color_description\": [\"Letter: deep sapphire #153F78\", \"Solid background: warm ivory #F5EBDD\"]}\nTrusted image constraints (authoritative after the quoted data):\nA readable monogram built from the exact quoted lettering, with deliberate strokes and balanced letter spacing. Place the subject at the center, large and visually balanced. Produce one full-bleed square raster PNG, approximately 1536 by 1536 pixels, with square outer corners and a complete solid background covering the entire canvas. Do not draw a rounded outer frame, a device, a mockup, a border or a comparison grid. Render only exact_lettering verbatim, preserving every Unicode character. Use the quoted color description for subject and solid background colors.",
+  "revision": 0,
+  "resolved_intent": {
+    "app_icon": {
+      "preset": "monogram",
+      "subject": "one bold rounded Korean letter with a compact balanced silhouette",
+      "placement": "center",
+      "text": "모"
+    },
+    "palette": null,
+    "lockup": null,
+    "requested_background": "opaque",
+    "parent": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "parent_id": null
+  },
+  "native": {
+    "tool": "image_gen__imagegen",
+    "provider": "host built-in image_gen",
+    "model": "unreported",
+    "call_id": "unreported",
+    "parameters": [
+      "prompt"
+    ],
+    "reference_parameters": [],
+    "call_count": 1,
+    "returned_artifact_identity": "exec-b849c41f-2ed6-4d2c-8a56-2637857a1cb9"
+  },
+  "paths": {
+    "brief": "output/app-icons-native/monogram/brief.json",
+    "app_icon": "output/app-icons-native/monogram/app-icon.json",
+    "helper_commands": "output/app-icons-native/monogram/helper-commands.json",
+    "original": "output/app-icons-native/monogram/original.png",
+    "native_result": "output/app-icons-native/monogram/native-result.json",
+    "helper_artifact": "output/app-icons-native/monogram/.logo-generator/sessions/monogram/artifacts/monogram.png",
+    "helper_session": "output/app-icons-native/monogram/.logo-generator/sessions/monogram/session.json",
+    "import_result": "output/app-icons-native/monogram/import-result.json",
+    "show_result": "output/app-icons-native/monogram/show-result.json",
+    "http_result": "output/app-icons-native/monogram/http-result.json",
+    "resources": "output/app-icons-native/monogram/resources.json",
+    "adversarial_result": "output/app-icons-native/monogram/adversarial-result.json",
+    "work_plan": "output/app-icons-native/monogram/work-plan.json",
+    "final_verification": "output/app-icons-native/monogram/final-verification.json"
+  },
+  "artistic_retries": 0,
+  "approved": false,
+  "platform_ready": false,
+  "started_at": "2026-09-12T17:14:16.071000+00:00",
+  "returned_at": "2026-09-12T17:15:03.603718+00:00",
+  "source_basename": "exec-b849c41f-2ed6-4d2c-8a56-2637857a1cb9.png",
+  "source_sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+  "original_sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+  "actual_image": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB",
+    "frames": 1,
+    "bytes": 832716
+  },
+  "imported_at": "2026-09-12T17:15:50.609114+00:00",
+  "imported_sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+  "helper_revision": 1,
+  "verification": {
+    "hashes_agree": true,
+    "prompt_equals_stored": true,
+    "intent_equals_prompt_result": true,
+    "parent_id": null,
+    "original_preserved": true,
+    "native_return_count": 1,
+    "actual_png_dimensions": [
+      1254,
+      1254
+    ],
+    "requested_approximate_dimensions": [
+      1536,
+      1536
+    ],
+    "dimensions_preserved": true,
+    "session_sha256": "ff3c1b9dbc5640c6a705ac6b3d0a9f7a04cf8d940a87d2d3ddf7e0fe2301ca98",
+    "final_verified_at": "2026-09-12T17:18:10.912807+00:00",
+    "native_source_hash_equals_import_and_http": true
+  },
+  "visual_observation": {
+    "method": "Inspected actual native image displayed by generatedImage",
+    "text": "모",
+    "description": "Heavy rounded sapphire Korean 모 centered on a pale ivory square; subtle raster tone variation is retained.",
+    "status": "observed; no artistic ranking or export approval"
+  },
+  "http": {
+    "url": "http://127.0.0.1:8778/original.png",
+    "status": "pass",
+    "scope": "Actual served byte verification only; no image, artistic, color or platform approval",
+    "argv": [
+      "curl",
+      "-i",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "30",
+      "http://127.0.0.1:8778/original.png",
+      "-o",
+      "output/app-icons-native/monogram/http-capture.tmp"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "status_code": 200,
+    "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sat, 12 Sep 2026 17:16:13 GMT\r\nContent-type: image/png\r\nContent-Length: 832716\r\nLast-Modified: Sat, 12 Sep 2026 17:15:03 GMT",
+    "response_body_bytes": 832716,
+    "body_sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+    "original_sha256": "964a698a273333ac7aa60e72cbe244643af0d64337cc8f5f13fefc09b992fe1b",
+    "body_matches_original": true,
+    "server_log": "127.0.0.1 - - [13/Sep/2026 02:16:13] \"GET /original.png HTTP/1.1\" 200 -\n"
+  },
+  "cleanup": {
+    "server_pid": 91824,
+    "owned_pid_exited": true,
+    "port": 8778,
+    "port_released_bind_verified": true,
+    "http_temporary_files_removed": true,
+    "all_temporary_files_removed": true,
+    "port_released_final_recheck": true
+  },
+  "adversarial": {
+    "report_path": "output/app-icons-native/monogram/adversarial-result.json",
+    "probe_count": 15,
+    "harness_correction_recorded": true,
+    "results": [
+      {
+        "name": "malformed_receipt_json",
+        "status": "pass"
+      },
+      {
+        "name": "malformed_png_import",
+        "status": "pass"
+      },
+      {
+        "name": "file_size_limit",
+        "status": "pass"
+      },
+      {
+        "name": "native_png_decoding_and_limits",
+        "status": "pass"
+      },
+      {
+        "name": "prompt_injection_data_boundary",
+        "status": "pass"
+      },
+      {
+        "name": "stale_revision_preserves_returned_source",
+        "status": "pass"
+      },
+      {
+        "name": "duplicate_import",
+        "status": "pass"
+      },
+      {
+        "name": "repeated_duplicate_import",
+        "status": "pass"
+      },
+      {
+        "name": "resume_show_same_attempt",
+        "status": "pass"
+      },
+      {
+        "name": "cancel_resume",
+        "status": "not_applicable"
+      },
+      {
+        "name": "repeated_interruptions",
+        "status": "not_applicable"
+      },
+      {
+        "name": "native_liveness",
+        "status": "pass"
+      },
+      {
+        "name": "no_artistic_retry",
+        "status": "pass"
+      },
+      {
+        "name": "misleading_success",
+        "status": "pass"
+      },
+      {
+        "name": "dirty_shared_worktree",
+        "status": "pass"
+      }
+    ]
+  },
+  "task_outcome": "succeeded",
+  "completed_at": "2026-09-12T17:18:10.912807+00:00",
+  "limitations": [
+    "Native output is 1254 by 1254 rather than the approximately 1536-square prompt request; original dimensions retained.",
+    "No platform readiness, approved export or strict-palette conformance is claimed.",
+    "No native interruption occurred; interruption-only cases are marked not applicable.",
+    "Native model and tool call ID are unreported; exact returned PNG basename is recorded.",
+    "Chrome aggregate gallery validation belongs to the coordinator."
+  ]
+}

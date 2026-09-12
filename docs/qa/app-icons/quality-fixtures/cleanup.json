@@ -1,0 +1,17 @@
+{
+  "temporary_root": "/tmp/ll-icon-quality-core",
+  "removed": true,
+  "inventory_entries": 2563,
+  "tmux_session": "ll-icon-quality-core",
+  "tmux_pane_pid": 1941,
+  "tmux_absent": true,
+  "tmux_check_exit": 1,
+  "tmux_check_stderr": "no server running on /private/tmp/tmux-501/default\n",
+  "recorded_processes_started": 62,
+  "recorded_processes_finished": 62,
+  "created_servers": 0,
+  "created_native_jobs": 0,
+  "created_browser_contexts": 0,
+  "created_children": 0,
+  "cleaned_at_utc": "2026-09-12T18:12:05Z"
+}

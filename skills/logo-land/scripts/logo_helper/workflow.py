@@ -12,6 +12,7 @@ from logo_helper.images import inspect_png
 from logo_helper.import_reports import initial_report
 from logo_helper.intent import resolve_intent
 from logo_helper.models import (
+    AppIconIntent,
     Artifact,
     ArtifactId,
     Background,
@@ -63,6 +64,7 @@ def import_image(
     background: Background | None = None,
     palette_id: PaletteId | None = None,
     lockup: LockupIntent | None = None,
+    app_icon: AppIconIntent | None = None,
 ) -> Session:
     """Decode first, copy original bytes exclusively, then commit success metadata."""
     _ = validate_id(artifact_id)
@@ -72,7 +74,14 @@ def import_image(
         state = store.expect(identifier, revision)
         if any(item.id == artifact_id for item in state.artifacts):
             raise ProjectError("conflict", f"Artifact {artifact_id} already exists")
-        intent = resolve_intent(state, parent_id, palette_id, lockup)
+        intent = resolve_intent(state, parent_id, palette_id, lockup, app_icon)
+        if intent.app_icon is not None and background == "transparent":
+            raise ProjectError(
+                "intent_conflict", "App icon imports require an opaque background request"
+            )
+        requested_background = background if background is not None else state.brief.background
+        if intent.app_icon is not None:
+            requested_background = "opaque"
         artifact = Artifact(
             id=artifact_id,
             path=f"artifacts/{artifact_id}.png",
@@ -81,9 +90,10 @@ def import_image(
             prompt=prompt,
             parent_id=parent_id,
             created_at=datetime.now(UTC),
-            requested_background=background if background is not None else state.brief.background,
+            requested_background=requested_background,
             palette_id=intent.palette.id if intent.palette is not None else None,
             lockup=intent.lockup,
+            app_icon=intent.app_icon,
         )
         reports = state.color_reports
         if intent.palette is not None:

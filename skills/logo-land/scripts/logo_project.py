@@ -22,13 +22,16 @@ import typer
 from pydantic import ValidationError
 
 from logo_helper import delivery, workflow
+from logo_helper.app_icon_cli import register_app_icon_commands
 from logo_helper.cli_options import (
+    AppIconOption,
     ArtifactOption,
     LockupOption,
     PaletteOption,
     ParentOption,
     RevisionOption,
     SessionOption,
+    parse_app_icon,
     parse_lockup,
     store_from,
 )
@@ -40,6 +43,7 @@ from logo_helper.storage import read_source
 APP: Final = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False)
 DEFAULT_WORKSPACE: Final = Path.cwd()
 register_color_commands(APP)
+register_app_icon_commands(APP)
 
 
 @APP.callback()
@@ -81,14 +85,16 @@ def show_command(ctx: typer.Context, session: SessionOption) -> None:
 
 
 @APP.command("prompt")
-def prompt_command(
+def prompt_command(  # noqa: PLR0913 - Typer exposes one parameter per CLI option.
     ctx: typer.Context,
+    *,
     session: SessionOption,
     concept: Annotated[str, typer.Option("--concept")] = "Distinct, simple brand identity",
     parent: ParentOption = None,
     changes: Annotated[str, typer.Option("--changes")] = "",
     palette: PaletteOption = None,
     lockup_file: LockupOption = None,
+    app_icon_file: AppIconOption = None,
 ) -> None:
     """Return a generation/edit prompt and exact local parent path; no image is generated."""
     store = store_from(ctx)
@@ -100,6 +106,7 @@ def prompt_command(
         changes=changes,
         palette_id=PaletteId(palette) if palette is not None else None,
         lockup=parse_lockup(lockup_file),
+        app_icon=parse_app_icon(app_icon_file),
     )
     typer.echo(result.model_dump_json(indent=2))
 
@@ -116,11 +123,12 @@ def import_command(  # noqa: PLR0913 - Typer exposes one parameter per CLI optio
     parent: ParentOption = None,
     palette: PaletteOption = None,
     lockup_file: LockupOption = None,
+    app_icon_file: AppIconOption = None,
     background: Annotated[
         Literal["opaque", "transparent"] | None,
         typer.Option(
             "--background",
-            help="Requested background for this artifact; defaults to the original brief.",
+            help="Defaults to opaque for app icons, otherwise to the original brief.",
         ),
     ] = None,
 ) -> None:
@@ -136,6 +144,7 @@ def import_command(  # noqa: PLR0913 - Typer exposes one parameter per CLI optio
         background=background,
         palette_id=PaletteId(palette) if palette is not None else None,
         lockup=parse_lockup(lockup_file),
+        app_icon=parse_app_icon(app_icon_file),
     )
     typer.echo(state.model_dump_json(indent=2))
 

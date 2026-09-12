@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "manual-soft-3d",
+  "revision": 0,
+  "created_at": "2026-09-12T18:07:12.562752Z",
+  "updated_at": "2026-09-12T18:07:12.562752Z",
+  "brief": {
+    "brand_name": "Pocket Sprout",
+    "exact_text": "",
+    "industry": "Fictional mobile application artwork example",
+    "audience": "People seeking a friendly and immediately recognizable mobile experience",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [],
+    "palette": [
+      "Subject primary: jade green #5CA585",
+      "Subject secondary: pale leaf green #E7F0C7",
+      "Solid background: warm butter #E9D7A9"
+    ],
+    "forbidden": [
+      "watermark",
+      "presentation frame",
+      "extra lettering"
+    ],
+    "use_cases": [
+      "Mobile app icon artwork demonstration"
+    ],
+    "assumptions": [
+      "Fictional product brief chosen by the assistant for sample coverage"
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one plump rounded heart-shaped jade leaf with a shallow central fold",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
