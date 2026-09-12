@@ -1,15 +1,17 @@
-# Logo Land (로고랜드)
+<p align="center">
+  <a href="https://github.com/t1seo/logo-land/releases/tag/v0.3.1"><img src="https://img.shields.io/badge/Release-v0.3.1-191917?style=flat-square&amp;labelColor=f6f3ec" alt="v0.3.1 릴리스"></a>
+  <img src="https://img.shields.io/badge/Codex-Plugin-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Codex 플러그인">
+  <img src="https://img.shields.io/badge/Python-3.12%2B-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Python 3.12 이상">
+  <img src="https://img.shields.io/badge/Output-PNG-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="PNG 출력">
+  <a href="README.md"><img src="https://img.shields.io/badge/Docs-English-191917?style=flat-square&amp;labelColor=f6f3ec" alt="English documentation"></a>
+  <a href="README.ko.md"><img src="https://img.shields.io/badge/Docs-%ED%95%9C%EA%B5%AD%EC%96%B4-191917?style=flat-square&amp;labelColor=f6f3ec" alt="한국어 문서"></a>
+</p>
 
-[English](README.md) · **한국어**
+# Logo Land (로고랜드)
 
 <p align="center"><img src="assets/logo.png" alt="Logo Land 로고" width="320"></p>
 
 [이 로고를 만든 과정](docs/brand/README.md)
-
-![Codex 플러그인](https://img.shields.io/badge/Codex-Plugin-191917?style=flat-square&labelColor=f6f3ec)
-![Python 3.12 이상](https://img.shields.io/badge/Python-3.12%2B-191917?style=flat-square&labelColor=f6f3ec)
-![PNG 출력](https://img.shields.io/badge/Output-PNG-a64b32?style=flat-square&labelColor=f6f3ec)
-![영문·한국어 문서](https://img.shields.io/badge/Docs-EN%20%2F%20KO-191917?style=flat-square&labelColor=f6f3ec)
 
 **대화로 브랜드를 정리하고 로고를 생성·수정·전달하는 Codex 플러그인입니다.** 브랜드명과 원하는 느낌을 말씀하시면 시안을 비교하고, 선택한 이미지를 다듬어 최종 PNG와 사용 안내를 받을 수 있습니다. 원본과 수정 이력을 저장하므로 다음 대화에서도 이어서 작업할 수 있습니다.
 
@@ -176,6 +178,12 @@ uv run --locked pytest
 uv run --locked ruff check .
 uv run --locked basedpyright
 ```
+
+## 릴리스와 버전 관리
+
+현재 릴리스는 [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1)입니다. [변경 이력](CHANGELOG.md)과 [릴리스 가이드](docs/releases.md)에서 버전별 변경 사항과 배포 절차를 확인하실 수 있습니다. 릴리스 태그는 검증한 커밋을 가리키며, 플러그인과 helper는 같은 릴리스 버전을 사용합니다.
+
+이 버전을 설치하려면 저장소를 내려받은 뒤 `git checkout v0.3.1`을 실행하고 위 설치 절차를 따르시면 됩니다. GitHub의 소스 압축 파일은 저장소 스냅샷이며 플러그인 설치 패키지는 아닙니다.
 
 ## 조사와 제작 근거
 

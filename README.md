@@ -1,17 +1,19 @@
-# Logo Land
+<p align="center">
+  <a href="https://github.com/t1seo/logo-land/releases/tag/v0.3.1"><img src="https://img.shields.io/badge/Release-v0.3.1-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Release v0.3.1"></a>
+  <img src="https://img.shields.io/badge/Codex-Plugin-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Codex Plugin">
+  <img src="https://img.shields.io/badge/Python-3.12%2B-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Python 3.12+">
+  <img src="https://img.shields.io/badge/Output-PNG-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="PNG output">
+  <a href="README.md"><img src="https://img.shields.io/badge/Docs-English-191917?style=flat-square&amp;labelColor=f6f3ec" alt="English documentation"></a>
+  <a href="README.ko.md"><img src="https://img.shields.io/badge/Docs-Korean-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Korean documentation"></a>
+</p>
 
-**English** · [한국어](README.ko.md)
+# Logo Land
 
 <p align="center"><img src="assets/logo.png" alt="Logo Land logo" width="320"></p>
 
 [How we made this logo](docs/brand/README.md)
 
-![Codex Plugin](https://img.shields.io/badge/Codex-Plugin-191917?style=flat-square&labelColor=f6f3ec)
-![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-191917?style=flat-square&labelColor=f6f3ec)
-![PNG output](https://img.shields.io/badge/Output-PNG-a64b32?style=flat-square&labelColor=f6f3ec)
-![English and Korean docs](https://img.shields.io/badge/Docs-EN%20%2F%20KO-191917?style=flat-square&labelColor=f6f3ec)
-
-**Create, refine, and deliver logos through a conversation with Codex.** Describe your brand and the feeling you want, compare concepts, then refine your chosen image into a final PNG with a short brand guide. Logo Land (로고랜드) saves originals and revision history so you can continue in another conversation.
+**Create, refine, and deliver logos through a conversation with Codex.** Describe your brand and the feeling you want, compare concepts, then refine your chosen image into a final PNG with a short brand guide. Logo Land saves originals and revision history so you can continue in another conversation.
 
 ![You and Codex turn a conversation into a brief, generate and revise logos with the native image tool, then review and export a PNG, ZIP, and guide](docs/diagrams/workflow-en.svg)
 
@@ -169,13 +171,19 @@ uv run --locked python skills/logo-land/scripts/logo_project.py --workspace . pr
 
 To use an installed plugin from another workspace, pass its root to `uv run --locked --project /absolute/path/to/logo-land python ...` and your project folder to the helper's `--workspace` option. The [project file guide](skills/logo-land/references/project-files.md) documents the full commands and JSON formats.
 
-Development checks are available below. Their recorded results are linked in the next section.
+Development checks are available below. Their recorded results are linked under [Research and verification](#research-and-verification).
 
 ```sh
 uv run --locked pytest
 uv run --locked ruff check .
 uv run --locked basedpyright
 ```
+
+## Releases and versioning
+
+The current release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1). Read the [changelog](CHANGELOG.md) for release history and the [release guide](docs/releases.md) for versioning and publication steps. Each release tag identifies a verified commit; the plugin and helper share the same release version.
+
+To use this exact version, run `git checkout v0.3.1` in the cloned repository before following the installation steps above. GitHub's source archives are snapshots of the repository, not plugin installation packages.
 
 ## Research and verification
 

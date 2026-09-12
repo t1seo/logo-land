@@ -1,6 +1,6 @@
 [project]
 name = "logo-land-helper"
-version = "0.1.0"
+version = "0.3.1"
 description = "Workspace-local provenance and PNG delivery for the Logo Land skill"
 requires-python = ">=3.12"
 dependencies = ["pydantic>=2.11,<3", "pillow>=11.2,<13", "typer>=0.16,<1", "rich>=14,<15"]
