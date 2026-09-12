@@ -17,6 +17,8 @@ T8's native success gate remains unmet: restricted-color and white-transparent c
 
 The tested development implementation was committed and pushed as `b391ca8e2b463589efc870ff478a51b9f5f6f32c`. GitHub draft release `387630647` targets that commit and remains unpublished; no v0.4.0 tag exists. See `docs/qa/color-workflow/release.md` for the read-back evidence. All assigned Orca workers are complete and released. Remaining work is the unresolved native acceptance and consequent public release, not an uncommitted implementation.
 
+Continuation escalation independently confirmed that all three white-native attempts fail the same partial-alpha criterion. The explicit three-failure stop condition and contract 12 end this bounded automation run with unresolved findings. T8, VERIFY and T9 remain unchecked; no additional native attempt, threshold change or public release is authorized by continuation. The plan and project remain available for subsequent user-directed work. See [the escalation audit](../docs/qa/color-workflow/continuation-escalation.md) for exact artifact identities, the unavailable specialist limitation and cleanup receipts.
+
 ## TODOs
 
 - [x] T1 — Typed color/state contracts, v1 compatibility, dependencies and lockup types.

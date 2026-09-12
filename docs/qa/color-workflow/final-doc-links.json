@@ -1,6 +1,16 @@
 {
-  "scope": "Final current docs including publication audit; local file targets only, not HTML fragments or browser execution",
+  "scope": "Publication audit checkpoint at 2ae6592d4d8855ccdfbab4b14ef6f9ae14446364; local file targets only, not HTML fragments or browser execution",
   "files": 52,
   "checked": 580,
-  "missing": []
+  "missing": [],
+  "continuation_check": {
+    "scope": "Changed continuation Markdown; local file targets only, excluding fragments and remote URLs",
+    "files": [
+      "docs/qa/color-workflow/continuation-escalation.md",
+      "docs/qa/color-workflow/README.md",
+      "plans/logo-land-color-workflow.md"
+    ],
+    "checked": 34,
+    "missing": []
+  }
 }
