@@ -2,9 +2,19 @@
 
 Logo Land's plugin and local helper share one release version. Tagged releases and their notes are available on [GitHub Releases](https://github.com/t1seo/logo-land/releases). See the [release guide](docs/releases.md) for versioning and publication steps.
 
+## 0.6.0 — Unreleased
+
+Prepared on 2026-09-13 as the comparison and focused revision development update. Source metadata is 0.6.0; the published release remains v0.3.1. Earlier unreleased drafts and their historical color-gate failures remain unchanged.
+
+- Added `compare-gallery` to compare explicit candidates across saved projects, retaining exact original PNGs, prompts, source identities and parent lineage in a portable gallery.
+- Carry selection reasons, features to preserve, requested changes and observations into comparison notes and focused revisions. App and web-header contexts are illustrative previews, not platform packages.
+- Fixed legacy parent revisions with an unknown lockup so they retain that unknown intent instead of inheriting a later session default.
+- Made real samples visible inline in both READMEs, with a one-click visual gallery and original-image links.
+- Added [eight native samples](docs/gallery-workflow/comparison/index.html): six initial candidates and two child edits. [Observed results](docs/qa/gallery-workflow/native-samples.md) include wider Relay spacing with geometric drift, an unachieved Sprig stem bend and extra Leaflet colors; no benchmark improvement, exact font composition or export approval is claimed.
+
 ## 0.5.0 — Unreleased
 
-Prepared on 2026-09-13 as the app icon artwork development update. Source metadata is 0.5.0; the published release remains 0.3.1, and the prior 0.4.0 draft and its failed color release gates remain unchanged. Sixteen independent native samples are preserved across the original and revised galleries. Samples are artwork, without platform approval claims.
+Prepared on 2026-09-13 as the app icon artwork development update. At that checkpoint source metadata was 0.5.0; the published release remained 0.3.1, and the prior 0.4.0 draft and its failed color release gates remained unchanged. Sixteen independent native samples are preserved across the original and revised galleries. Samples are artwork, without platform approval claims.
 
 ### Added
 
@@ -33,7 +43,7 @@ See the [app icon contract](plans/logo-land-app-icons.md) and [documentation ver
 
 ## 0.4.0 — Unreleased
 
-Prepared on 2026-09-13. Publication is withheld because the required restricted-color and white-transparent native samples did not pass after the bounded repair attempts. At that checkpoint source and personal development versions were 0.4.0; the published release was 0.3.1. This historical draft remains unpublished as development continues at 0.5.0.
+Prepared on 2026-09-13. Publication is withheld because the required restricted-color and white-transparent native samples did not pass after the bounded repair attempts. At that checkpoint source and personal development versions were 0.4.0; the published release was 0.3.1. This historical draft remains unpublished as development continues at 0.6.0.
 
 ### Added
 

@@ -1,0 +1,9 @@
+{
+  "session": "sprig",
+  "revision": 1,
+  "artifact": "v1",
+  "rationale": "A single tactile leaf connects a gentle daily-care product to plant growth.",
+  "preserve": "One asymmetric jade leaf, pointed upper-right tip, single shallow fold, matte soft material, restrained green shading, near-frontal view and blush background.",
+  "change": "Clarify only the bottom leaf-to-stem contour: narrow the join slightly and give the existing short stem a small leftward bend so its short hooked silhouette stays distinct from the leaf body at 32px; retain the leaf tip, overall scale, material and color identity.",
+  "observation": "Original and 32/64/128px: the pointed asymmetric silhouette already reads as a leaf rather than a heart. At 32px the nearly straight short stem blends into the central fold; making that connection more distinct is an incremental recognition refinement. Fine surface grain is visible in the original despite a simple matte-surface request."
+}

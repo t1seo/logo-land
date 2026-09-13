@@ -1,0 +1,63 @@
+{
+  "id": "sprig-v1",
+  "session": "sprig",
+  "artifact": "v1",
+  "parent": null,
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:27:01.551571+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:27:55.982218+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:29:23.275656+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 1,
+      "at": "2026-09-13T00:29:56.868559+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+  "prompt_revision": 0,
+  "effective_intent": {
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one asymmetric leaf with a recognizable pointed tip and a short stem",
+      "placement": "center",
+      "text": null
+    },
+    "lockup": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": "opaque"
+  },
+  "import_revision": 1,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/sprig-v1.txt",
+  "image_file": "../images/sprig-v1.png",
+  "return": {
+    "sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-534774a3-9020-4016-860c-46b3ebb91085.png"
+  },
+  "observation": "Original and 32/64/128px: the pointed asymmetric silhouette already reads as a leaf rather than a heart. At 32px the nearly straight short stem blends into the central fold; making that connection more distinct is an incremental recognition refinement. Fine surface grain is visible in the original despite a simple matte-surface request.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ]
+}

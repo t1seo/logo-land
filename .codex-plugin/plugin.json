@@ -1,7 +1,7 @@
 {
   "name": "logo-land",
-  "version": "0.5.0",
-  "description": "Create logos and app icon artwork with native Codex images, six icon styles, original comparison, guided palettes, and reviewed PNG delivery.",
+  "version": "0.6.0",
+  "description": "Create logos and app icons with native Codex images, compare multiple projects with exact originals, and carry your decisions into focused revisions.",
   "author": {
     "name": "t1seo"
   },
@@ -10,7 +10,7 @@
   "interface": {
     "displayName": "Logo Land",
     "shortDescription": "Logos and app icons start with a conversation.",
-    "longDescription": "Create eight logo types and six app icon styles through conversation. Compare independent IP characters, pictograms, abstract shapes, Unicode monograms, soft 3D and pixel art with exact prompts and original PNGs. Refine saved images and export reviewed artwork with color evidence; platform layers and store approval are separate work.",
+    "longDescription": "Create eight logo types and six app icon styles through conversation. Compare candidates across saved projects with exact prompts, original PNGs and illustrative app or header previews. Keep selection reasons and features to preserve alongside focused revision requests. Refine saved images and export reviewed artwork with color evidence; platform layers and store approval are separate work.",
     "developerName": "t1seo",
     "category": "Productivity",
     "capabilities": [],

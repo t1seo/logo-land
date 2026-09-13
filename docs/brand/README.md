@@ -2,6 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Docs](../README.md) · [Logo Land](../../README.md)
 
+[**See every original in one visual gallery →**](../gallery.md) · Click an image to open its original PNG.
+
 An open charcoal frame and a small terracotta square sit beside the exact LOGO LAND name on warm ivory.
 
 ![Logo Land open-frame symbol and wordmark](../../assets/logo-land-studio.png)

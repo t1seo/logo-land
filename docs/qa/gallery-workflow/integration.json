@@ -1,0 +1,1132 @@
+{
+  "status": "passed",
+  "source_version": "0.6.0",
+  "published_release": "v0.3.1",
+  "source_payload": {
+    "algorithm": "SHA-256 of UTF-8 sorted relative-path records: <file sha256> + two spaces + <path> + LF; .codex-plugin/, assets/, skills/ excluding __pycache__, plus pyproject.toml and uv.lock",
+    "sha256": "b0e13ca5c8e7bccee4136c3aab37e25c7e3899e9d7426af5aa92e7057814f210",
+    "files": {
+      ".codex-plugin/plugin.json": "4a29fc1ddae3628c69b527fb56c46f3e91434515b9155d3e335ec6d1e5d10b52",
+      "assets/logo-land-studio.png": "11476b293b219b0298606ae8dea7422ca59eaf67b3e757811d7e2fa0a707aaf3",
+      "assets/logo-transparent.png": "ea31330bccf50bb53337fd118984457d8efc898fd23776b3bcf38717d3f76dd7",
+      "assets/logo.png": "f4eb03545ca762db0f5664a3ff35f9580120b058200fbad9d5f89543d5ecf343",
+      "pyproject.toml": "e68bd007425fc26a4a502eb9066b31dd1c98379060bd75851e04c076c6c28cde",
+      "skills/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "skills/logo-land/SKILL.md": "78af9916d1a7d36759a24b1a49a89f0465fd4f7708355126618926d1d6901870",
+      "skills/logo-land/agents/openai.yaml": "26e73fa8f7fa5c8296639b69e2eab5feaf014b2ad73f54581278c2230a659a74",
+      "skills/logo-land/assets/app-icon-gallery.template.html": "960c682d45807c8a7f1a0dfb5f031f6a17f3fb6d4ca0c84501514375bd8cb9dd",
+      "skills/logo-land/assets/app-icon.example.json": "2477e1384ba781a44a0116f4a86c71a85cdea3e4030ae6c388e28c1779685fbc",
+      "skills/logo-land/assets/brief.example.json": "2841dbbba9e3d94759c1a1b5ccc2885b8a94a87e7ede81f0786d0b7d31155342",
+      "skills/logo-land/assets/color-gallery.template.html": "65c0745614f866f670a94068503552c9982ef48c1a6697f05943ac999cea6773",
+      "skills/logo-land/assets/comparison-gallery.template.html": "6dc83dcf23970c27c544b21806544a488cdef34338dd965d9e4a9bcbbc929849",
+      "skills/logo-land/assets/ip-as-logo.LICENSE": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "skills/logo-land/references/app-icons.md": "4ef1a88ffe676208180a0ce944c6e9f5e0d20ede8d1cc0ccac778ceb31ef81bc",
+      "skills/logo-land/references/color-providers.md": "285199155af770b052e1d7aa2ec92bb687320d1f5aebe6008eadc3ca0e61af8f",
+      "skills/logo-land/references/color-workflow.md": "3f2f3d941fc5f72f64b0900059477e3f1fb2748b2bcdd4fdea24c1361f897b06",
+      "skills/logo-land/references/comparison-workflow.md": "22746583614cfd337ce5ff062d038c3b1692b080b87e92860bda6f0fdb2cab4b",
+      "skills/logo-land/references/delivery-checks.md": "27c65a1a72b7d9a86be0153fbda57ec11bca17d4d02b0b5ef7dce52d446498dc",
+      "skills/logo-land/references/ip-mascot.md": "08f93b78555246ea3b71a11d4879a53790808df4cab400bd5ed84b6d409e4850",
+      "skills/logo-land/references/logo-directions.md": "06eaf7c2e48bc93743f2dd76915105687bacc5a25a810932d5514bcf771049bc",
+      "skills/logo-land/references/native-image.md": "34056909420a4db68be7d00b09a18aabd450221529f814d73b7642369f096c3f",
+      "skills/logo-land/references/project-files.md": "1b3944bbfb4a808ccdc06728ab2c84b6991efd1bc7e261e2e8456d83285b43c3",
+      "skills/logo-land/references/typography.md": "82fe1465f75faa7d0b91ab4069a3aab8d36b21b15fcdf627133eb8daefacff13",
+      "skills/logo-land/scripts/logo_helper/__init__.py": "23c8d2ce225a99efe9832a41c20b46d139f5b31049dd641a04e13ff83b84f4d0",
+      "skills/logo-land/scripts/logo_helper/app_icon_cli.py": "e09075977adfd8c0b98202242ab3759fb1145227df987aeaac33c31896d35ada",
+      "skills/logo-land/scripts/logo_helper/app_icon_gallery.py": "71a2a7873af195cdeefe312f6d0462552fd1bb8856c117b5a20349649371e43f",
+      "skills/logo-land/scripts/logo_helper/app_icon_guide.py": "c063bf22bbcfa82c982caa2c066db2b069b34f8d633ba3f6afdb1e9d4fd17012",
+      "skills/logo-land/scripts/logo_helper/app_icon_models.py": "21ba823e490677f5e70ce9d05c782b1fa12884f405c4ba4601fd052bb1209c2d",
+      "skills/logo-land/scripts/logo_helper/app_icon_presets.py": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "skills/logo-land/scripts/logo_helper/app_icon_prompts.py": "d59ff54a2c77a368390be832bda5643af92dbab75d1a6431838687397e847080",
+      "skills/logo-land/scripts/logo_helper/app_icon_publish.py": "fb4dea5c484a4c617e898626d324a1aed5335e7b853299f45827d15d8a652ae5",
+      "skills/logo-land/scripts/logo_helper/artifact_models.py": "f35d32f2da234e92dd5144d48eb62fbddfac3039dd079b4d0a5d35eccd3231f0",
+      "skills/logo-land/scripts/logo_helper/brief_models.py": "caea33b207c181391fde6d9bc4fc7826335a8d2eb47f7124b51e5fbb18d16b12",
+      "skills/logo-land/scripts/logo_helper/cli_options.py": "e3f697458b482079c27b446cbb56aef4c6cf38ce3cd49ca94f1600ab76f4c8d3",
+      "skills/logo-land/scripts/logo_helper/color_analysis.py": "cfcef1c51c0f7a4067b7e9317df5b6f4acdb5312036e37516c9aab16f2d0ba30",
+      "skills/logo-land/scripts/logo_helper/color_cli.py": "d731f309d0dc877eb9f0ec71bf733c2461cda8757f9f15ac38fe7d0d7b9e3809",
+      "skills/logo-land/scripts/logo_helper/color_delivery.py": "7e7f0a4745def5b15ad08699dc57b113eca97eeeaa9b2aefaba35ef138d98f55",
+      "skills/logo-land/scripts/logo_helper/color_gallery.py": "05076788df31137f3ca6576a58346533130f2dd710779e35eb9311370ae6b56d",
+      "skills/logo-land/scripts/logo_helper/color_gallery_cards.py": "253ba8f0a439a4bb8129d2cb43463d5897df2d42cc9528ee627f8c709d669a53",
+      "skills/logo-land/scripts/logo_helper/color_gallery_data.py": "81dbf0876dc5cdc6e21493e80098489f54bc8e39dcb13bd3e61a38c5b998a030",
+      "skills/logo-land/scripts/logo_helper/color_guide.py": "34cdb38dddc6b398376fe5b492eef1799052b0b82a47bb48f3f4b801ea6f424a",
+      "skills/logo-land/scripts/logo_helper/color_math.py": "aa677d064632e48a9d108ba5d0b818c57f589ba1bcb61406261d8502cdc86288",
+      "skills/logo-land/scripts/logo_helper/color_models.py": "d3b4093611e2aa2d095c6c4f9027e65c794ef8b836c89d4a24c554f4a720f547",
+      "skills/logo-land/scripts/logo_helper/color_profiles.py": "055a299c1bd6738add1b44ad8977ffb48b9a3310bb9387665daa6efe04ca34df",
+      "skills/logo-land/scripts/logo_helper/color_reports.py": "95cf4f2605c8ca248a489d4e53fafee9f18b663d6effd38f3b5e5d080dd5596d",
+      "skills/logo-land/scripts/logo_helper/color_sampling.py": "71946e9eda8b329b5cafffc0163161abd2b17ddab3c92184bc5d4ba99ad94330",
+      "skills/logo-land/scripts/logo_helper/color_workflow.py": "7ef6e5c33c7f56d2320a643f5cd99428555b9eb4fa24fe65857b96147379cc42",
+      "skills/logo-land/scripts/logo_helper/comparison_cards.py": "8f4e45b7296fb60c13e73130fbacdbf52fe8ccb483346b89043c29d11c497af8",
+      "skills/logo-land/scripts/logo_helper/comparison_cli.py": "fa8a22ccb2dd1702fb4e81c32fb1faaea7e465bca97390beed48a64b6fc0b592",
+      "skills/logo-land/scripts/logo_helper/comparison_gallery.py": "17a81c7eb7488f500babe27eb653948ea88ca1c46467cfb81d3e55db141e2879",
+      "skills/logo-land/scripts/logo_helper/comparison_models.py": "016c802eef0f06c0bdc9040427b53d480799a3f150f336b346396a3167ef1336",
+      "skills/logo-land/scripts/logo_helper/delivery.py": "ed3713421b316e43568641451f41fc5a71332608acc8b8b2bf6c1db6f4469859",
+      "skills/logo-land/scripts/logo_helper/export_bundle.py": "33de44fb7677569d65c7b883c6d5b098c998e19bd9f731a6138ee9c09a1de612",
+      "skills/logo-land/scripts/logo_helper/images.py": "bd3d03ce8ab8fc7c6767da8fe8269e688ee63f16e14f04bf21d0e9d631a15f0a",
+      "skills/logo-land/scripts/logo_helper/import_reports.py": "69ffb9f6a9dbe5ac149fb9113f36ff63067cbad244c8c3a48af919e30223691c",
+      "skills/logo-land/scripts/logo_helper/intent.py": "9a8ece8285703df5fb00585ecc33990089378f84bd2aaadae31448fd7501d271",
+      "skills/logo-land/scripts/logo_helper/legacy_state.py": "09119091b50d9a4b8d9e4782636a8cddbd93b0d0fd197c774c129d2bc8ac3c5d",
+      "skills/logo-land/scripts/logo_helper/lockup_models.py": "0c0fb574ca59d4e6bb72ef26df4dcc36e013e354901840f4bf7cb30291c035cc",
+      "skills/logo-land/scripts/logo_helper/model_base.py": "0051b0fc239944f0143da201848f98d8c414c9d2d520f5de4f4718c88756c49e",
+      "skills/logo-land/scripts/logo_helper/models.py": "dc28d55027542510328ebdf80a820ed3456e6f6cfbd00cae102395026a0079ca",
+      "skills/logo-land/scripts/logo_helper/palette_proposals.py": "6968ca4356be8197ffdd68500ea2f53c72dff935c743e57305bb7ae4e10aca4b",
+      "skills/logo-land/scripts/logo_helper/palettes.py": "6c60dffcca290bd390e1259600cdd91e190589995af6c42152ba42f719d77e08",
+      "skills/logo-land/scripts/logo_helper/prompts.py": "340974db2816c5f0deecc766cfcabd8036d8e59e2608be5f1688657b57967a1b",
+      "skills/logo-land/scripts/logo_helper/reference_decode.py": "b55055f40a5fee8a01943acd082bfe8b7a521b61bb1773f36a208f5e5f9c453f",
+      "skills/logo-land/scripts/logo_helper/reference_evidence.py": "ab80fa6b9a19f77b525566c9f4b8129720dee403daea9994155e0888e2d0d1f4",
+      "skills/logo-land/scripts/logo_helper/reference_models.py": "87da637a01602f5dd0655ff6e8bfefae9ca2c609513dcbfe43a9f5e07553064e",
+      "skills/logo-land/scripts/logo_helper/references.py": "a02f6d9bf3775820bc4d394d539186c64da7ce96cb00a359e34e266acec4d3b7",
+      "skills/logo-land/scripts/logo_helper/session_models.py": "3d5917431dd8c8f7f43c2acc91dd845682b0d8483e1de835ba5794eda3dcdaea",
+      "skills/logo-land/scripts/logo_helper/storage.py": "e0a9bd8c18458beeda1a0ad9479afbec68ac6c4690b42f795dc3cdbd813b42a6",
+      "skills/logo-land/scripts/logo_helper/workflow.py": "a82d1cd1c02a16b4c202c1a01d08a6a5e44f18491d297bc01857c663dbbbd6d6",
+      "skills/logo-land/scripts/logo_project.py": "6e94ce899ceb1f7f96e3cf8ce4c66a5f08cb00b138d553cc5a482b75ad584e73",
+      "uv.lock": "dd892f27ecf9444c4764055e2a49b6ddb0c31ca9ebd8eaa76b5750a45b2ea418"
+    }
+  },
+  "metadata_baseline_versions": [
+    "0.5.0",
+    "0.5.0",
+    "0.5.0"
+  ],
+  "metadata_final_versions": [
+    "0.6.0",
+    "0.6.0",
+    "0.6.0"
+  ],
+  "dependency_records_unchanged": 22,
+  "initial_baseline": {
+    "branch": "feat/logo-land-gallery-workflow",
+    "head": "06b94c41922973fc98392fadde25fff9aa498f6e",
+    "status": " M README.ko.md\n M README.md\n M docs/README.ko.md\n M docs/README.md\n M docs/app-icons/README.ko.md\n M docs/app-icons/README.md\n M docs/brand/README.ko.md\n M docs/brand/README.md\n M docs/colors/README.ko.md\n M docs/colors/README.md\n M docs/qa/app-icons/core-fixtures/prompt-edit.txt\n M docs/samples/README.ko.md\n M docs/samples/README.md\n M skills/logo-land/SKILL.md\n M skills/logo-land/references/app-icons.md\n M skills/logo-land/references/delivery-checks.md\n M skills/logo-land/references/project-files.md\n M skills/logo-land/references/typography.md\n M skills/logo-land/scripts/logo_helper/intent.py\n M skills/logo-land/scripts/logo_project.py\n M tests/test_app_icon_compatibility.py\n?? .omo/drafts/logo-land-next-capability.md\n?? .omo/drafts/logo-land-next-delivery.md\n?? .omo/drafts/logo-land-next-metis.md\n?? .omo/drafts/logo-land-next-tools.md\n?? docs/gallery-workflow/\n?? docs/gallery.ko.md\n?? docs/gallery.md\n?? docs/qa/gallery-workflow/\n?? plans/logo-land-next-improvements.md\n?? skills/logo-land/assets/comparison-gallery.template.html\n?? skills/logo-land/references/comparison-workflow.md\n?? skills/logo-land/scripts/logo_helper/comparison_cards.py\n?? skills/logo-land/scripts/logo_helper/comparison_cli.py\n?? skills/logo-land/scripts/logo_helper/comparison_gallery.py\n?? skills/logo-land/scripts/logo_helper/comparison_models.py\n?? tests/test_comparison_baseline.py\n?? tests/test_comparison_cli.py\n?? tests/test_comparison_filesystem.py\n?? tests/test_comparison_inputs.py\n?? tests/test_comparison_limits.py\n?? tests/test_comparison_markup.py\n?? tests/test_comparison_publication.py\n?? tests/test_comparison_support.py\n?? tests/test_lockup_continuity.py\n",
+    "diff_sha256": "1544cbe481451877f864f8cb8ada35da43035d0280296f8639d53b928c7fa26e",
+    "diff_lines": 534,
+    "tracked_and_untracked_file_count": 1446,
+    "all_files_aggregate_sha256": "4834d26e1a39e45edb1420fb62be23700cbfdcbf78401756a2d37860bda51ba7",
+    "changes_since_baseline": [
+      ".codex-plugin/plugin.json",
+      "CHANGELOG.md",
+      "README.ko.md",
+      "README.md",
+      "docs/installation.ko.md",
+      "docs/installation.md",
+      "docs/qa/gallery-workflow/installation.md",
+      "docs/qa/gallery-workflow/integration.md",
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "foreign_change_note": "docs/qa/gallery-workflow/installation.md is the concurrently owned installation report; untouched by T3"
+  },
+  "checks": [
+    {
+      "argv": [
+        "uv",
+        "run",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 142.914,
+      "stdout": "........................................................................ [ 11%]\n........................................................................ [ 23%]\n........................................................................ [ 34%]\n........................................................................ [ 46%]\n........................................................................ [ 57%]\n........................................................................ [ 69%]\n........................................................................ [ 81%]\n........................................................................ [ 92%]\n..............................................                           [100%]\n622 passed in 142.64s (0:02:22)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.1,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.04,
+      "stdout": "308 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "basedpyright"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 2.452,
+      "stdout": "0 errors, 0 warnings, 0 notes\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.016,
+      "stdout": "",
+      "stderr": "Resolved 23 packages in 3ms\n"
+    }
+  ],
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-13T00:43:54.557442+00:00",
+  "owned_files": [
+    ".codex-plugin/plugin.json",
+    "pyproject.toml",
+    "uv.lock",
+    "CHANGELOG.md",
+    "README.md",
+    "README.ko.md",
+    "docs/installation.md",
+    "docs/installation.ko.md",
+    "docs/qa/gallery-workflow/integration.md",
+    "docs/qa/gallery-workflow/integration.json"
+  ],
+  "test_snapshot": {
+    "aggregate_sha256": "f3c3c8fc360a3f06b2caf4bec2ec6439e1801f74ff37de17bd2b60ae0291e242",
+    "files": {
+      "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests/conftest.py": "89cc3f2e22ed8f3dbd08b88635752c1cf11d3dd53a5350cec8e5fcd1281c1fb9",
+      "tests/test_app_icon_compatibility.py": "e2bdefdee07f0ca90946fffbae9d452ed358c2e41dd82645bd5ff4e223a68a72",
+      "tests/test_app_icon_delivery.py": "90fc8d5693de59cf4c2c8e0ab267d0db145f8066d01090c93c87067ca46d3035",
+      "tests/test_app_icon_gallery.py": "b8dd4d265a753048d5b342b6d99e6099669e78f8b795390a8f89a2e44964a833",
+      "tests/test_app_icon_models.py": "4eb296854189a5fe697a87e0230206fabef7d899eaf02456cea7c1c95202d185",
+      "tests/test_app_icon_prompts.py": "60bbe0a8bf9fe06651029ab4a12844b4c4ace79b79372b8fd9c05324d47339f4",
+      "tests/test_app_icon_quality.py": "006bfb15731310ae0592faa200e0cbe436417c26095421eb276cb509c60a78dd",
+      "tests/test_app_icon_workflow.py": "f7c7e97c4f63c50805134fefc054e5241e55cd4d3744bd2a6d1d699ab99c05e9",
+      "tests/test_app_icon_workflow_invariants.py": "966bc8f442fc3fe84f8341564f1c40bcbfbdcace1bcf9598221a9bfdec748e33",
+      "tests/test_app_icon_workflow_palette.py": "720cf9a14c10ed4ad066da086b94468a057b1cadf6cb6d3004bc9e06e61f7483",
+      "tests/test_background_compatibility.py": "4c0b4da445a31a3924e2e8f56af0661144043713faf2ae7f45fe24e512211a67",
+      "tests/test_background_variants.py": "f94c2f2d077142c41b6334e621d9618a9954c6b9e72836d0bec447e99cfdd703",
+      "tests/test_boundaries.py": "2bce877bcfe86c3f091f1d3dce4045b503bb7f6616a791e0c1b06505cd22d9a8",
+      "tests/test_cli_safety.py": "e8c622858d3c1d488b17098b29cb7eb9bc134c658f7c0011b806d8e65e7b1f42",
+      "tests/test_cli_workflow.py": "fcd1cbd925284bd25dda6ea6426b0efa436b2c18fe13d9e67338d3cd6800090a",
+      "tests/test_color_analysis.py": "8b044a012e30abf789676e9e1d92600a9ceb3353f25dc2e6b853f511ed81ea45",
+      "tests/test_color_cli_integration.py": "a9b46e50f0da5f8145f58a39edf63cad2889a5a31eb0c6c09de60147e3287715",
+      "tests/test_color_export_compatibility.py": "1727d1e149202482a305d95f61cf0d01fd03f59b5e27ec652b8b8fca759fec6d",
+      "tests/test_color_gallery.py": "6031cdceffdedc34a62f8ee7d68c2ea12bb2bf020d6abeea1e2a568b7955605c",
+      "tests/test_color_models.py": "549d3efe0d7fb5aad7ef7a6d4bb214ac4f10c9cae7b5439f8d79c7c23bd3eb88",
+      "tests/test_color_reports.py": "7b10e0cd7142e00c106b4b023969cf223eb25d90fc466ef3082d290b07780879",
+      "tests/test_color_workflow_transactions.py": "b5cbc631279fc4d05a0747cf41dfcc3396744c28ec4500a0c1f129ebdfeb5ad7",
+      "tests/test_comparison_baseline.py": "b23edf9233a1779fca273faf817ce1e9e20109380bdd2024c37d9e6c6e68eaf0",
+      "tests/test_comparison_cli.py": "1ae9991b43d05566d755cc6261c080cfa3ca740b1010df77679294061e7bbf8b",
+      "tests/test_comparison_filesystem.py": "a9c88cdec7d406b3ae16483e5b999b69ce95d9d77f521dcf42be2641bfbd40b4",
+      "tests/test_comparison_inputs.py": "fcde516baa8dd8575641ccd0889b33c8bc562f0ea874da4fd0aa68b04d03282d",
+      "tests/test_comparison_limits.py": "6c910075e6ccb40d024d4f11b9f4678b61d02c877aab81fcbaf046d0f19d1c60",
+      "tests/test_comparison_markup.py": "98f71d2a51c13c0163de13ba15995b0e60d8248c015fa00b35a422f74b992fe7",
+      "tests/test_comparison_publication.py": "a347e3bcc0cb5258bb0cfab322b9534e5f66cb72df8233ea3dd367b640bc5ff8",
+      "tests/test_comparison_support.py": "ddfc178231b721e75117b368af7547022d4488dc3627598ab5f1111b90d012c5",
+      "tests/test_delivery_guide.py": "d02d4adc162340acb240b146e6aa29091d0ea5ae74034fad0c57f9154da1149f",
+      "tests/test_lockup_continuity.py": "dac054d58869a0eb0760094ef6c75eaa6a7c4a244fd9c861fb3e7a66026db9fe",
+      "tests/test_palette_compatibility.py": "aabc9590708bada0e34f426f417456ed587a30e39650a460a07d5c2c9c764157",
+      "tests/test_palette_engine.py": "8f0c35d2fdaf3a6a47efac3c586c58bcc6d752f3256ff68981832a140cce5407",
+      "tests/test_palette_workflow.py": "99b0882b2318ed202fc8db20c3ed46cffe0a1fbb13b63e75c95143f8eed4aac6",
+      "tests/test_reference_colors.py": "57dc9f4477a3e2cb48256abc722b2beace65bd1094458729bc2580afc233c86a",
+      "tests/test_reserved_output.py": "9558a839146238c8d9fa10827a0492b44478e200b973495720ea87cbc82d1a15",
+      "tests/test_resume_and_portability.py": "cfa664ea0733fb2f3ff18f1c4b12eb25495a8a8f51b65ba835ac7f3f274871dc",
+      "tests/test_transactions.py": "a093a5fb091e09b8ca0e3eb76fbef22140c48265d7cf496ba0d5683c3a612263"
+    }
+  },
+  "current_public_docs_snapshot": {
+    "aggregate_sha256": "5b2ec826376812e921d696690d681d2e55003cb4fce34e85abf00ee4741c000e",
+    "files": {
+      "CHANGELOG.md": "e2f025d1b52c3b54425bdb65f55030115f7f1e11ed33803225ae4395949d1c08",
+      "README.ko.md": "d03c6a92ec0b181e0c54e5eb64440d5152355323a13af13c1a9b1551d381737f",
+      "README.md": "d260d80f97af11458355e75d34368966479b40c096929065cc4c9fee8e1a4aa9",
+      "docs/README.ko.md": "a11ee2aa69d88af8d70f9ca2e843094fd12d9813dcfe67a53b40fb2e207ce73e",
+      "docs/README.md": "06cc006e64e8da6904bcf98cbfd640cac574aec9deb6e33341e20447583636d0",
+      "docs/app-icons/README.ko.md": "8e67cd86b3f9c31685d11e955764fe49d8c6c37be6b591d2b87e4d5a56d1dc69",
+      "docs/app-icons/README.md": "4cf65d1530be5ae3c74f3fcd7065749f2019d3fee2c77516d6ce8f19a68b2b68",
+      "docs/app-icons/samples/abstract.ko.md": "da522fb07d3be21528c880e85c9e371f4f0bdada115f6c3c806fe10106914ccf",
+      "docs/app-icons/samples/abstract.md": "fe485ab06d4b634680ecfcb07ae7bd217e63b8030ac9b9865c2c6d6faeba1491",
+      "docs/app-icons/samples/ip-a1.ko.md": "ce75bcfe7aa7978cb438451e2cc605e28b1f72192947c1be2d66b1826f8386dd",
+      "docs/app-icons/samples/ip-a1.md": "b9d35f6af0741973431ec69ffe574f977961d15fda1720b70c65c077dd41a60e",
+      "docs/app-icons/samples/ip-a2.ko.md": "bd06a8a466a68b84db273f72e5f6c948aa605f76ccc055ea39d9196527be87ab",
+      "docs/app-icons/samples/ip-a2.md": "709a643fdc68fd883d36bd7b3d50661de52dc2971b7ea5bfdf8aea401598f06b",
+      "docs/app-icons/samples/ip-b1.ko.md": "a21b753ed877e9087e9443231bc1051b891df1eb178dfe6388852a2384ef2f01",
+      "docs/app-icons/samples/ip-b1.md": "ac8413878c7e3387501be3a2bd000b3a2297862d9da68c84c11f9ac06436a7a1",
+      "docs/app-icons/samples/ip-b2.ko.md": "0c33faa792d1ed31489999c05df16927fb0b9006f518a63696af9ea8e28902fc",
+      "docs/app-icons/samples/ip-b2.md": "d821417b4fdf2ef05b82687255c1c69528f2b62d02768bd945c834017700f74f",
+      "docs/app-icons/samples/ip-c1.ko.md": "458b4f58df9e91c866ab34e51b4d971cea0590f5974bb0b972c9eb5d2df1cdc3",
+      "docs/app-icons/samples/ip-c1.md": "2744f862751da80f37e753d145492b8601091400a5595389becf1bb9ccc12f58",
+      "docs/app-icons/samples/ip-c2.ko.md": "e5434756c9d1d147439752c70cedc5ae2a51c6e35393f1898124a45a4788f0a3",
+      "docs/app-icons/samples/ip-c2.md": "604e5d24c70ea6d554ee88dd5af3381af4975d6b3139044b4873c085d068a816",
+      "docs/app-icons/samples/monogram.ko.md": "dcd06e3f0990625914daa690e1d95de559be2bd4d87e2c4f575ad919a9ba55f5",
+      "docs/app-icons/samples/monogram.md": "417ef63714be669145fc84e78223324e77d0f1f316808a064bfc3246c7c8b580",
+      "docs/app-icons/samples/pictogram.ko.md": "bc260c48649afaaf1891161076f51037017dbd4142b7a1dc002920d88505f9d8",
+      "docs/app-icons/samples/pictogram.md": "cb04a2a98211b827d1c06234d9f9e31769f484f8329d44e2ed182f524b3517d4",
+      "docs/app-icons/samples/pixel-art.ko.md": "d0388047ddd216367509be39f032a325609208772c49bde29c6466435307cfc5",
+      "docs/app-icons/samples/pixel-art.md": "a34a71b7e0cd563844805d8b0c29df50e3d23dcfe690464d747f1164437da79d",
+      "docs/app-icons/samples/soft-3d.ko.md": "a358570625ed696089b75020595d1c92cd84b4603b33cab5ee059759c07f5cfa",
+      "docs/app-icons/samples/soft-3d.md": "37428e43c8b35702bb1233d5aac5fd2acaeb7f4d8b81b1a736f8afcee0dcbdbd",
+      "docs/archive.md": "e5caaa56e3eae85b0fc8a4ed26f2fb952453a5ea481e3edb48a19674e1d8e7b5",
+      "docs/brand/2026-identity/delivery/brand-guide.md": "c6a2a2c5d8f7f8b635598f6fc7d8bd856927a192a22591c3911ccd365475445b",
+      "docs/brand/README.ko.md": "10e93a49222cfe6d0bdab502d109b3e91796d6903076fa2156a5eaf768d76612",
+      "docs/brand/README.md": "fdbd0a78ca45f365952230f008e78449dbae7619829e8d8e00869f73a75e6b9e",
+      "docs/brand/delivery/brand-guide.md": "185b72f4752d572a793da2487d4911e2f1d3e1513bbc1493e3831be2ebc3ec65",
+      "docs/brand/legacy.md": "8e7f3fa70a6b84e69e2822ff8a4fff8c7354ab0d813f7f7fc4a12f9bad5f488b",
+      "docs/colors/README.ko.md": "274f2e20bda0feb78f26c20f7eb5432ceba59d31a9d21e8fbef410cc6446f847",
+      "docs/colors/README.md": "2753f130a7918c031b0a4b23d69afe5bc495e084a727083a219905d9e0f44c2d",
+      "docs/colors/deliveries/grove/brand-guide.md": "8346e72d6e0394fe08b7d299a61d57332d2a468f25624d9a5c4e5af7a797d5c5",
+      "docs/colors/deliveries/northline/brand-guide.md": "cf0f466fc251c941e3002d91036b7a300677b9db16a130f34356af254c0f649b",
+      "docs/colors/deliveries/tide/brand-guide.md": "7f80155f0ec68e027ead683d15f273497b8e0c74e46ab0e7930fcc2c482301ea",
+      "docs/colors/projects/bamgyeol/README.ko.md": "0d187ffe07a901fcfc7f2d04ec486f28f0288b21a5121de5bfa80742781d06a2",
+      "docs/colors/projects/bamgyeol/README.md": "6f1dd820926c3b930c1435934722bf8d28ed7901113673031d81afc2fa849017",
+      "docs/colors/projects/fieldnote/README.ko.md": "297df6b986424eb2a35dd995ac2adfaea6c448a2f96f97e4ec7a8f2c20307a3e",
+      "docs/colors/projects/fieldnote/README.md": "743ac8bc2594d996823043d355af5c4a136d2577ee599dbe888685c5c9678ccc",
+      "docs/colors/projects/grove/README.ko.md": "50a14bd60cfb125d569455ac256562970c53b85537aea1ec003004a8743853a2",
+      "docs/colors/projects/grove/README.md": "6cca6c9e88b51e5df5b0873ecb86e2661664265f06be6a1b826af3799c7fb7d9",
+      "docs/colors/projects/northline/README.ko.md": "8d94d65ab14030c920b4230013254eb5eb4e1f38bf3f0ce42d78339c4ae66fbf",
+      "docs/colors/projects/northline/README.md": "ce19be932a50d73a66dc7b4da8773fea4e0ab37afa08451feffa914b37f834ed",
+      "docs/colors/projects/sunroom/README.ko.md": "3f8ed9e7f6aece5ef9a033221e49c3eb8220a82674c01f684436906c4aa3a892",
+      "docs/colors/projects/sunroom/README.md": "83f21473405c653580bfd5295a35475e926a41d4927a34a617a4482a99bd36ee",
+      "docs/colors/projects/tide/README.ko.md": "54191680aaa6558b54488b010b2aba95836551dd7aa387f4e3fde6bcc02f07c0",
+      "docs/colors/projects/tide/README.md": "1cfdfe3f1a4455b71ba960eea428f997a9c3727168b1946dbd0a671fd2b80533",
+      "docs/colors/projects/white-bamgyeol/README.ko.md": "4946f58769e0bb3ccf708eaf05b2bf8f4f93b30c225cbe777ef932eab1b902a8",
+      "docs/colors/projects/white-bamgyeol/README.md": "0ceba12bd932d20ee65056bc1c2edc473deffc6d561331827787e62cfd883ff9",
+      "docs/diagrams/style-guide.md": "71ffbc409a26f04696dab5fa124183c286d1ac6d5394f1f31989206bf8f35e3f",
+      "docs/diagrams/validation.md": "9d3423ec4827bde6d577ec9a207828b3023cb990af0458b3b93a5a4b61a0f1a4",
+      "docs/gallery-workflow/README.md": "363ce4164cb29ee041127f921d771fb7963400ce65dd2259a0edcac6ae82b526",
+      "docs/gallery-workflow/comparison/images/001.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "docs/gallery-workflow/comparison/images/002.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "docs/gallery-workflow/comparison/images/003.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "docs/gallery-workflow/comparison/images/004.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "docs/gallery-workflow/comparison/images/005.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "docs/gallery-workflow/comparison/images/006.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "docs/gallery-workflow/comparison/images/007.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "docs/gallery-workflow/comparison/images/008.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "docs/gallery-workflow/comparison/index.html": "7d90d12a54e901d2b6033a062103870efbd5ab1104108cc563c2b3d69759496c",
+      "docs/gallery-workflow/comparison/manifest.json": "c589bafbbbb140d66421410db05f524970c8d553c3b84726e4f696f023f6fa4f",
+      "docs/gallery-workflow/comparison/prompts/001.txt": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+      "docs/gallery-workflow/comparison/prompts/002.txt": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+      "docs/gallery-workflow/comparison/prompts/003.txt": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+      "docs/gallery-workflow/comparison/prompts/004.txt": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+      "docs/gallery-workflow/comparison/prompts/005.txt": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+      "docs/gallery-workflow/comparison/prompts/006.txt": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+      "docs/gallery-workflow/comparison/prompts/007.txt": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+      "docs/gallery-workflow/comparison/prompts/008.txt": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a",
+      "docs/gallery-workflow/images/common-v1.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "docs/gallery-workflow/images/drip-v1.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "docs/gallery-workflow/images/leaflet-v1.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "docs/gallery-workflow/images/relay-v1.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "docs/gallery-workflow/images/relay-v2.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "docs/gallery-workflow/images/sprig-v1.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "docs/gallery-workflow/images/sprig-v2.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "docs/gallery-workflow/images/teum-v1.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "docs/gallery-workflow/inputs/common-brief.json": "0f483e695a577d829a481a7e3963ff48824fafd294c61b637f76fb7f2d6f125f",
+      "docs/gallery-workflow/inputs/common-concept.txt": "0b8c4a1f919d46bee1eac7de6f990efc7c98d4e6152db1592a87890ed27c7c5e",
+      "docs/gallery-workflow/inputs/drip-brief.json": "9ac0587e41aa09ad2738a375c03fadb64c66a4164b7c8188683dd8da52f587b5",
+      "docs/gallery-workflow/inputs/drip-concept.txt": "92618cd90bf3678f4152b3adfb4b2abde5206e1892cbcde00c0002ed8d15d902",
+      "docs/gallery-workflow/inputs/initial-observations.json": "203de947ede4e612c0bd9c0a877a9f60b9288dd33293fbf1f0514bb7dced2913",
+      "docs/gallery-workflow/inputs/leaflet-brief.json": "601fbd3cf12be8e62f299613b4e2bb92751cd43f55ba0b00215014f5c9449853",
+      "docs/gallery-workflow/inputs/leaflet-concept.txt": "79162d106c2c712d979be11247cd3cde01ce677cefc174b477e6aef8832e99bf",
+      "docs/gallery-workflow/inputs/relay-brief.json": "029e2ebaa328bf464bd5461bb779d638664070ec00cde87321e0d0899b07bf1e",
+      "docs/gallery-workflow/inputs/relay-concept.txt": "56c688af054e3772dce1d261e49f8a586f53a4b11219b0509507b9d18b220bea",
+      "docs/gallery-workflow/inputs/relay-edit-decision.json": "0cce2411712729c38f5eedb37f5dcf180ffeb9a0cfaa422d1a8e5c943f9b68ab",
+      "docs/gallery-workflow/inputs/selection-final.json": "ab690851c47e6dffe9905dd7f66664f6bc3954cf3822e5c25e2075f129517816",
+      "docs/gallery-workflow/inputs/selection-initial-r1.json": "465179d070de06edbd1ec6a77a6f707847607658dd447e1c70522275ba3187b8",
+      "docs/gallery-workflow/inputs/sprig-brief.json": "88d7856db536989b3e649be7ce3309907df461e1cc95b9cd3f2d94a0613d0657",
+      "docs/gallery-workflow/inputs/sprig-concept.txt": "b1dff91a2ae20d10a5f9d77cb1bcaeba4975f3b728854e09b2ecdf79cce500b2",
+      "docs/gallery-workflow/inputs/sprig-edit-decision.json": "4a0af8104161deb7f3e3c2c45ee7f068efe4f3bff735c202172dd29a3df91f41",
+      "docs/gallery-workflow/inputs/teum-brief.json": "eb02e9a31600013d4adfbb2573b822bbc212e191ec351a812444c6249a2fc049",
+      "docs/gallery-workflow/inputs/teum-concept.txt": "c703c3c0e19892ea1db40c8483a1717ae77f767c8c4066f35957a796fbe72d9e",
+      "docs/gallery-workflow/prompts/common-v1.txt": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a",
+      "docs/gallery-workflow/prompts/drip-v1.txt": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+      "docs/gallery-workflow/prompts/leaflet-v1.txt": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+      "docs/gallery-workflow/prompts/relay-v1.txt": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+      "docs/gallery-workflow/prompts/relay-v2.txt": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+      "docs/gallery-workflow/prompts/sprig-v1.txt": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+      "docs/gallery-workflow/prompts/sprig-v2.txt": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+      "docs/gallery-workflow/prompts/teum-v1.txt": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+      "docs/gallery-workflow/receipts/adversarial-checks.json": "fcbd9c7c227235727a0230262b6317bc6e1f101649bc8784e288de67a15e4a0a",
+      "docs/gallery-workflow/receipts/baseline.json": "53332fd1a0ded21d60622e7026e8d63fee699eef493ef9e63a56c5e7c3ccd679",
+      "docs/gallery-workflow/receipts/cleanup.json": "795b9d514dd6aa1e780644f18db25e48ef92d12bd87b69cc68eb88512cb90125",
+      "docs/gallery-workflow/receipts/common-v1.json": "7abb281b40fdf0b87334a4d801446b4ddcb4635a98ed5f6827977a9d05a4667f",
+      "docs/gallery-workflow/receipts/comparison-publication.json": "3c00039613b9095e6fa149c50d97a1ce7fe129e7221114b86c8c9771d75b8750",
+      "docs/gallery-workflow/receipts/drip-v1.json": "de360af7b6b679109591da50960c6beaf0c215041e0740859a069aa7a8022e21",
+      "docs/gallery-workflow/receipts/final-show.json": "ec0cba209e10011135d35cf67f9018382a79b3b8283f44ea0384fa6bd5dc70be",
+      "docs/gallery-workflow/receipts/http-verification.json": "fe3125f6501d75fdc65727fd77d8da65548a0928d226747db499d3c3f72475cb",
+      "docs/gallery-workflow/receipts/leaflet-v1.json": "59972b6ae25c4aed545e8586790d3d2d3dd60f8897a5d19b0edbc5d6e4994bb7",
+      "docs/gallery-workflow/receipts/portable-integrity.json": "dc2e9a3cc8e2d3204643401c575bd037001da37e0ce130e4c0841cad3f3f82b3",
+      "docs/gallery-workflow/receipts/relay-v1.json": "a6b593a946705eb9f3173e5bbda2c047af5ad55b611a91b7fb26376e73090051",
+      "docs/gallery-workflow/receipts/relay-v2.json": "48e7e48bf30d0e8973f1fa941c600f3555eaa0cb6c4f5f91be527cc2c56335ec",
+      "docs/gallery-workflow/receipts/sprig-v1.json": "7c77460849264297310ab17c425bd4bf6dd4d64e6d6ae22ce77ac91aa77a0dd7",
+      "docs/gallery-workflow/receipts/sprig-v2.json": "036226f98c4c9d4227b202d7cf655f598ff9b3fed38c0e7a86b637443d0c0c6c",
+      "docs/gallery-workflow/receipts/teum-v1.json": "c8640fae0ad3657a7f04ea0e3cadbc973053b136bfd2decb19a3ce21f5197e49",
+      "docs/gallery-workflow/samples.json": "19b5e08521fe8c685f112b3ede86a56f214ff10ccafecc50b7428194d6d9af37",
+      "docs/gallery-workflow/states/README.md": "4f6a54ac660708870f03fe82920ce52674755d3dceac2c6ccb6f129b218b6aad",
+      "docs/gallery-workflow/states/common-r1.json": "e85d7d46f7e975983bac9ea45078b85814a67492201008521cf4202d20b29f72",
+      "docs/gallery-workflow/states/drip-r1.json": "8f331a3a7c10bb5fc511bb2397b990c783f036a43136a5bb969ed8646d8a4b9a",
+      "docs/gallery-workflow/states/leaflet-r1.json": "53471f7ec78b4d4d8d9c01fda13f6cc933925d373acb9e260146f610d4b36ab3",
+      "docs/gallery-workflow/states/relay-r2.json": "000c7fa66dd10401d5c1972ec94c9f96b03b0bfc4c0e13b20307f485006d655d",
+      "docs/gallery-workflow/states/sprig-r2.json": "4d52c0f2b0deceda3eaac7b8a705efe4d53c8ced930663706cce4e322f03d54b",
+      "docs/gallery-workflow/states/teum-r1.json": "5e87a9699f9b6c1a18e9590c7c87ccff4ec7ffb8a90390014eb3dac06feb9fdc",
+      "docs/gallery.ko.md": "e3bed14d948da7f2108935681861266a3435ff4786a8d1f2650e125436e92616",
+      "docs/gallery.md": "1453af5261fdfabd1f4a58a7796e4bbf757c41cbab03e4cb0e826e9b31a15a63",
+      "docs/installation.ko.md": "04a2a91e69a5b1ff728b0cc06c3b69889e36c84c6543eba9540d4db48c2eddf3",
+      "docs/installation.md": "d16a8d14cd7606eeb6f406d725e081c8ed26c72ced5294869164710729486575",
+      "docs/planning/gap-analysis.md": "3c58f7c8e2202840cec232a69d9734c7a0896c30b9779419031d27e966c15c4a",
+      "docs/planning/progress.md": "baa5a8a191a9c311e35638457ace54ff2b495efb0cb095229803c5281cc6a601",
+      "docs/releases.md": "9db0a035add342fb63cf351303f09f67b163f79c68fec128cc9fd9471244c5e8",
+      "docs/research/app-icon-quality.md": "64347d17181d293cb52644ad4661746430f80fc24ed4d2db267b1fda38954bf1",
+      "docs/research/app-icon-tools.md": "b7aed578e88356491a2f600c41a55dd686c6956aca680cdc3e6c1dd6d891ab73",
+      "docs/research/brandmark-tailor-walkthrough.md": "9841397992c134241bd051d71caebf601346bd9e2e711ce83302ff48c6c8bacd",
+      "docs/research/chrome-followup.md": "7a80ea098d32b326e4a0ef52efdd2f00da9fc9e492a2dc852c345d43cd92121f",
+      "docs/research/comparison.md": "910273482fb20a79b6c9e103f508a89119209d2cc056255d179822af357186e0",
+      "docs/research/font-tools.md": "d64298e10abdd915020533fba2f64646706a8e6da6a7c9b528c5ed91eacac3ab",
+      "docs/research/looka-fiverr-design-walkthrough.md": "31107ad63af7cd5da5d5d374c11651ebdb897b6a75681a02a2f4a78116123f50",
+      "docs/research/official-features.md": "3cf3681083bb7e6f9e6defa73a3ee8a899731036cfb2854c173c419dbf333d6c",
+      "docs/research/readme-structure.md": "3a743a808707d8a4fc878e8839ebd17661c8b13e6c44815a458acc2a7666491e",
+      "docs/samples/README.ko.md": "5097cd6ff432b5faf19c81668eb54d086e87d66f7a76ccfbd589c425695e68a9",
+      "docs/samples/README.md": "d857a6dce2c057fa522a3c651b45426133342cde809a22a2f508fa83bb77ad48",
+      "docs/samples/items/01-luma/README.ko.md": "627b73ed254087c6ea50efa53847a7336d521e403e01cebdf97ba8ed468e560c",
+      "docs/samples/items/01-luma/README.md": "d82b193f867d7c96ded349b3feb5626890e5e0fd0cddfa2be94c96fd820fc652",
+      "docs/samples/items/01-luma/delivery/brand-guide.md": "0c17b2af701728d8181156538df5520f0d773368fd83f8457a2774c24af0fc11",
+      "docs/samples/items/02-loop-lab/README.ko.md": "c4b3f4fa9196deefe091fe50d8af211f8fa1acc0eac16c92780a199b85fcd2b6",
+      "docs/samples/items/02-loop-lab/README.md": "a9f44f4ce1abd872c73fd8024f967ba7ce500b171dd8e8fae218cbc49e5c369c",
+      "docs/samples/items/02-loop-lab/delivery/brand-guide.md": "a3ce1670f7461ada41a2c25af5c01e2b1100cf897625b900b88788dd07aa71a9",
+      "docs/samples/items/03-goyo/README.ko.md": "bd0601f9342d2e8d03cf359705f795e763935cc7f8b6405402ad70ee973b2806",
+      "docs/samples/items/03-goyo/README.md": "eb2fc0833a115c9bc217ece47c9e1d714fabe2eed2fae6ad64c158f4f5fb7fe3",
+      "docs/samples/items/03-goyo/delivery/brand-guide.md": "c5c7d11ef37522399d997fc71c768c971a8db7998e78d7d909ba01f3b88de2ce",
+      "docs/samples/items/04-bread-bloom/README.ko.md": "c26b30b1a503bc0da02bf3058ca422ce5815d0931ea214dfae66ab329847ff5d",
+      "docs/samples/items/04-bread-bloom/README.md": "bc63cadec6179d975f1c243fb4bc77ae8f3bd66636adb82c1fc5fa2980223474",
+      "docs/samples/items/04-bread-bloom/delivery/brand-guide.md": "45a299a04c17e4d970a60d6f5738cd7bd7a56b9dd9c77266d651d8d7b42124db",
+      "docs/samples/items/05-kite/README.ko.md": "6be1e882d574dfc5e81a41a316272569605b59f5e74de63fcf3de35ec2776303",
+      "docs/samples/items/05-kite/README.md": "f932969f8f8dfc999eddef727bb37b21d4990545a062f340d33014440e413369",
+      "docs/samples/items/05-kite/delivery/brand-guide.md": "0fc4110c24574ce8a99ec60da291ed3fb03c68e648ce461e8c4245ff3ac67d06",
+      "docs/samples/items/06-miso/README.ko.md": "3ecf98ddc9d86a932aed55dd1ab87943c168b6f30ff2458dab9d93f84ed60551",
+      "docs/samples/items/06-miso/README.md": "2715a59521970b25d8f76bd4c83e12536660b36a57c5d54441590285c60e4028",
+      "docs/samples/items/06-miso/delivery/brand-guide.md": "5bb3028039e259502187bc2dec43dd156aaee675bdc2b83ef034cd968011c640",
+      "docs/samples/items/07-northline/README.ko.md": "29c861afb72538d32dd65d2f245a3f87bfbde58cfe561146c370f4cbb3a1519b",
+      "docs/samples/items/07-northline/README.md": "945caf4c15760f01ccdec60e01d0a564fe36d37937096fabb9e51a51a2ce988e",
+      "docs/samples/items/07-northline/delivery/brand-guide.md": "8b22fa7003e480d1205f474f479b6b1acf14dc2902d5886aa6cd46e45d74c59a",
+      "docs/samples/items/08-mulgyeol/README.ko.md": "cd715142bee98c9b283a1c3ff8dd8e66843ed28ce9872096624237e136c55691",
+      "docs/samples/items/08-mulgyeol/README.md": "2036c04ea4f900d021468859ed03b50a688e530deb2b58a29b96a432b2dc1675",
+      "docs/samples/items/08-mulgyeol/delivery/brand-guide.md": "ed352474099206976d522c9912b5b5808a1edc7f5694cfd976668a681f70d2b3",
+      "docs/samples/items/09-fern/README.ko.md": "2bce7318a0f04fb093693a8bf3e48283f20055e954068974c0b45315d3394847",
+      "docs/samples/items/09-fern/README.md": "d4f708d90c5c6ed979e8bdd7cac50d84ec63ba7110b7d88c81d15922137618cf",
+      "docs/samples/items/09-fern/delivery/brand-guide.md": "96684e2feb162efbc861c5ecaedd06a18ebdeade3aa5b996e36db3a031f7ee5a",
+      "docs/samples/items/10-nova-notes/README.ko.md": "dbaa306cea17a860e83ee2e5fed2c48a065f0270a08e3e2829f991545612e13d",
+      "docs/samples/items/10-nova-notes/README.md": "556499f96bd1c40c056c4f11968b63c5df74b155101c6adb029dbc4bebd9eeb9",
+      "docs/samples/items/10-nova-notes/delivery/brand-guide.md": "55e0a9308d077919151784f08c6859ec0cfdedb230e6d2ea5bd94f8168c1eba5",
+      "docs/samples/transparency.ko.md": "18edf911484492db34d4264bffd0ea0347e8fbdfd35cb726230d514484fb4d79",
+      "docs/samples/transparency.md": "e26e0613e4ce1a107327b26f5894991dfb1daa47d967aab051f35158b11c2958",
+      "docs/transparency/README.md": "cc897e9c43499a9d1cddd64ed6fdb1b24b9fb5bc0f47c40aa12349f6f99d5e5f",
+      "docs/transparency/delivery/brand-guide.md": "a40e81bb002467e5a4578f12cd09baa00e4d8c3b7c91262563a64cf58cf9f3f0"
+    }
+  },
+  "links": {
+    "scope": "Root READMEs, CHANGELOG, every docs/**/*.md excluding docs/qa/** historical evidence; target anchors checked even outside scope",
+    "markdown_files": 110,
+    "local_targets": 1492,
+    "anchored_targets": 38,
+    "failures": [],
+    "files": [
+      "CHANGELOG.md",
+      "README.ko.md",
+      "README.md",
+      "docs/README.ko.md",
+      "docs/README.md",
+      "docs/app-icons/README.ko.md",
+      "docs/app-icons/README.md",
+      "docs/app-icons/samples/abstract.ko.md",
+      "docs/app-icons/samples/abstract.md",
+      "docs/app-icons/samples/ip-a1.ko.md",
+      "docs/app-icons/samples/ip-a1.md",
+      "docs/app-icons/samples/ip-a2.ko.md",
+      "docs/app-icons/samples/ip-a2.md",
+      "docs/app-icons/samples/ip-b1.ko.md",
+      "docs/app-icons/samples/ip-b1.md",
+      "docs/app-icons/samples/ip-b2.ko.md",
+      "docs/app-icons/samples/ip-b2.md",
+      "docs/app-icons/samples/ip-c1.ko.md",
+      "docs/app-icons/samples/ip-c1.md",
+      "docs/app-icons/samples/ip-c2.ko.md",
+      "docs/app-icons/samples/ip-c2.md",
+      "docs/app-icons/samples/monogram.ko.md",
+      "docs/app-icons/samples/monogram.md",
+      "docs/app-icons/samples/pictogram.ko.md",
+      "docs/app-icons/samples/pictogram.md",
+      "docs/app-icons/samples/pixel-art.ko.md",
+      "docs/app-icons/samples/pixel-art.md",
+      "docs/app-icons/samples/soft-3d.ko.md",
+      "docs/app-icons/samples/soft-3d.md",
+      "docs/archive.md",
+      "docs/brand/2026-identity/delivery/brand-guide.md",
+      "docs/brand/README.ko.md",
+      "docs/brand/README.md",
+      "docs/brand/delivery/brand-guide.md",
+      "docs/brand/legacy.md",
+      "docs/colors/README.ko.md",
+      "docs/colors/README.md",
+      "docs/colors/deliveries/grove/brand-guide.md",
+      "docs/colors/deliveries/northline/brand-guide.md",
+      "docs/colors/deliveries/tide/brand-guide.md",
+      "docs/colors/projects/bamgyeol/README.ko.md",
+      "docs/colors/projects/bamgyeol/README.md",
+      "docs/colors/projects/fieldnote/README.ko.md",
+      "docs/colors/projects/fieldnote/README.md",
+      "docs/colors/projects/grove/README.ko.md",
+      "docs/colors/projects/grove/README.md",
+      "docs/colors/projects/northline/README.ko.md",
+      "docs/colors/projects/northline/README.md",
+      "docs/colors/projects/sunroom/README.ko.md",
+      "docs/colors/projects/sunroom/README.md",
+      "docs/colors/projects/tide/README.ko.md",
+      "docs/colors/projects/tide/README.md",
+      "docs/colors/projects/white-bamgyeol/README.ko.md",
+      "docs/colors/projects/white-bamgyeol/README.md",
+      "docs/diagrams/style-guide.md",
+      "docs/diagrams/validation.md",
+      "docs/gallery-workflow/README.md",
+      "docs/gallery-workflow/states/README.md",
+      "docs/gallery.ko.md",
+      "docs/gallery.md",
+      "docs/installation.ko.md",
+      "docs/installation.md",
+      "docs/planning/gap-analysis.md",
+      "docs/planning/progress.md",
+      "docs/releases.md",
+      "docs/research/app-icon-quality.md",
+      "docs/research/app-icon-tools.md",
+      "docs/research/brandmark-tailor-walkthrough.md",
+      "docs/research/chrome-followup.md",
+      "docs/research/comparison.md",
+      "docs/research/font-tools.md",
+      "docs/research/looka-fiverr-design-walkthrough.md",
+      "docs/research/official-features.md",
+      "docs/research/readme-structure.md",
+      "docs/samples/README.ko.md",
+      "docs/samples/README.md",
+      "docs/samples/items/01-luma/README.ko.md",
+      "docs/samples/items/01-luma/README.md",
+      "docs/samples/items/01-luma/delivery/brand-guide.md",
+      "docs/samples/items/02-loop-lab/README.ko.md",
+      "docs/samples/items/02-loop-lab/README.md",
+      "docs/samples/items/02-loop-lab/delivery/brand-guide.md",
+      "docs/samples/items/03-goyo/README.ko.md",
+      "docs/samples/items/03-goyo/README.md",
+      "docs/samples/items/03-goyo/delivery/brand-guide.md",
+      "docs/samples/items/04-bread-bloom/README.ko.md",
+      "docs/samples/items/04-bread-bloom/README.md",
+      "docs/samples/items/04-bread-bloom/delivery/brand-guide.md",
+      "docs/samples/items/05-kite/README.ko.md",
+      "docs/samples/items/05-kite/README.md",
+      "docs/samples/items/05-kite/delivery/brand-guide.md",
+      "docs/samples/items/06-miso/README.ko.md",
+      "docs/samples/items/06-miso/README.md",
+      "docs/samples/items/06-miso/delivery/brand-guide.md",
+      "docs/samples/items/07-northline/README.ko.md",
+      "docs/samples/items/07-northline/README.md",
+      "docs/samples/items/07-northline/delivery/brand-guide.md",
+      "docs/samples/items/08-mulgyeol/README.ko.md",
+      "docs/samples/items/08-mulgyeol/README.md",
+      "docs/samples/items/08-mulgyeol/delivery/brand-guide.md",
+      "docs/samples/items/09-fern/README.ko.md",
+      "docs/samples/items/09-fern/README.md",
+      "docs/samples/items/09-fern/delivery/brand-guide.md",
+      "docs/samples/items/10-nova-notes/README.ko.md",
+      "docs/samples/items/10-nova-notes/README.md",
+      "docs/samples/items/10-nova-notes/delivery/brand-guide.md",
+      "docs/samples/transparency.ko.md",
+      "docs/samples/transparency.md",
+      "docs/transparency/README.md",
+      "docs/transparency/delivery/brand-guide.md"
+    ],
+    "integration_report_local_targets": 3
+  },
+  "protected_baseline": {
+    "file_count": 942,
+    "aggregate_sha256": "a0168717d782e3389014fa6f125ef1f2582c547973e625fd20b880adb2d9c235",
+    "all_unchanged": true,
+    "scope": "All baseline tracked/untracked files except owned metadata/docs, docs/qa evidence and .omo (not inventoried) "
+  },
+  "native_and_manual": {
+    "native": [
+      {
+        "id": "leaflet-v1",
+        "image_sha256": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+        "prompt_sha256": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "69b256c66654344f3033803c7e41bb02c652dc48286a55f77101bf6772e289b5",
+        "native_file_verified": true
+      },
+      {
+        "id": "drip-v1",
+        "image_sha256": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+        "prompt_sha256": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "7f769e061348b9744de7863df75217735d72948c39865d234cd35c5681fd8acc",
+        "native_file_verified": true
+      },
+      {
+        "id": "relay-v1",
+        "image_sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+        "prompt_sha256": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "dfb3c7e593b9922fc35619dabebc4a2d914c385b68e63339a8a3e48d81cad9bc",
+        "native_file_verified": true
+      },
+      {
+        "id": "relay-v2",
+        "image_sha256": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+        "prompt_sha256": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "d6701cc0dc08d62017c32fdaa04b8519775a215b906e41b7fcc20947392b8769",
+        "native_file_verified": true
+      },
+      {
+        "id": "teum-v1",
+        "image_sha256": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+        "prompt_sha256": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "fd6602245541488d3f6f074049a67b30be3408adf7995e8d1fa84f1c16754bc0",
+        "native_file_verified": true
+      },
+      {
+        "id": "sprig-v1",
+        "image_sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+        "prompt_sha256": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "72842b4624dab149f24339b8f263476d02b30619b42905f26f5c9e1cb0422803",
+        "native_file_verified": true
+      },
+      {
+        "id": "sprig-v2",
+        "image_sha256": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+        "prompt_sha256": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "receipt_sha256": "0a05e4006ed93e9a7917fee68ccf2ec2e43e6ff8bc5ae9093cd40b86c989ea6f",
+        "native_file_verified": true
+      },
+      {
+        "id": "common-v1",
+        "image_sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+        "prompt_sha256": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "receipt_sha256": "2a9263136831c53540d12c50cade009220994a09537600360c8b4781f00c1627",
+        "native_file_verified": true
+      }
+    ],
+    "commands": [
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "show",
+          "--session",
+          "common"
+        ],
+        "exit_code": 0,
+        "state_equal": true
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "show",
+          "--session",
+          "drip"
+        ],
+        "exit_code": 0,
+        "state_equal": true
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "show",
+          "--session",
+          "leaflet"
+        ],
+        "exit_code": 0,
+        "state_equal": true
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "show",
+          "--session",
+          "relay"
+        ],
+        "exit_code": 0,
+        "state_equal": true
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "show",
+          "--session",
+          "sprig"
+        ],
+        "exit_code": 0,
+        "state_equal": true
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "show",
+          "--session",
+          "teum"
+        ],
+        "exit_code": 0,
+        "state_equal": true
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "compare-gallery",
+          "--selection-file",
+          "/tmp/ll-060-integration/workspace/selection-valid.json",
+          "--output",
+          "gallery-valid"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"path\": \"gallery-valid\",\n  \"index_path\": \"gallery-valid/index.html\",\n  \"count\": 8\n}\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "compare-gallery",
+          "--selection-file",
+          "/tmp/ll-060-integration/workspace/selection-malformed.json",
+          "--output",
+          "gallery-malformed"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "{\"error\": \"1 validation error for ComparisonSelection\\nitems.0.revision\\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-1, input_type=int]\\n    For further information visit https://errors.pydantic.dev/2.13/v/greater_than_equal\"}\n"
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "compare-gallery",
+          "--selection-file",
+          "/tmp/ll-060-integration/workspace/selection-stale.json",
+          "--output",
+          "gallery-stale"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "{\"error\": \"stale_revision: Session relay: expected 1; current 2\"}\n"
+      },
+      {
+        "argv": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "/Users/cillian/Documents/Github/Projects/logo-generator/skills/logo-land/scripts/logo_project.py",
+          "--workspace",
+          "/tmp/ll-060-integration/workspace",
+          "compare-gallery",
+          "--selection-file",
+          "/tmp/ll-060-integration/workspace/selection-injection.json",
+          "--output",
+          "gallery-injection"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"path\": \"gallery-injection\",\n  \"index_path\": \"gallery-injection/index.html\",\n  \"count\": 8\n}\n",
+        "stderr": ""
+      }
+    ],
+    "http": [
+      {
+        "argv": [
+          "curl",
+          "-i",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/index.html"
+        ],
+        "exit_code": 0,
+        "headers": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.12.12\r\nDate: Sun, 13 Sep 2026 00:42:44 GMT\r\nContent-type: text/html\r\nContent-Length: 42412\r\nLast-Modified: Sun, 13 Sep 2026 00:34:22 GMT",
+        "body_sha256": "7d90d12a54e901d2b6033a062103870efbd5ab1104108cc563c2b3d69759496c",
+        "identities": [
+          [
+            "leaflet",
+            "v1",
+            null
+          ],
+          [
+            "drip",
+            "v1",
+            null
+          ],
+          [
+            "relay",
+            "v1",
+            null
+          ],
+          [
+            "relay",
+            "v2",
+            null
+          ],
+          [
+            "teum",
+            "v1",
+            null
+          ],
+          [
+            "sprig",
+            "v1",
+            null
+          ],
+          [
+            "sprig",
+            "v2",
+            null
+          ],
+          [
+            "common",
+            "v1",
+            null
+          ]
+        ]
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/001.png"
+        ],
+        "exit_code": 0,
+        "bytes": 1058156,
+        "sha256": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/001.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 1481,
+        "sha256": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/002.png"
+        ],
+        "exit_code": 0,
+        "bytes": 941249,
+        "sha256": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/002.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 1699,
+        "sha256": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/003.png"
+        ],
+        "exit_code": 0,
+        "bytes": 904317,
+        "sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/003.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 1773,
+        "sha256": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/004.png"
+        ],
+        "exit_code": 0,
+        "bytes": 898003,
+        "sha256": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/004.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 2837,
+        "sha256": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/005.png"
+        ],
+        "exit_code": 0,
+        "bytes": 916436,
+        "sha256": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/005.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 1807,
+        "sha256": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/006.png"
+        ],
+        "exit_code": 0,
+        "bytes": 1228498,
+        "sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/006.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 1902,
+        "sha256": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/007.png"
+        ],
+        "exit_code": 0,
+        "bytes": 1225022,
+        "sha256": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/007.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 2998,
+        "sha256": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/images/008.png"
+        ],
+        "exit_code": 0,
+        "bytes": 850531,
+        "sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b"
+      },
+      {
+        "argv": [
+          "curl",
+          "--fail",
+          "--max-time",
+          "20",
+          "http://127.0.0.1:8793/docs/gallery-workflow/comparison/prompts/008.txt"
+        ],
+        "exit_code": 0,
+        "bytes": 1697,
+        "sha256": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a"
+      }
+    ],
+    "private_source_unchanged": true,
+    "public_source_unchanged": true,
+    "fixture_source_unchanged": true,
+    "private_source_hashes": {
+      "sessions/common/artifacts/v1.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "sessions/common/session.json": "0ec76154087b5fd448858098a7645be5c9c9b622e2c7c7fabed0db25bd84822a",
+      "sessions/drip/artifacts/v1.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "sessions/drip/session.json": "0475aaad244e03456c25d50dd4084a185fc26f4df9247649c70c86cfbe2a9782",
+      "sessions/leaflet/artifacts/v1.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "sessions/leaflet/session.json": "8670c3930d32c3685890246af82c2a182b3dc16a642065ad07bf556241d525ce",
+      "sessions/relay/artifacts/v1.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "sessions/relay/artifacts/v2.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "sessions/relay/session.json": "67c25da99638375b6d79690e27c608280490680e454089b1c7aba5212a59193e",
+      "sessions/sprig/artifacts/v1.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "sessions/sprig/artifacts/v2.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "sessions/sprig/session.json": "a70c1fd666f3a68eb74a404af0439c92a04397f1e12a05c895afb30ae6a80e13",
+      "sessions/teum/artifacts/v1.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "sessions/teum/session.json": "e018a889fbcdc1fee123cf4af34c2ba9780954cfbb4780726751e67a8fd57ec9"
+    },
+    "fixture_source_hashes": {
+      "sessions/common/artifacts/v1.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "sessions/common/session.json": "0ec76154087b5fd448858098a7645be5c9c9b622e2c7c7fabed0db25bd84822a",
+      "sessions/drip/artifacts/v1.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "sessions/drip/session.json": "0475aaad244e03456c25d50dd4084a185fc26f4df9247649c70c86cfbe2a9782",
+      "sessions/leaflet/artifacts/v1.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "sessions/leaflet/session.json": "8670c3930d32c3685890246af82c2a182b3dc16a642065ad07bf556241d525ce",
+      "sessions/relay/artifacts/v1.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "sessions/relay/artifacts/v2.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "sessions/relay/session.json": "67c25da99638375b6d79690e27c608280490680e454089b1c7aba5212a59193e",
+      "sessions/sprig/artifacts/v1.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "sessions/sprig/artifacts/v2.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "sessions/sprig/session.json": "a70c1fd666f3a68eb74a404af0439c92a04397f1e12a05c895afb30ae6a80e13",
+      "sessions/teum/artifacts/v1.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "sessions/teum/session.json": "e018a889fbcdc1fee123cf4af34c2ba9780954cfbb4780726751e67a8fd57ec9"
+    },
+    "server_pid": 87897,
+    "server_exit_code": -15,
+    "server_reaped": true,
+    "http_server_log": "127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/index.html HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/001.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/001.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/002.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/002.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/003.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/003.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/004.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/004.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/005.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/005.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/006.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/006.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/007.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/007.txt HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/images/008.png HTTP/1.1\" 200 -\n127.0.0.1 - - [13/Sep/2026 09:42:44] \"GET /docs/gallery-workflow/comparison/prompts/008.txt HTTP/1.1\" 200 -\n"
+  },
+  "cleanup": {
+    "temp_identity": {
+      "device": 16777230,
+      "inode": 35009500
+    },
+    "temp_root": "/tmp/ll-060-integration",
+    "server_pid": 87897,
+    "server_reaped": true,
+    "port_8793_listener": false,
+    "temporary_root_removed": true,
+    "registered_file_count": 72,
+    "registered_directory_count": 22,
+    "inventory_sha256": "14792e094968c465cf4ba4790e121050063bdf1b1c749f6eb5a5a657988bd9b8",
+    "cleanup_method": "Verify each regular file device/inode/hash, unlink that file, remove empty subdirectories then verified root; no force removal or symlink following."
+  },
+  "staged_paths": [],
+  "evidence_reuse": "Full suite binds unchanged source_payload and test_snapshot; adding later QA-only artifacts does not invalidate the run. Any source/test changes require affected checks and revised hash bindings; changes to public docs require renewed relevant target checks.",
+  "final_checks": {
+    "source_test_public_hashes_match": true,
+    "diff_check_exit_code": 0,
+    "staged_paths": [],
+    "server_pid_absent": true,
+    "port_listener_absent": true,
+    "integration_report_local_targets": 3
+  }
+}

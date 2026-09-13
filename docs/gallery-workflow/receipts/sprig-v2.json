@@ -1,0 +1,65 @@
+{
+  "id": "sprig-v2",
+  "session": "sprig",
+  "artifact": "v2",
+  "parent": "v1",
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:30:39.119380+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:30:45.920952+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:31:34.572946+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 2,
+      "at": "2026-09-13T00:32:42.344779+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+  "prompt_revision": 1,
+  "effective_intent": {
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one asymmetric leaf with a recognizable pointed tip and a short stem",
+      "placement": "center",
+      "text": null
+    },
+    "lockup": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": "opaque"
+  },
+  "import_revision": 2,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/sprig-v2.txt",
+  "image_file": "../images/sprig-v2.png",
+  "return": {
+    "sha256": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-9cf2f3ae-fbff-4469-8665-5a2e588a40d3.png"
+  },
+  "observation": "Mixed, mostly unchanged recognition: the lower join is slightly narrower and the stem transition looks cleaner, while the asymmetric leaf tip, jade shading, matte texture and blush field survive. The requested leftward stem bend is not clearly realized; the stem still leans right. At 32px it reads essentially the same recognizable leaf as v1, so no demonstrated small-size recognition gain is claimed.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ],
+  "input_file": "../images/sprig-v1.png",
+  "input_sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222"
+}

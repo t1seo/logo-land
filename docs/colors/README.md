@@ -2,6 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Docs](../README.md) · [Logo Land](../../README.md)
 
+[**See every original in one visual gallery →**](../gallery.md) · Click an image to open its original PNG.
+
 Eight cases show palette choices, lettering and horizontal or stacked layouts across seven projects.
 
 | Sample | Direction | Available result |

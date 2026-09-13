@@ -1,0 +1,64 @@
+{
+  "id": "common-v1",
+  "session": "common",
+  "artifact": "v1",
+  "parent": null,
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:27:01.943919+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:27:55.982494+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:29:23.164011+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 1,
+      "at": "2026-09-13T00:29:57.677573+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a",
+  "prompt_revision": 0,
+  "effective_intent": {
+    "app_icon": null,
+    "lockup": {
+      "layout": "horizontal",
+      "symbol_position": "start",
+      "text_alignment": "start",
+      "typography_style": "Bold calm geometric sans-serif appearance, open counters, gently rounded corners, careful uppercase spacing",
+      "font_reference": null
+    },
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": null
+  },
+  "import_revision": 1,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/common-v1.txt",
+  "image_file": "../images/common-v1.png",
+  "return": {
+    "sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+    "width": 1774,
+    "height": 887,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-ce93e286-fdf1-4ab4-b8f4-fb6918dc6721.png"
+  },
+  "observation": "Original: COMMON is spelled C-O-M-M-O-N in one horizontal line; a separate open U-shaped space and terracotta table sit to its left with a readable gap. Letter counters are open and no slogan is present. The whole lockup stays readable around 128px wide, becomes tiny at 64px and is unsuitable as a 32px favicon; its intended use is a wider header. Subtle surface variation is visible, and no actual font-file usage is established.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ]
+}

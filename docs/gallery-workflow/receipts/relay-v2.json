@@ -1,0 +1,65 @@
+{
+  "id": "relay-v2",
+  "session": "relay",
+  "artifact": "v2",
+  "parent": "v1",
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:30:38.648327+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:30:45.920309+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:31:34.572816+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 2,
+      "at": "2026-09-13T00:32:41.966639+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+  "prompt_revision": 1,
+  "effective_intent": {
+    "app_icon": {
+      "preset": "abstract",
+      "subject": "two broad offset open arcs with a deliberate broad negative-space passage",
+      "placement": "center",
+      "text": null
+    },
+    "lockup": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": "opaque"
+  },
+  "import_revision": 2,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/relay-v2.txt",
+  "image_file": "../images/relay-v2.png",
+  "return": {
+    "sha256": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-d9afe454-b1e0-469b-87c1-f0086d491de9.png"
+  },
+  "observation": "Mixed refinement: the central diagonal passage is visibly wider in the original and at 64/128px; at 32px the difference is modest because v1 was already open. Both pine/terracotta arcs, ivory field and nonliteral gesture survive. The terracotta inner end moved left and its curvature/extent changed beyond a pure end trim, so arc-center preservation is not exact. No added text, arrows or dots; subtle raster texture remains.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ],
+  "input_file": "../images/relay-v1.png",
+  "input_sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58"
+}

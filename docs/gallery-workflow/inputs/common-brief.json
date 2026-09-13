@@ -1,0 +1,40 @@
+{
+  "brand_name": "COMMON",
+  "exact_text": "COMMON",
+  "industry": "Fictional shared workspace",
+  "audience": "People seeking a calm, approachable daily experience",
+  "slogan": "",
+  "logo_type": "combination",
+  "styles": [
+    "simple",
+    "confident",
+    "restrained"
+  ],
+  "palette": [
+    "ivory #F5F0E6 background",
+    "charcoal #292B28 wordmark and primary symbol",
+    "terracotta #BE674B shared-table accent"
+  ],
+  "forbidden": [
+    "extra lettering",
+    "mockups",
+    "ornamental detail"
+  ],
+  "use_cases": [
+    "website header",
+    "printed identity"
+  ],
+  "assumptions": [
+    "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": {
+    "layout": "horizontal",
+    "symbol_position": "start",
+    "text_alignment": "start",
+    "typography_style": "Bold calm geometric sans-serif appearance, open counters, gently rounded corners, careful uppercase spacing",
+    "font_reference": null
+  },
+  "app_icon": null
+}

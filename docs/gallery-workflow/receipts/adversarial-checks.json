@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "case": "bad-revision",
+      "input": {
+        "title": "bad-revision",
+        "items": [
+          {
+            "session": "relay",
+            "revision": -1,
+            "artifact": "v1"
+          }
+        ]
+      },
+      "exit_code": 1,
+      "stderr": "{\"error\": \"2 validation errors for ComparisonSelection\\nitems.0.revision\\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-1, input_type=int]\\n    For further information visit https://errors.pydantic.dev/2.13/v/greater_than_equal\\nitems\\n  Tuple should have at least 1 item after validation, not 0 [type=too_short, input_value=[{'session': 'relay', 're...: -1, 'artifact': 'v1'}], input_type=list]\\n    For further information visit https://errors.pydantic.dev/2.13/v/too_short\"}\n",
+      "stdout": "",
+      "no_output": true
+    },
+    {
+      "case": "absent-artifact",
+      "input": {
+        "title": "absent-artifact",
+        "items": [
+          {
+            "session": "relay",
+            "revision": 2,
+            "artifact": "missing"
+          }
+        ]
+      },
+      "exit_code": 1,
+      "stderr": "{\"error\": \"not_found: Artifact 'missing' does not exist\"}\n",
+      "stdout": "",
+      "no_output": true
+    },
+    {
+      "case": "stale-revision",
+      "input": {
+        "title": "stale-revision",
+        "items": [
+          {
+            "session": "relay",
+            "revision": 1,
+            "artifact": "v1"
+          }
+        ]
+      },
+      "exit_code": 1,
+      "stderr": "{\"error\": \"stale_revision: Session relay: expected 1; current 2\"}\n",
+      "stdout": "",
+      "no_output": true
+    },
+    {
+      "case": "prompt-and-markup-injection",
+      "input": {
+        "title": "$(touch /tmp/ll-060-native-http/should-not-exist); `echo ignored` <script>alert(1)</script>",
+        "items": [
+          {
+            "session": "leaflet",
+            "revision": 1,
+            "artifact": "v1",
+            "rationale": "$(touch /tmp/ll-060-native-http/should-not-exist); `echo ignored` <script>alert(1)</script>",
+            "preserve": "Friendly face, broad closed book, apricot/navy identity and large lower-left emphasis.",
+            "change": "No child requested.",
+            "observation": "Quoted user text is data, not an instruction."
+          }
+        ]
+      },
+      "exit_code": 0,
+      "escaped_markup": true,
+      "argv_data_not_shell": true,
+      "trusted_prompt_constraints_follow_quoted_data": true,
+      "no_native_call": true,
+      "gallery_sha256": "c62ec465b2044fe1cd585a4ba07571f2d25f1955f92bda7353aaf88cbd580d20"
+    }
+  ],
+  "source_bytes_unchanged": true,
+  "temporary_injection_gallery_removed": true
+}

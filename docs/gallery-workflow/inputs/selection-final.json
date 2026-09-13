@@ -1,0 +1,77 @@
+{
+  "title": "Logo Land / six directions, two refinements",
+  "items": [
+    {
+      "session": "leaflet",
+      "revision": 1,
+      "artifact": "v1",
+      "rationale": "A fox holding a book gives the reading companion a warm, visible reading cue.",
+      "preserve": "Friendly face, broad closed book, apricot/navy identity and large lower-left emphasis.",
+      "change": "No child requested.",
+      "observation": "Original: friendly upright fox visibly holds a book; face and ears remain clear, with space at the right. At 32px the book merges with the body and the hands read more clearly than its pages. Cream muzzle, inner ears and tail introduce a third character color family; shading and extra contours exceed the two-color, few-shape intent. No lettering is visible."
+    },
+    {
+      "session": "drip",
+      "revision": 1,
+      "artifact": "v1",
+      "rationale": "A droplet and a broad waterline communicate a simple hydration reminder.",
+      "preserve": "One cobalt droplet, rounded tip and open pale-blue wave-shaped interior.",
+      "change": "No child requested.",
+      "observation": "Original: one centered cobalt droplet surrounds a broad pale-blue water cue; no text, decorative pieces or external shadow. At 32px the drop and wave opening remain legible, while the right interior tip becomes thin. Subtle raster tonal variation remains despite flat-color intent."
+    },
+    {
+      "session": "relay",
+      "revision": 2,
+      "artifact": "v1",
+      "rationale": "Two offset receiving arcs suggest a quiet handoff without a literal arrow.",
+      "preserve": "Exactly two broad offset open arcs, pine upper-left and terracotta lower-right, same arc centers and visual weight, shared curvature and ivory background; no text, arrows, dots or dimensional effects.",
+      "change": "Widen only the central diagonal passage by about one third at its closest clearance: trim back the two inward-facing ends without moving the arc centers or thinning the bodies; keep both arcs open and the overall offset gesture.",
+      "observation": "Original and 32/64/128px: both arcs already read as separate open forms. The central diagonal clearance is the most compact part of the gesture and gives less breathing room than the open outer ends; this is a useful refinement, not a failed initial. Flat-color intent still has subtle raster texture."
+    },
+    {
+      "session": "relay",
+      "revision": 2,
+      "artifact": "v2",
+      "rationale": "Child of relay / v1. Two offset receiving arcs suggest a quiet handoff without a literal arrow.",
+      "preserve": "Exactly two broad offset open arcs, pine upper-left and terracotta lower-right, same arc centers and visual weight, shared curvature and ivory background; no text, arrows, dots or dimensional effects.",
+      "change": "Widen only the central diagonal passage by about one third at its closest clearance: trim back the two inward-facing ends without moving the arc centers or thinning the bodies; keep both arcs open and the overall offset gesture.",
+      "observation": "Mixed refinement: the central diagonal passage is visibly wider in the original and at 64/128px; at 32px the difference is modest because v1 was already open. Both pine/terracotta arcs, ivory field and nonliteral gesture survive. The terracotta inner end moved left and its curvature/extent changed beyond a pure end trim, so arc-center preservation is not exact. No added text, arrows or dots; subtle raster texture remains."
+    },
+    {
+      "session": "teum",
+      "revision": 1,
+      "artifact": "v1",
+      "rationale": "The exact Korean syllable 틈 expresses a small space reserved for a note.",
+      "preserve": "Exact 틈 glyph structure, bold aubergine strokes, open lower counter and butter-yellow background.",
+      "change": "No child requested.",
+      "observation": "Original: the single syllable reads 틈, with distinguishable ㅌ, ㅡ and ㅁ components and no added text. At 64/128px the counter and horizontal spaces are clear; at 32px the narrow horizontal gaps become compressed but remain visible. Rounded heavy lettering is observed appearance, not verified font composition."
+    },
+    {
+      "session": "sprig",
+      "revision": 2,
+      "artifact": "v1",
+      "rationale": "A single tactile leaf connects a gentle daily-care product to plant growth.",
+      "preserve": "One asymmetric jade leaf, pointed upper-right tip, single shallow fold, matte soft material, restrained green shading, near-frontal view and blush background.",
+      "change": "Clarify only the bottom leaf-to-stem contour: narrow the join slightly and give the existing short stem a small leftward bend so its short hooked silhouette stays distinct from the leaf body at 32px; retain the leaf tip, overall scale, material and color identity.",
+      "observation": "Original and 32/64/128px: the pointed asymmetric silhouette already reads as a leaf rather than a heart. At 32px the nearly straight short stem blends into the central fold; making that connection more distinct is an incremental recognition refinement. Fine surface grain is visible in the original despite a simple matte-surface request."
+    },
+    {
+      "session": "sprig",
+      "revision": 2,
+      "artifact": "v2",
+      "rationale": "Child of sprig / v1. A single tactile leaf connects a gentle daily-care product to plant growth.",
+      "preserve": "One asymmetric jade leaf, pointed upper-right tip, single shallow fold, matte soft material, restrained green shading, near-frontal view and blush background.",
+      "change": "Clarify only the bottom leaf-to-stem contour: narrow the join slightly and give the existing short stem a small leftward bend so its short hooked silhouette stays distinct from the leaf body at 32px; retain the leaf tip, overall scale, material and color identity.",
+      "observation": "Mixed, mostly unchanged recognition: the lower join is slightly narrower and the stem transition looks cleaner, while the asymmetric leaf tip, jade shading, matte texture and blush field survive. The requested leftward stem bend is not clearly realized; the stem still leans right. At 32px it reads essentially the same recognizable leaf as v1, so no demonstrated small-size recognition gain is claimed."
+    },
+    {
+      "session": "common",
+      "revision": 1,
+      "artifact": "v1",
+      "rationale": "An open meeting-space symbol and shared table convey an inviting workspace beside a readable name.",
+      "preserve": "Exact COMMON uppercase lettering, left-hand open charcoal U symbol with terracotta table, horizontal lockup and ivory background.",
+      "change": "No child requested.",
+      "observation": "Original: COMMON is spelled C-O-M-M-O-N in one horizontal line; a separate open U-shaped space and terracotta table sit to its left with a readable gap. Letter counters are open and no slogan is present. The whole lockup stays readable around 128px wide, becomes tiny at 64px and is unsuitable as a 32px favicon; its intended use is a wider header. Subtle surface variation is visible, and no actual font-file usage is established."
+    }
+  ]
+}

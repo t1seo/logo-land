@@ -1,0 +1,38 @@
+{
+  "brand_name": "Relay",
+  "exact_text": "",
+  "industry": "Fictional quiet handoff and focus",
+  "audience": "People seeking a calm, approachable daily experience",
+  "slogan": "",
+  "logo_type": "abstract",
+  "styles": [
+    "simple",
+    "confident",
+    "restrained"
+  ],
+  "palette": [
+    "deep pine #234B40 for the leading arc",
+    "muted terracotta #C86F4A for the supporting arc",
+    "solid warm ivory #F1E9D8 for the background"
+  ],
+  "forbidden": [
+    "extra lettering",
+    "mockups",
+    "ornamental detail"
+  ],
+  "use_cases": [
+    "mobile app icon artwork"
+  ],
+  "assumptions": [
+    "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "abstract",
+    "subject": "two broad offset open arcs with a deliberate broad negative-space passage",
+    "placement": "center",
+    "text": null
+  }
+}

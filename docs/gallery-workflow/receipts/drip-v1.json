@@ -1,0 +1,63 @@
+{
+  "id": "drip-v1",
+  "session": "drip",
+  "artifact": "v1",
+  "parent": null,
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:27:00.474993+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:27:55.978538+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:29:23.161715+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 1,
+      "at": "2026-09-13T00:29:53.837533+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+  "prompt_revision": 0,
+  "effective_intent": {
+    "app_icon": {
+      "preset": "pictogram",
+      "subject": "one bold water droplet with one broad interior waterline cutout",
+      "placement": "center",
+      "text": null
+    },
+    "lockup": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": "opaque"
+  },
+  "import_revision": 1,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/drip-v1.txt",
+  "image_file": "../images/drip-v1.png",
+  "return": {
+    "sha256": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-2d940d11-1561-496b-a1b4-4dd0e5cf0332.png"
+  },
+  "observation": "Original: one centered cobalt droplet surrounds a broad pale-blue water cue; no text, decorative pieces or external shadow. At 32px the drop and wave opening remain legible, while the right interior tip becomes thin. Subtle raster tonal variation remains despite flat-color intent.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ]
+}

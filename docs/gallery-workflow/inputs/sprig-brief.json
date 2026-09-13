@@ -1,0 +1,37 @@
+{
+  "brand_name": "Sprig",
+  "exact_text": "",
+  "industry": "Fictional plant care",
+  "audience": "People seeking a calm, approachable daily experience",
+  "slogan": "",
+  "logo_type": "symbol",
+  "styles": [
+    "simple",
+    "confident",
+    "restrained"
+  ],
+  "palette": [
+    "matte jade green #6BA780 leaf with restrained shading in the same green family",
+    "solid pale blush #F0DCD4 background"
+  ],
+  "forbidden": [
+    "extra lettering",
+    "mockups",
+    "ornamental detail"
+  ],
+  "use_cases": [
+    "mobile app icon artwork"
+  ],
+  "assumptions": [
+    "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "soft_3d",
+    "subject": "one asymmetric leaf with a recognizable pointed tip and a short stem",
+    "placement": "center",
+    "text": null
+  }
+}

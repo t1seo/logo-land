@@ -1,0 +1,19 @@
+{
+  "temporary_directory": "/tmp/ll-060-native-http",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8791,
+    "pid": 72733,
+    "state": "stopped",
+    "started_at": "2026-09-13T00:34:02.327239+00:00",
+    "stopped_at": "2026-09-13T00:36:42.112149+00:00"
+  },
+  "teardown": "Stop only recorded HTTP PID, confirm port 8791 released, remove owned /tmp/ll-060-native-http after preserving receipts. No temporary scripts planned.",
+  "retained": [
+    "output/gallery-workflow-native (resumable project)",
+    "docs/gallery-workflow (public deliverables)"
+  ],
+  "temporary_directory_removed": true,
+  "port_released": true,
+  "qa_injection_gallery_removed": true
+}

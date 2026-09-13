@@ -39,6 +39,19 @@ For an edit, inspect and supply the exact selected image. Omitted lockup intent 
 
 For “make it stacked,” change layout and only the necessary arrangement while preserving symbol identity, exact lettering/slogan, palette, typeface appearance and requested background. For “rounder lettering,” change the typography appearance while keeping layout/position and other identity features. Geometry-only and color-only edits retain the parent's lockup. Neither a newly active palette nor the original brief should reset a parent's revised typography.
 
+Keep the selection reason and invariants beside the source session/artifact, following
+[comparison-workflow.md](comparison-workflow.md). For example, “keep the open symbol,
+exact `틈` text and green; increase only the symbol-to-text gap.” Reopen the original and
+record these as quoted `changes`; inspect each invariant again on the child. A null
+legacy lockup means unknown structured intent, even if the initial brief has a lockup.
+It does not request deletion of visible lettering or license a new inferred layout.
+
+Turning an icon parent into a symbol-plus-text brand logo is not an implicit lockup
+edit: icon intent is inherited and conflicts with an explicit lockup. Plan that as a
+separate future conversion workflow with a suitable source and explicit intent. Actual
+font-file composition, editable lettering and exact symbol preservation also remain
+future capabilities; a header preview does not implement them.
+
 Horizontal and stacked outputs are separate native edits only when requested or needed for the agreed deliverables. Do not generate all combinations of layout, color and typeface by default. Keep each actual parent, final prompt and independent artifact ID; label a comparison sheet as a presentation.
 
 ## Verify text and claims

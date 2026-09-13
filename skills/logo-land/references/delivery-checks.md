@@ -36,6 +36,15 @@ Record these review fields based on what was observed:
 
 Use false for a failed check and fix the image through the image tool. Never run a default all-true review to unlock export. The JSON above illustrates the schema, not a ready-made approval.
 
+For a refinement, read the saved source session/artifact and keep/change notes from
+[comparison-workflow.md](comparison-workflow.md), then open parent and child. Record
+the observed result in `notes`: the requested change, which text/color/shape features
+survived, and any drift at the intended use size. Use improved/unchanged/worse only
+with a concrete observation; a preferred appearance is separate from file and color
+conformance. Abstract gaps and soft-3D subject recognition deserve an explicit check
+when they are the chosen identifying feature. Unknown legacy lockup metadata is not
+proof of a missing or incorrect visible layout.
+
 For a combination logo, compare the selected artifact's lockup with the actual image: horizontal/stacked arrangement, symbol before/after the text, alignment, clear space and requested typography character. Check the exact English or Hangul string and slogan, including spacing and punctuation. Confirm role placement visually, such as the fixed green in the symbol or white in the lettering. A histogram cannot prove those placements. A requested font family remains a visual reference; generated raster lettering does not identify an installed or licensed font file.
 
 ## Color evidence and export policy
@@ -85,6 +94,13 @@ New exports use manifest schema 2. Alongside the existing source/brief/backgroun
 The ZIP still contains exactly `logo.png`, `manifest.json` and `brand-guide.md`. Verify the PNG hash against the selected original and the ZIP entry; earlier exports remain unchanged. The guide must distinguish historical brief text, selected palette intent and current measured evidence, including ROI/profile limitations. Do not replace the master with a preview.
 
 `color-gallery` publishes a separate portable HTML directory with only explicitly selected PNGs, palette/report information and appearance references. Check light/dark backgrounds and small/large views, particularly for white transparent lettering. Gallery creation must leave state, selection and PNG hashes unchanged; avoid full prompts, absolute developer paths or private reference images in public output. Gallery success is not export approval or evidence that a native image call occurred. The [project file guide](project-files.md) contains runnable commands and JSON examples.
+
+`compare-gallery` is a separate creative comparison of explicitly listed brand/icon
+originals and includes their exact prompts and decision notes. Check those texts before
+sharing. Its manifest identifies a historical source revision; re-read current state
+before resuming. A click, copied note or favorable observation never sets visual-review
+booleans, selection or export approval. Header, home-screen and favicon contexts are
+illustrations unless actual application files were separately produced and verified.
 
 ## Final handoff
 

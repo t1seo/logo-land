@@ -71,9 +71,9 @@ codex plugin add --help
 
 ## Source, release and installed versions
 
-This checkout's plugin manifest, Python project and locked helper package are **0.5.0 development**. The latest published release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1); v0.4.0 remains an unpublished draft. The commands above use the current checkout, not a promised released 0.5.0 package.
+This checkout's plugin manifest, Python project and locked helper package are **0.6.0 development**. The latest published release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1); v0.4.0 remains an unpublished draft. The commands above use the current checkout, not a promised released 0.6.0 package.
 
-An existing installed cache may contain an older version until refreshed. A local version such as `0.5.0+codex.<timestamp>` identifies a cache refresh, separately from source version `0.5.0` and published release `0.3.1`. After an update and reinstall, start a new conversation to load the changed skill. GitHub source archives are repository snapshots, not plugin installation packages. See [release guidance](releases.md) and the [changelog](../CHANGELOG.md).
+An existing installed cache may contain an older version until refreshed. A local version such as `0.6.0+codex.<timestamp>` identifies a cache refresh, separately from source version `0.6.0` and published release `0.3.1`. After an update and reinstall, start a new conversation to load the changed skill. GitHub source archives are repository snapshots, not plugin installation packages. See [release guidance](releases.md) and the [changelog](../CHANGELOG.md).
 
 ## Project files
 

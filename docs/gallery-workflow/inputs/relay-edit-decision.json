@@ -1,0 +1,9 @@
+{
+  "session": "relay",
+  "revision": 1,
+  "artifact": "v1",
+  "rationale": "Two offset receiving arcs suggest a quiet handoff without a literal arrow.",
+  "preserve": "Exactly two broad offset open arcs, pine upper-left and terracotta lower-right, same arc centers and visual weight, shared curvature and ivory background; no text, arrows, dots or dimensional effects.",
+  "change": "Widen only the central diagonal passage by about one third at its closest clearance: trim back the two inward-facing ends without moving the arc centers or thinning the bodies; keep both arcs open and the overall offset gesture.",
+  "observation": "Original and 32/64/128px: both arcs already read as separate open forms. The central diagonal clearance is the most compact part of the gesture and gives less breathing room than the open outer ends; this is a useful refinement, not a failed initial. Flat-color intent still has subtle raster texture."
+}

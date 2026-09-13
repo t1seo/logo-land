@@ -2,6 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logo Land](../../README.ko.md)
 
+[**전체 원본을 한 페이지에서 보기 →**](../gallery.ko.md) · 이미지를 누르면 PNG 원본이 바로 열립니다.
+
 따뜻한 아이보리 바탕에 열린 차콜색 프레임과 작은 테라코타색 사각형을 정확한 이름 LOGO LAND 옆에 배치했습니다.
 
 ![Logo Land 열린 프레임 심볼과 워드마크](../../assets/logo-land-studio.png)

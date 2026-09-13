@@ -1,0 +1,37 @@
+{
+  "brand_name": "Teum",
+  "exact_text": "틈",
+  "industry": "Fictional notes app",
+  "audience": "People seeking a calm, approachable daily experience",
+  "slogan": "",
+  "logo_type": "monogram",
+  "styles": [
+    "simple",
+    "confident",
+    "restrained"
+  ],
+  "palette": [
+    "deep aubergine #44344E for exact lettering",
+    "solid warm butter #F4D989 for the background"
+  ],
+  "forbidden": [
+    "extra lettering",
+    "mockups",
+    "ornamental detail"
+  ],
+  "use_cases": [
+    "mobile app icon artwork"
+  ],
+  "assumptions": [
+    "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "monogram",
+    "subject": "bold simple Korean lettering with intentional clear counters",
+    "placement": "center",
+    "text": "틈"
+  }
+}

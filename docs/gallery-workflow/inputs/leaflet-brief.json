@@ -1,0 +1,38 @@
+{
+  "brand_name": "Leaflet",
+  "exact_text": "",
+  "industry": "Fictional reading companion",
+  "audience": "People seeking a calm, approachable daily experience",
+  "slogan": "",
+  "logo_type": "mascot",
+  "styles": [
+    "simple",
+    "confident",
+    "restrained"
+  ],
+  "palette": [
+    "warm apricot #E8A04D for fox body and book cover",
+    "deep navy #203244 for facial features, book spine and sparse accents",
+    "solid contrasting pale blue #A8C7D3 filling the entire square"
+  ],
+  "forbidden": [
+    "extra lettering",
+    "mockups",
+    "ornamental detail"
+  ],
+  "use_cases": [
+    "mobile app icon artwork"
+  ],
+  "assumptions": [
+    "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "ip_mascot",
+    "subject": "a simple friendly upright fox holding one broad closed book",
+    "placement": "lower_left",
+    "text": null
+  }
+}

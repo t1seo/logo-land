@@ -1,0 +1,98 @@
+{
+  "restored_show_checks": [
+    {
+      "session": "common",
+      "revision": 1,
+      "show_exit_code": 0,
+      "state_equal": true,
+      "image_and_prompt_bindings_match": true
+    },
+    {
+      "session": "drip",
+      "revision": 1,
+      "show_exit_code": 0,
+      "state_equal": true,
+      "image_and_prompt_bindings_match": true
+    },
+    {
+      "session": "leaflet",
+      "revision": 1,
+      "show_exit_code": 0,
+      "state_equal": true,
+      "image_and_prompt_bindings_match": true
+    },
+    {
+      "session": "relay",
+      "revision": 2,
+      "show_exit_code": 0,
+      "state_equal": true,
+      "image_and_prompt_bindings_match": true
+    },
+    {
+      "session": "sprig",
+      "revision": 2,
+      "show_exit_code": 0,
+      "state_equal": true,
+      "image_and_prompt_bindings_match": true
+    },
+    {
+      "session": "teum",
+      "revision": 1,
+      "show_exit_code": 0,
+      "state_equal": true,
+      "image_and_prompt_bindings_match": true
+    }
+  ],
+  "original_native_checks": [
+    {
+      "id": "leaflet-v1",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "drip-v1",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "relay-v1",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "relay-v2",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "teum-v1",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "sprig-v1",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "sprig-v2",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    },
+    {
+      "id": "common-v1",
+      "native_source_exact": true,
+      "tool_arguments_match_prompt": true
+    }
+  ],
+  "baseline_file_count": 223,
+  "baseline_files_changed": [
+    "docs/app-icons/README.md",
+    "docs/app-icons/README.ko.md",
+    "docs/samples/README.md",
+    "docs/samples/README.ko.md"
+  ],
+  "older_images_and_prompts_unchanged": true,
+  "source_changes_since_baseline_by_other_workers": [],
+  "private_absolute_paths_found": []
+}

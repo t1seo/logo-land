@@ -1,0 +1,93 @@
+{
+  "format": "portable-session-snapshot",
+  "state": {
+    "schema_version": 2,
+    "id": "common",
+    "revision": 1,
+    "created_at": "2026-09-13T00:27:01.729768Z",
+    "updated_at": "2026-09-13T00:29:57.638463Z",
+    "brief": {
+      "brand_name": "COMMON",
+      "exact_text": "COMMON",
+      "industry": "Fictional shared workspace",
+      "audience": "People seeking a calm, approachable daily experience",
+      "slogan": "",
+      "logo_type": "combination",
+      "styles": [
+        "simple",
+        "confident",
+        "restrained"
+      ],
+      "palette": [
+        "ivory #F5F0E6 background",
+        "charcoal #292B28 wordmark and primary symbol",
+        "terracotta #BE674B shared-table accent"
+      ],
+      "forbidden": [
+        "extra lettering",
+        "mockups",
+        "ornamental detail"
+      ],
+      "use_cases": [
+        "website header",
+        "printed identity"
+      ],
+      "assumptions": [
+        "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+      ],
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "Bold calm geometric sans-serif appearance, open counters, gently rounded corners, careful uppercase spacing",
+        "font_reference": null
+      },
+      "background": "opaque",
+      "concept_count": 1
+    },
+    "artifacts": [
+      {
+        "id": "v1",
+        "path": "artifacts/v1.png",
+        "sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+        "image": {
+          "format": "PNG",
+          "width": 1774,
+          "height": 887,
+          "alpha_min": 255,
+          "alpha_max": 255,
+          "transparent_pixels": 0,
+          "visible_pixels": 1573538
+        },
+        "prompt": "Create one combination logo for COMMON. Industry: Fictional shared workspace. Audience: People seeking a calm, approachable daily experience.\nExact text (copy verbatim, no other words): 'COMMON'. Exact slogan: ''.\nStyles: simple, confident, restrained. Original brief palette context: ivory #F5F0E6 background, charcoal #292B28 wordmark and primary symbol, terracotta #BE674B shared-table accent.\nAvoid: extra lettering, mockups, ornamental detail. Use cases: website header, printed identity.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A distinct open shared-table symbol sits to the left of the exact uppercase COMMON wordmark: a broad charcoal open U-shaped meeting space with a short terracotta horizontal table inside, a generous entrance and no chairs or people; horizontal optical alignment and a clear symbol-to-text gap convey an inviting place to work together.. Assumptions: Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim.\nEffective symbol-plus-text lockup: {\"layout\":\"horizontal\",\"symbol_position\":\"start\",\"text_alignment\":\"start\",\"typography_style\":\"Bold calm geometric sans-serif appearance, open counters, gently rounded corners, careful uppercase spacing\",\"font_reference\":null}. Horizontal start/end means symbol left/right of text; stacked start/end means symbol above/below text. Preserve the exact text and slogan. Font reference is a requested visual direction, not proof of an installed or licensed font file.",
+        "parent_id": null,
+        "created_at": "2026-09-13T00:29:57.638144Z",
+        "requested_background": "opaque",
+        "palette_id": null,
+        "lockup": {
+          "layout": "horizontal",
+          "symbol_position": "start",
+          "text_alignment": "start",
+          "typography_style": "Bold calm geometric sans-serif appearance, open counters, gently rounded corners, careful uppercase spacing",
+          "font_reference": null
+        },
+        "review": null,
+        "reviewed_at": null
+      }
+    ],
+    "selected_id": null,
+    "failures": [],
+    "exports": [],
+    "palettes": [],
+    "active_palette_id": null,
+    "references": [],
+    "color_reports": []
+  },
+  "artifact_files": {
+    "v1": "../images/common-v1.png"
+  },
+  "prompt_files": {
+    "v1": "../prompts/common-v1.txt"
+  },
+  "restore_note": "state is the unmodified helper show response. Restore each artifact_files entry to state.artifacts[].path beneath this session directory; place session.json there before using the helper. Bindings resolve relative to this snapshot."
+}

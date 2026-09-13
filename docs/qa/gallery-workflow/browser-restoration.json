@@ -1,0 +1,830 @@
+{
+  "taskId": "task_b270364645e6",
+  "dispatchId": "ctx_f303d0f5e223",
+  "recordedAt": "2026-09-13T00:56:24.626Z",
+  "status": "passed",
+  "baseline": {
+    "createdAt": "2026-09-13T00:53:45.949Z",
+    "tempIdentity": {
+      "dev": 16777230,
+      "ino": 35034033
+    },
+    "source": {
+      "sessions/common/artifacts/v1.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "sessions/common/session.json": "0ec76154087b5fd448858098a7645be5c9c9b622e2c7c7fabed0db25bd84822a",
+      "sessions/drip/artifacts/v1.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "sessions/drip/session.json": "0475aaad244e03456c25d50dd4084a185fc26f4df9247649c70c86cfbe2a9782",
+      "sessions/leaflet/artifacts/v1.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "sessions/leaflet/session.json": "8670c3930d32c3685890246af82c2a182b3dc16a642065ad07bf556241d525ce",
+      "sessions/relay/artifacts/v1.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "sessions/relay/artifacts/v2.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "sessions/relay/session.json": "67c25da99638375b6d79690e27c608280490680e454089b1c7aba5212a59193e",
+      "sessions/sprig/artifacts/v1.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "sessions/sprig/artifacts/v2.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "sessions/sprig/session.json": "a70c1fd666f3a68eb74a404af0439c92a04397f1e12a05c895afb30ae6a80e13",
+      "sessions/teum/artifacts/v1.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "sessions/teum/session.json": "e018a889fbcdc1fee123cf4af34c2ba9780954cfbb4780726751e67a8fd57ec9"
+    },
+    "skill": {
+      "agents/openai.yaml": "26e73fa8f7fa5c8296639b69e2eab5feaf014b2ad73f54581278c2230a659a74",
+      "assets/app-icon-gallery.template.html": "960c682d45807c8a7f1a0dfb5f031f6a17f3fb6d4ca0c84501514375bd8cb9dd",
+      "assets/app-icon.example.json": "2477e1384ba781a44a0116f4a86c71a85cdea3e4030ae6c388e28c1779685fbc",
+      "assets/brief.example.json": "2841dbbba9e3d94759c1a1b5ccc2885b8a94a87e7ede81f0786d0b7d31155342",
+      "assets/color-gallery.template.html": "65c0745614f866f670a94068503552c9982ef48c1a6697f05943ac999cea6773",
+      "assets/comparison-gallery.template.html": "6dc83dcf23970c27c544b21806544a488cdef34338dd965d9e4a9bcbbc929849",
+      "assets/ip-as-logo.LICENSE": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "references/app-icons.md": "4ef1a88ffe676208180a0ce944c6e9f5e0d20ede8d1cc0ccac778ceb31ef81bc",
+      "references/color-providers.md": "285199155af770b052e1d7aa2ec92bb687320d1f5aebe6008eadc3ca0e61af8f",
+      "references/color-workflow.md": "3f2f3d941fc5f72f64b0900059477e3f1fb2748b2bcdd4fdea24c1361f897b06",
+      "references/comparison-workflow.md": "22746583614cfd337ce5ff062d038c3b1692b080b87e92860bda6f0fdb2cab4b",
+      "references/delivery-checks.md": "27c65a1a72b7d9a86be0153fbda57ec11bca17d4d02b0b5ef7dce52d446498dc",
+      "references/ip-mascot.md": "08f93b78555246ea3b71a11d4879a53790808df4cab400bd5ed84b6d409e4850",
+      "references/logo-directions.md": "06eaf7c2e48bc93743f2dd76915105687bacc5a25a810932d5514bcf771049bc",
+      "references/native-image.md": "34056909420a4db68be7d00b09a18aabd450221529f814d73b7642369f096c3f",
+      "references/project-files.md": "1b3944bbfb4a808ccdc06728ab2c84b6991efd1bc7e261e2e8456d83285b43c3",
+      "references/typography.md": "82fe1465f75faa7d0b91ab4069a3aab8d36b21b15fcdf627133eb8daefacff13",
+      "scripts/logo_helper/__init__.py": "23c8d2ce225a99efe9832a41c20b46d139f5b31049dd641a04e13ff83b84f4d0",
+      "scripts/logo_helper/app_icon_cli.py": "e09075977adfd8c0b98202242ab3759fb1145227df987aeaac33c31896d35ada",
+      "scripts/logo_helper/app_icon_gallery.py": "71a2a7873af195cdeefe312f6d0462552fd1bb8856c117b5a20349649371e43f",
+      "scripts/logo_helper/app_icon_guide.py": "c063bf22bbcfa82c982caa2c066db2b069b34f8d633ba3f6afdb1e9d4fd17012",
+      "scripts/logo_helper/app_icon_models.py": "21ba823e490677f5e70ce9d05c782b1fa12884f405c4ba4601fd052bb1209c2d",
+      "scripts/logo_helper/app_icon_presets.py": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "scripts/logo_helper/app_icon_prompts.py": "d59ff54a2c77a368390be832bda5643af92dbab75d1a6431838687397e847080",
+      "scripts/logo_helper/app_icon_publish.py": "fb4dea5c484a4c617e898626d324a1aed5335e7b853299f45827d15d8a652ae5",
+      "scripts/logo_helper/artifact_models.py": "f35d32f2da234e92dd5144d48eb62fbddfac3039dd079b4d0a5d35eccd3231f0",
+      "scripts/logo_helper/brief_models.py": "caea33b207c181391fde6d9bc4fc7826335a8d2eb47f7124b51e5fbb18d16b12",
+      "scripts/logo_helper/cli_options.py": "e3f697458b482079c27b446cbb56aef4c6cf38ce3cd49ca94f1600ab76f4c8d3",
+      "scripts/logo_helper/color_analysis.py": "cfcef1c51c0f7a4067b7e9317df5b6f4acdb5312036e37516c9aab16f2d0ba30",
+      "scripts/logo_helper/color_cli.py": "d731f309d0dc877eb9f0ec71bf733c2461cda8757f9f15ac38fe7d0d7b9e3809",
+      "scripts/logo_helper/color_delivery.py": "7e7f0a4745def5b15ad08699dc57b113eca97eeeaa9b2aefaba35ef138d98f55",
+      "scripts/logo_helper/color_gallery_cards.py": "253ba8f0a439a4bb8129d2cb43463d5897df2d42cc9528ee627f8c709d669a53",
+      "scripts/logo_helper/color_gallery_data.py": "81dbf0876dc5cdc6e21493e80098489f54bc8e39dcb13bd3e61a38c5b998a030",
+      "scripts/logo_helper/color_gallery.py": "05076788df31137f3ca6576a58346533130f2dd710779e35eb9311370ae6b56d",
+      "scripts/logo_helper/color_guide.py": "34cdb38dddc6b398376fe5b492eef1799052b0b82a47bb48f3f4b801ea6f424a",
+      "scripts/logo_helper/color_math.py": "aa677d064632e48a9d108ba5d0b818c57f589ba1bcb61406261d8502cdc86288",
+      "scripts/logo_helper/color_models.py": "d3b4093611e2aa2d095c6c4f9027e65c794ef8b836c89d4a24c554f4a720f547",
+      "scripts/logo_helper/color_profiles.py": "055a299c1bd6738add1b44ad8977ffb48b9a3310bb9387665daa6efe04ca34df",
+      "scripts/logo_helper/color_reports.py": "95cf4f2605c8ca248a489d4e53fafee9f18b663d6effd38f3b5e5d080dd5596d",
+      "scripts/logo_helper/color_sampling.py": "71946e9eda8b329b5cafffc0163161abd2b17ddab3c92184bc5d4ba99ad94330",
+      "scripts/logo_helper/color_workflow.py": "7ef6e5c33c7f56d2320a643f5cd99428555b9eb4fa24fe65857b96147379cc42",
+      "scripts/logo_helper/comparison_cards.py": "8f4e45b7296fb60c13e73130fbacdbf52fe8ccb483346b89043c29d11c497af8",
+      "scripts/logo_helper/comparison_cli.py": "fa8a22ccb2dd1702fb4e81c32fb1faaea7e465bca97390beed48a64b6fc0b592",
+      "scripts/logo_helper/comparison_gallery.py": "17a81c7eb7488f500babe27eb653948ea88ca1c46467cfb81d3e55db141e2879",
+      "scripts/logo_helper/comparison_models.py": "016c802eef0f06c0bdc9040427b53d480799a3f150f336b346396a3167ef1336",
+      "scripts/logo_helper/delivery.py": "ed3713421b316e43568641451f41fc5a71332608acc8b8b2bf6c1db6f4469859",
+      "scripts/logo_helper/export_bundle.py": "33de44fb7677569d65c7b883c6d5b098c998e19bd9f731a6138ee9c09a1de612",
+      "scripts/logo_helper/images.py": "bd3d03ce8ab8fc7c6767da8fe8269e688ee63f16e14f04bf21d0e9d631a15f0a",
+      "scripts/logo_helper/import_reports.py": "69ffb9f6a9dbe5ac149fb9113f36ff63067cbad244c8c3a48af919e30223691c",
+      "scripts/logo_helper/intent.py": "9a8ece8285703df5fb00585ecc33990089378f84bd2aaadae31448fd7501d271",
+      "scripts/logo_helper/legacy_state.py": "09119091b50d9a4b8d9e4782636a8cddbd93b0d0fd197c774c129d2bc8ac3c5d",
+      "scripts/logo_helper/lockup_models.py": "0c0fb574ca59d4e6bb72ef26df4dcc36e013e354901840f4bf7cb30291c035cc",
+      "scripts/logo_helper/model_base.py": "0051b0fc239944f0143da201848f98d8c414c9d2d520f5de4f4718c88756c49e",
+      "scripts/logo_helper/models.py": "dc28d55027542510328ebdf80a820ed3456e6f6cfbd00cae102395026a0079ca",
+      "scripts/logo_helper/palette_proposals.py": "6968ca4356be8197ffdd68500ea2f53c72dff935c743e57305bb7ae4e10aca4b",
+      "scripts/logo_helper/palettes.py": "6c60dffcca290bd390e1259600cdd91e190589995af6c42152ba42f719d77e08",
+      "scripts/logo_helper/prompts.py": "340974db2816c5f0deecc766cfcabd8036d8e59e2608be5f1688657b57967a1b",
+      "scripts/logo_helper/reference_decode.py": "b55055f40a5fee8a01943acd082bfe8b7a521b61bb1773f36a208f5e5f9c453f",
+      "scripts/logo_helper/reference_evidence.py": "ab80fa6b9a19f77b525566c9f4b8129720dee403daea9994155e0888e2d0d1f4",
+      "scripts/logo_helper/reference_models.py": "87da637a01602f5dd0655ff6e8bfefae9ca2c609513dcbfe43a9f5e07553064e",
+      "scripts/logo_helper/references.py": "a02f6d9bf3775820bc4d394d539186c64da7ce96cb00a359e34e266acec4d3b7",
+      "scripts/logo_helper/session_models.py": "3d5917431dd8c8f7f43c2acc91dd845682b0d8483e1de835ba5794eda3dcdaea",
+      "scripts/logo_helper/storage.py": "e0a9bd8c18458beeda1a0ad9479afbec68ac6c4690b42f795dc3cdbd813b42a6",
+      "scripts/logo_helper/workflow.py": "a82d1cd1c02a16b4c202c1a01d08a6a5e44f18491d297bc01857c663dbbbd6d6",
+      "scripts/logo_project.py": "6e94ce899ceb1f7f96e3cf8ce4c66a5f08cb00b138d553cc5a482b75ad584e73",
+      "SKILL.md": "78af9916d1a7d36759a24b1a49a89f0465fd4f7708355126618926d1d6901870"
+    },
+    "publication": {
+      "images/001.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "images/002.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "images/003.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "images/004.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "images/005.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "images/006.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "images/007.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "images/008.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "index.html": "7d90d12a54e901d2b6033a062103870efbd5ab1104108cc563c2b3d69759496c",
+      "manifest.json": "c589bafbbbb140d66421410db05f524970c8d553c3b84726e4f696f023f6fa4f",
+      "prompts/001.txt": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+      "prompts/002.txt": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+      "prompts/003.txt": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+      "prompts/004.txt": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+      "prompts/005.txt": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+      "prompts/006.txt": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+      "prompts/007.txt": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+      "prompts/008.txt": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a"
+    }
+  },
+  "pin": {
+    "command": [
+      "node",
+      "--test",
+      "--test-name-pattern=PIN:",
+      "tests/comparison_browser_restoration.test.mjs"
+    ],
+    "exitCode": 0,
+    "stdout": "✔ PIN: initialized controls filter kind and style, count empty matches, and reset after defaults (3.322333ms)\n✔ PIN: values restored before script evaluation initialize a consistent view (0.466792ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 55.293166\n",
+    "stderr": ""
+  },
+  "red": {
+    "command": [
+      "node",
+      "--test",
+      "tests/comparison_browser_restoration.test.mjs"
+    ],
+    "exitCode": 1,
+    "stdout": "✔ PIN: initialized controls filter kind and style, count empty matches, and reset after defaults (2.102ms)\n✔ PIN: values restored before script evaluation initialize a consistent view (0.450958ms)\n✖ Back restores Brand logo after initialization; pageshow persisted=false keeps one card (1.318959ms)\n✖ Back restores Brand logo after initialization; pageshow persisted=true keeps one card (0.534042ms)\n✖ Two history cycles restore kind/style intersection, empty state, count, and preview settings (0.485708ms)\n✖ History restoration updates every preview and surround without changing selected values (0.766583ms)\nℹ tests 6\nℹ suites 0\nℹ pass 2\nℹ fail 4\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 52.113084\n\n✖ failing tests:\n\ntest at tests/comparison_browser_restoration.test.mjs:125:3\n✖ Back restores Brand logo after initialization; pageshow persisted=false keeps one card (1.318959ms)\n  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  + actual - expected\n  \n  + '8 of 8 candidates'\n  - '1 of 8 candidates'\n  \n      at expectView (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:95:10)\n      at TestContext.<anonymous> (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:131:5)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)\n      at Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: '8 of 8 candidates',\n    expected: '1 of 8 candidates',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n\ntest at tests/comparison_browser_restoration.test.mjs:125:3\n✖ Back restores Brand logo after initialization; pageshow persisted=true keeps one card (0.534042ms)\n  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  + actual - expected\n  \n  + '8 of 8 candidates'\n  - '1 of 8 candidates'\n  \n      at expectView (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:95:10)\n      at TestContext.<anonymous> (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:131:5)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)\n      at Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: '8 of 8 candidates',\n    expected: '1 of 8 candidates',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n\ntest at tests/comparison_browser_restoration.test.mjs:135:1\n✖ Two history cycles restore kind/style intersection, empty state, count, and preview settings (0.485708ms)\n  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  + actual - expected\n  \n  + '8 of 8 candidates'\n  - '0 of 8 candidates'\n  \n      at expectView (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:95:10)\n      at TestContext.<anonymous> (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:141:5)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)\n      at Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: '8 of 8 candidates',\n    expected: '0 of 8 candidates',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n\ntest at tests/comparison_browser_restoration.test.mjs:151:1\n✖ History restoration updates every preview and surround without changing selected values (0.766583ms)\n  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  \n  'light' !== 'dark'\n  \n      at expectView (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:99:10)\n      at TestContext.<anonymous> (file:///Users/cillian/Documents/Github/Projects/logo-generator/tests/comparison_browser_restoration.test.mjs:158:7)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)\n      at Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: 'light',\n    expected: 'dark',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n",
+    "stderr": ""
+  },
+  "green": {
+    "command": [
+      "node",
+      "--test",
+      "tests/comparison_browser_restoration.test.mjs"
+    ],
+    "exitCode": 0,
+    "stdout": "✔ PIN: initialized controls filter kind and style, count empty matches, and reset after defaults (2.113583ms)\n✔ PIN: values restored before script evaluation initialize a consistent view (0.458667ms)\n✔ Back restores Brand logo after initialization; pageshow persisted=false keeps one card (0.475709ms)\n✔ Back restores Brand logo after initialization; pageshow persisted=true keeps one card (0.417875ms)\n✔ Two history cycles restore kind/style intersection, empty state, count, and preview settings (0.470833ms)\n✔ History restoration updates every preview and surround without changing selected values (0.777958ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 51.60475\n",
+    "stderr": ""
+  },
+  "syntax": {
+    "command": [
+      "node",
+      "--check",
+      "tests/comparison_browser_restoration.test.mjs"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "targeted": {
+    "command": [
+      "uv",
+      "run",
+      "pytest",
+      "-q",
+      "tests/test_comparison_baseline.py",
+      "tests/test_comparison_cli.py",
+      "tests/test_comparison_filesystem.py",
+      "tests/test_comparison_inputs.py",
+      "tests/test_comparison_limits.py",
+      "tests/test_comparison_markup.py",
+      "tests/test_comparison_publication.py"
+    ],
+    "exitCode": 0,
+    "stdout": "..........................................................               [100%]\n58 passed in 4.70s\n",
+    "stderr": ""
+  },
+  "toggle": [
+    {
+      "fireChange": false,
+      "kind": "brand",
+      "count": "8 of 8 candidates",
+      "visible": 8
+    },
+    {
+      "fireChange": true,
+      "kind": "brand",
+      "count": "1 of 8 candidates",
+      "visible": 1
+    },
+    {
+      "fireChange": false,
+      "kind": "brand",
+      "count": "8 of 8 candidates",
+      "visible": 8
+    }
+  ],
+  "helper": {
+    "command": [
+      "uv",
+      "run",
+      "python",
+      "skills/logo-land/scripts/logo_project.py",
+      "--workspace",
+      "/tmp/ll-060-browser-fix",
+      "compare-gallery",
+      "--selection-file",
+      "docs/gallery-workflow/inputs/selection-final.json",
+      "--output",
+      "gallery"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"path\": \"gallery\",\n  \"index_path\": \"gallery/index.html\",\n  \"count\": 8\n}\n",
+    "stderr": ""
+  },
+  "publication": {
+    "createdAt": "2026-09-13T00:55:02.240Z",
+    "changed": [
+      "index.html"
+    ],
+    "generated": {
+      "images/001.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "images/002.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "images/003.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "images/004.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "images/005.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "images/006.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "images/007.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "images/008.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "index.html": "66e8ac8fd728f85a683ee041437a2a0fbe56a2f4b89902fb9eefc4c1d29610c6",
+      "manifest.json": "c589bafbbbb140d66421410db05f524970c8d553c3b84726e4f696f023f6fa4f",
+      "prompts/001.txt": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+      "prompts/002.txt": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+      "prompts/003.txt": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+      "prompts/004.txt": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+      "prompts/005.txt": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+      "prompts/006.txt": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+      "prompts/007.txt": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+      "prompts/008.txt": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a"
+    },
+    "artifacts": [
+      {
+        "source": "leaflet/v1",
+        "revision": 1,
+        "image_file": "images/001.png",
+        "image_sha256": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+        "prompt_file": "prompts/001.txt",
+        "prompt_sha256": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5"
+      },
+      {
+        "source": "drip/v1",
+        "revision": 1,
+        "image_file": "images/002.png",
+        "image_sha256": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+        "prompt_file": "prompts/002.txt",
+        "prompt_sha256": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d"
+      },
+      {
+        "source": "relay/v1",
+        "revision": 2,
+        "image_file": "images/003.png",
+        "image_sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+        "prompt_file": "prompts/003.txt",
+        "prompt_sha256": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813"
+      },
+      {
+        "source": "relay/v2",
+        "revision": 2,
+        "image_file": "images/004.png",
+        "image_sha256": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+        "prompt_file": "prompts/004.txt",
+        "prompt_sha256": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef"
+      },
+      {
+        "source": "teum/v1",
+        "revision": 1,
+        "image_file": "images/005.png",
+        "image_sha256": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+        "prompt_file": "prompts/005.txt",
+        "prompt_sha256": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c"
+      },
+      {
+        "source": "sprig/v1",
+        "revision": 2,
+        "image_file": "images/006.png",
+        "image_sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+        "prompt_file": "prompts/006.txt",
+        "prompt_sha256": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094"
+      },
+      {
+        "source": "sprig/v2",
+        "revision": 2,
+        "image_file": "images/007.png",
+        "image_sha256": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+        "prompt_file": "prompts/007.txt",
+        "prompt_sha256": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a"
+      },
+      {
+        "source": "common/v1",
+        "revision": 1,
+        "image_file": "images/008.png",
+        "image_sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+        "prompt_file": "prompts/008.txt",
+        "prompt_sha256": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a"
+      }
+    ],
+    "sourcePreserved": true,
+    "sourceAfter": {
+      "sessions/common/artifacts/v1.png": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "sessions/common/session.json": "0ec76154087b5fd448858098a7645be5c9c9b622e2c7c7fabed0db25bd84822a",
+      "sessions/drip/artifacts/v1.png": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "sessions/drip/session.json": "0475aaad244e03456c25d50dd4084a185fc26f4df9247649c70c86cfbe2a9782",
+      "sessions/leaflet/artifacts/v1.png": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "sessions/leaflet/session.json": "8670c3930d32c3685890246af82c2a182b3dc16a642065ad07bf556241d525ce",
+      "sessions/relay/artifacts/v1.png": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "sessions/relay/artifacts/v2.png": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "sessions/relay/session.json": "67c25da99638375b6d79690e27c608280490680e454089b1c7aba5212a59193e",
+      "sessions/sprig/artifacts/v1.png": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "sessions/sprig/artifacts/v2.png": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "sessions/sprig/session.json": "a70c1fd666f3a68eb74a404af0439c92a04397f1e12a05c895afb30ae6a80e13",
+      "sessions/teum/artifacts/v1.png": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "sessions/teum/session.json": "e018a889fbcdc1fee123cf4af34c2ba9780954cfbb4780726751e67a8fd57ec9"
+    },
+    "skillChanged": [
+      "assets/comparison-gallery.template.html"
+    ],
+    "skillAfter": {
+      "agents/openai.yaml": "26e73fa8f7fa5c8296639b69e2eab5feaf014b2ad73f54581278c2230a659a74",
+      "assets/app-icon-gallery.template.html": "960c682d45807c8a7f1a0dfb5f031f6a17f3fb6d4ca0c84501514375bd8cb9dd",
+      "assets/app-icon.example.json": "2477e1384ba781a44a0116f4a86c71a85cdea3e4030ae6c388e28c1779685fbc",
+      "assets/brief.example.json": "2841dbbba9e3d94759c1a1b5ccc2885b8a94a87e7ede81f0786d0b7d31155342",
+      "assets/color-gallery.template.html": "65c0745614f866f670a94068503552c9982ef48c1a6697f05943ac999cea6773",
+      "assets/comparison-gallery.template.html": "2e9760669f0aa2d9d34267fce0241452f43de435c9c4985bce80be70afb309a3",
+      "assets/ip-as-logo.LICENSE": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "references/app-icons.md": "4ef1a88ffe676208180a0ce944c6e9f5e0d20ede8d1cc0ccac778ceb31ef81bc",
+      "references/color-providers.md": "285199155af770b052e1d7aa2ec92bb687320d1f5aebe6008eadc3ca0e61af8f",
+      "references/color-workflow.md": "3f2f3d941fc5f72f64b0900059477e3f1fb2748b2bcdd4fdea24c1361f897b06",
+      "references/comparison-workflow.md": "22746583614cfd337ce5ff062d038c3b1692b080b87e92860bda6f0fdb2cab4b",
+      "references/delivery-checks.md": "27c65a1a72b7d9a86be0153fbda57ec11bca17d4d02b0b5ef7dce52d446498dc",
+      "references/ip-mascot.md": "08f93b78555246ea3b71a11d4879a53790808df4cab400bd5ed84b6d409e4850",
+      "references/logo-directions.md": "06eaf7c2e48bc93743f2dd76915105687bacc5a25a810932d5514bcf771049bc",
+      "references/native-image.md": "34056909420a4db68be7d00b09a18aabd450221529f814d73b7642369f096c3f",
+      "references/project-files.md": "1b3944bbfb4a808ccdc06728ab2c84b6991efd1bc7e261e2e8456d83285b43c3",
+      "references/typography.md": "82fe1465f75faa7d0b91ab4069a3aab8d36b21b15fcdf627133eb8daefacff13",
+      "scripts/logo_helper/__init__.py": "23c8d2ce225a99efe9832a41c20b46d139f5b31049dd641a04e13ff83b84f4d0",
+      "scripts/logo_helper/app_icon_cli.py": "e09075977adfd8c0b98202242ab3759fb1145227df987aeaac33c31896d35ada",
+      "scripts/logo_helper/app_icon_gallery.py": "71a2a7873af195cdeefe312f6d0462552fd1bb8856c117b5a20349649371e43f",
+      "scripts/logo_helper/app_icon_guide.py": "c063bf22bbcfa82c982caa2c066db2b069b34f8d633ba3f6afdb1e9d4fd17012",
+      "scripts/logo_helper/app_icon_models.py": "21ba823e490677f5e70ce9d05c782b1fa12884f405c4ba4601fd052bb1209c2d",
+      "scripts/logo_helper/app_icon_presets.py": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "scripts/logo_helper/app_icon_prompts.py": "d59ff54a2c77a368390be832bda5643af92dbab75d1a6431838687397e847080",
+      "scripts/logo_helper/app_icon_publish.py": "fb4dea5c484a4c617e898626d324a1aed5335e7b853299f45827d15d8a652ae5",
+      "scripts/logo_helper/artifact_models.py": "f35d32f2da234e92dd5144d48eb62fbddfac3039dd079b4d0a5d35eccd3231f0",
+      "scripts/logo_helper/brief_models.py": "caea33b207c181391fde6d9bc4fc7826335a8d2eb47f7124b51e5fbb18d16b12",
+      "scripts/logo_helper/cli_options.py": "e3f697458b482079c27b446cbb56aef4c6cf38ce3cd49ca94f1600ab76f4c8d3",
+      "scripts/logo_helper/color_analysis.py": "cfcef1c51c0f7a4067b7e9317df5b6f4acdb5312036e37516c9aab16f2d0ba30",
+      "scripts/logo_helper/color_cli.py": "d731f309d0dc877eb9f0ec71bf733c2461cda8757f9f15ac38fe7d0d7b9e3809",
+      "scripts/logo_helper/color_delivery.py": "7e7f0a4745def5b15ad08699dc57b113eca97eeeaa9b2aefaba35ef138d98f55",
+      "scripts/logo_helper/color_gallery_cards.py": "253ba8f0a439a4bb8129d2cb43463d5897df2d42cc9528ee627f8c709d669a53",
+      "scripts/logo_helper/color_gallery_data.py": "81dbf0876dc5cdc6e21493e80098489f54bc8e39dcb13bd3e61a38c5b998a030",
+      "scripts/logo_helper/color_gallery.py": "05076788df31137f3ca6576a58346533130f2dd710779e35eb9311370ae6b56d",
+      "scripts/logo_helper/color_guide.py": "34cdb38dddc6b398376fe5b492eef1799052b0b82a47bb48f3f4b801ea6f424a",
+      "scripts/logo_helper/color_math.py": "aa677d064632e48a9d108ba5d0b818c57f589ba1bcb61406261d8502cdc86288",
+      "scripts/logo_helper/color_models.py": "d3b4093611e2aa2d095c6c4f9027e65c794ef8b836c89d4a24c554f4a720f547",
+      "scripts/logo_helper/color_profiles.py": "055a299c1bd6738add1b44ad8977ffb48b9a3310bb9387665daa6efe04ca34df",
+      "scripts/logo_helper/color_reports.py": "95cf4f2605c8ca248a489d4e53fafee9f18b663d6effd38f3b5e5d080dd5596d",
+      "scripts/logo_helper/color_sampling.py": "71946e9eda8b329b5cafffc0163161abd2b17ddab3c92184bc5d4ba99ad94330",
+      "scripts/logo_helper/color_workflow.py": "7ef6e5c33c7f56d2320a643f5cd99428555b9eb4fa24fe65857b96147379cc42",
+      "scripts/logo_helper/comparison_cards.py": "8f4e45b7296fb60c13e73130fbacdbf52fe8ccb483346b89043c29d11c497af8",
+      "scripts/logo_helper/comparison_cli.py": "fa8a22ccb2dd1702fb4e81c32fb1faaea7e465bca97390beed48a64b6fc0b592",
+      "scripts/logo_helper/comparison_gallery.py": "17a81c7eb7488f500babe27eb653948ea88ca1c46467cfb81d3e55db141e2879",
+      "scripts/logo_helper/comparison_models.py": "016c802eef0f06c0bdc9040427b53d480799a3f150f336b346396a3167ef1336",
+      "scripts/logo_helper/delivery.py": "ed3713421b316e43568641451f41fc5a71332608acc8b8b2bf6c1db6f4469859",
+      "scripts/logo_helper/export_bundle.py": "33de44fb7677569d65c7b883c6d5b098c998e19bd9f731a6138ee9c09a1de612",
+      "scripts/logo_helper/images.py": "bd3d03ce8ab8fc7c6767da8fe8269e688ee63f16e14f04bf21d0e9d631a15f0a",
+      "scripts/logo_helper/import_reports.py": "69ffb9f6a9dbe5ac149fb9113f36ff63067cbad244c8c3a48af919e30223691c",
+      "scripts/logo_helper/intent.py": "9a8ece8285703df5fb00585ecc33990089378f84bd2aaadae31448fd7501d271",
+      "scripts/logo_helper/legacy_state.py": "09119091b50d9a4b8d9e4782636a8cddbd93b0d0fd197c774c129d2bc8ac3c5d",
+      "scripts/logo_helper/lockup_models.py": "0c0fb574ca59d4e6bb72ef26df4dcc36e013e354901840f4bf7cb30291c035cc",
+      "scripts/logo_helper/model_base.py": "0051b0fc239944f0143da201848f98d8c414c9d2d520f5de4f4718c88756c49e",
+      "scripts/logo_helper/models.py": "dc28d55027542510328ebdf80a820ed3456e6f6cfbd00cae102395026a0079ca",
+      "scripts/logo_helper/palette_proposals.py": "6968ca4356be8197ffdd68500ea2f53c72dff935c743e57305bb7ae4e10aca4b",
+      "scripts/logo_helper/palettes.py": "6c60dffcca290bd390e1259600cdd91e190589995af6c42152ba42f719d77e08",
+      "scripts/logo_helper/prompts.py": "340974db2816c5f0deecc766cfcabd8036d8e59e2608be5f1688657b57967a1b",
+      "scripts/logo_helper/reference_decode.py": "b55055f40a5fee8a01943acd082bfe8b7a521b61bb1773f36a208f5e5f9c453f",
+      "scripts/logo_helper/reference_evidence.py": "ab80fa6b9a19f77b525566c9f4b8129720dee403daea9994155e0888e2d0d1f4",
+      "scripts/logo_helper/reference_models.py": "87da637a01602f5dd0655ff6e8bfefae9ca2c609513dcbfe43a9f5e07553064e",
+      "scripts/logo_helper/references.py": "a02f6d9bf3775820bc4d394d539186c64da7ce96cb00a359e34e266acec4d3b7",
+      "scripts/logo_helper/session_models.py": "3d5917431dd8c8f7f43c2acc91dd845682b0d8483e1de835ba5794eda3dcdaea",
+      "scripts/logo_helper/storage.py": "e0a9bd8c18458beeda1a0ad9479afbec68ac6c4690b42f795dc3cdbd813b42a6",
+      "scripts/logo_helper/workflow.py": "a82d1cd1c02a16b4c202c1a01d08a6a5e44f18491d297bc01857c663dbbbd6d6",
+      "scripts/logo_project.py": "6e94ce899ceb1f7f96e3cf8ce4c66a5f08cb00b138d553cc5a482b75ad584e73",
+      "SKILL.md": "78af9916d1a7d36759a24b1a49a89f0465fd4f7708355126618926d1d6901870"
+    },
+    "templateSha256": "2e9760669f0aa2d9d34267fce0241452f43de435c9c4985bce80be70afb309a3",
+    "testSha256": "dba7111715f09b11af3f68b33a03f079451db72fc8a98345fe67200e759d4a3e",
+    "finalScriptsIdentical": true,
+    "sourceRecheckedAt": "2026-09-13T00:56:24.720Z"
+  },
+  "http": {
+    "command": "curl -i --fail --connect-timeout 3 --max-time 20 http://127.0.0.1:8802/gallery/index.html",
+    "headers": "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 42459\r\nDate: Sun, 13 Sep 2026 00:55:23 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=1",
+    "indexBytes": 42459,
+    "indexSha256": "66e8ac8fd728f85a683ee041437a2a0fbe56a2f4b89902fb9eefc4c1d29610c6",
+    "downloads": [
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-001.png.headers",
+          "http://127.0.0.1:8802/gallery/images/001.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-001.png"
+        ],
+        "exitCode": 0,
+        "file": "images/001.png",
+        "sha256": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-001.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/001.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-001.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/001.txt",
+        "sha256": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-002.png.headers",
+          "http://127.0.0.1:8802/gallery/images/002.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-002.png"
+        ],
+        "exitCode": 0,
+        "file": "images/002.png",
+        "sha256": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-002.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/002.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-002.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/002.txt",
+        "sha256": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-003.png.headers",
+          "http://127.0.0.1:8802/gallery/images/003.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-003.png"
+        ],
+        "exitCode": 0,
+        "file": "images/003.png",
+        "sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-003.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/003.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-003.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/003.txt",
+        "sha256": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-004.png.headers",
+          "http://127.0.0.1:8802/gallery/images/004.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-004.png"
+        ],
+        "exitCode": 0,
+        "file": "images/004.png",
+        "sha256": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-004.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/004.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-004.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/004.txt",
+        "sha256": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-005.png.headers",
+          "http://127.0.0.1:8802/gallery/images/005.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-005.png"
+        ],
+        "exitCode": 0,
+        "file": "images/005.png",
+        "sha256": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-005.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/005.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-005.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/005.txt",
+        "sha256": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-006.png.headers",
+          "http://127.0.0.1:8802/gallery/images/006.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-006.png"
+        ],
+        "exitCode": 0,
+        "file": "images/006.png",
+        "sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-006.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/006.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-006.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/006.txt",
+        "sha256": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-007.png.headers",
+          "http://127.0.0.1:8802/gallery/images/007.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-007.png"
+        ],
+        "exitCode": 0,
+        "file": "images/007.png",
+        "sha256": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-007.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/007.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-007.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/007.txt",
+        "sha256": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-images-008.png.headers",
+          "http://127.0.0.1:8802/gallery/images/008.png",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-images-008.png"
+        ],
+        "exitCode": 0,
+        "file": "images/008.png",
+        "sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+        "status": 200
+      },
+      {
+        "command": [
+          "curl",
+          "--fail",
+          "--connect-timeout",
+          "3",
+          "--max-time",
+          "20",
+          "-D",
+          "/tmp/ll-060-browser-fix/http-prompts-008.txt.headers",
+          "http://127.0.0.1:8802/gallery/prompts/008.txt",
+          "-o",
+          "/tmp/ll-060-browser-fix/http-prompts-008.txt"
+        ],
+        "exitCode": 0,
+        "file": "prompts/008.txt",
+        "sha256": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a",
+        "status": 200
+      }
+    ]
+  },
+  "chrome": {
+    "ownerDispatch": "ctx_a04104359e84",
+    "status": "passed_owner_attributed",
+    "initialFinding": "msg_6b7ca8d42c11",
+    "fixReadyMessage": "msg_71eaf118849a",
+    "hashMessage": "msg_ef43a5f8da4e",
+    "ownerMessage": "msg_f1148b50391f",
+    "relay": "Coordinator blocking-ask reply; root directly inspected screenshot 45",
+    "scenario": "Fresh Reload -> Brand logo / Web header / Dark -> COMMON Original PNG -> Chrome toolbar Back",
+    "observed": {
+      "count": "1 of 8 candidates",
+      "visibleBrand": "COMMON",
+      "preview": "Web header",
+      "surround": "Dark"
+    },
+    "indexSha256": "66e8ac8fd728f85a683ee041437a2a0fbe56a2f4b89902fb9eefc4c1d29610c6",
+    "evidence": [
+      {
+        "path": "docs/qa/gallery-workflow/chrome/44-fixed-back-restoration.jpg",
+        "bytes": 104895,
+        "sha256": "a2874750b4b4c0a0f562b7b770a61f3c8829b3c0e7aede8012d3ce3fcacbdde6"
+      },
+      {
+        "path": "docs/qa/gallery-workflow/chrome/45-fixed-back-restoration-top.jpg",
+        "bytes": 104553,
+        "sha256": "92fcce84d83a35b963fe3acd365e16de24d60ecb835e8b24647f09f92175360f"
+      },
+      {
+        "path": "docs/qa/gallery-workflow/chrome/46-fixed-reload-controls.jpg",
+        "bytes": 168696,
+        "sha256": "c577cca9291e197abc5bf39a98afc63084921f37766685c8751592c440a442f5"
+      }
+    ]
+  },
+  "cleanup": {
+    "serverPid": 8814,
+    "execSession": 16364,
+    "terminationCommand": "kill -TERM 8814",
+    "execExitCode": 0,
+    "tempRemoved": true,
+    "portProbe": {
+      "command": [
+        "lsof",
+        "-nP",
+        "-iTCP:8802",
+        "-sTCP:LISTEN"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "tempIdentityVerified": {
+      "dev": 16777230,
+      "ino": 35034033
+    },
+    "completedAt": "2026-09-13T00:56:41.586Z"
+  },
+  "finalVerification": {
+    "at": "2026-09-13T00:58:27.101Z",
+    "sourceFiles": 14,
+    "skillFiles": 66,
+    "publicationFiles": 18,
+    "sourceUnchanged": true,
+    "skillChanged": [
+      "assets/comparison-gallery.template.html"
+    ],
+    "publicationChanged": [
+      "index.html"
+    ],
+    "skillInventorySha256": "e2abf2eef4fbcd8bda5891b741c863730f08782f73294686fde2ea2af0e95d87",
+    "workspaceSourceInventorySha256": "1272cf22d045782c2a00e263848d6d2565b75e2b01d33f97e90b389f4b8128b3",
+    "outstandingDependencies": []
+  },
+  "nineClasses": [
+    {
+      "name": "malformed_boundary",
+      "result": "pass",
+      "evidence": "Existing strict input/boundary regressions; finite restore options"
+    },
+    {
+      "name": "injection_hostile",
+      "result": "pass",
+      "evidence": "Existing hostile markup/URL escaping regression; lifecycle listener accepts no external data"
+    },
+    {
+      "name": "cancel_resume_repeated_interruptions",
+      "result": "pass",
+      "evidence": "Two lifecycle cycles and existing repeated KeyboardInterrupt/retry regressions"
+    },
+    {
+      "name": "stale_state",
+      "result": "pass",
+      "evidence": "Runtime restored select/card/count/context consistency; current revision preserved; owner-attributed Chrome PASS"
+    },
+    {
+      "name": "dirty_foreign_ownership",
+      "result": "pass",
+      "evidence": "14 source files and 8 originals/8 prompts unchanged; only generated public index copied; foreign 8794 untouched"
+    },
+    {
+      "name": "hung_resource",
+      "result": "pass",
+      "evidence": "VM 1s; node/helper 20s; pytest parent 60s; curl connect3s/total20s; server max300s; reaped"
+    },
+    {
+      "name": "flaky_repeat",
+      "result": "pass",
+      "evidence": "First RED retained before production edit; same test GREEN after change; pre-fix delivery toggle8->1->8"
+    },
+    {
+      "name": "misleading_success",
+      "result": "pass",
+      "evidence": "Runtime count/cards/empty/dataset assertions; 18 output hashes; 17 HTTP200/hash checks; no inferred GUI claims"
+    },
+    {
+      "name": "real_surface_native_cost_cleanup",
+      "result": "pass",
+      "evidence": "Actual helper/curl; delegated Chrome PASS; native generation/paid APIs/installations not applicable; owned server/temp removed"
+    }
+  ]
+}

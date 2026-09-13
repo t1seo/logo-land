@@ -7,9 +7,11 @@ Codex와 함께 로고를 만들고 앱 아이콘 아트워크를 비교하거�
 ## 시작하기
 
 - [설치](installation.ko.md): 저장소에서 바로 사용하거나 다른 프로젝트에서 플러그인을 활성화하실 수 있습니다.
-- [요청 예시](../README.ko.md#이렇게-요청해-보세요): 브랜드, IP 캐릭터, 수정 요청으로 시작해 보세요.
+- [요청 예시](../README.ko.md#이렇게-요청해-보세요): 브랜드, IP 캐릭터, 여러 프로젝트의 비교·수정 요청으로 시작해 보세요.
 
 ## 샘플
+
+- [전체 비주얼 갤러리](gallery.ko.md): 모든 원본을 한 페이지에서 보고 이미지를 눌러 PNG를 바로 여실 수 있습니다.
 
 - [브랜드 로고](samples/README.ko.md): 로고 유형 8가지로 만든 개별 브랜드 10개입니다.
 - [색상과 타이포그래피](colors/README.ko.md): 프로젝트 7개의 사례 8개와 실제 결과입니다.
@@ -18,6 +20,8 @@ Codex와 함께 로고를 만들고 앱 아이콘 아트워크를 비교하거�
 - [Logo Land 로고](brand/README.ko.md): 현재 로고, 다운로드와 이전 로고입니다.
 
 ## 사용 안내
+
+- [여러 프로젝트의 후보 비교와 수정](../skills/logo-land/references/comparison-workflow.md)
 
 - [로고 방향](../skills/logo-land/references/logo-directions.md)
 - [색상과 팔레트](../skills/logo-land/references/color-workflow.md)
