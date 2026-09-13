@@ -1,0 +1,38 @@
+[
+  {
+    "session": "leaflet",
+    "revision": 1,
+    "exit_code": 0,
+    "unchanged_state_sha256": "8670c3930d32c3685890246af82c2a182b3dc16a642065ad07bf556241d525ce"
+  },
+  {
+    "session": "drip",
+    "revision": 1,
+    "exit_code": 0,
+    "unchanged_state_sha256": "0475aaad244e03456c25d50dd4084a185fc26f4df9247649c70c86cfbe2a9782"
+  },
+  {
+    "session": "relay",
+    "revision": 2,
+    "exit_code": 0,
+    "unchanged_state_sha256": "67c25da99638375b6d79690e27c608280490680e454089b1c7aba5212a59193e"
+  },
+  {
+    "session": "teum",
+    "revision": 1,
+    "exit_code": 0,
+    "unchanged_state_sha256": "e018a889fbcdc1fee123cf4af34c2ba9780954cfbb4780726751e67a8fd57ec9"
+  },
+  {
+    "session": "sprig",
+    "revision": 2,
+    "exit_code": 0,
+    "unchanged_state_sha256": "a70c1fd666f3a68eb74a404af0439c92a04397f1e12a05c895afb30ae6a80e13"
+  },
+  {
+    "session": "common",
+    "revision": 1,
+    "exit_code": 0,
+    "unchanged_state_sha256": "0ec76154087b5fd448858098a7645be5c9c9b622e2c7c7fabed0db25bd84822a"
+  }
+]

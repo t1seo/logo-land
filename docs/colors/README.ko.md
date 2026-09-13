@@ -2,6 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logo Land](../../README.ko.md)
 
+[**전체 원본을 한 페이지에서 보기 →**](../gallery.ko.md) · 이미지를 누르면 PNG 원본이 바로 열립니다.
+
 일곱 프로젝트의 여덟 사례에서 색상 선택, 글자 표현, 가로·세로 배치를 보실 수 있습니다.
 
 | 샘플 | 방향 | 제공 결과 |

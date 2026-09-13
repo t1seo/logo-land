@@ -36,6 +36,7 @@ from logo_helper.cli_options import (
     store_from,
 )
 from logo_helper.color_cli import register_color_commands
+from logo_helper.comparison_cli import register_comparison_commands
 from logo_helper.models import ArtifactId, Brief, PaletteId, ProjectError, SessionId, VisualReview
 from logo_helper.prompts import build_prompt
 from logo_helper.storage import read_source
@@ -44,6 +45,7 @@ APP: Final = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False)
 DEFAULT_WORKSPACE: Final = Path.cwd()
 register_color_commands(APP)
 register_app_icon_commands(APP)
+register_comparison_commands(APP)
 
 
 @APP.callback()

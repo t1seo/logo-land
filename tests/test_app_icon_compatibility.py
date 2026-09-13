@@ -54,13 +54,15 @@ def test_full_pre_icon_prompt_snapshot_and_no_write(harness: Harness, mode: str)
     assert harness.state_path.read_bytes() == before
 
 
-def test_legacy_import_defaults_to_brief_and_keeps_prompt(harness: Harness) -> None:
+def test_legacy_import_keeps_unknown_lockup_and_original_prompt(harness: Harness) -> None:
     _ = install_baseline(harness, 2)
     state = Session.model_validate_json(harness.import_image(1, "v2", "--parent", "v1"))
     assert state.artifacts[0].requested_background == "opaque"
     assert state.artifacts[1].requested_background == "transparent"
     assert state.artifacts[1].prompt == harness.prompt.read_text(encoding="utf-8")
-    assert state.artifacts[1].lockup == state.brief.lockup
+    assert state.brief.lockup is not None
+    assert state.artifacts[0].lockup is None
+    assert state.artifacts[1].lockup is None
 
 
 def test_legacy_stale_command_leaves_exact_state(harness: Harness) -> None:

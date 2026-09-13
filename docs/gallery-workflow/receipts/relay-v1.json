@@ -1,0 +1,63 @@
+{
+  "id": "relay-v1",
+  "session": "relay",
+  "artifact": "v1",
+  "parent": null,
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:27:00.815964+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:27:55.980943+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:29:23.161310+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 1,
+      "at": "2026-09-13T00:29:55.073741+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+  "prompt_revision": 0,
+  "effective_intent": {
+    "app_icon": {
+      "preset": "abstract",
+      "subject": "two broad offset open arcs with a deliberate broad negative-space passage",
+      "placement": "center",
+      "text": null
+    },
+    "lockup": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": "opaque"
+  },
+  "import_revision": 1,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/relay-v1.txt",
+  "image_file": "../images/relay-v1.png",
+  "return": {
+    "sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-a89caea0-e19d-4146-b456-73d89fa40443.png"
+  },
+  "observation": "Original and 32/64/128px: both arcs already read as separate open forms. The central diagonal clearance is the most compact part of the gesture and gives less breathing room than the open outer ends; this is a useful refinement, not a failed initial. Flat-color intent still has subtle raster texture.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ]
+}

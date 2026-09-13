@@ -95,6 +95,23 @@ ll_icon icon-gallery --session icon-demo --artifacts monogram \
 
 ## Effective intent and edits
 
+For a chosen candidate, retain its source session/artifact and the identifying feature
+that made it suitable. Use the [comparison workflow](comparison-workflow.md) to save
+reason, preserve/change notes and observations without adding icon fields. Reopen the
+original, carry those notes into quoted `changes`, and compare the resulting child
+against the same feature at the intended size.
+
+Apply the existing construction guidance with specific observations. For an abstract
+icon, name the intended opening or connection: does the gap remain visibly open at
+32px, do near-touching tips make an accidental spike, and does the gesture still relate
+to the product? For soft 3D, identify which contour makes the subject recognizable:
+does a leaf still read as a leaf rather than a heart, and does a fold or highlight obscure
+that clue when small? If recognition is ambiguous, say what you saw and suggest one
+targeted requested change while keeping the successful silhouette, palette or material.
+These are practical review questions, not a new score, a guaranteed style improvement
+or permission for automatic artistic retries. IP prompt text and its default six
+independent calls remain unchanged.
+
 Both `prompt` and `import` accept a complete `--app-icon-file`; they use the same parse boundary. Intent precedence is the explicit file, then the parent's `app_icon` (including null), then the brief when there is no parent. A legacy parent with null intent does not become an icon merely because the brief has icon intent. Top-level null is not a complete override file, and existing artifact intent cannot be rebound.
 
 An explicit icon file on a legacy brand session declares an icon transformation: suppress historical brand lettering, slogan and lockup in the rendered result while preserving history. Supplying an icon together with an explicit `--lockup-file`, or importing it with explicit `--background transparent`, fails `intent_conflict` before mutation. Icon import without `--background` stores `requested_background: "opaque"`; non-icon omission retains the original brief's background behavior. `PromptResult.requested_background` is opaque for icon mode; `parent_requested_background` still describes the historical parent.
@@ -110,6 +127,14 @@ Each candidate needs its own helper session when generated in parallel. Record a
 `icon-gallery --session ID --artifacts comma-separated-IDs --output relative-directory` publishes explicitly selected icon originals, their exact prompt text, intent, actual dimensions and a machine-readable manifest. Every chosen original is included regardless of selection, visual review, color conformance or export status. It verifies original hashes without mutating session state. Empty/duplicate/non-icon selections, existing destinations, reserved paths, escaping paths and symlink paths are rejected; owned staging is rolled back on failure.
 
 Open the gallery locally, including from a file URL. Square/rounded/circle CSS previews, 32/64/128px display sizes, light/dark surfaces and preset filtering/reset do not alter image bytes. Masks are illustrative, images use contain behavior, and original downloads retain their pixels. The page works without network requests and does not rank candidates or show default alpha/color PASS badges.
+
+For parallel source sessions, use `compare-gallery --selection-file ... --output ...`
+with explicit session/artifact pairs and current revisions. It also accepts brand-logo
+originals. The [selection file example](comparison-workflow.md#comparison-input)
+records each candidate's reason, keep/change notes and observation. Its illustrative
+home-screen/header/favicon contexts and 16/32/64/128px views help inspect intended
+uses; a square preview is not a newly produced platform icon. Copying a card preserves
+its source identity as text and does not select, approve or trigger an edit.
 
 Optional approved export still requires selection, actual visual review, background and integrity checks, and fresh strict-color evidence. No style relaxes those gates. Its three ZIP files remain `logo.png`, `manifest.json` and `brand-guide.md`, with selected `app_icon` metadata and artwork limitations. The raster does not establish an Icon Composer document, Android adaptive foreground/background layers, OS-native assets, an app build or store acceptance. Platform packaging requires separate work.
 

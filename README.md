@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/t1seo/logo-land/releases/tag/v0.3.1"><img src="https://img.shields.io/badge/Release-v0.3.1-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Release v0.3.1"></a>
-  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/Development-v0.5.0-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="Development version 0.5.0; unreleased"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/Development-v0.6.0-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="Development version 0.6.0; unreleased"></a>
   <img src="https://img.shields.io/badge/Codex-Plugin-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Codex Plugin">
   <img src="https://img.shields.io/badge/Python-3.12%2B-191917?style=flat-square&amp;labelColor=f6f3ec" alt="Python 3.12+">
   <img src="https://img.shields.io/badge/Output-PNG-a64b32?style=flat-square&amp;labelColor=f6f3ec" alt="PNG output">
@@ -9,14 +9,32 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="docs/README.md">Docs</a> · <a href="docs/samples/README.md">Samples</a>
+  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="docs/README.md">Docs</a> · <a href="docs/gallery.md">Gallery</a>
 </p>
 
 # Logo Land
 
-<p align="center"><img src="assets/logo-land-studio.png" alt="Logo Land open-frame symbol and LOGO LAND wordmark" width="320"></p>
+<p align="center"><img src="assets/logo-land-studio.png" alt="Logo Land open-frame symbol and LOGO LAND wordmark" width="200"></p>
 
 **Create logos and app icon artwork through a conversation with Codex.**
+
+<a id="samples"></a><a id="ten-real-samples"></a><a id="transparent-background-logos"></a>
+
+[**See every original in one visual gallery →**](docs/gallery.md)
+
+Click an image to open its original PNG.
+
+<p>
+  <a href="docs/samples/items/03-goyo/delivery/logo.png"><img src="docs/samples/items/03-goyo/delivery/logo.png" width="160" alt="고요 · Korean combination logo"></a>
+  <a href="docs/gallery-workflow/images/common-v1.png"><img src="docs/gallery-workflow/images/common-v1.png" width="160" alt="COMMON · shared-workspace logo"></a>
+  <a href="docs/samples/items/06-miso/delivery/logo.png"><img src="docs/samples/items/06-miso/delivery/logo.png" width="160" alt="MISO · mascot"></a>
+</p>
+
+<p>
+  <a href="docs/app-icons/images/ip-a1.png"><img src="docs/app-icons/images/ip-a1.png" width="160" alt="Reading owl · IP character"></a>
+  <a href="docs/app-icons-quality-v1/images/pictogram-quality-v1.png"><img src="docs/app-icons-quality-v1/images/pictogram-quality-v1.png" width="160" alt="Weather · revised pictogram"></a>
+  <a href="docs/gallery-workflow/images/relay-v2.png"><img src="docs/gallery-workflow/images/relay-v2.png" width="160" alt="Relay · abstract refinement with a wider opening"></a>
+</p>
 
 <a id="get-started"></a><a id="use-the-repository-directly"></a><a id="image-generation-and-the-file-helper"></a>
 
@@ -39,7 +57,7 @@ To enable `$logo-land` in other projects, follow the [full plugin installation g
 
 <a id="releases-and-versioning"></a>
 
-This checkout is **v0.5.0 development**; the published release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1).
+This checkout is **v0.6.0 development**; the published release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1).
 
 <a id="use-natural-language"></a>
 
@@ -49,7 +67,7 @@ This checkout is **v0.5.0 development**; the published release is [v0.3.1](https
 
 > $logo-land Create six independent IP character candidates for my reading app, using three product-related directions. Choose the colors for me.
 
-> Use the second logo. Keep its lettering and shape, change the main color to navy, and make the background transparent.
+> Compare the candidates from my projects in one gallery, with app-home, website-header and 16px previews. Keep the chosen design’s shape and widen only its opening.
 
 <a id="six-app-icon-directions"></a><a id="choose-colors-in-four-ways"></a><a id="pair-a-symbol-with-exact-lettering"></a><a id="eight-logo-types"></a><a id="revisions-and-delivery"></a>
 
@@ -61,18 +79,6 @@ This checkout is **v0.5.0 development**; the published release is [v0.3.1](https
 - **Refine and resume:** revise a chosen image, return to saved projects, and export reviewed logos as PNG, ZIP and a short brand guide.
 
 Outputs are raster PNGs; editable vectors and font files are not included. Font names are visual references. App icon artwork requires separate platform preparation.
-
-<a id="ten-real-samples"></a><a id="transparent-background-logos"></a>
-
-## Samples
-
-Each category links to individual samples with their original images and available downloads.
-
-- [Brand logos](docs/samples/README.md) · ten brands across eight logo types
-- [Colors and typography](docs/colors/README.md) · eight cases across seven projects
-- [App icons](docs/app-icons/README.md) · six IP candidates and five original/revised pairs
-- [Transparent logos](docs/samples/transparency.md) · a GROVE PNG example and background guidance
-- [Logo Land identity](docs/brand/README.md) · the current logo and preserved earlier identity
 
 <a id="research-and-verification"></a>
 

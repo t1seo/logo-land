@@ -46,6 +46,13 @@ Both `prompt` and `import` accept `--app-icon-file`. Precedence is explicit file
 
 ## Runnable color examples
 
+For read-only comparison across sessions, use
+`compare-gallery --selection-file /workspace/selection.json --output output/comparison-1`.
+The [comparison workflow](comparison-workflow.md#comparison-input) defines the explicit
+session/revision/artifact entries and optional decision text. Save this input in the
+workspace so a later conversation can recover the source and reason. The command
+does not add session fields, select an artifact or approve an export.
+
 Run these POSIX-shell examples from the repository root after `uv sync --locked`. They create a separate demonstration workspace and use its current JSON responses for revisions. Reusing the same directory/session IDs will fail safely; choose a fresh directory for another run. No command in this section generates an image.
 
 ```sh
@@ -273,6 +280,20 @@ The helper requires all visual checks to pass and rechecks real file metadata an
 ## Resume and preserve
 
 Sessions live at `.logo-generator/sessions/<session-id>/`. Read them through `show` in a new conversation, reopen relevant PNGs, and continue using saved IDs. Missing or changed images, unsupported schema, stale revisions and duplicate IDs are errors, not reasons to reset the workspace. Do not delete a lock unless it has been independently proven stale and recovery is explicitly warranted.
+
+Resume a comparison with its full `(session, artifact)` identity and saved notes, not
+an ordinal card number or a bare `v1`. Gallery revision is historical; obtain current
+revision with `show`, check the source hash and intent, and reconcile any intervening
+selection/review/edit before continuing. Retain the old gallery as a snapshot and use
+a fresh selection file/output directory for a new comparison. See the
+[resume sequence](comparison-workflow.md#resume-a-chosen-source) for safely quoted
+keep/change data and the prompt/import revision boundary.
+
+Lockup precedence is an explicit complete `--lockup-file`, otherwise the parent's
+saved lockup including null, otherwise the brief for a new generation. A null parent
+does not fall back to brief typography and does not clear text visible in the original.
+It remains unknown structured intent. Palette and icon intent keep their independent
+parent precedence; new-generation defaults do not rewrite existing artifacts.
 
 Keep final prompts and failed attempts for reproducibility. The prompt records the requested design; generated lettering, intended palette values and font appearance still need visual verification. Do not store account credentials or base64 images in brief/state text.
 

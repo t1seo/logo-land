@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "kind": "comparison_gallery",
+  "title": "Logo Land / six directions, two refinements",
+  "artifacts": [
+    {
+      "source": {
+        "session": "leaflet",
+        "revision": 1,
+        "artifact": "v1",
+        "rationale": "A fox holding a book gives the reading companion a warm, visible reading cue.",
+        "preserve": "Friendly face, broad closed book, apricot/navy identity and large lower-left emphasis.",
+        "change": "No child requested.",
+        "observation": "Original: friendly upright fox visibly holds a book; face and ears remain clear, with space at the right. At 32px the book merges with the body and the hands read more clearly than its pages. Cream muzzle, inner ears and tail introduce a third character color family; shading and extra contours exceed the two-color, few-shape intent. No lettering is visible."
+      },
+      "parent_id": null,
+      "brand_name": "Leaflet",
+      "kind": "app_icon",
+      "style": "ip_mascot",
+      "image_file": "images/001.png",
+      "prompt_file": "prompts/001.txt",
+      "sha256": "256b1ee1e25d9d8160ec0751db1453ae31990cecb5c2cd68570410c668cb6b4e",
+      "prompt_sha256": "0cad98ad36526c630cf05aa5fdde33d14e87a5545d1302f4be6ba4628e14faf5",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "ip_mascot",
+        "subject": "a simple friendly upright fox holding one broad closed book",
+        "placement": "lower_left",
+        "text": null
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "drip",
+        "revision": 1,
+        "artifact": "v1",
+        "rationale": "A droplet and a broad waterline communicate a simple hydration reminder.",
+        "preserve": "One cobalt droplet, rounded tip and open pale-blue wave-shaped interior.",
+        "change": "No child requested.",
+        "observation": "Original: one centered cobalt droplet surrounds a broad pale-blue water cue; no text, decorative pieces or external shadow. At 32px the drop and wave opening remain legible, while the right interior tip becomes thin. Subtle raster tonal variation remains despite flat-color intent."
+      },
+      "parent_id": null,
+      "brand_name": "Drip",
+      "kind": "app_icon",
+      "style": "pictogram",
+      "image_file": "images/002.png",
+      "prompt_file": "prompts/002.txt",
+      "sha256": "8f1e846ceac3d01dc1eb60bab5b5ad1679f71f51fb1a85fc7041ce62f05b1f6f",
+      "prompt_sha256": "67aae7296e49bd3dc0850b28f426b8b79c6ee0a926954088ddba4e4b52c1eb8d",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "pictogram",
+        "subject": "one bold water droplet with one broad interior waterline cutout",
+        "placement": "center",
+        "text": null
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "relay",
+        "revision": 2,
+        "artifact": "v1",
+        "rationale": "Two offset receiving arcs suggest a quiet handoff without a literal arrow.",
+        "preserve": "Exactly two broad offset open arcs, pine upper-left and terracotta lower-right, same arc centers and visual weight, shared curvature and ivory background; no text, arrows, dots or dimensional effects.",
+        "change": "Widen only the central diagonal passage by about one third at its closest clearance: trim back the two inward-facing ends without moving the arc centers or thinning the bodies; keep both arcs open and the overall offset gesture.",
+        "observation": "Original and 32/64/128px: both arcs already read as separate open forms. The central diagonal clearance is the most compact part of the gesture and gives less breathing room than the open outer ends; this is a useful refinement, not a failed initial. Flat-color intent still has subtle raster texture."
+      },
+      "parent_id": null,
+      "brand_name": "Relay",
+      "kind": "app_icon",
+      "style": "abstract",
+      "image_file": "images/003.png",
+      "prompt_file": "prompts/003.txt",
+      "sha256": "6588c675013483c18bcc5fad4986c60e0ec21a78ef7c7591d055e2bb2b620b58",
+      "prompt_sha256": "68f8163701caf21ec0e3c06b43128ff5f4fbc6c67183d5a8649a13e58f7ea813",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "abstract",
+        "subject": "two broad offset open arcs with a deliberate broad negative-space passage",
+        "placement": "center",
+        "text": null
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "relay",
+        "revision": 2,
+        "artifact": "v2",
+        "rationale": "Child of relay / v1. Two offset receiving arcs suggest a quiet handoff without a literal arrow.",
+        "preserve": "Exactly two broad offset open arcs, pine upper-left and terracotta lower-right, same arc centers and visual weight, shared curvature and ivory background; no text, arrows, dots or dimensional effects.",
+        "change": "Widen only the central diagonal passage by about one third at its closest clearance: trim back the two inward-facing ends without moving the arc centers or thinning the bodies; keep both arcs open and the overall offset gesture.",
+        "observation": "Mixed refinement: the central diagonal passage is visibly wider in the original and at 64/128px; at 32px the difference is modest because v1 was already open. Both pine/terracotta arcs, ivory field and nonliteral gesture survive. The terracotta inner end moved left and its curvature/extent changed beyond a pure end trim, so arc-center preservation is not exact. No added text, arrows or dots; subtle raster texture remains."
+      },
+      "parent_id": "v1",
+      "brand_name": "Relay",
+      "kind": "app_icon",
+      "style": "abstract",
+      "image_file": "images/004.png",
+      "prompt_file": "prompts/004.txt",
+      "sha256": "a4066faa64d1f58024d1a44afb011694a1808b628b988ac71a0986e90069491d",
+      "prompt_sha256": "7c970c80e2167fb7677c82a3ffb360e17ad6569a28b341d881952fabbcd87cef",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "abstract",
+        "subject": "two broad offset open arcs with a deliberate broad negative-space passage",
+        "placement": "center",
+        "text": null
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "teum",
+        "revision": 1,
+        "artifact": "v1",
+        "rationale": "The exact Korean syllable 틈 expresses a small space reserved for a note.",
+        "preserve": "Exact 틈 glyph structure, bold aubergine strokes, open lower counter and butter-yellow background.",
+        "change": "No child requested.",
+        "observation": "Original: the single syllable reads 틈, with distinguishable ㅌ, ㅡ and ㅁ components and no added text. At 64/128px the counter and horizontal spaces are clear; at 32px the narrow horizontal gaps become compressed but remain visible. Rounded heavy lettering is observed appearance, not verified font composition."
+      },
+      "parent_id": null,
+      "brand_name": "Teum",
+      "kind": "app_icon",
+      "style": "monogram",
+      "image_file": "images/005.png",
+      "prompt_file": "prompts/005.txt",
+      "sha256": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+      "prompt_sha256": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "monogram",
+        "subject": "bold simple Korean lettering with intentional clear counters",
+        "placement": "center",
+        "text": "틈"
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "sprig",
+        "revision": 2,
+        "artifact": "v1",
+        "rationale": "A single tactile leaf connects a gentle daily-care product to plant growth.",
+        "preserve": "One asymmetric jade leaf, pointed upper-right tip, single shallow fold, matte soft material, restrained green shading, near-frontal view and blush background.",
+        "change": "Clarify only the bottom leaf-to-stem contour: narrow the join slightly and give the existing short stem a small leftward bend so its short hooked silhouette stays distinct from the leaf body at 32px; retain the leaf tip, overall scale, material and color identity.",
+        "observation": "Original and 32/64/128px: the pointed asymmetric silhouette already reads as a leaf rather than a heart. At 32px the nearly straight short stem blends into the central fold; making that connection more distinct is an incremental recognition refinement. Fine surface grain is visible in the original despite a simple matte-surface request."
+      },
+      "parent_id": null,
+      "brand_name": "Sprig",
+      "kind": "app_icon",
+      "style": "soft_3d",
+      "image_file": "images/006.png",
+      "prompt_file": "prompts/006.txt",
+      "sha256": "956577408a1a8986dd87cf430e44451739d93285352c5ebe5305d19ae216e222",
+      "prompt_sha256": "9965898ff25f67a25e10e8002c7037852b7b6b99d0ca4b5a66513edd24c85094",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "soft_3d",
+        "subject": "one asymmetric leaf with a recognizable pointed tip and a short stem",
+        "placement": "center",
+        "text": null
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "sprig",
+        "revision": 2,
+        "artifact": "v2",
+        "rationale": "Child of sprig / v1. A single tactile leaf connects a gentle daily-care product to plant growth.",
+        "preserve": "One asymmetric jade leaf, pointed upper-right tip, single shallow fold, matte soft material, restrained green shading, near-frontal view and blush background.",
+        "change": "Clarify only the bottom leaf-to-stem contour: narrow the join slightly and give the existing short stem a small leftward bend so its short hooked silhouette stays distinct from the leaf body at 32px; retain the leaf tip, overall scale, material and color identity.",
+        "observation": "Mixed, mostly unchanged recognition: the lower join is slightly narrower and the stem transition looks cleaner, while the asymmetric leaf tip, jade shading, matte texture and blush field survive. The requested leftward stem bend is not clearly realized; the stem still leans right. At 32px it reads essentially the same recognizable leaf as v1, so no demonstrated small-size recognition gain is claimed."
+      },
+      "parent_id": "v1",
+      "brand_name": "Sprig",
+      "kind": "app_icon",
+      "style": "soft_3d",
+      "image_file": "images/007.png",
+      "prompt_file": "prompts/007.txt",
+      "sha256": "ed16c756532ef268880f4a1d281d87323bef707cecfe3c41b41397bef74e65ac",
+      "prompt_sha256": "b83d6deeea4f252a27962f1171618ce72e58e7e807c0e6e9c6ba7b2652e6f22a",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "app_icon": {
+        "preset": "soft_3d",
+        "subject": "one asymmetric leaf with a recognizable pointed tip and a short stem",
+        "placement": "center",
+        "text": null
+      },
+      "lockup": null
+    },
+    {
+      "source": {
+        "session": "common",
+        "revision": 1,
+        "artifact": "v1",
+        "rationale": "An open meeting-space symbol and shared table convey an inviting workspace beside a readable name.",
+        "preserve": "Exact COMMON uppercase lettering, left-hand open charcoal U symbol with terracotta table, horizontal lockup and ivory background.",
+        "change": "No child requested.",
+        "observation": "Original: COMMON is spelled C-O-M-M-O-N in one horizontal line; a separate open U-shaped space and terracotta table sit to its left with a readable gap. Letter counters are open and no slogan is present. The whole lockup stays readable around 128px wide, becomes tiny at 64px and is unsuitable as a 32px favicon; its intended use is a wider header. Subtle surface variation is visible, and no actual font-file usage is established."
+      },
+      "parent_id": null,
+      "brand_name": "COMMON",
+      "kind": "brand",
+      "style": "combination",
+      "image_file": "images/008.png",
+      "prompt_file": "prompts/008.txt",
+      "sha256": "9d89bac4146c3cfcfd49551c7a5f0de12effd5763d1f709b18fedd45a25c741b",
+      "prompt_sha256": "1f6e0c692b28670b0ed91fce8c7890d4ba370f8a419fb2347844dadeb5021a0a",
+      "image": {
+        "format": "PNG",
+        "width": 1774,
+        "height": 887,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1573538
+      },
+      "app_icon": null,
+      "lockup": {
+        "layout": "horizontal",
+        "symbol_position": "start",
+        "text_alignment": "start",
+        "typography_style": "Bold calm geometric sans-serif appearance, open counters, gently rounded corners, careful uppercase spacing",
+        "font_reference": null
+      }
+    }
+  ],
+  "preview_note": "Illustrative CSS contexts and sizes; original PNG bytes are unchanged. Candidate notes do not approve exports. Recheck source revisions before resuming."
+}

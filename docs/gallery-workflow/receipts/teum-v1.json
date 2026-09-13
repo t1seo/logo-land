@@ -1,0 +1,63 @@
+{
+  "id": "teum-v1",
+  "session": "teum",
+  "artifact": "v1",
+  "parent": null,
+  "status": "returned",
+  "events": [
+    {
+      "status": "planned",
+      "at": "2026-09-13T00:27:01.140941+00:00"
+    },
+    {
+      "status": "running",
+      "at": "2026-09-13T00:27:55.981858+00:00"
+    },
+    {
+      "status": "returned",
+      "at": "2026-09-13T00:29:23.195047+00:00"
+    },
+    {
+      "status": "imported",
+      "revision": 1,
+      "at": "2026-09-13T00:29:56.211740+00:00"
+    }
+  ],
+  "tool": "image_gen__imagegen",
+  "provider": "host native image generation",
+  "model": "unreported",
+  "prompt_sha256": "8312812f546902472a7eb0d98311e3e6c1b29fe58ba8a6d55cb826c61e03721c",
+  "prompt_revision": 0,
+  "effective_intent": {
+    "app_icon": {
+      "preset": "monogram",
+      "subject": "bold simple Korean lettering with intentional clear counters",
+      "placement": "center",
+      "text": "틈"
+    },
+    "lockup": null,
+    "palette_id": null,
+    "palette_digest": null,
+    "requested_background": "opaque"
+  },
+  "import_revision": 1,
+  "acceptance": "unreviewed; no selection or approval",
+  "inspected_original": true,
+  "prompt_file": "../prompts/teum-v1.txt",
+  "image_file": "../images/teum-v1.png",
+  "return": {
+    "sha256": "a97780b67a304853d1b8795d6d3af8efdc4658d36703ed1cdabfa8710b73bf7e",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "native_filename": "exec-255c8fa6-3d1d-468d-b524-527b32823233.png"
+  },
+  "observation": "Original: the single syllable reads 틈, with distinguishable ㅌ, ㅡ and ㅁ components and no added text. At 64/128px the counter and horizontal spaces are clear; at 32px the narrow horizontal gaps become compressed but remain visible. Rounded heavy lettering is observed appearance, not verified font composition.",
+  "inspection_sizes": [
+    "original",
+    32,
+    64,
+    128
+  ]
+}

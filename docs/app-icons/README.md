@@ -2,6 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Docs](../README.md) · [Logo Land](../../README.md)
 
+[**See every original in one visual gallery →**](../gallery.md) · Click an image to open its original PNG.
+
 Explore app icon artwork in six styles. Each page includes images, an example request and original PNG downloads. The six IP characters are individual candidates; the other five pages pair an original with a revised direction.
 
 ## IP character

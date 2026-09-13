@@ -1,0 +1,37 @@
+{
+  "brand_name": "Drip",
+  "exact_text": "",
+  "industry": "Fictional water reminder",
+  "audience": "People seeking a calm, approachable daily experience",
+  "slogan": "",
+  "logo_type": "symbol",
+  "styles": [
+    "simple",
+    "confident",
+    "restrained"
+  ],
+  "palette": [
+    "deep cobalt #2348A5 for the droplet",
+    "solid pale sky blue #C5E7EE for the background and interior water cue"
+  ],
+  "forbidden": [
+    "extra lettering",
+    "mockups",
+    "ornamental detail"
+  ],
+  "use_cases": [
+    "mobile app icon artwork"
+  ],
+  "assumptions": [
+    "Fictional demonstration product; palette chosen for this showcase; one initial candidate requested; no trademark or platform-readiness claim"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "lockup": null,
+  "app_icon": {
+    "preset": "pictogram",
+    "subject": "one bold water droplet with one broad interior waterline cutout",
+    "placement": "center",
+    "text": null
+  }
+}
