@@ -1,6 +1,6 @@
 # Logo Land 개선 제안 — 생성부터 제품 적용까지
 
-조사일: 2026-09-13 KST · 기준 소스: `06b94c41922973fc98392fadde25fff9aa498f6e` · 상태: 첫 단계 실행 중
+조사일: 2026-09-13 KST · 기준 소스: `06b94c41922973fc98392fadde25fff9aa498f6e` · 상태: 첫 단계 구현·검증·main 병합 완료
 
 ## 권장 방향
 
@@ -164,7 +164,7 @@ README는 현재의 짧은 영문 기본/한국어 별도 구성을 유지하고
   - Apply `review-work`: goal, code, security, hands-on QA and context/attribution/release truth reviews run in parallel with read-only ownership. Each verifies concrete source/behavior via an actual manual channel, reuses completed broad-suite evidence where source hashes still match, and supplies artifacts plus cleanup.
   - Fix found defects under the same owning task with precise failing evidence, rerun affected checks, and obtain final PASS on all five perspectives. Artifacts under `docs/qa/gallery-workflow/review-*.md` and a concise `review-summary.md`.
 
-- [ ] T6 — Commit, push and merge the verified feature into main.
+- [x] T6 — Commit, push and merge the verified feature into main.
   - Review exact staged files, exclude private output/state and pre-existing research drafts, commit the feature and source proposal, push the branch, create a concrete PR if supported and merge to `main` using normal history (no force). User explicitly authorized commit/push/merge.
   - Verify remote merge SHA, local main sync, clean tracked worktree and exact public README/image references. No release publication is implied by the merge. Leave the final new gallery open in Chrome as requested by the established sample workflow.
   - Mark this Boulder work complete only after the merge and final receipts. Artifact: `docs/qa/gallery-workflow/final-delivery.md`; no unowned branch/worktree/process cleanup.
