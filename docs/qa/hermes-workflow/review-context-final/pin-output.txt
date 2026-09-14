@@ -1,0 +1,6 @@
+     208 /Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/hermes-workflow/review-context-final/historical-immutable.sha256
+     259 /Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/hermes-workflow/review-context-final/immutable-before.sha256
+       4 /Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/hermes-workflow/review-context-final/protected-drafts.sha256
+       7 /Users/cillian/Documents/Github/Projects/logo-generator/docs/qa/hermes-workflow/review-context-final/request-bindings.sha256
+      24 docs/qa/hermes-workflow/review-context/old-originals.sha256
+     502 total

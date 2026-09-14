@@ -1,0 +1,23 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "-c",
+    "/Users/cillian/Documents/Github/Projects/logo-generator/pyproject.toml",
+    "/tmp/logopia-review-code-080/test_review_boundaries.py",
+    "/tmp/logopia-review-code-080/test_nested_helper.py",
+    "tests/hermes/test_helper_interrupt.py::test_helper_repeated_caller_interrupts_settle_before_original_propagates",
+    "--basetemp",
+    "/tmp/logopia-review-code-080/settled-pytest",
+    "-o",
+    "cache_dir=/tmp/logopia-review-code-080/settled-cache"
+  ],
+  "pid": 6085,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 5.729
+}

@@ -1,0 +1,6 @@
+integrations/hermes/logopia_studio/installer.py: OK
+.logo-generator/workflows/offcut-hermes-demo/workflow.json: OK
+.omo/drafts/logo-land-next-capability.md: OK
+.omo/drafts/logo-land-next-delivery.md: OK
+.omo/drafts/logo-land-next-metis.md: OK
+.omo/drafts/logo-land-next-tools.md: OK

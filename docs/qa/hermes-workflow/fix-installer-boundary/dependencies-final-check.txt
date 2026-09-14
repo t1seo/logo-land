@@ -1,0 +1,2 @@
+integrations/hermes/logopia_studio/launcher_process.py: OK
+integrations/hermes/logopia_studio/helper_process.py: OK

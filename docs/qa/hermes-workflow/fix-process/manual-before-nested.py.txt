@@ -1,0 +1,181 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["pytest"]
+# ///
+# How to run: uv run --locked python /tmp/logopia-fix-process-080/manual.py
+"""Drive local process settlement through tmux with real repeated Ctrl-C."""
+
+from __future__ import annotations
+
+import gc
+import hashlib
+import json
+import os
+import signal
+import subprocess
+import sys
+import time
+import warnings
+from pathlib import Path
+from threading import Event, Thread
+from typing import TYPE_CHECKING, Final
+
+if TYPE_CHECKING:
+    from types import FrameType
+
+REPO: Final = Path.cwd()
+BASE: Final = Path("/tmp/logopia-fix-process-080/manual")
+sys.path.insert(0, str(REPO / "integrations/hermes"))
+sys.path.insert(0, str(REPO))
+
+from logopia_studio.helper_process import run_cli
+from logopia_studio.launcher_process import run_process
+from logopia_studio.models import StudioError
+from tests.hermes.test_helper_interrupt import HELPER_SOURCE
+from tests.hermes.test_process_group_settlement import (
+    TREE_SOURCE,
+    finite_fixture,
+    observe,
+    recorded_processes,
+)
+
+
+def emit(event: str, **details: str | int | float | bool) -> None:
+    _ = sys.stdout.write(json.dumps({"event": event, **details}) + "\n")
+    _ = sys.stdout.flush()
+
+
+def announce_ready(root: Path, stopped: Event) -> None:
+    deadline = time.monotonic() + 5
+    while not (root / "ready").exists():
+        if stopped.wait(0.01) or time.monotonic() >= deadline:
+            return
+    emit(
+        "READY_FOR_TWO_TMUX_CTRL_C",
+        caller_pid=os.getpid(),
+        helper_pid=recorded_processes(root)[0][0],
+    )
+
+
+def launcher_case(root: Path, exits: bool) -> None:
+    root.mkdir()
+    with finite_fixture(root, TREE_SOURCE, "exit" if exits else "deadline", "yes") as command:
+        started = time.monotonic()
+        result = run_process(command, root, root / "logs", 1, grace_seconds=0.2)
+        states, alive = observe(root, time.monotonic() - started)
+        assert not any(states)
+        assert not alive
+        assert result.timed_out is not exits
+        assert not result.interrupted
+        assert (result.exit_code == 0) is exits
+        emit(
+            "launcher_pass",
+            case=root.name,
+            exit_code=result.exit_code,
+            timed_out=result.timed_out,
+            all_owned_absent=True,
+        )
+
+
+def caller_case(root: Path, terminal: bool) -> None:
+    root.mkdir()
+    interrupts: list[KeyboardInterrupt] = []
+
+    def interrupt(_sig: int, _frame: FrameType | None) -> None:
+        error = KeyboardInterrupt(f"{root.name} caller interrupt {len(interrupts) + 1}")
+        interrupts.append(error)
+        raise error
+
+    previous = signal.signal(signal.SIGINT, interrupt)
+    try:
+        with finite_fixture(root, HELPER_SOURCE, "manual" if terminal else "repeat") as command:
+            stopped = Event()
+            notifier = Thread(target=announce_ready, args=(root, stopped), daemon=True)
+            if terminal:
+                notifier.start()
+            started = time.monotonic()
+            try:
+                try:
+                    _ = run_cli(command, timeout=7)
+                except KeyboardInterrupt as caught:
+                    assert caught is interrupts[0]
+                    assert len(interrupts) >= 2
+                    emit(
+                        "original_interrupt_retained",
+                        case=root.name,
+                        interrupt_count=len(interrupts),
+                        error=str(caught),
+                    )
+                else:
+                    raise AssertionError("Expected caller KeyboardInterrupt")
+                states, alive = observe(root, time.monotonic() - started)
+                assert not any(states)
+                assert not alive
+                emit("caller_pass", case=root.name, all_owned_absent=True)
+            finally:
+                stopped.set()
+                if terminal:
+                    notifier.join(timeout=1)
+                    assert not notifier.is_alive()
+    finally:
+        _ = signal.signal(signal.SIGINT, previous)
+
+
+def timeout_case(root: Path) -> None:
+    root.mkdir()
+    with finite_fixture(root, HELPER_SOURCE, "deadline_interrupt") as command:
+        started = time.monotonic()
+        try:
+            _ = run_cli(command, timeout=0.3)
+        except StudioError as caught:
+            assert caught.code == "helper_timeout"
+            assert isinstance(caught.__cause__, subprocess.TimeoutExpired)
+            assert "exact commit may need reconciliation" in caught.detail
+            emit("timeout_retained_after_cleanup_interrupt", code=caught.code)
+        else:
+            raise AssertionError("Expected typed helper_timeout")
+        states, alive = observe(root, time.monotonic() - started)
+        assert not any(states)
+        assert not alive
+
+
+def watchdog(_sig: int, _frame: FrameType | None) -> None:
+    raise TimeoutError("Manual QA watchdog expired")
+
+
+def main() -> None:
+    BASE.mkdir()
+    _ = (BASE / "runner.txt").write_text(str(os.getpid()), encoding="utf-8")
+    emit(
+        "runtime", pid=os.getpid(), pgid=os.getpgrp(), python=sys.version, executable=sys.executable
+    )
+    for function in (run_process, run_cli):
+        source = Path(function.__code__.co_filename)
+        emit("source", path=str(source), sha256=hashlib.sha256(source.read_bytes()).hexdigest())
+    previous_alarm = signal.signal(signal.SIGALRM, watchdog)
+    _ = signal.alarm(45)
+    try:
+        with warnings.catch_warnings(record=True) as recorded:
+            warnings.simplefilter("always", ResourceWarning)
+            launcher_case(BASE / "deadline", False)
+            launcher_case(BASE / "exited", True)
+            caller_case(BASE / "automatic", False)
+            caller_case(BASE / "terminal", True)
+            timeout_case(BASE / "helper-timeout")
+            literal = "resume 'literal' $(harmless); 한글\n\n"
+            assert (
+                run_cli(
+                    (sys.executable, "-c", "import sys; sys.stdout.write(sys.argv[1])", literal), 2
+                )
+                == literal
+            )
+            _ = gc.collect()
+            assert not recorded
+            emit("MANUAL_PASS", resource_warnings=len(recorded), resumed_stdout_exact=True)
+    finally:
+        _ = signal.alarm(0)
+        _ = signal.signal(signal.SIGALRM, previous_alarm)
+
+
+if __name__ == "__main__":
+    main()

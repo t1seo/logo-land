@@ -1,0 +1,52 @@
+{
+  "capturedAt": "2026-09-14T16:42:07.312Z",
+  "workflowId": "offcut-hermes-demo",
+  "revision": 47,
+  "phase": "delivered",
+  "selectedId": "e2",
+  "workflowSha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "canonicalSha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "bindingSha256": "bb3f58be1d6d138d7a24bca4575162d1db662f3188238f677d10055da75deba2",
+  "originals": [
+    {
+      "id": "c1",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "width": 1774,
+      "height": 887,
+      "bytes": 739942,
+      "parent_id": null
+    },
+    {
+      "id": "c2",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 755315,
+      "parent_id": null
+    },
+    {
+      "id": "c3",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 752532,
+      "parent_id": null
+    },
+    {
+      "id": "e1",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "width": 1774,
+      "height": 887,
+      "bytes": 788171,
+      "parent_id": "c1"
+    },
+    {
+      "id": "e2",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "width": 1774,
+      "height": 887,
+      "bytes": 714393,
+      "parent_id": "e1"
+    }
+  ]
+}

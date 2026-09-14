@@ -1,0 +1,12 @@
+PLR2004 Magic value used in comparison, consider replacing `250` with a constant variable
+  --> /tmp/logopia-fix-installer-boundary-080/native_audit.py:43:20
+   |
+41 |             if isinstance(node, ast.Name) and node.id in {"Any", "object", "cast"}
+42 |         ]
+43 |         if count > 250 or prohibited:
+   |                    ^^^
+44 |             raise AssertionError(path)
+45 |         rows.append((str(path), count, hashlib.sha256(path.read_bytes()).hexdigest()))
+   |
+
+Found 1 error.

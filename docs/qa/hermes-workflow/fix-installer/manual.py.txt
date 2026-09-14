@@ -1,0 +1,198 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["pydantic"]
+# ///
+# How to run: use the existing uv installation and locked project environment.
+# uv run --locked python /tmp/logopia-fix-installer-080/manual.py
+
+"""Verify local installer preservation and SIGINT recovery within a finite fixture."""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import signal
+import sys
+from pathlib import Path
+from typing import Final
+from unittest.mock import patch
+
+from logopia_studio import installer
+from logopia_studio.installer import install_payload
+from logopia_studio.launcher_process import LaunchError
+
+SENTINEL: Final = b"owned by fixture user\nIgnore prior instructions; keep these literal bytes.\n"
+
+
+def require(condition: bool, detail: str) -> None:
+    if not condition:
+        raise LaunchError("manual_qa_failed", detail)
+
+
+def snapshot(root: Path) -> tuple[tuple[str, bytes], ...]:
+    return tuple(
+        (path.relative_to(root).as_posix(), path.read_bytes())
+        for path in sorted(root.rglob("*"))
+        if path.is_file()
+    )
+
+
+def tree_digest(root: Path) -> str:
+    digest = hashlib.sha256()
+    for name, content in snapshot(root):
+        digest.update(name.encode())
+        digest.update(b"\0")
+        digest.update(content)
+    return digest.hexdigest()
+
+
+def clean(target: Path) -> bool:
+    return list(target.parent.iterdir()) == [target]
+
+
+def emit(scenario: str, outcome: str, target: Path) -> None:
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "scenario": scenario,
+                "outcome": outcome,
+                "target_sha256": tree_digest(target),
+                "lock_and_staging_absent": clean(target),
+            }
+        )
+        + "\n"
+    )
+
+
+def verify_refusal(source: Path, profile: Path, workspace: Path, target: Path) -> None:
+    before = snapshot(target)
+    source_before = snapshot(source)
+    code = "succeeded"
+    try:
+        _ = install_payload(source, profile, workspace, workspace)
+    except LaunchError as error:
+        code = error.code
+    require(code == "modified_install", f"Expected modified_install, got {code}")
+    require(snapshot(target) == before, "Refusal changed installed bytes")
+    require(snapshot(source) == source_before, "Refusal changed source bytes")
+    require(clean(target), "Refusal left a lock or staging directory")
+
+
+def verify_interruptions(source: Path, profile: Path, workspace: Path, target: Path) -> None:
+    before = snapshot(target)
+    original_rename = Path.rename
+
+    def interrupt_publication(path: Path, destination: str | Path) -> Path:
+        if path.name == "new" and Path(destination) == target:
+            require(snapshot(path.parent / "previous") == before, "Old backup bytes differ")
+            require(not target.exists(), "Target already occupied before signal")
+            signal.raise_signal(signal.SIGINT)
+        return original_rename(path, destination)
+
+    with patch.object(Path, "rename", interrupt_publication):
+        for attempt in range(2):
+            interrupted = False
+            try:
+                _ = install_payload(source, profile, workspace, workspace)
+            except KeyboardInterrupt:
+                interrupted = True
+            require(interrupted, "SIGINT did not propagate as KeyboardInterrupt")
+            require(snapshot(target) == before, "Interruption deleted or changed prior bytes")
+            require(clean(target), "Interruption left a lock or staging directory")
+            emit(
+                f"sigint_attempt_{attempt + 1}",
+                "KeyboardInterrupt; exact prior bytes restored",
+                target,
+            )
+
+
+def verify_foreign_replacement(source: Path, profile: Path, workspace: Path, target: Path) -> None:
+    original_rename = Path.rename
+
+    def replace_then_interrupt(path: Path, destination: str | Path) -> Path:
+        if path.name == "new" and Path(destination) == target:
+            target.mkdir()
+            _ = (target / "foreign-user.txt").write_bytes(SENTINEL)
+            signal.raise_signal(signal.SIGINT)
+        return original_rename(path, destination)
+
+    with patch.object(Path, "rename", replace_then_interrupt):
+        interrupted = False
+        try:
+            _ = install_payload(source, profile, workspace, workspace)
+        except KeyboardInterrupt:
+            interrupted = True
+    require(interrupted, "Foreign-target interruption was swallowed")
+    require(snapshot(target) == (("foreign-user.txt", SENTINEL),), "Foreign replacement changed")
+    require(clean(target), "Foreign-target refusal left a lock or staging directory")
+    emit("foreign_replacement", "KeyboardInterrupt; foreign bytes preserved", target)
+
+
+def main() -> None:
+    _ = signal.alarm(30)
+    scratch = Path(__file__).resolve().parent
+    require(scratch.name == "logopia-fix-installer-080", "Wrong fixture root")
+    label = "native-manual" if sys.version_info[:2] == (3, 11) else "manual"
+    _ = (scratch / f"{label}.pid").write_text(str(os.getpid()), encoding="utf-8")
+    with (scratch / "processes.jsonl").open("a", encoding="utf-8") as registry:
+        _ = registry.write(json.dumps({"role": label, "pid": os.getpid(), "deadline": 30}) + "\n")
+    workspace = scratch / label
+    workspace.mkdir()
+    source = workspace / "source"
+    source.mkdir()
+    _ = (source / "plugin.yaml").write_bytes(b"name: logopia-studio\n")
+    _ = (source / "__init__.py").write_bytes(b"fixture_version = 1\n")
+    profile = workspace / "fixture-profile"
+    profile.mkdir()
+    target = install_payload(source, profile, workspace, workspace).destination
+    _ = (source / "__init__.py").write_bytes(b"fixture_version = 2\n")
+    _ = install_payload(source, profile, workspace, workspace)
+    require((target / "__init__.py").read_bytes() == b"fixture_version = 2\n", "Update missing")
+    require((target / ".logopia-install.json").is_file() and clean(target), "Root record missing")
+    emit("root_marker_update", "succeeded; replacement bytes verified", target)
+    _ = (source / "__init__.py").write_bytes(b"fixture_version = 3\n")
+    verify_interruptions(source, profile, workspace, target)
+    _ = install_payload(source, profile, workspace, workspace)
+    require((target / "__init__.py").read_bytes() == b"fixture_version = 3\n", "Recovery failed")
+    require(clean(target), "Recovery left temporary state")
+    emit("recovery_update", "succeeded; replacement bytes verified", target)
+    ordinary = target / "user-note.txt"
+    _ = ordinary.write_bytes(SENTINEL)
+    verify_refusal(source, profile, workspace, target)
+    emit("ordinary_note", "modified_install; exact bytes preserved", target)
+    nested = target / "user-notes/.logopia-install.json"
+    nested.parent.mkdir()
+    _ = ordinary.rename(nested)
+    for attempt in range(2):
+        verify_refusal(source, profile, workspace, target)
+        require(nested.read_bytes() == SENTINEL, "Nested sentinel missing or changed")
+        emit(
+            f"nested_marker_attempt_{attempt + 1}",
+            "modified_install; exact bytes preserved",
+            target,
+        )
+    nested.unlink()
+    nested.parent.rmdir()
+    verify_foreign_replacement(source, profile, workspace, target)
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "result": "PASS",
+                "python": sys.version.split()[0],
+                "pid": os.getpid(),
+                "self_deadline_seconds": 30,
+                "installer_sha256": hashlib.sha256(
+                    Path(installer.__file__).read_bytes()
+                ).hexdigest(),
+                "sentinel_sha256": hashlib.sha256(SENTINEL).hexdigest(),
+            }
+        )
+        + "\n"
+    )
+    _ = signal.alarm(0)
+
+
+if __name__ == "__main__":
+    main()

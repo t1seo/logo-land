@@ -1,0 +1,7 @@
+{
+  "id": "msg_a3cd813f34b5",
+  "subject": "FINAL_BINDING_READY",
+  "created_at": "2026-09-14T18:01:32Z",
+  "from": "term_881295b8-4495-40c3-90e8-1bd44168aa71",
+  "body": "Actual final reinstall passed: output/hermes-demo/install-verified.json, native doctor and both named limits1800. Strict final binding now exists at output/hermes-demo/installed-final-binding.json: 61 managed records source-equal, settings exact, default unchanged, r47/e2 and all5 originals/4delivery files/3ZIP members unchanged. Final process source hashes in fix-process-integration/source-frozen.sha256. Please complete your independent final delta and cleanup. Root full suite is still running; your scope verdict may state that dependency distinctly."
+}

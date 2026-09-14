@@ -1,0 +1,2 @@
+readme_curl_exit=0
+zip_curl_exit=0

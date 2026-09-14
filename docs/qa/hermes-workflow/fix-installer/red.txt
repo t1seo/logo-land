@@ -1,0 +1,60 @@
+{"scenario": "nested_marker", "update_result": "succeeded", "foreign_file_preserved": false, "sentinel_sha256": "bafd9c15abf567fd467e03a691382c6e49177bf7e4fddaee271223333f7d6a7b", "source_unchanged": true, "installation_unchanged": false}
+F
+=================================== FAILURES ===================================
+__________ test_nested_unmanaged_marker_refusal_preserves_exact_bytes __________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-080/red/test_nested_unmanaged_marker_r0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-080/red/test_nested_unmanaged_marker_r0/source')...h('/private/tmp/logopia-fix-installer-080/red/test_nested_unmanaged_marker_r0/fixture-profile/plugins/logopia-studio'))
+
+    def test_nested_unmanaged_marker_refusal_preserves_exact_bytes(
+        tmp_path: Path, installed: InstalledFixture
+    ) -> None:
+        # Given the reviewer's ordinary-file control, then the same bytes under a nested marker.
+        ordinary = installed.target / "user-note.txt"
+        _ = ordinary.write_bytes(SENTINEL)
+        with pytest.raises(LaunchError, match="modified_install"):
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        assert ordinary.read_bytes() == SENTINEL
+        ordinary.unlink()
+        sentinel = installed.target / "user-notes/.logopia-install.json"
+        sentinel.parent.mkdir()
+        _ = sentinel.write_bytes(SENTINEL)
+        before = _snapshot(installed.target)
+        source_before = _snapshot(installed.source)
+        record = ManagedInstall.model_validate_json(
+            (installed.target / ".logopia-install.json").read_bytes()
+        )
+        assert sentinel.relative_to(installed.target).as_posix() not in {
+            entry.path for entry in record.files
+        }
+        # When the exact same payload is offered with the unlisted nested marker present.
+        code = "succeeded"
+        try:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        except LaunchError as error:
+            code = error.code
+        preserved = sentinel.exists() and sentinel.read_bytes() == SENTINEL
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "nested_marker",
+                    "update_result": code,
+                    "foreign_file_preserved": preserved,
+                    "sentinel_sha256": hashlib.sha256(SENTINEL).hexdigest(),
+                    "source_unchanged": _snapshot(installed.source) == source_before,
+                    "installation_unchanged": _snapshot(installed.target) == before,
+                }
+            )
+            + "\n"
+        )
+        # Then success plus a missing sentinel is a failure, and refusal preserves all bytes.
+>       assert code == "modified_install"
+E       AssertionError: assert 'succeeded' == 'modified_install'
+E         
+E         - modified_install
+E         + succeeded
+
+tests/hermes/test_installer_foreign_marker.py:126: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_installer_foreign_marker.py::test_nested_unmanaged_marker_refusal_preserves_exact_bytes
+1 failed in 0.05s

@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "revision": 47,
+  "phase": "delivered",
+  "selected_id": "e2",
+  "candidates": 5,
+  "matched_review_fields": 10,
+  "source_sha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "http_json_sha256": "415184581278b1317132c6c380b5255081bb9146dd02db9a1e227f67b4c624fe",
+  "notice_is_public_projection": true
+}

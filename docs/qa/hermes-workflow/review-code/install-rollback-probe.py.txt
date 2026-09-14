@@ -1,0 +1,81 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["pytest"]
+# ///
+# How to run: PYTHONPATH=integrations/hermes uv run --locked python /tmp/logopia-review-code-080/test_install_recovery.py
+"""Compare I/O failure and interruption at the installer's second rename boundary."""
+
+from __future__ import annotations
+
+import json
+import signal
+import sys
+from pathlib import Path
+from typing import Literal, assert_never
+
+import pytest
+from logopia_studio.installer import install_payload
+
+
+@pytest.mark.parametrize("fault", ["io", "interrupt"])
+def test_prior_install_survives_publication_failure(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, fault: Literal["io", "interrupt"]
+) -> None:
+    # Given an unchanged owned install whose replacement is fully staged.
+    source = tmp_path / "source"
+    source.mkdir()
+    _ = (source / "plugin.yaml").write_bytes(b"name: logopia-studio\n")
+    _ = (source / "__init__.py").write_bytes(b"original_payload = True\n")
+    profile = tmp_path / "fixture-profile"
+    profile.mkdir()
+    target = install_payload(source, profile, tmp_path, tmp_path).destination
+    before = {path.name: path.read_bytes() for path in target.iterdir()}
+    _ = (source / "__init__.py").write_bytes(b"replacement_payload = True\n")
+    original_rename = Path.rename
+
+    def fail_publication(path: Path, destination: str | Path) -> Path:
+        if path.name == "new" and Path(destination).name == "logopia-studio":
+            match fault:
+                case "io":
+                    raise PermissionError("fixture second rename blocked")
+                case "interrupt":
+                    raise KeyboardInterrupt
+                case _:
+                    assert_never(fault)
+        return original_rename(path, destination)
+
+    monkeypatch.setattr(Path, "rename", fail_publication)
+    # When the publication rename fails after the real old-directory rename.
+    with pytest.raises((OSError, KeyboardInterrupt)):
+        _ = install_payload(source, profile, tmp_path, tmp_path)
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "scenario": "install_rollback",
+                "fault": fault,
+                "target_exists": target.is_dir(),
+                "remaining_entries": [path.name for path in (profile / "plugins").iterdir()],
+            }
+        )
+        + "\n"
+    )
+    # Then the exact previously installed files must remain available.
+    assert target.is_dir(), "Previous install was deleted while unwinding interruption"
+    assert {path.name: path.read_bytes() for path in target.iterdir()} == before
+
+
+if __name__ == "__main__":
+    signal.alarm(20)
+    raise SystemExit(
+        pytest.main(
+            [
+                "-q",
+                "-s",
+                "-c",
+                "pyproject.toml",
+                __file__,
+                "--basetemp",
+                str(Path(__file__).with_name("install-pytest")),
+            ]
+        )
+    )

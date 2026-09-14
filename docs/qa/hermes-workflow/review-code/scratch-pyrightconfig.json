@@ -1,0 +1,11 @@
+{
+  "typeCheckingMode": "all",
+  "pythonVersion": "3.11",
+  "venvPath": "/Users/cillian/Documents/Github/Projects/logo-generator",
+  "venv": ".venv",
+  "extraPaths": [
+    "/tmp/logopia-review-code-080",
+    "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes"
+  ],
+  "include": ["test_nested_helper.py", "test_review_boundaries.py"]
+}

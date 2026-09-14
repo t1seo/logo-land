@@ -1,0 +1,8 @@
+Exit code: 1
+INP001 File `/tmp/logopia-review-goal-080/test_first_rename.py` is part of an implicit namespace package. Add an `__init__.py`.
+--> /tmp/logopia-review-goal-080/test_first_rename.py:1:1
+
+D100 Missing docstring in public module
+--> /tmp/logopia-review-goal-080/test_first_rename.py:1:1
+
+Found 2 errors.

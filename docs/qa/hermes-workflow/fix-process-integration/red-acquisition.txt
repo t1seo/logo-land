@@ -1,0 +1,131 @@
+{"fixture": "test_helper_repeated_caller_in0", "owned": [[97260, 97260]], "states": [""], "group_exists": false, "elapsed": 0.442}
+{"cleanup": "test_helper_repeated_caller_in0", "owned": [[97260, 97260]], "states": [""], "group_exists": false}
+.{"fixture": "test_helper_repeated_caller_in1", "owned": [[97297, 97297]], "states": ["97297 97259 97297 Z"], "group_exists": true, "elapsed": 2.38}
+{"cleanup": "test_helper_repeated_caller_in1", "owned": [[97297, 97297]], "states": [""], "group_exists": false}
+F
+=================================== FAILURES ===================================
+_ test_helper_repeated_caller_interrupts_settle_before_original_propagates[True] _
+
+_signum = 2
+_frame = <frame at 0x10bc3cc40, file '/Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/selectors.py', line 416, code select>
+
+    def interrupt(_signum: int, _frame: FrameType | None) -> None:
+        error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
+        interrupts.append(error)
+>       raise error
+E       KeyboardInterrupt: caller interrupt 1
+
+tests/hermes/test_helper_interrupt.py:127: KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-integration-080/red/test_helper_repeated_caller_in1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10bc449e0>
+acquire_interrupt = True
+
+    @pytest.mark.parametrize("acquire_interrupt", [False, True])
+    def test_helper_repeated_caller_interrupts_settle_before_original_propagates(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch, acquire_interrupt: bool,
+    ) -> None:
+        # Given a finite helper that repeatedly signals only its invoking caller.
+        interrupts: list[KeyboardInterrupt] = []
+    
+        class AcquireBoundary:
+            lock: LockType = allocate_lock()
+            triggered: bool = False
+    
+            def acquire(self, blocking: bool = True) -> bool:
+                acquired = self.lock.acquire(blocking)
+                if acquired and not self.triggered:
+                    self.triggered = True
+                    os.kill(os.getpid(), signal.SIGINT)
+                return acquired
+    
+            def release(self) -> None:
+                self.lock.release()
+    
+        def interrupt_poll(
+            process: subprocess.Popen[str], sig: signal.Signals, grace: float,
+        ) -> KeyboardInterrupt | None:
+            boundary = AcquireBoundary()
+            try:
+                with monkeypatch.context() as scoped:
+                    scoped.setattr(process, "_waitpid_lock", boundary)
+                    scoped.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
+                    result = settle_group(process, sig, grace)
+                    assert process.returncode is not None
+                    assert not boundary.lock.locked()
+                    return result
+            finally:
+                _ = observe(tmp_path, time.monotonic() - started)
+                assert boundary.triggered
+                process.kill()
+                _ = process.wait(timeout=2)
+    
+        if acquire_interrupt:
+            monkeypatch.setattr("logopia_studio.helper_process.settle_group", interrupt_poll)
+    
+        def interrupt(_signum: int, _frame: FrameType | None) -> None:
+            error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
+            interrupts.append(error)
+            raise error
+    
+        previous = signal.signal(signal.SIGINT, interrupt)
+        try:
+            with finite_fixture(tmp_path, HELPER_SOURCE, "repeat") as command:
+                started = time.monotonic()
+                with warnings.catch_warnings(record=True) as recorded:
+                    warnings.simplefilter("always", ResourceWarning)
+                    # When repeated real interrupts reach the caller during invocation and cleanup.
+                    with pytest.raises(KeyboardInterrupt) as caught:
+>                       _ = run_cli(command, timeout=5)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/hermes/test_helper_interrupt.py:137: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+integrations/hermes/logopia_studio/helper_process.py:27: in run_cli
+    cleanup_interrupt = settle_group(process, signal.SIGTERM, 2)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/hermes/test_helper_interrupt.py:111: in interrupt_poll
+    result = settle_group(process, sig, grace)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+process = <Popen: returncode: -9 args: ('/Users/cillian/Documents/Github/Projects/logo...>
+initial_signal = <Signals.SIGTERM: 15>, grace_seconds = 2
+include_session = False
+
+    def settle_group(
+        process: subprocess.Popen[str],
+        initial_signal: signal.Signals,
+        grace_seconds: float,
+        *,
+        include_session: bool = False,
+    ) -> KeyboardInterrupt | None:
+        """Reap the leader and owned groups within fixed graceful and forced deadlines."""
+        deadline = time.monotonic() + grace_seconds
+        force_deadline = deadline + _FORCE_SECONDS
+        owned = _OwnedGroups(process.pid, include_session)
+        forced = False
+        interrupted: KeyboardInterrupt | None = None
+        while True:
+            try:
+                exit_code = process.poll()
+                settled = owned.step(signal.SIGKILL if forced else initial_signal, force_deadline)
+                if owned.inspection_error is not None:
+                    forced = True
+                    deadline = force_deadline
+                if settled and exit_code is not None:
+                    owned.raise_inspection_error()
+                    return interrupted
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    if forced:
+                        owned.raise_inspection_error()
+>                       raise subprocess.TimeoutExpired(process.args, grace_seconds + _FORCE_SECONDS)
+E                       subprocess.TimeoutExpired: Command '('/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/private/tmp/logopia-fix-process-integration-080/red/test_helper_repeated_caller_in1/finite_fixture.py', '/private/tmp/logopia-fix-process-integration-080/red/test_helper_repeated_caller_in1', 'repeat')' timed out after 2.1 seconds
+
+integrations/hermes/logopia_studio/process_group.py:115: TimeoutExpired
+=========================== short test summary info ============================
+FAILED tests/hermes/test_helper_interrupt.py::test_helper_repeated_caller_interrupts_settle_before_original_propagates[True]
+1 failed, 1 passed, 9 deselected in 2.95s

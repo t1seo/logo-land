@@ -1,0 +1,12 @@
+{"scenario": "launcher_descendant", "pid": 6089, "state_after_receipt": "", "cleanup": "absent"}
+.{"scenario": "helper_interrupt", "pid": 6251, "state_after_receipt": "", "cleanup": "absent"}
+{"resource_warnings": 0}
+.{"scenario": "nested_marker", "update_result": "modified_install", "foreign_file_preserved": true}
+.{"scenario": "forced_launcher_actual_helper", "launcher_exit": -9, "timed_out": true, "helper_pid": 6259, "helper_after_receipt": "", "cleanup": "absent"}
+.{"fixture": "test_helper_repeated_caller_in0", "owned": [[6432, 6432]], "states": [""], "group_exists": false, "elapsed": 0.432}
+{"cleanup": "test_helper_repeated_caller_in0", "owned": [[6432, 6432]], "states": [""], "group_exists": false}
+.{"fixture": "test_helper_repeated_caller_in1", "owned": [[6442, 6442]], "states": [""], "group_exists": false, "elapsed": 0.114}
+{"fixture": "test_helper_repeated_caller_in1", "owned": [[6442, 6442]], "states": [""], "group_exists": false, "elapsed": 0.12}
+{"cleanup": "test_helper_repeated_caller_in1", "owned": [[6442, 6442]], "states": [""], "group_exists": false}
+.
+6 passed in 5.45s

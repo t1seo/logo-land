@@ -1,0 +1,63 @@
+{"scenario": "install_rollback", "fault": "io", "target_exists": true, "remaining_entries": ["logopia-studio"]}
+.{"scenario": "install_rollback", "fault": "interrupt", "target_exists": false, "remaining_entries": []}
+F
+=================================== FAILURES ===================================
+__________ test_prior_install_survives_publication_failure[interrupt] __________
+
+tmp_path = PosixPath('/private/tmp/logopia-review-code-080/install-pytest/test_prior_install_survives_pu1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b0ba510>
+fault = 'interrupt'
+
+    @pytest.mark.parametrize("fault", ["io", "interrupt"])
+    def test_prior_install_survives_publication_failure(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch, fault: Literal["io", "interrupt"]
+    ) -> None:
+        # Given an unchanged owned install whose replacement is fully staged.
+        source = tmp_path / "source"
+        source.mkdir()
+        _ = (source / "plugin.yaml").write_bytes(b"name: logopia-studio\n")
+        _ = (source / "__init__.py").write_bytes(b"original_payload = True\n")
+        profile = tmp_path / "fixture-profile"
+        profile.mkdir()
+        target = install_payload(source, profile, tmp_path, tmp_path).destination
+        before = {path.name: path.read_bytes() for path in target.iterdir()}
+        _ = (source / "__init__.py").write_bytes(b"replacement_payload = True\n")
+        original_rename = Path.rename
+    
+        def fail_publication(path: Path, destination: str | Path) -> Path:
+            if path.name == "new" and Path(destination).name == "logopia-studio":
+                match fault:
+                    case "io":
+                        raise PermissionError("fixture second rename blocked")
+                    case "interrupt":
+                        raise KeyboardInterrupt
+                    case _:
+                        assert_never(fault)
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", fail_publication)
+        # When the publication rename fails after the real old-directory rename.
+        with pytest.raises((OSError, KeyboardInterrupt)):
+            _ = install_payload(source, profile, tmp_path, tmp_path)
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "install_rollback",
+                    "fault": fault,
+                    "target_exists": target.is_dir(),
+                    "remaining_entries": [path.name for path in (profile / "plugins").iterdir()],
+                }
+            )
+            + "\n"
+        )
+        # Then the exact previously installed files must remain available.
+>       assert target.is_dir(), "Previous install was deleted while unwinding interruption"
+E       AssertionError: Previous install was deleted while unwinding interruption
+E       assert False
+E        +  where False = is_dir()
+E        +    where is_dir = PosixPath('/private/tmp/logopia-review-code-080/install-pytest/test_prior_install_survives_pu1/fixture-profile/plugins/logopia-studio').is_dir
+
+/tmp/logopia-review-code-080/test_install_recovery.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED ::test_prior_install_survives_publication_failure[interrupt] - Asserti...
+1 failed, 1 passed in 0.05s

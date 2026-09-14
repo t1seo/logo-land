@@ -1,0 +1,53 @@
+#!/bin/bash
+set -euo pipefail
+repo=/Users/cillian/Documents/Github/Projects/logo-generator
+scratch=/tmp/logopia-review-context-final-080
+out="$repo/docs/qa/hermes-workflow/review-context-final"
+cd "$repo"
+if /usr/sbin/lsof -nP -iTCP:8817 -sTCP:LISTEN > "$out/port-before.txt"; then
+  printf '%s\n' 'Port 8817 is occupied; no server started.' >&2
+  exit 1
+fi
+test -x .venv/bin/python
+perl -e 'alarm 120; exec @ARGV or die $!' .venv/bin/python -B -u -m http.server 8817 --bind 127.0.0.1 --directory "$repo" > "$out/server-log.txt" 2> "$out/server-error.txt" &
+server_pid=$!
+printf '%s\n' "$server_pid" > "$scratch/server.pid"
+printf '%s\n' "$server_pid" > "$out/server-pid.txt"
+cleanup() {
+  saved_exit=$?
+  trap - EXIT INT TERM ALRM
+  if kill -0 "$server_pid" 2>/dev/null; then kill -TERM "$server_pid"; fi
+  set +e
+  wait "$server_pid"
+  server_exit=$?
+  set -e
+  printf 'server_pid=%s\nserver_exit=%s\nhttp_script_exit=%s\n' "$server_pid" "$server_exit" "$saved_exit" > "$out/http-cleanup.txt"
+  if kill -0 "$server_pid" 2>/dev/null; then printf '%s\n' 'ERROR: owned server still exists' >> "$out/http-cleanup.txt"; exit 1; fi
+  if /usr/sbin/lsof -nP -iTCP:8817 -sTCP:LISTEN > "$out/port-after.txt"; then printf '%s\n' 'ERROR: port is occupied after cleanup' >> "$out/http-cleanup.txt"; exit 1; fi
+  printf '%s\n' 'server_pid_absent=true' 'port_8817_free=true' >> "$out/http-cleanup.txt"
+  exit "$saved_exit"
+}
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+trap 'exit 124' ALRM
+for attempt in {1..50}; do
+  if /usr/sbin/lsof -a -nP -p "$server_pid" -iTCP:8817 -sTCP:LISTEN > "$out/server-listener.txt"; then break; fi
+  sleep 0.1
+done
+rg -F '127.0.0.1:8817 (LISTEN)' "$out/server-listener.txt"
+curl -i --connect-timeout 2 --max-time 15 http://127.0.0.1:8817/README.md > "$scratch/readme.response" 2> "$out/readme-curl-stderr.txt"
+printf 'readme_curl_exit=0\n' > "$out/http-exits.txt"
+curl -i --connect-timeout 2 --max-time 15 http://127.0.0.1:8817/docs/hermes-demo/delivery/logo-package.zip > "$scratch/zip.response" 2> "$out/zip-curl-stderr.txt"
+printf 'zip_curl_exit=0\n' >> "$out/http-exits.txt"
+for name in readme zip; do
+  perl -0777 -ne 'my $n=index($_,"\r\n\r\n"); die "missing HTTP header separator" if $n<0; print substr($_,0,$n+4)' "$scratch/$name.response" > "$out/$name-headers.txt"
+  perl -0777 -ne 'my $n=index($_,"\r\n\r\n"); die "missing HTTP header separator" if $n<0; binmode STDOUT; print substr($_,$n+4)' "$scratch/$name.response" > "$scratch/$name.body"
+  rg '^HTTP/1\.[01] 200 ' "$out/$name-headers.txt"
+done
+cmp "$scratch/readme.body" README.md
+cmp "$scratch/zip.body" docs/hermes-demo/delivery/logo-package.zip
+cmp "$scratch/zip.body" output/logopia/offcut-hermes-demo/logo-package.zip
+shasum -a 256 "$scratch/readme.body" README.md "$scratch/zip.body" docs/hermes-demo/delivery/logo-package.zip > "$out/http-body.sha256"
+wc -c "$scratch/readme.body" "$scratch/zip.body" > "$out/http-body-sizes.txt"
+printf '%s\n' 'PASS: both HTTP 200 bodies exactly equal their source; ZIP equals canonical delivery.'

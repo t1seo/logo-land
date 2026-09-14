@@ -1,0 +1,100 @@
+{
+  "timestamp": "2026-09-14T16:48:20.599Z",
+  "task": "task_9f0415733e9a",
+  "dispatch": "ctx_ae88e23a670f",
+  "contextsClosed": true,
+  "ownedChromeProcesses": 0,
+  "ownedServersStarted": 0,
+  "ownedPorts": [],
+  "temporaryScriptsRemaining": 0,
+  "temporaryProfilesRemaining": 0,
+  "downloadFilesRemaining": 0,
+  "taskLocalPlaywrightInstalled": false,
+  "removed": [
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/chrome-artifacts",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/chrome-native",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/chrome-profile",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/chrome-public-final",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/downloads",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/npm-cache",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/playwright",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/delivery.json",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/final-pin.json",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/foreign-before.json",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/inert-fixture.html",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/native-before.json",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/pin.json",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/red.cjs",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/render.cjs",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/verify.cjs",
+      "exists": false
+    },
+    {
+      "path": "output/hermes-preflight/public-sample-task9f041573/native.cjs",
+      "exists": false
+    }
+  ],
+  "retainedIgnoredRawLogs": [
+    "output/hermes-preflight/public-sample-task9f041573/native.log",
+    "output/hermes-preflight/public-sample-task9f041573/npm-install.log",
+    "output/hermes-preflight/public-sample-task9f041573/red.log",
+    "output/hermes-preflight/public-sample-task9f041573/render-final.log",
+    "output/hermes-preflight/public-sample-task9f041573/render.log",
+    "output/hermes-preflight/public-sample-task9f041573/verify-final-cleanup.log",
+    "output/hermes-preflight/public-sample-task9f041573/verify-final-corrected.log",
+    "output/hermes-preflight/public-sample-task9f041573/verify-final.log",
+    "output/hermes-preflight/public-sample-task9f041573/verify-fresh-profile.log",
+    "output/hermes-preflight/public-sample-task9f041573/verify-interim.log"
+  ],
+  "canonicalRevision": 47,
+  "canonicalWorkflowUnchanged": true,
+  "nativeGalleryUnchanged": true,
+  "canonicalOriginalsUnchanged": 5,
+  "publicOriginalsByteExact": 5
+}

@@ -1,0 +1,43 @@
+require "json"
+require "digest"
+
+root = Dir.pwd
+scratch = File.dirname(__FILE__)
+canonical_bytes = File.binread(File.join(root, ".logo-generator/workflows/offcut-hermes-demo/workflow.json"))
+canonical = JSON.parse(canonical_bytes)
+document = JSON.parse(File.binread(File.join(scratch, "example.body")))
+raise "public schema" unless document.keys.sort == %w[record_type schema_version notice publication brief planning directions candidates sample_choice delivery].sort
+raise "public identity" unless document["record_type"] == "curated_public_example" && document["schema_version"].instance_of?(Integer) && document["schema_version"] == 1
+raise "canonical identity" unless [canonical["id"], canonical["revision"], canonical["phase"], canonical["selected_id"]] == ["offcut-hermes-demo", 47, "delivered", "e2"]
+publication = document.fetch("publication")
+raise "public binding" unless publication["frozen"] == true && publication["source_revision"] == 47 && publication["source_phase"] == "delivered" && publication["source_sha256"] == Digest::SHA256.hexdigest(canonical_bytes)
+raise "brief mismatch" unless document["brief"] == canonical["brief"]
+plan = canonical.fetch("jobs").find { |job| job["kind"] == "plan" }.fetch("plan")
+raise "planning attribution" unless document["planning"] == {"role"=>"strategy_and_art_direction", "provider"=>plan["provider"], "model"=>plan["model"]}
+direction_keys = %w[id title motif rationale risk]
+expected_directions = canonical.fetch("directions").map { |item| item.select { |key,_| direction_keys.include?(key) } }
+raise "direction mismatch" unless document["directions"] == expected_directions
+candidate_keys = %w[id direction_id parent_id sha256 width height provider model keep change]
+review_keys = %w[role provider model summary image_sha256 parent_sha256 view_width criteria]
+expected_candidates = canonical.fetch("candidates").map do |candidate|
+  candidate.select { |key,_| candidate_keys.include?(key) }.merge(
+    "original"=>"originals/#{candidate.fetch('id')}.png",
+    "reviews"=>candidate.fetch("critiques").map { |review| review.select { |key,_| review_keys.include?(key) } }
+  )
+end
+raise "candidate/review mismatch" unless document["candidates"] == expected_candidates
+raise "choice mismatch" unless document["sample_choice"] == {"owner"=>"coordinator", "refinement_parent"=>"c1", "selected_id"=>"e2", "final_native_receipt_received"=>true}
+delivery = document.fetch("delivery")
+raise "delivered candidate" unless delivery.fetch("candidate_id") == "e2"
+%w[zip manifest guide].each do |key|
+  record = delivery.fetch(key)
+  bytes = File.binread(File.join(root, "docs/hermes-demo", record.fetch("path")))
+  raise "delivery metadata #{key}" unless Digest::SHA256.hexdigest(bytes) == record["sha256"] && bytes.bytesize == record["bytes"]
+end
+raise "entry set" unless delivery.fetch("entries").map { |entry| entry["path"] }.sort == %w[logo.png manifest.json brand-guide.md].sort
+delivery.fetch("entries").each do |entry|
+  raise "entry path" unless entry["public_path"] == "delivery/#{entry.fetch('path')}"
+  bytes = File.binread(File.join(root, "docs/hermes-demo", entry.fetch("public_path")))
+  raise "entry hash/bytes" unless Digest::SHA256.hexdigest(bytes) == entry["sha256"] && bytes.bytesize == entry["bytes"]
+end
+puts JSON.pretty_generate({result:"PASS", revision:47, phase:"delivered", selected_id:"e2", candidates:expected_candidates.length, matched_review_fields:expected_candidates.sum { |c| c.fetch("reviews").length }, source_sha256:Digest::SHA256.hexdigest(canonical_bytes), http_json_sha256:Digest::SHA256.file(File.join(scratch, "example.body")).hexdigest, notice_is_public_projection:document.fetch("notice").include?("does not resume or change")})

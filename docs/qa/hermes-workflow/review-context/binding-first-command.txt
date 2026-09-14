@@ -1,0 +1,50 @@
+#!/bin/bash
+set -euo pipefail
+repo=/Users/cillian/Documents/Github/Projects/logo-generator
+scratch=/tmp/logopia-review-context-080
+evidence="$repo/docs/qa/hermes-workflow/review-context"
+cd "$repo"
+for name in start continue choose-parent revise revise-gap choose-final deliver; do
+  sha=$(shasum -a 256 "output/hermes-demo/$name.json" | cut -d ' ' -f 1)
+  jq -n --arg request_name "$name" --arg request_sha "$sha" --slurpfile saved "output/hermes-demo/$name.json" --slurpfile sessions "output/hermes-demo/$name-session.jsonl" -f "$scratch/bindings.jq"
+done > "$scratch/bindings.ndjson"
+jq -se 'length == 7 and all(.[]; .saved_arguments_match)' "$scratch/bindings.ndjson"
+jq -s '.' "$scratch/bindings.ndjson" > "$evidence/request-bindings.json"
+workflow=.logo-generator/workflows/offcut-hermes-demo/workflow.json
+cmp "$workflow" output/hermes-demo/final-workflow.json
+jq -r '.candidates[] | [.id,.image_path,.sha256]|@tsv' "$workflow" | while IFS=$'\t' read -r id path expected; do
+  actual=$(shasum -a 256 "$path" | cut -d ' ' -f 1)
+  public=$(shasum -a 256 "docs/hermes-demo/originals/$id.png" | cut -d ' ' -f 1)
+  test "$expected" = "$actual"
+  test "$expected" = "$public"
+  printf '%s\t%s\tcanonical=public\n' "$id" "$actual"
+done > "$evidence/original-bindings.tsv"
+for name in logo.png manifest.json brand-guide.md logo-package.zip; do
+  cmp "output/logopia/offcut-hermes-demo/$name" "docs/hermes-demo/delivery/$name"
+  shasum -a 256 "docs/hermes-demo/delivery/$name"
+done > "$evidence/delivery.sha256"
+unzip -Z1 docs/hermes-demo/delivery/logo-package.zip | sort > "$evidence/zip-members.txt"
+printf 'brand-guide.md\nlogo.png\nmanifest.json\n' > "$scratch/expected-members.txt"
+cmp "$scratch/expected-members.txt" "$evidence/zip-members.txt"
+for name in logo.png manifest.json brand-guide.md; do
+  unzip -p docs/hermes-demo/delivery/logo-package.zip "$name" | cmp - "docs/hermes-demo/delivery/$name"
+  printf '%s ZIP member bytes match public and canonical\n' "$name"
+done > "$evidence/zip-bindings.txt"
+installed=/Users/cillian/.hermes/profiles/logopia/plugins/logopia-studio
+jq -S . "$installed/.logopia-install.json" > "$scratch/current-install.json"
+jq -S . output/hermes-demo/installed-payload.json > "$scratch/saved-install.json"
+cmp "$scratch/current-install.json" "$scratch/saved-install.json"
+jq -r '.files[] | [.path,.sha256]|@tsv' "$installed/.logopia-install.json" | while IFS=$'\t' read -r path expected; do
+  actual=$(shasum -a 256 "$installed/$path" | cut -d ' ' -f 1)
+  test "$expected" = "$actual"
+  if test "$path" = settings.json; then
+    jq -e --arg repo "$repo" '.schema_version == 1 and .workspace == $repo and .helper_repo == $repo' "$installed/$path" >/dev/null
+  else
+    source=$(shasum -a 256 "integrations/hermes/$path" | cut -d ' ' -f 1)
+    test "$expected" = "$source"
+  fi
+  printf '%s\t%s\tverified\n' "$path" "$actual"
+done > "$evidence/installed-bindings.tsv"
+test "$(wc -l < "$evidence/installed-bindings.tsv" | tr -d ' ')" = 59
+shasum -a 256 -c output/hermes-demo/default-config-before.sha256 > "$scratch/default-config-check.txt"
+printf 'All 7 normalized tool requests, 5 originals, 4 delivery files, 3 ZIP members and 59 installation records verified; default config matches original digest.\n'

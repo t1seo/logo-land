@@ -1,0 +1,41 @@
+{
+  "taskId": "task_7b1360964b5d",
+  "dispatchId": "ctx_266c0bc431e3",
+  "temporaryRoot": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw",
+  "removedChildren": [
+    "baseline-native",
+    "node_modules",
+    "package-lock.json",
+    "package.json",
+    "pytest-final",
+    "pytest-green",
+    "pytest-red",
+    "pytest-red-adversarial",
+    "pytest-red-symlink"
+  ],
+  "contextsClosed": true,
+  "ownedChromeProcesses": 0,
+  "temporaryRootExists": false,
+  "removedCaches": [
+    "integrations/hermes/logopia_studio/__pycache__/gallery.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_cards.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_delivery.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_files.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_package.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_render.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_review.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_strategy.cpython-312.pyc",
+    "tests/hermes/__pycache__/test_gallery_adversarial.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_baseline.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_delivery.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_delivery_adversarial.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_delivery_fixture.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_delivery_fixture.cpython-312.pyc",
+    "tests/hermes/__pycache__/test_gallery_fixture.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_fixture.cpython-312.pyc",
+    "tests/hermes/__pycache__/test_gallery_publish.cpython-312-pytest-9.1.1.pyc"
+  ],
+  "qaServersStarted": 0,
+  "qaTmuxSessionsStarted": 0,
+  "globalProfilesTouched": false
+}

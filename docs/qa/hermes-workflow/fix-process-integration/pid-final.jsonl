@@ -1,0 +1,46 @@
+{"receipt": "/tmp/logopia-fix-process-integration-080/manual/runner.pid", "pid": 6226, "pgid": 6225}
+{"receipt": "/tmp/logopia-fix-process-integration-080/manual/spawned-1.pid", "pid": 6227, "pgid": 6227}
+{"receipt": "/tmp/logopia-fix-process-integration-080/manual/spawned-2.pid", "pid": 6244, "pgid": 6244}
+{"receipt": "/tmp/logopia-fix-process-integration-080/manual/spawned-3.pid", "pid": 6258, "pgid": 6258}
+{"receipt": "/tmp/logopia-fix-process-integration-080/manual/terminal/helper.pid", "pid": 6227, "pgid": 6227}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py311/control/child.pid", "pid": 93472, "pgid": 93472}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py311/interrupt_acquisition/child.pid", "pid": 93476, "pgid": 93476}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py311-green/control/child.pid", "pid": 2144, "pgid": 2144}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py311-green/interrupt_acquisition/child.pid", "pid": 2157, "pgid": 2157}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py312/control/child.pid", "pid": 93473, "pgid": 93473}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py312/interrupt_acquisition/child.pid", "pid": 93479, "pgid": 93479}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py312-green/control/child.pid", "pid": 2146, "pgid": 2146}
+{"receipt": "/tmp/logopia-fix-process-integration-080/probe/py312-green/interrupt_acquisition/child.pid", "pid": 2161, "pgid": 2161}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_cleanup_preserves_other_s0/descendant.pid", "pid": 914, "pgid": 913}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_cleanup_preserves_other_s0/leader.pid", "pid": 913, "pgid": 913}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_failed_session_inspection0/descendant.pid", "pid": 941, "pgid": 940}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_failed_session_inspection0/leader.pid", "pid": 940, "pgid": 940}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_forced_launcher_settles_n0/helper.pid", "pid": 1226, "pgid": 1226}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_forced_launcher_settles_n0/leader.pid", "pid": 1225, "pgid": 1225}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_exited_leader_sett0/descendant.pid", "pid": 1060, "pgid": 1059}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_exited_leader_sett0/leader.pid", "pid": 1059, "pgid": 1059}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_exited_leader_sett1/descendant.pid", "pid": 1080, "pgid": 1079}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_exited_leader_sett1/leader.pid", "pid": 1079, "pgid": 1079}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_repeated_caller_in0/helper.pid", "pid": 1003, "pgid": 1003}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_repeated_caller_in1/helper.pid", "pid": 1019, "pgid": 1019}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_helper_timeout_survives_i0/helper.pid", "pid": 1029, "pgid": 1029}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_deadline_settles0/descendant.pid", "pid": 791, "pgid": 790}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_deadline_settles0/leader.pid", "pid": 790, "pgid": 790}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_deadline_settles1/descendant.pid", "pid": 847, "pgid": 846}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_deadline_settles1/leader.pid", "pid": 846, "pgid": 846}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_normal_exit_sett0/descendant.pid", "pid": 873, "pgid": 872}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_normal_exit_sett0/leader.pid", "pid": 872, "pgid": 872}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_repeated_interru0/descendant.pid", "pid": 897, "pgid": 886}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_launcher_repeated_interru0/leader.pid", "pid": 886, "pgid": 886}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_rejected_group_signals_do0/helper.pid", "pid": 1106, "pgid": 1106}
+{"receipt": "/tmp/logopia-fix-process-integration-080/pytest/test_rejected_group_signals_do1/helper.pid", "pid": 1145, "pgid": 1145}
+{"receipt": "/tmp/logopia-fix-process-integration-080/red/test_helper_repeated_caller_in0/helper.pid", "pid": 97260, "pgid": 97260}
+{"receipt": "/tmp/logopia-fix-process-integration-080/red/test_helper_repeated_caller_in1/helper.pid", "pid": 97297, "pgid": 97297}
+{"probe_runner_receipt": "docs/qa/hermes-workflow/fix-process-integration/probe-py311-green.txt", "pid": 2129}
+{"probe_runner_receipt": "docs/qa/hermes-workflow/fix-process-integration/probe-py311.txt", "pid": 93469}
+{"probe_runner_receipt": "docs/qa/hermes-workflow/fix-process-integration/probe-py312-green.txt", "pid": 2138}
+{"probe_runner_receipt": "docs/qa/hermes-workflow/fix-process-integration/probe-py312.txt", "pid": 93471}
+{"unique_pids": 41, "unique_groups": 29, "all_pids_absent": true, "all_groups_absent": true, "ps_stdout": "", "observation_signals_only": true}
+{"prior_test_log": "green-acquisition-first.txt", "pid": 99253, "pgid": 99253}
+{"prior_test_log": "green-acquisition-first.txt", "pid": 99264, "pgid": 99264}
+{"complete_own_recorded_pids": 43, "complete_own_recorded_groups": 31, "all_absent": true, "observation_signals_only": true}

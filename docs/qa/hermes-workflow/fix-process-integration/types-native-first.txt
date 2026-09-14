@@ -1,0 +1,8 @@
+/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_scope.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_scope.py:61:21 - error: Type of "cmd" is Any (reportAny)
+  /Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_scope.py:61:21 - error: Argument type is Any
+    Argument corresponds to parameter "cmd" in function "__init__" (reportAny)
+  /Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_scope.py:61:41 - error: Type of "output" is Any (reportAny)
+  /Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_scope.py:61:41 - error: Argument type is Any
+    Argument corresponds to parameter "output" in function "__init__" (reportAny)
+4 errors, 0 warnings, 0 notes

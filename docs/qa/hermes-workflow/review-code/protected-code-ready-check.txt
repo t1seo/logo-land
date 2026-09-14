@@ -1,0 +1,13 @@
+.logo-generator/workflows/offcut-hermes-demo/workflow.json: OK
+output/hermes-demo/final-workflow.json: OK
+output/hermes-demo/final-binding.json: OK
+output/hermes-demo/session-bindings.json: OK
+output/hermes-demo/continue-binding.json: OK
+output/hermes-demo/installed-080-binding.json: OK
+.omo/drafts/logo-land-next-capability.md: OK
+.omo/drafts/logo-land-next-delivery.md: OK
+.omo/drafts/logo-land-next-metis.md: OK
+.omo/drafts/logo-land-next-tools.md: OK
+pyproject.toml: OK
+uv.lock: OK
+.codex-plugin/plugin.json: OK

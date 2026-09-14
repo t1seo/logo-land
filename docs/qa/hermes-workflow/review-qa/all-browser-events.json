@@ -1,0 +1,2195 @@
+{
+  "requests": [
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///tmp/logopia-review-qa-080/readme-en.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///tmp/logopia-review-qa-080/readme-en.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///tmp/logopia-review-qa-080/readme-en.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///tmp/logopia-review-qa-080/readme-ko.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///tmp/logopia-review-qa-080/readme-ko.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///tmp/logopia-review-qa-080/readme-ko.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/delivery/manifest.json",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/delivery/brand-guide.md",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/delivery/brand-guide.md",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/delivery/manifest.json",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/delivery/brand-guide.md",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/styles.css",
+      "method": "GET",
+      "type": "stylesheet"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+      "method": "GET",
+      "type": "image"
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "error": {
+        "errorText": "net::ERR_FAILED"
+      }
+    }
+  ],
+  "errors": []
+}

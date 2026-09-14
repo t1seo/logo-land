@@ -1,7 +1,7 @@
 [project]
 name = "logo-land-helper"
-version = "0.7.0"
-description = "Workspace-local provenance and PNG delivery for the Logo Land skill"
+version = "0.8.0"
+description = "Workspace-local logo provenance, native Hermes workflows and PNG delivery for Logopia"
 requires-python = ">=3.12"
 dependencies = ["coloraide==8.12.1", "pydantic>=2.12,<3", "pillow>=11.2,<13", "typer>=0.16,<1", "rich>=14,<15"]
 
@@ -13,7 +13,7 @@ package = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["skills/logo-land/scripts"]
+pythonpath = ["skills/logo-land/scripts", "integrations/hermes"]
 addopts = ["-ra", "--strict-config", "--strict-markers"]
 filterwarnings = ["error"]
 
@@ -21,14 +21,18 @@ filterwarnings = ["error"]
 typeCheckingMode = "all"
 pythonVersion = "3.12"
 pythonPlatform = "All"
-include = ["skills/logo-land/scripts", "tests"]
-extraPaths = ["skills/logo-land/scripts"]
+include = ["skills/logo-land/scripts", "integrations/hermes", "tests"]
+extraPaths = ["skills/logo-land/scripts", "integrations/hermes"]
 exclude = ["**/__pycache__", "**/.venv"]
 
 [tool.ruff]
 target-version = "py312"
 line-length = 100
 src = ["skills/logo-land/scripts", "tests"]
+
+[tool.ruff.per-file-target-version]
+"integrations/hermes/**/*.py" = "py311"
+"tests/hermes/**/*.py" = "py311"
 
 [tool.ruff.lint]
 select = ["ALL"]

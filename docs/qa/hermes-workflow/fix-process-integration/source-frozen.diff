@@ -1,0 +1,220 @@
+--- PIN/integrations/hermes/logopia_studio/launcher_process.py
++++ integrations/hermes/logopia_studio/launcher_process.py
+@@ -9,7 +9,7 @@
+ from typing import TYPE_CHECKING, Final
+ 
+ from .process_group import settle_group
+-from .process_scope import ProcessInspectionError
++from .process_scope import ProcessInspectionError, bounded_call
+ 
+ if TYPE_CHECKING:
+     from pathlib import Path
+@@ -111,7 +111,9 @@
+             )
+             try:
+                 try:
+-                    _ = process.wait(timeout=timeout_seconds)
++                    _ = bounded_call(
++                        lambda remaining: process.wait(timeout=remaining), timeout_seconds
++                    )
+                 except subprocess.TimeoutExpired:
+                     timed_out = True
+                 except KeyboardInterrupt:
+--- PIN/integrations/hermes/logopia_studio/helper_process.py
++++ integrations/hermes/logopia_studio/helper_process.py
+@@ -6,6 +6,7 @@
+ 
+ from .models import StudioError
+ from .process_group import settle_group
++from .process_scope import bounded_call
+ 
+ 
+ def run_cli(argv: tuple[str, ...], timeout: float) -> str:
+@@ -18,7 +19,9 @@
+             if stream is not None:
+                 _ = streams.enter_context(stream)
+         try:
+-            stdout, stderr = process.communicate(timeout=timeout)
++            stdout, stderr = bounded_call(
++                lambda remaining: process.communicate(timeout=remaining), timeout
++            )
+         except subprocess.TimeoutExpired as error:
+             raise StudioError(
+                 "helper_timeout", "Helper deadline expired; exact commit may need reconciliation"
+--- PIN/integrations/hermes/logopia_studio/process_group.py
++++ integrations/hermes/logopia_studio/process_group.py
+@@ -8,7 +8,7 @@
+ import time
+ from typing import Final
+ 
+-from .process_scope import ProcessInspectionError, SessionGroup, session_groups
++from .process_scope import ProcessInspectionError, SessionGroup, defer_interrupts, session_groups
+ 
+ _FORCE_SECONDS: Final = 10.0
+ _POLL_SECONDS: Final = 0.01
+@@ -100,7 +100,8 @@
+     interrupted: KeyboardInterrupt | None = None
+     while True:
+         try:
+-            exit_code = process.poll()
++            with defer_interrupts():
++                exit_code = process.poll()
+             settled = owned.step(signal.SIGKILL if forced else initial_signal, force_deadline)
+             if owned.inspection_error is not None:
+                 forced = True
+--- PIN/integrations/hermes/logopia_studio/process_scope.py
++++ integrations/hermes/logopia_studio/process_scope.py
+@@ -4,16 +4,61 @@
+ 
+ import errno
+ import os
++import signal
+ import subprocess
+ import time
++from contextlib import contextmanager
+ from dataclasses import dataclass
+ from tempfile import TemporaryFile
+-from typing import TYPE_CHECKING, Final
++from threading import current_thread, main_thread
++from typing import TYPE_CHECKING, Final, TypeVar
+ 
+ if TYPE_CHECKING:
+-    import signal
++    from collections.abc import Callable, Generator
++    from types import FrameType
+ 
+ _QUERY_SECONDS: Final = 0.25
++_INTERRUPT_SECONDS: Final = 0.1
++_Result = TypeVar("_Result")
++
++
++@contextmanager
++def defer_interrupts() -> Generator[None, None, None]:
++    """Delay the original SIGINT exception until a bounded Popen operation releases its lock."""
++    previous = signal.getsignal(signal.SIGINT)
++    if current_thread() is not main_thread() or not callable(previous):
++        yield
++        return
++    interrupted: list[KeyboardInterrupt] = []
++
++    def retain(sig: int, frame: FrameType | None) -> None:
++        try:
++            previous(sig, frame)
++        except KeyboardInterrupt as error:
++            interrupted.append(error)
++
++    _ = signal.signal(signal.SIGINT, retain)
++    try:
++        yield
++    finally:
++        try:
++            _ = signal.signal(signal.SIGINT, previous)
++        finally:
++            if interrupted:
++                raise interrupted[0]
++
++
++def bounded_call(action: Callable[[float], _Result], timeout: float) -> _Result:
++    """Keep the invocation deadline while bounding each interrupt-deferred wait."""
++    deadline = time.monotonic() + timeout
++    while True:
++        try:
++            with defer_interrupts():
++                return action(min(_INTERRUPT_SECONDS, max(0, deadline - time.monotonic())))
++        except subprocess.TimeoutExpired as error:
++            if time.monotonic() >= deadline:
++                error.timeout = timeout
++                raise
+ 
+ 
+ class ProcessInspectionError(OSError):
+@@ -60,10 +105,11 @@
+     interrupted: KeyboardInterrupt | None = None
+     while True:
+         try:
+-            if process.poll() is not None:
+-                return interrupted
+-            process.kill()
+-            _ = process.wait(timeout=max(0, deadline - time.monotonic()))
++            with defer_interrupts():
++                if process.poll() is not None:
++                    return interrupted
++                process.kill()
++                _ = process.wait(timeout=max(0, deadline - time.monotonic()))
+         except KeyboardInterrupt as error:
+             if interrupted is None:
+                 interrupted = error
+@@ -75,7 +121,10 @@
+             ("/bin/ps", "-A", "-o", "pid="), stdout=output, stderr=subprocess.DEVNULL
+         )
+         try:
+-            code = process.wait(timeout=max(0, deadline - time.monotonic()))
++            code = bounded_call(
++                lambda remaining: process.wait(timeout=remaining),
++                max(0, deadline - time.monotonic()),
++            )
+             if code != 0:
+                 raise ProcessInspectionError("pid_listing_exit")
+         finally:
+--- PIN/tests/hermes/test_helper_interrupt.py
++++ tests/hermes/test_helper_interrupt.py
+@@ -7,6 +7,7 @@
+ import sys
+ import time
+ import warnings
++from _thread import LockType, allocate_lock
+ from pathlib import Path
+ from typing import TYPE_CHECKING, Final
+ 
+@@ -78,11 +79,51 @@
+     assert caught.value.detail == detail[-64000:]
+ 
+ 
++@pytest.mark.parametrize("acquire_interrupt", [False, True])
+ def test_helper_repeated_caller_interrupts_settle_before_original_propagates(
+     tmp_path: Path,
++    monkeypatch: pytest.MonkeyPatch,
++    acquire_interrupt: bool,
+ ) -> None:
+     # Given a finite helper that repeatedly signals only its invoking caller.
+     interrupts: list[KeyboardInterrupt] = []
++
++    class AcquireBoundary:
++        lock: LockType = allocate_lock()
++        triggered: bool = False
++
++        def acquire(self, blocking: bool = True) -> bool:
++            acquired = self.lock.acquire(blocking)
++            if acquired and not self.triggered:
++                self.triggered = True
++                os.kill(os.getpid(), signal.SIGINT)
++            return acquired
++
++        def release(self) -> None:
++            self.lock.release()
++
++    def interrupt_poll(
++        process: subprocess.Popen[str],
++        sig: signal.Signals,
++        grace: float,
++    ) -> KeyboardInterrupt | None:
++        boundary = AcquireBoundary()
++        try:
++            with monkeypatch.context() as scoped:
++                scoped.setattr(process, "_waitpid_lock", boundary)
++                scoped.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
++                result = settle_group(process, sig, grace)
++                assert process.returncode is not None
++                assert not boundary.lock.locked()
++                return result
++        finally:
++            _ = observe(tmp_path, time.monotonic() - started)
++            assert boundary.triggered
++            process.kill()
++            _ = process.wait(timeout=2)
++
++    if acquire_interrupt:
++        monkeypatch.setattr("logopia_studio.helper_process.settle_group", interrupt_poll)
+ 
+     def interrupt(_signum: int, _frame: FrameType | None) -> None:
+         error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")

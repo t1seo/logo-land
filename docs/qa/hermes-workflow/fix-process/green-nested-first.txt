@@ -1,0 +1,4 @@
+{"fixture": "test_forced_launcher_settles_n0", "owned": [[61450, 61450], [61448, 61448]], "states": ["", ""], "group_exists": false, "elapsed": 2.342}
+{"cleanup": "test_forced_launcher_settles_n0", "owned": [[61450, 61450], [61448, 61448]], "states": ["", ""], "group_exists": false}
+.
+1 passed, 9 deselected in 2.42s

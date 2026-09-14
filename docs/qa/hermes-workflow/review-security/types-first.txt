@@ -1,0 +1,7 @@
+/tmp/logopia-review-security-080/audit_public.py
+  /tmp/logopia-review-security-080/audit_public.py:30:5 - error: Implicit string concatenation not allowed (reportImplicitStringConcatenation)
+  /tmp/logopia-review-security-080/audit_public.py:137:23 - error: Argument type is Any
+    Argument corresponds to parameter "s" in function "b64decode" (reportAny)
+/tmp/logopia-review-security-080/probe_boundaries.py
+  /tmp/logopia-review-security-080/probe_boundaries.py:21:45 - error: "_verify_archive" is private and used outside of the module in which it is declared (reportPrivateUsage)
+3 errors, 0 warnings, 0 notes

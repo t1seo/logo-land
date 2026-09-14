@@ -1,0 +1,6 @@
+integrations/hermes/logopia_studio/launcher_process.py: Python 3.11 parse PASS; 71 logical NEWLINE tokens; 129 physical lines
+integrations/hermes/logopia_studio/helper_process.py: Python 3.11 parse PASS; 24 logical NEWLINE tokens; 32 physical lines
+integrations/hermes/logopia_studio/process_group.py: Python 3.11 parse PASS; 100 logical NEWLINE tokens; 124 physical lines
+integrations/hermes/logopia_studio/process_scope.py: Python 3.11 parse PASS; 89 logical NEWLINE tokens; 113 physical lines
+tests/hermes/test_process_group_settlement.py: Python 3.11 parse PASS; 140 logical NEWLINE tokens; 266 physical lines
+tests/hermes/test_helper_interrupt.py: Python 3.11 parse PASS; 133 logical NEWLINE tokens; 233 physical lines

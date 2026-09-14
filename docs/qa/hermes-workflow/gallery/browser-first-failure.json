@@ -1,0 +1,25 @@
+{
+  "steps": [
+    "required click/fill/copy flow: exact envelope; canonical bytes unchanged",
+    "three reloads/repeated draft activation; denied clipboard selects full exact output"
+  ],
+  "resources": {
+    "fixture": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo/fixture-MKWK6n",
+    "profile": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo/chrome-RQjVuE",
+    "downloads": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo/downloads-O1s6zo"
+  },
+  "cleanup": false,
+  "feedback": {
+    "schema_version": 1,
+    "workflow_id": "gallery-fixture",
+    "expected_revision": 7,
+    "candidate_id": "candidate-2",
+    "candidate_sha256": "cf9efc33175d74fd801fb2ef32e265f31a91b1724154eb7d7f43b99834fb27fe",
+    "action": "revise",
+    "keep": [
+      "색과 열린 중심"
+    ],
+    "change": "간격만 넓혀 주세요"
+  },
+  "firstFailure": "TimeoutError: page.waitForEvent: Timeout 7000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================"
+}

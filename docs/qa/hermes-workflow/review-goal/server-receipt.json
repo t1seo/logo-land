@@ -1,0 +1,18 @@
+{
+  "pid": 14382,
+  "command": [
+    "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python",
+    "-m",
+    "http.server",
+    "8813",
+    "--bind",
+    "127.0.0.1",
+    "--directory",
+    "/tmp/logopia-review-goal-080/http-root"
+  ],
+  "deadline_seconds": 90,
+  "timed_out": false,
+  "exit_code": null,
+  "signal": 15,
+  "reaped": true
+}

@@ -1,0 +1,25 @@
+{
+  "label": "ruff-final-checked",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "ruff",
+    "check",
+    "--extend-per-file-ignores",
+    "/tmp/logopia-fix-installer-boundary-080/manual.py:S101",
+    "integrations/hermes/logopia_studio/installer.py",
+    "tests/hermes/test_installer_backup_interrupt.py",
+    "tests/hermes/test_installer_interruption.py",
+    "/tmp/logopia-fix-installer-boundary-080/runner.py",
+    "/tmp/logopia-fix-installer-boundary-080/manual.py",
+    "/tmp/logopia-fix-installer-boundary-080/native_audit.py"
+  ],
+  "pid": 72146,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 0,
+  "reaped": true,
+  "source_sha256_before": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "source_sha256_after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

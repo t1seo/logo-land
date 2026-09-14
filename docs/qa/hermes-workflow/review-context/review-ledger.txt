@@ -1,0 +1,35 @@
+# Independent context and provenance review
+
+Status: in progress. Owner: task `task_6e1b3a7d8e45`, dispatch `ctx_64dfb852f7e9`.
+
+Read-only review against `f7dd3268313d2422b87efea63eef8257b0e651b9`; only this report and `review-context/` are owned public artifacts. No source, artwork, workflow, installed profile or release changes are authorized.
+
+## Review plan
+
+1. In progress: pin source, canonical state, receipts and protected drafts before probes.
+2. Pending: mine history and primary sources; compare requirements, documentation and exact native provenance.
+3. Pending: verify the HTTP documentation surface and bounded applicable defensive scenarios.
+4. Pending: write verdict, confirm unchanged protected bytes and complete resource cleanup.
+
+## Resource ledger
+
+- TODO before creation: `docs/qa/hermes-workflow/review-context/`, durable sanitized review artifacts, retained as requested deliverables.
+- TODO before creation: `/tmp/logopia-review-context-080`, exclusive scratch root for this review; remove exact owned contents and root before completion.
+
+## Verdict
+
+Pending evidence. Existing 907-test and native inference evidence will be attributed to its original run; it is not a new execution by this reviewer.
+
+Initial pin harness note: the discovery command included a nonexistent `src/` directory; `rg` printed `src: No such file or directory`, while the enclosing pipeline returned 0. This was a reviewer path-discovery error, not product evidence. The first 144 valid hash records passed; the corrected pin below adds the actual existing helper under `skills/` before any behavioral probe.
+
+- TODO before creation: `/tmp/logopia-review-context-080/verify.sh` and `bindings.jq`, finite read-only hash and metadata verifier scripts; remove after retaining their exact command text and sanitized receipts.
+- TODO before creation: scratch HTTP response bodies/headers and `primary-*` fetched pages, each curl bounded by a 2-second connection and 15-second total limit; remove after support and hash receipts are written.
+- TODO before start: own Python stdlib HTTP server on `127.0.0.1:8817`, repository document root, maximum 180 seconds; record exact PID/session, stop and reap only this process, then verify port free.
+
+Harness evidence retained: the first binding verifier compared the current install marker to `installed-payload.json` from 00:58 (55 records) instead of the refreshed 01:26 0.8.0 install (59 records), and exited 1 after the seven request/original/delivery checks passed. The correction verifies the live managed marker against every current source file plus exact settings and the 59-record `installed-080-binding.json`; it does not change product files or relax a product test. A separate metadata inspection assumed `review-source-binding.files` was an array; jq rejected that projection because it is an object, with no writes or product effect.
+
+- TODO before creation/start: `/tmp/logopia-review-context-080/pytest-base`, `tmp/`, and `uv-cache/`; one bounded 180-second run of explicitly selected existing defensive tests, no live provider/profile calls. Subprocess fixtures own their fake Hermes homes and settle children; remove exact basetemp, cache and temporary descendants after results.
+
+Review phase checkpoint: source/canonical/protected PIN and baseline passed (214 files); requirements/history and live GitHub metadata read; native/public/install bindings and the HTTP surface passed. The 13 selected defensive scenarios passed in 11.33 seconds on unchanged source, first run. Final reporting and cleanup are in progress.
+
+Additional exact-comparison note: comparing pre-recovery raw job objects to final job objects returned false. The bounded key comparison found the sole difference in each of j1–j7 is the new optional `retry_of: null` field; every pre-existing field (including error, raw reports and request identity) is equal. The declared default in `models_jobs.Job` is `None`, and equality after this exact default normalization passes. Both raw and normalized results are retained, not described as byte-identical JSON. A read-only discovery glob for a nonexistent `docs/qa/logo-craft*` directory also returned a shell no-match error; its evidence was not used to infer coverage.

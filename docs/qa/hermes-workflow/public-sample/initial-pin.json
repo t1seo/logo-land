@@ -1,0 +1,31 @@
+{
+  "capturedAt": "2026-09-14T16:34:06.895Z",
+  "workflowId": "offcut-hermes-demo",
+  "revision": 37,
+  "phase": "revising",
+  "workflowSha256": "e95a203acfda3675297750be9d5d5644b3ef3b0065e1675ec1a0ba76154a2d3f",
+  "gitHead": "f7dd3268313d2422b87efea63eef8257b0e651b9",
+  "originals": [
+    {
+      "id": "c1",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "width": 1774,
+      "height": 887,
+      "bytes": 739942
+    },
+    {
+      "id": "c2",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 755315
+    },
+    {
+      "id": "c3",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 752532
+    }
+  ]
+}

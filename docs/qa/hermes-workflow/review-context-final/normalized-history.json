@@ -1,0 +1,56 @@
+{
+  "old_job_count": 7,
+  "raw_jobs_equal": false,
+  "normalized_jobs_equal": true,
+  "original_error_retained": true,
+  "critique_recovery": {
+    "id": "j8",
+    "kind": "critique",
+    "status": "succeeded",
+    "retry_of": "j7"
+  },
+  "initial_image_jobs": 3,
+  "edit_jobs": 2,
+  "lineage": [
+    {
+      "id": "c1",
+      "parent_id": null
+    },
+    {
+      "id": "c2",
+      "parent_id": null
+    },
+    {
+      "id": "c3",
+      "parent_id": null
+    },
+    {
+      "id": "e1",
+      "parent_id": "c1"
+    },
+    {
+      "id": "e2",
+      "parent_id": "e1"
+    }
+  ],
+  "e1_preservation": [
+    {
+      "role": "design",
+      "status": "needs_revision"
+    },
+    {
+      "role": "production",
+      "status": "needs_revision"
+    }
+  ],
+  "e2_all_pass": [
+    {
+      "role": "design",
+      "pass": true
+    },
+    {
+      "role": "production",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# How to run: uv run --locked python /tmp/logopia-review-code-080/run_assigned.py
+"""Run only the assigned unchanged regressions with a finite outer deadline."""
+
+from __future__ import annotations
+
+import json
+import os
+import signal
+import subprocess
+import sys
+import time
+from pathlib import Path
+from typing import Final
+
+REPO: Final = Path("/Users/cillian/Documents/Github/Projects/logo-generator")
+ARTIFACTS: Final = REPO / "docs/qa/hermes-workflow/review-code"
+COMMAND: Final = (
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/hermes/test_core_critique_late.py",
+    "tests/hermes/test_helper_recovery.py",
+    "--basetemp",
+    str(Path(__file__).with_name("pytest")),
+)
+
+
+def main() -> int:
+    """Save exact exit and output; settle the owned process on the outer limit."""
+    started = time.monotonic()
+    timed_out = False
+    defensive = sys.argv[1:] == ["defensive"]
+    label = "defensive" if defensive else "assigned"
+    command = (
+        (
+            "uv",
+            "run",
+            "--locked",
+            "pytest",
+            "-q",
+            "-s",
+            "-c",
+            str(REPO / "pyproject.toml"),
+            str(Path(__file__).with_name("test_review_boundaries.py")),
+            "--basetemp",
+            str(Path(__file__).with_name("probe-pytest")),
+        )
+        if defensive
+        else COMMAND
+    )
+    with (
+        (ARTIFACTS / f"{label}-tests.txt").open("x", encoding="utf-8") as output,
+        subprocess.Popen(  # noqa: S603 - fixed assigned local test command.
+            command,
+            cwd=REPO,
+            stdin=subprocess.DEVNULL,
+            stdout=output,
+            stderr=subprocess.STDOUT,
+            text=True,
+            start_new_session=True,
+        ) as child,
+    ):
+        try:
+            exit_code = child.wait(timeout=60 if defensive else 180)
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            os.killpg(child.pid, signal.SIGTERM)
+            try:
+                exit_code = child.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                os.killpg(child.pid, signal.SIGKILL)
+                exit_code = child.wait(timeout=5)
+        receipt = json.dumps(
+            {
+                "command": command,
+                "pid": child.pid,
+                "exit_code": exit_code,
+                "timed_out": timed_out,
+                "elapsed_seconds": round(time.monotonic() - started, 3),
+            },
+            indent=2,
+        )
+    _ = (ARTIFACTS / f"{label}-receipt.json").write_text(receipt + "\n", encoding="utf-8")
+    return exit_code
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

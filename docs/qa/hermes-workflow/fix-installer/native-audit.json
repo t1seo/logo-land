@@ -1,0 +1,26 @@
+{
+  "python": "3.11.16",
+  "result": "PASS",
+  "files": [
+    {
+      "path": "integrations/hermes/logopia_studio/installer.py",
+      "code_lines": 130,
+      "sha256": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b"
+    },
+    {
+      "path": "tests/hermes/test_installer_foreign_marker.py",
+      "code_lines": 168,
+      "sha256": "0d3a08e93db6a97b104287a672255098c4e7baf2429ff1864c90b6804e288406"
+    },
+    {
+      "path": "tests/hermes/test_installer_interruption.py",
+      "code_lines": 99,
+      "sha256": "d53eec87cf9c6afe4cc2cb2ce90476aba817819f222cd1618e97b4cca75ddbf0"
+    },
+    {
+      "path": "/tmp/logopia-fix-installer-080/manual.py",
+      "code_lines": 162,
+      "sha256": "7be930e896080e8d78fecaab228c3ce6fa8bc90a5d358caa41828999e90fb3c0"
+    }
+  ]
+}

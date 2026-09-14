@@ -1,0 +1,3 @@
+.logo-generator/workflows/offcut-hermes-demo/workflow.json
+output/hermes-demo/final-workflow.json
+output/hermes-demo/session-bindings.json

@@ -1,0 +1,51 @@
+TRY003 Avoid specifying long messages outside the exception class
+  --> tests/hermes/test_installer_backup_interrupt.py:70:19
+   |
+68 |             if interrupt:
+69 |                 signal.raise_signal(signal.SIGINT)
+70 |             raise PermissionError("fixture restoration failure")
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+71 |         return original_rename(path, destination)
+   |
+
+C901 `test_foreign_target_and_old_backup_both_survive_first_rename_sigint` is too complex (12 > 10)
+  --> tests/hermes/test_installer_backup_interrupt.py:94:5
+   |
+93 | @pytest.mark.parametrize("kind", ["directory", "file", "symlink", "dangling"])
+94 | def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+95 |     tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+96 |     kind: Literal["directory", "file", "symlink", "dangling"],
+   |
+
+PLR0915 Too many statements (54 > 50)
+  --> tests/hermes/test_installer_backup_interrupt.py:94:5
+   |
+93 | @pytest.mark.parametrize("kind", ["directory", "file", "symlink", "dangling"])
+94 | def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+95 |     tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+96 |     kind: Literal["directory", "file", "symlink", "dangling"],
+   |
+
+EXE001 Shebang is present but file is not executable
+ --> /tmp/logopia-fix-installer-boundary-080/runner.py:1:1
+  |
+1 | #!/usr/bin/env -S uv run --script
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2 | # /// script
+3 | # requires-python = ">=3.11"
+  |
+
+S108 Probable insecure usage of temporary file or directory: "/tmp/logopia-fix-installer-boundary-080"
+  --> /tmp/logopia-fix-installer-boundary-080/runner.py:20:20
+   |
+18 | from typing import Final
+19 |
+20 | ROOT: Final = Path("/tmp/logopia-fix-installer-boundary-080")
+   |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+21 | REPO: Final = Path("/Users/cillian/Documents/Github/Projects/logo-generator")
+22 | EVIDENCE: Final = REPO / "docs/qa/hermes-workflow/fix-installer-boundary"
+   |
+
+Found 5 errors.

@@ -1,0 +1,6 @@
+{"python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "runtime": "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python3", "runner_pid": 93471}
+{"case": "control", "pid": 93473, "state_before_finally": "", "returncode": -9, "poll_lock_held": false, "triggered": false, "outcome": "settled", "elapsed": 0.068}
+{"cleanup_pid": 93473, "returncode": -9, "absent": true}
+{"case": "interrupt_acquisition", "pid": 93479, "state_before_finally": "93479 93471 93479 Z", "returncode": null, "poll_lock_held": true, "triggered": true, "outcome": "TimeoutExpired", "elapsed": 0.154}
+{"cleanup_pid": 93479, "returncode": -9, "absent": true}
+{"resource_warnings": 0}

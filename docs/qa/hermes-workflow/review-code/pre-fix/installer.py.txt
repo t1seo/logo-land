@@ -1,0 +1,149 @@
+"""Install or update only an unchanged, previously managed native plugin."""
+
+from __future__ import annotations
+
+import hashlib
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from typing import Final
+
+from pydantic import ValidationError
+
+from .installer_models import InstallReceipt, InstallSettings, ManagedFile, ManagedInstall
+from .launcher_process import LaunchError
+
+_MARKER: Final = ".logopia-install.json"
+_ROOT_FILES: Final = frozenset({"plugin.yaml", "__init__.py"})
+_ROOT_DIRS: Final = frozenset({"logopia_studio", "skills", "assets"})
+_MAX_FILE: Final = 2 * 1024 * 1024
+
+
+def _digest(path: Path) -> str:
+    if path.is_symlink() or not path.is_file() or path.stat().st_size > _MAX_FILE:
+        raise LaunchError("unsafe_payload", f"Not a bounded regular payload file: {path.name}")
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _source_files(source: Path) -> tuple[Path, ...]:
+    files: list[Path] = []
+    for path in sorted(source.rglob("*")):
+        relative = path.relative_to(source)
+        if "__pycache__" in relative.parts or path.suffix == ".pyc":
+            continue
+        if relative.as_posix() not in _ROOT_FILES and relative.parts[0] not in _ROOT_DIRS:
+            continue
+        if path.is_symlink():
+            raise LaunchError("unsafe_payload", "Plugin payload must not contain symlinks")
+        if path.is_file():
+            _ = _digest(path)
+            files.append(path)
+    if not all(source / name in files for name in _ROOT_FILES):
+        raise LaunchError("missing_payload", "Native plugin.yaml and __init__.py are required")
+    return tuple(files)
+
+
+def _verify_managed(target: Path) -> ManagedInstall:
+    marker = target / _MARKER
+    if target.is_symlink() or not marker.is_file() or marker.is_symlink():
+        raise LaunchError("unmanaged_install", "Preserving an existing unowned plugin")
+    try:
+        _ = _digest(marker)
+        manifest = ManagedInstall.model_validate_json(marker.read_bytes())
+    except ValidationError as error:
+        raise LaunchError("unmanaged_install", "The installation record is invalid") from error
+    expected = {entry.path for entry in manifest.files}
+    if len(expected) != len(manifest.files):
+        raise LaunchError("unmanaged_install", "The installation record repeats a path")
+    _verify_entries(target, manifest)
+    _verify_extras(target, expected)
+    return manifest
+
+
+def _verify_entries(target: Path, manifest: ManagedInstall) -> None:
+    for entry in manifest.files:
+        relative = Path(entry.path)
+        if relative.is_absolute() or ".." in relative.parts or "\\" in entry.path:
+            raise LaunchError("unmanaged_install", "The installation record has an invalid path")
+        current = target / relative
+        if not current.is_file() or _digest(current) != entry.sha256:
+            raise LaunchError("modified_install", f"Preserving modified file: {entry.path}")
+
+
+def _verify_extras(target: Path, expected: set[str]) -> None:
+    for path in target.rglob("*"):
+        relative = path.relative_to(target)
+        if path.is_symlink():
+            raise LaunchError("modified_install", "Preserving a symlink in the installed plugin")
+        if (
+            path.is_file()
+            and path.name != _MARKER
+            and relative.as_posix() not in expected
+            and ("__pycache__" not in relative.parts or path.suffix != ".pyc")
+        ):
+            raise LaunchError("modified_install", f"Preserving extra file: {relative}")
+
+
+def _write_stage(
+    source: Path,
+    stage: Path,
+    files: tuple[Path, ...],
+    settings: InstallSettings,
+) -> ManagedInstall:
+    stage.mkdir()
+    records: list[ManagedFile] = []
+    for source_file in files:
+        relative = source_file.relative_to(source)
+        destination = stage / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        with destination.open("xb") as stream:
+            _ = stream.write(source_file.read_bytes())
+        records.append(ManagedFile(path=relative.as_posix(), sha256=_digest(destination)))
+    settings_file = stage / "settings.json"
+    _ = settings_file.write_text(settings.model_dump_json(indent=2) + "\n", encoding="utf-8")
+    records.append(ManagedFile(path="settings.json", sha256=_digest(settings_file)))
+    manifest = ManagedInstall(files=tuple(records))
+    _ = (stage / _MARKER).write_text(manifest.model_dump_json(indent=2) + "\n", encoding="utf-8")
+    return manifest
+
+
+def install_payload(
+    source: Path,
+    profile_home: Path,
+    workspace: Path,
+    helper_repo: Path,
+) -> InstallReceipt:
+    """Preserve foreign/edited plugins and publish a complete managed payload."""
+    if not profile_home.is_dir() or profile_home.is_symlink():
+        raise LaunchError("missing_profile", "Create a named Hermes profile before installing")
+    files = _source_files(source)
+    settings = InstallSettings(workspace=workspace.resolve(), helper_repo=helper_repo.resolve())
+    plugins = profile_home / "plugins"
+    if plugins.is_symlink():
+        raise LaunchError("unsafe_profile", "Profile plugins directory must not be a symlink")
+    plugins.mkdir(exist_ok=True)
+    target = plugins / "logopia-studio"
+    lock = plugins / ".logopia-install.lock"
+    try:
+        lock.mkdir()
+    except FileExistsError as error:
+        raise LaunchError("install_busy", "Another installation holds this profile") from error
+    try:
+        previous = _verify_managed(target) if target.exists() else None
+        with TemporaryDirectory(prefix=".logopia-install-", dir=plugins) as temporary:
+            staging = Path(temporary)
+            stage = staging / "new"
+            manifest = _write_stage(source, stage, files, settings)
+            backup = staging / "previous"
+            if previous is not None:
+                if _verify_managed(target) != previous:
+                    raise LaunchError("modified_install", "Plugin changed during installation")
+                _ = target.rename(backup)
+            try:
+                _ = stage.rename(target)
+            except OSError:
+                if backup.exists() and not target.exists():
+                    _ = backup.rename(target)
+                raise
+        return InstallReceipt(destination=target, file_count=len(manifest.files))
+    finally:
+        lock.rmdir()

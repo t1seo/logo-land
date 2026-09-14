@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-09-14T17:02:50.035Z",
+  "chromeClose": {
+    "completed": true,
+    "elapsedMs": 392,
+    "contextClosed": true,
+    "noJSContextClosed": true,
+    "cdpDetached": true,
+    "permissionsCleared": true
+  },
+  "ownedChromeRootPid": 12556,
+  "ownedPids": [
+    {
+      "pid": 12556,
+      "absent": true
+    },
+    {
+      "pid": 12611,
+      "absent": true
+    },
+    {
+      "pid": 12612,
+      "absent": true
+    },
+    {
+      "pid": 12626,
+      "absent": true
+    },
+    {
+      "pid": 12638,
+      "absent": true
+    },
+    {
+      "pid": 12642,
+      "absent": true
+    },
+    {
+      "pid": 12643,
+      "absent": true
+    }
+  ],
+  "profileProcessMatches": 0,
+  "scratch": {
+    "path": "/tmp/logopia-review-qa-080",
+    "entriesRemoved": 575,
+    "absent": true
+  },
+  "port8816": {
+    "absent": true,
+    "exit": 1
+  },
+  "serversCreated": 0,
+  "tmuxSessionsCreated": 0,
+  "toolInstalls": 0,
+  "newInferenceCalls": 0,
+  "newNativeImageJobs": 0,
+  "authOrDefaultConfigWrites": 0,
+  "sourceEdits": 0
+}

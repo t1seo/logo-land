@@ -1,0 +1,126 @@
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+from typing import TYPE_CHECKING, Final
+
+import pytest
+from logopia_studio.installer import install_payload
+from tests.hermes.test_installer_foreign_marker import SENTINEL
+
+if TYPE_CHECKING:
+    from tests.hermes.test_installer_foreign_marker import InstalledFixture
+
+pytest_plugins: Final = ("tests.hermes.test_installer_foreign_marker",)
+
+
+def _snapshot(root: Path) -> tuple[tuple[str, bytes], ...]:
+    return tuple(
+        (path.relative_to(root).as_posix(), path.read_bytes())
+        for path in sorted(root.rglob("*"))
+        if path.is_file()
+    )
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        pytest.param(PermissionError("fixture publication blocked"), id="io"),
+        pytest.param(KeyboardInterrupt(), id="interrupt"),
+    ],
+)
+def test_prior_install_survives_publication_failure(
+    tmp_path: Path,
+    installed: InstalledFixture,
+    monkeypatch: pytest.MonkeyPatch,
+    failure: OSError | KeyboardInterrupt,
+) -> None:
+    # Given the real old installation and a replacement payload.
+    before = _snapshot(installed.target)
+    _ = (installed.source / "__init__.py").write_bytes(b"replacement_payload = True\n")
+    original_rename = Path.rename
+    backup_seen: list[bool] = []
+
+    def fail_publication(path: Path, destination: str | Path) -> Path:
+        if path.name == "new" and Path(destination) == installed.target:
+            backup_seen.append(_snapshot(path.parent / "previous") == before)
+            raise failure
+        return original_rename(path, destination)
+
+    monkeypatch.setattr(Path, "rename", fail_publication)
+    # When only the second rename fails after the prior installation was backed up.
+    with pytest.raises(type(failure)) as raised:
+        _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "scenario": "install_rollback",
+                "fault": type(failure).__name__,
+                "backup_exact_before_failure": backup_seen,
+                "target_exists": installed.target.is_dir(),
+                "prior_bytes_preserved": _snapshot(installed.target) == before,
+                "remaining_entries": [path.name for path in installed.target.parent.iterdir()],
+            }
+        )
+        + "\n"
+    )
+    # Then the original exception propagates and exact prior files are restored.
+    assert raised.value is failure
+    assert backup_seen == [True]
+    assert installed.target.is_dir(), "Previous install was deleted while unwinding interruption"
+    assert _snapshot(installed.target) == before
+    assert list(installed.target.parent.iterdir()) == [installed.target]
+
+
+def test_repeated_interruption_preserves_previous_install_then_allows_update(
+    tmp_path: Path,
+    installed: InstalledFixture,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    # Given the same old installation through two interrupted replacement attempts.
+    before = _snapshot(installed.target)
+    _ = (installed.source / "__init__.py").write_bytes(b"replacement_payload = True\n")
+    original_rename = Path.rename
+
+    def interrupt_publication(path: Path, destination: str | Path) -> Path:
+        if path.name == "new" and Path(destination) == installed.target:
+            raise KeyboardInterrupt
+        return original_rename(path, destination)
+
+    with monkeypatch.context() as patch:
+        patch.setattr(Path, "rename", interrupt_publication)
+        for _ in range(2):
+            with pytest.raises(KeyboardInterrupt):
+                _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+            assert _snapshot(installed.target) == before
+            assert list(installed.target.parent.iterdir()) == [installed.target]
+    # When the user explicitly retries without the publication fault.
+    receipt = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+    # Then the replacement is published with no retained lock or staging directory.
+    assert (receipt.destination / "__init__.py").read_bytes() == b"replacement_payload = True\n"
+    assert list(installed.target.parent.iterdir()) == [installed.target]
+
+
+def test_interruption_does_not_overwrite_foreign_replacement(
+    tmp_path: Path,
+    installed: InstalledFixture,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    # Given an unrelated fixture writer occupying the target after the old directory moved.
+    original_rename = Path.rename
+
+    def replace_then_interrupt(path: Path, destination: str | Path) -> Path:
+        if path.name == "new" and Path(destination) == installed.target:
+            installed.target.mkdir()
+            _ = (installed.target / "user-owned.txt").write_bytes(SENTINEL)
+            raise KeyboardInterrupt
+        return original_rename(path, destination)
+
+    monkeypatch.setattr(Path, "rename", replace_then_interrupt)
+    # When the interrupted update considers restoring its prior directory.
+    with pytest.raises(KeyboardInterrupt):
+        _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+    # Then the foreign replacement is preserved rather than overwritten by rollback.
+    assert _snapshot(installed.target) == (("user-owned.txt", SENTINEL),)
+    assert list(installed.target.parent.iterdir()) == [installed.target]

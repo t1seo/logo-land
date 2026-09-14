@@ -1,0 +1,6 @@
+127.0.0.1 - - [15/Sep/2026 01:59:32] "GET /docs/hermes-demo/example.json HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 01:59:32] code 404, message File not found
+127.0.0.1 - - [15/Sep/2026 01:59:32] "GET /docs/hermes-demo/missing.json HTTP/1.1" 404 -
+Serving HTTP on 127.0.0.1 port 8815 (http://127.0.0.1:8815/) ...
+
+Keyboard interrupt received, exiting.

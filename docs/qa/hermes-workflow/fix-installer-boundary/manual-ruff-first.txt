@@ -1,0 +1,109 @@
+PT017 Found assertion on exception `error` in `except` block, use `pytest.raises()` instead
+  --> /tmp/logopia-fix-installer-boundary-080/manual.py:83:17
+   |
+81 |                 _ = installer.install_payload(source, profile, root, root)
+82 |             except KeyboardInterrupt as error:
+83 |                 assert error is errors[-1]
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+84 |             else:
+85 |                 raise AssertionError
+   |
+
+T201 `print` found
+  --> /tmp/logopia-fix-installer-boundary-080/manual.py:88:9
+   |
+86 |         assert snapshot(target) == before
+87 |         assert list(target.parent.iterdir()) == [target]
+88 |         print(
+   |         ^^^^^
+89 |             json.dumps(
+90 |                 {
+   |
+help: Remove `print`
+
+T201 `print` found
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:115:5
+    |
+113 |     assert (target / "__init__.py").read_bytes() == SENTINEL
+114 |     assert list(target.parent.iterdir()) == [target]
+115 |     print(json.dumps({"scenario": root.name, "explicit_retry": "PASS", "full_bytes": True}))
+    |     ^^^^^
+help: Remove `print`
+
+C901 `retained_recovery` is too complex (12 > 10)
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:118:5
+    |
+118 | def retained_recovery(root: Path, foreign: bool, interrupt_restore: bool) -> None:
+    |     ^^^^^^^^^^^^^^^^^
+119 |     source, profile, target = fixture(root)
+120 |     before = snapshot(target)
+    |
+
+PT017 Found assertion on exception `error` in `except` block, use `pytest.raises()` instead
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:151:17
+    |
+149 |                 _ = installer.install_payload(source, profile, root, root)
+150 |             except KeyboardInterrupt as error:
+151 |                 assert error is failures[-1]
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152 |                 notes = error.__notes__
+153 |             else:
+    |
+
+T201 `print` found
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:164:9
+    |
+162 |         else:
+163 |             assert not target.exists()
+164 |         print(
+    |         ^^^^^
+165 |             json.dumps(
+166 |                 {
+    |
+help: Remove `print`
+
+PT017 Found assertion on exception `error` in `except` block, use `pytest.raises()` instead
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:197:13
+    |
+195 |             _ = installer.install_payload(source, profile, root, root)
+196 |         except LaunchError as error:
+197 |             assert error.code == "modified_install"
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+198 |         else:
+199 |             raise AssertionError
+    |
+
+T201 `print` found
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:202:5
+    |
+200 |         assert snapshot(target) == before
+201 |         assert list(target.parent.iterdir()) == [target]
+202 |     print(json.dumps({"scenario": "stale_manifest", "refused_twice": True, "exact_bytes": True}))
+    |     ^^^^^
+help: Remove `print`
+
+T201 `print` found
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:209:5
+    |
+207 |     label = "native-manual" if "--native" in sys.argv else "manual"
+208 |     _ = (ROOT / f"{label}.pid").write_text(str(os.getpid()) + "\n")
+209 |     print(json.dumps({"pid": os.getpid(), "python": sys.version, "deadline_seconds": 30}))
+    |     ^^^^^
+210 |     root = ROOT / label
+211 |     retry_after_sigint(root / "backup", first=True)
+    |
+help: Remove `print`
+
+T201 `print` found
+   --> /tmp/logopia-fix-installer-boundary-080/manual.py:229:5
+    |
+227 |     }
+228 |     _ = (ROOT / f"{label}.json").write_text(json.dumps(result, indent=2) + "\n")
+229 |     print(json.dumps(result))
+    |     ^^^^^
+230 |     _ = signal.alarm(0)
+    |
+help: Remove `print`
+
+Found 10 errors.
+No fixes available (6 hidden fixes can be enabled with the `--unsafe-fixes` option).

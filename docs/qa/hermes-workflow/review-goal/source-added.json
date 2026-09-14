@@ -1,0 +1,9 @@
+{
+  "integrations/hermes/logopia_studio/process_group.py": "ee8f298061c571b20704f04172cc1579e574920d0123ca25dac60b8f6c8d8aa3",
+  "integrations/hermes/logopia_studio/process_scope.py": "d7b00656f684c3a0de37172a20cda922a18727b7aec2a054d7c4841507e61c34",
+  "tests/hermes/test_helper_interrupt.py": "118ac56ea502901b6789f7b30f430cb783747891a7e8c61d865653b6fd967461",
+  "tests/hermes/test_installer_backup_interrupt.py": "7ae716959cc461f2a5cbb3c6ff6c8b202db69be3358293156b8436ab2aae754d",
+  "tests/hermes/test_installer_foreign_marker.py": "0d3a08e93db6a97b104287a672255098c4e7baf2429ff1864c90b6804e288406",
+  "tests/hermes/test_installer_interruption.py": "6acc66ade32509d5894efcb7cb2f2f72ef9a66e912f1704632a0457a12093a33",
+  "tests/hermes/test_process_group_settlement.py": "d9ce5134ed728bc09f4afee3925fb26fe2da0e0635a8385fb4edfc7fb39c1358"
+}

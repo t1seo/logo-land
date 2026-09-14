@@ -1,0 +1,283 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+_ test_foreign_target_and_old_backup_both_survive_first_rename_sigint[directory] _
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and...ogopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b572d50>
+kind = 'directory'
+
+    @pytest.mark.parametrize("kind", ["directory", "file", "symlink", "dangling"])
+    def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        kind: Literal["directory", "file", "symlink", "dangling"],
+    ) -> None:
+        # Given an external fixture that occupies the destination after the real backup move.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        foreign = tmp_path / "foreign"
+        _ = foreign.write_bytes(SENTINEL)
+        absent = tmp_path / "absent"
+        backups: list[Path] = []
+        observed: list[KeyboardInterrupt] = []
+    
+        def occupy_and_interrupt(path: Path, destination: str | Path) -> Path:
+            renamed = original_rename(path, destination)
+            if path == installed.target and Path(destination).name == "previous":
+                backups.append(renamed)
+                assert snapshot(renamed) == before
+                match kind:
+                    case "directory":
+                        installed.target.mkdir()
+                        _ = (installed.target / "user.txt").write_bytes(SENTINEL)
+                    case "file":
+                        _ = installed.target.write_bytes(SENTINEL)
+                    case "symlink":
+                        installed.target.symlink_to(foreign)
+                    case "dangling":
+                        installed.target.symlink_to(absent)
+                    case unreachable:
+                        assert_never(unreachable)
+                try:
+                    signal.raise_signal(signal.SIGINT)
+                except KeyboardInterrupt as error:
+                    observed.append(error)
+                    raise
+            return renamed
+    
+        monkeypatch.setattr(Path, "rename", occupy_and_interrupt)
+        # When SIGINT prevents completion and the target cannot safely be restored.
+        with pytest.raises(KeyboardInterrupt) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then exact old bytes remain at an identified recovery path beside untouched foreign data.
+        assert raised.value is observed[0]
+        assert len(backups) == 1
+        backup = backups[0]
+>       assert snapshot(backup) == before
+E       assert () == (('.logopia-i...d_ba0"\n}\n'))
+E         
+E         Right contains 4 more items, first extra item: ('.logopia-install.json', b'{\n  "schema_version": 1,\n  "files": [\n    {\n      "path": "__init__.py",\n      "sha25..."settings.json",\n      "sha256": "d49d9379bf7d5b08672bf5a8168d88365187aa373f2c07b2ea61cac0b53422c0"\n    }\n  ]\n}\n')
+E         Use -v to get more diff
+
+tests/hermes/test_installer_backup_interrupt.py:139: AssertionError
+__ test_foreign_target_and_old_backup_both_survive_first_rename_sigint[file] ___
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba1')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and...ogopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba1/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10ba8ff20>
+kind = 'file'
+
+    @pytest.mark.parametrize("kind", ["directory", "file", "symlink", "dangling"])
+    def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        kind: Literal["directory", "file", "symlink", "dangling"],
+    ) -> None:
+        # Given an external fixture that occupies the destination after the real backup move.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        foreign = tmp_path / "foreign"
+        _ = foreign.write_bytes(SENTINEL)
+        absent = tmp_path / "absent"
+        backups: list[Path] = []
+        observed: list[KeyboardInterrupt] = []
+    
+        def occupy_and_interrupt(path: Path, destination: str | Path) -> Path:
+            renamed = original_rename(path, destination)
+            if path == installed.target and Path(destination).name == "previous":
+                backups.append(renamed)
+                assert snapshot(renamed) == before
+                match kind:
+                    case "directory":
+                        installed.target.mkdir()
+                        _ = (installed.target / "user.txt").write_bytes(SENTINEL)
+                    case "file":
+                        _ = installed.target.write_bytes(SENTINEL)
+                    case "symlink":
+                        installed.target.symlink_to(foreign)
+                    case "dangling":
+                        installed.target.symlink_to(absent)
+                    case unreachable:
+                        assert_never(unreachable)
+                try:
+                    signal.raise_signal(signal.SIGINT)
+                except KeyboardInterrupt as error:
+                    observed.append(error)
+                    raise
+            return renamed
+    
+        monkeypatch.setattr(Path, "rename", occupy_and_interrupt)
+        # When SIGINT prevents completion and the target cannot safely be restored.
+        with pytest.raises(KeyboardInterrupt) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then exact old bytes remain at an identified recovery path beside untouched foreign data.
+        assert raised.value is observed[0]
+        assert len(backups) == 1
+        backup = backups[0]
+>       assert snapshot(backup) == before
+E       assert () == (('.logopia-i...d_ba1"\n}\n'))
+E         
+E         Right contains 4 more items, first extra item: ('.logopia-install.json', b'{\n  "schema_version": 1,\n  "files": [\n    {\n      "path": "__init__.py",\n      "sha25..."settings.json",\n      "sha256": "0ad56231a3900cdda5bb8db3c3b20c28e8874eeaa45d258948d3a566c027902e"\n    }\n  ]\n}\n')
+E         Use -v to get more diff
+
+tests/hermes/test_installer_backup_interrupt.py:139: AssertionError
+_ test_foreign_target_and_old_backup_both_survive_first_rename_sigint[symlink] _
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba2')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and...ogopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba2/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10ba792b0>
+kind = 'symlink'
+
+    @pytest.mark.parametrize("kind", ["directory", "file", "symlink", "dangling"])
+    def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        kind: Literal["directory", "file", "symlink", "dangling"],
+    ) -> None:
+        # Given an external fixture that occupies the destination after the real backup move.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        foreign = tmp_path / "foreign"
+        _ = foreign.write_bytes(SENTINEL)
+        absent = tmp_path / "absent"
+        backups: list[Path] = []
+        observed: list[KeyboardInterrupt] = []
+    
+        def occupy_and_interrupt(path: Path, destination: str | Path) -> Path:
+            renamed = original_rename(path, destination)
+            if path == installed.target and Path(destination).name == "previous":
+                backups.append(renamed)
+                assert snapshot(renamed) == before
+                match kind:
+                    case "directory":
+                        installed.target.mkdir()
+                        _ = (installed.target / "user.txt").write_bytes(SENTINEL)
+                    case "file":
+                        _ = installed.target.write_bytes(SENTINEL)
+                    case "symlink":
+                        installed.target.symlink_to(foreign)
+                    case "dangling":
+                        installed.target.symlink_to(absent)
+                    case unreachable:
+                        assert_never(unreachable)
+                try:
+                    signal.raise_signal(signal.SIGINT)
+                except KeyboardInterrupt as error:
+                    observed.append(error)
+                    raise
+            return renamed
+    
+        monkeypatch.setattr(Path, "rename", occupy_and_interrupt)
+        # When SIGINT prevents completion and the target cannot safely be restored.
+        with pytest.raises(KeyboardInterrupt) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then exact old bytes remain at an identified recovery path beside untouched foreign data.
+        assert raised.value is observed[0]
+        assert len(backups) == 1
+        backup = backups[0]
+>       assert snapshot(backup) == before
+E       assert () == (('.logopia-i...d_ba2"\n}\n'))
+E         
+E         Right contains 4 more items, first extra item: ('.logopia-install.json', b'{\n  "schema_version": 1,\n  "files": [\n    {\n      "path": "__init__.py",\n      "sha25..."settings.json",\n      "sha256": "02dddbf29e7bded798a1582e8e004d666dcbfd4ab1a0cb9e167760457ca1e60a"\n    }\n  ]\n}\n')
+E         Use -v to get more diff
+
+tests/hermes/test_installer_backup_interrupt.py:139: AssertionError
+_ test_foreign_target_and_old_backup_both_survive_first_rename_sigint[dangling] _
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba3')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and...ogopia-fix-installer-boundary-080/red-foreign/test_foreign_target_and_old_ba3/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b572660>
+kind = 'dangling'
+
+    @pytest.mark.parametrize("kind", ["directory", "file", "symlink", "dangling"])
+    def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        kind: Literal["directory", "file", "symlink", "dangling"],
+    ) -> None:
+        # Given an external fixture that occupies the destination after the real backup move.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        foreign = tmp_path / "foreign"
+        _ = foreign.write_bytes(SENTINEL)
+        absent = tmp_path / "absent"
+        backups: list[Path] = []
+        observed: list[KeyboardInterrupt] = []
+    
+        def occupy_and_interrupt(path: Path, destination: str | Path) -> Path:
+            renamed = original_rename(path, destination)
+            if path == installed.target and Path(destination).name == "previous":
+                backups.append(renamed)
+                assert snapshot(renamed) == before
+                match kind:
+                    case "directory":
+                        installed.target.mkdir()
+                        _ = (installed.target / "user.txt").write_bytes(SENTINEL)
+                    case "file":
+                        _ = installed.target.write_bytes(SENTINEL)
+                    case "symlink":
+                        installed.target.symlink_to(foreign)
+                    case "dangling":
+                        installed.target.symlink_to(absent)
+                    case unreachable:
+                        assert_never(unreachable)
+                try:
+                    signal.raise_signal(signal.SIGINT)
+                except KeyboardInterrupt as error:
+                    observed.append(error)
+                    raise
+            return renamed
+    
+        monkeypatch.setattr(Path, "rename", occupy_and_interrupt)
+        # When SIGINT prevents completion and the target cannot safely be restored.
+        with pytest.raises(KeyboardInterrupt) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then exact old bytes remain at an identified recovery path beside untouched foreign data.
+        assert raised.value is observed[0]
+        assert len(backups) == 1
+        backup = backups[0]
+>       assert snapshot(backup) == before
+E       assert () == (('.logopia-i...d_ba3"\n}\n'))
+E         
+E         Right contains 4 more items, first extra item: ('.logopia-install.json', b'{\n  "schema_version": 1,\n  "files": [\n    {\n      "path": "__init__.py",\n      "sha25..."settings.json",\n      "sha256": "e834765527bc4a1653a313946e685858b35c143ce8d26855cbec5d5c595de01b"\n    }\n  ]\n}\n')
+E         Use -v to get more diff
+
+tests/hermes/test_installer_backup_interrupt.py:139: AssertionError
+___________ test_interruption_does_not_overwrite_foreign_replacement ___________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_interruption_does_not_ove0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-foreign/test_interruption_does_...ogopia-fix-installer-boundary-080/red-foreign/test_interruption_does_not_ove0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b570cb0>
+
+    def test_interruption_does_not_overwrite_foreign_replacement(
+        tmp_path: Path,
+        installed: InstalledFixture,
+        monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        # Given an unrelated fixture writer occupying the target after the old directory moved.
+        before = _snapshot(installed.target)
+        original_rename = Path.rename
+    
+        def replace_then_interrupt(path: Path, destination: str | Path) -> Path:
+            if path.name == "new" and Path(destination) == installed.target:
+                installed.target.mkdir()
+                _ = (installed.target / "user-owned.txt").write_bytes(SENTINEL)
+                raise KeyboardInterrupt
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", replace_then_interrupt)
+        # When the interrupted update considers restoring its prior directory.
+        with pytest.raises(KeyboardInterrupt):
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then the foreign replacement is preserved rather than overwritten by rollback.
+        assert _snapshot(installed.target) == (("user-owned.txt", SENTINEL),)
+        recoveries = [path for path in installed.target.parent.iterdir() if path != installed.target]
+>       assert len(recoveries) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests/hermes/test_installer_interruption.py:128: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_foreign_target_and_old_backup_both_survive_first_rename_sigint[directory]
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_foreign_target_and_old_backup_both_survive_first_rename_sigint[file]
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_foreign_target_and_old_backup_both_survive_first_rename_sigint[symlink]
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_foreign_target_and_old_backup_both_survive_first_rename_sigint[dangling]
+FAILED tests/hermes/test_installer_interruption.py::test_interruption_does_not_overwrite_foreign_replacement
+5 failed in 0.11s

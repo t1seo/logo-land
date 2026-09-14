@@ -1,0 +1,1436 @@
+{
+  "timestamp": "2026-09-14T17:02:08.765Z",
+  "head": "f7dd3268313d2422b87efea63eef8257b0e651b9",
+  "files": [
+    {
+      "path": "docs/hermes-demo/README.ko.md",
+      "sha256": "92281edaf483b9999c4e045a6ccfa123831da786781406944cf646b562809e85",
+      "currentSha256": "92281edaf483b9999c4e045a6ccfa123831da786781406944cf646b562809e85",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/README.md",
+      "sha256": "6da4722ab9280f2e7c21be05b53a16e41fb58ffda66ae057a7e797c0e87e2405",
+      "currentSha256": "6da4722ab9280f2e7c21be05b53a16e41fb58ffda66ae057a7e797c0e87e2405",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/delivery/brand-guide.md",
+      "sha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+      "currentSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/delivery/logo-package.zip",
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "currentSha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/delivery/logo.png",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "currentSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/delivery/manifest.json",
+      "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+      "currentSha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/example.json",
+      "sha256": "415184581278b1317132c6c380b5255081bb9146dd02db9a1e227f67b4c624fe",
+      "currentSha256": "415184581278b1317132c6c380b5255081bb9146dd02db9a1e227f67b4c624fe",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/index.html",
+      "sha256": "148ba37ffc2795285386e1053d92703c0f4f17a265573fcb4d4d56a0994beed6",
+      "currentSha256": "148ba37ffc2795285386e1053d92703c0f4f17a265573fcb4d4d56a0994beed6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/originals/c1.png",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "currentSha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/originals/c2.png",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "currentSha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/originals/c3.png",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "currentSha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/originals/e1.png",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "currentSha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/originals/e2.png",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "currentSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes-demo/styles.css",
+      "sha256": "7c41f198e5cd5162dac4170ecdf6713627b6ece5a4764cdd858b9d63dbd5ba75",
+      "currentSha256": "7c41f198e5cd5162dac4170ecdf6713627b6ece5a4764cdd858b9d63dbd5ba75",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes.ko.md",
+      "sha256": "182c1e19867db116c42a2b294a0456658657f288ba9eca79faacd8d1e9694fac",
+      "currentSha256": "182c1e19867db116c42a2b294a0456658657f288ba9eca79faacd8d1e9694fac",
+      "unchanged": true
+    },
+    {
+      "path": "docs/hermes.md",
+      "sha256": "056cd7d63378855014ba63be8e08a171ed04abc8d1d3d6134381a066386341c7",
+      "currentSha256": "056cd7d63378855014ba63be8e08a171ed04abc8d1d3d6134381a066386341c7",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/CONTRACT.md",
+      "sha256": "b1fa8844c9471445ee92d13f4fcf15066d8474973883ccab949a6a9f4f25bc09",
+      "currentSha256": "b1fa8844c9471445ee92d13f4fcf15066d8474973883ccab949a6a9f4f25bc09",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/__init__.py",
+      "sha256": "4165898ddcdb8f36e10e0ecb559f98126566d5d8c8206db3297a6e8d5d693988",
+      "currentSha256": "4165898ddcdb8f36e10e0ecb559f98126566d5d8c8206db3297a6e8d5d693988",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/assets/gallery-feedback.mjs",
+      "sha256": "940ede9a7c316b7c58b5b9fc2da25b5cf4dedeb8267dcde9e37c1c239da5151f",
+      "currentSha256": "940ede9a7c316b7c58b5b9fc2da25b5cf4dedeb8267dcde9e37c1c239da5151f",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/assets/gallery-ui.mjs",
+      "sha256": "b76ee1ff148185acf76786ceec53d46fe602fc25d86be7a233bca88264f5f0ec",
+      "currentSha256": "b76ee1ff148185acf76786ceec53d46fe602fc25d86be7a233bca88264f5f0ec",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/assets/gallery.css",
+      "sha256": "98b03c2fb6692f2a42bf1fe338cc6b933b1983c36a78ff31f4f8d937026e04ba",
+      "currentSha256": "98b03c2fb6692f2a42bf1fe338cc6b933b1983c36a78ff31f4f8d937026e04ba",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/assets/gallery.html",
+      "sha256": "65dca519c80ab81c63b7e638dab2d4277c21e19e85c508ec50797ad44acdfc6c",
+      "currentSha256": "65dca519c80ab81c63b7e638dab2d4277c21e19e85c508ec50797ad44acdfc6c",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/__init__.py",
+      "sha256": "7251897daeed8982b84503b99c6df2dd9f78641482cb3efbffb4fffcb9a10c25",
+      "currentSha256": "7251897daeed8982b84503b99c6df2dd9f78641482cb3efbffb4fffcb9a10c25",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/checks.py",
+      "sha256": "7f453f268573cc911adefd0daa7a4c6e6690a2bcc58507cfbfd5a138641395e3",
+      "currentSha256": "7f453f268573cc911adefd0daa7a4c6e6690a2bcc58507cfbfd5a138641395e3",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/checks_images.py",
+      "sha256": "ffd889971b47bf7b323bfa1ed0af0819375e46175ad72768915155b04336b7ed",
+      "currentSha256": "ffd889971b47bf7b323bfa1ed0af0819375e46175ad72768915155b04336b7ed",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine.py",
+      "sha256": "8d4d348afdb8ecd42e2c7a338a1cf0d1921231885da2a2f11071a254d41c66c4",
+      "currentSha256": "8d4d348afdb8ecd42e2c7a338a1cf0d1921231885da2a2f11071a254d41c66c4",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine_actions.py",
+      "sha256": "163fb0fe8c4e0371a34f2c084b420b2b86e77cccd5f09ea9092cca6516fa7d77",
+      "currentSha256": "163fb0fe8c4e0371a34f2c084b420b2b86e77cccd5f09ea9092cca6516fa7d77",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine_jobs.py",
+      "sha256": "c6db59fe54875fc7437c3e2a0784a3ca246339b55d21f9e049d567cdc6554c95",
+      "currentSha256": "c6db59fe54875fc7437c3e2a0784a3ca246339b55d21f9e049d567cdc6554c95",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine_pipeline.py",
+      "sha256": "5db5304acc65a632754d23a1647fce38a8aed48695b0c2f6541326d8d2975b15",
+      "currentSha256": "5db5304acc65a632754d23a1647fce38a8aed48695b0c2f6541326d8d2975b15",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine_production.py",
+      "sha256": "58701ac6e97523f191c3721c8ba3fda67852211aaea26f48dad1d67cccc8962f",
+      "currentSha256": "58701ac6e97523f191c3721c8ba3fda67852211aaea26f48dad1d67cccc8962f",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine_recovery.py",
+      "sha256": "a7e3bc5e920d58da844202c519c6042126e00ea06c00c6890939c6c169155013",
+      "currentSha256": "a7e3bc5e920d58da844202c519c6042126e00ea06c00c6890939c6c169155013",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/engine_steps.py",
+      "sha256": "186f636d14dd93dac04686a39afb17b052b48ee2726d7738d6d85f478716c2b1",
+      "currentSha256": "186f636d14dd93dac04686a39afb17b052b48ee2726d7738d6d85f478716c2b1",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery.py",
+      "sha256": "41e45d2f04173d17fee82861c54de8b70867a24581135513b21f6c91306ee4b8",
+      "currentSha256": "41e45d2f04173d17fee82861c54de8b70867a24581135513b21f6c91306ee4b8",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_cards.py",
+      "sha256": "7b4d39a9045c1f4e4d686c97868efcdf58ebc15427a555a4c3bd2a978d7d9c4c",
+      "currentSha256": "7b4d39a9045c1f4e4d686c97868efcdf58ebc15427a555a4c3bd2a978d7d9c4c",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_delivery.py",
+      "sha256": "f8201563f5ad81a1280ad7b74eca416d08c4c983d183ec0328611a8c1c22df1c",
+      "currentSha256": "f8201563f5ad81a1280ad7b74eca416d08c4c983d183ec0328611a8c1c22df1c",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_files.py",
+      "sha256": "9278d54372d3196240dadcfd17c63f8990b78fa120b83705f70d52643a87a8ce",
+      "currentSha256": "9278d54372d3196240dadcfd17c63f8990b78fa120b83705f70d52643a87a8ce",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_package.py",
+      "sha256": "53ec5cf93f7a0695e9e22187edd80f1fa98ea8ca8ee83ab07e56d7b4fdc82f90",
+      "currentSha256": "53ec5cf93f7a0695e9e22187edd80f1fa98ea8ca8ee83ab07e56d7b4fdc82f90",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_render.py",
+      "sha256": "355057ca7872b8f42a6512d5c08385a713ce4a1b4b34f6d53fe5a7a5222c9086",
+      "currentSha256": "355057ca7872b8f42a6512d5c08385a713ce4a1b4b34f6d53fe5a7a5222c9086",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_review.py",
+      "sha256": "45619f927799bbc681e0d591538233877e88abd564a295f98bd27d0bf5c87ef0",
+      "currentSha256": "45619f927799bbc681e0d591538233877e88abd564a295f98bd27d0bf5c87ef0",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/gallery_strategy.py",
+      "sha256": "e1cad18e98b3a7ce8b9815ae3f332067d2867f562a22f33b48ca5d67d4f93ca8",
+      "currentSha256": "e1cad18e98b3a7ce8b9815ae3f332067d2867f562a22f33b48ca5d67d4f93ca8",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/helper.py",
+      "sha256": "e8ead701630eba26f0e8e312824873ce096b51bcaa8f27e8e1d39da140b28df6",
+      "currentSha256": "e8ead701630eba26f0e8e312824873ce096b51bcaa8f27e8e1d39da140b28df6",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/helper_delivery.py",
+      "sha256": "fc42ea1c02e98a1f72c1f154e9880df8331415da4d5cb05c19b37df0ad0eb254",
+      "currentSha256": "fc42ea1c02e98a1f72c1f154e9880df8331415da4d5cb05c19b37df0ad0eb254",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/helper_models.py",
+      "sha256": "80acddc48be9b0ae24fee1627f2c523abc5eece70cb93e6b7663be4d0efbc4b4",
+      "currentSha256": "80acddc48be9b0ae24fee1627f2c523abc5eece70cb93e6b7663be4d0efbc4b4",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/helper_process.py",
+      "sha256": "9f2b32791f8a27d5529d7a602beeedc4aa59be1bcf0581087d6f757455e3c64a",
+      "currentSha256": "9f2b32791f8a27d5529d7a602beeedc4aa59be1bcf0581087d6f757455e3c64a",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/host.py",
+      "sha256": "4b7386f7b37d8bb507f6a82511411f3034ec43ae7659efad78bc36fcee88a88b",
+      "currentSha256": "4b7386f7b37d8bb507f6a82511411f3034ec43ae7659efad78bc36fcee88a88b",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/host_api.py",
+      "sha256": "63531e2db5d7a8172079440604dfced6e33b6730350e2fbd6d41c3312b659677",
+      "currentSha256": "63531e2db5d7a8172079440604dfced6e33b6730350e2fbd6d41c3312b659677",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/host_images.py",
+      "sha256": "d64784479dae186cf8b92c04b5d48c18f596772ebe1a675aa9c82bb3aee59497",
+      "currentSha256": "d64784479dae186cf8b92c04b5d48c18f596772ebe1a675aa9c82bb3aee59497",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/host_prompts.py",
+      "sha256": "c77602ac988eb7801ec22b58507bb84d6dd7f76d052a0a3d994d37c59c57805a",
+      "currentSha256": "c77602ac988eb7801ec22b58507bb84d6dd7f76d052a0a3d994d37c59c57805a",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/host_requests.py",
+      "sha256": "da6ea987431ac63652d30ac844fbc2ded9ddb934f1277de34ee70fbf7a18029a",
+      "currentSha256": "da6ea987431ac63652d30ac844fbc2ded9ddb934f1277de34ee70fbf7a18029a",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/host_settings.py",
+      "sha256": "7ed8524ef8c3ee642186b0cf9a520feb18a4eadd759ae9b3c2d8d6d0b2853b3b",
+      "currentSha256": "7ed8524ef8c3ee642186b0cf9a520feb18a4eadd759ae9b3c2d8d6d0b2853b3b",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/installer.py",
+      "sha256": "5e286d8dc7ae88899c6f335f3a0721c3699f4c25b633efe424918b3b38710099",
+      "currentSha256": "5e286d8dc7ae88899c6f335f3a0721c3699f4c25b633efe424918b3b38710099",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/installer_models.py",
+      "sha256": "88d87e6cc4e4ed5d9d4e2f18114f2485c954c889a8b8e08fc30b784bd3a2ef1e",
+      "currentSha256": "88d87e6cc4e4ed5d9d4e2f18114f2485c954c889a8b8e08fc30b784bd3a2ef1e",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher.py",
+      "sha256": "dc7d11d992891adc3e37d2b0b20732c13cdca3836bef375a98a88894efcc6b08",
+      "currentSha256": "dc7d11d992891adc3e37d2b0b20732c13cdca3836bef375a98a88894efcc6b08",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_install.py",
+      "sha256": "8bef824498ca496fd91eba6dc0cb94ebbf8e81edebcfe50a66212f7bb60a7170",
+      "currentSha256": "8bef824498ca496fd91eba6dc0cb94ebbf8e81edebcfe50a66212f7bb60a7170",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_output.py",
+      "sha256": "a71b008fabf6f54d41e85a188262c21a202ecd5fbd7d20efd0330f7e94476b1a",
+      "currentSha256": "a71b008fabf6f54d41e85a188262c21a202ecd5fbd7d20efd0330f7e94476b1a",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_process.py",
+      "sha256": "6ad06147bcaf9233e0f3ffe30fa078eb590ef05a18e8949635a6bd70d8aee510",
+      "currentSha256": "6ad06147bcaf9233e0f3ffe30fa078eb590ef05a18e8949635a6bd70d8aee510",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_profile.py",
+      "sha256": "2b8492222e78ef2f69c4b0fcc159ccdeb52d2d207b435a3536c89c4f3cd36219",
+      "currentSha256": "2b8492222e78ef2f69c4b0fcc159ccdeb52d2d207b435a3536c89c4f3cd36219",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_requests.py",
+      "sha256": "bc0cde7b42c92ed03d0a055384d1766c74e5228165c804dee88b4fb75ea611c6",
+      "currentSha256": "bc0cde7b42c92ed03d0a055384d1766c74e5228165c804dee88b4fb75ea611c6",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_runner.py",
+      "sha256": "ab1502d5ca77bc3572e4ce867db5085faf3d2b1d484b881c187b0b97fe9e2a4c",
+      "currentSha256": "ab1502d5ca77bc3572e4ce867db5085faf3d2b1d484b881c187b0b97fe9e2a4c",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_state.py",
+      "sha256": "0ec98d87623ed9027bc63543972148298b34b1e29d56520b9c6b20559e688963",
+      "currentSha256": "0ec98d87623ed9027bc63543972148298b34b1e29d56520b9c6b20559e688963",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/models.py",
+      "sha256": "1e4d3ac28d4d47fed51e9021fe366b907e32974f10b384ab2bcad7046e6d5f36",
+      "currentSha256": "1e4d3ac28d4d47fed51e9021fe366b907e32974f10b384ab2bcad7046e6d5f36",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/models_base.py",
+      "sha256": "3c7edee19926116e53ed460b21101b4f3b19b3a11e8a9231e97e0d3a7f85c356",
+      "currentSha256": "3c7edee19926116e53ed460b21101b4f3b19b3a11e8a9231e97e0d3a7f85c356",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/models_brief.py",
+      "sha256": "c94c4450a02d2722ca802bf169f4405a1d4325a7383d89dd2d24a25c94248ef5",
+      "currentSha256": "c94c4450a02d2722ca802bf169f4405a1d4325a7383d89dd2d24a25c94248ef5",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/models_jobs.py",
+      "sha256": "c8698cfc3987f985d57407316ec6b6f3c708e4e1e226f02d3db67ffc74bf5c30",
+      "currentSha256": "c8698cfc3987f985d57407316ec6b6f3c708e4e1e226f02d3db67ffc74bf5c30",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/models_review.py",
+      "sha256": "6d86feadb8e62725bb56e7251485806fdea7dacb72da9eefe0165fec57af708f",
+      "currentSha256": "6d86feadb8e62725bb56e7251485806fdea7dacb72da9eefe0165fec57af708f",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/prompts.py",
+      "sha256": "cc20dfdf139e960ec541accf0e887189757ba5c3d211103a4466d38631e21801",
+      "currentSha256": "cc20dfdf139e960ec541accf0e887189757ba5c3d211103a4466d38631e21801",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/protocols.py",
+      "sha256": "829d0896ca834049bdb54675803e55377da612258206b64842d5f8fab6afc3a9",
+      "currentSha256": "829d0896ca834049bdb54675803e55377da612258206b64842d5f8fab6afc3a9",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/registration.py",
+      "sha256": "b441ac821fc76db2ab041e28a4ef11baa626bc3c1519b8e4df72b563ccd14a53",
+      "currentSha256": "b441ac821fc76db2ab041e28a4ef11baa626bc3c1519b8e4df72b563ccd14a53",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/store.py",
+      "sha256": "954f4f91449b883793faa73c048b3ad678331cf6cc0f9c5c652693a1f6726358",
+      "currentSha256": "954f4f91449b883793faa73c048b3ad678331cf6cc0f9c5c652693a1f6726358",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/store_files.py",
+      "sha256": "dc8cbcd615418ed6b03e4fb2e74204d07a0f041819bacf2e96baa00f4d5e3c33",
+      "currentSha256": "dc8cbcd615418ed6b03e4fb2e74204d07a0f041819bacf2e96baa00f4d5e3c33",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/plugin.yaml",
+      "sha256": "7af2723180a45082f400c726df994a436d95c101185079af9d7c810f99e649ca",
+      "currentSha256": "7af2723180a45082f400c726df994a436d95c101185079af9d7c810f99e649ca",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/skills/director/SKILL.md",
+      "sha256": "11e86a30f28a59e717f968a2af93279c9a3e096b7e679873b2122c1db0976853",
+      "currentSha256": "11e86a30f28a59e717f968a2af93279c9a3e096b7e679873b2122c1db0976853",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/skills/director/references/craft.md",
+      "sha256": "b5b6d4705f1a70ae7558c47a91751a700fe2eaae559d0cded1ee1db5b176b165",
+      "currentSha256": "b5b6d4705f1a70ae7558c47a91751a700fe2eaae559d0cded1ee1db5b176b165",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/skills/director/references/ip-as-logo.LICENSE",
+      "sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "currentSha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/skills/director/references/ip.md",
+      "sha256": "16dbc8f9ee4f3c66bcbe18c82b4a3bbdc82a7e0da85c18e1a9fdb1f6e8efdf36",
+      "currentSha256": "16dbc8f9ee4f3c66bcbe18c82b4a3bbdc82a7e0da85c18e1a9fdb1f6e8efdf36",
+      "unchanged": true
+    },
+    {
+      "path": "integrations/hermes/studio.py",
+      "sha256": "59fb7c53383c1c7578e6f96d845b59b5862d1179f782ea7a703150b073f67de8",
+      "currentSha256": "59fb7c53383c1c7578e6f96d845b59b5862d1179f782ea7a703150b073f67de8",
+      "unchanged": true
+    },
+    {
+      "path": "plans/logopia-hermes-workflow.md",
+      "sha256": "9a0684944063a9cb86da45964cfb8914edaeadd0a1f77be4e874ec1c71d1df34",
+      "currentSha256": "9a0684944063a9cb86da45964cfb8914edaeadd0a1f77be4e874ec1c71d1df34",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/gallery-browser.mjs",
+      "sha256": "7c6dbc1fc2b7d400a732b0a3a25ba312869317b0e80842f03da4faa7283ec0fd",
+      "currentSha256": "7c6dbc1fc2b7d400a732b0a3a25ba312869317b0e80842f03da4faa7283ec0fd",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/gallery-delivery-browser.mjs",
+      "sha256": "3d05e25d6f19d8da192c98a6f3d020e06ed39c6b0c08d116f012c4af2fb2bed1",
+      "currentSha256": "3d05e25d6f19d8da192c98a6f3d020e06ed39c6b0c08d116f012c4af2fb2bed1",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/gallery-feedback.mjs",
+      "sha256": "a1ce267948fe473255abd051ac775e79ae88bea5f98494cff0a6262e7eb12977",
+      "currentSha256": "a1ce267948fe473255abd051ac775e79ae88bea5f98494cff0a6262e7eb12977",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/gallery-native.mjs",
+      "sha256": "5f637033abbee8264c593e40f4e20e662e6d30a82d1d45602fd7ae3b313a6e81",
+      "currentSha256": "5f637033abbee8264c593e40f4e20e662e6d30a82d1d45602fd7ae3b313a6e81",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_adversarial.py",
+      "sha256": "cfce248bcd07c460e041e1e756792911b730598f1cb633455c083f67c079d4b1",
+      "currentSha256": "cfce248bcd07c460e041e1e756792911b730598f1cb633455c083f67c079d4b1",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_critique_late.py",
+      "sha256": "ccf29b6fd718342d530753475b1d96c13b287b278be9763c1d5f273f3b1b52e7",
+      "currentSha256": "ccf29b6fd718342d530753475b1d96c13b287b278be9763c1d5f273f3b1b52e7",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_critique_resume.py",
+      "sha256": "b13c9a4b9ae469815a786b07164ca91a7f0292f31921fe191a42bb5c830c2ea0",
+      "currentSha256": "b13c9a4b9ae469815a786b07164ca91a7f0292f31921fe191a42bb5c830c2ea0",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_engine.py",
+      "sha256": "9b2964dc43975a57794dafa01c0162ab3c4ec3f35858fe1199a3203d60bb1958",
+      "currentSha256": "9b2964dc43975a57794dafa01c0162ab3c4ec3f35858fe1199a3203d60bb1958",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_fixtures.py",
+      "sha256": "96cb733a29657a5ba7fd091529fc7ac9f4807b9c49ecef67c9d977e6e854aa92",
+      "currentSha256": "96cb733a29657a5ba7fd091529fc7ac9f4807b9c49ecef67c9d977e6e854aa92",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_models.py",
+      "sha256": "d88fbbc36445266aefeb87d7dc354fe0418f645946193a3ceced4decf259f390",
+      "currentSha256": "d88fbbc36445266aefeb87d7dc354fe0418f645946193a3ceced4decf259f390",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_prompts.py",
+      "sha256": "c357631b18a2a94359a1e9747445e5b2f8dc0faefc2c9c7b1b0c712cb30e920a",
+      "currentSha256": "c357631b18a2a94359a1e9747445e5b2f8dc0faefc2c9c7b1b0c712cb30e920a",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_recovery.py",
+      "sha256": "a417be14f75fc3cfcfdacaef4935e64b4c611b54aac0a0412a8290daad729c35",
+      "currentSha256": "a417be14f75fc3cfcfdacaef4935e64b4c611b54aac0a0412a8290daad729c35",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_reports.py",
+      "sha256": "d7c6c6b4cccfcff258e3ebb86c53759fc76a0c7734261cb82308ad00dd4c6ade",
+      "currentSha256": "d7c6c6b4cccfcff258e3ebb86c53759fc76a0c7734261cb82308ad00dd4c6ade",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_resume_adversarial.py",
+      "sha256": "6444be712cf1148ea46c141f7c4035890f6e0dae3160690c41c8e777d3dd4f9c",
+      "currentSha256": "6444be712cf1148ea46c141f7c4035890f6e0dae3160690c41c8e777d3dd4f9c",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_resume_eligibility.py",
+      "sha256": "6deaeea9ad2c75785bfecb93749d133f221cdd3b0800918cacff4484638e4665",
+      "currentSha256": "6deaeea9ad2c75785bfecb93749d133f221cdd3b0800918cacff4484638e4665",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_core_resume_fixtures.py",
+      "sha256": "b3fd0623fd8601707329ab23a285fab426b1ab66249759d37c41d5c93da526ad",
+      "currentSha256": "b3fd0623fd8601707329ab23a285fab426b1ab66249759d37c41d5c93da526ad",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_existing_helper.py",
+      "sha256": "be9ed1f04584ccbb95827656b569d93c962272e7fb36cced54b81ff18436f3b3",
+      "currentSha256": "be9ed1f04584ccbb95827656b569d93c962272e7fb36cced54b81ff18436f3b3",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_adversarial.py",
+      "sha256": "b8bf5c087c5a454a41f9097f177100a0fd92480d0cefe6faaebf88b953bf8d13",
+      "currentSha256": "b8bf5c087c5a454a41f9097f177100a0fd92480d0cefe6faaebf88b953bf8d13",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_baseline.py",
+      "sha256": "7249dddf15d54195af4f42bb80810642ca9008ed960ad31b14169cd7ab7ef623",
+      "currentSha256": "7249dddf15d54195af4f42bb80810642ca9008ed960ad31b14169cd7ab7ef623",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_delivery.py",
+      "sha256": "1976da1f3cf3b37473cac9c9028cebfe4f12cf78f8ef342e94830b390df8501e",
+      "currentSha256": "1976da1f3cf3b37473cac9c9028cebfe4f12cf78f8ef342e94830b390df8501e",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_delivery_adversarial.py",
+      "sha256": "bd969170dfabd0ad746f7e1e53f137a795654a96657f5bbee5a5b70214716a82",
+      "currentSha256": "bd969170dfabd0ad746f7e1e53f137a795654a96657f5bbee5a5b70214716a82",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_delivery_fixture.py",
+      "sha256": "85d9a196bd52866e8a217155dfed81fe60a68fc7cca5e12d50e3c02e8bd1d708",
+      "currentSha256": "85d9a196bd52866e8a217155dfed81fe60a68fc7cca5e12d50e3c02e8bd1d708",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_fixture.py",
+      "sha256": "1fa06a12b407b131378ecf8f9837671d9f3b62fd363b222385945987196e8d22",
+      "currentSha256": "1fa06a12b407b131378ecf8f9837671d9f3b62fd363b222385945987196e8d22",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_gallery_publish.py",
+      "sha256": "078c80ee5e644ca0a1033a18790c7948b109f28c11f49955677c030a93fde19e",
+      "currentSha256": "078c80ee5e644ca0a1033a18790c7948b109f28c11f49955677c030a93fde19e",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_helper_bridge.py",
+      "sha256": "fa5fdf41cc79859fad1637287a65fae3d52df91f80a1c0f8853f64a66a7578d7",
+      "currentSha256": "fa5fdf41cc79859fad1637287a65fae3d52df91f80a1c0f8853f64a66a7578d7",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_helper_recovery.py",
+      "sha256": "adcb7bd81ec9e8f599d8f8f74b4d70a1ad626ff2b4d48eef92b36d92ed3205f5",
+      "currentSha256": "adcb7bd81ec9e8f599d8f8f74b4d70a1ad626ff2b4d48eef92b36d92ed3205f5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_actions.py",
+      "sha256": "8281b33874c7fcb4fac49ce8149959396f9a7fedfd0062336715d2714c545365",
+      "currentSha256": "8281b33874c7fcb4fac49ce8149959396f9a7fedfd0062336715d2714c545365",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_critique.py",
+      "sha256": "e216d52c2b4ea9d663fbe4a1c3cd0a36ae466d17cf56a4e5fa89fe89f1b35cf6",
+      "currentSha256": "e216d52c2b4ea9d663fbe4a1c3cd0a36ae466d17cf56a4e5fa89fe89f1b35cf6",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_fakes.py",
+      "sha256": "ca0b333efe63eb8aabf6cfc92d404909397f73d5fa2663e1869c23f837f290a5",
+      "currentSha256": "ca0b333efe63eb8aabf6cfc92d404909397f73d5fa2663e1869c23f837f290a5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_registration.py",
+      "sha256": "87394e879081cda0d0b7de3942cc4691c74e9d99b63aea8bec32391701682aa6",
+      "currentSha256": "87394e879081cda0d0b7de3942cc4691c74e9d99b63aea8bec32391701682aa6",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_requests.py",
+      "sha256": "ed042c17c0e74235c28b3a9559850cd198ab2db498b401837ad2542735040c69",
+      "currentSha256": "ed042c17c0e74235c28b3a9559850cd198ab2db498b401837ad2542735040c69",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_resume_guard.py",
+      "sha256": "f016f8bbdef81ff1869e390120f84cba5e4f4ce4c869aa229e80f14c7aa7b8f8",
+      "currentSha256": "f016f8bbdef81ff1869e390120f84cba5e4f4ce4c869aa229e80f14c7aa7b8f8",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_host_transport.py",
+      "sha256": "c581e28d1d93fd66856fcdc315e2cd0983de0c81cc406603886de2fc9502ceed",
+      "currentSha256": "c581e28d1d93fd66856fcdc315e2cd0983de0c81cc406603886de2fc9502ceed",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_installer.py",
+      "sha256": "2a74835e2b03e43bf12117676eb6333651f4d744d0efd85ce916a2b076451bef",
+      "currentSha256": "2a74835e2b03e43bf12117676eb6333651f4d744d0efd85ce916a2b076451bef",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli.py",
+      "sha256": "a8f2d94e7f45ffd440beb7167a197f6121978d258910bde1696af90c0fed5fd5",
+      "currentSha256": "a8f2d94e7f45ffd440beb7167a197f6121978d258910bde1696af90c0fed5fd5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_fake.py",
+      "sha256": "85aaf577a7f6285ef05bb63ed69d7aff200da1e679ad3c830e78fed8cf02fb49",
+      "currentSha256": "85aaf577a7f6285ef05bb63ed69d7aff200da1e679ad3c830e78fed8cf02fb49",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_feedback.py",
+      "sha256": "b90c57864be8d3064d9e165eb80bd19438bb900d88dcf4f1a68d154459a783e2",
+      "currentSha256": "b90c57864be8d3064d9e165eb80bd19438bb900d88dcf4f1a68d154459a783e2",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_fixtures.py",
+      "sha256": "9fb7129fb3c547286d240b2c9ad3cb883750d60600844281b3a71117c781294a",
+      "currentSha256": "9fb7129fb3c547286d240b2c9ad3cb883750d60600844281b3a71117c781294a",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_install.py",
+      "sha256": "3e13b60b7c8542fa15f090d8037417c8c41fecf6e424fe3752476eb4e230efb4",
+      "currentSha256": "3e13b60b7c8542fa15f090d8037417c8c41fecf6e424fe3752476eb4e230efb4",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_lock.py",
+      "sha256": "88aa546579d94939804982485657d26fac01a4cfc9f88198d71ea63612bb9663",
+      "currentSha256": "88aa546579d94939804982485657d26fac01a4cfc9f88198d71ea63612bb9663",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_native_timeout.py",
+      "sha256": "70f402590c51f457ec9e8e271c11e9b07f07772d91172911fd3f653a0e5aa4dd",
+      "currentSha256": "70f402590c51f457ec9e8e271c11e9b07f07772d91172911fd3f653a0e5aa4dd",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_run.py",
+      "sha256": "6b4a7d0fdf401802f401ec280b4524f5d0567f72bf3b5cf644dc0ca0081d9d40",
+      "currentSha256": "6b4a7d0fdf401802f401ec280b4524f5d0567f72bf3b5cf644dc0ca0081d9d40",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_cli_settlement.py",
+      "sha256": "fed9534eee9fa874ddb847e9151bb6e0c718fff2ab0765e4b49147a89c5ff362",
+      "currentSha256": "fed9534eee9fa874ddb847e9151bb6e0c718fff2ab0765e4b49147a89c5ff362",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_process.py",
+      "sha256": "ac66403515b3b30b86c6e8f84f3f8e3baa8239493b76730955c9d1f265f37f70",
+      "currentSha256": "ac66403515b3b30b86c6e8f84f3f8e3baa8239493b76730955c9d1f265f37f70",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_request.py",
+      "sha256": "173ac1515f3345ebca7bdc7b2fe4c48a558e89cc74217e4060f5befce83398be",
+      "currentSha256": "173ac1515f3345ebca7bdc7b2fe4c48a558e89cc74217e4060f5befce83398be",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_request_models.py",
+      "sha256": "69166e14defd6af3ab8a55c6be27759e9a6c6e9452115527b2466961ab65a16c",
+      "currentSha256": "69166e14defd6af3ab8a55c6be27759e9a6c6e9452115527b2466961ab65a16c",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_request_recovery.py",
+      "sha256": "5f01de3aa0849f8f5e6f746f5e351b961d23989819727102ba83bf515bf0d541",
+      "currentSha256": "5f01de3aa0849f8f5e6f746f5e351b961d23989819727102ba83bf515bf0d541",
+      "unchanged": true
+    },
+    {
+      "path": "tests/hermes/test_launcher_request_state.py",
+      "sha256": "e1681f7a0014fcddb77c4a7a38d38a83e09c36f660c1337b22be133ab09cf80b",
+      "currentSha256": "e1681f7a0014fcddb77c4a7a38d38a83e09c36f660c1337b22be133ab09cf80b",
+      "unchanged": true
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "a5c05e88df05eac399a6105592f83c845904f0dd1bc61f6445aa4f8f7bcdef21",
+      "currentSha256": "a5c05e88df05eac399a6105592f83c845904f0dd1bc61f6445aa4f8f7bcdef21",
+      "unchanged": true
+    },
+    {
+      "path": "README.ko.md",
+      "sha256": "d05d87e663dfad1c848349639902e5eca91968d9a9201d8c4b9981428d5886be",
+      "currentSha256": "d05d87e663dfad1c848349639902e5eca91968d9a9201d8c4b9981428d5886be",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "077c932532866e4dba4fe247bdfaa0dee4f765a129dbc20c9f02bab3e616ca86",
+      "currentSha256": "077c932532866e4dba4fe247bdfaa0dee4f765a129dbc20c9f02bab3e616ca86",
+      "unchanged": true
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "84161b724692b7ea54fb091360a3b3a57074910c4fc8887e4430d3b9ec10a990",
+      "currentSha256": "84161b724692b7ea54fb091360a3b3a57074910c4fc8887e4430d3b9ec10a990",
+      "unchanged": true
+    },
+    {
+      "path": "skills/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "currentSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/SKILL.md",
+      "sha256": "7e09c431d3b9701604e10328ec6255d822a0c961c521561905f9643137035694",
+      "currentSha256": "7e09c431d3b9701604e10328ec6255d822a0c961c521561905f9643137035694",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/agents/openai.yaml",
+      "sha256": "0f23d71d45050bd97987c1646656680ec70e8e7a4ba5a974576347777e42db07",
+      "currentSha256": "0f23d71d45050bd97987c1646656680ec70e8e7a4ba5a974576347777e42db07",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/assets/app-icon-gallery.template.html",
+      "sha256": "960c682d45807c8a7f1a0dfb5f031f6a17f3fb6d4ca0c84501514375bd8cb9dd",
+      "currentSha256": "960c682d45807c8a7f1a0dfb5f031f6a17f3fb6d4ca0c84501514375bd8cb9dd",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/assets/app-icon.example.json",
+      "sha256": "2477e1384ba781a44a0116f4a86c71a85cdea3e4030ae6c388e28c1779685fbc",
+      "currentSha256": "2477e1384ba781a44a0116f4a86c71a85cdea3e4030ae6c388e28c1779685fbc",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/assets/brief.example.json",
+      "sha256": "2841dbbba9e3d94759c1a1b5ccc2885b8a94a87e7ede81f0786d0b7d31155342",
+      "currentSha256": "2841dbbba9e3d94759c1a1b5ccc2885b8a94a87e7ede81f0786d0b7d31155342",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/assets/color-gallery.template.html",
+      "sha256": "65c0745614f866f670a94068503552c9982ef48c1a6697f05943ac999cea6773",
+      "currentSha256": "65c0745614f866f670a94068503552c9982ef48c1a6697f05943ac999cea6773",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/assets/comparison-gallery.template.html",
+      "sha256": "2e9760669f0aa2d9d34267fce0241452f43de435c9c4985bce80be70afb309a3",
+      "currentSha256": "2e9760669f0aa2d9d34267fce0241452f43de435c9c4985bce80be70afb309a3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/assets/ip-as-logo.LICENSE",
+      "sha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "currentSha256": "b8f39925b1c36ca531c5e663aeb7ba427f94a526495785b4d1b2797fae8f2546",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/app-icons.md",
+      "sha256": "172bc6d4a7c843fa12db3dce3c770faac56f79cbcc990d7801ac514a16179ee2",
+      "currentSha256": "172bc6d4a7c843fa12db3dce3c770faac56f79cbcc990d7801ac514a16179ee2",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/color-providers.md",
+      "sha256": "285199155af770b052e1d7aa2ec92bb687320d1f5aebe6008eadc3ca0e61af8f",
+      "currentSha256": "285199155af770b052e1d7aa2ec92bb687320d1f5aebe6008eadc3ca0e61af8f",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/color-workflow.md",
+      "sha256": "3f2f3d941fc5f72f64b0900059477e3f1fb2748b2bcdd4fdea24c1361f897b06",
+      "currentSha256": "3f2f3d941fc5f72f64b0900059477e3f1fb2748b2bcdd4fdea24c1361f897b06",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/comparison-workflow.md",
+      "sha256": "22746583614cfd337ce5ff062d038c3b1692b080b87e92860bda6f0fdb2cab4b",
+      "currentSha256": "22746583614cfd337ce5ff062d038c3b1692b080b87e92860bda6f0fdb2cab4b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/delivery-checks.md",
+      "sha256": "fe05c57c0089000ae79857170d87b6ac5a90d681c43f5b18df6aa384436224ff",
+      "currentSha256": "fe05c57c0089000ae79857170d87b6ac5a90d681c43f5b18df6aa384436224ff",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/game-title-logos.md",
+      "sha256": "48fa14d96d50a7fb98bf75ad115deb1c3848bc58cfe8977330f4010959c53b10",
+      "currentSha256": "48fa14d96d50a7fb98bf75ad115deb1c3848bc58cfe8977330f4010959c53b10",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/ip-mascot.md",
+      "sha256": "08f93b78555246ea3b71a11d4879a53790808df4cab400bd5ed84b6d409e4850",
+      "currentSha256": "08f93b78555246ea3b71a11d4879a53790808df4cab400bd5ed84b6d409e4850",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/lettering.md",
+      "sha256": "a0943d810fe1100e542f0c6c0c3316d055c661509aeba09af7d8dfb32a603a37",
+      "currentSha256": "a0943d810fe1100e542f0c6c0c3316d055c661509aeba09af7d8dfb32a603a37",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/logo-craft.md",
+      "sha256": "3176ac1820408761ebe02a44cb4bab8bbcc8c5c9bf9be5fa2d5f4f16c0d259c9",
+      "currentSha256": "3176ac1820408761ebe02a44cb4bab8bbcc8c5c9bf9be5fa2d5f4f16c0d259c9",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/logo-directions.md",
+      "sha256": "29c4e3d1595b3a92d60968b60a9002fe4d7bda520d9ef2a4ccfae071054f454d",
+      "currentSha256": "29c4e3d1595b3a92d60968b60a9002fe4d7bda520d9ef2a4ccfae071054f454d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/native-image.md",
+      "sha256": "34056909420a4db68be7d00b09a18aabd450221529f814d73b7642369f096c3f",
+      "currentSha256": "34056909420a4db68be7d00b09a18aabd450221529f814d73b7642369f096c3f",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/project-files.md",
+      "sha256": "1b3944bbfb4a808ccdc06728ab2c84b6991efd1bc7e261e2e8456d83285b43c3",
+      "currentSha256": "1b3944bbfb4a808ccdc06728ab2c84b6991efd1bc7e261e2e8456d83285b43c3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/references/typography.md",
+      "sha256": "b4d472f47fb71bc8f4e6f1d2715bf77588b69c4a9c91e46aa31ff6ea8d337470",
+      "currentSha256": "b4d472f47fb71bc8f4e6f1d2715bf77588b69c4a9c91e46aa31ff6ea8d337470",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/__init__.py",
+      "sha256": "23c8d2ce225a99efe9832a41c20b46d139f5b31049dd641a04e13ff83b84f4d0",
+      "currentSha256": "23c8d2ce225a99efe9832a41c20b46d139f5b31049dd641a04e13ff83b84f4d0",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_cli.py",
+      "sha256": "e09075977adfd8c0b98202242ab3759fb1145227df987aeaac33c31896d35ada",
+      "currentSha256": "e09075977adfd8c0b98202242ab3759fb1145227df987aeaac33c31896d35ada",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_gallery.py",
+      "sha256": "71a2a7873af195cdeefe312f6d0462552fd1bb8856c117b5a20349649371e43f",
+      "currentSha256": "71a2a7873af195cdeefe312f6d0462552fd1bb8856c117b5a20349649371e43f",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_guide.py",
+      "sha256": "c063bf22bbcfa82c982caa2c066db2b069b34f8d633ba3f6afdb1e9d4fd17012",
+      "currentSha256": "c063bf22bbcfa82c982caa2c066db2b069b34f8d633ba3f6afdb1e9d4fd17012",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_models.py",
+      "sha256": "21ba823e490677f5e70ce9d05c782b1fa12884f405c4ba4601fd052bb1209c2d",
+      "currentSha256": "21ba823e490677f5e70ce9d05c782b1fa12884f405c4ba4601fd052bb1209c2d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_presets.py",
+      "sha256": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "currentSha256": "0b7a5a4e01363a7f1bc1513a1c4bdba423d906edf722b322dab3253abfd849ae",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_prompts.py",
+      "sha256": "d59ff54a2c77a368390be832bda5643af92dbab75d1a6431838687397e847080",
+      "currentSha256": "d59ff54a2c77a368390be832bda5643af92dbab75d1a6431838687397e847080",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/app_icon_publish.py",
+      "sha256": "fb4dea5c484a4c617e898626d324a1aed5335e7b853299f45827d15d8a652ae5",
+      "currentSha256": "fb4dea5c484a4c617e898626d324a1aed5335e7b853299f45827d15d8a652ae5",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/artifact_models.py",
+      "sha256": "f35d32f2da234e92dd5144d48eb62fbddfac3039dd079b4d0a5d35eccd3231f0",
+      "currentSha256": "f35d32f2da234e92dd5144d48eb62fbddfac3039dd079b4d0a5d35eccd3231f0",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/brief_models.py",
+      "sha256": "caea33b207c181391fde6d9bc4fc7826335a8d2eb47f7124b51e5fbb18d16b12",
+      "currentSha256": "caea33b207c181391fde6d9bc4fc7826335a8d2eb47f7124b51e5fbb18d16b12",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/cli_options.py",
+      "sha256": "e3f697458b482079c27b446cbb56aef4c6cf38ce3cd49ca94f1600ab76f4c8d3",
+      "currentSha256": "e3f697458b482079c27b446cbb56aef4c6cf38ce3cd49ca94f1600ab76f4c8d3",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_analysis.py",
+      "sha256": "cfcef1c51c0f7a4067b7e9317df5b6f4acdb5312036e37516c9aab16f2d0ba30",
+      "currentSha256": "cfcef1c51c0f7a4067b7e9317df5b6f4acdb5312036e37516c9aab16f2d0ba30",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_cli.py",
+      "sha256": "d731f309d0dc877eb9f0ec71bf733c2461cda8757f9f15ac38fe7d0d7b9e3809",
+      "currentSha256": "d731f309d0dc877eb9f0ec71bf733c2461cda8757f9f15ac38fe7d0d7b9e3809",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_delivery.py",
+      "sha256": "7e7f0a4745def5b15ad08699dc57b113eca97eeeaa9b2aefaba35ef138d98f55",
+      "currentSha256": "7e7f0a4745def5b15ad08699dc57b113eca97eeeaa9b2aefaba35ef138d98f55",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_gallery.py",
+      "sha256": "05076788df31137f3ca6576a58346533130f2dd710779e35eb9311370ae6b56d",
+      "currentSha256": "05076788df31137f3ca6576a58346533130f2dd710779e35eb9311370ae6b56d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_gallery_cards.py",
+      "sha256": "253ba8f0a439a4bb8129d2cb43463d5897df2d42cc9528ee627f8c709d669a53",
+      "currentSha256": "253ba8f0a439a4bb8129d2cb43463d5897df2d42cc9528ee627f8c709d669a53",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_gallery_data.py",
+      "sha256": "81dbf0876dc5cdc6e21493e80098489f54bc8e39dcb13bd3e61a38c5b998a030",
+      "currentSha256": "81dbf0876dc5cdc6e21493e80098489f54bc8e39dcb13bd3e61a38c5b998a030",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_guide.py",
+      "sha256": "34cdb38dddc6b398376fe5b492eef1799052b0b82a47bb48f3f4b801ea6f424a",
+      "currentSha256": "34cdb38dddc6b398376fe5b492eef1799052b0b82a47bb48f3f4b801ea6f424a",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_math.py",
+      "sha256": "aa677d064632e48a9d108ba5d0b818c57f589ba1bcb61406261d8502cdc86288",
+      "currentSha256": "aa677d064632e48a9d108ba5d0b818c57f589ba1bcb61406261d8502cdc86288",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_models.py",
+      "sha256": "d3b4093611e2aa2d095c6c4f9027e65c794ef8b836c89d4a24c554f4a720f547",
+      "currentSha256": "d3b4093611e2aa2d095c6c4f9027e65c794ef8b836c89d4a24c554f4a720f547",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_profiles.py",
+      "sha256": "055a299c1bd6738add1b44ad8977ffb48b9a3310bb9387665daa6efe04ca34df",
+      "currentSha256": "055a299c1bd6738add1b44ad8977ffb48b9a3310bb9387665daa6efe04ca34df",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_reports.py",
+      "sha256": "95cf4f2605c8ca248a489d4e53fafee9f18b663d6effd38f3b5e5d080dd5596d",
+      "currentSha256": "95cf4f2605c8ca248a489d4e53fafee9f18b663d6effd38f3b5e5d080dd5596d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_sampling.py",
+      "sha256": "71946e9eda8b329b5cafffc0163161abd2b17ddab3c92184bc5d4ba99ad94330",
+      "currentSha256": "71946e9eda8b329b5cafffc0163161abd2b17ddab3c92184bc5d4ba99ad94330",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/color_workflow.py",
+      "sha256": "7ef6e5c33c7f56d2320a643f5cd99428555b9eb4fa24fe65857b96147379cc42",
+      "currentSha256": "7ef6e5c33c7f56d2320a643f5cd99428555b9eb4fa24fe65857b96147379cc42",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/comparison_cards.py",
+      "sha256": "8f4e45b7296fb60c13e73130fbacdbf52fe8ccb483346b89043c29d11c497af8",
+      "currentSha256": "8f4e45b7296fb60c13e73130fbacdbf52fe8ccb483346b89043c29d11c497af8",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/comparison_cli.py",
+      "sha256": "fa8a22ccb2dd1702fb4e81c32fb1faaea7e465bca97390beed48a64b6fc0b592",
+      "currentSha256": "fa8a22ccb2dd1702fb4e81c32fb1faaea7e465bca97390beed48a64b6fc0b592",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/comparison_gallery.py",
+      "sha256": "17a81c7eb7488f500babe27eb653948ea88ca1c46467cfb81d3e55db141e2879",
+      "currentSha256": "17a81c7eb7488f500babe27eb653948ea88ca1c46467cfb81d3e55db141e2879",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/comparison_models.py",
+      "sha256": "016c802eef0f06c0bdc9040427b53d480799a3f150f336b346396a3167ef1336",
+      "currentSha256": "016c802eef0f06c0bdc9040427b53d480799a3f150f336b346396a3167ef1336",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/delivery.py",
+      "sha256": "ed3713421b316e43568641451f41fc5a71332608acc8b8b2bf6c1db6f4469859",
+      "currentSha256": "ed3713421b316e43568641451f41fc5a71332608acc8b8b2bf6c1db6f4469859",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/export_bundle.py",
+      "sha256": "33de44fb7677569d65c7b883c6d5b098c998e19bd9f731a6138ee9c09a1de612",
+      "currentSha256": "33de44fb7677569d65c7b883c6d5b098c998e19bd9f731a6138ee9c09a1de612",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/images.py",
+      "sha256": "bd3d03ce8ab8fc7c6767da8fe8269e688ee63f16e14f04bf21d0e9d631a15f0a",
+      "currentSha256": "bd3d03ce8ab8fc7c6767da8fe8269e688ee63f16e14f04bf21d0e9d631a15f0a",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/import_reports.py",
+      "sha256": "69ffb9f6a9dbe5ac149fb9113f36ff63067cbad244c8c3a48af919e30223691c",
+      "currentSha256": "69ffb9f6a9dbe5ac149fb9113f36ff63067cbad244c8c3a48af919e30223691c",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/intent.py",
+      "sha256": "9a8ece8285703df5fb00585ecc33990089378f84bd2aaadae31448fd7501d271",
+      "currentSha256": "9a8ece8285703df5fb00585ecc33990089378f84bd2aaadae31448fd7501d271",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/legacy_state.py",
+      "sha256": "09119091b50d9a4b8d9e4782636a8cddbd93b0d0fd197c774c129d2bc8ac3c5d",
+      "currentSha256": "09119091b50d9a4b8d9e4782636a8cddbd93b0d0fd197c774c129d2bc8ac3c5d",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/lockup_models.py",
+      "sha256": "0c0fb574ca59d4e6bb72ef26df4dcc36e013e354901840f4bf7cb30291c035cc",
+      "currentSha256": "0c0fb574ca59d4e6bb72ef26df4dcc36e013e354901840f4bf7cb30291c035cc",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/logo_prompts.py",
+      "sha256": "968f9958906fb395ba7180a1e6b94561ef9fa1ea594b5d1b00c6c2cb73cba55b",
+      "currentSha256": "968f9958906fb395ba7180a1e6b94561ef9fa1ea594b5d1b00c6c2cb73cba55b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/model_base.py",
+      "sha256": "0051b0fc239944f0143da201848f98d8c414c9d2d520f5de4f4718c88756c49e",
+      "currentSha256": "0051b0fc239944f0143da201848f98d8c414c9d2d520f5de4f4718c88756c49e",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/models.py",
+      "sha256": "dc28d55027542510328ebdf80a820ed3456e6f6cfbd00cae102395026a0079ca",
+      "currentSha256": "dc28d55027542510328ebdf80a820ed3456e6f6cfbd00cae102395026a0079ca",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/palette_proposals.py",
+      "sha256": "6968ca4356be8197ffdd68500ea2f53c72dff935c743e57305bb7ae4e10aca4b",
+      "currentSha256": "6968ca4356be8197ffdd68500ea2f53c72dff935c743e57305bb7ae4e10aca4b",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/palettes.py",
+      "sha256": "6c60dffcca290bd390e1259600cdd91e190589995af6c42152ba42f719d77e08",
+      "currentSha256": "6c60dffcca290bd390e1259600cdd91e190589995af6c42152ba42f719d77e08",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/prompts.py",
+      "sha256": "68db758ad2eb2fafe54358805457b06c0f6e48c219f02e1703d4200f7800b080",
+      "currentSha256": "68db758ad2eb2fafe54358805457b06c0f6e48c219f02e1703d4200f7800b080",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/reference_decode.py",
+      "sha256": "b55055f40a5fee8a01943acd082bfe8b7a521b61bb1773f36a208f5e5f9c453f",
+      "currentSha256": "b55055f40a5fee8a01943acd082bfe8b7a521b61bb1773f36a208f5e5f9c453f",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/reference_evidence.py",
+      "sha256": "ab80fa6b9a19f77b525566c9f4b8129720dee403daea9994155e0888e2d0d1f4",
+      "currentSha256": "ab80fa6b9a19f77b525566c9f4b8129720dee403daea9994155e0888e2d0d1f4",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/reference_models.py",
+      "sha256": "87da637a01602f5dd0655ff6e8bfefae9ca2c609513dcbfe43a9f5e07553064e",
+      "currentSha256": "87da637a01602f5dd0655ff6e8bfefae9ca2c609513dcbfe43a9f5e07553064e",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/references.py",
+      "sha256": "a02f6d9bf3775820bc4d394d539186c64da7ce96cb00a359e34e266acec4d3b7",
+      "currentSha256": "a02f6d9bf3775820bc4d394d539186c64da7ce96cb00a359e34e266acec4d3b7",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/session_models.py",
+      "sha256": "3d5917431dd8c8f7f43c2acc91dd845682b0d8483e1de835ba5794eda3dcdaea",
+      "currentSha256": "3d5917431dd8c8f7f43c2acc91dd845682b0d8483e1de835ba5794eda3dcdaea",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/storage.py",
+      "sha256": "e0a9bd8c18458beeda1a0ad9479afbec68ac6c4690b42f795dc3cdbd813b42a6",
+      "currentSha256": "e0a9bd8c18458beeda1a0ad9479afbec68ac6c4690b42f795dc3cdbd813b42a6",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_helper/workflow.py",
+      "sha256": "a82d1cd1c02a16b4c202c1a01d08a6a5e44f18491d297bc01857c663dbbbd6d6",
+      "currentSha256": "a82d1cd1c02a16b4c202c1a01d08a6a5e44f18491d297bc01857c663dbbbd6d6",
+      "unchanged": true
+    },
+    {
+      "path": "skills/logo-land/scripts/logo_project.py",
+      "sha256": "6e94ce899ceb1f7f96e3cf8ce4c66a5f08cb00b138d553cc5a482b75ad584e73",
+      "currentSha256": "6e94ce899ceb1f7f96e3cf8ce4c66a5f08cb00b138d553cc5a482b75ad584e73",
+      "unchanged": true
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "6ba5fda3da53b5f19fa10a5fbfbb20dcd854949c49437b6ce6f9a91704772a21",
+      "currentSha256": "6ba5fda3da53b5f19fa10a5fbfbb20dcd854949c49437b6ce6f9a91704772a21",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-capability.md",
+      "sha256": "650c8d31b7e0c524ec818941e3e61b65e4f79c9c2d4ee54d8fb715056faa2eea",
+      "currentSha256": "650c8d31b7e0c524ec818941e3e61b65e4f79c9c2d4ee54d8fb715056faa2eea",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-delivery.md",
+      "sha256": "bdcafac3287afaf27a5908fde1dfcffb22981cbaa54102abd360897e6f316a7a",
+      "currentSha256": "bdcafac3287afaf27a5908fde1dfcffb22981cbaa54102abd360897e6f316a7a",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-metis.md",
+      "sha256": "af8c6e61497651195a5c884ce5af52fb9bb2246e6acdcd0279e128562d4133fa",
+      "currentSha256": "af8c6e61497651195a5c884ce5af52fb9bb2246e6acdcd0279e128562d4133fa",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-tools.md",
+      "sha256": "e8afad487b95bceb7d60a517156882dee5a5639b2f5a86c43d15486c01ed6612",
+      "currentSha256": "e8afad487b95bceb7d60a517156882dee5a5639b2f5a86c43d15486c01ed6612",
+      "unchanged": true
+    },
+    {
+      "path": ".logo-generator/workflows/offcut-hermes-demo/workflow.json",
+      "sha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+      "currentSha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+      "unchanged": true
+    },
+    {
+      "path": ".logo-generator/sessions/offcut-hermes-demo/artifacts/c1.png",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "currentSha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "unchanged": true
+    },
+    {
+      "path": ".logo-generator/sessions/offcut-hermes-demo/artifacts/c2.png",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "currentSha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "unchanged": true
+    },
+    {
+      "path": ".logo-generator/sessions/offcut-hermes-demo/artifacts/c3.png",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "currentSha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "unchanged": true
+    },
+    {
+      "path": ".logo-generator/sessions/offcut-hermes-demo/artifacts/e1.png",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "currentSha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "unchanged": true
+    },
+    {
+      "path": ".logo-generator/sessions/offcut-hermes-demo/artifacts/e2.png",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "currentSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "unchanged": true
+    },
+    {
+      "path": "output/hermes-demo/final-workflow.json",
+      "sha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+      "currentSha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+      "unchanged": true
+    },
+    {
+      "path": "output/hermes-demo/final-binding.json",
+      "sha256": "bb3f58be1d6d138d7a24bca4575162d1db662f3188238f677d10055da75deba2",
+      "currentSha256": "bb3f58be1d6d138d7a24bca4575162d1db662f3188238f677d10055da75deba2",
+      "unchanged": true
+    },
+    {
+      "path": "output/hermes-demo/session-bindings.json",
+      "sha256": "4863314fe7e641110fb426ee9a5d6cc7919be4f5f4200c8156386cd056b31dbd",
+      "currentSha256": "4863314fe7e641110fb426ee9a5d6cc7919be4f5f4200c8156386cd056b31dbd",
+      "unchanged": true
+    },
+    {
+      "path": "output/hermes-demo/continue-binding.json",
+      "sha256": "e845f0190678561eea4ddb383165e8d6172b2bdedadd6fd7eb582572a1d7b6aa",
+      "currentSha256": "e845f0190678561eea4ddb383165e8d6172b2bdedadd6fd7eb582572a1d7b6aa",
+      "unchanged": true
+    },
+    {
+      "path": "output/hermes-demo/installed-080-binding.json",
+      "sha256": "19195b22a0dce6e038b0f07b22c6a6e06bae0f83901810fda97ec879b20620a8",
+      "currentSha256": "19195b22a0dce6e038b0f07b22c6a6e06bae0f83901810fda97ec879b20620a8",
+      "unchanged": true
+    }
+  ],
+  "defaultConfig": {
+    "path": "~/.hermes/config.yaml",
+    "sha256": "2bd35fc1d58229630b5a625d7cc7c48ca50bfbd9cfd6fc23e5af3a29798635bd",
+    "currentSha256": "2bd35fc1d58229630b5a625d7cc7c48ca50bfbd9cfd6fc23e5af3a29798635bd",
+    "unchanged": true
+  },
+  "nativeGallery": [
+    {
+      "path": "index.html",
+      "sha256": "68c7ab227a2e3f4b6e7af9d5c95016f0b9b4d4d386e8726d36f5488340811c4e",
+      "currentSha256": "68c7ab227a2e3f4b6e7af9d5c95016f0b9b4d4d386e8726d36f5488340811c4e",
+      "unchanged": true
+    },
+    {
+      "path": "workflow.json",
+      "sha256": "6d6ba04f15168c2d754bee3c728d85632d607c5ea25a0fc3d7f5c77f26da43e4",
+      "currentSha256": "6d6ba04f15168c2d754bee3c728d85632d607c5ea25a0fc3d7f5c77f26da43e4",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/c1.txt",
+      "sha256": "bea7fda683b68c6851085e5d2c0b8f106f09f6fdef0676c546a9959210401344",
+      "currentSha256": "bea7fda683b68c6851085e5d2c0b8f106f09f6fdef0676c546a9959210401344",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/c1.txt.sha256",
+      "sha256": "6be2fbfa715007b8dfd91e15595c05a837a68316de94d5bf8ac66492f493bdfa",
+      "currentSha256": "6be2fbfa715007b8dfd91e15595c05a837a68316de94d5bf8ac66492f493bdfa",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/c2.txt",
+      "sha256": "1afbcc8806bbe0b35a459e3903c81cc056cd345c808763a98d11f13182f7b683",
+      "currentSha256": "1afbcc8806bbe0b35a459e3903c81cc056cd345c808763a98d11f13182f7b683",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/c2.txt.sha256",
+      "sha256": "476ac9c9c760f298d3b88ca66f94b68ecb391b7aa045651fbc2f7ec8d389bab0",
+      "currentSha256": "476ac9c9c760f298d3b88ca66f94b68ecb391b7aa045651fbc2f7ec8d389bab0",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/c3.txt",
+      "sha256": "a6e9d9fb7f39311482ee6deb8895e1771838f18c7425f6082c023ea7f14e8ddb",
+      "currentSha256": "a6e9d9fb7f39311482ee6deb8895e1771838f18c7425f6082c023ea7f14e8ddb",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/c3.txt.sha256",
+      "sha256": "e63f875d95ef3904078cfc66a9ed0629178709abb4bfbb026339d43c84ab30cc",
+      "currentSha256": "e63f875d95ef3904078cfc66a9ed0629178709abb4bfbb026339d43c84ab30cc",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/e1.txt",
+      "sha256": "fdd5d952875bb7f86aeda97efff79c74db614d9f15a6b558feb3463c45fd108e",
+      "currentSha256": "fdd5d952875bb7f86aeda97efff79c74db614d9f15a6b558feb3463c45fd108e",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/e1.txt.sha256",
+      "sha256": "4ce699030caad015c129c2a8258ca7e06902ea513c12d66491ce060cfca8076f",
+      "currentSha256": "4ce699030caad015c129c2a8258ca7e06902ea513c12d66491ce060cfca8076f",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/e2.txt",
+      "sha256": "6df5cd0efeb59a14a64741945df38b15c07cf80da4f5ea37a2e0a6aa3352a22e",
+      "currentSha256": "6df5cd0efeb59a14a64741945df38b15c07cf80da4f5ea37a2e0a6aa3352a22e",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/e2.txt.sha256",
+      "sha256": "7c7b0a4ae051a4406667c11d52516330f77aeedbc3172e45944c42fad296d9b9",
+      "currentSha256": "7c7b0a4ae051a4406667c11d52516330f77aeedbc3172e45944c42fad296d9b9",
+      "unchanged": true
+    },
+    {
+      "path": "originals/c1.png",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "currentSha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "unchanged": true
+    },
+    {
+      "path": "originals/c2.png",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "currentSha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "unchanged": true
+    },
+    {
+      "path": "originals/c3.png",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "currentSha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "unchanged": true
+    },
+    {
+      "path": "originals/e1.png",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "currentSha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "unchanged": true
+    },
+    {
+      "path": "originals/e2.png",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "currentSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/brand-guide.md",
+      "sha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+      "currentSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/logo-package.zip",
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "currentSha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/logo.png",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "currentSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "unchanged": true
+    },
+    {
+      "path": "delivery/manifest.json",
+      "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+      "currentSha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+      "unchanged": true
+    }
+  ]
+}

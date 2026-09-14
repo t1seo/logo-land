@@ -1,0 +1,40 @@
+{
+  "purpose": "Frozen native demo cannot safely exercise failure paths; narrowly execute existing offline defensive fixtures. Prior 907 suite is reused coordinator evidence, not this run.",
+  "pytest": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "/tmp/logopia-review-qa-080/pytest",
+      "tests/hermes/test_core_recovery.py",
+      "tests/hermes/test_core_adversarial.py::test_cancelled_draft_has_no_inference",
+      "tests/hermes/test_core_adversarial.py::test_unknown_second_edit_preserves_budget_across_restart",
+      "tests/hermes/test_core_resume_adversarial.py::test_invalid_or_stale_continue_has_zero_calls",
+      "tests/hermes/test_core_resume_adversarial.py::test_failed_retry_retains_both_attempts_and_never_auto_approves",
+      "tests/hermes/test_launcher_process.py::test_deadline_settles_only_the_owned_process",
+      "tests/hermes/test_launcher_process.py::test_second_interrupt_during_cleanup_still_reaps_child",
+      "tests/hermes/test_launcher_cli_settlement.py::test_successful_prose_with_partial_state_never_invents_deadline",
+      "tests/hermes/test_gallery_adversarial.py::test_failed_write_rolls_back_only_its_files"
+    ],
+    "exit": 0,
+    "stdout": "..............                                                           [100%]\n14 passed in 26.17s\n",
+    "stderr": "",
+    "elapsedMs": 26546
+  },
+  "node": {
+    "command": [
+      "node",
+      "--test",
+      "tests/hermes/gallery-feedback.mjs"
+    ],
+    "exit": 0,
+    "stdout": "✔ revision draft binds exact identity and verbatim notes without changing snapshot (2.600875ms)\n✔ choice draft has an empty change and does not approve review (0.205583ms)\n✔ blank revision, unknown candidate, unsupported action and long notes fail (0.262291ms)\n✔ instruction-like text remains literal JSON content (0.14975ms)\n✔ stored feedback restores only the exact snapshot and candidate digest (0.437042ms)\n✔ clipboard rejection yields the full draft for manual copying (0.196291ms)\n✔ clipboard success reports exact transferred bytes (0.130875ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 86.049\n",
+    "stderr": "",
+    "elapsedMs": 147
+  }
+}

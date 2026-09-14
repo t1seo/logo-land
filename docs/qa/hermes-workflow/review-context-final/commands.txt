@@ -1,0 +1,73 @@
+Owner: run_ad4a666ccb76 / task_2e671ebbef64 / ctx_0e76a89d9bb1.
+All paths are relative to /Users/cillian/Documents/Github/Projects/logo-generator unless absolute.
+No secret, credential, configuration value or dispatch capability is recorded here.
+
+1. Baseline, before probes:
+   perl -e 'alarm 60; exec @ARGV or die $!' /bin/bash /tmp/logopia-review-context-final-080/pin.sh
+   exit 0; historical unchanged 208/208, old showcase 24/24, new immutable pin 259,
+   protected drafts 4, saved request hashes 7/7, allowed default-config digest matches.
+   Exact script retained in pin.sh.txt; output/error in pin-output.txt/pin-error.txt.
+
+2. Immutable/native/public comparison:
+   perl -e 'alarm 60; exec @ARGV or die $!' /bin/bash /tmp/logopia-review-context-final-080/immutable.sh
+   First exit 1: reviewer selector used kind=image rather than actual kind=generate.
+   Retained immutable-first.sh.txt, immutable-first-output.txt, immutable-first-error.txt,
+   normalized-history-first.json. No product mutation, inference or expectation weakening.
+   Corrected exit 0: canonical cmp, five original hash/byte pairs, four delivery pairs,
+   three exact ZIP members, seven old jobs with declared retry_of:null normalization,
+   native lineage/review outcomes, both README 16-link lists and direct c1/e2 pairs.
+   Corrected exact script in immutable.sh.txt; output/error in immutable-output.txt/immutable-error.txt.
+
+3. Required live HTTP channel, one execution per curl:
+   perl -e 'alarm 60; exec @ARGV or die $!' /bin/bash /tmp/logopia-review-context-final-080/http.sh
+   Server command, same child PID after exec:
+   perl -e 'alarm 120; exec @ARGV or die $!' .venv/bin/python -B -u -m http.server 8817 --bind 127.0.0.1 --directory /Users/cillian/Documents/Github/Projects/logo-generator
+   Exact PID 98366 recorded before requests; lsof verified 127.0.0.1:8817 only.
+   curl -i --connect-timeout 2 --max-time 15 http://127.0.0.1:8817/README.md
+   curl -i --connect-timeout 2 --max-time 15 http://127.0.0.1:8817/docs/hermes-demo/delivery/logo-package.zip
+   Both exit 0, HTTP/1.0 200 OK; headers separated without modifying body bytes;
+   cmp against source passes, ZIP additionally equals canonical delivery.
+   SIGTERM exact owned child; parent wait exit 143; HTTP wrapper exit 0.
+   Exact script and headers/hash/cleanup receipts retained; no automatic retries.
+
+4. Scratch cleanup before PARTIAL_READY:
+   Exact root checked present/non-symlink; owned PID absent and 8817 free.
+   rm -r /tmp/logopia-review-context-final-080
+   exit 0; /tmp and /private/tmp aliases verified absent. No force option or broad deletion.
+   PARTIAL_READY message msg_2bdf7b19e37b sent after cleanup.
+
+5. Sole authorized dependency wait:
+   orca orchestration check --terminal term_1885d821-5ff9-4c51-81f7-9f6a28064172 --wait --timeout-ms 600000
+   Bounded waits emitted liveness; final wait exited 0 on FINAL_BINDING_READY msg_a3cd813f34b5.
+   Source comparison did not run before this signal. No wait or command process remains.
+
+6. Independent final installed/source verification:
+   perl -e 'alarm 60; exec @ARGV or die $!' /bin/bash docs/qa/hermes-workflow/review-context-final/installed-final.sh.txt
+   First execution exit 0. Actual managed count 61 = source payload 60 + exact settings 1.
+   All entry hashes and source/installed bytes match; source and installed inventories complete.
+   Both process_group.py and process_scope.py included; all changed modules match.
+   Historical 55 equality=false; historical 59 count equality=false.
+   Final repository/artifact pin 274; installed pin 62 including the root marker.
+
+7. Independent coordinator receipt and frozen source comparison:
+   perl -e 'alarm 60; exec @ARGV or die $!' /bin/bash docs/qa/hermes-workflow/review-context-final/root-binding.sh.txt
+   First execution exit 0. All 61 managed records and every version/count/default/canonical/
+   original/delivery/ZIP binding in output/hermes-demo/installed-final-binding.json match.
+   The six process source/test hashes match fix-process-integration/source-frozen.sha256.
+   Repository and installed pins remain unchanged after comparison.
+
+8. Completion checks, 60-second bounded bash command, exit 0:
+   shasum -a 256 -c review-context-final/immutable-before.sha256 (259 pass)
+   shasum -a 256 -c review-context-final/final-source.sha256 (274 pass)
+   shasum -a 256 -c review-context-final/final-installed.sha256 (62 pass)
+   shasum -a 256 -c output/hermes-demo/default-config-before.sha256 (match)
+   /bin/bash -n on the five retained verification scripts (all pass)
+   git diff --check (exit 0, no output)
+   exact PID 98366 absent; port 8817 free; both scratch aliases absent.
+   Hash file paths above abbreviated within docs/qa/hermes-workflow/ only in this list.
+
+Attributed only, not repeated in this review:
+   Original context 13/13; independent final original code probes 3 + rollback 2 + nested 1;
+   goal/security first-rename installer probes 2 each; final process owner scoped 39;
+   final independent frozen-process recheck 6; real owner two-Ctrl-C manual and cleanup.
+   Prior first full suite 954 passed/2 failed retained; root owns its new full suite and publication.

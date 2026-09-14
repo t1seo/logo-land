@@ -1,0 +1,9 @@
+Outer capture automation, exit 1 (the manual driver itself exited 0):
+Traceback (most recent call last):
+  File "<stdin>", line 43, in <module>
+AssertionError
+
+The first capture condition matched the echoed manual_exit command before its output.
+The finally capture in manual.txt already contains MANUAL_PASS and manual_exit=0.
+A later read of the same pane confirmed that receipt; the manual driver was not rerun.
+Unrelated shell startup banner was omitted from retained manual captures.

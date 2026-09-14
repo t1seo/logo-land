@@ -1,0 +1,33 @@
+{
+  "scratch": "/tmp/logopia-review-code-080",
+  "first_attempt": {
+    "command": "rm -rf /tmp/logopia-review-code-080",
+    "executed": false,
+    "reason": "Tool rejected rm -f style commands; requested safer approach"
+  },
+  "successful_command": "rm -r /tmp/logopia-review-code-080",
+  "results": [
+    {
+      "check": "scratch_absent",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "private_tmp_alias_absent",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "tmux_session_absent",
+      "exit_code": 1,
+      "output": "can't find session: logopia-review-code-080\n"
+    },
+    {
+      "check": "recorded_owned_pids_absent",
+      "exit_code": 1,
+      "output": ""
+    }
+  ],
+  "servers_browser_profiles_downloads_packages": "None created; no owned ports to check",
+  "shared_caches": "Preserved"
+}

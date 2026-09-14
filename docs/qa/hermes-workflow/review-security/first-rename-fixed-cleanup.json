@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Unchanged original installer control and first-rename SIGINT pair only",
+  "pytest": {"passed": 2, "seconds": 0.11, "exit_code": 0, "outer_deadline_seconds": 30},
+  "installer_sha256": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "original_probe_bytes_unchanged": true,
+  "source_canonical_and_four_protected_pins_unchanged_during_run": true,
+  "interruption_preserved_exact_previous_bytes": true,
+  "normal_update_passed": true,
+  "scratch": "/tmp/logopia-review-security-080",
+  "scratch_removed_and_absent": true,
+  "script_and_pytest_fixtures_removed": true,
+  "new_background_processes": 0,
+  "new_servers_or_browser_contexts": 0,
+  "native_calls": 0,
+  "real_profile_or_config_mutations": 0,
+  "source_edits_by_reviewer": 0,
+  "final_process_and_installed_source_binding": "PENDING FIXES_READY"
+}

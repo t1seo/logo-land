@@ -1,0 +1,23 @@
+{
+  "public_frozen_sha_matches": true,
+  "state": {
+    "id": "offcut-hermes-demo",
+    "revision": 47,
+    "phase": "delivered",
+    "selected_id": "e2"
+  },
+  "initial_state_revision": 23,
+  "prior_jobs_exact": false,
+  "brief_strategy_directions_unchanged": true,
+  "prior_review_pairs_unchanged": true,
+  "initial_image_identities_unchanged": true,
+  "only_recovery_job": {
+    "id": "j8",
+    "kind": "critique",
+    "retry_of": "j7",
+    "status": "succeeded"
+  },
+  "unique_critique_call_ids": true,
+  "candidate_critic_bindings": true,
+  "candidate_job_critics_match": true
+}

@@ -1,0 +1,60 @@
+uv run --locked python /tmp/logopia-fix-installer-080/manual.py
+Tae-wons-MacBook-Pro% uv run --locked python /tmp/logopia-fix-installer-080/manual.py
+{"scenario": "root_marker_update", "outcome": "succeeded; replacement bytes verified", "target_sha256": "c337d15d2b20bf1238af7cd7aba956ab10d7e12772a0e69b5c6d005f3011dbba", "lock_and_staging_absent": t
+rue}
+{"scenario": "sigint_attempt_1", "outcome": "KeyboardInterrupt; exact prior bytes restored", "target_sha256": "c337d15d2b20bf1238af7cd7aba956ab10d7e12772a0e69b5c6d005f3011dbba", "lock_and_staging_abse
+nt": true}
+{"scenario": "sigint_attempt_2", "outcome": "KeyboardInterrupt; exact prior bytes restored", "target_sha256": "c337d15d2b20bf1238af7cd7aba956ab10d7e12772a0e69b5c6d005f3011dbba", "lock_and_staging_abse
+nt": true}
+{"scenario": "recovery_update", "outcome": "succeeded; replacement bytes verified", "target_sha256": "7b894f0518e0e34bcddd7ed6593d45edac12b2426c4f96eb5505bf1318a58e98", "lock_and_staging_absent": true
+}
+{"scenario": "ordinary_note", "outcome": "modified_install; exact bytes preserved", "target_sha256": "8f218957d228e6f8460e0c5596524c40e2996aea316ed83e3675345364b26b01", "lock_and_staging_absent": true
+}
+{"scenario": "nested_marker_attempt_1", "outcome": "modified_install; exact bytes preserved", "target_sha256": "962d32e410ee4734a14be2134b2269cd1fc46f6196cdeb1c055754eb29d89660", "lock_and_staging_abs
+ent": true}
+{"scenario": "nested_marker_attempt_2", "outcome": "modified_install; exact bytes preserved", "target_sha256": "962d32e410ee4734a14be2134b2269cd1fc46f6196cdeb1c055754eb29d89660", "lock_and_staging_abs
+ent": true}
+{"scenario": "foreign_replacement", "outcome": "KeyboardInterrupt; foreign bytes preserved", "target_sha256": "daa3dee26689533095e8df424c0788150bf1512c4b77527aa13a2a8fd23d8c1a", "lock_and_staging_abse
+nt": true}
+{"result": "PASS", "python": "3.12.12", "pid": 40611, "self_deadline_seconds": 30, "installer_sha256": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b", "sentinel_sha256": "bafd9c15a
+bf567fd467e03a691382c6e49177bf7e4fddaee271223333f7d6a7b"}
+Tae-wons-MacBook-Pro% print -r -- "manual_exit=$?"
+manual_exit=0
+Tae-wons-MacBook-Pro%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

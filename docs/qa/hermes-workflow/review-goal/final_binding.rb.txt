@@ -1,0 +1,112 @@
+require "json"
+require "digest"
+require "pathname"
+require "timeout"
+require "time"
+
+ROOT = Pathname.new("/Users/cillian/Documents/Github/Projects/logo-generator")
+OUT = ROOT / "docs/qa/hermes-workflow/review-goal"
+INSTALLED = Pathname.new("/Users/cillian/.hermes/profiles/logopia/plugins/logopia-studio")
+STARTED = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+
+def digest(path)
+  Digest::SHA256.file(path).hexdigest
+end
+
+def ensure_true(condition, label)
+  raise label unless condition
+end
+
+def read_pins(path)
+  File.readlines(path, chomp: true).to_h do |line|
+    match = /\A([0-9a-f]{64})\s+(.+)\z/.match(line)
+    raise "Invalid manifest line" unless match
+    [match[2], match[1]]
+  end
+end
+
+def compare_pins(name, path)
+  before = read_pins(path)
+  after = before.to_h do |file, _sha|
+    resolved = Pathname.new(file).absolute? ? Pathname.new(file) : ROOT / file
+    [file, resolved.file? ? digest(resolved) : nil]
+  end
+  File.write(OUT / "#{name}-after.sha256", after.map { |file, sha| "#{sha || "MISSING"}  #{file}\n" }.join)
+  { "count" => before.length,
+    "changed" => before.keys.map { |file| { "path" => file, "before" => before[file], "after" => after[file] } if before[file] != after[file] }.compact }
+end
+
+Timeout.timeout(60) do
+  changes = {}
+  %w[source tracked state additional].each do |name|
+    changes[name] = compare_pins(name, OUT / "#{name}-before.sha256")
+  end
+  ensure_true(changes["tracked"]["changed"].empty?, "Tracked baseline drift")
+  protected_changes = changes["state"]["changed"].reject { |entry| %w[docs/hermes.md docs/hermes.ko.md].include?(entry["path"]) }
+  ensure_true(protected_changes.empty?, "Canonical, protected or immutable receipt drift")
+  helper_changes = changes["additional"]["changed"].reject { |entry| entry["path"].end_with?("/.logopia-install.json") }
+  ensure_true(helper_changes.empty?, "Helper session drift")
+  frozen = read_pins(ROOT / "docs/qa/hermes-workflow/fix-process-integration/source-frozen.sha256")
+  frozen.each { |file, sha| ensure_true(digest(ROOT / file) == sha, "Final process source drift: #{file}") }
+  ensure_true(digest(ROOT / "integrations/hermes/logopia_studio/installer.py") == "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116", "Installer final hash")
+  marker_path = INSTALLED / ".logopia-install.json"
+  marker = JSON.parse(File.read(marker_path))
+  ensure_true(marker.keys.sort == %w[files schema_version] && marker["schema_version"] == 1, "Marker schema")
+  entries = marker.fetch("files")
+  ensure_true(entries.length == 61, "Expected 61 final managed records")
+  paths = entries.map { |entry| entry.fetch("path") }
+  ensure_true(paths.uniq == paths, "Duplicate managed path")
+  records = entries.to_h do |entry|
+    ensure_true(entry.keys.sort == %w[path sha256], "Managed record fields")
+    name, sha = entry.values_at("path", "sha256")
+    ensure_true(name.is_a?(String) && /\A[0-9a-f]{64}\z/.match?(sha), "Managed record types")
+    relative = Pathname.new(name)
+    ensure_true(!relative.absolute? && !relative.each_filename.to_a.include?(".."), "Managed path")
+    path = INSTALLED / name
+    ensure_true(path.file? && !path.symlink? && path.realpath.to_s.start_with?(INSTALLED.realpath.to_s + "/"), "Installed regular file")
+    ensure_true(digest(path) == sha, "Installed hash: #{name}")
+    if name == "settings.json"
+      settings = JSON.parse(File.read(path))
+      ensure_true(settings.keys.sort == %w[helper_repo schema_version workspace], "Settings schema")
+      ensure_true(settings["schema_version"] == 1 && settings["workspace"] == ROOT.to_s && settings["helper_repo"] == ROOT.to_s, "Settings exact checkout")
+    else
+      ensure_true(File.binread(path) == File.binread(ROOT / "integrations/hermes" / name), "Installed source equality: #{name}")
+    end
+    [name, sha]
+  end
+  binding_path = ROOT / "output/hermes-demo/installed-final-binding.json"
+  binding = JSON.parse(File.read(binding_path))
+  ensure_true(binding["managed_records"] == records && binding["files_verified"] == 61 && binding["version"] == "0.8.0", "Root receipt equality")
+  ensure_true(binding["source_matches_installed"] && binding["settings_match_workspace"], "Root receipt checks")
+  read_pins(ROOT / "output/hermes-demo/default-config-before.sha256").each do |file, sha|
+    ensure_true(digest(Pathname.new(file)) == sha, "Default configuration unchanged")
+  end
+  public_files = Dir.glob((ROOT / "docs/hermes-demo/**/*").to_s).select { |path| File.file?(path) }.sort.to_h do |path|
+    [Pathname.new(path).relative_path_from(ROOT).to_s, digest(path)]
+  end
+  before_source = read_pins(OUT / "source-before.sha256")
+  public_files.each { |file, sha| ensure_true(before_source[file] == sha, "Public sample unchanged: #{file}") }
+  binding.fetch("delivery").each { |name, sha| ensure_true(digest(ROOT / "docs/hermes-demo/delivery" / name) == sha, "Exact public delivery: #{name}") }
+  canonical = ROOT / ".logo-generator/workflows/offcut-hermes-demo/workflow.json"
+  ensure_true(digest(canonical) == binding["canonical_sha256"], "Canonical root binding")
+  state = JSON.parse(File.read(canonical))
+  ensure_true(state.values_at("revision", "phase", "selected_id") == [47, "delivered", "e2"], "Frozen final state")
+  ensure_true(digest(ROOT / "docs/hermes-demo/example.json") == "415184581278b1317132c6c380b5255081bb9146dd02db9a1e227f67b4c624fe", "Original exact HTTP JSON proof retained")
+  ensure_true(digest(ROOT / "docs/hermes-demo/delivery/logo-package.zip") == "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04", "Original exact HTTP ZIP proof retained")
+  File.write(OUT / "installed-final.sha256", records.map { |file, sha| "#{sha}  #{file}\n" }.join)
+  File.write(OUT / "public-final.sha256", public_files.map { |file, sha| "#{sha}  #{file}\n" }.join)
+  result = {
+    result: "PASS", timestamp: Time.now.utc.iso8601, pid: Process.pid,
+    deadline_seconds: 60, elapsed_seconds: Process.clock_gettime(Process::CLOCK_MONOTONIC) - STARTED,
+    before_pin_comparison: changes, final_process_records: frozen,
+    managed_records: 61, source_records: 60, settings_records: 1,
+    installed_marker_sha256: digest(marker_path), root_binding_sha256: digest(binding_path),
+    source_equals_actual_install: true, default_config_unchanged: true,
+    canonical_sha256: digest(canonical), revision: 47, phase: "delivered", selected_id: "e2",
+    public_file_count: public_files.length, public_all_unchanged: true,
+    original_http_lineage_evidence_carried_by_exact_unchanged_bytes: true,
+    new_inference_calls: 0, profile_writes: 0, source_writes: 0, child_processes: 0
+  }
+  File.write(OUT / "final-binding.json", JSON.pretty_generate(result) + "\n")
+  puts JSON.pretty_generate(result)
+end

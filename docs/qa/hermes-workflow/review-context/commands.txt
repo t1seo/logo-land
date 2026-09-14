@@ -1,0 +1,61 @@
+Review owner task_6e1b3a7d8e45 / ctx_64dfb852f7e9; base f7dd3268313d2422b87efea63eef8257b0e651b9.
+
+PIN / immutable-source characterization:
+  shasum -a 256 -c docs/qa/hermes-workflow/review-context/before.sha256
+  Result: 214 records passed before probes and after probes, exit 0.
+  git diff --check
+  Result: exit 0, no output.
+
+Read-only history and GitHub (each network child wrapped in perl -e 'alarm 25; exec @ARGV'):
+  git log -12 --date=iso-strict --format='%H %ad %s'
+  git show --stat --oneline fa6c142 49e9ae7 6d946e6 fd1d89c 2ae6592
+  git blame f7dd3268313d2422b87efea63eef8257b0e651b9 -- README.md
+  gh repo view --json nameWithOwner,url,defaultBranchRef,isPrivate,description
+  gh issue list --state all --limit 100 --json number,title,state,url,body
+  gh pr list --state all --limit 100 --json number,title,state,url,body,mergeCommit,mergedAt
+  gh api repos/t1seo/logopia/releases --jq '[.[] | {tag_name,name,draft,prerelease,published_at,html_url,body}]'
+  gh api repos/t1seo/logopia/releases/latest --jq '{tag_name,draft,prerelease,published_at,html_url,target_commitish}'
+  git ls-remote origin refs/heads/main refs/tags/v0.7.0 'refs/tags/v0.7.0^{}' refs/tags/v0.8.0 'refs/tags/v0.8.0^{}'
+  All children exited 0. Release bodies were removed from retained metadata, including unpublished draft text.
+
+Native/public/install:
+  bash /tmp/logopia-review-context-080/verify.sh
+  First exit 1: current 59-record installation differs from historical 55-record installed-payload.json.
+  Corrected exact command retained in binding-command.txt; metadata jq retained in binding-query.txt.
+  Corrected exit 0: seven normalized request/tool bindings, five exact native/public originals, four delivery files,
+  three ZIP members and 59 current managed install entries match; default-config digest matches.
+  Public/canonical comparisons use jq selected fields and hashes; never print private session content or reasoning.
+  Canonical-vs-final-workflow cmp exit 0; frozen public record source SHA matches canonical.
+
+HTTP surface (server PID 13482, session 91437):
+  perl -e 'alarm 180; exec @ARGV' python3 -B -m http.server 8817 --bind 127.0.0.1 --directory /Users/cillian/Documents/Github/Projects/logo-generator
+  curl -i --connect-timeout 2 --max-time 15 http://127.0.0.1:8817/README.md
+  curl -i --connect-timeout 2 --max-time 15 http://127.0.0.1:8817/README.ko.md
+  Both curls exited 0, HTTP/1.0 200 OK; strip only CRLF header block, then cmp each body to exact source (exit 0).
+  Direct c1/e2 href+img pairs precede the legacy showcase; 16 legacy href targets and all PNG bytes equal base.
+  view_image inspected existing c1.png and e2.png: visible white canvases and OFFCUT originals, no image writes.
+  ps verified PID 13482 command; kill -TERM 13482; wait returned exit 143 (intentional SIGTERM).
+  lsof -nP -iTCP:8817 -sTCP:LISTEN => exit 1, no listener; ps -p 13482 => exit 1, absent.
+
+Bounded primary-source downloads:
+  curl -sS -L --connect-timeout 2 --max-time 15 -D /tmp/logopia-review-context-080/primary-hermes.headers -o /tmp/logopia-review-context-080/primary-hermes.html -w 'hermes_status=%{http_code} time=%{time_total}\n' https://hermes-agent.nousresearch.com/docs/developer-guide/plugin-llm-access
+  curl -sS -L --connect-timeout 2 --max-time 15 -D /tmp/logopia-review-context-080/primary-ip.headers -o /tmp/logopia-review-context-080/primary-ip-license.txt -w 'ip_license_status=%{http_code} time=%{time_total}\n' https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE
+  Both exited 0; statuses 200, elapsed 0.343629 and 0.254884 seconds.
+  cmp downloaded LICENSE integrations/hermes/skills/director/references/ip-as-logo.LICENSE => exit 0.
+  Online primary texts were read for semantic support; HTTP 200 alone was not acceptance.
+
+One scoped defensive run (original source, no newly authored Python, no provider calls):
+  PYTHONDONTWRITEBYTECODE=1 TMPDIR=/tmp/logopia-review-context-080/tmp UV_CACHE_DIR=/tmp/logopia-review-context-080/uv-cache perl -e 'alarm 180; exec @ARGV' .venv/bin/python -B -m pytest -p no:cacheprovider -q -vv --basetemp /tmp/logopia-review-context-080/pytest-base tests/hermes/test_launcher_request.py::test_malformed_request_is_rejected_before_dispatch tests/hermes/test_launcher_request.py::test_stale_revision_fails_before_inference tests/hermes/test_launcher_request_models.py::test_instruction_like_notes_are_literal_query_data tests/hermes/test_launcher_request_recovery.py::test_cli_review_resume_preserves_image_and_original_error tests/hermes/test_launcher_process.py::test_existing_logs_are_never_overwritten tests/hermes/test_launcher_process.py::test_deadline_settles_only_the_owned_process tests/hermes/test_launcher_process.py::test_second_interrupt_during_cleanup_still_reaps_child tests/hermes/test_launcher_cli_settlement.py::test_successful_prose_with_partial_state_never_invents_deadline tests/hermes/test_core_critique_resume.py::test_repeated_interruption_exhausts_remaining_review_attempt
+  Result: exit 0, 13 passed in 11.33 seconds, first run. CLI fixture children have 20-second timeouts;
+  the process deadline fixtures use a one-second deadline and 0.2-second shutdown grace.
+
+Limitations:
+  The integrated 907-test suite, native inference and full Chrome QA were NOT rerun by this review.
+  No new Python code was authored, so new-code Ruff/typechecks are N/A; prior static results are attributed.
+  No Slack/Notion/Mobbin access, external message, configuration write, install, branch change or publication.
+  Additional pinned guidance fetch: curl -sS -L --connect-timeout 2 --max-time 15 -o /tmp/logopia-review-context-080/primary-ip-skill.md -w 'pinned_ip_skill_status=%{http_code}\n' https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md
+  Result: exit 0, HTTP 200; full pinned guidance read, its geometry/color/corner and one-image-per-candidate premises match the stated adaptation.
+
+Cleanup first attempt:
+  Automatic command review rejected the command before process creation: rm -f style commands are not permitted; use a safer approach.
+  No shell operations in that batch executed. The replacement below verifies exclusive ownership and uses recursive removal without force.

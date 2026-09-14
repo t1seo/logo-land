@@ -1,0 +1,34 @@
+{
+  "steps": [
+    "required click/fill/copy flow: exact envelope; canonical bytes unchanged",
+    "three reloads/repeated draft activation; denied clipboard selects full exact output",
+    "actual browser download and opened PNG response bytes match canonical SHA-256; back restores draft",
+    "keyboard Enter/Tab draft interaction; parent comparison disclosure/link",
+    "390px document has no horizontal overflow; previews remain 192px/1024px with bounded inner scrolling",
+    "visible snapshot binding; new revision does not borrow old draft; stale stored revision rejected",
+    "choice remains a draft; clearing and reload leave canonical selection intact",
+    "inert HTML-looking instructions, empty state and no-JavaScript originals",
+    "no page errors, no external requests, canonical bytes unchanged after all actions"
+  ],
+  "resources": {
+    "fixture": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo/fixture-Gpy1Rt",
+    "profile": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo/chrome-WxC4Xr",
+    "downloads": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo/downloads-iCJxG1"
+  },
+  "cleanup": true,
+  "browserVersion": "152.0.7977.83",
+  "feedback": {
+    "schema_version": 1,
+    "workflow_id": "gallery-fixture",
+    "expected_revision": 7,
+    "candidate_id": "candidate-2",
+    "candidate_sha256": "cf9efc33175d74fd801fb2ef32e265f31a91b1724154eb7d7f43b99834fb27fe",
+    "action": "revise",
+    "keep": [
+      "색과 열린 중심"
+    ],
+    "change": "간격만 넓혀 주세요"
+  },
+  "originalSha256": "cf9efc33175d74fd801fb2ef32e265f31a91b1724154eb7d7f43b99834fb27fe",
+  "contextClosed": true
+}

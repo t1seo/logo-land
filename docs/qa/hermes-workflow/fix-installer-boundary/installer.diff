@@ -1,0 +1,72 @@
+diff --git a/docs/qa/hermes-workflow/fix-installer-boundary/installer.before.py.txt b/integrations/hermes/logopia_studio/installer.py
+index d290dd9..913f760 100644
+--- a/docs/qa/hermes-workflow/fix-installer-boundary/installer.before.py.txt
++++ b/integrations/hermes/logopia_studio/installer.py
+@@ -3,8 +3,9 @@
+ from __future__ import annotations
+ 
+ import hashlib
++import shutil
+ from pathlib import Path
+-from tempfile import TemporaryDirectory
++from tempfile import mkdtemp
+ from typing import Final
+ 
+ from pydantic import ValidationError
+@@ -129,21 +130,46 @@ def install_payload(
+         raise LaunchError("install_busy", "Another installation holds this profile") from error
+     try:
+         previous = _verify_managed(target) if target.exists() else None
+-        with TemporaryDirectory(prefix=".logopia-install-", dir=plugins) as temporary:
+-            staging = Path(temporary)
+-            stage = staging / "new"
++        staging = Path(mkdtemp(prefix=".logopia-install-", dir=plugins))
++        stage = staging / "new"
++        backup = staging / "previous"
++        published = False
++        failure: OSError | KeyboardInterrupt | None = None
++        try:
+             manifest = _write_stage(source, stage, files, settings)
+-            backup = staging / "previous"
+             if previous is not None:
+                 if _verify_managed(target) != previous:
+                     raise LaunchError("modified_install", "Plugin changed during installation")
+                 _ = target.rename(backup)
+-            try:
+-                _ = stage.rename(target)
+-            except (OSError, KeyboardInterrupt):
+-                if backup.exists() and not target.exists():
+-                    _ = backup.rename(target)
+-                raise
++            _ = stage.rename(target)
++            published = True
++        except (OSError, KeyboardInterrupt) as error:
++            failure = error
++            _restore_previous(backup, target, error)
++            raise
++        finally:
++            discard = staging if published or not backup.exists() else stage
++            _discard_stage(discard, failure)
+         return InstallReceipt(destination=target, file_count=len(manifest.files))
+     finally:
+         lock.rmdir()
++
++
++def _restore_previous(backup: Path, target: Path, error: OSError | KeyboardInterrupt) -> None:
++    try:
++        if backup.exists() and not (target.exists() or target.is_symlink()):
++            _ = backup.rename(target)
++    except (OSError, KeyboardInterrupt) as restore_error:
++        error.add_note(f"Installation restoration failed: {restore_error!r}")
++    if backup.exists():
++        error.add_note(f"Previous installation retained at {backup}")
++
++
++def _discard_stage(path: Path, error: OSError | KeyboardInterrupt | None) -> None:
++    try:
++        if path.exists():
++            shutil.rmtree(path)
++    except (OSError, KeyboardInterrupt) as cleanup_error:
++        if error is None:
++            raise
++        error.add_note(f"Installation cleanup failed at {path}: {cleanup_error!r}")

@@ -1,0 +1,33 @@
+{
+  "taskId": "task_3288a8611f1a",
+  "dispatchId": "ctx_18edf8576e12",
+  "ownedChromeProcesses": 0,
+  "contextsClosed": true,
+  "taskToolingRemoved": "/tmp/logopia-gallery-ctx_18edf8576e12.H4SYBo",
+  "temporaryRootExists": false,
+  "removedContents": [
+    "node_modules",
+    "package-lock.json",
+    "package.json",
+    "pytest-final"
+  ],
+  "removedCaches": [
+    "integrations/hermes/logopia_studio/__pycache__/gallery.cpython-311.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_cards.cpython-311.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_cards.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_files.cpython-311.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_files.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_render.cpython-311.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_render.cpython-312.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_review.cpython-311.pyc",
+    "integrations/hermes/logopia_studio/__pycache__/gallery_review.cpython-312.pyc",
+    "tests/hermes/__pycache__/test_gallery_adversarial.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_baseline.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_fixture.cpython-312-pytest-9.1.1.pyc",
+    "tests/hermes/__pycache__/test_gallery_fixture.cpython-312.pyc",
+    "tests/hermes/__pycache__/test_gallery_publish.cpython-312-pytest-9.1.1.pyc"
+  ],
+  "noServerOrPortCreated": true,
+  "retained": "gallery source, tests, report, screenshots and QA receipts"
+}

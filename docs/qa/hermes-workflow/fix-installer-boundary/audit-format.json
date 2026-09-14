@@ -1,0 +1,18 @@
+{
+  "label": "audit-format",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "ruff",
+    "format",
+    "/tmp/logopia-fix-installer-boundary-080/native_audit.py"
+  ],
+  "pid": 69363,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 0,
+  "reaped": true,
+  "source_sha256_before": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "source_sha256_after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

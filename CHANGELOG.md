@@ -1,6 +1,19 @@
 # Changelog
 
-Logo Land's plugin and local helper share one release version. Tagged releases and their notes are available on [GitHub Releases](https://github.com/t1seo/logopia/releases). See the [release guide](docs/releases.md) for versioning and publication steps.
+Logopia's Codex plugin, Hermes plugin and local helper share one release version. Tagged releases and their notes are available on [GitHub Releases](https://github.com/t1seo/logopia/releases). See the [release guide](docs/releases.md) for versioning and publication steps.
+
+## 0.8.0 — 2026-09-15
+
+A guided native Hermes workflow, from the brief to reviewed original delivery.
+
+- Added a macOS/Linux Hermes native plugin for brief, direction, original generation, two separate visual critiques, explicit selection, focused revisions and checked raster delivery. The existing Codex `$logo-land` route remains available.
+- Added a named-profile installer with 30-minute native tool limits and a bounded launcher that verifies canonical workflow outcomes rather than accepting a process exit or model summary as success.
+- Preserve exact original PNGs, parent revisions, prompts, review findings and failed attempts. Explicit review-only recovery can use the remaining critique attempt; unknown image outcomes are never resubmitted automatically. Each workflow allows at most two requested image edits.
+- Added a portable offline comparison page with original downloads, display-size previews, review status and keep/change feedback copied back to Hermes. Candidate selection does not approve delivery, and model critiques do not establish human certification or professional superiority.
+- Made the Hermes workflow discoverable before the existing sixteen-logo showcase in the English and Korean READMEs, preserving its original links and the mandatory [s1dashu/ip-as-logo-skill MIT credit](THIRD_PARTY_NOTICES.md).
+- Added the [actual OFFCUT example](docs/hermes-demo/README.md): three initial PNGs, two exact-parent edits and the delivered e2 package. The c1 → e1 → e2 lineage retains e1's failed preservation check; the final e2 passed both model reviews. The [native execution record](docs/qa/hermes-workflow/native-run.md) preserves the initial tool timeout and review-only recovery without new images.
+
+See the [Hermes guide](docs/hermes.md) and [0.8.0 release notes](docs/qa/hermes-workflow/release-notes.md). Outputs remain raster PNGs; editable vectors, font files, legal clearance and platform icon packages are separate work.
 
 ## 0.7.0 — 2026-09-14
 

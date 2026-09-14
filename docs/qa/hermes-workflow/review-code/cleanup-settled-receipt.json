@@ -1,0 +1,37 @@
+{
+  "successful_command": "rm -r /tmp/logopia-review-code-080",
+  "results": [
+    {
+      "check": "scratch_absent",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "private_tmp_alias_absent",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "check": "registered_tmux_absent",
+      "exit_code": 1,
+      "output": "no server running on /private/tmp/tmux-501/default\n"
+    },
+    {
+      "check": "latest_owned_pids_absent",
+      "exit_code": 1,
+      "output": ""
+    }
+  ],
+  "latest_pids": [
+    6085,
+    6089,
+    6251,
+    6259,
+    6432,
+    6442,
+    9049
+  ],
+  "previous_cleanup": "cleanup-receipt.json remains a historical completed checkpoint",
+  "ports_browsers_downloads_packages": "None created",
+  "shared_resources": "Preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.8.0",
+  "workflow_revision": 47,
+  "phase": "delivered",
+  "selected_id": "e2",
+  "canonical_sha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "files_verified": 61,
+  "managed_records": 61,
+  "source_matches_installed": true,
+  "settings_match_workspace": true,
+  "default_config_unchanged": true,
+  "originals_count": 5,
+  "zip_members_count": 3
+}

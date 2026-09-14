@@ -1,0 +1,135 @@
+{"scenario": "sigint_after_first_real_rename", "module_path": "/private/tmp/logopia-fix-installer-boundary-080/toggle/logopia_studio/installer.py", "source_sha256": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b", "backup_exact_before_signal": [true], "target_exists": false, "prior_bytes_preserved": false, "remaining_entries": []}
+FFF
+=================================== FAILURES ===================================
+_______________ test_prior_install_survives_first_rename_signal ________________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/toggle/pytest/test_prior_install_survives_fi0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10783ec60>
+
+    def test_prior_install_survives_first_rename_signal(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        source, profile, target = installed_fixture(tmp_path)
+        before = snapshot(target)
+        _ = (source / "__init__.py").write_text("value = 2\n")
+        original_rename = Path.rename
+        backup_exact: list[bool] = []
+    
+        def interrupted_rename(path: Path, destination: str | Path) -> Path:
+            result = original_rename(path, destination)
+            if path == target and Path(destination).name == "previous":
+                backup_exact.append(snapshot(result) == before)
+                signal.raise_signal(signal.SIGINT)
+            return result
+    
+        monkeypatch.setattr(Path, "rename", interrupted_rename)
+        with pytest.raises(KeyboardInterrupt):
+            _ = installer.install_payload(source, profile, tmp_path, tmp_path)
+        source_path = Path(installer.__file__).resolve()
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "sigint_after_first_real_rename",
+                    "module_path": str(source_path),
+                    "source_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
+                    "backup_exact_before_signal": backup_exact,
+                    "target_exists": target.is_dir(),
+                    "prior_bytes_preserved": snapshot(target) == before,
+                    "remaining_entries": [path.name for path in target.parent.iterdir()],
+                }
+            )
+            + "\n"
+        )
+        assert backup_exact == [True]
+>       assert target.is_dir(), "Prior managed installation was removed after first-rename SIGINT"
+E       AssertionError: Prior managed installation was removed after first-rename SIGINT
+E       assert False
+E        +  where False = is_dir()
+E        +    where is_dir = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/toggle/pytest/test_prior_install_survives_fi0/synthetic-profile/plugins/logopia-studio').is_dir
+
+/tmp/logopia-fix-installer-boundary-080/test_goal_original.py:78: AssertionError
+_ test_failed_restoration_keeps_original_error_and_old_payload[io-before-restore] _
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/toggle/pytest/test_failed_restoration_keeps_0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/toggle/pytest/test_failed_restorati...opia-fix-installer-boundary-080/toggle/pytest/test_failed_restoration_keeps_0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x107d8bad0>
+moved = False, interrupt = False
+
+    @pytest.mark.parametrize("moved", [False, True], ids=["before-restore", "after-restore"])
+    @pytest.mark.parametrize("interrupt", [False, True], ids=["io", "sigint"])
+    def test_failed_restoration_keeps_original_error_and_old_payload(
+        tmp_path: Path,
+        installed: InstalledFixture,
+        monkeypatch: pytest.MonkeyPatch,
+        moved: bool,
+        interrupt: bool,
+    ) -> None:
+        # Given a publication failure followed by an I/O error or SIGINT during restoration.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        failure = PermissionError("fixture publication failure")
+        restore_failure = PermissionError("fixture restoration failure")
+        backup_seen: list[Path] = []
+    
+        def fail_restoration(path: Path, destination: str | Path) -> Path:
+            if path.name == "new":
+                raise failure
+            if path.name == "previous":
+                backup_seen.append(path)
+                assert snapshot(path) == before
+                if moved:
+                    _ = original_rename(path, destination)
+                if interrupt:
+                    signal.raise_signal(signal.SIGINT)
+                raise restore_failure
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", fail_restoration)
+        # When the bounded restoration attempt also fails.
+        with pytest.raises(PermissionError) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then the publication exception survives and the only old tree is never auto-deleted.
+>       assert raised.value is failure
+E       AssertionError: assert PermissionError('fixture restoration failure') is PermissionError('fixture publication failure')
+E        +  where PermissionError('fixture restoration failure') = <ExceptionInfo PermissionError('fixture restoration failure') tblen=3>.value
+
+tests/hermes/test_installer_backup_interrupt.py:83: AssertionError
+___________ test_interruption_does_not_overwrite_foreign_replacement ___________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/toggle/pytest/test_interruption_does_not_ove0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/toggle/pytest/test_interruption_doe...opia-fix-installer-boundary-080/toggle/pytest/test_interruption_does_not_ove0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x107de54c0>
+
+    def test_interruption_does_not_overwrite_foreign_replacement(
+        tmp_path: Path,
+        installed: InstalledFixture,
+        monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        # Given an unrelated fixture writer occupying the target after the old directory moved.
+        before = _snapshot(installed.target)
+        original_rename = Path.rename
+    
+        def replace_then_interrupt(path: Path, destination: str | Path) -> Path:
+            if path.name == "new" and Path(destination) == installed.target:
+                installed.target.mkdir()
+                _ = (installed.target / "user-owned.txt").write_bytes(SENTINEL)
+                raise KeyboardInterrupt
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", replace_then_interrupt)
+        # When the interrupted update considers restoring its prior directory.
+        with pytest.raises(KeyboardInterrupt):
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then the foreign replacement is preserved rather than overwritten by rollback.
+        assert _snapshot(installed.target) == (("user-owned.txt", SENTINEL),)
+        recoveries = [path for path in installed.target.parent.iterdir() if path != installed.target]
+>       assert len(recoveries) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+tests/hermes/test_installer_interruption.py:128: AssertionError
+=========================== short test summary info ============================
+FAILED ::test_prior_install_survives_first_rename_signal - AssertionError: Pr...
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_failed_restoration_keeps_original_error_and_old_payload[io-before-restore]
+FAILED tests/hermes/test_installer_interruption.py::test_interruption_does_not_overwrite_foreign_replacement
+3 failed in 0.12s

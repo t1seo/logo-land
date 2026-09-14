@@ -1,0 +1,140 @@
+EXE001 Shebang is present but file is not executable
+ --> /tmp/logopia-review-security-080/audit_public.py:1:1
+  |
+1 | #!/usr/bin/env -S uv run --script
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2 | # /// script
+3 | # requires-python = ">=3.12"
+  |
+
+E501 Line too long (104 > 100)
+ --> /tmp/logopia-review-security-080/audit_public.py:7:101
+  |
+5 | # ///
+6 | # How to run: use the repository's already installed uv and locked environment:
+7 | # PYTHONPATH=integrations/hermes uv run --locked python /tmp/logopia-review-security-080/audit_public.py
+  |                                                                                                     ^^^^
+8 | """Read-only public-payload audit; print counts and bindings, never private content."""
+  |
+
+E501 Line too long (103 > 100)
+   --> /tmp/logopia-review-security-080/audit_public.py:127:101
+    |
+125 |     for candidate in state.candidates:
+126 |         require(
+127 |             original_bytes(ROOT, candidate) == (PUBLIC / f"originals/{candidate.id}.png").read_bytes(),
+    |                                                                                                     ^^^
+128 |             "original bytes and decoded dimensions",
+129 |         )
+    |
+
+E501 Line too long (103 > 100)
+   --> /tmp/logopia-review-security-080/audit_public.py:138:101
+    |
+136 |     package = (PUBLIC / "delivery/logo-package.zip").read_bytes()
+137 |     require(b64decode(packages[0], validate=True) == package, "embedded ZIP exact bytes")
+138 |     require(re.search(r"<(?:script|iframe|object|embed)\b", html, re.IGNORECASE) is None, "inert HTML")
+    |                                                                                                     ^^^
+139 |     image_jobs = sum(job.kind == "generate" for job in state.jobs)
+140 |     edit_jobs = sum(job.kind == "edit" for job in state.jobs)
+    |
+
+T201 `print` found
+   --> /tmp/logopia-review-security-080/audit_public.py:154:5
+    |
+152 |     ), "failed preservation retained")
+153 |     require(all(c.status == "pass" for r in final_edit.critiques for c in r.criteria), "e2 gates")
+154 |     print(json.dumps({
+    |     ^^^^^
+155 |         "status": "PASS", "revision": state.revision, "phase": state.phase,
+156 |         "selected_id": state.selected_id, "public_files": len(paths),
+    |
+help: Remove `print`
+
+T201 `print` found
+   --> /tmp/logopia-review-security-080/audit_public.py:172:9
+    |
+170 |         main()
+171 |     except StudioError as error:
+172 |         print(json.dumps({"status": "FAIL", "code": error.code, "check": error.detail}))
+    |         ^^^^^
+173 |         raise SystemExit(1) from None
+174 |     except (ValidationError, OSError, KeyError, ValueError):
+    |
+help: Remove `print`
+
+T201 `print` found
+   --> /tmp/logopia-review-security-080/audit_public.py:175:9
+    |
+173 |         raise SystemExit(1) from None
+174 |     except (ValidationError, OSError, KeyError, ValueError):
+175 |         print(json.dumps({"status": "FAIL", "code": "audit_shape_or_io_error"}))
+    |         ^^^^^
+176 |         raise SystemExit(1) from None
+    |
+help: Remove `print`
+
+EXE001 Shebang is present but file is not executable
+ --> /tmp/logopia-review-security-080/probe_boundaries.py:1:1
+  |
+1 | #!/usr/bin/env -S uv run --script
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2 | # /// script
+3 | # requires-python = ">=3.12"
+  |
+
+E501 Line too long (108 > 100)
+ --> /tmp/logopia-review-security-080/probe_boundaries.py:7:101
+  |
+5 | # ///
+6 | # How to run: use the existing repository uv and locked environment:
+7 | # PYTHONPATH=integrations/hermes uv run --locked python /tmp/logopia-review-security-080/probe_boundaries.py
+  |                                                                                                     ^^^^^^^^
+8 | """Benign fixture checks; no inference, provider transport or canonical writes."""
+  |
+
+TC003 Move standard library import `collections.abc.Callable` into a type-checking block
+  --> /tmp/logopia-review-security-080/probe_boundaries.py:14:29
+   |
+12 | import json
+13 | import os
+14 | from collections.abc import Callable
+   |                             ^^^^^^^^
+15 | from io import BytesIO
+16 | from pathlib import Path
+   |
+help: Move into type-checking block
+
+S108 Probable insecure usage of temporary file or directory: "/tmp/logopia-review-security-080/fixtures"
+  --> /tmp/logopia-review-security-080/probe_boundaries.py:32:23
+   |
+31 | ROOT: Final = Path.cwd()
+32 | SCRATCH: Final = Path("/tmp/logopia-review-security-080/fixtures")
+   |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+33 | CHECKS: Final[list[str]] = []
+   |
+
+B023 Function definition does not bind loop variable `raw`
+  --> /tmp/logopia-review-security-080/probe_boundaries.py:59:31
+   |
+57 |     ):
+58 |         def parse_current() -> None:
+59 |             _ = parse_request(raw)
+   |                               ^^^
+60 |         rejected(parse_current, "invalid_request")
+   |
+
+T201 `print` found
+   --> /tmp/logopia-review-security-080/probe_boundaries.py:156:5
+    |
+154 |     else:
+155 |         raise StudioError("audit_failed", "owned child still present")
+156 |     print(json.dumps({
+    |     ^^^^^
+157 |         "status": "PASS", "checks": CHECKS, "new_native_calls": 0,
+158 |         "deadline_child_pid": child_pid, "deadline_child_exit": result.exit_code,
+    |
+help: Remove `print`
+
+Found 13 errors.
+No fixes available (5 hidden fixes can be enabled with the `--unsafe-fixes` option).

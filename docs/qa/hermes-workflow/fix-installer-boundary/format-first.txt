@@ -1,0 +1,58 @@
+unformatted: File would be reformatted
+   --> tests/hermes/test_installer_backup_interrupt.py:51:20
+    |
+50  | def test_failed_restoration_keeps_original_error_and_old_payload(
+    -     tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+    -     moved: bool, interrupt: bool,
+51  +     tmp_path: Path,
+52  +     installed: InstalledFixture,
+53  +     monkeypatch: pytest.MonkeyPatch,
+54  +     moved: bool,
+55  +     interrupt: bool,
+56  | ) -> None:
+--------------------------------------------------------------------------------
+97  | def test_foreign_target_and_old_backup_both_survive_first_rename_sigint(
+    -     tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+98  +     tmp_path: Path,
+99  +     installed: InstalledFixture,
+100 +     monkeypatch: pytest.MonkeyPatch,
+101 |     kind: Literal["directory", "file", "symlink", "dangling"],
+--------------------------------------------------------------------------------
+166 | def test_sigint_restores_prior_bytes_then_allows_explicit_retry(
+    -     tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+167 +     tmp_path: Path,
+168 +     installed: InstalledFixture,
+169 +     monkeypatch: pytest.MonkeyPatch,
+170 |     first_rename: bool,
+    |
+
+unformatted: File would be reformatted
+  --> /tmp/logopia-fix-installer-boundary-080/runner.py:45:21
+   |
+44 |         with subprocess.Popen(  # noqa: S603
+   -             command, cwd=REPO, env=environment, start_new_session=True,
+   -             stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+45 +             command,
+46 +             cwd=REPO,
+47 +             env=environment,
+48 +             start_new_session=True,
+49 +             stdout=subprocess.PIPE,
+50 +             stderr=subprocess.STDOUT,
+51 +             text=True,
+52 |         ) as child:
+--------------------------------------------------------------------------------
+64 |             record = {
+   -                 "label": label, "argv": command, "pid": child.pid,
+   -                 "deadline_seconds": 30, "timed_out": timed_out,
+   -                 "exit_code": code, "reaped": child.poll() is not None,
+65 +                 "label": label,
+66 +                 "argv": command,
+67 +                 "pid": child.pid,
+68 +                 "deadline_seconds": 30,
+69 +                 "timed_out": timed_out,
+70 +                 "exit_code": code,
+71 +                 "reaped": child.poll() is not None,
+72 |                 "source_sha256_before": before,
+   |
+
+2 files would be reformatted, 2 files already formatted

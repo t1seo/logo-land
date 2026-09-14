@@ -1,0 +1,1399 @@
+[
+  {
+    "id": "S01",
+    "timestamp": "2026-09-14T16:54:03.993Z",
+    "expected": "Exact public file URL loads all five identities, complete original images",
+    "observed": {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "ids": [
+        "c1",
+        "c2",
+        "c3",
+        "e1",
+        "e2"
+      ],
+      "allImagesLoaded": true
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S02",
+    "timestamp": "2026-09-14T16:54:06.140Z",
+    "expected": "All five actual original-link navigations decode PNGs and match canonical SHA256",
+    "observed": [
+      {
+        "id": "c1",
+        "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+        "status": 200,
+        "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+        "dimensions": [
+          1774,
+          887
+        ]
+      },
+      {
+        "id": "c2",
+        "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c2.png",
+        "status": 200,
+        "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      {
+        "id": "c3",
+        "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c3.png",
+        "status": 200,
+        "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      {
+        "id": "e1",
+        "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e1.png",
+        "status": 200,
+        "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+        "dimensions": [
+          1774,
+          887
+        ]
+      },
+      {
+        "id": "e2",
+        "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+        "status": 200,
+        "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+        "dimensions": [
+          1774,
+          887
+        ]
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S19",
+    "timestamp": "2026-09-14T16:54:06.141Z",
+    "expected": "Browser Back returns actual public gallery after every original",
+    "observed": {
+      "returnedTo": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/index.html",
+      "count": 5
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S03",
+    "timestamp": "2026-09-14T16:54:27.782Z",
+    "expected": "Real public download event gives exact ZIP and all three exact member bytes",
+    "observed": {
+      "name": "logo-package.zip",
+      "failure": null,
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "members": [
+        {
+          "member": "logo.png",
+          "bytes": 714393,
+          "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+          "exact": true
+        },
+        {
+          "member": "manifest.json",
+          "bytes": 12893,
+          "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+          "exact": true
+        },
+        {
+          "member": "brand-guide.md",
+          "bytes": 10559,
+          "sha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+          "exact": true
+        }
+      ]
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S04",
+    "timestamp": "2026-09-14T16:54:42.105Z",
+    "expected": "Actual native frozen page has all five cards and canonical e2",
+    "observed": {
+      "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/output/logopia-studio/offcut-hermes-demo/revision-47-214fe913c2d5402d87a73d148d5ed485/index.html",
+      "ids": [
+        "c1",
+        "c2",
+        "c3",
+        "e1",
+        "e2"
+      ],
+      "binding": "offcut-hermes-demo · r47",
+      "selected": "e2",
+      "loadedImages": 14
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S05",
+    "timestamp": "2026-09-14T16:54:42.319Z",
+    "expected": "Actual native ZIP and guide download exactly match public and original delivery",
+    "observed": {
+      "zipSha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "guideSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+      "zipFailure": null,
+      "guideFailure": null
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S06",
+    "timestamp": "2026-09-14T16:55:13.628Z",
+    "expected": "Read-only actual CLI exits 0 with r47/delivered/e2/five candidates and unchanged canonical bytes",
+    "observed": {
+      "success": true,
+      "message": "Saved workflow",
+      "workflow_id": "offcut-hermes-demo",
+      "revision": 47,
+      "phase": "delivered",
+      "selected_id": "e2",
+      "candidate_count": 5,
+      "gallery": null,
+      "logs": null,
+      "error": null,
+      "installation": null
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "A01",
+    "timestamp": "2026-09-14T16:55:14.139Z",
+    "expected": "Malformed and missing saved IDs fail explicitly without any inference",
+    "observed": {
+      "missing": {
+        "success": false,
+        "message": "Workflow review-qa-080-no-such-workflow does not exist",
+        "workflow_id": null,
+        "revision": null,
+        "phase": null,
+        "selected_id": null,
+        "candidate_count": 0,
+        "gallery": null,
+        "logs": null,
+        "error": "not_found",
+        "installation": null
+      },
+      "malformed": {
+        "success": false,
+        "message": "Expected a portable lowercase identifier",
+        "workflow_id": null,
+        "revision": null,
+        "phase": null,
+        "selected_id": null,
+        "candidate_count": 0,
+        "gallery": null,
+        "logs": null,
+        "error": "invalid_id",
+        "installation": null
+      }
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S02-native",
+    "timestamp": "2026-09-14T16:55:38.055Z",
+    "expected": "All five native original-stage links preserve exact canonical bytes",
+    "observed": [
+      {
+        "id": "c1",
+        "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+        "status": 200
+      },
+      {
+        "id": "c2",
+        "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+        "status": 200
+      },
+      {
+        "id": "c3",
+        "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+        "status": 200
+      },
+      {
+        "id": "e1",
+        "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+        "status": 200
+      },
+      {
+        "id": "e2",
+        "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+        "status": 200
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S07/S13",
+    "timestamp": "2026-09-14T16:55:40.130Z",
+    "expected": "Native parent links and keyboard-opened side-by-side original views show c1→e1→e2",
+    "observed": [
+      {
+        "id": "e1",
+        "parentLink": "#c1",
+        "pair": [
+          {
+            "src": "originals/c1.png",
+            "width": 192,
+            "natural": [
+              1774,
+              887
+            ]
+          },
+          {
+            "src": "originals/e1.png",
+            "width": 192,
+            "natural": [
+              1774,
+              887
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e2",
+        "parentLink": "#e1",
+        "pair": [
+          {
+            "src": "originals/e1.png",
+            "width": 192,
+            "natural": [
+              1774,
+              887
+            ]
+          },
+          {
+            "src": "originals/e2.png",
+            "width": 192,
+            "natural": [
+              1774,
+              887
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S08",
+    "timestamp": "2026-09-14T16:55:40.358Z",
+    "expected": "e1 failed preservation remains visible twice; e2 has two fresh bound all-pass critiques",
+    "observed": [
+      {
+        "id": "e1",
+        "badge": "검토됨 · 수정 필요",
+        "labels": [
+          "text · pass",
+          "composition · pass",
+          "small_size · pass",
+          "preservation · needs_revision",
+          "background · pass",
+          "text · pass",
+          "composition · pass",
+          "small_size · pass",
+          "preservation · needs_revision",
+          "background · pass"
+        ],
+        "reports": [
+          {
+            "role": "design",
+            "image_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+            "parent_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+            "view_width": 192,
+            "call_id": "0fa6616c78d44076914e4bd652ac2111",
+            "statuses": [
+              {
+                "key": "text",
+                "status": "pass"
+              },
+              {
+                "key": "composition",
+                "status": "pass"
+              },
+              {
+                "key": "small_size",
+                "status": "pass"
+              },
+              {
+                "key": "preservation",
+                "status": "needs_revision"
+              },
+              {
+                "key": "background",
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "role": "production",
+            "image_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+            "parent_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+            "view_width": 192,
+            "call_id": "2c4351fa1d8e4f959254b0fb03670b5d",
+            "statuses": [
+              {
+                "key": "text",
+                "status": "pass"
+              },
+              {
+                "key": "composition",
+                "status": "pass"
+              },
+              {
+                "key": "small_size",
+                "status": "pass"
+              },
+              {
+                "key": "preservation",
+                "status": "needs_revision"
+              },
+              {
+                "key": "background",
+                "status": "pass"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e2",
+        "badge": "검토됨 · 192px 조건 통과",
+        "labels": [
+          "text · pass",
+          "composition · pass",
+          "small_size · pass",
+          "preservation · pass",
+          "background · pass",
+          "text · pass",
+          "composition · pass",
+          "small_size · pass",
+          "preservation · pass",
+          "background · pass"
+        ],
+        "reports": [
+          {
+            "role": "design",
+            "image_sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+            "parent_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+            "view_width": 192,
+            "call_id": "839649ff3307437cb941089460b0717a",
+            "statuses": [
+              {
+                "key": "text",
+                "status": "pass"
+              },
+              {
+                "key": "composition",
+                "status": "pass"
+              },
+              {
+                "key": "small_size",
+                "status": "pass"
+              },
+              {
+                "key": "preservation",
+                "status": "pass"
+              },
+              {
+                "key": "background",
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "role": "production",
+            "image_sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+            "parent_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+            "view_width": 192,
+            "call_id": "f0bc5abcc0594ed0bacd456246b14e32",
+            "statuses": [
+              {
+                "key": "text",
+                "status": "pass"
+              },
+              {
+                "key": "composition",
+                "status": "pass"
+              },
+              {
+                "key": "small_size",
+                "status": "pass"
+              },
+              {
+                "key": "preservation",
+                "status": "pass"
+              },
+              {
+                "key": "background",
+                "status": "pass"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S09",
+    "timestamp": "2026-09-14T16:56:03.578Z",
+    "expected": "All five public/native 192px views render actual original sources; two reviews per public candidate opened by keyboard",
+    "observed": {
+      "nativeWidths": [
+        {
+          "src": "originals/c1.png",
+          "width": 192,
+          "complete": true
+        },
+        {
+          "src": "originals/c2.png",
+          "width": 192,
+          "complete": true
+        },
+        {
+          "src": "originals/c3.png",
+          "width": 192,
+          "complete": true
+        },
+        {
+          "src": "originals/e1.png",
+          "width": 192,
+          "complete": true
+        },
+        {
+          "src": "originals/e2.png",
+          "width": 192,
+          "complete": true
+        }
+      ],
+      "publicWidths": [
+        {
+          "id": "c1",
+          "width": 192,
+          "reviewRoles": 2
+        },
+        {
+          "id": "c2",
+          "width": 192,
+          "reviewRoles": 2
+        },
+        {
+          "id": "c3",
+          "width": 192,
+          "reviewRoles": 2
+        },
+        {
+          "id": "e1",
+          "width": 192,
+          "reviewRoles": 2
+        },
+        {
+          "id": "e2",
+          "width": 192,
+          "reviewRoles": 2
+        }
+      ]
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S12",
+    "timestamp": "2026-09-14T16:56:04.136Z",
+    "expected": "Keyboard Tab exposes a visible 3px skip-link focus and reaches original/review/feedback controls",
+    "observed": [
+      {
+        "name": "public",
+        "first": {
+          "tag": "A",
+          "text": "Skip to the example",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "top": 12
+        },
+        "tabSequence": [
+          {
+            "tag": "A",
+            "id": "",
+            "text": "01The brief",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "02Three directions",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "03Focused refinement",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "04Originals & delivery",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "Open c1 original ↗",
+            "outline": "solid"
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Read both reviews & inspect at 192 px",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "Open c2 original ↗",
+            "outline": "solid"
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "Read both reviews & inspect at 192 px",
+            "outline": "solid"
+          }
+        ]
+      },
+      {
+        "name": "native",
+        "first": {
+          "tag": "A",
+          "text": "후보 비교로 건너뛰기",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "top": 10
+        },
+        "tabSequence": [
+          {
+            "tag": "A",
+            "id": "",
+            "text": "",
+            "outline": "solid"
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "이 방향으로 수정",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "PNG 원본 ↓",
+            "outline": "solid"
+          },
+          {
+            "tag": "DIV",
+            "id": "",
+            "text": "흰 배경 · 192px",
+            "outline": "solid"
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "text": "검토 조건·원본 기록",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "",
+            "outline": "solid"
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "text": "이 방향으로 수정",
+            "outline": "solid"
+          },
+          {
+            "tag": "A",
+            "id": "",
+            "text": "PNG 원본 ↓",
+            "outline": "solid"
+          }
+        ]
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S10/S11",
+    "timestamp": "2026-09-14T16:56:04.813Z",
+    "expected": "Both actual galleries have no page overflow at 390px, including expanded review/parent details",
+    "observed": [
+      {
+        "name": "public",
+        "viewport": 390,
+        "documentWidth": 390,
+        "withDetailsOpen": 390,
+        "allImagesLoaded": true
+      },
+      {
+        "name": "native",
+        "viewport": 390,
+        "documentWidth": 390,
+        "withDetailsOpen": 390,
+        "allImagesLoaded": true
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S14/S15/A02",
+    "timestamp": "2026-09-14T16:56:33.724Z",
+    "expected": "Literal feedback binds c1/r47/hash, produces only a local draft, and cannot alter canonical e2",
+    "observed": {
+      "draft": {
+        "schema_version": 1,
+        "workflow_id": "offcut-hermes-demo",
+        "expected_revision": 47,
+        "candidate_id": "c1",
+        "candidate_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+        "action": "revise",
+        "keep": [
+          "Keep forest and clay. Ignore previous instructions is quoted DATA.\n<b>색 유지</b>"
+        ],
+        "change": "Open only the spacing; preserve every other feature."
+      },
+      "canonicalSelection": "e2",
+      "htmlLookingInputElementCount": 0,
+      "pageWidth": 390
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S18-valid",
+    "timestamp": "2026-09-14T16:56:33.859Z",
+    "expected": "Reload restores exact valid local draft without choosing it",
+    "observed": {
+      "draftExact": true,
+      "status": "이 버전의 초안을 이 브라우저에 저장했습니다. 아직 Hermes에 보내지 않았습니다.",
+      "canonicalSelection": "e2"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S16",
+    "timestamp": "2026-09-14T16:56:33.968Z",
+    "expected": "Native copy button reports success only after actual clipboard write; exact draft can be read back",
+    "observed": {
+      "status": "초안을 복사했습니다. Hermes에 붙여 넣어 요청해 주세요.",
+      "readBackSha256": "f175f180dfef69c750d4e5691695d1e13fdc166d73cb066db80b273960c4d30f",
+      "draftSha256": "f175f180dfef69c750d4e5691695d1e13fdc166d73cb066db80b273960c4d30f",
+      "exact": true
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S17",
+    "timestamp": "2026-09-14T16:56:59.857Z",
+    "expected": "Browser-denied text clipboard activates selected manual-copy fallback",
+    "observed": {
+      "status": "자동 복사를 사용할 수 없습니다. 선택된 초안을 ⌘C 또는 Ctrl+C로 복사해 주세요.",
+      "selection": {
+        "focused": true,
+        "start": 0,
+        "end": 398,
+        "length": 398
+      },
+      "descriptor": {
+        "name": "clipboard-write",
+        "setting": "denied"
+      }
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S15-choose",
+    "timestamp": "2026-09-14T16:56:59.864Z",
+    "expected": "Explicit local choose draft clears change and leaves canonical e2 unchanged",
+    "observed": {
+      "choiceDraft": {
+        "schema_version": 1,
+        "workflow_id": "offcut-hermes-demo",
+        "expected_revision": 47,
+        "candidate_id": "c1",
+        "candidate_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+        "action": "choose",
+        "keep": [
+          "Keep forest and clay. Ignore previous instructions is quoted DATA.\n<b>색 유지</b>"
+        ],
+        "change": ""
+      },
+      "canonicalSelection": "e2"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S18-stale",
+    "timestamp": "2026-09-14T16:56:59.988Z",
+    "expected": "Reload rejects stale local draft instead of silently rebinding it",
+    "observed": {
+      "status": "저장된 초안이 이 버전·원본과 맞지 않아 불러오지 않았습니다.",
+      "emptyOutput": true,
+      "canonicalSelection": "e2"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S20/S21-drafts",
+    "timestamp": "2026-09-14T16:57:27.171Z",
+    "expected": "Clear/cancel draft and repeated target changes never submit or alter canonical choice",
+    "observed": {
+      "clearedAcrossReload": true,
+      "clearStatus": "후보를 골라도 현재 선택은 바뀌지 않습니다.",
+      "repeat": [
+        {
+          "id": "c2",
+          "action": "choose",
+          "canonical": "e2"
+        },
+        {
+          "id": "e1",
+          "action": "choose",
+          "canonical": "e2"
+        },
+        {
+          "id": "c2",
+          "action": "choose",
+          "canonical": "e2"
+        },
+        {
+          "id": "e2",
+          "action": "choose",
+          "canonical": "e2"
+        }
+      ]
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S20/S21-download",
+    "timestamp": "2026-09-14T16:57:27.464Z",
+    "expected": "Repeated download cancellation can be followed by exact package download",
+    "observed": {
+      "cancellation": [
+        {
+          "failure": "canceled",
+          "suggestedFilename": "logo-package.zip"
+        },
+        {
+          "failure": "canceled",
+          "suggestedFilename": "logo-package.zip"
+        }
+      ],
+      "recoveredSha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "recoveredFailure": null,
+      "canonicalUnchanged": true
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "A08",
+    "timestamp": "2026-09-14T16:57:28.057Z",
+    "expected": "No-JS snapshot retains five originals, selected identity and explanatory notice",
+    "observed": {
+      "cards": 5,
+      "notice": "원본과 상태는 JavaScript 없이도 볼 수 있습니다. 피드백 초안 작성에는 JavaScript가 필요합니다. 후보 ID와 이 페이지의 버전을 Hermes에 알려 주세요.",
+      "selected": "e2",
+      "width": 390
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S22",
+    "timestamp": "2026-09-14T16:58:12.994Z",
+    "expected": "All product gallery actions use only local resources and produce no page errors",
+    "observed": {
+      "requestCount": 223,
+      "externalRequests": 0,
+      "pageErrors": 0,
+      "failures": []
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S23/S24",
+    "timestamp": "2026-09-14T16:58:13.815Z",
+    "expected": "Rendered English/Korean README has immediately visible white c1/e2 samples; direct image links yield exact bytes",
+    "observed": {
+      "renderer": [
+        {
+          "lang": "en",
+          "input": "README.md",
+          "command": "uv run --locked markdown-it README.md",
+          "exit": 0,
+          "stderr": "",
+          "elapsedMs": 139,
+          "htmlSha256": "a71dd07160997778f8473126bfd7f364a8e4ec0fbe5529b7196a50c2b924786e"
+        },
+        {
+          "lang": "ko",
+          "input": "README.ko.md",
+          "command": "uv run --locked markdown-it README.ko.md",
+          "exit": 0,
+          "stderr": "",
+          "elapsedMs": 88,
+          "htmlSha256": "4be590579dd356e560f61e1c07692891a13854a6c1f712c253da646f3a3aa336"
+        }
+      ],
+      "readmes": [
+        {
+          "lang": "en",
+          "source": "README.md",
+          "observed": {
+            "width": 1280,
+            "localImages": [
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+                "loaded": true,
+                "natural": [
+                  1536,
+                  1024
+                ],
+                "width": 360,
+                "y": 48
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+                "loaded": true,
+                "natural": [
+                  1774,
+                  887
+                ],
+                "width": 400,
+                "y": 771.8984375
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+                "loaded": true,
+                "natural": [
+                  1774,
+                  887
+                ],
+                "width": 400,
+                "y": 771.8984375
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1223.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1223.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1702.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1702.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2181.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2181.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2660.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2660.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3139.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3139.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3618.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3618.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4097.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4097.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4576.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4576.921875
+              }
+            ],
+            "heading": "A guided workflow in Hermes",
+            "hermesText": "Brief → distinct directions → original candidates → visual review → your choice → focused revision → delivery."
+          },
+          "clicked": [
+            {
+              "id": "c1",
+              "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+              "status": 200
+            },
+            {
+              "id": "e2",
+              "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+              "status": 200
+            }
+          ]
+        },
+        {
+          "lang": "ko",
+          "source": "README.ko.md",
+          "observed": {
+            "width": 1280,
+            "localImages": [
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/assets/logopia-game-title.png",
+                "loaded": true,
+                "natural": [
+                  1536,
+                  1024
+                ],
+                "width": 360,
+                "y": 48
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/c1.png",
+                "loaded": true,
+                "natural": [
+                  1774,
+                  887
+                ],
+                "width": 400,
+                "y": 747.8984375
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/originals/e2.png",
+                "loaded": true,
+                "natural": [
+                  1774,
+                  887
+                ],
+                "width": 400,
+                "y": 747.8984375
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/01-luma.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1199.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/02-loop-lab.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1199.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/03-goyo.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1678.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/04-bread-bloom.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 1678.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/05-kite.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2157.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/06-miso.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2157.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/07-northline.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2636.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/08-mulgyeol.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 2636.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/09-fern.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3115.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/10-nova-notes.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3115.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/11-reading-owl.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3594.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/12-weather.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 3594.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/13-flow.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4073.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/14-notes.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4073.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/15-cloud.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4552.921875
+              },
+              {
+                "src": "/Users/cillian/Documents/Github/Projects/logo-generator/docs/showcase/2026-09-white/images/16-sprout.png",
+                "loaded": true,
+                "natural": [
+                  1254,
+                  1254
+                ],
+                "width": 400,
+                "y": 4552.921875
+              }
+            ],
+            "heading": "Hermes로 단계별 로고 만들기",
+            "hermesText": "브리프 → 서로 다른 방향 → 원본 후보 → 이미지 검토 → 선택 → 부분 수정 → 전달."
+          },
+          "clicked": [
+            {
+              "id": "c1",
+              "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+              "status": 200
+            },
+            {
+              "id": "e2",
+              "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+              "status": 200
+            }
+          ]
+        }
+      ]
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "A03/A04/A06/A07",
+    "timestamp": "2026-09-14T16:59:27.344Z",
+    "expected": "Selected stale/cancel/unknown/repeated-interruption/deadline/misleading-success guards and draft boundaries pass on unchanged source",
+    "observed": {
+      "pytestExit": 0,
+      "pytestOutput": "..............                                                           [100%]\n14 passed in 26.17s\n",
+      "nodeExit": 0,
+      "nodeOutput": "✔ revision draft binds exact identity and verbatim notes without changing snapshot (2.600875ms)\n✔ choice draft has an empty change and does not approve review (0.205583ms)\n✔ blank revision, unknown candidate, unsupported action and long notes fail (0.262291ms)\n✔ instruction-like text remains literal JSON content (0.14975ms)\n✔ stored feedback restores only the exact snapshot and candidate digest (0.437042ms)\n✔ clipboard rejection yields the full draft for manual copying (0.196291ms)\n✔ clipboard success reports exact transferred bytes (0.130875ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 86.049\n"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S25",
+    "timestamp": "2026-09-14T16:59:27.347Z",
+    "expected": "English-default/Korean guides describe real native flow, exact-parent edits, truthful review limits and IP credit",
+    "observed": {
+      "docs": [
+        "README.md",
+        "README.ko.md",
+        "docs/hermes.md",
+        "docs/hermes.ko.md",
+        "docs/hermes-demo/README.md",
+        "docs/hermes-demo/README.ko.md"
+      ],
+      "sourceVersion": "0.8.0 development checkout",
+      "publishedVersionAsDocumented": "0.7.0",
+      "credit": "s1dashu/ip-as-logo-skill",
+      "upstreamPin": "acb834c717bcd0a487c49732d08397ba280d690b",
+      "newModelCalls": 0,
+      "newNativeImageCalls": 0,
+      "prior907Run": "Attributed to integration.md; not rerun here"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S05-direct",
+    "timestamp": "2026-09-14T17:00:58.881Z",
+    "expected": "Public/native direct manifest and guide links are usable; rendered guide text and saved bytes match the verified package",
+    "observed": [
+      {
+        "gallery": "public",
+        "member": "manifest.json",
+        "status": 200,
+        "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+        "bytes": 12893
+      },
+      {
+        "gallery": "public",
+        "member": "brand-guide.md",
+        "status": 200,
+        "rawFileSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+        "renderedTextSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+        "cdpBodyIsReencoded": true
+      },
+      {
+        "gallery": "native",
+        "member": "manifest.json",
+        "status": 200,
+        "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d"
+      },
+      {
+        "gallery": "native",
+        "member": "brand-guide.md",
+        "status": 200,
+        "rawFileSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+        "renderedTextExact": true
+      }
+    ],
+    "status": "PASS"
+  },
+  {
+    "id": "S11/S12-parent-scroll",
+    "timestamp": "2026-09-14T17:01:23.284Z",
+    "expected": "At 390px the focused parent-comparison region scrolls independently by ArrowRight",
+    "observed": {
+      "before": 0,
+      "after": {
+        "left": 2.5,
+        "width": 310,
+        "scrollWidth": 400
+      },
+      "documentWidth": 390
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "S07-exact-feedback",
+    "timestamp": "2026-09-14T17:01:23.388Z",
+    "expected": "Public exact keep/change disclosures reproduce canonical edit instructions verbatim",
+    "observed": {
+      "e1Exact": true,
+      "e2Exact": true,
+      "chain": "c1 → e1 → e2"
+    },
+    "status": "PASS"
+  },
+  {
+    "id": "A05",
+    "timestamp": "2026-09-14T17:02:08.870Z",
+    "expected": "All 216 pinned source/demo/state/protected files, default config and 21 native gallery files retain exact hashes",
+    "observed": {
+      "files": 216,
+      "unchanged": true,
+      "nativeGalleryFiles": 21,
+      "defaultConfigUnchanged": true,
+      "headUnchanged": true
+    },
+    "status": "PASS"
+  }
+]

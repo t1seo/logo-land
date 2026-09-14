@@ -1,0 +1,26 @@
+#!/bin/bash
+set -euo pipefail
+repo=/Users/cillian/Documents/Github/Projects/logo-generator
+out="$repo/docs/qa/hermes-workflow/review-context-final"
+cd "$repo"
+date -u '+%Y-%m-%dT%H:%M:%SZ' > "$out/pin-time.txt"
+git status --short > "$out/status-before.txt"
+git rev-parse HEAD > "$out/head.txt"
+awk '$2 != "integrations/hermes/CONTRACT.md" && $2 != "docs/hermes.md" && $2 != "docs/hermes.ko.md" && $2 != "integrations/hermes/logopia_studio/helper_process.py" && $2 != "integrations/hermes/logopia_studio/launcher_process.py" && $2 != "integrations/hermes/logopia_studio/installer.py"' docs/qa/hermes-workflow/review-context/before.sha256 > "$out/historical-immutable.sha256"
+shasum -a 256 -c "$out/historical-immutable.sha256" > "$out/historical-immutable-check.txt"
+shasum -a 256 -c docs/qa/hermes-workflow/review-context/old-originals.sha256 > "$out/old-originals-check.txt"
+{
+  awk '{print $2}' "$out/historical-immutable.sha256"
+  awk '{print $2}' docs/qa/hermes-workflow/review-context/old-originals.sha256
+  jq -r '.candidates[].image_path' .logo-generator/workflows/offcut-hermes-demo/workflow.json
+  printf '%s\n' output/logopia/offcut-hermes-demo/{logo.png,logo-package.zip,manifest.json,brand-guide.md}
+  jq -r '.[].request|"output/hermes-demo/"+.+".json"' docs/qa/hermes-workflow/review-context/request-bindings.json
+  printf '%s\n' output/hermes-demo/before-recovery-workflow.json output/hermes-demo/review-source-binding.json output/hermes-demo/default-config-before.sha256
+  printf '%s\n' docs/qa/hermes-workflow/review-context/{request-bindings.json,history-normalized.json,history-first-comparison.json,history-critique-bindings.json,public-canonical.json,native-image-receipts.json,original-bindings.tsv,binding-first-failure.txt}
+} | sort -u > "$out/immutable-paths.txt"
+while IFS= read -r path; do shasum -a 256 "$path"; done < "$out/immutable-paths.txt" > "$out/immutable-before.sha256"
+awk '$2 ~ /^\.omo\/drafts\/logo-land-next-/' "$out/immutable-before.sha256" > "$out/protected-drafts.sha256"
+jq -r '.[]|.request_sha256+"  output/hermes-demo/"+.request+".json"' docs/qa/hermes-workflow/review-context/request-bindings.json > "$out/request-bindings.sha256"
+shasum -a 256 -c "$out/request-bindings.sha256" > "$out/request-bindings-check.txt"
+shasum -a 256 -c output/hermes-demo/default-config-before.sha256 > "$out/default-config-check-before.txt"
+wc -l "$out/historical-immutable.sha256" "$out/immutable-before.sha256" "$out/protected-drafts.sha256" "$out/request-bindings.sha256" docs/qa/hermes-workflow/review-context/old-originals.sha256

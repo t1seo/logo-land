@@ -1,0 +1,15 @@
+INP001 File `/tmp/logopia-review-goal-080/verify_state.py` is part of an implicit namespace package. Add an `__init__.py`.
+--> /tmp/logopia-review-goal-080/verify_state.py:1:1
+
+TC003 Move standard library import `pathlib.Path` into a type-checking block
+ --> /tmp/logopia-review-goal-080/verify_state.py:6:21
+  |
+5 | from hashlib import sha256
+6 | from pathlib import Path
+  |                     ^^^^
+7 | from typing import Final
+  |
+help: Move into type-checking block
+
+Found 2 errors.
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

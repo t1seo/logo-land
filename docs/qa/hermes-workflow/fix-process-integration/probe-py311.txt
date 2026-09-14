@@ -1,0 +1,6 @@
+{"python": "3.11.16 (main, Sep  1 2026, 14:08:22) [Clang 22.1.3 ]", "runtime": "/Users/cillian/.local/bin/python3.11", "runner_pid": 93469}
+{"case": "control", "pid": 93472, "state_before_finally": "", "returncode": -9, "poll_lock_held": false, "triggered": false, "outcome": "settled", "elapsed": 0.065}
+{"cleanup_pid": 93472, "returncode": -9, "absent": true}
+{"case": "interrupt_acquisition", "pid": 93476, "state_before_finally": "93476 93469 93476 Z", "returncode": null, "poll_lock_held": true, "triggered": true, "outcome": "TimeoutExpired", "elapsed": 0.156}
+{"cleanup_pid": 93476, "returncode": -9, "absent": true}
+{"resource_warnings": 0}

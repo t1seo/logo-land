@@ -1,0 +1,11 @@
+29:Hermes checks each original in two separate image reviews, including the intended display size. Compare candidates on one offline page, send back what to keep and change, and preserve every parent version. [Start with Hermes](docs/hermes.md). Available in the 0.8.0 development checkout.
+35:    <td align="center" width="50%"><a href="docs/hermes-demo/originals/c1.png"><img src="docs/hermes-demo/originals/c1.png" width="400" alt="OFFCUT initial original c1"></a><br><strong>Initial original · c1</strong></td>
+36:    <td align="center" width="50%"><a href="docs/hermes-demo/originals/e2.png"><img src="docs/hermes-demo/originals/e2.png" width="400" alt="OFFCUT delivered original e2 after two refinements"></a><br><strong>Refined original · e2</strong></td>
+152:IP character guidance is adapted from [s1dashu/ip-as-logo-skill](https://github.com/s1dashu/ip-as-logo-skill). See the [pinned adaptation reference](skills/logo-land/references/ip-mascot.md), [MIT license notice](skills/logo-land/assets/ip-as-logo.LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+README.md old16_direct_links_unchanged=true
+29:Hermes가 원본과 실제 사용할 크기를 두 번의 별도 이미지 검토로 확인합니다. 하나의 오프라인 화면에서 후보를 비교하고, 유지할 점과 바꿀 점을 보내 수정하실 수 있습니다. 이전 원본도 모두 남습니다. [Hermes로 시작하기](docs/hermes.ko.md). 0.8.0 개발 체크아웃에서 사용하실 수 있습니다.
+35:    <td align="center" width="50%"><a href="docs/hermes-demo/originals/c1.png"><img src="docs/hermes-demo/originals/c1.png" width="400" alt="OFFCUT 최초 원본 c1"></a><br><strong>처음 만든 원본 · c1</strong></td>
+36:    <td align="center" width="50%"><a href="docs/hermes-demo/originals/e2.png"><img src="docs/hermes-demo/originals/e2.png" width="400" alt="OFFCUT 두 차례 수정 후 전달한 원본 e2"></a><br><strong>다듬은 원본 · e2</strong></td>
+108:최신 발행 버전은 **[0.7.0](https://github.com/t1seo/logopia/releases/tag/v0.7.0)**이며, 개발 체크아웃은 **0.8.0 (미발행)**입니다. [추가되는 기능](docs/qa/hermes-workflow/release-notes.md) · [변경 이력](CHANGELOG.md)
+152:IP 캐릭터 지침은 [s1dashu/ip-as-logo-skill](https://github.com/s1dashu/ip-as-logo-skill)을 바탕으로 각색했습니다. [고정된 원본과 각색 안내](skills/logo-land/references/ip-mascot.md), [MIT 라이선스 고지](skills/logo-land/assets/ip-as-logo.LICENSE), [제3자 출처 고지](THIRD_PARTY_NOTICES.md)를 확인해 주세요.
+README.ko.md old16_direct_links_unchanged=true

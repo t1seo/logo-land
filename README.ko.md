@@ -7,24 +7,43 @@
 
 <p align="center">
   <strong>이름에 어울리는 모양을 만들어 보세요.</strong><br>
-  Codex와 대화하며 개성 있는 레터링, 브랜드 로고와 앱 아이콘 아트워크를 만드실 수 있습니다.
+  Codex 또는 Hermes와 대화하며 개성 있는 레터링, 브랜드 로고와 앱 아이콘 아트워크를 만드실 수 있습니다.
 </p>
 
 <p align="center">
-  <a href="https://github.com/t1seo/logopia/releases/tag/v0.7.0"><img src="https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logopia v0.7.0"></a>
+  <a href="https://github.com/t1seo/logopia/releases/tag/v0.8.0"><img src="https://img.shields.io/badge/Release-v0.8.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logopia v0.8.0"></a>
   <img src="https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&amp;labelColor=17352B" alt="Codex 플러그인">
   <img src="https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&amp;labelColor=17352B" alt="래스터 PNG 출력">
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="#설치">시작하기</a> · <a href="docs/gallery.ko.md">갤러리</a> · <a href="docs/README.ko.md">문서</a>
+  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="docs/hermes.ko.md">Hermes</a> · <a href="#설치">Codex 설치</a> · <a href="docs/gallery.ko.md">갤러리</a> · <a href="docs/README.ko.md">문서</a>
 </p>
+
+<a id="hermes-workflow"></a>
+
+## Hermes로 단계별 로고 만들기
+
+**브리프 → 서로 다른 방향 → 원본 후보 → 이미지 검토 → 선택 → 부분 수정 → 전달.**
+
+Hermes가 원본과 실제 사용할 크기를 두 번의 별도 이미지 검토로 확인합니다. 하나의 오프라인 화면에서 후보를 비교하고, 유지할 점과 바꿀 점을 보내 수정하실 수 있습니다. 이전 원본도 모두 남습니다. [Hermes로 시작하기](docs/hermes.ko.md).
+
+**실제 Hermes 제작 사례: OFFCUT.** 두 이미지를 누르면 변경하지 않은 원본 PNG가 열립니다.
+
+<table>
+  <tr>
+    <td align="center" width="50%"><a href="docs/hermes-demo/originals/c1.png"><img src="docs/hermes-demo/originals/c1.png" width="400" alt="OFFCUT 최초 원본 c1"></a><br><strong>처음 만든 원본 · c1</strong></td>
+    <td align="center" width="50%"><a href="docs/hermes-demo/originals/e2.png"><img src="docs/hermes-demo/originals/e2.png" width="400" alt="OFFCUT 두 차례 수정 후 전달한 원본 e2"></a><br><strong>다듬은 원본 · e2</strong></td>
+  </tr>
+</table>
+
+수정 이력은 **c1 → e1 → e2**입니다. 첫 수정본 e1은 글자 간격을 개선했지만 심볼과 글자 사이의 틈이 줄어 보존 검사를 통과하지 못했습니다. e2는 그 틈을 복원하고 두 모델 검토를 통과해 전달됐습니다. [원본 5개와 오프라인 비교 안내](docs/hermes-demo/README.ko.md) · [전달 ZIP](docs/hermes-demo/delivery/logo-package.zip)
 
 <a id="샘플"></a><a id="샘플-10개"></a><a id="투명-배경-로고"></a>
 
 ## 브랜드 로고와 앱 아이콘, 한눈에 보기
 
-흰색 배경으로 새로 만든 브랜드 로고 10개와 앱 아이콘 아트워크 6개입니다. **이미지를 누르면 원본 PNG가 바로 열립니다.**
+2026년 9월 쇼케이스의 브랜드 로고 10개와 앱 아이콘 아트워크 6개입니다. 모두 흰색 배경으로 만들었습니다. **이미지를 누르면 원본 PNG가 바로 열립니다.**
 
 <table>
   <tr>
@@ -67,7 +86,7 @@
 
 ## 설치
 
-**이미지 생성·편집 도구가 있는 Codex**, **Python 3.12 이상**, **uv**가 필요합니다. 이미지 도구가 그림을 만들고, 로컬 보조 도구는 프로젝트 저장·프롬프트 준비·파일 패키징을 맡습니다. 플러그인을 설치해도 없는 이미지 도구가 활성화되지는 않습니다.
+Codex 경로에는 **이미지 생성·편집 도구가 있는 Codex**, **Python 3.12 이상**, **uv**가 필요합니다. 이미지 도구가 그림을 만들고, 로컬 보조 도구는 프로젝트 저장·프롬프트 준비·파일 패키징을 맡습니다. 플러그인을 설치해도 없는 이미지 도구가 활성화되지는 않습니다.
 
 ```sh
 git clone https://github.com/t1seo/logopia.git
@@ -86,7 +105,7 @@ codex
 
 <a id="릴리스와-버전-관리"></a>
 
-버전은 **0.7.0**입니다. [릴리스 안내](https://github.com/t1seo/logopia/releases/tag/v0.7.0) · [변경 이력](CHANGELOG.md)
+최신 발행 버전은 **[0.8.0](https://github.com/t1seo/logopia/releases/tag/v0.8.0)**입니다. [릴리스 안내](docs/qa/hermes-workflow/release-notes.md) · [변경 이력](CHANGELOG.md)
 
 <a id="대화로-사용하기"></a>
 

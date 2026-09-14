@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "owned_pids_absent": {
+    "manual": 40611,
+    "native-manual": 40957,
+    "pane": 40608
+  },
+  "tmux_session_absent": "logopia-fix-installer-080",
+  "lock_or_staging_before_removal": [],
+  "scratch_root_absent": "/tmp/logopia-fix-installer-080"
+}

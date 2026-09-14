@@ -1,0 +1,10 @@
+{
+  "journal_promoted_to": "docs/qa/hermes-workflow/review-fixes.md",
+  "journal_sha256": "af2c6c1318cecc7ead6a940cfcba497b4b5af8515dad084c3df799fc1e2c454f",
+  "exclude_before_sha256": "d3646d548ba7dd7f9b9534fd14ac8e0ee1fefd7072c149fcb320226b50b84f7d",
+  "exclude_restored_exactly": true,
+  "other_exclude_lines_preserved": true,
+  "journal_absent": true,
+  "private_backup_absent": true,
+  "own_exclude_absent": true
+}

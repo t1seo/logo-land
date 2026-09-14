@@ -1,0 +1,8 @@
+{"fixture": "test_rejected_group_signals_do0", "owned": [[46552, 46552]], "states": ["46552 46549 46552 Ss"], "group_exists": true, "elapsed": 1.204}
+{"cleanup": "test_rejected_group_signals_do0", "owned": [[46552, 46552]], "states": [""], "group_exists": false}
+.{"fixture": "test_rejected_group_signals_do1", "owned": [[46600, 46600]], "states": ["46600 46549 46600 Ss"], "group_exists": true, "elapsed": 2.305}
+{"cleanup": "test_rejected_group_signals_do1", "owned": [[46600, 46600]], "states": [""], "group_exists": false}
+.{"unowned_control": "46644 46549 46644 Ss"}
+{"cleanup": "test_cleanup_preserves_other_s0", "owned": [[46646, 46645], [46645, 46645]], "states": ["", ""], "group_exists": false}
+.
+3 passed, 15 deselected in 4.84s

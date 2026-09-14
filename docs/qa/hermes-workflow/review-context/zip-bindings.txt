@@ -1,0 +1,3 @@
+logo.png ZIP member bytes match public and canonical
+manifest.json ZIP member bytes match public and canonical
+brand-guide.md ZIP member bytes match public and canonical

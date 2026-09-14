@@ -1,0 +1,79 @@
+from __future__ import annotations
+
+import hashlib
+import json
+import signal
+import sys
+from pathlib import Path
+
+import pytest
+from logopia_studio import installer
+
+_ = signal.alarm(20)
+
+
+def snapshot(root: Path) -> tuple[tuple[str, bytes], ...]:
+    return tuple(
+        (path.relative_to(root).as_posix(), path.read_bytes())
+        for path in sorted(root.rglob("*"))
+        if path.is_file()
+    )
+
+
+def installed_fixture(root: Path) -> tuple[Path, Path, Path]:
+    source = root / "source"
+    source.mkdir()
+    _ = (source / "plugin.yaml").write_text("name: logopia-studio\n")
+    _ = (source / "__init__.py").write_text("value = 1\n")
+    profile = root / "synthetic-profile"
+    profile.mkdir()
+    receipt = installer.install_payload(source, profile, root, root)
+    return source, profile, receipt.destination
+
+
+def test_valid_managed_update(tmp_path: Path) -> None:
+    source, profile, target = installed_fixture(tmp_path)
+    _ = (source / "__init__.py").write_text("value = 2\n")
+    receipt = installer.install_payload(source, profile, tmp_path, tmp_path)
+    assert receipt.destination == target
+    assert (target / "__init__.py").read_text() == "value = 2\n"
+    assert list(target.parent.iterdir()) == [target]
+
+
+def test_prior_install_survives_first_rename_signal(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    source, profile, target = installed_fixture(tmp_path)
+    before = snapshot(target)
+    _ = (source / "__init__.py").write_text("value = 2\n")
+    original_rename = Path.rename
+    backup_exact: list[bool] = []
+
+    def interrupted_rename(path: Path, destination: str | Path) -> Path:
+        result = original_rename(path, destination)
+        if path == target and Path(destination).name == "previous":
+            backup_exact.append(snapshot(result) == before)
+            signal.raise_signal(signal.SIGINT)
+        return result
+
+    monkeypatch.setattr(Path, "rename", interrupted_rename)
+    with pytest.raises(KeyboardInterrupt):
+        _ = installer.install_payload(source, profile, tmp_path, tmp_path)
+    source_path = Path(installer.__file__).resolve()
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "scenario": "sigint_after_first_real_rename",
+                "module_path": str(source_path),
+                "source_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
+                "backup_exact_before_signal": backup_exact,
+                "target_exists": target.is_dir(),
+                "prior_bytes_preserved": snapshot(target) == before,
+                "remaining_entries": [path.name for path in target.parent.iterdir()],
+            }
+        )
+        + "\n"
+    )
+    assert backup_exact == [True]
+    assert target.is_dir(), "Prior managed installation was removed after first-rename SIGINT"
+    assert snapshot(target) == before

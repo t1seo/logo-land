@@ -1,0 +1,5 @@
+?? docs/qa/hermes-workflow/fix-installer.md
+?? docs/qa/hermes-workflow/fix-installer/
+?? integrations/hermes/logopia_studio/installer.py
+?? tests/hermes/test_installer_foreign_marker.py
+?? tests/hermes/test_installer_interruption.py

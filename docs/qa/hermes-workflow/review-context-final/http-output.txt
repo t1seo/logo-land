@@ -1,0 +1,4 @@
+python3.1 98366 cillian    3u  IPv4 0xb7baf5a3236a183      0t0  TCP 127.0.0.1:8817 (LISTEN)
+HTTP/1.0 200 OK
+HTTP/1.0 200 OK
+PASS: both HTTP 200 bodies exactly equal their source; ZIP equals canonical delivery.

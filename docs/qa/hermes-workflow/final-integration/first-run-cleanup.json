@@ -1,0 +1,17 @@
+{
+  "first_full_suite": {
+    "passed": 954,
+    "failed": 2,
+    "seconds": 309.89
+  },
+  "original_log_sha256": "23705f666909522fcdec2641634b1902229cb9b3a8528a5cb2a126b5aaab17b5",
+  "same_failed_helper_pid": 78509,
+  "owned_pids_absent": [
+    78509,
+    76503
+  ],
+  "scratch_removed": "output/hermes-final-tests",
+  "removed_entries": 7513,
+  "scratch_absent": true,
+  "final_gate": "pending_process_followup"
+}

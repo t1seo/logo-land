@@ -1,0 +1,338 @@
+[
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_failed_restoration_keeps_0/fixture-profile/plugins/.logopia-install-nw6o0xth/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "c2c14c6ebe88d0277b925d31e67f12be55a141993985fa1f49f0a14be6f1ab1d"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "01c24a95a09c12c58a78b2322a34488e7aa2280e9c43973e0c2326c801fe977a"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_failed_restoration_keeps_2/fixture-profile/plugins/.logopia-install-k5bw6mv4/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "2978bb7fa3cd10e78f47c9e045fb81e323fbcde501477d5bd2b6fe5f1a4c7f2e"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "db843110dd65435c1dce19cbdc1e616faa414f98f8944ff7256aaafa1a88a460"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_foreign_target_and_old_ba0/fixture-profile/plugins/.logopia-install-iu2rre3d/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "24393ee9bd48569fed32ca9362bd914b8b9084da59b011a0639b755c432c7914"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "216f23ff244187db63657b5d2231316a5fc78e910eacd5c7aa5184dd6a058bfd"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_foreign_target_and_old_ba1/fixture-profile/plugins/.logopia-install-6hwephwu/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "9c7a4665c6e4bee7539c1bd4f1865bbc1455ef91949b24b7ef95d6ed278d5adc"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "fb63ec2b7359a14e3fcf5341251208433b8d8bdfe854fda17e04b6c1a4aa310a"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_foreign_target_and_old_ba2/fixture-profile/plugins/.logopia-install-12out23z/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "77eb19f04aab5fe3fff9025c4ce975ce43483f043197dbf6809e217ef4b89baf"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "0019c8a3833bbc95d16ec4e88a3b04ca29b7dd7b0a2fc7ab90a81d53e9f8157f"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_foreign_target_and_old_ba3/fixture-profile/plugins/.logopia-install-ih2b1b22/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "9970f5aaec6a6d0f6dd306e4da79baf7a52d5939af6775e32844cc944809b404"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "a5316d0e605deaf510e9bfedfbd86c9e5b461930ee5510b4e59433a5f0829a3f"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/green/test_interruption_does_not_ove0/fixture-profile/plugins/.logopia-install-l5fym5l2/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "ea5f2b5da229cab2737f0ccd27fe1c265788e4b168ceba2da1a90d580aa6f606"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "cfdd22e1ffbad2246f9252c3faddd2e29fdcc71896525d8579a5ad3d6636b376"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_cleanup_failure_cannot_de0/fixture-profile/plugins/.logopia-install-jyq1oyek/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "5dfaa8b620f502c568c48460ab1569d7d66f79e51261a20ff03c7ad8c0ecd060"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "5e7b9f3d4b364e226656c140f660732b4aa8d8852d423f45c39b9c6f3a4544c4"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_cleanup_failure_cannot_de1/fixture-profile/plugins/.logopia-install-vwcadniw/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "e39e443fb9b8891ced71c839e8dcc791676164d037fb4efbac05a59a49ef8a0a"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "5f9ccfa6d76b2539c5de30e7081716433441b0884cccc28018e645fcf2fe273e"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_failed_restoration_keeps_0/fixture-profile/plugins/.logopia-install-eoemr929/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "01d90c49594a0c2f1550f053ade589e1c6640041ff045bce12a4539b37ba00d6"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "ab7024ebc8e8e385a6392b84852e4c331cdb1b767fc208ffd28296e7220774c9"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_failed_restoration_keeps_2/fixture-profile/plugins/.logopia-install-c6hkfkbd/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "2d23c93cc63d0b41c479a6852747bafd148aa6109e185b11ec037d2364d03d52"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "d88ad409b8fa74d2c2e527ee8f15bc5d2bd397d76dbcab98cf7b08002f3dcd33"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_foreign_target_and_old_ba0/fixture-profile/plugins/.logopia-install-j64txij0/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "2da47029c51fd27573f975e808a5c54120d19783fba3a5478db307138a00387e"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "253812fee46cc0df404ce1fb17381851ed408cd23207ca7dfbcb989950ed77c9"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_foreign_target_and_old_ba1/fixture-profile/plugins/.logopia-install-sz4ub4v8/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "58e814c78e54da0faf5d3da228263c60747b037e7242e083cba869b05d6e5544"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "af253eef5cb0bd153ca918a0a48f7ee2044129fba0327eb4c70f8d3ebc4fd3f5"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_foreign_target_and_old_ba2/fixture-profile/plugins/.logopia-install-_ynfwfja/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "ca537cace828dede7bdf8e28f1dfe779984d40996f07628f195a75d6f872309f"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "406104d781e3c1d805e160e1ea8b13fe888d8f0a41d27a3fc41b782133c4acde"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_foreign_target_and_old_ba3/fixture-profile/plugins/.logopia-install-7dfyvufe/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "4ebd6515ee0727f013a2b23ae6db24ba5c14c68afbef0a182c1103b4303c7565"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "9fb5db0f58308f6ff387babdce50b7b239c3c66963f31e5cffbec655b462e43a"
+      ]
+    ]
+  },
+  {
+    "path": "/tmp/logopia-fix-installer-boundary-080/pytest/test_interruption_does_not_ove0/fixture-profile/plugins/.logopia-install-rogttihh/previous",
+    "file_hashes": [
+      [
+        ".logopia-install.json",
+        "e59dbc880f09493fbf34eb46c28887c706552fd6fce0ec7cf71c3ba7c191d91a"
+      ],
+      [
+        "__init__.py",
+        "1e8526dce23b1e9ab2b49e0c59cdbe3e13641af8687ff57ce07616c98fdeb02b"
+      ],
+      [
+        "plugin.yaml",
+        "b34e570bd7e107601565b1d5761e3b69edef5f8e6f3e6da6303acb4060afe0e0"
+      ],
+      [
+        "settings.json",
+        "e2a5829598b7f7b7ad76d04dd81bac1b666b5eb59fa29eab8952a991f9bfeae9"
+      ]
+    ]
+  }
+]

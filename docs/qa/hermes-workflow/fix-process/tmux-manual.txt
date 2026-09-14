@@ -1,0 +1,55 @@
+uv run --locked python /tmp/logopia-fix-process-080/manual.py
+Tae-wons-MacBook-Pro% uv run --locked python /tmp/logopia-fix-process-080/manual.py
+{"event": "runtime", "pid": 47176, "pgid": 47175, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "executable": "/Users/cillian/Documents/Github/Projects/logo-ge
+nerator/.venv/bin/python3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/launcher_process.py", "sha256": "f763b36ff6d76e809dbf86d5f17
+bcbde25630913e90f5131d16df50949e3916d"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", "sha256": "951c02580507b29239beca00cf92f
+5ce0f9243bd7f8a2419c54e6d6fe12dc574"}
+{"fixture": "deadline", "owned": [[47179, 47178], [47178, 47178]], "states": ["", ""], "group_exists": false, "elapsed": 1.221}
+{"event": "launcher_pass", "case": "deadline", "exit_code": -2, "timed_out": true, "all_owned_absent": true}
+{"cleanup": "deadline", "owned": [[47179, 47178], [47178, 47178]], "states": ["", ""], "group_exists": false}
+{"fixture": "exited", "owned": [[47211, 47209], [47209, 47209]], "states": ["", ""], "group_exists": false, "elapsed": 0.252}
+{"event": "launcher_pass", "case": "exited", "exit_code": 0, "timed_out": false, "all_owned_absent": true}
+{"cleanup": "exited", "owned": [[47211, 47209], [47209, 47209]], "states": ["", ""], "group_exists": false}
+{"event": "original_interrupt_retained", "case": "automatic", "interrupt_count": 2, "error": "automatic caller interrupt 1"}
+{"fixture": "automatic", "owned": [[47218, 47218]], "states": [""], "group_exists": false, "elapsed": 0.435}
+{"event": "caller_pass", "case": "automatic", "all_owned_absent": true}
+{"cleanup": "automatic", "owned": [[47218, 47218]], "states": [""], "group_exists": false}
+{"event": "READY_FOR_TWO_TMUX_CTRL_C", "caller_pid": 47176, "helper_pid": 47232}
+^C^C{"event": "original_interrupt_retained", "case": "terminal", "interrupt_count": 2, "error": "terminal caller interrupt 1"}
+{"fixture": "terminal", "owned": [[47232, 47232]], "states": [""], "group_exists": false, "elapsed": 5.688}
+{"event": "caller_pass", "case": "terminal", "all_owned_absent": true}
+{"cleanup": "terminal", "owned": [[47232, 47232]], "states": [""], "group_exists": false}
+{"event": "timeout_retained_after_cleanup_interrupt", "code": "helper_timeout"}
+{"fixture": "helper-timeout", "owned": [[47403, 47403]], "states": [""], "group_exists": false, "elapsed": 0.315}
+{"cleanup": "helper-timeout", "owned": [[47403, 47403]], "states": [""], "group_exists": false}
+{"event": "MANUAL_PASS", "resource_warnings": 0, "resumed_stdout_exact": true}
+Tae-wons-MacBook-Pro%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

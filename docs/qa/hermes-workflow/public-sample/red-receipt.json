@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-09-14T16:34:59.789Z",
+  "scenario": "Missing public entrypoint and direct original links before implementation",
+  "browser": "152.0.7977.83",
+  "results": [
+    {
+      "target": "docs/hermes-demo/index.html",
+      "exists": false,
+      "failure": "page.goto: net::ERR_FILE_NOT_FOUND at file://<workspace>/docs/hermes-demo/index.html"
+    },
+    {
+      "target": "docs/hermes-demo/originals/c1.png",
+      "exists": false,
+      "failure": "page.goto: net::ERR_FILE_NOT_FOUND at file://<workspace>/docs/hermes-demo/originals/c1.png"
+    },
+    {
+      "target": "docs/hermes-demo/originals/c2.png",
+      "exists": false,
+      "failure": "page.goto: net::ERR_FILE_NOT_FOUND at file://<workspace>/docs/hermes-demo/originals/c2.png"
+    },
+    {
+      "target": "docs/hermes-demo/originals/c3.png",
+      "exists": false,
+      "failure": "page.goto: net::ERR_FILE_NOT_FOUND at file://<workspace>/docs/hermes-demo/originals/c3.png"
+    }
+  ]
+}

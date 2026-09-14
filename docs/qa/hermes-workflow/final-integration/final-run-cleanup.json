@@ -1,0 +1,11 @@
+{
+  "final_inputs": 209,
+  "source_inventory_and_bytes_unchanged": true,
+  "all_eight_exit_codes": 0,
+  "pytest_shell_pid": 7060,
+  "pytest_shell_absent": true,
+  "removed_entries": 7518,
+  "scratch_removed": "output/hermes-final-tests",
+  "scratch_absent": true,
+  "source_pin_sha256": "0a848006127f84d3c80f55aac1485550abccdcd734205601b4d488377cc22f3e"
+}

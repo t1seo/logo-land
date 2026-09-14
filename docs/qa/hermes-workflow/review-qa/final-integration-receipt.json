@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-14T18:06:52.784Z",
+  "authorization": "msg_38ec653e2ac0 FIXES_READY",
+  "pytest": {
+    "passed": 957,
+    "failed": 0,
+    "seconds": 295.48,
+    "exitCode": 0,
+    "executedBy": "coordinator",
+    "receipt": "../final-integration/final-pytest.txt"
+  },
+  "rootInputRecordsIndependentlyMatched": 209,
+  "publishedInstallMatchesPrivateReceipt": true,
+  "static": {
+    "ruff": "pass",
+    "formattedFiles": 490,
+    "typesErrors": 0,
+    "native311TypesErrors": 0,
+    "lockExitCode": 0
+  },
+  "sourceFrozenManifestMatches": true,
+  "ownFreshTests": {
+    "pytest": 14,
+    "node": 7,
+    "rerunAfterFreeze": false
+  },
+  "additionalModelCalls": 0
+}

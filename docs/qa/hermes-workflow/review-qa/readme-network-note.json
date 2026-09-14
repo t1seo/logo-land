@@ -1,0 +1,96 @@
+{
+  "allowedExternalConnections": 0,
+  "blockedBadgeRequests": [
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    },
+    {
+      "url": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+      "method": "GET",
+      "type": "image"
+    }
+  ],
+  "scope": "Existing README shield badge image references were intercepted and aborted by the isolated context. Gallery-specific receipt had zero HTTP(S) attempts. All 19 local README image assets loaded."
+}

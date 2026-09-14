@@ -1,0 +1,920 @@
+fa6c142 Improve logo craft workflow and refresh Logopia white showcase
+ .codex-plugin/plugin.json                          |    2 +-
+ README.ko.md                                       |   57 +-
+ README.md                                          |   57 +-
+ assets/logopia-game-title.png                      |  Bin 0 -> 1212471 bytes
+ assets/logopia-white-showcase.png                  |  Bin 0 -> 1420134 bytes
+ docs/README.ko.md                                  |   12 +-
+ docs/README.md                                     |   12 +-
+ docs/brand/2026-game-title/brief.json              |   38 +
+ docs/brand/2026-game-title/delivery/brand-guide.md |   94 ++
+ .../2026-game-title/delivery/logo-package.zip      |  Bin 0 -> 995516 bytes
+ docs/brand/2026-game-title/delivery/logo.png       |  Bin 0 -> 1212471 bytes
+ docs/brand/2026-game-title/delivery/manifest.json  |  181 ++++
+ docs/brand/2026-game-title/helper-prompt.json      |   12 +
+ docs/brand/2026-game-title/init.json               |   55 +
+ docs/brand/2026-game-title/prompt.txt              |   10 +
+ docs/brand/2026-game-title/receipt.json            |   18 +
+ docs/brand/2026-game-title/visual-review.json      |    9 +
+ docs/brand/README.ko.md                            |   26 +-
+ docs/brand/README.md                               |   26 +-
+ docs/gallery.ko.md                                 |   70 +-
+ docs/gallery.md                                    |   66 +-
+ docs/qa/logo-craft.md                              |   36 +
+ docs/research/logo-craft.md                        |   57 ++
+ docs/samples/README.ko.md                          |   30 +-
+ docs/samples/README.md                             |   30 +-
+ docs/showcase/2026-09-white/README.ko.md           |   40 +
+ docs/showcase/2026-09-white/README.md              |   40 +
+ docs/showcase/2026-09-white/background-checks.json | 1053 ++++++++++++++++++++
+ docs/showcase/2026-09-white/catalog.json           |  288 ++++++
+ .../showcase/2026-09-white/images/01-luma-a-v1.png |  Bin 0 -> 806955 bytes
+ .../showcase/2026-09-white/images/01-luma-a-v2.png |  Bin 0 -> 798465 bytes
+ docs/showcase/2026-09-white/images/01-luma.png     |  Bin 0 -> 798465 bytes
+ docs/showcase/2026-09-white/images/02-loop-lab.png |  Bin 0 -> 729678 bytes
+ docs/showcase/2026-09-white/images/03-goyo.png     |  Bin 0 -> 740692 bytes
+ .../2026-09-white/images/04-bread-bloom-a-v1.png   |  Bin 0 -> 926097 bytes
+ .../2026-09-white/images/04-bread-bloom-a-v2.png   |  Bin 0 -> 833781 bytes
+ .../2026-09-white/images/04-bread-bloom.png        |  Bin 0 -> 833781 bytes
+ docs/showcase/2026-09-white/images/05-kite.png     |  Bin 0 -> 629706 bytes
+ docs/showcase/2026-09-white/images/06-miso.png     |  Bin 0 -> 969040 bytes
+ .../showcase/2026-09-white/images/07-northline.png |  Bin 0 -> 677160 bytes
+ docs/showcase/2026-09-white/images/08-mulgyeol.png |  Bin 0 -> 752277 bytes
+ docs/showcase/2026-09-white/images/09-fern.png     |  Bin 0 -> 853222 bytes
+ .../2026-09-white/images/10-nova-notes.png         |  Bin 0 -> 712661 bytes
+ .../2026-09-white/images/11-reading-owl.png        |  Bin 0 -> 939745 bytes
+ .../2026-09-white/images/12-weather-a-v1.png       |  Bin 0 -> 732656 bytes
+ .../2026-09-white/images/12-weather-a-v2.png       |  Bin 0 -> 716106 bytes
+ docs/showcase/2026-09-white/images/12-weather.png  |  Bin 0 -> 716106 bytes
+ docs/showcase/2026-09-white/images/13-flow.png     |  Bin 0 -> 758554 bytes
+ .../2026-09-white/images/14-notes-a-v1.png         |  Bin 0 -> 782362 bytes
+ .../2026-09-white/images/14-notes-a-v2.png         |  Bin 0 -> 772414 bytes
+ docs/showcase/2026-09-white/images/14-notes.png    |  Bin 0 -> 772414 bytes
+ docs/showcase/2026-09-white/images/15-cloud.png    |  Bin 0 -> 1103327 bytes
+ docs/showcase/2026-09-white/images/16-sprout.png   |  Bin 0 -> 669198 bytes
+ docs/showcase/2026-09-white/index.html             |  136 +++
+ docs/showcase/2026-09-white/manifest.json          |  332 ++++++
+ .../2026-09-white/sources/01-luma/brief.json       |   32 +
+ .../sources/01-luma/helper-prompt.json             |   12 +
+ .../2026-09-white/sources/01-luma/init.json        |   49 +
+ .../sources/01-luma/initial-review.json            |    7 +
+ .../2026-09-white/sources/01-luma/prompt.txt       |   10 +
+ .../2026-09-white/sources/01-luma/receipt.json     |   16 +
+ .../01-luma/revisions/a-v2/helper-prompt.json      |   13 +
+ .../01-luma/revisions/a-v2/parent-import.json      |   72 ++
+ .../sources/01-luma/revisions/a-v2/prompt.txt      |   13 +
+ .../sources/01-luma/revisions/a-v2/receipt.json    |   17 +
+ .../sources/01-luma/visual-review.json             |    9 +
+ .../2026-09-white/sources/02-loop-lab/brief.json   |   32 +
+ .../sources/02-loop-lab/helper-prompt.json         |   12 +
+ .../2026-09-white/sources/02-loop-lab/init.json    |   49 +
+ .../2026-09-white/sources/02-loop-lab/prompt.txt   |   10 +
+ .../2026-09-white/sources/02-loop-lab/receipt.json |   16 +
+ .../sources/02-loop-lab/visual-review.json         |    9 +
+ .../2026-09-white/sources/03-goyo/brief.json       |   32 +
+ .../sources/03-goyo/helper-prompt.json             |   12 +
+ .../2026-09-white/sources/03-goyo/init.json        |   49 +
+ .../2026-09-white/sources/03-goyo/prompt.txt       |   10 +
+ .../2026-09-white/sources/03-goyo/receipt.json     |   16 +
+ .../sources/03-goyo/visual-review.json             |    9 +
+ .../sources/04-bread-bloom/brief.json              |   32 +
+ .../sources/04-bread-bloom/helper-prompt.json      |   12 +
+ .../2026-09-white/sources/04-bread-bloom/init.json |   49 +
+ .../sources/04-bread-bloom/initial-review.json     |    7 +
+ .../sources/04-bread-bloom/prompt.txt              |   10 +
+ .../sources/04-bread-bloom/receipt.json            |   16 +
+ .../revisions/a-v2/helper-prompt.json              |   13 +
+ .../revisions/a-v2/parent-import.json              |   72 ++
+ .../04-bread-bloom/revisions/a-v2/prompt.txt       |   13 +
+ .../04-bread-bloom/revisions/a-v2/receipt.json     |   17 +
+ .../sources/04-bread-bloom/visual-review.json      |    9 +
+ .../2026-09-white/sources/05-kite/brief.json       |   32 +
+ .../sources/05-kite/helper-prompt.json             |   12 +
+ .../2026-09-white/sources/05-kite/init.json        |   49 +
+ .../2026-09-white/sources/05-kite/prompt.txt       |   10 +
+ .../2026-09-white/sources/05-kite/receipt.json     |   16 +
+ .../sources/05-kite/visual-review.json             |    9 +
+ .../2026-09-white/sources/06-miso/brief.json       |   32 +
+ .../sources/06-miso/helper-prompt.json             |   12 +
+ .../2026-09-white/sources/06-miso/init.json        |   49 +
+ .../2026-09-white/sources/06-miso/prompt.txt       |   10 +
+ .../2026-09-white/sources/06-miso/receipt.json     |   16 +
+ .../sources/06-miso/visual-review.json             |    9 +
+ .../2026-09-white/sources/07-northline/brief.json  |   32 +
+ .../sources/07-northline/helper-prompt.json        |   12 +
+ .../2026-09-white/sources/07-northline/init.json   |   49 +
+ .../2026-09-white/sources/07-northline/prompt.txt  |   10 +
+ .../sources/07-northline/receipt.json              |   16 +
+ .../sources/07-northline/visual-review.json        |    9 +
+ .../2026-09-white/sources/08-mulgyeol/brief.json   |   32 +
+ .../sources/08-mulgyeol/helper-prompt.json         |   12 +
+ .../2026-09-white/sources/08-mulgyeol/init.json    |   49 +
+ .../2026-09-white/sources/08-mulgyeol/prompt.txt   |   10 +
+ .../2026-09-white/sources/08-mulgyeol/receipt.json |   16 +
+ .../sources/08-mulgyeol/visual-review.json         |    9 +
+ .../2026-09-white/sources/09-fern/brief.json       |   32 +
+ .../sources/09-fern/helper-prompt.json             |   12 +
+ .../2026-09-white/sources/09-fern/init.json        |   49 +
+ .../2026-09-white/sources/09-fern/prompt.txt       |   10 +
+ .../2026-09-white/sources/09-fern/receipt.json     |   16 +
+ .../sources/09-fern/visual-review.json             |    9 +
+ .../2026-09-white/sources/10-nova-notes/brief.json |   32 +
+ .../sources/10-nova-notes/helper-prompt.json       |   12 +
+ .../2026-09-white/sources/10-nova-notes/init.json  |   49 +
+ .../2026-09-white/sources/10-nova-notes/prompt.txt |   10 +
+ .../sources/10-nova-notes/receipt.json             |   16 +
+ .../sources/10-nova-notes/visual-review.json       |    9 +
+ .../sources/11-reading-owl/brief.json              |   38 +
+ .../sources/11-reading-owl/helper-prompt.json      |   19 +
+ .../2026-09-white/sources/11-reading-owl/init.json |   55 +
+ .../sources/11-reading-owl/prompt.txt              |    5 +
+ .../sources/11-reading-owl/receipt.json            |   16 +
+ .../sources/11-reading-owl/visual-review.json      |    9 +
+ .../2026-09-white/sources/12-weather/brief.json    |   38 +
+ .../sources/12-weather/helper-prompt.json          |   19 +
+ .../2026-09-white/sources/12-weather/init.json     |   55 +
+ .../sources/12-weather/initial-review.json         |    7 +
+ .../2026-09-white/sources/12-weather/prompt.txt    |    5 +
+ .../2026-09-white/sources/12-weather/receipt.json  |   16 +
+ .../12-weather/revisions/a-v2/helper-prompt.json   |   20 +
+ .../sources/12-weather/revisions/a-v2/prompt.txt   |    5 +
+ .../sources/12-weather/revisions/a-v2/receipt.json |   17 +
+ .../sources/12-weather/visual-review.json          |    9 +
+ .../2026-09-white/sources/13-flow/brief.json       |   38 +
+ .../sources/13-flow/helper-prompt.json             |   19 +
+ .../2026-09-white/sources/13-flow/init.json        |   55 +
+ .../2026-09-white/sources/13-flow/prompt.txt       |    5 +
+ .../2026-09-white/sources/13-flow/receipt.json     |   16 +
+ .../sources/13-flow/visual-review.json             |    9 +
+ .../2026-09-white/sources/14-notes/brief.json      |   38 +
+ .../sources/14-notes/helper-prompt.json            |   19 +
+ .../2026-09-white/sources/14-notes/init.json       |   55 +
+ .../sources/14-notes/initial-review.json           |    7 +
+ .../2026-09-white/sources/14-notes/prompt.txt      |    5 +
+ .../2026-09-white/sources/14-notes/receipt.json    |   16 +
+ .../14-notes/revisions/a-v2/helper-prompt.json     |   20 +
+ .../14-notes/revisions/a-v2/parent-import.json     |   84 ++
+ .../sources/14-notes/revisions/a-v2/prompt.txt     |    7 +
+ .../sources/14-notes/revisions/a-v2/receipt.json   |   17 +
+ .../sources/14-notes/visual-review.json            |    9 +
+ .../2026-09-white/sources/15-cloud/brief.json      |   38 +
+ .../sources/15-cloud/helper-prompt.json            |   19 +
+ .../2026-09-white/sources/15-cloud/init.json       |   55 +
+ .../2026-09-white/sources/15-cloud/prompt.txt      |    5 +
+ .../2026-09-white/sources/15-cloud/receipt.json    |   16 +
+ .../sources/15-cloud/visual-review.json            |    9 +
+ .../2026-09-white/sources/16-sprout/brief.json     |   38 +
+ .../sources/16-sprout/helper-prompt.json           |   19 +
+ .../2026-09-white/sources/16-sprout/init.json      |   55 +
+ .../2026-09-white/sources/16-sprout/prompt.txt     |    5 +
+ .../2026-09-white/sources/16-sprout/receipt.json   |   16 +
+ .../sources/16-sprout/visual-review.json           |    9 +
+ docs/showcase/2026-09-white/visual-review.json     |  165 +++
+ plans/logopia-logo-craft.md                        |   41 +
+ skills/logo-land/SKILL.md                          |    8 +-
+ skills/logo-land/references/app-icons.md           |   14 +
+ skills/logo-land/references/delivery-checks.md     |   19 +
+ skills/logo-land/references/game-title-logos.md    |   83 ++
+ skills/logo-land/references/lettering.md           |   13 +-
+ skills/logo-land/references/logo-craft.md          |  112 +++
+ skills/logo-land/references/logo-directions.md     |   11 +-
+ 179 files changed, 5635 insertions(+), 178 deletions(-)
+49e9ae7 feat: compare logo projects and show samples directly
+ .codex-plugin/plugin.json                          |    6 +-
+ CHANGELOG.md                                       |   14 +-
+ README.ko.md                                       |   40 +-
+ README.md                                          |   40 +-
+ docs/README.ko.md                                  |    6 +-
+ docs/README.md                                     |    6 +-
+ docs/app-icons/README.ko.md                        |    2 +
+ docs/app-icons/README.md                           |    2 +
+ docs/brand/README.ko.md                            |    2 +
+ docs/brand/README.md                               |    2 +
+ docs/colors/README.ko.md                           |    2 +
+ docs/colors/README.md                              |    2 +
+ docs/gallery-workflow/README.md                    |   10 +
+ docs/gallery-workflow/comparison/images/001.png    |  Bin 0 -> 1058156 bytes
+ docs/gallery-workflow/comparison/images/002.png    |  Bin 0 -> 941249 bytes
+ docs/gallery-workflow/comparison/images/003.png    |  Bin 0 -> 904317 bytes
+ docs/gallery-workflow/comparison/images/004.png    |  Bin 0 -> 898003 bytes
+ docs/gallery-workflow/comparison/images/005.png    |  Bin 0 -> 916436 bytes
+ docs/gallery-workflow/comparison/images/006.png    |  Bin 0 -> 1228498 bytes
+ docs/gallery-workflow/comparison/images/007.png    |  Bin 0 -> 1225022 bytes
+ docs/gallery-workflow/comparison/images/008.png    |  Bin 0 -> 850531 bytes
+ docs/gallery-workflow/comparison/index.html        |  171 +
+ docs/gallery-workflow/comparison/manifest.json     |  289 +
+ docs/gallery-workflow/comparison/prompts/001.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/002.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/003.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/004.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/005.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/006.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/007.txt   |    4 +
+ docs/gallery-workflow/comparison/prompts/008.txt   |    7 +
+ docs/gallery-workflow/images/common-v1.png         |  Bin 0 -> 850531 bytes
+ docs/gallery-workflow/images/drip-v1.png           |  Bin 0 -> 941249 bytes
+ docs/gallery-workflow/images/leaflet-v1.png        |  Bin 0 -> 1058156 bytes
+ docs/gallery-workflow/images/relay-v1.png          |  Bin 0 -> 904317 bytes
+ docs/gallery-workflow/images/relay-v2.png          |  Bin 0 -> 898003 bytes
+ docs/gallery-workflow/images/sprig-v1.png          |  Bin 0 -> 1228498 bytes
+ docs/gallery-workflow/images/sprig-v2.png          |  Bin 0 -> 1225022 bytes
+ docs/gallery-workflow/images/teum-v1.png           |  Bin 0 -> 916436 bytes
+ docs/gallery-workflow/inputs/common-brief.json     |   40 +
+ docs/gallery-workflow/inputs/common-concept.txt    |    1 +
+ docs/gallery-workflow/inputs/drip-brief.json       |   37 +
+ docs/gallery-workflow/inputs/drip-concept.txt      |    1 +
+ .../inputs/initial-observations.json               |   38 +
+ docs/gallery-workflow/inputs/leaflet-brief.json    |   38 +
+ docs/gallery-workflow/inputs/leaflet-concept.txt   |    1 +
+ docs/gallery-workflow/inputs/relay-brief.json      |   38 +
+ docs/gallery-workflow/inputs/relay-concept.txt     |    1 +
+ .../inputs/relay-edit-decision.json                |    9 +
+ docs/gallery-workflow/inputs/selection-final.json  |   77 +
+ .../inputs/selection-initial-r1.json               |   59 +
+ docs/gallery-workflow/inputs/sprig-brief.json      |   37 +
+ docs/gallery-workflow/inputs/sprig-concept.txt     |    1 +
+ .../inputs/sprig-edit-decision.json                |    9 +
+ docs/gallery-workflow/inputs/teum-brief.json       |   37 +
+ docs/gallery-workflow/inputs/teum-concept.txt      |    1 +
+ docs/gallery-workflow/prompts/common-v1.txt        |    7 +
+ docs/gallery-workflow/prompts/drip-v1.txt          |    4 +
+ docs/gallery-workflow/prompts/leaflet-v1.txt       |    4 +
+ docs/gallery-workflow/prompts/relay-v1.txt         |    4 +
+ docs/gallery-workflow/prompts/relay-v2.txt         |    4 +
+ docs/gallery-workflow/prompts/sprig-v1.txt         |    4 +
+ docs/gallery-workflow/prompts/sprig-v2.txt         |    4 +
+ docs/gallery-workflow/prompts/teum-v1.txt          |    4 +
+ .../receipts/adversarial-checks.json               |   80 +
+ docs/gallery-workflow/receipts/baseline.json       |  299 +
+ docs/gallery-workflow/receipts/cleanup.json        |   19 +
+ docs/gallery-workflow/receipts/common-v1.json      |   64 +
+ .../receipts/comparison-publication.json           |  108 +
+ docs/gallery-workflow/receipts/drip-v1.json        |   63 +
+ docs/gallery-workflow/receipts/final-show.json     |   38 +
+ .../receipts/http-verification.json                |  156 +
+ docs/gallery-workflow/receipts/leaflet-v1.json     |   63 +
+ .../receipts/portable-integrity.json               |   98 +
+ docs/gallery-workflow/receipts/relay-v1.json       |   63 +
+ docs/gallery-workflow/receipts/relay-v2.json       |   65 +
+ docs/gallery-workflow/receipts/sprig-v1.json       |   63 +
+ docs/gallery-workflow/receipts/sprig-v2.json       |   65 +
+ docs/gallery-workflow/receipts/teum-v1.json        |   63 +
+ docs/gallery-workflow/samples.json                 |  197 +
+ docs/gallery-workflow/states/README.md             |    7 +
+ docs/gallery-workflow/states/common-r1.json        |   93 +
+ docs/gallery-workflow/states/drip-r1.json          |   91 +
+ docs/gallery-workflow/states/leaflet-r1.json       |   92 +
+ docs/gallery-workflow/states/relay-r2.json         |  122 +
+ docs/gallery-workflow/states/sprig-r2.json         |  121 +
+ docs/gallery-workflow/states/teum-r1.json          |   91 +
+ docs/gallery.ko.md                                 |  398 ++
+ docs/gallery.md                                    |  398 ++
+ docs/installation.ko.md                            |    4 +-
+ docs/installation.md                               |    4 +-
+ docs/qa/app-icons/core-fixtures/prompt-edit.txt    |    3 +-
+ docs/qa/gallery-workflow/browser-restoration.json  |  830 +++
+ docs/qa/gallery-workflow/browser-restoration.md    |  114 +
+ docs/qa/gallery-workflow/chrome.md                 |  456 ++
+ .../chrome/01-comparison-initial.jpg               |  Bin 0 -> 114937 bytes
+ .../qa/gallery-workflow/chrome/02-brand-filter.jpg |  Bin 0 -> 101333 bytes
+ .../chrome/03-file-png-opens-original.jpg          |  Bin 0 -> 87712 bytes
+ .../chrome/05-first-back-filter-mismatch.jpg       |  Bin 0 -> 169170 bytes
+ .../chrome/06-back-filter-mismatch-top.jpg         |  Bin 0 -> 115838 bytes
+ .../qa/gallery-workflow/chrome/07-copy-outcome.jpg |  Bin 0 -> 148292 bytes
+ .../chrome/08-owned-copy-probe.jpg                 |  Bin 0 -> 91757 bytes
+ .../chrome/09-readme-en-desktop.jpg                |  Bin 0 -> 103157 bytes
+ docs/qa/gallery-workflow/chrome/10-original-1.jpg  |  Bin 0 -> 71327 bytes
+ docs/qa/gallery-workflow/chrome/10-original-2.jpg  |  Bin 0 -> 86561 bytes
+ docs/qa/gallery-workflow/chrome/10-original-3.jpg  |  Bin 0 -> 91616 bytes
+ docs/qa/gallery-workflow/chrome/10-original-4.jpg  |  Bin 0 -> 83409 bytes
+ docs/qa/gallery-workflow/chrome/10-original-5.jpg  |  Bin 0 -> 64872 bytes
+ docs/qa/gallery-workflow/chrome/10-original-6.jpg  |  Bin 0 -> 67190 bytes
+ .../gallery-workflow/chrome/11-gallery-en-top.jpg  |  Bin 0 -> 123127 bytes
+ .../chrome/12-gallery-en-refinements.jpg           |  Bin 0 -> 104406 bytes
+ .../gallery-workflow/chrome/13-gallery-ko-top.jpg  |  Bin 0 -> 114401 bytes
+ .../chrome/14-readme-ko-desktop-initial.jpg        |  Bin 0 -> 101982 bytes
+ .../chrome/15-gallery-ko-narrow-top.jpg            |  Bin 0 -> 155106 bytes
+ .../chrome/16-gallery-ko-narrow-content.jpg        |  Bin 0 -> 103628 bytes
+ .../chrome/17-gallery-en-narrow-top.jpg            |  Bin 0 -> 152319 bytes
+ .../chrome/18-gallery-en-narrow-content.jpg        |  Bin 0 -> 73484 bytes
+ .../chrome/19-app-artwork-seven.jpg                |  Bin 0 -> 115558 bytes
+ .../qa/gallery-workflow/chrome/20-abstract-two.jpg |  Bin 0 -> 105041 bytes
+ .../chrome/21-filtered-child-copy.jpg              |  Bin 0 -> 167903 bytes
+ .../chrome/22-filtered-child-copy-probe.jpg        |  Bin 0 -> 118255 bytes
+ docs/qa/gallery-workflow/chrome/23-soft3d-two.jpg  |  Bin 0 -> 104063 bytes
+ .../gallery-workflow/chrome/24-app-home-light.jpg  |  Bin 0 -> 101530 bytes
+ .../gallery-workflow/chrome/25-app-home-dark.jpg   |  Bin 0 -> 106261 bytes
+ .../gallery-workflow/chrome/26-web-header-dark.jpg |  Bin 0 -> 106465 bytes
+ .../qa/gallery-workflow/chrome/27-favicon-dark.jpg |  Bin 0 -> 106171 bytes
+ docs/qa/gallery-workflow/chrome/28-sizes-dark.jpg  |  Bin 0 -> 149041 bytes
+ .../gallery-workflow/chrome/29-combined-empty.jpg  |  Bin 0 -> 95842 bytes
+ .../chrome/30-reset-eight-defaults.jpg             |  Bin 0 -> 114478 bytes
+ .../chrome/31-hostile-note-inert.jpg               |  Bin 0 -> 157321 bytes
+ .../chrome/32-readme-en-final-desktop.jpg          |  Bin 0 -> 103097 bytes
+ .../chrome/33-readme-ko-final-desktop.jpg          |  Bin 0 -> 103211 bytes
+ .../chrome/34-readme-ko-credits.jpg                |  Bin 0 -> 131596 bytes
+ .../chrome/35-readme-ko-narrow-top.jpg             |  Bin 0 -> 120546 bytes
+ .../chrome/36-readme-ko-narrow-samples.jpg         |  Bin 0 -> 119733 bytes
+ .../chrome/37-readme-ko-narrow-install.jpg         |  Bin 0 -> 128201 bytes
+ .../chrome/38-readme-en-narrow-top.jpg             |  Bin 0 -> 112540 bytes
+ .../chrome/39-readme-en-narrow-samples.jpg         |  Bin 0 -> 123644 bytes
+ .../chrome/40-readme-en-narrow-install.jpg         |  Bin 0 -> 132233 bytes
+ .../chrome/41-readme-en-credits.jpg                |  Bin 0 -> 142595 bytes
+ .../gallery-workflow/chrome/42-gallery-brands.jpg  |  Bin 0 -> 123715 bytes
+ .../gallery-workflow/chrome/43-gallery-icons.jpg   |  Bin 0 -> 123897 bytes
+ .../chrome/44-fixed-back-restoration.jpg           |  Bin 0 -> 104895 bytes
+ .../chrome/45-fixed-back-restoration-top.jpg       |  Bin 0 -> 104553 bytes
+ .../chrome/46-fixed-reload-controls.jpg            |  Bin 0 -> 168696 bytes
+ .../chrome/47-gallery-brands-anchor-fixed.jpg      |  Bin 0 -> 68641 bytes
+ .../chrome/48-gallery-icons-anchor-fixed.jpg       |  Bin 0 -> 104167 bytes
+ .../chrome/49-gallery-color-statuses.jpg           |  Bin 0 -> 114858 bytes
+ .../chrome/50-gallery-identity.jpg                 |  Bin 0 -> 140914 bytes
+ .../gallery-workflow/chrome/51-owned-downloads.jpg |  Bin 0 -> 65182 bytes
+ .../chrome/52-fixed-child-back-context.jpg         |  Bin 0 -> 108072 bytes
+ .../chrome/53-final-file-gallery.jpg               |  Bin 0 -> 115421 bytes
+ docs/qa/gallery-workflow/comparison.md             |  138 +
+ docs/qa/gallery-workflow/continuity.md             |  213 +
+ docs/qa/gallery-workflow/docs.md                   |  465 ++
+ docs/qa/gallery-workflow/final-bindings.json       |  340 +
+ .../qa/gallery-workflow/installation-followup.json | 4267 ++++++++++++
+ docs/qa/gallery-workflow/installation-followup.md  |   78 +
+ docs/qa/gallery-workflow/installation.json         | 5432 ++++++++++++++++
+ docs/qa/gallery-workflow/installation.md           |   82 +
+ docs/qa/gallery-workflow/integration.json          | 1132 ++++
+ docs/qa/gallery-workflow/integration.md            |  117 +
+ docs/qa/gallery-workflow/native-samples.md         |  151 +
+ docs/qa/gallery-workflow/readme-baseline.md        |   14 +
+ docs/qa/gallery-workflow/readme-layout-fix.md      |  445 ++
+ docs/qa/gallery-workflow/review-code.json          | 4392 +++++++++++++
+ docs/qa/gallery-workflow/review-code.md            |   91 +
+ docs/qa/gallery-workflow/review-context.json       | 3039 +++++++++
+ docs/qa/gallery-workflow/review-context.md         |  100 +
+ docs/qa/gallery-workflow/review-goal.json          | 6817 ++++++++++++++++++++
+ docs/qa/gallery-workflow/review-goal.md            |  112 +
+ docs/qa/gallery-workflow/review-qa.json            | 6048 +++++++++++++++++
+ docs/qa/gallery-workflow/review-qa.md              |  170 +
+ docs/qa/gallery-workflow/review-security.json      | 4847 ++++++++++++++
+ docs/qa/gallery-workflow/review-security.md        |   88 +
+ docs/qa/gallery-workflow/review-summary.md         |   33 +
+ docs/releases.md                                   |    4 +-
+ docs/samples/README.ko.md                          |    2 +
+ docs/samples/README.md                             |    2 +
+ plans/logo-land-next-improvements.md               |  170 +
+ pyproject.toml                                     |    2 +-
+ skills/logo-land/SKILL.md                          |    6 +-
+ .../assets/comparison-gallery.template.html        |  131 +
+ skills/logo-land/references/app-icons.md           |   25 +
+ skills/logo-land/references/comparison-workflow.md |  105 +
+ skills/logo-land/references/delivery-checks.md     |   16 +
+ skills/logo-land/references/project-files.md       |   21 +
+ skills/logo-land/references/typography.md          |   13 +
+ .../scripts/logo_helper/comparison_cards.py        |   99 +
+ .../scripts/logo_helper/comparison_cli.py          |   30 +
+ .../scripts/logo_helper/comparison_gallery.py      |   89 +
+ .../scripts/logo_helper/comparison_models.py       |   76 +
+ skills/logo-land/scripts/logo_helper/intent.py     |    4 +-
+ skills/logo-land/scripts/logo_project.py           |    2 +
+ tests/comparison_browser_restoration.test.mjs      |  163 +
+ tests/test_app_icon_compatibility.py               |    6 +-
+ tests/test_comparison_baseline.py                  |   32 +
+ tests/test_comparison_cli.py                       |   35 +
+ tests/test_comparison_filesystem.py                |  137 +
+ tests/test_comparison_inputs.py                    |  108 +
+ tests/test_comparison_limits.py                    |   64 +
+ tests/test_comparison_markup.py                    |  129 +
+ tests/test_comparison_publication.py               |  142 +
+ tests/test_comparison_support.py                   |   70 +
+ tests/test_lockup_continuity.py                    |  215 +
+ uv.lock                                            |    2 +-
+ 206 files changed, 45872 insertions(+), 56 deletions(-)
+6d946e6 feat: add app icon workflows and simplify bilingual documentation
+ .codex-plugin/plugin.json                          |    14 +-
+ CHANGELOG.md                                       |    31 +-
+ README.ko.md                                       |   247 +-
+ README.md                                          |   247 +-
+ THIRD_PARTY_NOTICES.md                             |    11 +-
+ assets/logo-land-studio.png                        |   Bin 0 -> 835901 bytes
+ docs/README.ko.md                                  |    33 +
+ docs/README.md                                     |    73 +-
+ .../images/abstract-quality-v1.png                 |   Bin 0 -> 944574 bytes
+ docs/app-icons-quality-v1/images/abstract.png      |   Bin 0 -> 961065 bytes
+ docs/app-icons-quality-v1/images/ip-a1.png         |   Bin 0 -> 1060303 bytes
+ docs/app-icons-quality-v1/images/ip-a2.png         |   Bin 0 -> 1049136 bytes
+ docs/app-icons-quality-v1/images/ip-b1.png         |   Bin 0 -> 1083251 bytes
+ docs/app-icons-quality-v1/images/ip-b2.png         |   Bin 0 -> 1039677 bytes
+ docs/app-icons-quality-v1/images/ip-c1.png         |   Bin 0 -> 1096895 bytes
+ docs/app-icons-quality-v1/images/ip-c2.png         |   Bin 0 -> 1089169 bytes
+ .../images/monogram-quality-v1.png                 |   Bin 0 -> 855003 bytes
+ docs/app-icons-quality-v1/images/monogram.png      |   Bin 0 -> 832716 bytes
+ .../images/pictogram-quality-v1.png                |   Bin 0 -> 924939 bytes
+ docs/app-icons-quality-v1/images/pictogram.png     |   Bin 0 -> 928736 bytes
+ .../images/pixel-art-quality-v1.png                |   Bin 0 -> 924570 bytes
+ docs/app-icons-quality-v1/images/pixel-art.png     |   Bin 0 -> 946180 bytes
+ .../images/soft-3d-quality-v1.png                  |   Bin 0 -> 1498775 bytes
+ docs/app-icons-quality-v1/images/soft-3d.png       |   Bin 0 -> 1526612 bytes
+ docs/app-icons-quality-v1/index.html               |   130 +
+ docs/app-icons-quality-v1/manifest.json            |   265 +
+ .../prompts/abstract-quality-v1.txt                |     4 +
+ docs/app-icons-quality-v1/prompts/abstract.txt     |     4 +
+ docs/app-icons-quality-v1/prompts/ip-a1.txt        |     4 +
+ docs/app-icons-quality-v1/prompts/ip-a2.txt        |     4 +
+ docs/app-icons-quality-v1/prompts/ip-b1.txt        |     4 +
+ docs/app-icons-quality-v1/prompts/ip-b2.txt        |     4 +
+ docs/app-icons-quality-v1/prompts/ip-c1.txt        |     4 +
+ docs/app-icons-quality-v1/prompts/ip-c2.txt        |     4 +
+ .../prompts/monogram-quality-v1.txt                |     4 +
+ docs/app-icons-quality-v1/prompts/monogram.txt     |     4 +
+ .../prompts/pictogram-quality-v1.txt               |     4 +
+ docs/app-icons-quality-v1/prompts/pictogram.txt    |     4 +
+ .../prompts/pixel-art-quality-v1.txt               |     4 +
+ docs/app-icons-quality-v1/prompts/pixel-art.txt    |     4 +
+ .../prompts/soft-3d-quality-v1.txt                 |     4 +
+ docs/app-icons-quality-v1/prompts/soft-3d.txt      |     4 +
+ docs/app-icons/README.ko.md                        |    38 +
+ docs/app-icons/README.md                           |    38 +
+ docs/app-icons/images/abstract.png                 |   Bin 0 -> 961065 bytes
+ docs/app-icons/images/ip-a1.png                    |   Bin 0 -> 1060303 bytes
+ docs/app-icons/images/ip-a2.png                    |   Bin 0 -> 1049136 bytes
+ docs/app-icons/images/ip-b1.png                    |   Bin 0 -> 1083251 bytes
+ docs/app-icons/images/ip-b2.png                    |   Bin 0 -> 1039677 bytes
+ docs/app-icons/images/ip-c1.png                    |   Bin 0 -> 1096895 bytes
+ docs/app-icons/images/ip-c2.png                    |   Bin 0 -> 1089169 bytes
+ docs/app-icons/images/monogram.png                 |   Bin 0 -> 832716 bytes
+ docs/app-icons/images/pictogram.png                |   Bin 0 -> 928736 bytes
+ docs/app-icons/images/pixel-art.png                |   Bin 0 -> 946180 bytes
+ docs/app-icons/images/soft-3d.png                  |   Bin 0 -> 1526612 bytes
+ docs/app-icons/index.html                          |   130 +
+ docs/app-icons/manifest.json                       |   185 +
+ docs/app-icons/prompts/abstract.txt                |     4 +
+ docs/app-icons/prompts/ip-a1.txt                   |     4 +
+ docs/app-icons/prompts/ip-a2.txt                   |     4 +
+ docs/app-icons/prompts/ip-b1.txt                   |     4 +
+ docs/app-icons/prompts/ip-b2.txt                   |     4 +
+ docs/app-icons/prompts/ip-c1.txt                   |     4 +
+ docs/app-icons/prompts/ip-c2.txt                   |     4 +
+ docs/app-icons/prompts/monogram.txt                |     4 +
+ docs/app-icons/prompts/pictogram.txt               |     4 +
+ docs/app-icons/prompts/pixel-art.txt               |     4 +
+ docs/app-icons/prompts/soft-3d.txt                 |     4 +
+ docs/app-icons/samples/abstract.ko.md              |    18 +
+ docs/app-icons/samples/abstract.md                 |    18 +
+ docs/app-icons/samples/ip-a1.ko.md                 |    21 +
+ docs/app-icons/samples/ip-a1.md                    |    21 +
+ docs/app-icons/samples/ip-a2.ko.md                 |    21 +
+ docs/app-icons/samples/ip-a2.md                    |    21 +
+ docs/app-icons/samples/ip-b1.ko.md                 |    21 +
+ docs/app-icons/samples/ip-b1.md                    |    21 +
+ docs/app-icons/samples/ip-b2.ko.md                 |    21 +
+ docs/app-icons/samples/ip-b2.md                    |    21 +
+ docs/app-icons/samples/ip-c1.ko.md                 |    21 +
+ docs/app-icons/samples/ip-c1.md                    |    21 +
+ docs/app-icons/samples/ip-c2.ko.md                 |    21 +
+ docs/app-icons/samples/ip-c2.md                    |    21 +
+ docs/app-icons/samples/monogram.ko.md              |    18 +
+ docs/app-icons/samples/monogram.md                 |    18 +
+ docs/app-icons/samples/pictogram.ko.md             |    18 +
+ docs/app-icons/samples/pictogram.md                |    18 +
+ docs/app-icons/samples/pixel-art.ko.md             |    18 +
+ docs/app-icons/samples/pixel-art.md                |    18 +
+ docs/app-icons/samples/soft-3d.ko.md               |    18 +
+ docs/app-icons/samples/soft-3d.md                  |    18 +
+ docs/archive.md                                    |    52 +
+ docs/brand/2026-identity/adversarial.json          |    67 +
+ docs/brand/2026-identity/baseline.json             |   457 +
+ docs/brand/2026-identity/brief.json                |    46 +
+ docs/brand/2026-identity/cleanup.json              |    20 +
+ docs/brand/2026-identity/color-report.json         |   200 +
+ docs/brand/2026-identity/commands.json             |   468 +
+ docs/brand/2026-identity/delivery-checks.json      |    20 +
+ docs/brand/2026-identity/delivery/brand-guide.md   |   126 +
+ docs/brand/2026-identity/delivery/logo-package.zip |   Bin 0 -> 832310 bytes
+ docs/brand/2026-identity/delivery/logo.png         |   Bin 0 -> 835901 bytes
+ docs/brand/2026-identity/delivery/manifest.json    |   360 +
+ docs/brand/2026-identity/helper-provenance.json    |    76 +
+ docs/brand/2026-identity/http-fixed.json           |    30 +
+ docs/brand/2026-identity/icon-preservation.json    |    68 +
+ .../brand/2026-identity/legacy-readme.original.txt |    25 +
+ docs/brand/2026-identity/lockup.json               |     7 +
+ docs/brand/2026-identity/native-receipt.json       |    55 +
+ docs/brand/2026-identity/palette.json              |    31 +
+ docs/brand/2026-identity/preview.html              |    56 +
+ docs/brand/2026-identity/prompt-response.json      |    18 +
+ docs/brand/2026-identity/prompt.txt                |     8 +
+ docs/brand/2026-identity/quality-checks.json       |    57 +
+ docs/brand/2026-identity/review.json               |     9 +
+ docs/brand/2026-identity/session.json              |   546 +
+ docs/brand/2026-identity/verification.json         |    48 +
+ docs/brand/README.ko.md                            |    20 +
+ docs/brand/README.md                               |    27 +-
+ docs/brand/legacy.md                               |    31 +
+ docs/colors/README.ko.md                           |    20 +
+ docs/colors/README.md                              |    20 +
+ docs/colors/projects/bamgyeol/README.ko.md         |    19 +
+ docs/colors/projects/bamgyeol/README.md            |    19 +
+ docs/colors/projects/fieldnote/README.ko.md        |    19 +
+ docs/colors/projects/fieldnote/README.md           |    19 +
+ docs/colors/projects/grove/README.ko.md            |    31 +
+ docs/colors/projects/grove/README.md               |    31 +
+ docs/colors/projects/northline/README.ko.md        |    19 +
+ docs/colors/projects/northline/README.md           |    19 +
+ docs/colors/projects/sunroom/README.ko.md          |    19 +
+ docs/colors/projects/sunroom/README.md             |    19 +
+ docs/colors/projects/tide/README.ko.md             |    19 +
+ docs/colors/projects/tide/README.md                |    19 +
+ docs/colors/projects/white-bamgyeol/README.ko.md   |    19 +
+ docs/colors/projects/white-bamgyeol/README.md      |    19 +
+ docs/installation.ko.md                            |    84 +
+ docs/installation.md                               |    84 +
+ docs/qa/app-icons/README.md                        |    31 +
+ docs/qa/app-icons/brand-chrome.md                  |   241 +
+ docs/qa/app-icons/brand-chrome/exact-prompt.jpg    |   Bin 0 -> 205802 bytes
+ docs/qa/app-icons/brand-chrome/original.jpg        |   Bin 0 -> 56895 bytes
+ docs/qa/app-icons/brand-chrome/overview.jpg        |   Bin 0 -> 73455 bytes
+ docs/qa/app-icons/brand-chrome/readme-en.jpg       |   Bin 0 -> 90601 bytes
+ docs/qa/app-icons/brand-chrome/readme-ko.jpg       |   Bin 0 -> 96432 bytes
+ docs/qa/app-icons/brand-refresh.md                 |    74 +
+ docs/qa/app-icons/branding-installation.md         |   718 +
+ docs/qa/app-icons/chrome.md                        |   133 +
+ docs/qa/app-icons/chrome/01-square-128-all-top.jpg |   Bin 0 -> 112878 bytes
+ .../app-icons/chrome/02-fullscreen-ax-mismatch.jpg |   Bin 0 -> 112878 bytes
+ .../chrome/04-http-square-128-all-top.jpg          |   Bin 0 -> 108823 bytes
+ docs/qa/app-icons/chrome/05-rounded-128-all.jpg    |   Bin 0 -> 108780 bytes
+ docs/qa/app-icons/chrome/06-circle-128-dark.jpg    |   Bin 0 -> 114762 bytes
+ .../qa/app-icons/chrome/07-square-128-ip-01-06.jpg |   Bin 0 -> 124699 bytes
+ docs/qa/app-icons/chrome/08-square-128-middle.jpg  |   Bin 0 -> 115078 bytes
+ docs/qa/app-icons/chrome/09-square-128-bottom.jpg  |   Bin 0 -> 100173 bytes
+ docs/qa/app-icons/chrome/10-square-32-all-top.jpg  |   Bin 0 -> 100362 bytes
+ docs/qa/app-icons/chrome/11-square-32-ip.jpg       |   Bin 0 -> 106206 bytes
+ docs/qa/app-icons/chrome/12-square-32-middle.jpg   |   Bin 0 -> 108802 bytes
+ docs/qa/app-icons/chrome/13-square-32-bottom.jpg   |   Bin 0 -> 94803 bytes
+ docs/qa/app-icons/chrome/14-square-64-dark-top.jpg |   Bin 0 -> 107897 bytes
+ docs/qa/app-icons/chrome/15-square-64-dark-ip.jpg  |   Bin 0 -> 121020 bytes
+ .../app-icons/chrome/16-square-64-dark-middle.jpg  |   Bin 0 -> 121682 bytes
+ .../app-icons/chrome/17-square-64-dark-bottom.jpg  |   Bin 0 -> 100090 bytes
+ docs/qa/app-icons/chrome/18-filter-ip-mascot.jpg   |   Bin 0 -> 118060 bytes
+ .../app-icons/chrome/19-filter-ip-mascot-lower.jpg |   Bin 0 -> 119230 bytes
+ docs/qa/app-icons/chrome/20-filter-pictogram.jpg   |   Bin 0 -> 97642 bytes
+ docs/qa/app-icons/chrome/21-filter-abstract.jpg    |   Bin 0 -> 97181 bytes
+ docs/qa/app-icons/chrome/22-filter-monogram.jpg    |   Bin 0 -> 96178 bytes
+ .../app-icons/chrome/23-monogram-exact-intent.jpg  |   Bin 0 -> 74550 bytes
+ docs/qa/app-icons/chrome/24-filter-soft-3d.jpg     |   Bin 0 -> 96934 bytes
+ docs/qa/app-icons/chrome/25-filter-pixel-art.jpg   |   Bin 0 -> 97748 bytes
+ .../chrome/26-keyboard-circle-32-dark-pixel.jpg    |   Bin 0 -> 96723 bytes
+ docs/qa/app-icons/chrome/27-keyboard-reset-all.jpg |   Bin 0 -> 116105 bytes
+ .../app-icons/chrome/28-downloads-hash-matched.jpg |   Bin 0 -> 59899 bytes
+ .../chrome/29-exact-korean-prompt-file.jpg         |   Bin 0 -> 73521 bytes
+ .../app-icons/chrome/30-final-file-url-reset.jpg   |   Bin 0 -> 112602 bytes
+ docs/qa/app-icons/code-map.md                      |   294 +
+ docs/qa/app-icons/core-adversarial.log             |   122 +
+ docs/qa/app-icons/core-baseline.log                |     3 +
+ docs/qa/app-icons/core-checks.log                  |    33 +
+ docs/qa/app-icons/core-cleanup.log                 |     6 +
+ docs/qa/app-icons/core-dirty-before.log            |     4 +
+ docs/qa/app-icons/core-final.log                   |     3 +
+ docs/qa/app-icons/core-fixtures/prompt-edit.txt    |    10 +
+ .../app-icons/core-fixtures/prompt-generation.txt  |     7 +
+ docs/qa/app-icons/core-fixtures/prompt-icon-ip.txt |     4 +
+ .../core-fixtures/prompt-icon-monogram.txt         |     4 +
+ docs/qa/app-icons/core-fixtures/provenance.txt     |     1 +
+ docs/qa/app-icons/core-fixtures/session-v1.json    |    51 +
+ docs/qa/app-icons/core-fixtures/session-v2.json    |    64 +
+ .../app-icons/core-fixtures/synthetic-baseline.png |   Bin 0 -> 104 bytes
+ docs/qa/app-icons/core-format.log                  |     1 +
+ docs/qa/app-icons/core-green.log                   |     2 +
+ docs/qa/app-icons/core-loc.log                     |    18 +
+ docs/qa/app-icons/core-manual.log                  |  1314 ++
+ docs/qa/app-icons/core-pin.log                     |     2 +
+ docs/qa/app-icons/core-red.log                     |   157 +
+ docs/qa/app-icons/core-regression.log              |     4 +
+ docs/qa/app-icons/core-ruff.log                    |     1 +
+ docs/qa/app-icons/core-snapshots.log               |     5 +
+ docs/qa/app-icons/core-types.log                   |     1 +
+ docs/qa/app-icons/core.md                          |   184 +
+ docs/qa/app-icons/delivery.md                      |    70 +
+ docs/qa/app-icons/docs.md                          |   222 +
+ docs/qa/app-icons/gallery.md                       |   156 +
+ docs/qa/app-icons/installation.md                  |   463 +
+ docs/qa/app-icons/integrated-checks.json           |   354 +
+ docs/qa/app-icons/integrated-format.txt            |     1 +
+ docs/qa/app-icons/integrated-lock.txt              |     1 +
+ docs/qa/app-icons/integrated-quality-checks.json   | 14644 +++++++++++++++++++
+ docs/qa/app-icons/integrated-quality-format.txt    |     1 +
+ docs/qa/app-icons/integrated-quality-lock.txt      |     1 +
+ docs/qa/app-icons/integrated-quality-ruff.txt      |     1 +
+ docs/qa/app-icons/integrated-quality-tests.txt     |     9 +
+ docs/qa/app-icons/integrated-quality-types.txt     |     1 +
+ docs/qa/app-icons/integrated-quality.md            |   129 +
+ docs/qa/app-icons/integrated-ruff.txt              |     1 +
+ docs/qa/app-icons/integrated-tests.txt             |     8 +
+ docs/qa/app-icons/integrated-types.txt             |     1 +
+ docs/qa/app-icons/metis.md                         |   139 +
+ docs/qa/app-icons/native-import-check.json         |    84 +
+ docs/qa/app-icons/native-samples.json              |  2307 +++
+ docs/qa/app-icons/native-samples.md                |   413 +
+ docs/qa/app-icons/native/abstract-quality-v1.json  |   803 +
+ docs/qa/app-icons/native/abstract.json             |   241 +
+ docs/qa/app-icons/native/ip-a1.json                |   211 +
+ docs/qa/app-icons/native/ip-a2.json                |   232 +
+ docs/qa/app-icons/native/ip-b1.json                |   285 +
+ docs/qa/app-icons/native/ip-b2.json                |   163 +
+ docs/qa/app-icons/native/ip-c1.json                |   198 +
+ docs/qa/app-icons/native/ip-c2.json                |   185 +
+ docs/qa/app-icons/native/monogram-quality-v1.json  |   670 +
+ docs/qa/app-icons/native/monogram.json             |   243 +
+ docs/qa/app-icons/native/pictogram-quality-v1.json |   706 +
+ docs/qa/app-icons/native/pictogram.json            |   145 +
+ docs/qa/app-icons/native/pixel-art-quality-v1.json |   684 +
+ docs/qa/app-icons/native/pixel-art.json            |   227 +
+ docs/qa/app-icons/native/soft-3d-quality-v1.json   |   443 +
+ docs/qa/app-icons/native/soft-3d.json              |   308 +
+ docs/qa/app-icons/orca-runtime.md                  |    11 +
+ docs/qa/app-icons/quality-audit.md                 |   231 +
+ docs/qa/app-icons/quality-catalog.md               |   121 +
+ .../qa/app-icons/quality-chrome/01-all-default.jpg |   Bin 0 -> 117815 bytes
+ .../app-icons/quality-chrome/02-pictogram-128.jpg  |   Bin 0 -> 104622 bytes
+ .../app-icons/quality-chrome/03-pictogram-64.jpg   |   Bin 0 -> 101654 bytes
+ .../app-icons/quality-chrome/04-pictogram-32.jpg   |   Bin 0 -> 100013 bytes
+ .../app-icons/quality-chrome/05-abstract-128.jpg   |   Bin 0 -> 106743 bytes
+ .../qa/app-icons/quality-chrome/06-abstract-64.jpg |   Bin 0 -> 103501 bytes
+ .../qa/app-icons/quality-chrome/07-abstract-32.jpg |   Bin 0 -> 101756 bytes
+ .../app-icons/quality-chrome/08-monogram-128.jpg   |   Bin 0 -> 102644 bytes
+ .../qa/app-icons/quality-chrome/09-monogram-64.jpg |   Bin 0 -> 100997 bytes
+ .../qa/app-icons/quality-chrome/10-monogram-32.jpg |   Bin 0 -> 100045 bytes
+ docs/qa/app-icons/quality-chrome/11-soft3d-128.jpg |   Bin 0 -> 103619 bytes
+ docs/qa/app-icons/quality-chrome/12-soft3d-64.jpg  |   Bin 0 -> 100782 bytes
+ docs/qa/app-icons/quality-chrome/13-soft3d-32.jpg  |   Bin 0 -> 99458 bytes
+ docs/qa/app-icons/quality-chrome/14-pixel-128.jpg  |   Bin 0 -> 106615 bytes
+ docs/qa/app-icons/quality-chrome/15-pixel-64.jpg   |   Bin 0 -> 102258 bytes
+ docs/qa/app-icons/quality-chrome/16-pixel-32.jpg   |   Bin 0 -> 100372 bytes
+ docs/qa/app-icons/quality-chrome/17-ip-square.jpg  |   Bin 0 -> 120630 bytes
+ docs/qa/app-icons/quality-chrome/18-ip-rounded.jpg |   Bin 0 -> 120418 bytes
+ .../app-icons/quality-chrome/19-ip-circle-dark.jpg |   Bin 0 -> 127523 bytes
+ .../app-icons/quality-chrome/20-ip-lower-row.jpg   |   Bin 0 -> 120173 bytes
+ .../app-icons/quality-chrome/21-reset-default.jpg  |   Bin 0 -> 120607 bytes
+ .../quality-chrome/22-ip-exact-prompt.jpg          |   Bin 0 -> 91063 bytes
+ .../quality-chrome/23-pictogram-native-old.jpg     |   Bin 0 -> 60394 bytes
+ .../quality-chrome/24-pictogram-native-new.jpg     |   Bin 0 -> 59029 bytes
+ .../quality-chrome/25-abstract-native-old.jpg      |   Bin 0 -> 65505 bytes
+ .../quality-chrome/26-abstract-native-new.jpg      |   Bin 0 -> 71583 bytes
+ .../quality-chrome/27-monogram-native-old.jpg      |   Bin 0 -> 52574 bytes
+ .../quality-chrome/28-monogram-native-new.jpg      |   Bin 0 -> 60812 bytes
+ .../quality-chrome/29-soft3d-native-old.jpg        |   Bin 0 -> 98812 bytes
+ .../quality-chrome/30-soft3d-native-new.jpg        |   Bin 0 -> 90117 bytes
+ .../quality-chrome/31-pixel-native-old.jpg         |   Bin 0 -> 67070 bytes
+ .../quality-chrome/32-pixel-native-new.jpg         |   Bin 0 -> 60769 bytes
+ .../quality-chrome/33-cancel-reload-default.jpg    |   Bin 0 -> 120607 bytes
+ .../quality-chrome/34-final-persistent.jpg         |   Bin 0 -> 120608 bytes
+ docs/qa/app-icons/quality-comparison.md            |  1595 ++
+ docs/qa/app-icons/quality-core.md                  |    98 +
+ .../quality-fixtures/app_icon_prompts-before.txt   |   129 +
+ docs/qa/app-icons/quality-fixtures/baseline.log    |     3 +
+ docs/qa/app-icons/quality-fixtures/cleanup.json    |    17 +
+ .../app-icons/quality-fixtures/cli-transcript.json |  1035 ++
+ .../quality-fixtures/cli/01-manual-ip-a1-init.json |    49 +
+ .../cli/02-manual-ip-a1-prompt.json                |    19 +
+ .../cli/03-manual-pictogram-init.json              |    49 +
+ .../cli/04-manual-pictogram-prompt.json            |    19 +
+ .../cli/05-manual-abstract-init.json               |    49 +
+ .../cli/06-manual-abstract-prompt.json             |    19 +
+ .../cli/07-manual-monogram-init.json               |    48 +
+ .../cli/08-manual-monogram-prompt.json             |    19 +
+ .../cli/09-manual-soft-3d-init.json                |    49 +
+ .../cli/10-manual-soft-3d-prompt.json              |    19 +
+ .../cli/11-manual-pixel-art-init.json              |    49 +
+ .../cli/12-manual-pixel-art-prompt.json            |    19 +
+ .../quality-fixtures/cli/13-unicode-0-init.json    |    48 +
+ .../quality-fixtures/cli/14-unicode-0-prompt.json  |    19 +
+ .../quality-fixtures/cli/15-unicode-1-init.json    |    48 +
+ .../quality-fixtures/cli/16-unicode-1-prompt.json  |    19 +
+ .../quality-fixtures/cli/17-unicode-2-init.json    |    48 +
+ .../quality-fixtures/cli/18-unicode-2-prompt.json  |    19 +
+ .../quality-fixtures/cli/19-unicode-3-init.json    |    48 +
+ .../quality-fixtures/cli/20-unicode-3-prompt.json  |    19 +
+ .../quality-fixtures/cli/21-strict-soft-init.json  |    49 +
+ .../quality-fixtures/cli/22-strict-add.json        |    91 +
+ .../quality-fixtures/cli/23-strict-prompt.json     |    19 +
+ .../cli/24-synthetic-parent-import.json            |   193 +
+ .../cli/25-future-active-palette.json              |   223 +
+ .../quality-fixtures/cli/26-inherited-edit.json    |    19 +
+ .../cli/27-malformed-no-write.json                 |     4 +
+ .../cli/28-malformed-no-write-confirmed.json       |     4 +
+ .../quality-fixtures/cli/29-stale-import.json      |     4 +
+ .../quality-fixtures/cli/30-resume-prompt-0.json   |    19 +
+ .../quality-fixtures/cli/31-resume-show-0.json     |   223 +
+ .../quality-fixtures/cli/32-resume-prompt-1.json   |    19 +
+ .../quality-fixtures/cli/33-resume-show-1.json     |   223 +
+ .../quality-fixtures/cli/34-resume-prompt-2.json   |    19 +
+ .../quality-fixtures/cli/35-resume-show-2.json     |   223 +
+ .../quality-fixtures/cli/36-strict-select.json     |   223 +
+ .../cli/37-strict-synthetic-review.json            |   231 +
+ .../cli/38-strict-export-rejected.json             |     4 +
+ .../quality-fixtures/cli/39-injection-init.json    |    47 +
+ .../cli/40-injection-generation.json               |    19 +
+ .../cli/41-injection-synthetic-import.json         |    76 +
+ .../quality-fixtures/cli/42-injection-edit.json    |    19 +
+ .../cli/43-truncated-json-no-tree-writes.json      |     4 +
+ .../cli/44-legacy-parent-null.json                 |    12 +
+ .../cli/45-parent-null-resume-0.json               |    12 +
+ .../cli/46-parent-null-resume-1.json               |    12 +
+ .../cli/47-parent-null-resume-2.json               |    12 +
+ .../app-icons/quality-fixtures/directions-v1.json  |     7 +
+ .../quality-fixtures/drivers/adversarial-tail.rb   |    34 +
+ .../quality-fixtures/drivers/manual-tail.rb        |   111 +
+ .../app-icons/quality-fixtures/drivers/manual.rb   |   146 +
+ docs/qa/app-icons/quality-fixtures/drivers/run.rb  |    21 +
+ .../quality-fixtures/fixture-freeze-check.json     |    17 +
+ .../qa/app-icons/quality-fixtures/format-final.log |     1 +
+ .../app-icons/quality-fixtures/format-initial.log  |    49 +
+ .../app-icons/quality-fixtures/green-affected.log  |     5 +
+ .../app-icons/quality-fixtures/green-targeted.log  |     3 +
+ .../app-icons/quality-fixtures/hashes-before.json  |   152 +
+ .../app-icons/quality-fixtures/hashes-final.json   |   108 +
+ docs/qa/app-icons/quality-fixtures/integrity.json  |    10 +
+ docs/qa/app-icons/quality-fixtures/ip-pins.json    |  1208 ++
+ .../quality-fixtures/manual-adversarial.log        |     1 +
+ .../quality-fixtures/manual-inputs/future.json     |    11 +
+ .../manual-inputs/injection-brief.json             |    34 +
+ .../manual-inputs/injection-prompt.txt             |     4 +
+ .../manual-inputs/malformed-icon.json              |     6 +
+ .../manual-inputs/manual-abstract-brief.json       |    36 +
+ .../manual-inputs/manual-ip-a1-brief.json          |    36 +
+ .../manual-inputs/manual-monogram-brief.json       |    35 +
+ .../manual-inputs/manual-pictogram-brief.json      |    36 +
+ .../manual-inputs/manual-pixel-art-brief.json      |    36 +
+ .../manual-inputs/manual-soft-3d-brief.json        |    36 +
+ .../manual-inputs/strict-prompt.txt                |     4 +
+ .../manual-inputs/strict-soft-brief.json           |    36 +
+ .../quality-fixtures/manual-inputs/strict.json     |    40 +
+ .../manual-inputs/synthetic-review.json            |     9 +
+ .../manual-inputs/truncated-icon.json              |     1 +
+ .../manual-inputs/unicode-0-brief.json             |    35 +
+ .../manual-inputs/unicode-1-brief.json             |    35 +
+ .../manual-inputs/unicode-2-brief.json             |    35 +
+ .../manual-inputs/unicode-3-brief.json             |    35 +
+ .../app-icons/quality-fixtures/manual-resumed.log  |     1 +
+ docs/qa/app-icons/quality-fixtures/manual.log      |     3 +
+ .../app-icons/quality-fixtures/pin-corrected.log   |     2 +
+ docs/qa/app-icons/quality-fixtures/pin.log         |    25 +
+ .../app-icons/quality-fixtures/pre-red-sha256.txt  |     6 +
+ docs/qa/app-icons/quality-fixtures/processes.jsonl |   186 +
+ .../quality-fixtures/prompt-icon-monogram-v1.txt   |     4 +
+ .../quality-fixtures/quality-cases-v1.json         |   132 +
+ .../quality-fixtures/red-source-sha256.txt         |     6 +
+ docs/qa/app-icons/quality-fixtures/red.log         |   596 +
+ docs/qa/app-icons/quality-fixtures/ruff-final.log  |     1 +
+ .../qa/app-icons/quality-fixtures/ruff-initial.log |   272 +
+ docs/qa/app-icons/quality-fixtures/source.diff     |    77 +
+ .../app-icons/quality-fixtures/status-before.txt   |    52 +
+ .../app-icons/quality-fixtures/temp-inventory.json | 12817 ++++++++++++++++
+ .../qa/app-icons/quality-fixtures/tmux-presets.txt |    42 +
+ docs/qa/app-icons/quality-fixtures/types-final.log |     1 +
+ .../app-icons/quality-fixtures/types-initial.log   |     1 +
+ docs/qa/app-icons/quality-guidance.md              |   343 +
+ docs/qa/app-icons/quality-metis.md                 |   160 +
+ docs/qa/app-icons/quality-native-samples.json      |  3068 ++++
+ docs/qa/app-icons/quality-native-samples.md        |    53 +
+ docs/qa/app-icons/quality-sample-plan.json         |   275 +
+ docs/qa/app-icons/readme-chrome.md                 |  1665 +++
+ docs/qa/app-icons/readme-chrome/01-readme-en.jpg   |   Bin 0 -> 102966 bytes
+ .../readme-chrome/02-category-raw-fail.jpg         |   Bin 0 -> 72574 bytes
+ docs/qa/app-icons/readme-chrome/03-readme-ko.jpg   |   Bin 0 -> 107083 bytes
+ .../readme-chrome/04-current-logo-original.jpg     |   Bin 0 -> 59776 bytes
+ .../readme-chrome/05-readme-en-credits.jpg         |   Bin 0 -> 124023 bytes
+ .../readme-chrome/06-readme-ko-credits.jpg         |   Bin 0 -> 117967 bytes
+ .../app-icons/readme-chrome/07-ko-narrow-top.jpg   |   Bin 0 -> 111087 bytes
+ .../app-icons/readme-chrome/08-en-narrow-top.jpg   |   Bin 0 -> 107048 bytes
+ .../readme-chrome/09-en-narrow-installation.jpg    |   Bin 0 -> 109097 bytes
+ .../readme-chrome/10-ko-narrow-installation.jpg    |   Bin 0 -> 102366 bytes
+ docs/qa/app-icons/readme-chrome/11-goyo-en.jpg     |   Bin 0 -> 70323 bytes
+ docs/qa/app-icons/readme-chrome/12-goyo-ko.jpg     |   Bin 0 -> 70144 bytes
+ docs/qa/app-icons/readme-chrome/13-ip-en.jpg       |   Bin 0 -> 100427 bytes
+ docs/qa/app-icons/readme-chrome/14-ip-ko.jpg       |   Bin 0 -> 96513 bytes
+ docs/qa/app-icons/readme-chrome/15-pair-en.jpg     |   Bin 0 -> 80586 bytes
+ docs/qa/app-icons/readme-chrome/16-pair-ko.jpg     |   Bin 0 -> 78735 bytes
+ .../app-icons/readme-chrome/17-goyo-downloads.jpg  |   Bin 0 -> 69069 bytes
+ .../app-icons/readme-chrome/18-goyo-original.jpg   |   Bin 0 -> 61628 bytes
+ .../app-icons/readme-chrome/19-brands-en-fixed.jpg |   Bin 0 -> 76208 bytes
+ .../app-icons/readme-chrome/20-brands-ko-fixed.jpg |   Bin 0 -> 72174 bytes
+ .../readme-chrome/21-local-brand-gallery.jpg       |   Bin 0 -> 74554 bytes
+ .../app-icons/readme-chrome/22-icons-ko-fixed.jpg  |   Bin 0 -> 78164 bytes
+ .../app-icons/readme-chrome/23-icons-en-fixed.jpg  |   Bin 0 -> 83281 bytes
+ .../readme-chrome/24-new-gallery-link.jpg          |   Bin 0 -> 120609 bytes
+ .../readme-chrome/25-old-gallery-link.jpg          |   Bin 0 -> 115914 bytes
+ docs/qa/app-icons/readme-chrome/26-docs-en.jpg     |   Bin 0 -> 99102 bytes
+ docs/qa/app-icons/readme-chrome/27-docs-ko.jpg     |   Bin 0 -> 90161 bytes
+ .../readme-chrome/28-docs-anchor-to-request.jpg    |   Bin 0 -> 117967 bytes
+ docs/qa/app-icons/readme-ia.md                     |   226 +
+ docs/qa/app-icons/readme-icons.md                  |   297 +
+ docs/qa/app-icons/readme-pages.md                  |   710 +
+ docs/qa/app-icons/readme-preview/brand-en.html     |    15 +
+ docs/qa/app-icons/readme-preview/brand-ko.html     |    15 +
+ docs/qa/app-icons/readme-preview/brands-en.html    |    58 +
+ docs/qa/app-icons/readme-preview/brands-ko.html    |    58 +
+ docs/qa/app-icons/readme-preview/docs-en.html      |    31 +
+ docs/qa/app-icons/readme-preview/docs-ko.html      |    31 +
+ docs/qa/app-icons/readme-preview/icons-en.html     |    37 +
+ docs/qa/app-icons/readme-preview/icons-ko.html     |    37 +
+ docs/qa/app-icons/readme-preview/index.html        |     3 +
+ docs/qa/app-icons/readme-preview/ip-en.html        |    16 +
+ docs/qa/app-icons/readme-preview/ip-ko.html        |    16 +
+ docs/qa/app-icons/readme-preview/pair-en.html      |    30 +
+ docs/qa/app-icons/readme-preview/pair-ko.html      |    30 +
+ docs/qa/app-icons/readme-preview/readme-en.html    |    64 +
+ docs/qa/app-icons/readme-preview/readme-ko.html    |    64 +
+ docs/qa/app-icons/readme-rewrite.md                |  1546 ++
+ docs/qa/app-icons/review-code.md                   |   306 +
+ docs/qa/app-icons/review-context.md                |   651 +
+ docs/qa/app-icons/review-goal.md                   |  1461 ++
+ docs/qa/app-icons/review-launch.md                 |    46 +
+ docs/qa/app-icons/review-qa.md                     |  1616 ++
+ docs/qa/app-icons/review-security.md               |   536 +
+ docs/qa/app-icons/review-summary.md                |    19 +
+ docs/qa/app-icons/sample-plan.json                 |   485 +
+ docs/qa/app-icons/sample-preflight.json            |    98 +
+ docs/releases.md                                   |     6 +-
+ docs/research/app-icon-quality-sources.json        |  2505 ++++
+ docs/research/app-icon-quality.md                  |   165 +
+ docs/research/app-icon-sources.json                |   620 +
+ docs/research/app-icon-tools.md                    |   166 +
+ docs/research/readme-structure.md                  |   175 +
+ docs/samples/README.ko.md                          |    22 +
+ docs/samples/README.md                             |    22 +
+ docs/samples/items/01-luma/README.ko.md            |    19 +
+ docs/samples/items/01-luma/README.md               |    19 +
+ docs/samples/items/02-loop-lab/README.ko.md        |    19 +
+ docs/samples/items/02-loop-lab/README.md           |    19 +
+ docs/samples/items/03-goyo/README.ko.md            |    19 +
+ docs/samples/items/03-goyo/README.md               |    19 +
+ docs/samples/items/04-bread-bloom/README.ko.md     |    19 +
+ docs/samples/items/04-bread-bloom/README.md        |    19 +
+ docs/samples/items/05-kite/README.ko.md            |    19 +
+ docs/samples/items/05-kite/README.md               |    19 +
+ docs/samples/items/06-miso/README.ko.md            |    19 +
+ docs/samples/items/06-miso/README.md               |    19 +
+ docs/samples/items/07-northline/README.ko.md       |    19 +
+ docs/samples/items/07-northline/README.md          |    19 +
+ docs/samples/items/08-mulgyeol/README.ko.md        |    19 +
+ docs/samples/items/08-mulgyeol/README.md           |    19 +
+ docs/samples/items/09-fern/README.ko.md            |    19 +
+ docs/samples/items/09-fern/README.md               |    19 +
+ docs/samples/items/10-nova-notes/README.ko.md      |    19 +
+ docs/samples/items/10-nova-notes/README.md         |    19 +
+ docs/samples/transparency.ko.md                    |    19 +
+ docs/samples/transparency.md                       |    19 +
+ plans/logo-land-app-icons.md                       |   155 +
+ pyproject.toml                                     |     4 +-
+ skills/logo-land/SKILL.md                          |    15 +-
+ .../assets/app-icon-gallery.template.html          |   130 +
+ skills/logo-land/assets/app-icon.example.json      |    22 +
+ skills/logo-land/assets/ip-as-logo.LICENSE         |    21 +
+ skills/logo-land/references/app-icons.md           |   126 +
+ skills/logo-land/references/ip-mascot.md           |    29 +
+ skills/logo-land/references/native-image.md        |    12 +-
+ skills/logo-land/references/project-files.md       |    13 +-
+ .../logo-land/scripts/logo_helper/app_icon_cli.py  |    41 +
+ .../scripts/logo_helper/app_icon_gallery.py        |   127 +
+ .../scripts/logo_helper/app_icon_guide.py          |    29 +
+ .../scripts/logo_helper/app_icon_models.py         |    52 +
+ .../scripts/logo_helper/app_icon_presets.py        |    58 +
+ .../scripts/logo_helper/app_icon_prompts.py        |   165 +
+ .../scripts/logo_helper/app_icon_publish.py        |    60 +
+ .../scripts/logo_helper/artifact_models.py         |     2 +
+ .../logo-land/scripts/logo_helper/brief_models.py  |    25 +-
+ .../logo-land/scripts/logo_helper/cli_options.py   |     8 +-
+ skills/logo-land/scripts/logo_helper/delivery.py   |     7 +
+ skills/logo-land/scripts/logo_helper/intent.py     |    13 +-
+ skills/logo-land/scripts/logo_helper/models.py     |     2 +
+ skills/logo-land/scripts/logo_helper/prompts.py    |    38 +-
+ skills/logo-land/scripts/logo_helper/workflow.py   |    14 +-
+ skills/logo-land/scripts/logo_project.py           |    13 +-
+ tests/test_app_icon_compatibility.py               |    71 +
+ tests/test_app_icon_delivery.py                    |   218 +
+ tests/test_app_icon_gallery.py                     |   279 +
+ tests/test_app_icon_models.py                      |   105 +
+ tests/test_app_icon_prompts.py                     |   164 +
+ tests/test_app_icon_quality.py                     |   175 +
+ tests/test_app_icon_workflow.py                    |   208 +
+ tests/test_app_icon_workflow_invariants.py         |   185 +
+ tests/test_app_icon_workflow_palette.py            |    94 +
+ uv.lock                                            |     4 +-
+ 509 files changed, 76517 insertions(+), 497 deletions(-)
+fd1d89c Release Logo Land v0.3.1 with English presentation and aligned versions
+ .codex-plugin/plugin.json | 12 +++++-----
+ CHANGELOG.md              | 30 ++++++++++++++++++++++++
+ README.ko.md              | 22 ++++++++++++------
+ README.md                 | 26 +++++++++++++--------
+ docs/qa/installation.md   | 53 ++++++++++++++++++++++++++++++++++++-------
+ docs/qa/release-031.md    | 58 +++++++++++++++++++++++++++++++++++++++++++++++
+ docs/qa/release-readme.md | 37 ++++++++++++++++++++++++++++++
+ docs/releases.md          | 37 ++++++++++++++++++++++++++++++
+ plans/release-031.md      | 23 +++++++++++++++++++
+ pyproject.toml            |  2 +-
+ uv.lock                   |  2 +-
+ 11 files changed, 270 insertions(+), 32 deletions(-)
+2ae6592 docs: record development push and unpublished v0.4.0 draft
+ docs/qa/color-workflow/README.md            |  2 ++
+ docs/qa/color-workflow/final-doc-links.json |  6 ++--
+ docs/qa/color-workflow/release-state.json   | 39 +++++++++++++++++++++++
+ docs/qa/color-workflow/release.md           | 48 +++++++++++++++++++++++++++++
+ plans/logo-land-color-workflow.md           |  2 ++
+ 5 files changed, 94 insertions(+), 3 deletions(-)

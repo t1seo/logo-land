@@ -1,0 +1,20 @@
+{
+  "pid": 10271,
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/hermes/test_core_models.py",
+    "tests/hermes/test_host_resume_guard.py",
+    "--basetemp",
+    "/tmp/logopia-review-goal-080/pytest"
+  ],
+  "started": "2026-09-14 16:52:39 UTC",
+  "finished": "2026-09-14 16:52:40 UTC",
+  "deadline_seconds": 180,
+  "timed_out": false,
+  "exit_code": 0,
+  "signal": null
+}

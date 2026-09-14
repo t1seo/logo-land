@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-14T17:14:10.211Z",
+  "status": "provisional pending FIXES_READY",
+  "fullyReadPaths": {
+    "integrations/hermes/logopia_studio/launcher_process.py": "f763b36ff6d76e809dbf86d5f17bcbde25630913e90f5131d16df50949e3916d",
+    "integrations/hermes/logopia_studio/helper_process.py": "951c02580507b29239beca00cf92f5ce0f9243bd7f8a2419c54e6d6fe12dc574",
+    "integrations/hermes/logopia_studio/process_group.py": "605ef0f06ac2b64cbde0402b5ebfd07298dcb476823fd2bab6db2ad4344c4f95",
+    "integrations/hermes/logopia_studio/installer.py": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b",
+    "tests/hermes/test_process_group_settlement.py": "23623e3318d43b0fec301b3e69007ac1700c03051ae788577291d07eb86b9e16",
+    "tests/hermes/test_helper_interrupt.py": "1b3ec83211642addb4c997b52486e037b12292854d558f1852bca717af5e828b",
+    "tests/hermes/test_installer_foreign_marker.py": "0d3a08e93db6a97b104287a672255098c4e7baf2429ff1864c90b6804e288406",
+    "tests/hermes/test_installer_interruption.py": "d53eec87cf9c6afe4cc2cb2ce90476aba817819f222cd1618e97b4cca75ddbf0"
+  },
+  "newTestExecutionsByThisReviewer": 0
+}

@@ -1,0 +1,118 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# How to run: uv run --locked python /tmp/logopia-fix-process-integration-080/probe.py
+"""Probe an exact CPython poll acquisition boundary with owned finite children."""
+
+from __future__ import annotations
+
+import json
+import os
+import signal
+import subprocess
+import sys
+import time
+import warnings
+from _thread import LockType, allocate_lock
+from pathlib import Path
+from typing import TYPE_CHECKING
+from unittest.mock import patch
+
+if TYPE_CHECKING:
+    from types import FrameType
+
+sys.path.insert(0, str(Path.cwd() / "integrations/hermes"))
+from logopia_studio.process_group import settle_group
+
+
+class AcquireBoundary:
+    def __init__(self, armed: bool) -> None:
+        self.lock: LockType = allocate_lock()
+        self.armed: bool = armed
+        self.triggered: bool = False
+
+    def acquire(self, blocking: bool = True) -> bool:
+        acquired = self.lock.acquire(blocking)
+        if acquired and self.armed:
+            self.armed = False
+            self.triggered = True
+            os.kill(os.getpid(), signal.SIGINT)
+        return acquired
+
+    def release(self) -> None:
+        self.lock.release()
+
+
+def state(pid: int) -> str:
+    result = subprocess.run(
+        ("/bin/ps", "-p", str(pid), "-o", "pid=,ppid=,pgid=,stat="),
+        capture_output=True, text=True, timeout=2, check=False,
+    )
+    return result.stdout.strip()
+
+
+def run_case(root: Path, armed: bool) -> None:
+    root.mkdir()
+    receipt = root / "child.pid"
+    child_source = (
+        "import os, signal, sys; from pathlib import Path; signal.alarm(10); "
+        "signal.signal(signal.SIGTERM, signal.SIG_IGN); "
+        "Path(sys.argv[1]).write_text(f'{os.getpid()} {os.getpgrp()}'); signal.pause()"
+    )
+    process = subprocess.Popen(
+        (sys.executable, "-c", child_source, str(receipt)), process_group=0, text=True
+    )
+    try:
+        ready_deadline = time.monotonic() + 2
+        while not receipt.exists():
+            assert time.monotonic() < ready_deadline
+            time.sleep(0.01)
+        boundary = AcquireBoundary(armed)
+        started = time.monotonic()
+        with (
+            patch.object(process, "_waitpid_lock", boundary),
+            patch("logopia_studio.process_group._FORCE_SECONDS", 0.1),
+        ):
+            try:
+                interrupted = settle_group(process, signal.SIGTERM, 0.05)
+                outcome = "interrupt" if interrupted is not None else "settled"
+            except subprocess.TimeoutExpired:
+                outcome = "TimeoutExpired"
+            print(json.dumps({
+                "case": root.name, "pid": process.pid, "state_before_finally": state(process.pid),
+                "returncode": process.returncode, "poll_lock_held": boundary.lock.locked(),
+                "triggered": boundary.triggered, "outcome": outcome,
+                "elapsed": round(time.monotonic() - started, 3),
+            }), flush=True)
+    finally:
+        process.kill()
+        code = process.wait(timeout=2)
+        assert not state(process.pid)
+        print(json.dumps({"cleanup_pid": process.pid, "returncode": code, "absent": True}))
+
+
+def watchdog(_sig: int, _frame: FrameType | None) -> None:
+    raise TimeoutError("Finite probe watchdog expired")
+
+
+def main() -> None:
+    root = Path("/tmp/logopia-fix-process-integration-080/probe") / sys.argv[1]
+    root.mkdir(parents=True)
+    print(json.dumps({"python": sys.version, "runtime": sys.executable, "runner_pid": os.getpid()}))
+    previous = signal.signal(signal.SIGALRM, watchdog)
+    _ = signal.alarm(20)
+    try:
+        with warnings.catch_warnings(record=True) as recorded:
+            warnings.simplefilter("always", ResourceWarning)
+            run_case(root / "control", False)
+            run_case(root / "interrupt_acquisition", True)
+        assert not recorded
+        print(json.dumps({"resource_warnings": len(recorded)}))
+    finally:
+        _ = signal.alarm(0)
+        _ = signal.signal(signal.SIGALRM, previous)
+
+
+if __name__ == "__main__":
+    main()

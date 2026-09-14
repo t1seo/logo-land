@@ -1,0 +1,93 @@
+FF
+=================================== FAILURES ===================================
+_ test_failed_restoration_keeps_original_error_and_old_payload[io-before-restore] _
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-recovery/test_failed_restoration_keeps_0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-recovery/test_failed_restoratio...gopia-fix-installer-boundary-080/red-recovery/test_failed_restoration_keeps_0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b946900>
+moved = False, interrupt = False
+
+    @pytest.mark.parametrize("moved", [False, True], ids=["before-restore", "after-restore"])
+    @pytest.mark.parametrize("interrupt", [False, True], ids=["io", "sigint"])
+    def test_failed_restoration_keeps_original_error_and_old_payload(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        moved: bool, interrupt: bool,
+    ) -> None:
+        # Given a publication failure followed by an I/O error or SIGINT during restoration.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        failure = PermissionError("fixture publication failure")
+        backup_seen: list[Path] = []
+    
+        def fail_restoration(path: Path, destination: str | Path) -> Path:
+            if path.name == "new":
+                raise failure
+            if path.name == "previous":
+                backup_seen.append(path)
+                assert snapshot(path) == before
+                if moved:
+                    _ = original_rename(path, destination)
+                if interrupt:
+                    signal.raise_signal(signal.SIGINT)
+                raise PermissionError("fixture restoration failure")
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", fail_restoration)
+        # When the bounded restoration attempt also fails.
+        with pytest.raises(PermissionError) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then the publication exception survives and the only old tree is never auto-deleted.
+>       assert raised.value is failure
+E       AssertionError: assert PermissionError('fixture restoration failure') is PermissionError('fixture publication failure')
+E        +  where PermissionError('fixture restoration failure') = <ExceptionInfo PermissionError('fixture restoration failure') tblen=3>.value
+
+tests/hermes/test_installer_backup_interrupt.py:78: AssertionError
+_ test_failed_restoration_keeps_original_error_and_old_payload[io-after-restore] _
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-recovery/test_failed_restoration_keeps_1')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red-recovery/test_failed_restoratio...gopia-fix-installer-boundary-080/red-recovery/test_failed_restoration_keeps_1/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b946840>
+moved = True, interrupt = False
+
+    @pytest.mark.parametrize("moved", [False, True], ids=["before-restore", "after-restore"])
+    @pytest.mark.parametrize("interrupt", [False, True], ids=["io", "sigint"])
+    def test_failed_restoration_keeps_original_error_and_old_payload(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        moved: bool, interrupt: bool,
+    ) -> None:
+        # Given a publication failure followed by an I/O error or SIGINT during restoration.
+        before = snapshot(installed.target)
+        original_rename = Path.rename
+        failure = PermissionError("fixture publication failure")
+        backup_seen: list[Path] = []
+    
+        def fail_restoration(path: Path, destination: str | Path) -> Path:
+            if path.name == "new":
+                raise failure
+            if path.name == "previous":
+                backup_seen.append(path)
+                assert snapshot(path) == before
+                if moved:
+                    _ = original_rename(path, destination)
+                if interrupt:
+                    signal.raise_signal(signal.SIGINT)
+                raise PermissionError("fixture restoration failure")
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", fail_restoration)
+        # When the bounded restoration attempt also fails.
+        with pytest.raises(PermissionError) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        # Then the publication exception survives and the only old tree is never auto-deleted.
+>       assert raised.value is failure
+E       AssertionError: assert PermissionError('fixture restoration failure') is PermissionError('fixture publication failure')
+E        +  where PermissionError('fixture restoration failure') = <ExceptionInfo PermissionError('fixture restoration failure') tblen=3>.value
+
+tests/hermes/test_installer_backup_interrupt.py:78: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_failed_restoration_keeps_original_error_and_old_payload[io-before-restore]
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_failed_restoration_keeps_original_error_and_old_payload[io-after-restore]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/Users/cillian/Documents/Github/Projects/logo-generator/tests/hermes/test_installer_backup_interrupt.py:69: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+2 failed in 0.20s

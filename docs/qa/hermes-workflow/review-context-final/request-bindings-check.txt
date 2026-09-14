@@ -1,0 +1,7 @@
+output/hermes-demo/start.json: OK
+output/hermes-demo/continue.json: OK
+output/hermes-demo/choose-parent.json: OK
+output/hermes-demo/revise.json: OK
+output/hermes-demo/revise-gap.json: OK
+output/hermes-demo/choose-final.json: OK
+output/hermes-demo/deliver.json: OK

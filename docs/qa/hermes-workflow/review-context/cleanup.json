@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-09-14T17:00:28Z",
+  "task_id": "task_6e1b3a7d8e45",
+  "dispatch_id": "ctx_64dfb852f7e9",
+  "scratch_root": "/tmp/logopia-review-context-080",
+  "scratch_absent": true,
+  "owned_scripts_removed": [
+    "verify.sh",
+    "bindings.jq"
+  ],
+  "pytest_basetemp_absent": true,
+  "temporary_downloads_and_caches_absent": true,
+  "owned_process_scan_matches": 0,
+  "server": {
+    "pid": 13482,
+    "session": 91437,
+    "command_verified_before_signal": true,
+    "signal": "SIGTERM",
+    "wait_exit": 143,
+    "pid_absent": true,
+    "port": 8817,
+    "listener_absent": true
+  },
+  "defensive_test_process": {
+    "session": 75183,
+    "exit_code": 0,
+    "passed": 13,
+    "seconds": 11.33
+  },
+  "github_process_sessions_settled": [
+    83225,
+    11154,
+    16426
+  ],
+  "new_browser_contexts": 0,
+  "tool_installs": 0,
+  "live_inference_calls": 0,
+  "live_profile_or_auth_writes": 0,
+  "nested_agents": 0,
+  "retained_artifacts": "docs/qa/hermes-workflow/review-context/ only"
+}

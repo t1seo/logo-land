@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-09-14T16:45:42.129Z",
+  "sourceRevision": 47,
+  "selectedId": "e2",
+  "phase": "delivered",
+  "checks": {
+    "clipboardDeniedFallback": "Passed with explicit browser-only NotAllowedError; full draft selected for manual copy",
+    "downloadCancellation": "canceled",
+    "snapshotAndFiveCards": "passed",
+    "actualZipAndEmbeddedOriginal": "passed",
+    "keyboardAndDirectPng": "passed",
+    "parentChild": "passed",
+    "mobile390NoOverflow": "passed",
+    "reloadBackRepeatedDownloads": "passed",
+    "canonicalFinalGalleryAndFiveOriginalsUnchanged": "passed"
+  },
+  "downloads": [
+    {
+      "filename": "logo-package.zip",
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "embeddedPngSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "bytes": 711451
+    },
+    {
+      "filename": "logo-package.zip",
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "embeddedPngSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "bytes": 711451
+    },
+    {
+      "filename": "logo-package.zip",
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "embeddedPngSha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "bytes": 711451
+    }
+  ],
+  "originals": [
+    {
+      "id": "c1",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "width": 1774,
+      "height": 887,
+      "bytes": 739942,
+      "parent_id": null
+    },
+    {
+      "id": "c2",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 755315,
+      "parent_id": null
+    },
+    {
+      "id": "c3",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 752532,
+      "parent_id": null
+    },
+    {
+      "id": "e1",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "width": 1774,
+      "height": 887,
+      "bytes": 788171,
+      "parent_id": "c1"
+    },
+    {
+      "id": "e2",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "width": 1774,
+      "height": 887,
+      "bytes": 714393,
+      "parent_id": "e1"
+    }
+  ],
+  "browser": "152.0.7977.83",
+  "ownedPids": [
+    97000,
+    97004,
+    97005,
+    97006,
+    97008,
+    97016,
+    97017
+  ],
+  "visiblePhase": "전달 파일 준비됨",
+  "pageErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "contextClosed": true,
+  "cancelledTemporaryFilesRemoved": [],
+  "downloadFilesAfterClose": []
+}

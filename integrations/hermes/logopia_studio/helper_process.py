@@ -1,0 +1,35 @@
+"""Finite argv-only subprocess transport in the helper's locked uv environment."""
+
+import signal
+import subprocess
+from contextlib import ExitStack
+
+from .models import StudioError
+from .process_group import settle_group
+from .process_scope import bounded_call
+
+
+def run_cli(argv: tuple[str, ...], timeout: float) -> str:
+    """Own and settle the complete process group before returning a timeout."""
+    with ExitStack() as streams:
+        process = subprocess.Popen(  # noqa: S603 - Fixed helper argv, no shell or model commands.
+            argv, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, process_group=0
+        )
+        for stream in (process.stdout, process.stderr):
+            if stream is not None:
+                _ = streams.enter_context(stream)
+        try:
+            stdout, stderr = bounded_call(
+                lambda remaining: process.communicate(timeout=remaining), timeout
+            )
+        except subprocess.TimeoutExpired as error:
+            raise StudioError(
+                "helper_timeout", "Helper deadline expired; exact commit may need reconciliation"
+            ) from error
+        finally:
+            cleanup_interrupt = settle_group(process, signal.SIGTERM, 2)
+        if process.returncode != 0:
+            raise StudioError("helper_failed", (stderr or stdout)[-64000:])
+        if cleanup_interrupt is not None:
+            raise cleanup_interrupt
+        return stdout

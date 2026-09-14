@@ -1,0 +1,67 @@
+{"scenario": "forced_launcher_actual_helper", "launcher_exit": -9, "timed_out": true, "helper_pid": 42613, "helper_after_receipt": "42613     1 42613 Ss", "cleanup": "absent"}
+F
+=================================== FAILURES ===================================
+______________ test_forced_launcher_settles_nested_actual_helper _______________
+
+tmp_path = PosixPath('/private/tmp/logopia-review-code-080/nested-pytest/test_forced_launcher_settles_n0')
+
+    def test_forced_launcher_settles_nested_actual_helper(tmp_path: Path) -> None:
+        # Given the actual helper wrapper inside a launcher leader that needs forced termination.
+        leaf = tmp_path / "finite_leaf.py"
+        leader = tmp_path / "finite_leader.py"
+        pid_file = tmp_path / "helper.pid"
+        _ = leaf.write_text(
+            """import os, signal, sys
+    from pathlib import Path
+    signal.alarm(10)
+    Path(sys.argv[1]).write_text(str(os.getpid()))
+    signal.pause()
+    """,
+            encoding="utf-8",
+        )
+        _ = leader.write_text(
+            """import signal, sys
+    signal.alarm(10)
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    sys.path.insert(0, sys.argv[3])
+    from logopia_studio.helper_process import run_cli
+    run_cli((sys.executable, sys.argv[1], sys.argv[2]), timeout=8)
+    """,
+            encoding="utf-8",
+        )
+        # When the bounded real launcher exhausts grace and settles its leader's group.
+        result = run_process(
+            (sys.executable, str(leader), str(leaf), str(pid_file), str(REPO / "integrations/hermes")),
+            tmp_path,
+            tmp_path / "logs",
+            2,
+            grace_seconds=0.2,
+        )
+        pid = int(pid_file.read_text(encoding="utf-8"))
+        try:
+            observed = process_state(pid)
+        finally:
+            cleanup = settle_pid(pid)
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "forced_launcher_actual_helper",
+                    "launcher_exit": result.exit_code,
+                    "timed_out": result.timed_out,
+                    "helper_pid": pid,
+                    "helper_after_receipt": observed,
+                    "cleanup": cleanup,
+                }
+            )
+            + "\n"
+        )
+        # Then that invocation's helper must also be settled before a receipt is returned.
+        assert result.timed_out
+>       assert not observed, f"Actual helper survived its forced launcher: {observed}"
+E       AssertionError: Actual helper survived its forced launcher: 42613     1 42613 Ss
+E       assert not '42613     1 42613 Ss'
+
+/tmp/logopia-review-code-080/test_nested_helper.py:77: AssertionError
+=========================== short test summary info ============================
+FAILED ::test_forced_launcher_settles_nested_actual_helper - AssertionError: ...
+1 failed in 2.26s

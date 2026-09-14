@@ -1,0 +1,78 @@
+
+Tae-wons-MacBook-Pro% uv run --locked python /tmp/logopia-fix-installer-boundary
+-080/manual.py
+{"pid": 66288, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]"
+, "deadline_seconds": 30}
+{"scenario": "backup", "attempt": 1, "actual_sigint": true, "exception_identity"
+: true, "backup_exact_before_signal": true, "prior_sha256": "ae09f4756950250e2e9
+6fe1de9495f84af2a02d915bcc017f7a7845f2040d87c", "after_sha256": "ae09f4756950250
+e2e96fe1de9495f84af2a02d915bcc017f7a7845f2040d87c", "lock_and_staging_absent": t
+rue}
+{"scenario": "backup", "attempt": 2, "actual_sigint": true, "exception_identity"
+: true, "backup_exact_before_signal": true, "prior_sha256": "ae09f4756950250e2e9
+6fe1de9495f84af2a02d915bcc017f7a7845f2040d87c", "after_sha256": "ae09f4756950250
+e2e96fe1de9495f84af2a02d915bcc017f7a7845f2040d87c", "lock_and_staging_absent": t
+rue}
+{"scenario": "backup", "explicit_retry": "PASS", "full_bytes": true}
+{"scenario": "publication", "attempt": 1, "actual_sigint": true, "exception_iden
+tity": true, "backup_exact_before_signal": true, "prior_sha256": "1a27505739676f
+8086d249bfc15d8a1ff8fa1c8a478f302339f8bee5fe9640a9", "after_sha256": "1a27505739
+676f8086d249bfc15d8a1ff8fa1c8a478f302339f8bee5fe9640a9", "lock_and_staging_absen
+t": true}
+{"scenario": "publication", "attempt": 2, "actual_sigint": true, "exception_iden
+tity": true, "backup_exact_before_signal": true, "prior_sha256": "1a27505739676f
+8086d249bfc15d8a1ff8fa1c8a478f302339f8bee5fe9640a9", "after_sha256": "1a27505739
+676f8086d249bfc15d8a1ff8fa1c8a478f302339f8bee5fe9640a9", "lock_and_staging_absen
+t": true}
+{"scenario": "publication", "explicit_retry": "PASS", "full_bytes": true}
+{"scenario": "foreign", "attempt": 1, "install_succeeded": false, "original_exce
+ption_identity": true, "prior_sha256": "6f2a1bb35a25d2900090913d8756009ce272d18c
+801271909a2d85f8f5b5e686", "recovery_sha256": "6f2a1bb35a25d2900090913d8756009ce
+272d18c801271909a2d85f8f5b5e686", "recovery_path": "/private/tmp/logopia-fix-ins
+taller-boundary-080/manual/foreign/profiles/logopia-boundary-fixture/plugins/.lo
+gopia-install-qwpvkk_1/previous", "recovery_exact": true, "foreign_preserved": t
+rue, "lock_and_new_stage_absent": true}
+{"scenario": "foreign", "attempt": 2, "install_succeeded": false, "original_exce
+ption_identity": true, "prior_sha256": "6f2a1bb35a25d2900090913d8756009ce272d18c
+801271909a2d85f8f5b5e686", "recovery_sha256": "6f2a1bb35a25d2900090913d8756009ce
+272d18c801271909a2d85f8f5b5e686", "recovery_path": "/private/tmp/logopia-fix-ins
+taller-boundary-080/manual/foreign/profiles/logopia-boundary-fixture/plugins/.lo
+gopia-install-zzj7skgs/previous", "recovery_exact": true, "foreign_preserved": t
+rue, "lock_and_new_stage_absent": true}
+{"scenario": "restore-denied", "attempt": 1, "install_succeeded": false, "origin
+al_exception_identity": true, "prior_sha256": "99cdc2d54fedd5643d4e306b5b8cb1426
+f2262b09b0bf11dafb6077130edcb1e", "recovery_sha256": "99cdc2d54fedd5643d4e306b5b
+8cb1426f2262b09b0bf11dafb6077130edcb1e", "recovery_path": "/private/tmp/logopia-
+fix-installer-boundary-080/manual/restore-denied/profiles/logopia-boundary-fixtu
+re/plugins/.logopia-install-nc9xtorc/previous", "recovery_exact": true, "foreign
+_preserved": false, "lock_and_new_stage_absent": true}
+{"scenario": "restore-denied", "attempt": 2, "install_succeeded": false, "origin
+al_exception_identity": true, "prior_sha256": "99cdc2d54fedd5643d4e306b5b8cb1426
+f2262b09b0bf11dafb6077130edcb1e", "recovery_sha256": "99cdc2d54fedd5643d4e306b5b
+8cb1426f2262b09b0bf11dafb6077130edcb1e", "recovery_path": "/private/tmp/logopia-
+fix-installer-boundary-080/manual/restore-denied/profiles/logopia-boundary-fixtu
+re/plugins/.logopia-install-d1xerwqk/previous", "recovery_exact": true, "foreign
+_preserved": false, "lock_and_new_stage_absent": true}
+{"scenario": "restore-sigint", "attempt": 1, "install_succeeded": false, "origin
+al_exception_identity": true, "prior_sha256": "69f26928506b2f79f6af2463406cef982
+770dbe7ccd229cd822b6430082fc40d", "recovery_sha256": "69f26928506b2f79f6af246340
+6cef982770dbe7ccd229cd822b6430082fc40d", "recovery_path": "/private/tmp/logopia-
+fix-installer-boundary-080/manual/restore-sigint/profiles/logopia-boundary-fixtu
+re/plugins/.logopia-install-brf05y6a/previous", "recovery_exact": true, "foreign
+_preserved": false, "lock_and_new_stage_absent": true}
+{"scenario": "restore-sigint", "attempt": 2, "install_succeeded": false, "origin
+al_exception_identity": true, "prior_sha256": "69f26928506b2f79f6af2463406cef982
+770dbe7ccd229cd822b6430082fc40d", "recovery_sha256": "69f26928506b2f79f6af246340
+6cef982770dbe7ccd229cd822b6430082fc40d", "recovery_path": "/private/tmp/logopia-
+fix-installer-boundary-080/manual/restore-sigint/profiles/logopia-boundary-fixtu
+re/plugins/.logopia-install-oakjwo5e/previous", "recovery_exact": true, "foreign
+_preserved": false, "lock_and_new_stage_absent": true}
+{"scenario": "stale_manifest", "refused_twice": true, "exact_bytes": true}
+{"status": "PASS", "pid": 66288, "python": "3.12.12", "module": "/Users/cillian/
+Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/inst
+aller.py", "source_sha256": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d
+3ed4b4de02116", "retained_backups_explicitly_restored": true, "staging_absent":
+true}
+Tae-wons-MacBook-Pro% print -r -- manual_exit=$?
+manual_exit=0
+Tae-wons-MacBook-Pro%

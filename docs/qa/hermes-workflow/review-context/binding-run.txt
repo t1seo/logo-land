@@ -1,0 +1,2 @@
+true
+All 7 normalized tool requests, 5 originals, 4 delivery files, 3 ZIP members and 59 installation records verified; default config matches original digest.

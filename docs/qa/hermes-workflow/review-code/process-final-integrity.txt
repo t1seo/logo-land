@@ -1,0 +1,6 @@
+integrations/hermes/logopia_studio/launcher_process.py: OK
+integrations/hermes/logopia_studio/helper_process.py: OK
+integrations/hermes/logopia_studio/process_group.py: OK
+integrations/hermes/logopia_studio/process_scope.py: OK
+tests/hermes/test_process_group_settlement.py: OK
+tests/hermes/test_helper_interrupt.py: OK

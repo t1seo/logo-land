@@ -1,0 +1,32 @@
+{
+  "completed_at": "2026-09-14T18:06:22Z",
+  "verdict": "PASS",
+  "scope": "Final context/provenance and installed-source delta",
+  "task_id": "task_2e671ebbef64",
+  "dispatch_id": "ctx_0e76a89d9bb1",
+  "managed_record_count": 61,
+  "source_payload_count": 60,
+  "settings_count": 1,
+  "immutable_hashes_verified": 259,
+  "final_repository_hashes_verified": 274,
+  "final_installed_hashes_including_marker_verified": 62,
+  "server_pid": 98366,
+  "server_reaped": true,
+  "server_absent": true,
+  "server_exit": 143,
+  "port_8817_free": true,
+  "scratch_absent": true,
+  "private_tmp_alias_absent": true,
+  "environment_overrides": [],
+  "browser_created": false,
+  "tmux_created": false,
+  "inference_calls": 0,
+  "profile_writes": false,
+  "production_edits": false,
+  "nested_agents": 0,
+  "git_diff_check_exit": 0,
+  "root_owned_remaining": [
+    "Full integration and reviewer settlement",
+    "T6 publication"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "baseline": true,
+  "profile": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/chrome-native-RAzZMM",
+  "fixture": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/fixture-native-ZDS4za",
+  "cleanup": true,
+  "candidateTopDesktop": 1541.5234375,
+  "strategyHeightDesktop": 1081.84375,
+  "workflow": "offcut-hermes-demo",
+  "revision": 16,
+  "candidateCount": 3,
+  "failure": "AssertionError [ERR_ASSERTION]: Candidates begin at 1541.5234375px"
+}

@@ -1,0 +1,329 @@
+{"fixture": "test_launcher_deadline_settles0", "owned": [[34463, 34462], [34462, 34462]], "states": ["34463     1 34462 S", ""], "group_exists": true, "elapsed": 1.016}
+{"cleanup": "test_launcher_deadline_settles0", "owned": [[34463, 34462], [34462, 34462]], "states": ["", ""], "group_exists": false}
+F{"fixture": "test_launcher_deadline_settles1", "owned": [[34483, 34482], [34482, 34482]], "states": ["", ""], "group_exists": false, "elapsed": 1.016}
+{"cleanup": "test_launcher_deadline_settles1", "owned": [[34483, 34482], [34482, 34482]], "states": ["", ""], "group_exists": false}
+.{"fixture": "test_launcher_normal_exit_sett0", "owned": [[34558, 34557], [34557, 34557]], "states": ["34558     1 34557 S", ""], "group_exists": true, "elapsed": 0.039}
+{"cleanup": "test_launcher_normal_exit_sett0", "owned": [[34558, 34557], [34557, 34557]], "states": ["", ""], "group_exists": false}
+F{"fixture": "test_launcher_repeated_interru0", "owned": [[34564, 34563], [34563, 34563]], "states": ["34564     1 34563 S", ""], "group_exists": true, "elapsed": 0.292}
+{"cleanup": "test_launcher_repeated_interru0", "owned": [[34564, 34563], [34563, 34563]], "states": ["", ""], "group_exists": false}
+F{"unowned_control": "34569 34461 34569 Ss"}
+{"cleanup": "test_cleanup_preserves_other_s0", "owned": [[34571, 34570], [34570, 34570]], "states": ["", ""], "group_exists": false}
+........{"fixture": "test_helper_repeated_caller_in0", "owned": [[34586, 34586]], "states": ["34586 34461 34586 Ss"], "group_exists": true, "elapsed": 0.271}
+{"cleanup": "test_helper_repeated_caller_in0", "owned": [[34586, 34586]], "states": [""], "group_exists": false}
+F{"cleanup": "test_helper_timeout_survives_i0", "owned": [[34619, 34619]], "states": [""], "group_exists": false}
+F{"fixture": "test_helper_exited_leader_sett0", "owned": [[34623, 34622], [34622, 34622]], "states": ["34623     1 34622 S", ""], "group_exists": true, "elapsed": 0.028}
+{"cleanup": "test_helper_exited_leader_sett0", "owned": [[34623, 34622], [34622, 34622]], "states": ["", ""], "group_exists": false}
+F{"fixture": "test_helper_exited_leader_sett1", "owned": [[34629, 34628], [34628, 34628]], "states": ["34629     1 34628 S", ""], "group_exists": true, "elapsed": 0.024}
+{"cleanup": "test_helper_exited_leader_sett1", "owned": [[34629, 34628], [34628, 34628]], "states": ["", ""], "group_exists": false}
+F
+=================================== FAILURES ===================================
+__________ test_launcher_deadline_settles_same_group_descendant[yes] ___________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_launcher_deadline_settles0')
+ignores = 'yes'
+
+    @pytest.mark.parametrize("ignores", ["yes", "no"])
+    def test_launcher_deadline_settles_same_group_descendant(tmp_path: Path, ignores: str) -> None:
+        # Given a ready finite tree, with descendant signal handling as the controlled toggle.
+        with finite_fixture(tmp_path, TREE_SOURCE, "deadline", ignores) as command:
+            started = time.monotonic()
+            # When the real launcher deadline expires and the leader exits on SIGINT.
+            result = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.2)
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then the receipt covers complete group settlement before return.
+            assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
+            assert result.timed_out and not result.interrupted
+            assert result.exit_code != 0
+>           assert not any(states) and not alive
+E           AssertionError: assert (not True)
+E            +  where True = any(('34463     1 34462 S', ''))
+
+tests/hermes/test_process_group_settlement.py:146: AssertionError
+_____________ test_launcher_normal_exit_settles_orphan_descendant ______________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_launcher_normal_exit_sett0')
+
+    def test_launcher_normal_exit_settles_orphan_descendant(tmp_path: Path) -> None:
+        # Given a ready descendant whose leader exits successfully before cleanup starts.
+        with finite_fixture(tmp_path, TREE_SOURCE, "exit", "yes") as command:
+            started = time.monotonic()
+            # When the launcher reports the leader's normal result.
+            result = run_process(command, tmp_path, tmp_path / "logs", 2, grace_seconds=0.2)
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then success preserves the logs while settling the exact owned group.
+            assert result.exit_code == 0 and not result.timed_out and not result.interrupted
+            assert result.stdout_path.read_text(encoding="utf-8") == "exact stdout\n"
+>           assert not any(states) and not alive
+E           AssertionError: assert (not True)
+E            +  where True = any(('34558     1 34557 S', ''))
+
+tests/hermes/test_process_group_settlement.py:160: AssertionError
+_____________ test_launcher_repeated_interrupts_settle_descendant ______________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_launcher_repeated_interru0')
+
+    def test_launcher_repeated_interrupts_settle_descendant(tmp_path: Path) -> None:
+        # Given a ready finite descendant sending real repeated interrupts to the caller.
+        with finite_fixture(tmp_path, TREE_SOURCE, "repeat", "yes") as command:
+            started = time.monotonic()
+            # When cancellation starts, further interrupts must not abandon the owned group.
+            result = run_process(command, tmp_path, tmp_path / "logs", 3, grace_seconds=1)
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then the interruption receipt follows full group settlement.
+            assert result.interrupted and not result.timed_out
+            assert result.exit_code != 0
+>           assert not any(states) and not alive
+E           AssertionError: assert (not True)
+E            +  where True = any(('34564     1 34563 S', ''))
+
+tests/hermes/test_process_group_settlement.py:174: AssertionError
+___ test_helper_repeated_caller_interrupts_settle_before_original_propagates ___
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_repeated_caller_in0')
+
+    def test_helper_repeated_caller_interrupts_settle_before_original_propagates(tmp_path: Path) -> None:
+        # Given a finite helper that repeatedly signals only its invoking caller.
+        interrupts: list[KeyboardInterrupt] = []
+    
+        def interrupt(_signum: int, _frame: FrameType | None) -> None:
+            error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
+            interrupts.append(error)
+            raise error
+    
+        previous = signal.signal(signal.SIGINT, interrupt)
+        try:
+            with finite_fixture(tmp_path, HELPER_SOURCE, "repeat") as command:
+                started = time.monotonic()
+                with warnings.catch_warnings(record=True) as recorded:
+                    warnings.simplefilter("always", ResourceWarning)
+                    # When repeated real interrupts reach the caller during invocation and cleanup.
+                    with pytest.raises(KeyboardInterrupt) as caught:
+                        _ = run_cli(command, timeout=5)
+                states, alive = observe(tmp_path, time.monotonic() - started)
+                # Then the first exception propagates only after the complete group is gone.
+                assert caught.value is interrupts[0]
+>               assert not any(states) and not alive
+E               AssertionError: assert (not True)
+E                +  where True = any(('34586 34461 34586 Ss',))
+
+tests/hermes/test_helper_interrupt.py:97: AssertionError
+____________ test_helper_timeout_survives_interrupt_during_cleanup _____________
+
+argv = ('/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/private/tmp/logopia-fix-process-080/red...y', '/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_timeout_survives_i0', 'deadline_interrupt')
+timeout = 0.3
+
+    def run_cli(argv: tuple[str, ...], timeout: float) -> str:
+        """Own and settle the complete process group before returning a timeout."""
+        with subprocess.Popen(  # noqa: S603 - Fixed helper argv, no shell or model-selected commands.
+            argv, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, start_new_session=True
+        ) as process:
+            try:
+>               stdout, stderr = process.communicate(timeout=timeout)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+integrations/hermes/logopia_studio/helper_process.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:2116: in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 0 args: ('/Users/cillian/Documents/Github/Projects/logo-...>
+endtime = 2954797.331510875, orig_timeout = 0.3, stdout_seq = []
+stderr_seq = [], skip_check_and_raise = False
+
+    def _check_timeout(self, endtime, orig_timeout, stdout_seq, stderr_seq,
+                       skip_check_and_raise=False):
+        """Convenience for checking if a timeout has expired."""
+        if endtime is None:
+            return
+        if skip_check_and_raise or _time() > endtime:
+>           raise TimeoutExpired(
+                    self.args, orig_timeout,
+                    output=b''.join(stdout_seq) if stdout_seq else None,
+                    stderr=b''.join(stderr_seq) if stderr_seq else None)
+E           subprocess.TimeoutExpired: Command '('/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_timeout_survives_i0/finite_fixture.py', '/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_timeout_survives_i0', 'deadline_interrupt')' timed out after 0.3 seconds
+
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:1253: TimeoutExpired
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_timeout_survives_i0')
+
+    def test_helper_timeout_survives_interrupt_during_cleanup(tmp_path: Path) -> None:
+        # Given a finite helper that interrupts its caller upon receiving timeout cleanup SIGTERM.
+        with finite_fixture(tmp_path, HELPER_SOURCE, "deadline_interrupt") as command:
+            started = time.monotonic()
+            # When timeout cleanup receives a real interrupt, its original typed timeout must win.
+            try:
+                with pytest.raises(StudioError) as caught:
+>                   _ = run_cli(command, timeout=0.3)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/hermes/test_helper_interrupt.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+integrations/hermes/logopia_studio/helper_process.py:20: in run_cli
+    _, _ = process.communicate(timeout=2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:2115: in _communicate
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <selectors.PollSelector object at 0x107f3eff0>, timeout = 2000
+
+    def select(self, timeout=None):
+        # This is shared between poll() and epoll().
+        # epoll() has a different signature and handling of timeout parameter.
+        if timeout is None:
+            timeout = None
+        elif timeout <= 0:
+            timeout = 0
+        else:
+            # poll() has a resolution of 1 millisecond, round away from
+            # zero to wait *at least* timeout seconds.
+            timeout = math.ceil(timeout * 1e3)
+        ready = []
+        try:
+>           fd_event_list = self._selector.poll(timeout)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           KeyboardInterrupt
+
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/selectors.py:415: KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_timeout_survives_i0')
+
+    def test_helper_timeout_survives_interrupt_during_cleanup(tmp_path: Path) -> None:
+        # Given a finite helper that interrupts its caller upon receiving timeout cleanup SIGTERM.
+        with finite_fixture(tmp_path, HELPER_SOURCE, "deadline_interrupt") as command:
+            started = time.monotonic()
+            # When timeout cleanup receives a real interrupt, its original typed timeout must win.
+            try:
+                with pytest.raises(StudioError) as caught:
+                    _ = run_cli(command, timeout=0.3)
+            except KeyboardInterrupt:
+>               pytest.fail("Cleanup interrupt replaced the original helper timeout")
+E               Failed: Cleanup interrupt replaced the original helper timeout
+
+tests/hermes/test_helper_interrupt.py:114: Failed
+_______ test_helper_exited_leader_settles_descendant_before_result[exit] _______
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_exited_leader_sett0')
+mode = 'exit'
+
+    @pytest.mark.parametrize("mode", ["exit", "nonzero"])
+    def test_helper_exited_leader_settles_descendant_before_result(tmp_path: Path, mode: str) -> None:
+        # Given a ready descendant that closed its inherited streams before its leader exited.
+        with finite_fixture(tmp_path, TREE_SOURCE, mode, "yes") as command:
+            started = time.monotonic()
+            # When communicate finishes, normal stdout and typed errors still own the whole group.
+            if mode == "exit":
+                assert run_cli(command, timeout=2) == "exact stdout\n"
+            else:
+                with pytest.raises(StudioError) as caught:
+                    _ = run_cli(command, timeout=2)
+                assert caught.value.code == "helper_failed"
+                assert caught.value.detail == "exact stdout\n"
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then even an already reaped leader cannot leave a live owned descendant behind.
+>           assert not any(states) and not alive
+E           AssertionError: assert (not True)
+E            +  where True = any(('34623     1 34622 S', ''))
+
+tests/hermes/test_helper_interrupt.py:139: AssertionError
+_____ test_helper_exited_leader_settles_descendant_before_result[nonzero] ______
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-fixture-corrected/test_helper_exited_leader_sett1')
+mode = 'nonzero'
+
+    @pytest.mark.parametrize("mode", ["exit", "nonzero"])
+    def test_helper_exited_leader_settles_descendant_before_result(tmp_path: Path, mode: str) -> None:
+        # Given a ready descendant that closed its inherited streams before its leader exited.
+        with finite_fixture(tmp_path, TREE_SOURCE, mode, "yes") as command:
+            started = time.monotonic()
+            # When communicate finishes, normal stdout and typed errors still own the whole group.
+            if mode == "exit":
+                assert run_cli(command, timeout=2) == "exact stdout\n"
+            else:
+                with pytest.raises(StudioError) as caught:
+                    _ = run_cli(command, timeout=2)
+                assert caught.value.code == "helper_failed"
+                assert caught.value.detail == "exact stdout\n"
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then even an already reaped leader cannot leave a live owned descendant behind.
+>           assert not any(states) and not alive
+E           AssertionError: assert (not True)
+E            +  where True = any(('34629     1 34628 S', ''))
+
+tests/hermes/test_helper_interrupt.py:139: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_process_group_settlement.py::test_launcher_deadline_settles_same_group_descendant[yes]
+FAILED tests/hermes/test_process_group_settlement.py::test_launcher_normal_exit_settles_orphan_descendant
+FAILED tests/hermes/test_process_group_settlement.py::test_launcher_repeated_interrupts_settle_descendant
+FAILED tests/hermes/test_helper_interrupt.py::test_helper_repeated_caller_interrupts_settle_before_original_propagates
+FAILED tests/hermes/test_helper_interrupt.py::test_helper_timeout_survives_interrupt_during_cleanup
+FAILED tests/hermes/test_helper_interrupt.py::test_helper_exited_leader_settles_descendant_before_result[exit]
+FAILED tests/hermes/test_helper_interrupt.py::test_helper_exited_leader_settles_descendant_before_result[nonzero]
+7 failed, 9 passed in 4.41s
+Traceback (most recent call last):
+  File "/Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 1127, in __del__
+    _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: subprocess 34586 is still running
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/pytest", line 10, in <module>
+    sys.exit(_console_main())
+             ^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py", line 253, in _console_main
+    code = _main(prog=_get_prog_name(sys.argv))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py", line 229, in _main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/main.py", line 377, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/main.py", line 372, in wrap_session
+    config._ensure_unconfigure()
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/config/__init__.py", line 1212, in _ensure_unconfigure
+    self.hook.pytest_unconfigure(config=self)
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/unraisableexception.py", line 173, in pytest_unconfigure
+    collect_unraisable(config)
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/unraisableexception.py", line 79, in collect_unraisable
+    raise errors[0]
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/lib/python3.12/site-packages/_pytest/unraisableexception.py", line 67, in collect_unraisable
+    warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+pytest.PytestUnraisableExceptionWarning: Exception ignored in: <function Popen.__del__ at 0x101e947c0>
+Enable tracemalloc to get traceback where the object was allocated.
+See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.

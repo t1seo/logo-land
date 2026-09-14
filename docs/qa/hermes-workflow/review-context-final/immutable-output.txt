@@ -1,0 +1,3 @@
+true
+true
+PASS: canonical, five originals, four delivery files, three ZIP members, normalized history, bilingual README direct links and preserved immutable hashes.

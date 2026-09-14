@@ -1,0 +1,69 @@
+[
+  {
+    "id": "show",
+    "args": [
+      "run",
+      "--locked",
+      "python",
+      "integrations/hermes/studio.py",
+      "show",
+      "--workflow",
+      "offcut-hermes-demo",
+      "--json"
+    ],
+    "exit": 0,
+    "stdout": "{\"success\":true,\"message\":\"Saved workflow\",\"workflow_id\":\"offcut-hermes-demo\",\"revision\":47,\"phase\":\"delivered\",\"selected_id\":\"e2\",\"candidate_count\":5,\"gallery\":null,\"logs\":null,\"error\":null,\"installation\":null}\n",
+    "stderr": "",
+    "elapsedMs": 1182
+  },
+  {
+    "id": "help",
+    "args": [
+      "run",
+      "--locked",
+      "python",
+      "integrations/hermes/studio.py",
+      "--help"
+    ],
+    "exit": 0,
+    "stdout": "Usage: studio.py [OPTIONS] COMMAND [ARGS]...\n\n  Logopia: direct logo production through an explicit Hermes profile.\n\nOptions:\n  --help  Show this message and exit.\n\nCommands:\n  install  Copy, doctor and enable the plugin without any model calls.\n  run      Submit one validated request and verify its saved result.\n  show     Show validated saved state without starting Hermes.\n  gallery  Publish a fresh offline comparison page from saved state.\n",
+    "stderr": "",
+    "elapsedMs": 177
+  },
+  {
+    "id": "missing",
+    "args": [
+      "run",
+      "--locked",
+      "python",
+      "integrations/hermes/studio.py",
+      "show",
+      "--workflow",
+      "review-qa-080-no-such-workflow",
+      "--json"
+    ],
+    "exit": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "{\"success\":false,\"message\":\"Workflow review-qa-080-no-such-workflow does not exist\",\"workflow_id\":null,\"revision\":null,\"phase\":null,\"selected_id\":null,\"candidate_count\":0,\"gallery\":null,\"logs\":null,\"error\":\"not_found\",\"installation\":null}\n",
+    "elapsedMs": 166
+  },
+  {
+    "id": "malformed-id",
+    "args": [
+      "run",
+      "--locked",
+      "python",
+      "integrations/hermes/studio.py",
+      "show",
+      "--workflow",
+      "invalid id",
+      "--json"
+    ],
+    "exit": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "{\"success\":false,\"message\":\"Expected a portable lowercase identifier\",\"workflow_id\":null,\"revision\":null,\"phase\":null,\"selected_id\":null,\"candidate_count\":0,\"gallery\":null,\"logs\":null,\"error\":\"invalid_id\",\"installation\":null}\n",
+    "elapsedMs": 166
+  }
+]

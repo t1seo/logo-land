@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONPATH=integrations/hermes PYTEST_ADDOPTS='-o cache_dir=/tmp/logopia-review-code-080/pytest-cache-fixed' uv run --locked python /tmp/logopia-review-code-080/test_nested_helper.py",
+  "exit_code": 0,
+  "session_id": null,
+  "parent_deadline_seconds": 20,
+  "fixture_child_deadline_seconds": 10
+}

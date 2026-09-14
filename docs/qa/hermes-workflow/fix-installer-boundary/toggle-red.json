@@ -1,0 +1,27 @@
+{
+  "label": "toggle-red",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "-c",
+    "pyproject.toml",
+    "-o",
+    "pythonpath=/tmp/logopia-fix-installer-boundary-080/toggle",
+    "/tmp/logopia-fix-installer-boundary-080/test_goal_original.py::test_prior_install_survives_first_rename_signal",
+    "tests/hermes/test_installer_backup_interrupt.py::test_failed_restoration_keeps_original_error_and_old_payload[io-before-restore]",
+    "tests/hermes/test_installer_interruption.py::test_interruption_does_not_overwrite_foreign_replacement",
+    "--basetemp",
+    "/tmp/logopia-fix-installer-boundary-080/toggle/pytest"
+  ],
+  "pid": 69432,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 1,
+  "reaped": true,
+  "source_sha256_before": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "source_sha256_after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

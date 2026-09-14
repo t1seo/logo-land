@@ -1,0 +1,4 @@
+Exit code: 2
+error: invalid value 'D' for '--extend-per-file-ignores <EXTEND_PER_FILE_IGNORES>': Expected <FilePattern>:<RuleCode> pattern
+
+The first attempt to apply the repository's existing pytest lint policy used one path with comma-separated codes. Ruff expects each CLI value to repeat the file pattern. The corrected command repeats the path:rule flag. The probe source and assertions remain unchanged.

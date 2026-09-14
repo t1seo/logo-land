@@ -7,24 +7,43 @@
 
 <p align="center">
   <strong>Give your name a shape of its own.</strong><br>
-  Create custom lettering, brand logos and app icon artwork through a conversation with Codex.
+  Create custom lettering, brand logos and app icon artwork through a conversation with Codex or Hermes.
 </p>
 
 <p align="center">
-  <a href="https://github.com/t1seo/logopia/releases/tag/v0.7.0"><img src="https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logopia v0.7.0"></a>
+  <a href="https://github.com/t1seo/logopia/releases/tag/v0.8.0"><img src="https://img.shields.io/badge/Release-v0.8.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logopia v0.8.0"></a>
   <img src="https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&amp;labelColor=17352B" alt="Codex plugin">
   <img src="https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&amp;labelColor=17352B" alt="Raster PNG output">
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="#installation">Get started</a> · <a href="docs/gallery.md">Gallery</a> · <a href="docs/README.md">Docs</a>
+  <a href="README.md">English</a> · <a href="README.ko.md">한국어</a> · <a href="docs/hermes.md">Hermes</a> · <a href="#installation">Codex setup</a> · <a href="docs/gallery.md">Gallery</a> · <a href="docs/README.md">Docs</a>
 </p>
+
+<a id="hermes-workflow"></a>
+
+## A guided workflow in Hermes
+
+**Brief → distinct directions → original candidates → visual review → your choice → focused revision → delivery.**
+
+Hermes checks each original in two separate image reviews, including the intended display size. Compare candidates on one offline page, send back what to keep and change, and preserve every parent version. [Start with Hermes](docs/hermes.md).
+
+**Actual Hermes example: OFFCUT.** Click either image to open the unchanged original PNG.
+
+<table>
+  <tr>
+    <td align="center" width="50%"><a href="docs/hermes-demo/originals/c1.png"><img src="docs/hermes-demo/originals/c1.png" width="400" alt="OFFCUT initial original c1"></a><br><strong>Initial original · c1</strong></td>
+    <td align="center" width="50%"><a href="docs/hermes-demo/originals/e2.png"><img src="docs/hermes-demo/originals/e2.png" width="400" alt="OFFCUT delivered original e2 after two refinements"></a><br><strong>Refined original · e2</strong></td>
+  </tr>
+</table>
+
+The revision chain is **c1 → e1 → e2**. e1 improved letter spacing but narrowed the protected symbol-to-word gap; its preservation check failed. e2 restored that gap, passed both model reviews and was delivered. [All five originals and offline comparison](docs/hermes-demo/README.md) · [Delivered ZIP](docs/hermes-demo/delivery/logo-package.zip)
 
 <a id="samples"></a><a id="ten-real-samples"></a><a id="transparent-background-logos"></a>
 
 ## Brand logos + app icon artwork
 
-Ten brand logos and six app icon artworks, newly made on white. **Click any sample to open its original PNG.**
+The September 2026 showcase: ten brand logos and six app icon artworks on white. **Click any sample to open its original PNG.**
 
 <table>
   <tr>
@@ -67,7 +86,7 @@ Ten brand logos and six app icon artworks, newly made on white. **Click any samp
 
 ## Installation
 
-You need **Codex with native image generation and editing**, **Python 3.12+** and **uv**. The image tool draws the artwork; the local helper saves projects, prepares prompts and packages files. Installing the plugin does not enable a missing image tool.
+For the Codex route, you need **Codex with native image generation and editing**, **Python 3.12+** and **uv**. The image tool draws the artwork; the local helper saves projects, prepares prompts and packages files. Installing the plugin does not enable a missing image tool.
 
 ```sh
 git clone https://github.com/t1seo/logopia.git
@@ -86,7 +105,7 @@ To use **`$logo-land` in other projects**, follow the [full plugin installation 
 
 <a id="releases-and-versioning"></a>
 
-Version **0.7.0**. [Release notes](https://github.com/t1seo/logopia/releases/tag/v0.7.0) · [Changelog](CHANGELOG.md)
+Latest release: **[0.8.0](https://github.com/t1seo/logopia/releases/tag/v0.8.0)**. [Release notes](docs/qa/hermes-workflow/release-notes.md) · [Changelog](CHANGELOG.md)
 
 <a id="use-natural-language"></a>
 

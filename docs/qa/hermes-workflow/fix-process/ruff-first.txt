@@ -1,0 +1,251 @@
+Q001 [*] Single quote multiline found but double quotes preferred
+  --> tests/hermes/test_helper_interrupt.py:19:24
+   |
+17 |       from types import FrameType
+18 |
+19 |   HELPER_SOURCE: Final = '''# /// script
+   |  ________________________^
+20 | | # requires-python = ">=3.11"
+21 | | # dependencies = []
+22 | | # ///
+23 | | # How to run: launched with literal argv by the finite process fixture.
+24 | | import os, signal, sys, time
+25 | | from pathlib import Path
+26 | | root = Path(sys.argv[1])
+27 | | mode = sys.argv[2]
+28 | | caller = os.getppid()
+29 | | signal.alarm(10)
+30 | | signal.signal(signal.SIGINT, signal.SIG_IGN)
+31 | | signal.signal(signal.SIGTERM, signal.SIG_IGN)
+32 | | def interrupt_caller(signum, frame):
+33 | |     os.kill(caller, signal.SIGINT)
+34 | | if mode == "deadline_interrupt":
+35 | |     signal.signal(signal.SIGTERM, interrupt_caller)
+36 | | root.joinpath("helper.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+37 | | root.joinpath("ready").write_text("ready")
+38 | | if mode == "repeat":
+39 | |     while True:
+40 | |         os.kill(caller, signal.SIGINT)
+41 | |         time.sleep(0.4)
+42 | | else:
+43 | |     signal.pause()
+44 | | '''
+   | |___^
+help: Replace single multiline quotes with double quotes
+   |
+18 |
+   - HELPER_SOURCE: Final = '''# /// script
+19 + HELPER_SOURCE: Final = """# /// script
+20 | # requires-python = ">=3.11"
+--------------------------------------------------------------------------------
+43 |     signal.pause()
+   - '''
+44 + """
+45 |
+   |
+
+E501 Line too long (101 > 100)
+  --> tests/hermes/test_helper_interrupt.py:76:101
+   |
+76 | def test_helper_repeated_caller_interrupts_settle_before_original_propagates(tmp_path: Path) -> None:
+   |                                                                                                     ^
+77 |     # Given a finite helper that repeatedly signals only its invoking caller.
+78 |     interrupts: list[KeyboardInterrupt] = []
+   |
+
+PT018 Assertion should be broken down into multiple parts
+  --> tests/hermes/test_helper_interrupt.py:97:13
+   |
+95 |             # Then the first exception propagates only after the complete group is gone.
+96 |             assert caught.value is interrupts[0]
+97 |             assert not any(states) and not alive
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+98 |             assert len(interrupts) >= 2
+99 |             assert not recorded
+   |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_helper_interrupt.py:120:9
+    |
+118 |         assert isinstance(caught.value.__cause__, subprocess.TimeoutExpired)
+119 |         assert "exact commit may need reconciliation" in caught.value.detail
+120 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+121 |         assert time.monotonic() - started < 4
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_helper_interrupt.py:139:9
+    |
+137 |         states, alive = observe(tmp_path, time.monotonic() - started)
+138 |         # Then even an already reaped leader cannot leave a live owned descendant behind.
+139 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+140 |         assert time.monotonic() - started < 4
+    |
+help: Break down assertion into multiple parts
+
+Q001 [*] Single quote multiline found but double quotes preferred
+  --> tests/hermes/test_process_group_settlement.py:19:22
+   |
+17 |       from pathlib import Path
+18 |
+19 |   TREE_SOURCE: Final = '''# /// script
+   |  ______________________^
+20 | | # requires-python = ">=3.11"
+21 | | # dependencies = []
+22 | | # ///
+23 | | # How to run: launched with literal argv by the finite process fixture.
+24 | | import os, signal, sys, time
+25 | | from pathlib import Path
+26 | | root = Path(sys.argv[1])
+27 | | mode, ignores = sys.argv[2:4]
+28 | | caller = os.getppid()
+29 | | signal.alarm(10)
+30 | | root.joinpath("leader.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+31 | | read_fd, write_fd = os.pipe()
+32 | | child = os.fork()
+33 | | if child == 0:
+34 | |     os.close(read_fd)
+35 | |     if ignores == "yes":
+36 | |         signal.signal(signal.SIGINT, signal.SIG_IGN)
+37 | |         signal.signal(signal.SIGTERM, signal.SIG_IGN)
+38 | |     signal.alarm(10)
+39 | |     root.joinpath("descendant.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+40 | |     if mode in ("exit", "nonzero"):
+41 | |         os.close(1)
+42 | |         os.close(2)
+43 | |     os.write(write_fd, b"ready")
+44 | |     os.close(write_fd)
+45 | |     if mode == "repeat":
+46 | |         while True:
+47 | |             os.kill(caller, signal.SIGINT)
+48 | |             time.sleep(0.4)
+49 | |     signal.pause()
+50 | | else:
+51 | |     os.close(write_fd)
+52 | |     assert os.read(read_fd, 5) == b"ready"
+53 | |     os.close(read_fd)
+54 | |     root.joinpath("ready").write_text("ready")
+55 | |     if mode in ("exit", "nonzero"):
+56 | |         print("exact stdout", flush=True)
+57 | |         sys.exit(7 if mode == "nonzero" else 0)
+58 | |     signal.pause()
+59 | | '''
+   | |___^
+help: Replace single multiline quotes with double quotes
+   |
+18 |
+   - TREE_SOURCE: Final = '''# /// script
+19 + TREE_SOURCE: Final = """# /// script
+20 | # requires-python = ">=3.11"
+--------------------------------------------------------------------------------
+58 |     signal.pause()
+   - '''
+59 + """
+60 |
+   |
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:129:13
+    |
+127 |             _ = sys.stdout.write(json.dumps({"cleanup": root.name, "owned": records,
+128 |                                             "states": states, "group_exists": alive}) + "\n")
+129 |             assert not any(states) and not alive, "Finite fixture failed to settle"
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+130 |         finally:
+131 |             _ = signal.signal(signal.SIGINT, previous)
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:144:9
+    |
+142 |         # Then the receipt covers complete group settlement before return.
+143 |         assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
+144 |         assert result.timed_out and not result.interrupted
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+145 |         assert result.exit_code != 0
+146 |         assert not any(states) and not alive
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:146:9
+    |
+144 |         assert result.timed_out and not result.interrupted
+145 |         assert result.exit_code != 0
+146 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+147 |         assert time.monotonic() - started < 4
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:158:9
+    |
+156 |         states, alive = observe(tmp_path, time.monotonic() - started)
+157 |         # Then success preserves the logs while settling the exact owned group.
+158 |         assert result.exit_code == 0 and not result.timed_out and not result.interrupted
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+159 |         assert result.stdout_path.read_text(encoding="utf-8") == "exact stdout\n"
+160 |         assert not any(states) and not alive
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:160:9
+    |
+158 |         assert result.exit_code == 0 and not result.timed_out and not result.interrupted
+159 |         assert result.stdout_path.read_text(encoding="utf-8") == "exact stdout\n"
+160 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+161 |         assert time.monotonic() - started < 3
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:172:9
+    |
+170 |         states, alive = observe(tmp_path, time.monotonic() - started)
+171 |         # Then the interruption receipt follows full group settlement.
+172 |         assert result.interrupted and not result.timed_out
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+173 |         assert result.exit_code != 0
+174 |         assert not any(states) and not alive
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:174:9
+    |
+172 |         assert result.interrupted and not result.timed_out
+173 |         assert result.exit_code != 0
+174 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+175 |         assert time.monotonic() - started < 3
+    |
+help: Break down assertion into multiple parts
+
+RUF100 [*] Unused `noqa` directive (unused: `S603`)
+   --> tests/hermes/test_process_group_settlement.py:180:29
+    |
+178 | def test_cleanup_preserves_other_session_process(tmp_path: Path) -> None:
+179 |     # Given an independent finite process outside the launcher's owned session.
+180 |     with subprocess.Popen(  # noqa: S603 - finite literal local control, distinct owned session.
+    |                             ^^^^^^^^^^^^
+181 |         (sys.executable, "-c", "import signal; signal.alarm(10); signal.pause()"),
+182 |         start_new_session=True,
+    |
+help: Remove unused `noqa` directive
+    |
+179 |     # Given an independent finite process outside the launcher's owned session.
+    -     with subprocess.Popen(  # noqa: S603 - finite literal local control, distinct owned session.
+180 +     with subprocess.Popen(
+181 |         (sys.executable, "-c", "import signal; signal.alarm(10); signal.pause()"),
+    |
+
+Found 14 errors.
+[*] 3 fixable with the `--fix` option (9 hidden fixes can be enabled with the `--unsafe-fixes` option).

@@ -1,0 +1,2 @@
+true
+/tmp/logopia-review-context-080/current-install.json /tmp/logopia-review-context-080/saved-install.json differ: char 477, line 17

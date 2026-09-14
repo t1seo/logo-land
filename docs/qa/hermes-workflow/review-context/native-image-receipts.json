@@ -1,0 +1,52 @@
+[
+  {
+    "id": "j2",
+    "kind": "generate",
+    "candidate_id": "c1",
+    "parent_id": null,
+    "provider_match": true,
+    "model_match": true,
+    "prompt_match": true,
+    "input_count": 0
+  },
+  {
+    "id": "j3",
+    "kind": "generate",
+    "candidate_id": "c2",
+    "parent_id": null,
+    "provider_match": true,
+    "model_match": true,
+    "prompt_match": true,
+    "input_count": 0
+  },
+  {
+    "id": "j4",
+    "kind": "generate",
+    "candidate_id": "c3",
+    "parent_id": null,
+    "provider_match": true,
+    "model_match": true,
+    "prompt_match": true,
+    "input_count": 0
+  },
+  {
+    "id": "j9",
+    "kind": "edit",
+    "candidate_id": "e1",
+    "parent_id": "c1",
+    "provider_match": true,
+    "model_match": true,
+    "prompt_match": true,
+    "input_count": 1
+  },
+  {
+    "id": "j11",
+    "kind": "edit",
+    "candidate_id": "e2",
+    "parent_id": "e1",
+    "provider_match": true,
+    "model_match": true,
+    "prompt_match": true,
+    "input_count": 1
+  }
+]

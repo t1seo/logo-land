@@ -1,0 +1,54 @@
+F
+=================================== FAILURES ===================================
+_____ test_sigint_restores_prior_bytes_then_allows_explicit_retry[backup] ______
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red/test_sigint_restores_prior_byt0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-boundary-080/red/test_sigint_restores_prior_byt0...te/tmp/logopia-fix-installer-boundary-080/red/test_sigint_restores_prior_byt0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1074db620>
+first_rename = True
+
+    @pytest.mark.parametrize("first_rename", [True, False], ids=["backup", "publication"])
+    def test_sigint_restores_prior_bytes_then_allows_explicit_retry(
+        tmp_path: Path, installed: InstalledFixture, monkeypatch: pytest.MonkeyPatch,
+        first_rename: bool,
+    ) -> None:
+        # Given a managed install and a replacement whose first or second rename is interrupted.
+        before = snapshot(installed.target)
+        _ = (installed.source / "__init__.py").write_bytes(SENTINEL)
+        source_before = snapshot(installed.source)
+        original_rename = Path.rename
+        observed: list[KeyboardInterrupt] = []
+        backed_up: list[bool] = []
+    
+        def interrupt_boundary(path: Path, destination: str | Path) -> Path:
+            at_backup = path == installed.target and Path(destination).name == "previous"
+            at_publication = path.name == "new" and Path(destination) == installed.target
+            if (first_rename and at_backup) or (not first_rename and at_publication):
+                if first_rename:
+                    _ = original_rename(path, destination)
+                backup = Path(destination) if first_rename else path.parent / "previous"
+                backed_up.append(snapshot(backup) == before)
+                try:
+                    signal.raise_signal(signal.SIGINT)
+                except KeyboardInterrupt as error:
+                    observed.append(error)
+                    raise
+            return original_rename(path, destination)
+    
+        # When two attempts receive real SIGINT after the old payload has moved.
+        with monkeypatch.context() as patch:
+            patch.setattr(Path, "rename", interrupt_boundary)
+            for _ in range(2):
+                with pytest.raises(KeyboardInterrupt) as raised:
+                    _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+                assert raised.value is observed[-1]
+>               assert snapshot(installed.target) == before
+E               assert () == (('.logopia-i..._byt0"\n}\n'))
+E                 
+E                 Right contains 4 more items, first extra item: ('.logopia-install.json', b'{\n  "schema_version": 1,\n  "files": [\n    {\n      "path": "__init__.py",\n      "sha25..."settings.json",\n      "sha256": "a24e7510115f944cc3c96118a268522b4bb36ff66c5c6c6ceab2b7784189620c"\n    }\n  ]\n}\n')
+E                 Use -v to get more diff
+
+tests/hermes/test_installer_backup_interrupt.py:83: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_installer_backup_interrupt.py::test_sigint_restores_prior_bytes_then_allows_explicit_retry[backup]
+1 failed in 0.06s

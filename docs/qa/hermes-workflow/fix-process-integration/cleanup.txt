@@ -1,0 +1,16 @@
+{
+  "root": "/tmp/logopia-fix-process-integration-080",
+  "root_absent": true,
+  "session": "logopia-process-integration-080",
+  "session_absent": true,
+  "pane_pid": 6103,
+  "pane_absent": true,
+  "server_pid": 6102,
+  "server_was_exclusive": true,
+  "server_absent_if_exclusive": true,
+  "recorded_pids_absent": 43,
+  "recorded_groups_absent": 31,
+  "unowned_processes_signalled": 0,
+  "cleanup_scope": "Only registered temporary root and named tmux session",
+  "prior_replaced_basetemp_records_included": true
+}

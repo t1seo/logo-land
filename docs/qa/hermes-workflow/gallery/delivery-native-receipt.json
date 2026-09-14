@@ -1,0 +1,16 @@
+{
+  "baseline": false,
+  "profile": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/chrome-native-S05c5Q",
+  "fixture": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/fixture-native-fmq6Aw",
+  "cleanup": true,
+  "candidateTopDesktop": 828.453125,
+  "strategyHeightDesktop": 368.7734375,
+  "workflow": "offcut-hermes-demo",
+  "revision": 23,
+  "candidateCount": 3,
+  "strategySha256": "250834d7049592a5f2f1c171d810cefb88e24d239353c2a99879a4a4afbf0006",
+  "candidateTopMobile": 1009.046875,
+  "canonicalUnchanged": true,
+  "originalsExact": true,
+  "keyboardDisclosure": true
+}

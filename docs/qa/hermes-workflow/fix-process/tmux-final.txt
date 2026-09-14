@@ -1,0 +1,29 @@
+$ tmux send-keys -t logopia-fix-process-080 'uv run --locked python /tmp/logopia-fix-process-080/manual.py' Enter
+{"event": "runtime", "pid": 73542, "pgid": 73540, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "executable": "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/launcher_process.py", "sha256": "30507c70ebfdedaff1373698cb7739b49cc71ace6a78a14071d0e3f4d84a31c3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", "sha256": "5763027c3d5147980caa8f356c9f3cc9d2f6f0f6db6a362a5e959ccb7ac5efed"}
+{"fixture": "deadline", "owned": [[73545, 73544], [73544, 73544]], "states": ["", ""], "group_exists": false, "elapsed": 1.288}
+{"event": "launcher_pass", "case": "deadline", "exit_code": -2, "timed_out": true, "all_owned_absent": true}
+{"cleanup": "deadline", "owned": [[73545, 73544], [73544, 73544]], "states": ["", ""], "group_exists": false}
+{"fixture": "exited", "owned": [[73575, 73573], [73573, 73573]], "states": ["", ""], "group_exists": false, "elapsed": 0.319}
+{"event": "launcher_pass", "case": "exited", "exit_code": 0, "timed_out": false, "all_owned_absent": true}
+{"cleanup": "exited", "owned": [[73575, 73573], [73573, 73573]], "states": ["", ""], "group_exists": false}
+{"fixture": "nested", "owned": [[73599, 73599], [73597, 73597]], "states": ["", ""], "group_exists": false, "elapsed": 2.317}
+{"event": "nested_pass", "all_owned_absent": true, "shared_session": true, "foreign_control_alive": true, "foreign_pid": 73596}
+{"cleanup": "nested", "owned": [[73599, 73599], [73597, 73597]], "states": ["", ""], "group_exists": false}
+{"event": "foreign_control_finally_absent", "pid": 73596}
+{"event": "original_interrupt_retained", "case": "automatic", "interrupt_count": 2, "error": "automatic caller interrupt 1"}
+{"fixture": "automatic", "owned": [[73647, 73647]], "states": [""], "group_exists": false, "elapsed": 0.444}
+{"event": "caller_pass", "case": "automatic", "all_owned_absent": true}
+{"cleanup": "automatic", "owned": [[73647, 73647]], "states": [""], "group_exists": false}
+{"event": "READY_FOR_TWO_TMUX_CTRL_C", "caller_pid": 73542, "helper_pid": 73661}
+^C^C{"event": "original_interrupt_retained", "case": "terminal", "interrupt_count": 2, "error": "terminal caller interrupt 1"}
+{"fixture": "terminal", "owned": [[73661, 73661]], "states": [""], "group_exists": false, "elapsed": 0.66}
+{"event": "caller_pass", "case": "terminal", "all_owned_absent": true}
+{"cleanup": "terminal", "owned": [[73661, 73661]], "states": [""], "group_exists": false}
+{"event": "timeout_retained_after_cleanup_interrupt", "code": "helper_timeout"}
+{"fixture": "helper-timeout", "owned": [[73678, 73678]], "states": [""], "group_exists": false, "elapsed": 0.315}
+{"cleanup": "helper-timeout", "owned": [[73678, 73678]], "states": [""], "group_exists": false}
+{"event": "MANUAL_PASS", "resource_warnings": 0, "resumed_stdout_exact": true}
+print -r -- "manual_exit=$?"
+manual_exit=0

@@ -1,0 +1,14 @@
+PLC0414 Import alias does not rename original package
+  --> tests/hermes/test_installer_interruption.py:11:56
+   |
+ 9 | from logopia_studio.installer import install_payload
+10 | from tests.hermes.test_installer_foreign_marker import SENTINEL, _snapshot
+11 | from tests.hermes.test_installer_foreign_marker import installed as installed
+   |                                                        ^^^^^^^^^^^^^^^^^^^^^^
+12 |
+13 | if TYPE_CHECKING:
+   |
+help: Remove import alias
+
+Found 1 error.
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

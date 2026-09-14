@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pid": 66288,
+  "python": "3.12.12",
+  "module": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/installer.py",
+  "source_sha256": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "retained_backups_explicitly_restored": true,
+  "staging_absent": true
+}

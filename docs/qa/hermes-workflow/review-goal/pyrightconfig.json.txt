@@ -1,0 +1,9 @@
+{
+  "include": ["verify.py", "verify_state.py"],
+  "extraPaths": ["/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes", "/tmp/logopia-review-goal-080"],
+  "typeCheckingMode": "all",
+  "pythonVersion": "3.11",
+  "pythonPlatform": "All",
+  "venvPath": "/Users/cillian/Documents/Github/Projects/logo-generator",
+  "venv": ".venv"
+}

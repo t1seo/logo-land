@@ -1,0 +1,82 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# Run with the existing repository Python: python runner.py LABEL COMMAND ...
+"""Record and reap one bounded fixture or static-check process."""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import signal
+import subprocess
+import sys
+from pathlib import Path
+from typing import Final
+
+ROOT: Final = Path(__file__).resolve().parent
+REPO: Final = Path("/Users/cillian/Documents/Github/Projects/logo-generator")
+EVIDENCE: Final = REPO / "docs/qa/hermes-workflow/fix-installer-boundary"
+
+
+def main() -> None:
+    label, *command = sys.argv[1:]
+    log = EVIDENCE / f"{label}.txt"
+    receipt = EVIDENCE / f"{label}.json"
+    if log.exists() or receipt.exists():
+        raise FileExistsError(label)
+    source = REPO / "integrations/hermes/logopia_studio/installer.py"
+    before = hashlib.sha256(source.read_bytes()).hexdigest()
+    environment = os.environ.copy()
+    environment.update(
+        PYTHONDONTWRITEBYTECODE="1",
+        PYTHONPATH=str(REPO / "integrations/hermes") + os.pathsep + str(REPO),
+        TMPDIR=str(ROOT),
+        RUFF_CACHE_DIR=str(ROOT / "cache/ruff"),
+        PYTEST_ADDOPTS=f"-o cache_dir={ROOT / 'cache/pytest'}",
+    )
+    with (ROOT / "processes.jsonl").open("a", encoding="utf-8") as registry:
+        _ = registry.write(json.dumps({"planned": label, "argv": command, "deadline": 30}) + "\n")
+        registry.flush()
+        with subprocess.Popen(  # noqa: S603
+            command,
+            cwd=REPO,
+            env=environment,
+            start_new_session=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+        ) as child:
+            _ = registry.write(json.dumps({"label": label, "pid": child.pid}) + "\n")
+            registry.flush()
+            timed_out = False
+            try:
+                output, _ = child.communicate(timeout=30)
+            except subprocess.TimeoutExpired:
+                timed_out = True
+                os.killpg(child.pid, signal.SIGKILL)
+                output, _ = child.communicate(timeout=3)
+            code = child.returncode
+            _ = log.write_text(output, encoding="utf-8")
+            record = {
+                "label": label,
+                "argv": command,
+                "pid": child.pid,
+                "deadline_seconds": 30,
+                "timed_out": timed_out,
+                "exit_code": code,
+                "reaped": child.poll() is not None,
+                "source_sha256_before": before,
+                "source_sha256_after": hashlib.sha256(source.read_bytes()).hexdigest(),
+            }
+            _ = receipt.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
+            _ = registry.write(json.dumps(record) + "\n")
+    _ = sys.stdout.write(output + json.dumps(record) + "\n")
+    sys.exit(124 if timed_out else code)
+
+
+if __name__ == "__main__":
+    main()

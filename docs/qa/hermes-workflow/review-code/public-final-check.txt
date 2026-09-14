@@ -1,0 +1,14 @@
+docs/hermes-demo/README.ko.md: OK
+docs/hermes-demo/README.md: OK
+docs/hermes-demo/delivery/brand-guide.md: OK
+docs/hermes-demo/delivery/logo-package.zip: OK
+docs/hermes-demo/delivery/logo.png: OK
+docs/hermes-demo/delivery/manifest.json: OK
+docs/hermes-demo/example.json: OK
+docs/hermes-demo/index.html: OK
+docs/hermes-demo/originals/c1.png: OK
+docs/hermes-demo/originals/c2.png: OK
+docs/hermes-demo/originals/c3.png: OK
+docs/hermes-demo/originals/e1.png: OK
+docs/hermes-demo/originals/e2.png: OK
+docs/hermes-demo/styles.css: OK

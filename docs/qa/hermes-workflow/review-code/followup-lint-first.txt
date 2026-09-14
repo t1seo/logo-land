@@ -1,0 +1,32 @@
+E501 Line too long (110 > 100)
+ --> /tmp/logopia-review-code-080/source_audit.py:5:101
+  |
+3 | # dependencies = []
+4 | # ///
+5 | # How to run: /Users/cillian/.hermes/hermes-agent/venv/bin/python /tmp/logopia-review-code-080/source_audit.py
+  |                                                                                                     ^^^^^^^^^^
+6 | """Read-only native grammar and broad-type scan under the actual Python 3.11 parser."""
+  |
+
+E501 Line too long (121 > 100)
+ --> /tmp/logopia-review-code-080/test_install_recovery.py:5:101
+  |
+3 | # dependencies = ["pytest"]
+4 | # ///
+5 | # How to run: PYTHONPATH=integrations/hermes uv run --locked python /tmp/logopia-review-code-080/test_install_recovery.py
+  |                                                                                                     ^^^^^^^^^^^^^^^^^^^^^
+6 | """Compare I/O failure and interruption at the installer's second rename boundary."""
+  |
+
+TRY003 Avoid specifying long messages outside the exception class
+  --> /tmp/logopia-review-code-080/test_install_recovery.py:40:27
+   |
+38 |             match fault:
+39 |                 case "io":
+40 |                     raise PermissionError("fixture second rename blocked")
+   |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+41 |                 case "interrupt":
+42 |                     raise KeyboardInterrupt
+   |
+
+Found 3 errors.

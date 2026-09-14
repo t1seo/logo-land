@@ -1,0 +1,3 @@
+Exit code: 1
+zsh:1: no matches found: docs/hermes-demo/*.mjs
+The unmatched wildcard belonged to a read-only inventory command; the public sample has no .mjs file. Explicit file inventory succeeded afterward. No product test or source was changed.

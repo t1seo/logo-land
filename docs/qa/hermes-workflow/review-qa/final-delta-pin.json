@@ -1,0 +1,84 @@
+{
+  "at": "2026-09-14T18:03:14.497Z",
+  "authorization": "msg_c1018442d5c8 with prior scoped source/doc authorizations",
+  "baselineRecords": 216,
+  "unchangedBaselineRecords": 210,
+  "authorizedChangedRecords": [
+    {
+      "path": "docs/hermes.ko.md",
+      "before": "182c1e19867db116c42a2b294a0456658657f288ba9eca79faacd8d1e9694fac",
+      "after": "f06f543cc19c4bd198555fbb26fc5a35055589e7b2d4d4dbe2ccce6183e13846"
+    },
+    {
+      "path": "docs/hermes.md",
+      "before": "056cd7d63378855014ba63be8e08a171ed04abc8d1d3d6134381a066386341c7",
+      "after": "a14685bad55672eef0f659d81b2ca5022d856fb98c8650f197f8c8c205656aac"
+    },
+    {
+      "path": "integrations/hermes/CONTRACT.md",
+      "before": "b1fa8844c9471445ee92d13f4fcf15066d8474973883ccab949a6a9f4f25bc09",
+      "after": "a5690fe39619d6ac49e34a38dc9222a44feba32c853eec870754dc9c2f37eeb7"
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/helper_process.py",
+      "before": "9f2b32791f8a27d5529d7a602beeedc4aa59be1bcf0581087d6f757455e3c64a",
+      "after": "18d9e079a25faac3ed32bcee371cbf7cc248f22c1e0eeae3ca83041f61efeadb"
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/installer.py",
+      "before": "5e286d8dc7ae88899c6f335f3a0721c3699f4c25b633efe424918b3b38710099",
+      "after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+    },
+    {
+      "path": "integrations/hermes/logopia_studio/launcher_process.py",
+      "before": "6ad06147bcaf9233e0f3ffe30fa078eb590ef05a18e8949635a6bd70d8aee510",
+      "after": "aa6a55c6a2597212bdd7e0fa9e853f5903abf3301965942874c042a75bd75359"
+    }
+  ],
+  "addedSourceAndTests": {
+    "tests/hermes/test_installer_backup_interrupt.py": "7ae716959cc461f2a5cbb3c6ff6c8b202db69be3358293156b8436ab2aae754d",
+    "tests/hermes/test_helper_interrupt.py": "118ac56ea502901b6789f7b30f430cb783747891a7e8c61d865653b6fd967461",
+    "tests/hermes/test_installer_foreign_marker.py": "0d3a08e93db6a97b104287a672255098c4e7baf2429ff1864c90b6804e288406",
+    "tests/hermes/test_process_group_settlement.py": "d9ce5134ed728bc09f4afee3925fb26fe2da0e0635a8385fb4edfc7fb39c1358",
+    "tests/hermes/test_installer_interruption.py": "6acc66ade32509d5894efcb7cb2f2f72ef9a66e912f1704632a0457a12093a33",
+    "integrations/hermes/logopia_studio/process_group.py": "ee8f298061c571b20704f04172cc1579e574920d0123ca25dac60b8f6c8d8aa3",
+    "integrations/hermes/logopia_studio/process_scope.py": "d7b00656f684c3a0de37172a20cda922a18727b7aec2a054d7c4841507e61c34"
+  },
+  "nativeGalleryUnchangedRecords": 21,
+  "nativeGallery": {
+    "index.html": "68c7ab227a2e3f4b6e7af9d5c95016f0b9b4d4d386e8726d36f5488340811c4e",
+    "workflow.json": "6d6ba04f15168c2d754bee3c728d85632d607c5ea25a0fc3d7f5c77f26da43e4",
+    "prompts/c1.txt": "bea7fda683b68c6851085e5d2c0b8f106f09f6fdef0676c546a9959210401344",
+    "prompts/c1.txt.sha256": "6be2fbfa715007b8dfd91e15595c05a837a68316de94d5bf8ac66492f493bdfa",
+    "prompts/c2.txt": "1afbcc8806bbe0b35a459e3903c81cc056cd345c808763a98d11f13182f7b683",
+    "prompts/c2.txt.sha256": "476ac9c9c760f298d3b88ca66f94b68ecb391b7aa045651fbc2f7ec8d389bab0",
+    "prompts/c3.txt": "a6e9d9fb7f39311482ee6deb8895e1771838f18c7425f6082c023ea7f14e8ddb",
+    "prompts/c3.txt.sha256": "e63f875d95ef3904078cfc66a9ed0629178709abb4bfbb026339d43c84ab30cc",
+    "prompts/e1.txt": "fdd5d952875bb7f86aeda97efff79c74db614d9f15a6b558feb3463c45fd108e",
+    "prompts/e1.txt.sha256": "4ce699030caad015c129c2a8258ca7e06902ea513c12d66491ce060cfca8076f",
+    "prompts/e2.txt": "6df5cd0efeb59a14a64741945df38b15c07cf80da4f5ea37a2e0a6aa3352a22e",
+    "prompts/e2.txt.sha256": "7c7b0a4ae051a4406667c11d52516330f77aeedbc3172e45944c42fad296d9b9",
+    "originals/c1.png": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+    "originals/c2.png": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+    "originals/c3.png": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+    "originals/e1.png": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+    "originals/e2.png": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+    "delivery/brand-guide.md": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+    "delivery/logo-package.zip": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+    "delivery/logo.png": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+    "delivery/manifest.json": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d"
+  },
+  "docsRead": {
+    "docs/hermes.md": "a14685bad55672eef0f659d81b2ca5022d856fb98c8650f197f8c8c205656aac",
+    "docs/hermes.ko.md": "f06f543cc19c4bd198555fbb26fc5a35055589e7b2d4d4dbe2ccce6183e13846",
+    "integrations/hermes/CONTRACT.md": "a5690fe39619d6ac49e34a38dc9222a44feba32c853eec870754dc9c2f37eeb7",
+    "docs/qa/hermes-workflow/native-run.md": "664e2833867571b0cfd8b7408ce1044bb9b948d74d260d377fc9b51c4e95815e"
+  },
+  "sourceFrozenManifestMatches": true,
+  "installedIndependentArtifact": "installed-final-independent.json",
+  "canonicalSha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "defaultConfigUnchanged": true,
+  "noNewInferenceOrArtwork": true,
+  "finalFullSuite": "coordinator: 957 passed, exit 0, FIXES_READY msg_38ec653e2ac0",
+  "rootInventoryCurrentMatches": 209
+}

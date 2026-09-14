@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.1.1, pluggy-1.6.0 -- /Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python
+rootdir: /Users/cillian/Documents/Github/Projects/logo-generator
+configfile: pyproject.toml
+collecting ... collected 13 items
+
+tests/hermes/test_launcher_request.py::test_malformed_request_is_rejected_before_dispatch[broken] PASSED [  7%]
+tests/hermes/test_launcher_request.py::test_malformed_request_is_rejected_before_dispatch[array] PASSED [ 15%]
+tests/hermes/test_launcher_request.py::test_malformed_request_is_rejected_before_dispatch[instruction] PASSED [ 23%]
+tests/hermes/test_launcher_request.py::test_malformed_request_is_rejected_before_dispatch[empty] PASSED [ 30%]
+tests/hermes/test_launcher_request.py::test_malformed_request_is_rejected_before_dispatch[oversize] PASSED [ 38%]
+tests/hermes/test_launcher_request.py::test_stale_revision_fails_before_inference PASSED [ 46%]
+tests/hermes/test_launcher_request_models.py::test_instruction_like_notes_are_literal_query_data PASSED [ 53%]
+tests/hermes/test_launcher_request_recovery.py::test_cli_review_resume_preserves_image_and_original_error PASSED [ 61%]
+tests/hermes/test_launcher_process.py::test_existing_logs_are_never_overwritten PASSED [ 69%]
+tests/hermes/test_launcher_process.py::test_deadline_settles_only_the_owned_process PASSED [ 76%]
+tests/hermes/test_launcher_process.py::test_second_interrupt_during_cleanup_still_reaps_child PASSED [ 84%]
+tests/hermes/test_launcher_cli_settlement.py::test_successful_prose_with_partial_state_never_invents_deadline PASSED [ 92%]
+tests/hermes/test_core_critique_resume.py::test_repeated_interruption_exhausts_remaining_review_attempt PASSED [100%]
+
+============================= 13 passed in 11.33s ==============================

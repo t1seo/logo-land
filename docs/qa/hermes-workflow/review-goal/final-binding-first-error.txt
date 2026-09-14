@@ -1,0 +1,7 @@
+Command: ruby /tmp/logopia-review-goal-080/final_binding.rb
+Exit: 1; elapsed 0.237s; no child processes were created by the Ruby program.
+/tmp/logopia-review-goal-080/final_binding.rb:36:in `compare_pins': undefined method `filter_map' for #<Array> (NoMethodError)
+Ruby runtime in stack: /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/timeout.rb
+Cause: this owned verification harness used Array#filter_map, unavailable in macOS Ruby 2.6.
+Correction: use identical map followed by compact; no assertion or product source changed.
+Only source-after.sha256 had been written before the failed comparison; no PASS artifact existed.

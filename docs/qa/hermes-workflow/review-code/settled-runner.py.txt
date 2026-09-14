@@ -1,0 +1,80 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# How to run: uv run --locked python /tmp/logopia-review-code-080/run_settled.py
+"""Run only the root-authorized original and repeated-interruption regressions."""
+
+from __future__ import annotations
+
+import json
+import os
+import signal
+import subprocess
+import time
+from pathlib import Path
+from typing import Final
+
+REPO: Final = Path("/Users/cillian/Documents/Github/Projects/logo-generator")
+SCRATCH: Final = Path(__file__).parent
+ARTIFACTS: Final = REPO / "docs/qa/hermes-workflow/review-code"
+REPEATED_TEST: Final = "test_helper_repeated_caller_interrupts_settle_before_original_propagates"
+COMMAND: Final = (
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "-c",
+    str(REPO / "pyproject.toml"),
+    str(SCRATCH / "test_review_boundaries.py"),
+    str(SCRATCH / "test_nested_helper.py"),
+    f"tests/hermes/test_helper_interrupt.py::{REPEATED_TEST}",
+    "--basetemp",
+    str(SCRATCH / "settled-pytest"),
+    "-o",
+    f"cache_dir={SCRATCH / 'settled-cache'}",
+)
+
+
+def main() -> int:
+    """Retain exact output and status under the existing finite fixture contract."""
+    started = time.monotonic()
+    timed_out = False
+    with (ARTIFACTS / "settled-tests.txt").open("x", encoding="utf-8") as output:
+        child = subprocess.Popen(  # noqa: S603 - fixed local regression argv, no shell.
+            COMMAND,
+            cwd=REPO,
+            stdin=subprocess.DEVNULL,
+            stdout=output,
+            stderr=subprocess.STDOUT,
+            text=True,
+            start_new_session=True,
+        )
+        try:
+            exit_code = child.wait(timeout=60)
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            os.killpg(child.pid, signal.SIGTERM)
+            try:
+                exit_code = child.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                os.killpg(child.pid, signal.SIGKILL)
+                exit_code = child.wait(timeout=5)
+    receipt = {
+        "command": COMMAND,
+        "pid": child.pid,
+        "exit_code": exit_code,
+        "timed_out": timed_out,
+        "elapsed_seconds": round(time.monotonic() - started, 3),
+    }
+    _ = (ARTIFACTS / "settled-receipt.json").write_text(
+        json.dumps(receipt, indent=2) + "\n", encoding="utf-8"
+    )
+    return exit_code
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

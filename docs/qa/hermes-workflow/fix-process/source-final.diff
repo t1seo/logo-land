@@ -1,0 +1,879 @@
+--- PIN/launcher-before.py.txt
++++ integrations/hermes/logopia_studio/launcher_process.py
+@@ -2,12 +2,14 @@
+ 
+ from __future__ import annotations
+ 
+-import os
+ import re
+ import signal
+ import subprocess
+ from dataclasses import dataclass
+ from typing import TYPE_CHECKING, Final
++
++from .process_group import settle_group
++from .process_scope import ProcessInspectionError
+ 
+ if TYPE_CHECKING:
+     from pathlib import Path
+@@ -73,25 +75,6 @@
+     )
+ 
+ 
+-def _signal_owned(process: subprocess.Popen[str], sig: signal.Signals) -> None:
+-    if process.poll() is not None:
+-        return
+-    try:
+-        os.killpg(process.pid, sig)
+-    except ProcessLookupError:
+-        return
+-
+-
+-def _settle(process: subprocess.Popen[str], grace_seconds: float) -> int:
+-    """Interrupt only our process group and reap it before returning."""
+-    _signal_owned(process, signal.SIGINT)
+-    try:
+-        return process.wait(timeout=grace_seconds)
+-    except (subprocess.TimeoutExpired, KeyboardInterrupt):
+-        _signal_owned(process, signal.SIGKILL)
+-        return process.wait(timeout=10)
+-
+-
+ def run_process(
+     command: tuple[str, ...],
+     workspace: Path,
+@@ -116,7 +99,8 @@
+         with (
+             stdout_path.open("x", encoding="utf-8") as stdout,
+             stderr_path.open("x", encoding="utf-8") as stderr,
+-            subprocess.Popen(  # noqa: S603 - internal argv; never a shell or model command.
++        ):
++            process = subprocess.Popen(  # noqa: S603 - internal argv; never a shell or model command.
+                 command,
+                 cwd=workspace,
+                 stdin=subprocess.DEVNULL,
+@@ -124,16 +108,22 @@
+                 stderr=stderr,
+                 text=True,
+                 start_new_session=True,
+-            ) as process,
+-        ):
++            )
+             try:
+-                exit_code = process.wait(timeout=timeout_seconds)
+-            except subprocess.TimeoutExpired:
+-                timed_out = True
+-                exit_code = _settle(process, grace_seconds)
+-            except KeyboardInterrupt:
+-                interrupted = True
+-                exit_code = _settle(process, grace_seconds)
++                try:
++                    _ = process.wait(timeout=timeout_seconds)
++                except subprocess.TimeoutExpired:
++                    timed_out = True
++                except KeyboardInterrupt:
++                    interrupted = True
++            finally:
++                cleanup_interrupt = settle_group(
++                    process, signal.SIGINT, grace_seconds, include_session=True
++                )
++            interrupted = interrupted or (not timed_out and cleanup_interrupt is not None)
++            exit_code = process.wait(timeout=0)
++    except ProcessInspectionError as error:
++        raise LaunchError("process_inspection_failed", str(error)) from error
+     except OSError as error:
+         raise LaunchError("process_start_failed", str(error)) from error
+     return ProcessReceipt(exit_code, timed_out, interrupted, stdout_path, stderr_path)
+--- PIN/helper-before.py.txt
++++ integrations/hermes/logopia_studio/helper_process.py
+@@ -1,29 +1,32 @@
+ """Finite argv-only subprocess transport in the helper's locked uv environment."""
+ 
+-import os
+ import signal
+ import subprocess
++from contextlib import ExitStack
+ 
+ from .models import StudioError
++from .process_group import settle_group
+ 
+ 
+ def run_cli(argv: tuple[str, ...], timeout: float) -> str:
+     """Own and settle the complete process group before returning a timeout."""
+-    with subprocess.Popen(  # noqa: S603 - Fixed helper argv, no shell or model-selected commands.
+-        argv, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, start_new_session=True
+-    ) as process:
++    with ExitStack() as streams:
++        process = subprocess.Popen(  # noqa: S603 - Fixed helper argv, no shell or model commands.
++            argv, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, process_group=0
++        )
++        for stream in (process.stdout, process.stderr):
++            if stream is not None:
++                _ = streams.enter_context(stream)
+         try:
+             stdout, stderr = process.communicate(timeout=timeout)
+         except subprocess.TimeoutExpired as error:
+-            os.killpg(process.pid, signal.SIGTERM)
+-            try:
+-                _, _ = process.communicate(timeout=2)
+-            except subprocess.TimeoutExpired:
+-                os.killpg(process.pid, signal.SIGKILL)
+-                _, _ = process.communicate()
+             raise StudioError(
+                 "helper_timeout", "Helper deadline expired; exact commit may need reconciliation"
+             ) from error
++        finally:
++            cleanup_interrupt = settle_group(process, signal.SIGTERM, 2)
+         if process.returncode != 0:
+             raise StudioError("helper_failed", (stderr or stdout)[-64000:])
++        if cleanup_interrupt is not None:
++            raise cleanup_interrupt
+         return stdout
+--- /dev/null
++++ integrations/hermes/logopia_studio/process_group.py
+@@ -0,0 +1,124 @@
++"""Bounded settlement for one owned process group or a launcher's fresh session."""
++
++from __future__ import annotations
++
++import os
++import signal
++import subprocess
++import time
++from typing import Final
++
++from .process_scope import ProcessInspectionError, SessionGroup, session_groups
++
++_FORCE_SECONDS: Final = 10.0
++_POLL_SECONDS: Final = 0.01
++
++
++def _group_exists(pgid: int) -> bool:
++    try:
++        os.killpg(pgid, 0)
++    except ProcessLookupError:
++        return False
++    except PermissionError:
++        return True
++    return True
++
++
++def _signal_group(pgid: int, sig: signal.Signals) -> None:
++    try:
++        os.killpg(pgid, sig)
++    except (ProcessLookupError, PermissionError):
++        # macOS can report EPERM while an owned group is being reaped; absence is checked below.
++        return
++
++
++class _OwnedGroups:
++    """Accumulate observed groups and completed signals while settlement progresses."""
++
++    def __init__(self, pid: int, include_session: bool) -> None:
++        self._session_id: int = pid
++        self._include_session: bool = include_session
++        self._active: set[int] = {pid}
++        self._finished: set[int] = set()
++        self._members: dict[int, SessionGroup] = {pid: SessionGroup(pid, pid, pid)}
++        self._signalled: dict[int, signal.Signals] = {}
++        self.inspection_error: ProcessInspectionError | None = None
++
++    def _refresh(self, deadline: float) -> bool:
++        if not self._include_session:
++            return True
++        try:
++            for member in session_groups(self._session_id, deadline):
++                if member.group_id not in self._finished:
++                    self._members[member.group_id] = member
++                    self._active.add(member.group_id)
++        except ProcessInspectionError as error:
++            if time.monotonic() < deadline and self.inspection_error is None:
++                self.inspection_error = error
++            return False
++        return True
++
++    def _signal(self, sig: signal.Signals) -> None:
++        for group_id in self._active:
++            if self._signalled.get(group_id) == sig:
++                continue
++            if self._include_session:
++                try:
++                    if not self._members[group_id].signal(sig):
++                        continue
++                except ProcessInspectionError as error:
++                    self.inspection_error = error
++                    continue
++            else:
++                _signal_group(group_id, sig)
++            self._signalled[group_id] = sig
++
++    def step(self, sig: signal.Signals, deadline: float) -> bool:
++        verified = self._refresh(deadline)
++        self._signal(signal.SIGKILL if self.inspection_error is not None else sig)
++        self._finished.update(group for group in self._active if not _group_exists(group))
++        self._active.difference_update(self._finished)
++        return verified and not self._active
++
++    def raise_inspection_error(self) -> None:
++        if self.inspection_error is not None:
++            raise self.inspection_error
++
++
++def settle_group(
++    process: subprocess.Popen[str],
++    initial_signal: signal.Signals,
++    grace_seconds: float,
++    *,
++    include_session: bool = False,
++) -> KeyboardInterrupt | None:
++    """Reap the leader and owned groups within fixed graceful and forced deadlines."""
++    deadline = time.monotonic() + grace_seconds
++    force_deadline = deadline + _FORCE_SECONDS
++    owned = _OwnedGroups(process.pid, include_session)
++    forced = False
++    interrupted: KeyboardInterrupt | None = None
++    while True:
++        try:
++            exit_code = process.poll()
++            settled = owned.step(signal.SIGKILL if forced else initial_signal, force_deadline)
++            if owned.inspection_error is not None:
++                forced = True
++                deadline = force_deadline
++            if settled and exit_code is not None:
++                owned.raise_inspection_error()
++                return interrupted
++            remaining = deadline - time.monotonic()
++            if remaining <= 0:
++                if forced:
++                    owned.raise_inspection_error()
++                    raise subprocess.TimeoutExpired(process.args, grace_seconds + _FORCE_SECONDS)
++                forced = True
++                deadline = force_deadline
++                continue
++            time.sleep(min(_POLL_SECONDS, remaining))
++        except KeyboardInterrupt as error:
++            if interrupted is None:
++                interrupted = error
++            forced = True
++            deadline = force_deadline
+--- /dev/null
++++ integrations/hermes/logopia_studio/process_scope.py
+@@ -0,0 +1,113 @@
++"""Discover numeric process groups only within a launcher's captured owned session."""
++
++from __future__ import annotations
++
++import errno
++import os
++import subprocess
++import time
++from dataclasses import dataclass
++from tempfile import TemporaryFile
++from typing import TYPE_CHECKING, Final
++
++if TYPE_CHECKING:
++    import signal
++
++_QUERY_SECONDS: Final = 0.25
++
++
++class ProcessInspectionError(OSError):
++    """Refuse a settled receipt when numeric ownership cannot be verified."""
++
++    stage: str
++
++    def __init__(self, stage: str) -> None:
++        self.stage = stage
++        super().__init__(errno.EIO, f"Cannot verify owned process settlement: {stage}")
++
++
++@dataclass(frozen=True, slots=True)
++class SessionGroup:
++    """An observed representative whose session and group must be rechecked before signalling."""
++
++    session_id: int
++    group_id: int
++    member_pid: int
++
++    def signal(self, sig: signal.Signals) -> bool:
++        if self.group_id <= 1 or self.group_id == os.getpgrp():
++            return False
++        try:
++            if (
++                os.getsid(self.member_pid) != self.session_id
++                or os.getpgid(self.member_pid) != self.group_id
++            ):
++                return False
++        except ProcessLookupError:
++            return False
++        except OSError as error:
++            raise ProcessInspectionError("group_membership") from error
++        try:
++            os.killpg(self.group_id, sig)
++        except (ProcessLookupError, PermissionError):
++            # Reaping can transiently produce EPERM; group absence is checked by the caller.
++            return False
++        return True
++
++
++def _stop_probe(process: subprocess.Popen[bytes]) -> KeyboardInterrupt | None:
++    deadline = time.monotonic() + _QUERY_SECONDS
++    interrupted: KeyboardInterrupt | None = None
++    while True:
++        try:
++            if process.poll() is not None:
++                return interrupted
++            process.kill()
++            _ = process.wait(timeout=max(0, deadline - time.monotonic()))
++        except KeyboardInterrupt as error:
++            if interrupted is None:
++                interrupted = error
++
++
++def _numeric_pids(deadline: float) -> tuple[int, ...]:
++    with TemporaryFile() as output:
++        process = subprocess.Popen(
++            ("/bin/ps", "-A", "-o", "pid="), stdout=output, stderr=subprocess.DEVNULL
++        )
++        try:
++            code = process.wait(timeout=max(0, deadline - time.monotonic()))
++            if code != 0:
++                raise ProcessInspectionError("pid_listing_exit")
++        finally:
++            interrupted = _stop_probe(process)
++        if interrupted is not None:
++            raise interrupted
++        _ = output.seek(0)
++        tokens = output.read().split()
++    if any(not token.isdigit() for token in tokens):
++        raise ProcessInspectionError("pid_listing_format")
++    return tuple(int(token) for token in tokens)
++
++
++def session_groups(session_id: int, deadline: float) -> tuple[SessionGroup, ...]:
++    """Read PID numbers, never names/argv/environment, and select only our fresh session."""
++    if session_id <= 1 or session_id == os.getsid(0):
++        raise ProcessInspectionError("invalid_session")
++    query_deadline = min(deadline, time.monotonic() + _QUERY_SECONDS)
++    try:
++        pids = _numeric_pids(query_deadline)
++    except (OSError, subprocess.TimeoutExpired) as error:
++        raise ProcessInspectionError("pid_listing") from error
++    groups: dict[int, SessionGroup] = {}
++    for pid in pids:
++        if time.monotonic() >= query_deadline:
++            raise ProcessInspectionError("query_deadline")
++        try:
++            if os.getsid(pid) == session_id:
++                group_id = os.getpgid(pid)
++                groups[group_id] = SessionGroup(session_id, group_id, pid)
++        except ProcessLookupError:
++            continue
++        except OSError as error:
++            raise ProcessInspectionError("pid_membership") from error
++    return tuple(groups.values())
+--- /dev/null
++++ tests/hermes/test_process_group_settlement.py
+@@ -0,0 +1,266 @@
++from __future__ import annotations
++
++import json
++import os
++import signal
++import subprocess
++import sys
++import time
++from contextlib import contextmanager, suppress
++from typing import TYPE_CHECKING, Final
++
++import pytest
++from logopia_studio.launcher_process import LaunchError, run_process
++from logopia_studio.process_scope import ProcessInspectionError, SessionGroup
++
++if TYPE_CHECKING:
++    from collections.abc import Generator
++    from pathlib import Path
++
++TREE_SOURCE: Final = """# /// script
++# requires-python = ">=3.11"
++# dependencies = []
++# ///
++# How to run: launched with literal argv by the finite process fixture.
++import os, signal, sys, time
++from pathlib import Path
++root = Path(sys.argv[1])
++mode, ignores = sys.argv[2:4]
++caller = os.getppid()
++signal.alarm(10)
++root.joinpath("leader.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
++read_fd, write_fd = os.pipe()
++child = os.fork()
++if child == 0:
++    os.close(read_fd)
++    if ignores == "yes":
++        signal.signal(signal.SIGINT, signal.SIG_IGN)
++        signal.signal(signal.SIGTERM, signal.SIG_IGN)
++    signal.alarm(10)
++    root.joinpath("descendant.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
++    if mode in ("exit", "nonzero"):
++        os.close(1)
++        os.close(2)
++    os.write(write_fd, b"ready")
++    os.close(write_fd)
++    if mode == "repeat":
++        while True:
++            os.kill(caller, signal.SIGINT)
++            time.sleep(0.4)
++    signal.pause()
++else:
++    os.close(write_fd)
++    assert os.read(read_fd, 5) == b"ready"
++    os.close(read_fd)
++    root.joinpath("ready").write_text("ready")
++    if mode in ("exit", "nonzero"):
++        print("exact stdout", flush=True)
++        sys.exit(7 if mode == "nonzero" else 0)
++    signal.pause()
++"""
++
++
++def process_state(pid: int) -> str:
++    result = subprocess.run(  # noqa: S603 - fixed ps executable and exact owned PID.
++        ("/bin/ps", "-p", str(pid), "-o", "pid=,ppid=,pgid=,stat="),
++        capture_output=True,
++        text=True,
++        check=False,
++        timeout=2,
++    )
++    return result.stdout.strip()
++
++
++def group_exists(pgid: int) -> bool:
++    try:
++        os.killpg(pgid, 0)
++    except ProcessLookupError:
++        return False
++    except PermissionError:
++        return True
++    return True
++
++
++def recorded_processes(root: Path) -> tuple[tuple[int, int], ...]:
++    return tuple(
++        (int(parts[0]), int(parts[1]))
++        for receipt in sorted(root.glob("*.pid"))
++        if (parts := receipt.read_text(encoding="utf-8").split())
++    )
++
++
++def observe(root: Path, elapsed: float) -> tuple[tuple[str, ...], bool]:
++    records = recorded_processes(root)
++    assert records, "The finite fixture did not publish its ownership receipt"
++    states = tuple(process_state(pid) for pid, _ in records)
++    alive = any(group_exists(pgid) for _, pgid in records)
++    _ = sys.stdout.write(
++        json.dumps(
++            {
++                "fixture": root.name,
++                "owned": records,
++                "states": states,
++                "group_exists": alive,
++                "elapsed": round(elapsed, 3),
++            }
++        )
++        + "\n"
++    )
++    return states, alive
++
++
++@contextmanager
++def finite_fixture(root: Path, source: str, *args: str) -> Generator[tuple[str, ...], None, None]:
++    """Own finite fixture scripts and settle every recorded PID even on RED."""
++    script = root / "finite_fixture.py"
++    _ = script.write_text(source, encoding="utf-8")
++    try:
++        yield (sys.executable, str(script), str(root), *args)
++    finally:
++        previous = signal.signal(signal.SIGINT, signal.SIG_IGN)
++        try:
++            records = recorded_processes(root)
++            for pid, _ in records:
++                with suppress(ProcessLookupError):
++                    os.kill(pid, signal.SIGKILL)
++            deadline = time.monotonic() + 3
++            while True:
++                for pid, _ in records:
++                    with suppress(ChildProcessError):
++                        _ = os.waitpid(pid, os.WNOHANG)
++                states = tuple(process_state(pid) for pid, _ in records)
++                alive = any(group_exists(pgid) for _, pgid in records)
++                if (not any(states) and not alive) or time.monotonic() >= deadline:
++                    break
++                time.sleep(0.01)
++            _ = sys.stdout.write(
++                json.dumps(
++                    {
++                        "cleanup": root.name,
++                        "owned": records,
++                        "states": states,
++                        "group_exists": alive,
++                    }
++                )
++                + "\n"
++            )
++            assert not any(states), "Finite fixture PIDs failed to settle"
++            assert not alive, "Finite fixture groups failed to settle"
++        finally:
++            _ = signal.signal(signal.SIGINT, previous)
++
++
++@pytest.mark.parametrize("ignores", ["yes", "no"])
++def test_launcher_deadline_settles_same_group_descendant(tmp_path: Path, ignores: str) -> None:
++    # Given a ready finite tree, with descendant signal handling as the controlled toggle.
++    with finite_fixture(tmp_path, TREE_SOURCE, "deadline", ignores) as command:
++        started = time.monotonic()
++        # When the real launcher deadline expires and the leader exits on SIGINT.
++        result = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.2)
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        # Then the receipt covers complete group settlement before return.
++        assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
++        assert result.timed_out
++        assert not result.interrupted
++        assert result.exit_code != 0
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 4
++
++
++def test_launcher_normal_exit_settles_orphan_descendant(tmp_path: Path) -> None:
++    # Given a ready descendant whose leader exits successfully before cleanup starts.
++    with finite_fixture(tmp_path, TREE_SOURCE, "exit", "yes") as command:
++        started = time.monotonic()
++        # When the launcher reports the leader's normal result.
++        result = run_process(command, tmp_path, tmp_path / "logs", 2, grace_seconds=0.2)
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        # Then success preserves the logs while settling the exact owned group.
++        assert result.exit_code == 0
++        assert not result.timed_out
++        assert not result.interrupted
++        assert result.stdout_path.read_text(encoding="utf-8") == "exact stdout\n"
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 3
++
++
++def test_launcher_repeated_interrupts_settle_descendant(tmp_path: Path) -> None:
++    # Given a ready finite descendant sending real repeated interrupts to the caller.
++    with finite_fixture(tmp_path, TREE_SOURCE, "repeat", "yes") as command:
++        started = time.monotonic()
++        # When cancellation starts, further interrupts must not abandon the owned group.
++        result = run_process(command, tmp_path, tmp_path / "logs", 3, grace_seconds=1)
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        # Then the interruption receipt follows full group settlement.
++        assert result.interrupted
++        assert not result.timed_out
++        assert result.exit_code != 0
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 3
++
++
++def test_cleanup_preserves_other_session_process(tmp_path: Path) -> None:
++    # Given an independent finite process outside the launcher's owned session.
++    with subprocess.Popen(
++        (sys.executable, "-c", "import signal; signal.alarm(10); signal.pause()"),
++        start_new_session=True,
++    ) as control:
++        try:
++            with finite_fixture(tmp_path, TREE_SOURCE, "deadline", "yes") as command:
++                # When only the launcher's group is settled.
++                result = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.2)
++                # Then the independent control remains alive until its own finally cleanup.
++                assert result.timed_out
++                assert control.poll() is None
++                assert all(pgid != control.pid for _, pgid in recorded_processes(tmp_path))
++                launcher_group = recorded_processes(tmp_path)[0][1]
++                assert not SessionGroup(launcher_group, control.pid, control.pid).signal(
++                    signal.SIGKILL
++                )
++                assert control.poll() is None
++                _ = sys.stdout.write(
++                    json.dumps({"unowned_control": process_state(control.pid)}) + "\n"
++                )
++        finally:
++            control.kill()
++            _ = control.wait(timeout=2)
++        assert not process_state(control.pid)
++
++
++@pytest.mark.parametrize("deadline", [0, -1, 3601])
++def test_invalid_deadline_starts_no_process(tmp_path: Path, deadline: int) -> None:
++    # Given an invalid launch deadline.
++    output = tmp_path / "logs"
++    # When validation runs, then no log directory or subprocess is created.
++    with pytest.raises(LaunchError, match="invalid_deadline"):
++        _ = run_process((sys.executable,), tmp_path, output, deadline)
++    assert not output.exists()
++
++
++def test_empty_argv_starts_no_process(tmp_path: Path) -> None:
++    # Given empty argv, when validation runs, then no process or logs are created.
++    with pytest.raises(LaunchError, match="invalid_command"):
++        _ = run_process((), tmp_path, tmp_path / "logs", 1)
++    assert not (tmp_path / "logs").exists()
++
++
++def test_failed_session_inspection_returns_bounded_error(
++    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
++) -> None:
++    # Given a finite owned tree and unavailable numeric session inspection.
++    def unavailable(_session_id: int, _deadline: float) -> tuple[SessionGroup, ...]:
++        raise ProcessInspectionError("fixture_query_failure")
++
++    monkeypatch.setattr("logopia_studio.process_group.session_groups", unavailable)
++    monkeypatch.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
++    with finite_fixture(tmp_path, TREE_SOURCE, "deadline", "yes") as command:
++        started = time.monotonic()
++        # When ownership cannot be inspected, then no successful receipt can be returned.
++        with pytest.raises(LaunchError, match="process_inspection_failed"):
++            _ = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.1)
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 3
+--- /dev/null
++++ tests/hermes/test_helper_interrupt.py
+@@ -0,0 +1,233 @@
++from __future__ import annotations
++
++import errno
++import os
++import signal
++import subprocess
++import sys
++import time
++import warnings
++from pathlib import Path
++from typing import TYPE_CHECKING, Final
++
++import pytest
++from logopia_studio.helper_process import run_cli
++from logopia_studio.launcher_process import run_process
++from logopia_studio.models import StudioError
++from logopia_studio.process_group import settle_group
++from tests.hermes.test_process_group_settlement import TREE_SOURCE, finite_fixture, observe
++
++if TYPE_CHECKING:
++    from types import FrameType
++
++HELPER_SOURCE: Final = """# /// script
++# requires-python = ">=3.11"
++# dependencies = []
++# ///
++# How to run: launched with literal argv by the finite process fixture.
++import os, signal, sys, time
++from pathlib import Path
++root = Path(sys.argv[1])
++mode = sys.argv[2]
++caller = os.getppid()
++signal.alarm(10)
++signal.signal(signal.SIGINT, signal.SIG_IGN)
++signal.signal(signal.SIGTERM, signal.SIG_IGN)
++def interrupt_caller(signum, frame):
++    os.kill(caller, signal.SIGINT)
++if mode == "deadline_interrupt":
++    signal.signal(signal.SIGTERM, interrupt_caller)
++root.joinpath("helper.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
++root.joinpath("helper.sid").write_text(str(os.getsid(0)))
++root.joinpath("ready").write_text("ready")
++if mode == "repeat":
++    while True:
++        os.kill(caller, signal.SIGINT)
++        time.sleep(0.4)
++else:
++    signal.pause()
++"""
++
++
++def test_helper_preserves_exact_stdout() -> None:
++    # Given literal input containing whitespace and harmless shell punctuation.
++    literal = "한글 'quoted' $(literal); \\ tail\n\n"
++    command = (sys.executable, "-c", "import sys; sys.stdout.write(sys.argv[1])", literal)
++    # When the helper exits normally.
++    actual = run_cli(command, timeout=2)
++    # Then its stdout is returned without stripping or shell evaluation.
++    assert actual == literal
++
++
++@pytest.mark.parametrize("use_stderr", [True, False])
++def test_helper_preserves_typed_nonzero_error(use_stderr: bool) -> None:
++    # Given a helper with a finite nonzero exit and more than the retained error limit.
++    detail = "x" * 64001 + "\nfixture failure\n"
++    stream = "stderr" if use_stderr else "stdout"
++    command = (
++        sys.executable,
++        "-c",
++        f"import sys; sys.{stream}.write(sys.argv[1]); sys.exit(7)",
++        detail,
++    )
++    # When the helper reports failure.
++    with pytest.raises(StudioError) as caught:
++        _ = run_cli(command, timeout=2)
++    # Then the typed code and exact trailing diagnostic remain stable.
++    assert caught.value.code == "helper_failed"
++    assert caught.value.detail == detail[-64000:]
++
++
++def test_helper_repeated_caller_interrupts_settle_before_original_propagates(
++    tmp_path: Path,
++) -> None:
++    # Given a finite helper that repeatedly signals only its invoking caller.
++    interrupts: list[KeyboardInterrupt] = []
++
++    def interrupt(_signum: int, _frame: FrameType | None) -> None:
++        error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
++        interrupts.append(error)
++        raise error
++
++    previous = signal.signal(signal.SIGINT, interrupt)
++    try:
++        with finite_fixture(tmp_path, HELPER_SOURCE, "repeat") as command:
++            started = time.monotonic()
++            with warnings.catch_warnings(record=True) as recorded:
++                warnings.simplefilter("always", ResourceWarning)
++                # When repeated real interrupts reach the caller during invocation and cleanup.
++                with pytest.raises(KeyboardInterrupt) as caught:
++                    _ = run_cli(command, timeout=5)
++            states, alive = observe(tmp_path, time.monotonic() - started)
++            # Then the first exception propagates only after the complete group is gone.
++            assert caught.value is interrupts[0]
++            assert not any(states)
++            assert not alive
++            assert len(interrupts) >= 2
++            assert not recorded
++            assert time.monotonic() - started < 4
++    finally:
++        _ = signal.signal(signal.SIGINT, previous)
++
++
++def test_helper_timeout_survives_interrupt_during_cleanup(tmp_path: Path) -> None:
++    # Given a finite helper that interrupts its caller upon receiving timeout cleanup SIGTERM.
++    with finite_fixture(tmp_path, HELPER_SOURCE, "deadline_interrupt") as command:
++        started = time.monotonic()
++        # When timeout cleanup receives a real interrupt, its original typed timeout must win.
++        try:
++            with pytest.raises(StudioError) as caught:
++                _ = run_cli(command, timeout=0.3)
++        except KeyboardInterrupt:
++            pytest.fail("Cleanup interrupt replaced the original helper timeout")
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        # Then timeout cause and commit-reconciliation semantics are preserved after settlement.
++        assert caught.value.code == "helper_timeout"
++        assert isinstance(caught.value.__cause__, subprocess.TimeoutExpired)
++        assert "exact commit may need reconciliation" in caught.value.detail
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 4
++
++
++@pytest.mark.parametrize("mode", ["exit", "nonzero"])
++def test_helper_exited_leader_settles_descendant_before_result(tmp_path: Path, mode: str) -> None:
++    # Given a ready descendant that closed its inherited streams before its leader exited.
++    with finite_fixture(tmp_path, TREE_SOURCE, mode, "yes") as command:
++        started = time.monotonic()
++        # When communicate finishes, normal stdout and typed errors still own the whole group.
++        if mode == "exit":
++            assert run_cli(command, timeout=2) == "exact stdout\n"
++        else:
++            with pytest.raises(StudioError) as caught:
++                _ = run_cli(command, timeout=2)
++            assert caught.value.code == "helper_failed"
++            assert caught.value.detail == "exact stdout\n"
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        # Then even an already reaped leader cannot leave a live owned descendant behind.
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 4
++
++
++@pytest.mark.parametrize("helper", [False, True])
++def test_rejected_group_signals_do_not_start_an_unbounded_context_wait(
++    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, helper: bool
++) -> None:
++    # Given a real finite child and an OS boundary rejecting delivery to that exact group.
++    original_killpg = os.killpg
++    processes: list[subprocess.Popen[str]] = []
++
++    def retain_process(
++        process: subprocess.Popen[str],
++        initial_signal: signal.Signals,
++        grace_seconds: float,
++        *,
++        include_session: bool = False,
++    ) -> KeyboardInterrupt | None:
++        processes.append(process)
++        return settle_group(process, initial_signal, grace_seconds, include_session=include_session)
++
++    def reject_delivery(pgid: int, sig: int) -> None:
++        if sig != 0:
++            raise PermissionError(errno.EPERM, "fixture signal delivery rejected", pgid)
++        original_killpg(pgid, sig)
++
++    monkeypatch.setattr(os, "killpg", reject_delivery)
++    monkeypatch.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
++    monkeypatch.setattr("logopia_studio.launcher_process.settle_group", retain_process)
++    monkeypatch.setattr("logopia_studio.helper_process.settle_group", retain_process)
++    with finite_fixture(tmp_path, HELPER_SOURCE, "manual") as command:
++        started = time.monotonic()
++        # When graceful and forced deadlines expire, the failure must return within those bounds.
++        try:
++            if helper:
++                with pytest.raises(subprocess.TimeoutExpired):
++                    _ = run_cli(command, timeout=0.2)
++            else:
++                with pytest.raises(subprocess.TimeoutExpired):
++                    _ = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.1)
++            elapsed = time.monotonic() - started
++            _ = observe(tmp_path, elapsed)
++            # Then failure returns before the child's independent 10s alarm.
++            assert elapsed < 4
++        finally:
++            for process in processes:
++                process.kill()
++                _ = process.wait(timeout=2)
++
++
++def test_forced_launcher_settles_nested_actual_helper(tmp_path: Path) -> None:
++    # Given actual run_cli in an unresponsive launcher leader and a finite separate-session helper.
++    leaf = tmp_path / "finite_leaf.py"
++    _ = leaf.write_text(HELPER_SOURCE, encoding="utf-8")
++    leader_source = """# /// script
++# requires-python = ">=3.11"
++# dependencies = []
++# ///
++# How to run: launched with literal argv by the finite process fixture.
++import os, signal, sys
++from pathlib import Path
++root = Path(sys.argv[1])
++signal.alarm(10)
++signal.signal(signal.SIGINT, signal.SIG_IGN)
++root.joinpath("leader.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
++root.joinpath("leader.sid").write_text(str(os.getsid(0)))
++sys.path.insert(0, sys.argv[2])
++from logopia_studio.helper_process import run_cli
++run_cli((sys.executable, str(root / "finite_leaf.py"), str(root), "manual"), timeout=8)
++"""
++    native = str(Path(run_cli.__code__.co_filename).parents[1])
++    with finite_fixture(tmp_path, leader_source, native) as command:
++        started = time.monotonic()
++        # When the real launcher exhausts grace and must kill its leader.
++        result = run_process(command, tmp_path, tmp_path / "logs", 2, grace_seconds=0.2)
++        states, alive = observe(tmp_path, time.monotonic() - started)
++        # Then its helper's separate group also disappears before the timeout receipt.
++        assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
++        assert result.timed_out
++        assert result.exit_code == -signal.SIGKILL
++        assert not any(states)
++        assert not alive
++        assert time.monotonic() - started < 4
++        assert (tmp_path / "leader.sid").read_bytes() == (tmp_path / "helper.sid").read_bytes()

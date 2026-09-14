@@ -1,0 +1,63 @@
+S101 Use of `assert` detected
+  --> /tmp/logopia-review-security-080/first_rename_probe.py:74:5
+   |
+72 |         + "\n"
+73 |     )
+74 |     assert backup_seen == [True]
+   |     ^^^^^^
+75 |     assert _snapshot(source) == source_before
+76 |     assert target.is_dir(), "Previous installation disappeared after first-rename SIGINT"
+   |
+
+S101 Use of `assert` detected
+  --> /tmp/logopia-review-security-080/first_rename_probe.py:75:5
+   |
+73 |     )
+74 |     assert backup_seen == [True]
+75 |     assert _snapshot(source) == source_before
+   |     ^^^^^^
+76 |     assert target.is_dir(), "Previous installation disappeared after first-rename SIGINT"
+77 |     if interrupt:
+   |
+
+S101 Use of `assert` detected
+  --> /tmp/logopia-review-security-080/first_rename_probe.py:76:5
+   |
+74 |     assert backup_seen == [True]
+75 |     assert _snapshot(source) == source_before
+76 |     assert target.is_dir(), "Previous installation disappeared after first-rename SIGINT"
+   |     ^^^^^^
+77 |     if interrupt:
+78 |         assert unchanged
+   |
+
+S101 Use of `assert` detected
+  --> /tmp/logopia-review-security-080/first_rename_probe.py:78:9
+   |
+76 |     assert target.is_dir(), "Previous installation disappeared after first-rename SIGINT"
+77 |     if interrupt:
+78 |         assert unchanged
+   |         ^^^^^^
+79 |     else:
+80 |         assert (target / "__init__.py").read_bytes() == replacement
+   |
+
+S101 Use of `assert` detected
+  --> /tmp/logopia-review-security-080/first_rename_probe.py:80:9
+   |
+78 |         assert unchanged
+79 |     else:
+80 |         assert (target / "__init__.py").read_bytes() == replacement
+   |         ^^^^^^
+81 |     assert entries == [target.name]
+   |
+
+S101 Use of `assert` detected
+  --> /tmp/logopia-review-security-080/first_rename_probe.py:81:5
+   |
+79 |     else:
+80 |         assert (target / "__init__.py").read_bytes() == replacement
+81 |     assert entries == [target.name]
+   |     ^^^^^^
+
+Found 6 errors.

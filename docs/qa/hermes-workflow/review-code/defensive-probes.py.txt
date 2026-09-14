@@ -1,0 +1,188 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["pytest"]
+# ///
+# How to run: uv run --locked python /tmp/logopia-review-code-080/run_assigned.py defensive
+"""Harmless finite local checks for process settlement and foreign-file preservation."""
+
+from __future__ import annotations
+
+import json
+import os
+import signal
+import subprocess
+import sys
+import time
+import warnings
+from contextlib import suppress
+from typing import TYPE_CHECKING, Final
+
+import pytest
+from logopia_studio.helper_process import run_cli
+from logopia_studio.installer import install_payload
+from logopia_studio.launcher_process import LaunchError, run_process
+
+if TYPE_CHECKING:
+    from pathlib import Path
+
+CHILD_DEADLINE: Final = 10
+
+
+def process_state(pid: int) -> str:
+    """Observe an exact owned PID, including zombie state, without matching user processes."""
+    result = subprocess.run(  # noqa: S603 - literal ps command, exact owned numeric PID.
+        ("/bin/ps", "-p", str(pid), "-o", "pid=,ppid=,pgid=,stat="),
+        capture_output=True,
+        text=True,
+        check=False,
+        timeout=2,
+    )
+    return result.stdout.strip()
+
+
+def settle_pid(pid: int) -> str:
+    """Remove only the recorded finite fixture child and confirm OS absence."""
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except ProcessLookupError:
+        return "absent"
+    with suppress(ChildProcessError):
+        _ = os.waitpid(pid, 0)
+    deadline = time.monotonic() + 3
+    while time.monotonic() < deadline:
+        if not process_state(pid):
+            return "absent"
+        time.sleep(0.02)
+    return process_state(pid)
+
+
+def emit(label: str, pid: int, observed: str, cleanup: str) -> None:
+    """Retain sanitized OS observables even when the subsequent assertion is RED."""
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "scenario": label,
+                "pid": pid,
+                "state_after_receipt": observed,
+                "cleanup": cleanup,
+            }
+        )
+        + "\n"
+    )
+
+
+def test_launcher_deadline_settles_same_group_descendant(tmp_path: Path) -> None:
+    # Given a local command with a ready, bounded descendant that defers SIGINT.
+    child = tmp_path / "finite_tree.py"
+    pid_file = tmp_path / "descendant.pid"
+    _ = child.write_text(
+        f"""import os, signal, sys
+from pathlib import Path
+signal.alarm({CHILD_DEADLINE})
+read_fd, write_fd = os.pipe()
+child_pid = os.fork()
+if child_pid == 0:
+    os.close(read_fd)
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    signal.alarm({CHILD_DEADLINE})
+    Path(sys.argv[1]).write_text(str(os.getpid()))
+    os.write(write_fd, b'ready')
+    os.close(write_fd)
+    signal.pause()
+else:
+    os.close(write_fd)
+    os.read(read_fd, 5)
+    os.close(read_fd)
+    signal.pause()
+""",
+        encoding="utf-8",
+    )
+    # When the real launcher reaches its own finite deadline.
+    result = run_process(
+        (sys.executable, str(child), str(pid_file)),
+        tmp_path,
+        tmp_path / "logs",
+        2,
+        grace_seconds=0.2,
+    )
+    pid = int(pid_file.read_text(encoding="utf-8"))
+    try:
+        observed = process_state(pid)
+    finally:
+        cleanup = settle_pid(pid)
+    emit("launcher_descendant", pid, observed, cleanup)
+    # Then receipt settlement must include the owned descendant, not just its parent.
+    assert result.timed_out
+    assert not observed, f"Owned descendant survives launcher receipt: {observed}"
+    assert cleanup == "absent"
+
+
+def test_helper_interrupt_settles_its_child(tmp_path: Path) -> None:
+    # Given a ready helper fixture whose sole signal target is its own invoking test process.
+    child = tmp_path / "finite_helper.py"
+    pid_file = tmp_path / "helper.pid"
+    _ = child.write_text(
+        f"""import os, signal, sys
+from pathlib import Path
+signal.alarm({CHILD_DEADLINE})
+Path(sys.argv[1]).write_text(str(os.getpid()))
+os.kill(os.getppid(), signal.SIGINT)
+signal.pause()
+""",
+        encoding="utf-8",
+    )
+    # When the caller receives a real local interrupt during the helper invocation.
+    with warnings.catch_warnings(record=True) as recorded:
+        warnings.simplefilter("always", ResourceWarning)
+        with pytest.raises(KeyboardInterrupt):
+            _ = run_cli((sys.executable, str(child), str(pid_file)), timeout=5)
+    pid = int(pid_file.read_text(encoding="utf-8"))
+    try:
+        observed = process_state(pid)
+    finally:
+        cleanup = settle_pid(pid)
+    emit("helper_interrupt", pid, observed, cleanup)
+    _ = sys.stdout.write(json.dumps({"resource_warnings": len(recorded)}) + "\n")
+    # Then propagation must not leave the helper running in its separate process group.
+    assert not observed, f"Owned helper survives caller interruption: {observed}"
+    assert cleanup == "absent"
+
+
+def test_installer_preserves_nested_unmanaged_marker(tmp_path: Path) -> None:
+    # Given a minimal managed payload and an ordinary-file preservation control.
+    source = tmp_path / "source"
+    source.mkdir()
+    _ = (source / "plugin.yaml").write_text("name: logopia-studio\n", encoding="utf-8")
+    _ = (source / "__init__.py").write_bytes(b"")
+    profile = tmp_path / "fixture-profile"
+    profile.mkdir()
+    target = install_payload(source, profile, tmp_path, tmp_path).destination
+    ordinary = target / "user-note.txt"
+    _ = ordinary.write_bytes(b"owned by fixture user")
+    with pytest.raises(LaunchError, match="modified_install"):
+        _ = install_payload(source, profile, tmp_path, tmp_path)
+    assert ordinary.read_bytes() == b"owned by fixture user"
+    ordinary.unlink()
+    nested = target / "user-notes"
+    nested.mkdir()
+    sentinel = nested / ".logopia-install.json"
+    _ = sentinel.write_bytes(b"owned by fixture user")
+    # When update encounters the same foreign content under the marker basename.
+    code = "succeeded"
+    try:
+        _ = install_payload(source, profile, tmp_path, tmp_path)
+    except LaunchError as error:
+        code = error.code
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "scenario": "nested_marker",
+                "update_result": code,
+                "foreign_file_preserved": sentinel.exists(),
+            }
+        )
+        + "\n"
+    )
+    # Then the root marker exemption must not remove this unmanaged nested file.
+    assert code == "modified_install"
+    assert sentinel.read_bytes() == b"owned by fixture user"

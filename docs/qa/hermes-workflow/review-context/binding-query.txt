@@ -1,0 +1,7 @@
+def normalized: if has("brief") then .brief |= ({background:"opaque",color_policy:"advisory"} + .) else . end;
+[$sessions[].messages[].tool_calls[]?.function
+ | select(.name == "tool_call")
+ | .arguments | fromjson
+ | select(.name == "logopia_start" or .name == "logopia_action")
+ | {name, arguments:(.arguments | if type == "string" then fromjson else . end)}] as $calls
+| {request:$request_name, session:$sessions[0].id, envelope:"tool_call", tool:($calls[0].name), call_count:($calls|length), request_sha256:$request_sha, saved_arguments_match:(($calls|length)==1 and ($calls[0].arguments|normalized)==($saved[0]|normalized))}

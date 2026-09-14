@@ -1,0 +1,14 @@
+{
+  "pid": 19776,
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "python",
+    "/tmp/logopia-review-goal-080/verify.py"
+  ],
+  "deadline_seconds": 120,
+  "timed_out": false,
+  "exit_code": 0,
+  "signal": null
+}

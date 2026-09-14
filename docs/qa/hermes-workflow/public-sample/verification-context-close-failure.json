@@ -1,0 +1,427 @@
+{
+  "timestamp": "2026-09-14T16:44:25.984Z",
+  "frozen": true,
+  "sourceRevision": 47,
+  "node": "v26.8.1",
+  "links": [
+    {
+      "source": "README.ko.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "README.ko.md",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "../hermes.ko.md",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/c2.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/c3.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/e1.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "delivery/logo-package.zip",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "delivery/brand-guide.md",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "delivery/manifest.json",
+      "exists": true
+    },
+    {
+      "source": "README.ko.md",
+      "target": "example.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "README.ko.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "../hermes.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/c2.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/c3.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/e1.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "delivery/logo-package.zip",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "delivery/brand-guide.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "delivery/manifest.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "example.json",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "styles.css",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "#main",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "../hermes.md",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "../hermes.md",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "README.ko.md",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "#brief",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "#directions",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "#refinement",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "#delivery",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c2.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c2.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c2.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c3.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c3.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c3.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/c1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e1.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "originals/e2.png",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "[embedded verified ZIP]",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "delivery/logo-package.zip",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "delivery/brand-guide.md",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "delivery/manifest.json",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "example.json",
+      "exists": true
+    },
+    {
+      "source": "index.html",
+      "target": "../hermes.md",
+      "exists": true
+    }
+  ],
+  "originals": [
+    {
+      "id": "c1",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "width": 1774,
+      "height": 887,
+      "bytes": 739942,
+      "canonicalByteEqual": true,
+      "decoded": true,
+      "clickedOriginal": true
+    },
+    {
+      "id": "c2",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 755315,
+      "canonicalByteEqual": true,
+      "decoded": true,
+      "clickedOriginal": true
+    },
+    {
+      "id": "c3",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 752532,
+      "canonicalByteEqual": true,
+      "decoded": true,
+      "clickedOriginal": true
+    },
+    {
+      "id": "e1",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "width": 1774,
+      "height": 887,
+      "bytes": 788171,
+      "canonicalByteEqual": true,
+      "decoded": true,
+      "clickedOriginal": true
+    },
+    {
+      "id": "e2",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "width": 1774,
+      "height": 887,
+      "bytes": 714393,
+      "canonicalByteEqual": true,
+      "decoded": true,
+      "clickedOriginal": true
+    }
+  ],
+  "browser": {
+    "version": "152.0.7977.83",
+    "ownedPids": [
+      95390,
+      95394,
+      95395,
+      95396,
+      95408,
+      95409,
+      95410
+    ],
+    "contextClosed": true,
+    "cancelledTemporaryFilesRemoved": [
+      "ac9a6920-70ea-4306-bb14-96fca8493e32.crdownload"
+    ],
+    "downloadFilesAfterClose": []
+  },
+  "checks": {
+    "staticLinks": "passed",
+    "curatedAllowlistAndPrivacy": "passed",
+    "zipOriginalManifestGuideBytes": "passed",
+    "keyboardLinks": "passed",
+    "mobile390NoOverflow": "passed",
+    "reloadBackRepeatedClicks": "passed"
+  },
+  "zip": {
+    "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+    "bytes": 711451,
+    "entries": [
+      {
+        "path": "logo.png",
+        "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+        "bytes": 714393
+      },
+      {
+        "path": "manifest.json",
+        "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+        "bytes": 12893
+      },
+      {
+        "path": "brand-guide.md",
+        "sha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+        "bytes": 10559
+      }
+    ]
+  },
+  "error": "download.saveAs: Target page, context or browser has been closed"
+}

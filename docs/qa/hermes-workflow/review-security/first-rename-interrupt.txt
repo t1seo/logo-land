@@ -1,0 +1,68 @@
+{"scenario": "first_rename_interrupt", "actual_backup_bytes_match": [true], "target_exists": false, "prior_bytes_preserved": false, "source_unchanged": true, "remaining_plugin_entries": []}
+F
+=================================== FAILURES ===================================
+____________ test_prior_install_at_first_rename_boundary[interrupt] ____________
+
+tmp_path = PosixPath('/private/tmp/logopia-review-security-080/first-rename-interrupt/test_prior_install_at_first_re0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10776cb00>
+interrupt = True
+
+    @pytest.mark.parametrize("interrupt", [False, True], ids=["control", "interrupt"])
+    def test_prior_install_at_first_rename_boundary(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch, interrupt: bool
+    ) -> None:
+        source = tmp_path / "source"
+        source.mkdir()
+        _ = (source / "plugin.yaml").write_bytes(b"name: logopia-studio\n")
+        _ = (source / "__init__.py").write_bytes(b"fixture = True\n")
+        profile = tmp_path / "fixture-profile"
+        profile.mkdir()
+        target = install_payload(source, profile, tmp_path, tmp_path).destination
+        before = _snapshot(target)
+        replacement = b"fixture = False\n"
+        _ = (source / "__init__.py").write_bytes(replacement)
+        source_before = _snapshot(source)
+        original_rename = Path.rename
+        backup_seen: list[bool] = []
+    
+        def observe_then_interrupt(path: Path, destination: str | Path) -> Path:
+            renamed = original_rename(path, destination)
+            if path == target and Path(destination).name == "previous":
+                backup_seen.append(_snapshot(renamed) == before)
+                if interrupt:
+                    signal.raise_signal(signal.SIGINT)
+            return renamed
+    
+        monkeypatch.setattr(Path, "rename", observe_then_interrupt)
+        if interrupt:
+            with pytest.raises(KeyboardInterrupt):
+                _ = install_payload(source, profile, tmp_path, tmp_path)
+        else:
+            _ = install_payload(source, profile, tmp_path, tmp_path)
+        unchanged = _snapshot(target) == before
+        entries = sorted(path.name for path in target.parent.iterdir())
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "first_rename_interrupt" if interrupt else "normal_update",
+                    "actual_backup_bytes_match": backup_seen,
+                    "target_exists": target.is_dir(),
+                    "prior_bytes_preserved": unchanged,
+                    "source_unchanged": _snapshot(source) == source_before,
+                    "remaining_plugin_entries": entries,
+                }
+            )
+            + "\n"
+        )
+        assert backup_seen == [True]
+        assert _snapshot(source) == source_before
+>       assert target.is_dir(), "Previous installation disappeared after first-rename SIGINT"
+E       AssertionError: Previous installation disappeared after first-rename SIGINT
+E       assert False
+E        +  where False = is_dir()
+E        +    where is_dir = PosixPath('/private/tmp/logopia-review-security-080/first-rename-interrupt/test_prior_install_at_first_re0/fixture-profile/plugins/logopia-studio').is_dir
+
+/tmp/logopia-review-security-080/first_rename_probe.py:76: AssertionError
+=========================== short test summary info ============================
+FAILED ::test_prior_install_at_first_rename_boundary[interrupt] - AssertionEr...
+1 failed, 1 deselected in 0.16s

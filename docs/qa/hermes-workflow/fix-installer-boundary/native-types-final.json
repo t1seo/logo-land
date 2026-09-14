@@ -1,0 +1,19 @@
+{
+  "label": "native-types-final",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "basedpyright",
+    "--pythonversion",
+    "3.11",
+    "/tmp/logopia-fix-installer-boundary-080/native_audit.py"
+  ],
+  "pid": 72147,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 0,
+  "reaped": true,
+  "source_sha256_before": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "source_sha256_after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

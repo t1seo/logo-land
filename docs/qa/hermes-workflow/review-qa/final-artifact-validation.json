@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-14T18:07:28.985Z",
+  "verdict": "PASS",
+  "fixesReady": "msg_38ec653e2ac0",
+  "validLocalLinks": 63,
+  "jsonArtifactsParsed": 29,
+  "credentialPatternMatches": [],
+  "privateSessionExportsOpened": 0,
+  "headUnchanged": true,
+  "sourceEdits": 0,
+  "finalFullSuitePending": false,
+  "finalRootPytestPasses": 957,
+  "reportSha256": "6b5cfb094a68404dbc60409dd3ad68ad7f378948858578deaebb5b661dc71ac9"
+}

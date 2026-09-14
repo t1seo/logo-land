@@ -1,0 +1,19 @@
+{"event": "runtime", "pid": 6226, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "executable": "/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", "sha256": "18d9e079a25faac3ed32bcee371cbf7cc248f22c1e0eeae3ca83041f61efeadb"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_scope.py", "sha256": "d7b00656f684c3a0de37172a20cda922a18727b7aec2a054d7c4841507e61c34"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/process_group.py", "sha256": "ee8f298061c571b20704f04172cc1579e574920d0123ca25dac60b8f6c8d8aa3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/launcher_process.py", "sha256": "aa6a55c6a2597212bdd7e0fa9e853f5903abf3301965942874c042a75bd75359"}
+{"event": "owned_started", "pid": 6227, "pgid": 6227}
+{"event": "READY_FOR_TWO_CTRL_C", "caller_pid": 6226}
+^C^C{"event": "original_interrupt", "identity_preserved": true, "count": 2}
+{"fixture": "terminal", "owned": [[6227, 6227]], "states": [""], "group_exists": false, "elapsed": 0.575}
+{"event": "terminal_pass", "reaped": true, "elapsed": 0.575}
+{"cleanup": "terminal", "owned": [[6227, 6227]], "states": [""], "group_exists": false}
+{"event": "owned_started", "pid": 6244, "pgid": 6244}
+{"event": "stdout_pass", "threaded": false, "exact": true, "elapsed": 0.326}
+{"event": "owned_started", "pid": 6258, "pgid": 6258}
+{"event": "stdout_pass", "threaded": true, "exact": true, "elapsed": 0.328}
+{"event": "owned_absent", "count": 3, "all_reaped": true}
+{"event": "MANUAL_PASS", "resource_warnings": 0}
+  ~/Documents/Github/Projects/logo-generator   main !9 ?17 ❯ print -r -- "manual_exit=$?"                                                                             02:59:36
+manual_exit=0

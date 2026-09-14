@@ -1,0 +1,17 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/hermes/test_core_critique_late.py",
+    "tests/hermes/test_helper_recovery.py",
+    "--basetemp",
+    "/tmp/logopia-review-code-080/pytest"
+  ],
+  "pid": 13647,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 25.655
+}

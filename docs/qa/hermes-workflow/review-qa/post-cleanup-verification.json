@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-14T18:04:42.180Z",
+  "originalCleanup": "cleanup.json",
+  "newResourcesAfterOriginalCleanup": 0,
+  "scratchAbsent": true,
+  "ownedProfileProcessAbsent": true,
+  "sevenRecordedChromePidsAbsent": true,
+  "pidQuery": {
+    "command": "ps -p 12556,12611,12612,12626,12638,12642,12643 -o pid=,comm=,lstart=",
+    "exitCode": 1,
+    "stdout": ""
+  },
+  "port8816": {
+    "command": "lsof -nP -iTCP:8816 -sTCP:LISTEN",
+    "exitCode": 1,
+    "stdout": "",
+    "listenerAbsent": true
+  },
+  "diffCheck": {
+    "command": "git diff --check",
+    "exitCode": 0
+  },
+  "originals": [
+    {
+      "id": "c1",
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "parentId": null
+    },
+    {
+      "id": "c2",
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "parentId": null
+    },
+    {
+      "id": "c3",
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "parentId": null
+    },
+    {
+      "id": "e1",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "parentId": "c1"
+    },
+    {
+      "id": "e2",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "parentId": "e1"
+    }
+  ],
+  "canonicalSha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "defaultConfigSha256": "2bd35fc1d58229630b5a625d7cc7c48ca50bfbd9cfd6fc23e5af3a29798635bd",
+  "sourceEditsByReviewer": 0,
+  "newImageJobsByReviewer": 0
+}

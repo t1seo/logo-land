@@ -1,0 +1,19 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "-c",
+    "/Users/cillian/Documents/Github/Projects/logo-generator/pyproject.toml",
+    "/tmp/logopia-review-code-080/test_review_boundaries.py",
+    "--basetemp",
+    "/tmp/logopia-review-code-080/probe-pytest"
+  ],
+  "pid": 19759,
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 3.007
+}

@@ -1,0 +1,64 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# Run: installed Hermes venv/bin/python -B native_audit.py
+"""Parse and audit only this task's changed Python sources using the native runtime."""
+
+from __future__ import annotations
+
+import ast
+import hashlib
+import json
+import sys
+from pathlib import Path
+from typing import Final
+
+import pydantic
+from logopia_studio import installer
+
+MAX_LOGICAL_LINES: Final = 250
+
+
+def main() -> None:
+    scratch = Path(__file__).parent
+    files = (
+        Path(installer.__file__),
+        Path("tests/hermes/test_installer_backup_interrupt.py"),
+        Path("tests/hermes/test_installer_interruption.py"),
+        scratch / "manual.py",
+        scratch / "runner.py",
+        Path(__file__),
+    )
+    rows: list[tuple[str, int, str]] = []
+    for path in files:
+        source = path.read_text()
+        parsed = ast.parse(source, filename=str(path), feature_version=(3, 11))
+        count = sum(
+            bool(line.strip()) and not line.lstrip().startswith("#") for line in source.splitlines()
+        )
+        prohibited = [
+            node.id
+            for node in ast.walk(parsed)
+            if isinstance(node, ast.Name) and node.id in {"Any", "object", "cast"}
+        ]
+        if count > MAX_LOGICAL_LINES or prohibited:
+            raise AssertionError(path)
+        rows.append((str(path), count, hashlib.sha256(path.read_bytes()).hexdigest()))
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "status": "PASS",
+                "python": sys.version,
+                "pydantic": pydantic.__version__,
+                "files_path_logical_lines_sha256": rows,
+            },
+            indent=2,
+        )
+        + "\n"
+    )
+
+
+if __name__ == "__main__":
+    main()

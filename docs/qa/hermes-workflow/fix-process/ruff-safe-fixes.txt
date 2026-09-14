@@ -1,0 +1,126 @@
+E501 Line too long (101 > 100)
+  --> tests/hermes/test_helper_interrupt.py:76:101
+   |
+76 | def test_helper_repeated_caller_interrupts_settle_before_original_propagates(tmp_path: Path) -> None:
+   |                                                                                                     ^
+77 |     # Given a finite helper that repeatedly signals only its invoking caller.
+78 |     interrupts: list[KeyboardInterrupt] = []
+   |
+
+PT018 Assertion should be broken down into multiple parts
+  --> tests/hermes/test_helper_interrupt.py:97:13
+   |
+95 |             # Then the first exception propagates only after the complete group is gone.
+96 |             assert caught.value is interrupts[0]
+97 |             assert not any(states) and not alive
+   |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+98 |             assert len(interrupts) >= 2
+99 |             assert not recorded
+   |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_helper_interrupt.py:120:9
+    |
+118 |         assert isinstance(caught.value.__cause__, subprocess.TimeoutExpired)
+119 |         assert "exact commit may need reconciliation" in caught.value.detail
+120 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+121 |         assert time.monotonic() - started < 4
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_helper_interrupt.py:139:9
+    |
+137 |         states, alive = observe(tmp_path, time.monotonic() - started)
+138 |         # Then even an already reaped leader cannot leave a live owned descendant behind.
+139 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+140 |         assert time.monotonic() - started < 4
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:129:13
+    |
+127 |             _ = sys.stdout.write(json.dumps({"cleanup": root.name, "owned": records,
+128 |                                             "states": states, "group_exists": alive}) + "\n")
+129 |             assert not any(states) and not alive, "Finite fixture failed to settle"
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+130 |         finally:
+131 |             _ = signal.signal(signal.SIGINT, previous)
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:144:9
+    |
+142 |         # Then the receipt covers complete group settlement before return.
+143 |         assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
+144 |         assert result.timed_out and not result.interrupted
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+145 |         assert result.exit_code != 0
+146 |         assert not any(states) and not alive
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:146:9
+    |
+144 |         assert result.timed_out and not result.interrupted
+145 |         assert result.exit_code != 0
+146 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+147 |         assert time.monotonic() - started < 4
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:158:9
+    |
+156 |         states, alive = observe(tmp_path, time.monotonic() - started)
+157 |         # Then success preserves the logs while settling the exact owned group.
+158 |         assert result.exit_code == 0 and not result.timed_out and not result.interrupted
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+159 |         assert result.stdout_path.read_text(encoding="utf-8") == "exact stdout\n"
+160 |         assert not any(states) and not alive
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:160:9
+    |
+158 |         assert result.exit_code == 0 and not result.timed_out and not result.interrupted
+159 |         assert result.stdout_path.read_text(encoding="utf-8") == "exact stdout\n"
+160 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+161 |         assert time.monotonic() - started < 3
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:172:9
+    |
+170 |         states, alive = observe(tmp_path, time.monotonic() - started)
+171 |         # Then the interruption receipt follows full group settlement.
+172 |         assert result.interrupted and not result.timed_out
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+173 |         assert result.exit_code != 0
+174 |         assert not any(states) and not alive
+    |
+help: Break down assertion into multiple parts
+
+PT018 Assertion should be broken down into multiple parts
+   --> tests/hermes/test_process_group_settlement.py:174:9
+    |
+172 |         assert result.interrupted and not result.timed_out
+173 |         assert result.exit_code != 0
+174 |         assert not any(states) and not alive
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+175 |         assert time.monotonic() - started < 3
+    |
+help: Break down assertion into multiple parts
+
+Found 14 errors (3 fixed, 11 remaining).
+No fixes available (9 hidden fixes can be enabled with the `--unsafe-fixes` option).

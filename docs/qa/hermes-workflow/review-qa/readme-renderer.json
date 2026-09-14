@@ -1,0 +1,20 @@
+[
+  {
+    "lang": "en",
+    "input": "README.md",
+    "command": "uv run --locked markdown-it README.md",
+    "exit": 0,
+    "stderr": "",
+    "elapsedMs": 139,
+    "htmlSha256": "a71dd07160997778f8473126bfd7f364a8e4ec0fbe5529b7196a50c2b924786e"
+  },
+  {
+    "lang": "ko",
+    "input": "README.ko.md",
+    "command": "uv run --locked markdown-it README.ko.md",
+    "exit": 0,
+    "stderr": "",
+    "elapsedMs": 88,
+    "htmlSha256": "4be590579dd356e560f61e1c07692891a13854a6c1f712c253da646f3a3aa336"
+  }
+]

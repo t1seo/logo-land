@@ -1,0 +1,4 @@
+.{"scenario": "install_rollback", "fault": "PermissionError", "backup_exact_before_failure": [true], "target_exists": true, "prior_bytes_preserved": true, "remaining_entries": ["logopia-studio"]}
+.{"scenario": "install_rollback", "fault": "KeyboardInterrupt", "backup_exact_before_failure": [true], "target_exists": true, "prior_bytes_preserved": true, "remaining_entries": ["logopia-studio"]}
+.
+3 passed in 0.06s

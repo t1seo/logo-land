@@ -1,0 +1,21 @@
+{
+  "label": "red-foreign",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/hermes/test_installer_backup_interrupt.py::test_foreign_target_and_old_backup_both_survive_first_rename_sigint",
+    "tests/hermes/test_installer_interruption.py::test_interruption_does_not_overwrite_foreign_replacement",
+    "--basetemp",
+    "/tmp/logopia-fix-installer-boundary-080/red-foreign"
+  ],
+  "pid": 58786,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 1,
+  "reaped": true,
+  "source_sha256_before": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b",
+  "source_sha256_after": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b"
+}

@@ -1,0 +1,598 @@
+{
+  "record_type": "curated_public_example",
+  "schema_version": 1,
+  "notice": "Selected fields from one fictional-brand example. AI reviews are model observations. This static page does not resume or change a workflow.",
+  "publication": {
+    "frozen": true,
+    "source_revision": 47,
+    "source_phase": "delivered",
+    "source_sha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+    "read_at": "2026-09-14T16:42:07.312Z"
+  },
+  "brief": {
+    "name": "OFFCUT",
+    "exact_text": "OFFCUT",
+    "product": "A fictional furniture studio making repairable modular shelves from reclaimed wood offcuts.",
+    "audience": "Design-conscious city renters who want durable furniture that fits small homes and can move with them.",
+    "personality": "Resourceful, warm, precise, quietly witty and unpretentious.",
+    "use_case": "A clean ecommerce header and a simple shipping stamp; compare the complete identity at 192 pixels wide.",
+    "display_width": 192,
+    "logo_type": "combination",
+    "mode": "brand",
+    "background": "opaque",
+    "count": 3,
+    "colors": [
+      "#23483E",
+      "#D97446"
+    ],
+    "notes": "Use dark forest ink as the structural color and optional restrained clay orange as an accent. Pure white background. Develop three genuinely different construction ideas inspired by useful offcuts, joinery or modular fit. Avoid stock chairs, leaves, trees, recycling arrows, generic initials inside circles, and staged mockups. Give OFFCUT clear deliberate letter spacing; the symbol should have one memorable gesture and survive reduction. Each candidate is one standalone original image, not a comparison grid. Colors are advisory. This is a demonstration brand, not a claim of legal uniqueness.",
+    "color_policy": "advisory"
+  },
+  "planning": {
+    "role": "strategy_and_art_direction",
+    "provider": "openai-codex",
+    "model": "gpt-5.6-sol"
+  },
+  "directions": [
+    {
+      "id": "useful-remainder",
+      "title": "Useful Remainder",
+      "motif": "A low rectangular offcut loses a substantial corner, and that same displaced piece reappears across a white gap as a small supporting foot. The single witty gesture turns an apparent remainder into a useful structural part without depicting furniture literally.",
+      "rationale": "The audience wants compact furniture that feels durable rather than temporary. A missing piece made structurally useful proposes resourcefulness through one immediately visible relationship. The low silhouette supports an orderly ecommerce header, while the reusable wedge introduces warmth and quiet wit without becoming an environmental badge.",
+      "risk": "The wedge could read as a drop shadow, loose scrap or play-button shape if it is too small, too close or incorrectly aligned. Keep a clear white separation, make the wedge contour correspond visibly to the removed corner, and place it on a believable support line. At a complete-mark width of 192 pixels, enlarge the cut and wedge if either relationship becomes ambiguous; do not use shading to rescue it."
+    },
+    {
+      "id": "repair-scarf-joint",
+      "title": "Repair Joint",
+      "motif": "Two unequal upright slabs meet through a broad stepped scarf joint. A continuous white channel reveals how the pieces connect, while a restrained clay insert marks repair as deliberate construction rather than damage.",
+      "rationale": "A visible repair joint translates durability and future maintenance into precise maker language. The unequal slabs suggest that different available pieces can become interdependent, while the exposed channel makes the assembly logic legible. Its upright silhouette differs clearly from the low remainder mark and can act as a compact shipping stamp.",
+      "risk": "At small size, the stepped channel may close and turn the slabs into an undifferentiated block, while the orange key may resemble a decorative pixel. Limit the joint to two broad steps, keep its white channel wider than incidental letter gaps, and remove the key rather than shrinking it below recognition. Verify that the construction does not resemble an H, chain link or generic monogram at 192 pixels."
+    },
+    {
+      "id": "modular-shift",
+      "title": "Modular Shift",
+      "motif": "Three short shelf-like modules follow a staggered upward rhythm, but the center module passes through a square notch in the upper module. The precise overlap communicates rearrangement and compact fit, while softly rounded outer terminals make the system feel domestic rather than industrial.",
+      "rationale": "Renters need furniture that can rearrange and move with them. A shifting three-part rhythm proposes adaptability, while the single pass-through notch demonstrates real fit rather than a generic stack. The rising silhouette adds energy and differs from both the solid offcut and upright repair-joint constructions.",
+      "risk": "Three bars can easily become a menu icon, signal-strength graphic, staircase or literal shelf. The unequal lengths, one unmistakable square pass-through notch and contrasting terminal treatment must carry the distinction. At 192 pixels, the white reveals may vanish or the orange module may appear merely overlaid; widen the notch clearance and reduce the stagger before adding detail."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "c1",
+      "direction_id": "useful-remainder",
+      "parent_id": null,
+      "sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+      "width": 1774,
+      "height": 887,
+      "original": "originals/c1.png",
+      "provider": "openai-codex",
+      "model": "gpt-image-2-medium",
+      "keep": [],
+      "change": "",
+      "reviews": [
+        {
+          "role": "design",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The combination mark clearly communicates an offcut/joinery idea through the separated diagonal pieces, uses the requested restrained forest-and-clay color roles, and remains recognizable at 192 px. The exact word is legible, but the wordmark would benefit from more deliberate optical spacing to better meet the brief’s lettering requirement.",
+          "image_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+          "parent_sha256": null,
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "needs_revision",
+              "observation": "The wordmark reads accurately as “OFFCUT” in both views, with clear counters in O and C and clean joins. However, the uppercase spacing is compact and fairly mechanical, especially through FF, FC, and UT, rather than visibly deliberate.",
+              "fix": "Apply slight overall tracking and optical kerning: open FF and FC modestly, then balance UT so the final T does not feel attached to the U. Recheck the result at 192 px."
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The symbol and wordmark form a clear horizontal lockup with consistent vertical alignment and a practical hierarchy. The broad green offcut shape, diagonal white separation, and smaller orange piece create one memorable modular-fit gesture without competing with the name.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "At the labeled 192 px width, all six letters remain distinct, the O counter stays open, and the symbol’s orange wedge and diagonal separation remain visible. The silhouette reads without relying on fine detail.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "not_applicable",
+              "observation": "No parent artwork or requested keep features were supplied, so preservation cannot be evaluated.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The supplied raster presents the logo cleanly on an apparently opaque white background with no visible mockup, scene, border, or distracting artifact. Exact pixel-level white and exact palette values cannot be established from visual inspection alone.",
+              "fix": ""
+            }
+          ]
+        },
+        {
+          "role": "production",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The combination mark is clear and production-ready at the supplied 192 px display width: OFFCUT remains legible, the compact offcut/joinery symbol retains its diagonal gesture and orange insert, and the white field provides ample clear space. The raster previews support visual color and background observations but do not establish exact palette values, font identity, or vector editability.",
+          "image_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+          "parent_sha256": null,
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The exact text “OFFCUT” is present, correctly spelled, and immediately readable in both the original PNG and the labeled 192 px view. The bold uppercase forms and visibly separated letters avoid crowding.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The rectangular symbol and wordmark form a coherent horizontal lockup, with aligned visual centers and a clear gap between them. The orange triangular insert provides one restrained focal gesture without competing with the name.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "At the actual 192 px target width, all six letters remain distinct and the symbol’s diagonal white separation remains open rather than collapsing. The reduced view shows no visibly damaging aliasing or fragile hairline strokes.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "not_applicable",
+              "observation": "No parent artwork was supplied, so preservation or regression against a prior version cannot be assessed.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The mark is displayed on an opaque, visually white rectangular canvas with generous clear space on every side; no clipping, unintended border, halo, or background artifact is visible at either supplied size. Exact pixel color values cannot be confirmed from appearance alone.",
+              "fix": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "direction_id": "repair-scarf-joint",
+      "parent_id": null,
+      "sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+      "width": 1254,
+      "height": 1254,
+      "original": "originals/c2.png",
+      "provider": "openai-codex",
+      "model": "gpt-image-2-medium",
+      "keep": [],
+      "change": "",
+      "reviews": [
+        {
+          "role": "design",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The candidate presents a clear, compact OFFCUT identity with a useful joinery-like symbol and accurate, readable lettering at the required 192-pixel width. The symbol’s offset orange connector is the memorable gesture, while the dark structural forms establish the intended hierarchy. The main revision is to remove the visible soft shading/halo and ensure a uniformly white, opaque background for cleaner ecommerce and shipping-stamp reproduction.",
+          "image_sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+          "parent_sha256": null,
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The wordmark visibly reads “OFFCUT” in the correct order. All six letters remain distinct at 192 pixels: the O counter stays open, both F crossbars are legible, the C opening is clear, and U and T do not merge. Spacing is compact but visibly separated.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "A tall modular symbol sits to the left of a single horizontal wordmark, forming a clear combination-mark hierarchy. The orange inset bridges two offset dark blocks and communicates fitting or joinery without using the prohibited chair, leaf, tree, recycling-arrow, or circled-initial motifs. The symbol is larger than the lettering but does not overpower the full lockup.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "In the labeled 192-pixel view, the complete silhouette remains recognizable, the orange connector is still visible, the symbol’s white channel stays open, and every letter remains readable. The simplified block construction is suitable for reduction.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "not_applicable",
+              "observation": "No parent artwork or required keep features were supplied, so preservation cannot be evaluated.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "needs_revision",
+              "observation": "The artwork is shown against a white field, but the original-size view has faint gray shading or haloing around the dark forms and a subtly nonuniform appearance. The displayed raster alone also does not establish that the exported background is truly opaque.",
+              "fix": "Remove all shadows, glow, texture, and edge-adjacent gray cast; export the final mark on a uniform pure-white opaque background, then verify the 192-pixel version retains clean flat edges."
+            }
+          ]
+        },
+        {
+          "role": "production",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The lockup is clear, distinctive, and readable at the supplied 192 px view, with a compact joinery-like symbol and accurate OFFCUT wordmark. The principal revision is asset framing: the square canvas leaves extensive unused space, making the complete identity display much smaller than necessary in a fixed-width ecommerce asset. A tightly cropped export and a simplified flat-color production version would improve header and shipping-stamp use.",
+          "image_sha256": "f7962dee46e27c406039da75e1bd314322e4cd3510cfc8d9686d5cd64a3961c3",
+          "parent_sha256": null,
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The visible wordmark reads exactly “OFFCUT” in uppercase at both original and 192 px views. The heavy letterforms remain unambiguous, and the tight spacing is consistent rather than visibly accidental.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The vertically extended symbol and horizontal wordmark form a coherent left-to-right lockup. The gap between symbol and O is sufficient, while the symbol’s orange insert provides one restrained focal gesture without overpowering the name.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "At the labeled 192 px view, OFFCUT remains readily legible and the symbol’s two green uprights, central white joint, and small orange insert are still separable. No critical stroke or counter visibly closes, although the orange insert is approaching the practical minimum for further reduction.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "not_applicable",
+              "observation": "No parent artwork was supplied, so preservation or regression against a parent cannot be evaluated.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "needs_revision",
+              "observation": "The supplied image uses an opaque white background, but the square canvas contains very large unused margins above and below the lockup. Consequently, the actual logo occupies only a small portion of the 192 px-wide displayed image. The original also shows subtle tonal texture and softened edge treatment in the green forms, which may be unreliable for a simple shipping stamp.",
+              "fix": "Crop the export to a deliberate clear-space boundary around the lockup rather than retaining the large square field. Also provide a flat, hard-edged one-color stamp version with the symbol gaps and orange insert tested as solid shapes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "direction_id": "modular-shift",
+      "parent_id": null,
+      "sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+      "width": 1254,
+      "height": 1254,
+      "original": "originals/c3.png",
+      "provider": "openai-codex",
+      "model": "gpt-image-2-medium",
+      "keep": [],
+      "change": "",
+      "reviews": [
+        {
+          "role": "design",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The combination mark is clean, readable, and appropriately restrained at 192 px. The dark structural wordmark and small clay accent establish a clear hierarchy, while the exact name remains legible. The main weakness is conceptual: the three separated rounded bars read more as a generic stack than as a convincing piece of joinery or modular fit. Strengthening the relationship between the orange offcut and the notched upper member would create a more memorable, brand-specific gesture without adding complexity.",
+          "image_sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+          "parent_sha256": null,
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The wordmark visibly reads “OFFCUT” with all six letters present in the correct order. The bold uppercase forms have open counters, distinct F/C/U/T silhouettes, and consistent compact spacing at both shown scales.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "needs_revision",
+              "observation": "The symbol and wordmark form a clear horizontal lockup, but the icon consists of three disconnected rounded bars; only the small notch in the upper bar suggests construction, so the orange piece does not visibly participate in a modular joint.",
+              "fix": "Reconfigure the orange bar as a visibly fitted offcut that keys into the upper notch or aligns with a complementary cut, while retaining three simple pieces and the current compact silhouette."
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "At the labeled 192 px view, OFFCUT remains immediately readable, the O counter and C opening stay clear, and the three symbol layers remain separable. The small top notch is still visible without collapsing into the surrounding shape.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "not_applicable",
+              "observation": "No parent artwork or required keep features were provided, so preservation cannot be assessed.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The supplied raster shows the logo isolated on an opaque, visually pure-white background with no mockup, texture, border, or competing element.",
+              "fix": ""
+            }
+          ]
+        },
+        {
+          "role": "production",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The candidate is clear and well balanced at the supplied 192 px width, with an identifiable modular/offcut symbol and an immediately readable wordmark. The main refinements are to make the word spacing feel more deliberate and to strengthen the symbol’s smallest notch and inter-piece gaps for reliable stamp reproduction.",
+          "image_sha256": "68734a451c89f499e54f5366e5fe04cc49d6b58ca329604373ee6657c9720aea",
+          "parent_sha256": null,
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "needs_revision",
+              "observation": "The exact text “OFFCUT” is present and legible in both views, but the compact spacing—particularly through OFF and UT—reads more like standard tight typesetting than deliberately articulated letter spacing.",
+              "fix": "Add modest, optically adjusted tracking across the wordmark, checking the FF, FC, and UT pairs at 192 px so the letters remain distinct without making the name feel disconnected."
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The three-piece symbol and wordmark form a coherent horizontal lockup. Their visual weights are balanced, the symbol-to-word gap is clear, and the generous surrounding canvas prevents crowding at the labeled target width.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "needs_revision",
+              "observation": "At 192 px the word remains readable and the main bars remain solid, but the top bar’s small rectangular notch and the narrow separations between stacked pieces are only a few pixels wide and are the most vulnerable details for coarse printing or ink spread.",
+              "fix": "Enlarge the notch and slightly increase the vertical gaps between the three pieces, then test a one-color stamp version to ensure those negative spaces stay open under ink gain."
+            },
+            {
+              "key": "preservation",
+              "status": "not_applicable",
+              "observation": "No parent artwork was supplied, so preservation or regression against a parent cannot be evaluated.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "Both supplied views show a visually uniform, uncluttered white canvas with ample clear space and no visible edge contamination or background artifacts. The rendered previews alone do not establish exact RGB values or alpha state.",
+              "fix": "For production, explicitly export or flatten the final PNG onto an opaque white canvas and verify the background pixel values in the source file."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "direction_id": "useful-remainder",
+      "parent_id": "c1",
+      "sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+      "width": 1774,
+      "height": 887,
+      "original": "originals/e1.png",
+      "provider": "openai-codex",
+      "model": "gpt-image-2-medium",
+      "keep": [
+        "Exact uppercase text OFFCUT, existing letter shapes, weight and proportions.",
+        "The diagonal offcut symbol, its orange triangle, and the symbol-to-word gap.",
+        "The existing forest green and clay orange color roles, plain white background and horizontal composition."
+      ],
+      "change": "Apply subtle optical spacing refinement only: add slight tracking, open FF and FC modestly, then balance UT so the final T does not feel attached to the U. Preserve the existing glyph construction and the rest of the logo. Keep the horizontal canvas proportions and white clear space. Do not add elements, shadows or texture. The complete lockup should remain readable at 192 pixels wide.",
+      "reviews": [
+        {
+          "role": "design",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The candidate keeps the original horizontal lockup, lettering construction, diagonal offcut mark, and visible forest/clay color roles while clearly opening the FF, FC, and UT spacing. It remains readable at 192 px. Revision is needed because the symbol-to-word gap is visibly narrower than in the parent, despite that gap being designated for preservation.",
+          "image_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+          "parent_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The word reads exactly “OFFCUT” in uppercase. The original heavy geometric letter shapes, O counter, open C, F construction, U bowl, and T proportions remain visibly intact; FF, FC, and UT are more clearly separated than in the parent.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The mark and word retain a clean horizontal hierarchy, common visual baseline, and ample surrounding white space. The restrained tracking changes distribute the word more evenly without changing the overall canvas proportions.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "At the supplied 192 px view, all six letters remain distinct, the O counter and C opening stay clear, and the diagonal white cut with orange triangle remains recognizable.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "needs_revision",
+              "observation": "The diagonal green offcut form, orange triangle, lettering style, horizontal arrangement, and visible color roles match the parent closely. However, the candidate shifts the word left, making the symbol-to-O gap visibly narrower than in the parent instead of preserving it.",
+              "fix": "Move the complete wordmark slightly right to restore the parent’s symbol-to-word gap while retaining the refined internal FF, FC, and UT spacing and all existing glyph shapes."
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The supplied raster shows a plain, visually uniform white background with no added elements, shadows, texture, or mockup treatment.",
+              "fix": ""
+            }
+          ]
+        },
+        {
+          "role": "production",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "Needs revision: the candidate keeps the exact wordmark, improves the requested internal spacing, and remains readable at 192 px, but comparison with the parent shows that the symbol-to-word gap has been visibly reduced. Restore that protected gap without undoing the refined FF, FC, and UT spacing.",
+          "image_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+          "parent_sha256": "30e46b31716db37cfa51d7fb2f5406e48275727c9ccaef6d54a0d1ee4a2a878f",
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The visible text is exactly “OFFCUT” in uppercase. The candidate retains the parent’s heavy geometric letter construction while opening the FF, FC, and UT relationships; the final T no longer appears attached to the U.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The horizontal symbol-plus-word arrangement remains coherent, with aligned visual height, ample outer clear space, and no added elements. The modestly expanded internal letter spacing does not make the lockup feel fragmented.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "In the labeled 192 px view, all six letters remain clearly distinguishable, including the C opening and U/T separation. The diagonal white cut and orange triangular insert survive reduction, although their antialiased edges are necessarily only a few pixels wide.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "needs_revision",
+              "observation": "Compared directly with the parent originals, the symbol, orange insert, glyph forms, color roles, and horizontal format are retained, but the candidate shifts the O visibly closer to the symbol, reducing the protected symbol-to-word gap by roughly 10–11 source pixels.",
+              "fix": "Move the complete wordmark slightly right to restore the parent’s symbol-to-word gap while preserving the candidate’s refined internal FF, FC, and UT spacing and the existing canvas proportions."
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The candidate is displayed on a plain white canvas with generous clear space and no visible texture, shadow, border, or added background element. No edge clipping is visible in either supplied size.",
+              "fix": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "direction_id": "useful-remainder",
+      "parent_id": "e1",
+      "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+      "width": 1774,
+      "height": 887,
+      "original": "originals/e2.png",
+      "provider": "openai-codex",
+      "model": "gpt-image-2-medium",
+      "keep": [
+        "The exact uppercase text OFFCUT, all current glyph shapes and the refined internal FF, FC and UT spacing.",
+        "The existing diagonal offcut symbol and orange triangle at their current positions and dimensions.",
+        "The current forest green and clay orange colors, plain white background and 1774 by 887 horizontal canvas proportions."
+      ],
+      "change": "Restore only the symbol-to-word clear space: move the entire OFFCUT wordmark as one intact unit slightly to the right, increasing the gap between the symbol and the left edge of O by roughly 10 to 12 source pixels. Do not recenter the whole lockup, move the symbol, resize or redraw letters, or change spacing between individual letters. Retain the improved FF, FC and UT relationships. All other artwork and white background must remain visually unchanged.",
+      "reviews": [
+        {
+          "role": "design",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The candidate appears to make only the requested adjustment: the complete OFFCUT wordmark shifts slightly right by approximately 10–12 source pixels, increasing symbol-to-word clearance while leaving the symbol, lettering, internal spacing, scale, alignment, and overall canvas placement otherwise visually unchanged. The exact text remains clear at both supplied sizes, and no visible unintended background or artwork changes are apparent.",
+          "image_sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+          "parent_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The word reads exactly “OFFCUT” in uppercase. All six glyphs remain visibly consistent with the parent, including the O counter, matching F forms, open C, rounded U, and T; the refined FF, FC, and UT relationships appear unchanged because the lettering moved as one unit.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "Compared with the parent, the symbol stays fixed while the left edge of the O moves slightly right, producing the requested increase in clear space of roughly 10–12 source pixels. The word remains vertically aligned with the symbol, and the full lockup was not recentered or resized.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "At the labeled 192-pixel width, OFFCUT remains immediately legible, the O counter and C opening stay distinct, and the diagonal white separation plus orange triangular offcut remain recognizable. The enlarged symbol-to-word gap reads as a small but useful separation without fragmenting the lockup.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "pass",
+              "observation": "Direct comparison shows the diagonal forest symbol and orange triangle retaining their parent positions and apparent dimensions. The wordmark’s glyph shapes, internal spacing, baseline, height, and color roles are visually preserved, with only the entire word unit shifted right; the horizontal canvas proportions also appear unchanged. Exact hex values cannot be certified from raster appearance alone.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The candidate retains the parent’s plain, visually uniform white background across the full canvas, with no visible crop, added element, edge contamination, or stray mark. The supplied raster appearance supports visual preservation of the white field, though it does not independently establish color-profile or alpha-channel metadata.",
+              "fix": ""
+            }
+          ]
+        },
+        {
+          "role": "production",
+          "provider": "openai-codex",
+          "model": "gpt-5.6-sol",
+          "summary": "The candidate visibly makes the requested restrained change: the intact OFFCUT wordmark is shifted slightly right relative to the unchanged symbol, improving symbol-to-word clear space without disturbing the established lockup. The exact text remains legible at 192 px, the diagonal cut and orange insert survive reduction, and no visible background or parent regressions are apparent.",
+          "image_sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+          "parent_sha256": "08196269c02184cd99237a0e2a8306e039f1d13eac0a9261ce652f6c5b0a6560",
+          "view_width": 192,
+          "criteria": [
+            {
+              "key": "text",
+              "status": "pass",
+              "observation": "The candidate visibly reads exactly “OFFCUT” in uppercase. The glyph shapes and the FF, FC, and UT spacing relationships appear unchanged from the parent, with the word moved as one unit rather than re-spaced.",
+              "fix": ""
+            },
+            {
+              "key": "composition",
+              "status": "pass",
+              "observation": "The gap between the symbol’s right edge and the O is visibly larger than in the parent by a small, controlled amount. The symbol remains fixed, and the added separation improves clarity without making the lockup feel disconnected or causing edge crowding.",
+              "fix": ""
+            },
+            {
+              "key": "small_size",
+              "status": "pass",
+              "observation": "In the labeled 192 px view, OFFCUT remains immediately readable, the orange triangular insert remains distinct, and the narrow diagonal white separation is still visible. Minor raster antialiasing appears along diagonal and curved edges but does not close gaps or materially weaken the mark.",
+              "fix": ""
+            },
+            {
+              "key": "preservation",
+              "status": "pass",
+              "observation": "Comparison with the parent indicates that the diagonal symbol, orange triangle, letterforms, internal letter spacing, scale, vertical alignment, and canvas proportions are visually preserved; the only evident artwork change is the intended rightward movement of the full wordmark.",
+              "fix": ""
+            },
+            {
+              "key": "background",
+              "status": "pass",
+              "observation": "The candidate retains the same plain, opaque-looking white canvas as the parent, with ample clear space and no visible artifacts, unintended transparency, cropping, or background-color regression at either supplied size.",
+              "fix": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sample_choice": {
+    "owner": "coordinator",
+    "refinement_parent": "c1",
+    "selected_id": "e2",
+    "final_native_receipt_received": true
+  },
+  "delivery": {
+    "candidate_id": "e2",
+    "zip": {
+      "path": "delivery/logo-package.zip",
+      "sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+      "bytes": 711451
+    },
+    "manifest": {
+      "path": "delivery/manifest.json",
+      "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+      "bytes": 12893
+    },
+    "guide": {
+      "path": "delivery/brand-guide.md",
+      "sha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+      "bytes": 10559
+    },
+    "entries": [
+      {
+        "path": "logo.png",
+        "public_path": "delivery/logo.png",
+        "sha256": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+        "bytes": 714393
+      },
+      {
+        "path": "manifest.json",
+        "public_path": "delivery/manifest.json",
+        "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+        "bytes": 12893
+      },
+      {
+        "path": "brand-guide.md",
+        "public_path": "delivery/brand-guide.md",
+        "sha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+        "bytes": 10559
+      }
+    ]
+  }
+}

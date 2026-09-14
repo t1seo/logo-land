@@ -1,0 +1,4 @@
+/Users/cillian/Documents/Github/Projects/logo-generator/tests/hermes/test_installer_backup_interrupt.py
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/hermes/test_installer_backup_interrupt.py:122:22 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+  /Users/cillian/Documents/Github/Projects/logo-generator/tests/hermes/test_installer_backup_interrupt.py:156:14 - error: Pattern will never be matched for subject type "Never" (reportUnnecessaryComparison)
+2 errors, 0 warnings, 0 notes

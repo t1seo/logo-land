@@ -1,0 +1,18 @@
+{
+  "error": "Cross-realm deepStrictEqual prototype mismatch",
+  "expected": [
+    "c1",
+    "c2",
+    "c3",
+    "e1",
+    "e2"
+  ],
+  "actual": [
+    "c1",
+    "c2",
+    "c3",
+    "e1",
+    "e2"
+  ],
+  "productChanged": false
+}

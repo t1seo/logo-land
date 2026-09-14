@@ -1,0 +1,22 @@
+{
+  "pid": 50193,
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "-c",
+    "pyproject.toml",
+    "/tmp/logopia-review-goal-080/test_first_rename.py::test_valid_managed_update",
+    "--basetemp",
+    "/tmp/logopia-review-goal-080/first-rename-pin"
+  ],
+  "deadline_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "signal": null,
+  "reaped": true,
+  "source_sha256": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b"
+}

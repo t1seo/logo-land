@@ -1,0 +1,1 @@
+/tmp/logopia-review-context-final-080/http.sh: line 21: 98366 Terminated: 15          perl -e 'alarm 120; exec @ARGV or die $!' .venv/bin/python -B -u -m http.server 8817 --bind 127.0.0.1 --directory "$repo" > "$out/server-log.txt" 2> "$out/server-error.txt"

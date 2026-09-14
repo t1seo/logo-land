@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "python": "3.11.16 (main, Sep  1 2026, 14:08:22) [Clang 22.1.3 ]",
+  "pydantic": "2.13.4",
+  "files_path_logical_lines_sha256": [
+    [
+      "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/installer.py",
+      152,
+      "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+    ],
+    [
+      "tests/hermes/test_installer_backup_interrupt.py",
+      226,
+      "7ae716959cc461f2a5cbb3c6ff6c8b202db69be3358293156b8436ab2aae754d"
+    ],
+    [
+      "tests/hermes/test_installer_interruption.py",
+      104,
+      "6acc66ade32509d5894efcb7cb2f2f72ef9a66e912f1704632a0457a12093a33"
+    ],
+    [
+      "/tmp/logopia-fix-installer-boundary-080/manual.py",
+      202,
+      "4492f08107b12378d4c5c3df21a4fa984ed34c3d74b5c71f55a0a4721cf1b213"
+    ],
+    [
+      "/tmp/logopia-fix-installer-boundary-080/runner.py",
+      69,
+      "cb05e45c764b84e37e6ee1197274f30458a5a11890a23caf4111e42b54c27b17"
+    ],
+    [
+      "/tmp/logopia-fix-installer-boundary-080/native_audit.py",
+      48,
+      "d8e38ebbbfec30c1f94b14e1e0ad2c27c8f78a8a42695bb336b295e585d1a53a"
+    ]
+  ]
+}

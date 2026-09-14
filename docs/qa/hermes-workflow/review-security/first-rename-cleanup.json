@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "meaning": "Cleanup only; first-rename product regression remains FAIL pending routed fix",
+  "scratch": "/tmp/logopia-review-security-080",
+  "scratch_removed_and_absent": true,
+  "owned_scripts_removed": ["first_rename_probe.py"],
+  "fixture_roots_removed": ["first-rename-control", "first-rename-interrupt"],
+  "new_background_processes": 0,
+  "new_servers_or_browser_contexts": 0,
+  "new_dependency_downloads": 0,
+  "command_local_environment_ended": true,
+  "foreground_pytest_exit_codes": [0, 1],
+  "ruff_initial_exit": 1,
+  "ruff_final_exit": 0,
+  "basedpyright_exit": 0,
+  "production_edits_by_reviewer": 0,
+  "native_or_real_profile_operations": 0,
+  "sanitized_reproduction_and_original_failure_retained": true
+}

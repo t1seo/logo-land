@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-14T17:00:33.380Z",
+  "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/delivery/brand-guide.md",
+  "expected": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+  "observedPlaywrightBody": "df11f46b4141747735bfde8b54bfcc5d4323dcb41950843738377b14148c2124",
+  "error": "Hash assertion on direct text navigation response body",
+  "priorActualGuideDownloadExact": true,
+  "partialResults": [
+    {
+      "gallery": "public",
+      "member": "manifest.json",
+      "status": 200,
+      "sha256": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+      "bytes": 12893
+    }
+  ]
+}

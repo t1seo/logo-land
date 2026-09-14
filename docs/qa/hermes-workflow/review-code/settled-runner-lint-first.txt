@@ -1,0 +1,16 @@
+ISC004 Unparenthesized implicit string concatenation in collection
+  --> /tmp/logopia-review-code-080/run_settled.py:26:5
+   |
+24 |       str(SCRATCH / "test_review_boundaries.py"),
+25 |       str(SCRATCH / "test_nested_helper.py"),
+26 | /     "tests/hermes/test_helper_interrupt.py::"
+27 | |     "test_helper_repeated_caller_interrupts_settle_before_original_propagates",
+   | |______________________________________________________________________________^
+28 |       "--basetemp", str(SCRATCH / "settled-pytest"),
+29 |       "-o", f"cache_dir={SCRATCH / 'settled-cache'}",
+   |
+help: Did you forget a comma?
+help: Wrap implicitly concatenated strings in parentheses
+
+Found 1 error.
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

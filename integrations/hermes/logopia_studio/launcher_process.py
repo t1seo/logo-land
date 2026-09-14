@@ -1,0 +1,131 @@
+"""Run one owned Hermes process with literal arguments and a finite deadline."""
+
+from __future__ import annotations
+
+import re
+import signal
+import subprocess
+from dataclasses import dataclass
+from typing import TYPE_CHECKING, Final
+
+from .process_group import settle_group
+from .process_scope import ProcessInspectionError, bounded_call
+
+if TYPE_CHECKING:
+    from pathlib import Path
+
+_PROFILE: Final = re.compile(r"[a-z0-9][a-z0-9_-]{0,63}")
+MAX_DEADLINE: Final = 3600
+MAX_GRACE: Final = 10
+
+
+class LaunchError(Exception):
+    """Expose an actionable launcher failure without inferring workflow success."""
+
+    code: str
+    detail: str
+
+    def __init__(self, code: str, detail: str) -> None:
+        self.code = code
+        self.detail = detail
+        super().__init__(f"{code}: {detail}")
+
+
+@dataclass(frozen=True, slots=True)
+class ProcessReceipt:
+    """Process exit evidence; this is not a logo review or delivery receipt."""
+
+    exit_code: int
+    timed_out: bool
+    interrupted: bool
+    stdout_path: Path
+    stderr_path: Path
+
+
+def validate_profile(profile: str) -> str:
+    """Keep installation and execution in an explicit nondefault profile."""
+    if not _PROFILE.fullmatch(profile) or profile == "default":
+        raise LaunchError("invalid_profile", "Use a named profile such as logopia")
+    return profile
+
+
+def hermes_command(profile: str, query: Path, workspace: Path) -> tuple[str, ...]:
+    """Build a command without interpolating user text into a shell or argv."""
+    return (
+        "hermes",
+        "-p",
+        validate_profile(profile),
+        "chat",
+        "--cli",
+        "--quiet",
+        "--oneshot",
+        "--query-file",
+        str(query),
+        "--in",
+        str(workspace),
+        "--no-restore-cwd",
+        "--toolsets",
+        "logopia-studio,image_gen",
+        "--skills",
+        "logopia-studio:director",
+        "--max-turns",
+        "6",
+        "--run-budget",
+        "1800",
+    )
+
+
+def run_process(
+    command: tuple[str, ...],
+    workspace: Path,
+    output: Path,
+    timeout_seconds: int,
+    grace_seconds: float = 10,
+) -> ProcessReceipt:
+    """Retain exact logs and settle an owned child on deadline or interruption."""
+    if not 1 <= timeout_seconds <= MAX_DEADLINE or not 0 < grace_seconds <= MAX_GRACE:
+        raise LaunchError("invalid_deadline", "Deadline must be 1-3600 seconds; grace at most 10")
+    if not command or not workspace.is_dir():
+        raise LaunchError("invalid_command", "A command and existing workspace are required")
+    try:
+        output.mkdir(parents=True, exist_ok=False)
+    except FileExistsError as error:
+        raise LaunchError("output_exists", "Run logs need a fresh output directory") from error
+    stdout_path = output / "stdout.txt"
+    stderr_path = output / "stderr.txt"
+    timed_out = False
+    interrupted = False
+    try:
+        with (
+            stdout_path.open("x", encoding="utf-8") as stdout,
+            stderr_path.open("x", encoding="utf-8") as stderr,
+        ):
+            process = subprocess.Popen(  # noqa: S603 - internal argv; never a shell or model command.
+                command,
+                cwd=workspace,
+                stdin=subprocess.DEVNULL,
+                stdout=stdout,
+                stderr=stderr,
+                text=True,
+                start_new_session=True,
+            )
+            try:
+                try:
+                    _ = bounded_call(
+                        lambda remaining: process.wait(timeout=remaining), timeout_seconds
+                    )
+                except subprocess.TimeoutExpired:
+                    timed_out = True
+                except KeyboardInterrupt:
+                    interrupted = True
+            finally:
+                cleanup_interrupt = settle_group(
+                    process, signal.SIGINT, grace_seconds, include_session=True
+                )
+            interrupted = interrupted or (not timed_out and cleanup_interrupt is not None)
+            exit_code = process.wait(timeout=0)
+    except ProcessInspectionError as error:
+        raise LaunchError("process_inspection_failed", str(error)) from error
+    except OSError as error:
+        raise LaunchError("process_start_failed", str(error)) from error
+    return ProcessReceipt(exit_code, timed_out, interrupted, stdout_path, stderr_path)

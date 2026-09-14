@@ -1,0 +1,9 @@
+/tmp/logopia-review-goal-080/verify.py
+  /tmp/logopia-review-goal-080/verify.py:31:6 - error: Import "verify_state" could not be resolved (reportMissingImports)
+  /tmp/logopia-review-goal-080/verify.py:31:26 - error: Type of "verify_recovery" is unknown (reportUnknownVariableType)
+  /tmp/logopia-review-goal-080/verify.py:31:43 - error: Type of "verify_state" is unknown (reportUnknownVariableType)
+  /tmp/logopia-review-goal-080/verify.py:199:5 - error: Type of "checks" is partially unknown
+    Type of "checks" is "list[Unknown | str]" (reportUnknownVariableType)
+  /tmp/logopia-review-goal-080/verify.py:206:5 - error: Type of "append" is partially unknown
+    Type of "append" is "(object: Unknown | str, /) -> None" (reportUnknownMemberType)
+5 errors, 0 warnings, 0 notes

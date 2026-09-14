@@ -1,0 +1,6 @@
+{"scenario": "launcher_descendant", "pid": 71206, "state_after_receipt": "", "cleanup": "absent"}
+.{"scenario": "helper_interrupt", "pid": 71268, "state_after_receipt": "", "cleanup": "absent"}
+{"resource_warnings": 0}
+.{"scenario": "nested_marker", "update_result": "modified_install", "foreign_file_preserved": true}
+.
+3 passed in 2.65s

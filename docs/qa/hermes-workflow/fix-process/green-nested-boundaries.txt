@@ -1,0 +1,12 @@
+{"fixture": "test_rejected_group_signals_do0", "owned": [[68513, 68513]], "states": ["68513 68512 68513 Ss"], "group_exists": true, "elapsed": 1.208}
+{"cleanup": "test_rejected_group_signals_do0", "owned": [[68513, 68513]], "states": [""], "group_exists": false}
+.{"fixture": "test_rejected_group_signals_do1", "owned": [[68562, 68562]], "states": ["68562 68512 68562 S"], "group_exists": true, "elapsed": 2.304}
+{"cleanup": "test_rejected_group_signals_do1", "owned": [[68562, 68562]], "states": [""], "group_exists": false}
+.{"fixture": "test_forced_launcher_settles_n0", "owned": [[68666, 68666], [68665, 68665]], "states": ["", ""], "group_exists": false, "elapsed": 2.334}
+{"cleanup": "test_forced_launcher_settles_n0", "owned": [[68666, 68666], [68665, 68665]], "states": ["", ""], "group_exists": false}
+.{"unowned_control": "68699 68512 68699 Ss"}
+{"cleanup": "test_cleanup_preserves_other_s0", "owned": [[68701, 68700], [68700, 68700]], "states": ["", ""], "group_exists": false}
+.{"fixture": "test_failed_session_inspection0", "owned": [[68731, 68730], [68730, 68730]], "states": ["", ""], "group_exists": false, "elapsed": 1.203}
+{"cleanup": "test_failed_session_inspection0", "owned": [[68731, 68730], [68730, 68730]], "states": ["", ""], "group_exists": false}
+.
+5 passed, 15 deselected in 8.50s

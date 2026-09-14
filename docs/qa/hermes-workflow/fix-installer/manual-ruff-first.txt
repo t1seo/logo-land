@@ -1,0 +1,4 @@
+D100 Missing docstring in public module
+--> /tmp/logopia-fix-installer-080/manual.py:1:1
+
+Found 1 error.

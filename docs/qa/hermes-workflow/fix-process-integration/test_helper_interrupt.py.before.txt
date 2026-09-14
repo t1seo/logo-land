@@ -1,0 +1,233 @@
+from __future__ import annotations
+
+import errno
+import os
+import signal
+import subprocess
+import sys
+import time
+import warnings
+from pathlib import Path
+from typing import TYPE_CHECKING, Final
+
+import pytest
+from logopia_studio.helper_process import run_cli
+from logopia_studio.launcher_process import run_process
+from logopia_studio.models import StudioError
+from logopia_studio.process_group import settle_group
+from tests.hermes.test_process_group_settlement import TREE_SOURCE, finite_fixture, observe
+
+if TYPE_CHECKING:
+    from types import FrameType
+
+HELPER_SOURCE: Final = """# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# How to run: launched with literal argv by the finite process fixture.
+import os, signal, sys, time
+from pathlib import Path
+root = Path(sys.argv[1])
+mode = sys.argv[2]
+caller = os.getppid()
+signal.alarm(10)
+signal.signal(signal.SIGINT, signal.SIG_IGN)
+signal.signal(signal.SIGTERM, signal.SIG_IGN)
+def interrupt_caller(signum, frame):
+    os.kill(caller, signal.SIGINT)
+if mode == "deadline_interrupt":
+    signal.signal(signal.SIGTERM, interrupt_caller)
+root.joinpath("helper.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+root.joinpath("helper.sid").write_text(str(os.getsid(0)))
+root.joinpath("ready").write_text("ready")
+if mode == "repeat":
+    while True:
+        os.kill(caller, signal.SIGINT)
+        time.sleep(0.4)
+else:
+    signal.pause()
+"""
+
+
+def test_helper_preserves_exact_stdout() -> None:
+    # Given literal input containing whitespace and harmless shell punctuation.
+    literal = "한글 'quoted' $(literal); \\ tail\n\n"
+    command = (sys.executable, "-c", "import sys; sys.stdout.write(sys.argv[1])", literal)
+    # When the helper exits normally.
+    actual = run_cli(command, timeout=2)
+    # Then its stdout is returned without stripping or shell evaluation.
+    assert actual == literal
+
+
+@pytest.mark.parametrize("use_stderr", [True, False])
+def test_helper_preserves_typed_nonzero_error(use_stderr: bool) -> None:
+    # Given a helper with a finite nonzero exit and more than the retained error limit.
+    detail = "x" * 64001 + "\nfixture failure\n"
+    stream = "stderr" if use_stderr else "stdout"
+    command = (
+        sys.executable,
+        "-c",
+        f"import sys; sys.{stream}.write(sys.argv[1]); sys.exit(7)",
+        detail,
+    )
+    # When the helper reports failure.
+    with pytest.raises(StudioError) as caught:
+        _ = run_cli(command, timeout=2)
+    # Then the typed code and exact trailing diagnostic remain stable.
+    assert caught.value.code == "helper_failed"
+    assert caught.value.detail == detail[-64000:]
+
+
+def test_helper_repeated_caller_interrupts_settle_before_original_propagates(
+    tmp_path: Path,
+) -> None:
+    # Given a finite helper that repeatedly signals only its invoking caller.
+    interrupts: list[KeyboardInterrupt] = []
+
+    def interrupt(_signum: int, _frame: FrameType | None) -> None:
+        error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
+        interrupts.append(error)
+        raise error
+
+    previous = signal.signal(signal.SIGINT, interrupt)
+    try:
+        with finite_fixture(tmp_path, HELPER_SOURCE, "repeat") as command:
+            started = time.monotonic()
+            with warnings.catch_warnings(record=True) as recorded:
+                warnings.simplefilter("always", ResourceWarning)
+                # When repeated real interrupts reach the caller during invocation and cleanup.
+                with pytest.raises(KeyboardInterrupt) as caught:
+                    _ = run_cli(command, timeout=5)
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then the first exception propagates only after the complete group is gone.
+            assert caught.value is interrupts[0]
+            assert not any(states)
+            assert not alive
+            assert len(interrupts) >= 2
+            assert not recorded
+            assert time.monotonic() - started < 4
+    finally:
+        _ = signal.signal(signal.SIGINT, previous)
+
+
+def test_helper_timeout_survives_interrupt_during_cleanup(tmp_path: Path) -> None:
+    # Given a finite helper that interrupts its caller upon receiving timeout cleanup SIGTERM.
+    with finite_fixture(tmp_path, HELPER_SOURCE, "deadline_interrupt") as command:
+        started = time.monotonic()
+        # When timeout cleanup receives a real interrupt, its original typed timeout must win.
+        try:
+            with pytest.raises(StudioError) as caught:
+                _ = run_cli(command, timeout=0.3)
+        except KeyboardInterrupt:
+            pytest.fail("Cleanup interrupt replaced the original helper timeout")
+        states, alive = observe(tmp_path, time.monotonic() - started)
+        # Then timeout cause and commit-reconciliation semantics are preserved after settlement.
+        assert caught.value.code == "helper_timeout"
+        assert isinstance(caught.value.__cause__, subprocess.TimeoutExpired)
+        assert "exact commit may need reconciliation" in caught.value.detail
+        assert not any(states)
+        assert not alive
+        assert time.monotonic() - started < 4
+
+
+@pytest.mark.parametrize("mode", ["exit", "nonzero"])
+def test_helper_exited_leader_settles_descendant_before_result(tmp_path: Path, mode: str) -> None:
+    # Given a ready descendant that closed its inherited streams before its leader exited.
+    with finite_fixture(tmp_path, TREE_SOURCE, mode, "yes") as command:
+        started = time.monotonic()
+        # When communicate finishes, normal stdout and typed errors still own the whole group.
+        if mode == "exit":
+            assert run_cli(command, timeout=2) == "exact stdout\n"
+        else:
+            with pytest.raises(StudioError) as caught:
+                _ = run_cli(command, timeout=2)
+            assert caught.value.code == "helper_failed"
+            assert caught.value.detail == "exact stdout\n"
+        states, alive = observe(tmp_path, time.monotonic() - started)
+        # Then even an already reaped leader cannot leave a live owned descendant behind.
+        assert not any(states)
+        assert not alive
+        assert time.monotonic() - started < 4
+
+
+@pytest.mark.parametrize("helper", [False, True])
+def test_rejected_group_signals_do_not_start_an_unbounded_context_wait(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, helper: bool
+) -> None:
+    # Given a real finite child and an OS boundary rejecting delivery to that exact group.
+    original_killpg = os.killpg
+    processes: list[subprocess.Popen[str]] = []
+
+    def retain_process(
+        process: subprocess.Popen[str],
+        initial_signal: signal.Signals,
+        grace_seconds: float,
+        *,
+        include_session: bool = False,
+    ) -> KeyboardInterrupt | None:
+        processes.append(process)
+        return settle_group(process, initial_signal, grace_seconds, include_session=include_session)
+
+    def reject_delivery(pgid: int, sig: int) -> None:
+        if sig != 0:
+            raise PermissionError(errno.EPERM, "fixture signal delivery rejected", pgid)
+        original_killpg(pgid, sig)
+
+    monkeypatch.setattr(os, "killpg", reject_delivery)
+    monkeypatch.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
+    monkeypatch.setattr("logopia_studio.launcher_process.settle_group", retain_process)
+    monkeypatch.setattr("logopia_studio.helper_process.settle_group", retain_process)
+    with finite_fixture(tmp_path, HELPER_SOURCE, "manual") as command:
+        started = time.monotonic()
+        # When graceful and forced deadlines expire, the failure must return within those bounds.
+        try:
+            if helper:
+                with pytest.raises(subprocess.TimeoutExpired):
+                    _ = run_cli(command, timeout=0.2)
+            else:
+                with pytest.raises(subprocess.TimeoutExpired):
+                    _ = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.1)
+            elapsed = time.monotonic() - started
+            _ = observe(tmp_path, elapsed)
+            # Then failure returns before the child's independent 10s alarm.
+            assert elapsed < 4
+        finally:
+            for process in processes:
+                process.kill()
+                _ = process.wait(timeout=2)
+
+
+def test_forced_launcher_settles_nested_actual_helper(tmp_path: Path) -> None:
+    # Given actual run_cli in an unresponsive launcher leader and a finite separate-session helper.
+    leaf = tmp_path / "finite_leaf.py"
+    _ = leaf.write_text(HELPER_SOURCE, encoding="utf-8")
+    leader_source = """# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# How to run: launched with literal argv by the finite process fixture.
+import os, signal, sys
+from pathlib import Path
+root = Path(sys.argv[1])
+signal.alarm(10)
+signal.signal(signal.SIGINT, signal.SIG_IGN)
+root.joinpath("leader.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+root.joinpath("leader.sid").write_text(str(os.getsid(0)))
+sys.path.insert(0, sys.argv[2])
+from logopia_studio.helper_process import run_cli
+run_cli((sys.executable, str(root / "finite_leaf.py"), str(root), "manual"), timeout=8)
+"""
+    native = str(Path(run_cli.__code__.co_filename).parents[1])
+    with finite_fixture(tmp_path, leader_source, native) as command:
+        started = time.monotonic()
+        # When the real launcher exhausts grace and must kill its leader.
+        result = run_process(command, tmp_path, tmp_path / "logs", 2, grace_seconds=0.2)
+        states, alive = observe(tmp_path, time.monotonic() - started)
+        # Then its helper's separate group also disappears before the timeout receipt.
+        assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
+        assert result.timed_out
+        assert result.exit_code == -signal.SIGKILL
+        assert not any(states)
+        assert not alive
+        assert time.monotonic() - started < 4
+        assert (tmp_path / "leader.sid").read_bytes() == (tmp_path / "helper.sid").read_bytes()

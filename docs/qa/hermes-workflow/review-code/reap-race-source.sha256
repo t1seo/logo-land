@@ -1,0 +1,5 @@
+550f439f9f979ed3a17703b9b246b1180e62794113de34c0c675928428624cb9  integrations/hermes/logopia_studio/process_group.py
+48afc02ac042654f964c27b264523f4bcda6a8ad59f8a66f67c3b5b9fa29d074  integrations/hermes/logopia_studio/process_scope.py
+5763027c3d5147980caa8f356c9f3cc9d2f6f0f6db6a362a5e959ccb7ac5efed  integrations/hermes/logopia_studio/helper_process.py
+85d29b2bf0249f5436838298c9a60ee93508b1102e9ac43b001f8a7e7ae8f375  /Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py
+baa9f9138d8d20df6284f67e7d2e790f847f65e2c5370de322d54cccd737f2d9  /Users/cillian/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/subprocess.py

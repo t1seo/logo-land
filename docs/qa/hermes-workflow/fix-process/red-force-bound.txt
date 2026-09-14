@@ -1,0 +1,100 @@
+{"fixture": "test_rejected_group_signals_do0", "owned": [[41553, 41553]], "states": [""], "group_exists": false, "elapsed": 10.039}
+{"cleanup": "test_rejected_group_signals_do0", "owned": [[41553, 41553]], "states": [""], "group_exists": false}
+F{"fixture": "test_rejected_group_signals_do1", "owned": [[41734, 41734]], "states": [""], "group_exists": false, "elapsed": 10.029}
+{"cleanup": "test_rejected_group_signals_do1", "owned": [[41734, 41734]], "states": [""], "group_exists": false}
+F
+=================================== FAILURES ===================================
+__ test_rejected_group_signals_do_not_start_an_unbounded_context_wait[False] ___
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-force-bound/test_rejected_group_signals_do0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b7c7c20>
+helper = False
+
+    @pytest.mark.parametrize("helper", [False, True])
+    def test_rejected_group_signals_do_not_start_an_unbounded_context_wait(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch, helper: bool
+    ) -> None:
+        # Given a real finite child and an OS boundary rejecting delivery to that exact group.
+        original_killpg = os.killpg
+        processes: list[subprocess.Popen[str]] = []
+    
+        def retain_process(
+            process: subprocess.Popen[str], initial_signal: signal.Signals, grace_seconds: float
+        ) -> KeyboardInterrupt | None:
+            processes.append(process)
+            return settle_group(process, initial_signal, grace_seconds)
+    
+        def reject_delivery(pgid: int, sig: int) -> None:
+            if sig != 0:
+                raise PermissionError(errno.EPERM, "fixture signal delivery rejected", pgid)
+            original_killpg(pgid, sig)
+    
+        monkeypatch.setattr(os, "killpg", reject_delivery)
+        monkeypatch.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
+        monkeypatch.setattr("logopia_studio.launcher_process.settle_group", retain_process)
+        monkeypatch.setattr("logopia_studio.helper_process.settle_group", retain_process)
+        with finite_fixture(tmp_path, HELPER_SOURCE, "manual") as command:
+            started = time.monotonic()
+            # When graceful and forced deadlines expire, the failure must return within those bounds.
+            try:
+                with pytest.raises(subprocess.TimeoutExpired):
+                    if helper:
+                        _ = run_cli(command, timeout=0.2)
+                    else:
+                        _ = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.1)
+                elapsed = time.monotonic() - started
+                _ = observe(tmp_path, elapsed)
+                # Then no implicit Popen context wait may extend the failed settlement to the child alarm.
+>               assert elapsed < 4
+E               assert 10.039206458255649 < 4
+
+tests/hermes/test_helper_interrupt.py:187: AssertionError
+___ test_rejected_group_signals_do_not_start_an_unbounded_context_wait[True] ___
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-force-bound/test_rejected_group_signals_do1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b7c6120>
+helper = True
+
+    @pytest.mark.parametrize("helper", [False, True])
+    def test_rejected_group_signals_do_not_start_an_unbounded_context_wait(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch, helper: bool
+    ) -> None:
+        # Given a real finite child and an OS boundary rejecting delivery to that exact group.
+        original_killpg = os.killpg
+        processes: list[subprocess.Popen[str]] = []
+    
+        def retain_process(
+            process: subprocess.Popen[str], initial_signal: signal.Signals, grace_seconds: float
+        ) -> KeyboardInterrupt | None:
+            processes.append(process)
+            return settle_group(process, initial_signal, grace_seconds)
+    
+        def reject_delivery(pgid: int, sig: int) -> None:
+            if sig != 0:
+                raise PermissionError(errno.EPERM, "fixture signal delivery rejected", pgid)
+            original_killpg(pgid, sig)
+    
+        monkeypatch.setattr(os, "killpg", reject_delivery)
+        monkeypatch.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
+        monkeypatch.setattr("logopia_studio.launcher_process.settle_group", retain_process)
+        monkeypatch.setattr("logopia_studio.helper_process.settle_group", retain_process)
+        with finite_fixture(tmp_path, HELPER_SOURCE, "manual") as command:
+            started = time.monotonic()
+            # When graceful and forced deadlines expire, the failure must return within those bounds.
+            try:
+                with pytest.raises(subprocess.TimeoutExpired):
+                    if helper:
+                        _ = run_cli(command, timeout=0.2)
+                    else:
+                        _ = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.1)
+                elapsed = time.monotonic() - started
+                _ = observe(tmp_path, elapsed)
+                # Then no implicit Popen context wait may extend the failed settlement to the child alarm.
+>               assert elapsed < 4
+E               assert 10.029371000360698 < 4
+
+tests/hermes/test_helper_interrupt.py:187: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_helper_interrupt.py::test_rejected_group_signals_do_not_start_an_unbounded_context_wait[False]
+FAILED tests/hermes/test_helper_interrupt.py::test_rejected_group_signals_do_not_start_an_unbounded_context_wait[True]
+2 failed, 7 deselected in 20.19s

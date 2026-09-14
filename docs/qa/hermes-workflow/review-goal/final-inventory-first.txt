@@ -1,0 +1,12 @@
+Command: wc -l tests/hermes/test_helper_interrupt.py tests/hermes/test_process_group_settlement.py tests/hermes/test_launcher_cli_settlement.py tests/hermes/test_launcher_process.py tests/hermes/test_launcher_cli_native_timeout.py docs/qa/hermes-workflow/review-goal.md docs/qa/hermes-workflow/review-code.md docs/qa/hermes-workflow/fix-process-settlement.md
+Exit: 1
+wc: docs/qa/hermes-workflow/fix-process-settlement.md: open: No such file or directory
+     274 tests/hermes/test_helper_interrupt.py
+     266 tests/hermes/test_process_group_settlement.py
+      95 tests/hermes/test_launcher_cli_settlement.py
+     116 tests/hermes/test_launcher_process.py
+      63 tests/hermes/test_launcher_cli_native_timeout.py
+     173 docs/qa/hermes-workflow/review-goal.md
+     124 docs/qa/hermes-workflow/review-code.md
+    1111 total
+Correction: rg --files located the actual fix-process.md report; no product code was implicated.

@@ -1,0 +1,124 @@
+/tmp/logopia-fix-installer-080/toggle/logopia_studio/installer.py
+5e286d8dc7ae88899c6f335f3a0721c3699f4c25b633efe424918b3b38710099
+{"scenario": "nested_marker", "update_result": "succeeded", "foreign_file_preserved": false, "sentinel_sha256": "bafd9c15abf567fd467e03a691382c6e49177bf7e4fddaee271223333f7d6a7b", "source_unchanged": true, "installation_unchanged": false}
+F{"scenario": "install_rollback", "fault": "KeyboardInterrupt", "backup_exact_before_failure": [true], "target_exists": false, "prior_bytes_preserved": false, "remaining_entries": []}
+F
+=================================== FAILURES ===================================
+__________ test_nested_unmanaged_marker_refusal_preserves_exact_bytes __________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_nested_unmanaged_marker_r0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_nested_unmanaged_marker_r...e/tmp/logopia-fix-installer-080/toggle/pytest/test_nested_unmanaged_marker_r0/fixture-profile/plugins/logopia-studio'))
+
+    def test_nested_unmanaged_marker_refusal_preserves_exact_bytes(
+        tmp_path: Path, installed: InstalledFixture
+    ) -> None:
+        # Given the reviewer's ordinary-file control, then the same bytes under a nested marker.
+        ordinary = installed.target / "user-note.txt"
+        _ = ordinary.write_bytes(SENTINEL)
+        with pytest.raises(LaunchError, match="modified_install"):
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        assert ordinary.read_bytes() == SENTINEL
+        ordinary.unlink()
+        sentinel = installed.target / "user-notes/.logopia-install.json"
+        sentinel.parent.mkdir()
+        _ = sentinel.write_bytes(SENTINEL)
+        before = _snapshot(installed.target)
+        source_before = _snapshot(installed.source)
+        record = ManagedInstall.model_validate_json(
+            (installed.target / ".logopia-install.json").read_bytes()
+        )
+        assert sentinel.relative_to(installed.target).as_posix() not in {
+            entry.path for entry in record.files
+        }
+        # When the exact same payload is offered with the unlisted nested marker present.
+        code = "succeeded"
+        try:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        except LaunchError as error:
+            code = error.code
+        preserved = sentinel.exists() and sentinel.read_bytes() == SENTINEL
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "nested_marker",
+                    "update_result": code,
+                    "foreign_file_preserved": preserved,
+                    "sentinel_sha256": hashlib.sha256(SENTINEL).hexdigest(),
+                    "source_unchanged": _snapshot(installed.source) == source_before,
+                    "installation_unchanged": _snapshot(installed.target) == before,
+                }
+            )
+            + "\n"
+        )
+        # Then success plus a missing sentinel is a failure, and refusal preserves all bytes.
+>       assert code == "modified_install"
+E       AssertionError: assert 'succeeded' == 'modified_install'
+E         
+E         - modified_install
+E         + succeeded
+
+tests/hermes/test_installer_foreign_marker.py:126: AssertionError
+__________ test_prior_install_survives_publication_failure[interrupt] __________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu0')
+installed = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu...e/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu0/fixture-profile/plugins/logopia-studio'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b89ea50>
+failure = KeyboardInterrupt()
+
+    @pytest.mark.parametrize(
+        "failure",
+        [
+            pytest.param(PermissionError("fixture publication blocked"), id="io"),
+            pytest.param(KeyboardInterrupt(), id="interrupt"),
+        ],
+    )
+    def test_prior_install_survives_publication_failure(
+        tmp_path: Path,
+        installed: InstalledFixture,
+        monkeypatch: pytest.MonkeyPatch,
+        failure: OSError | KeyboardInterrupt,
+    ) -> None:
+        # Given the real old installation and a replacement payload.
+        before = _snapshot(installed.target)
+        _ = (installed.source / "__init__.py").write_bytes(b"replacement_payload = True\n")
+        original_rename = Path.rename
+        backup_seen: list[bool] = []
+    
+        def fail_publication(path: Path, destination: str | Path) -> Path:
+            if path.name == "new" and Path(destination) == installed.target:
+                backup_seen.append(_snapshot(path.parent / "previous") == before)
+                raise failure
+            return original_rename(path, destination)
+    
+        monkeypatch.setattr(Path, "rename", fail_publication)
+        # When only the second rename fails after the prior installation was backed up.
+        with pytest.raises(type(failure)) as raised:
+            _ = install_payload(installed.source, installed.profile, tmp_path, tmp_path)
+        _ = sys.stdout.write(
+            json.dumps(
+                {
+                    "scenario": "install_rollback",
+                    "fault": type(failure).__name__,
+                    "backup_exact_before_failure": backup_seen,
+                    "target_exists": installed.target.is_dir(),
+                    "prior_bytes_preserved": _snapshot(installed.target) == before,
+                    "remaining_entries": [path.name for path in installed.target.parent.iterdir()],
+                }
+            )
+            + "\n"
+        )
+        # Then the original exception propagates and exact prior files are restored.
+        assert raised.value is failure
+        assert backup_seen == [True]
+>       assert installed.target.is_dir(), "Previous install was deleted while unwinding interruption"
+E       AssertionError: Previous install was deleted while unwinding interruption
+E       assert False
+E        +  where False = is_dir()
+E        +    where is_dir = PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu0/fixture-profile/plugins/logopia-studio').is_dir
+E        +      where PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu0/fixture-profile/plugins/logopia-studio') = InstalledFixture(source=PosixPath('/private/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu...e/tmp/logopia-fix-installer-080/toggle/pytest/test_prior_install_survives_pu0/fixture-profile/plugins/logopia-studio')).target
+
+tests/hermes/test_installer_interruption.py:71: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_installer_foreign_marker.py::test_nested_unmanaged_marker_refusal_preserves_exact_bytes
+FAILED tests/hermes/test_installer_interruption.py::test_prior_install_survives_publication_failure[interrupt]
+2 failed in 0.08s

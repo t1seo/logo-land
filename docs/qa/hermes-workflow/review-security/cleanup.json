@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scratch_root": "/tmp/logopia-review-security-080",
+  "scratch_absent": true,
+  "removed": [
+    "audit_public.py",
+    "probe_boundaries.py",
+    "pytest basetemp",
+    "uv cache",
+    "contained text and symlink fixtures",
+    "temporary cancellation workflow",
+    "byte-identical original and delivery fixture copies",
+    "harmless extra-member ZIP fixture",
+    "public JSON server mirror",
+    "HTTP body and curl stderr",
+    "temporary config and installed-source hash receipts"
+  ],
+  "server": {
+    "pid": 23637,
+    "session_id": 25070,
+    "address": "127.0.0.1",
+    "port": 8815,
+    "lifetime_cap_seconds": 120,
+    "stop": "Ctrl-C",
+    "exit_code": 0,
+    "pid_absent": true,
+    "port_free": true
+  },
+  "deadline_children": [
+    {"pid": 20743, "exit_code": -2, "absent": true},
+    {"pid": 23741, "exit_code": -2, "absent": true}
+  ],
+  "browser_contexts_created": 0,
+  "tmux_sessions_created": 0,
+  "provider_calls": 0,
+  "subagents_created": 0,
+  "production_files_changed": 0,
+  "source_and_protected_pins": 210,
+  "source_and_protected_pins_unchanged": true,
+  "config_and_settings_pins_unchanged": 3,
+  "installed_records_verified": 59,
+  "installed_source_records_matching_checkout": 58,
+  "staged_files": 0,
+  "retained": "review-security.md and sanitized review-security evidence only"
+}

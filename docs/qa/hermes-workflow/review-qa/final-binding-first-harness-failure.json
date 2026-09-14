@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-14T18:02:26.178Z",
+  "message": "finalInstalledBinding.managed_records.slice is not a function",
+  "cause": "Reviewer assumed a map-shaped receipt was an array; no product call or mutation occurred",
+  "resolution": "Inspect Object.entries and verify every named record without changing assertions"
+}

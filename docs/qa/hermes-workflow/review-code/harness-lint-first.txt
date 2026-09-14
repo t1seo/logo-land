@@ -1,0 +1,104 @@
+TC003 Move standard library import `pathlib.Path` into a type-checking block
+  --> /tmp/logopia-review-code-080/test_review_boundaries.py:17:21
+   |
+15 | import time
+16 | import warnings
+17 | from pathlib import Path
+   |                     ^^^^
+18 | from typing import Final
+   |
+help: Move into type-checking block
+
+SIM105 Use `contextlib.suppress(ChildProcessError)` instead of `try`-`except`-`pass`
+  --> /tmp/logopia-review-code-080/test_review_boundaries.py:46:5
+   |
+44 |       except ProcessLookupError:
+45 |           return "absent"
+46 | /     try:
+47 | |         _ = os.waitpid(pid, 0)
+48 | |     except ChildProcessError:
+49 | |         pass
+   | |____________^
+50 |       deadline = time.monotonic() + 3
+51 |       while time.monotonic() < deadline:
+   |
+help: Replace `try`-`except`-`pass` with `with contextlib.suppress(ChildProcessError): ...`
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:112:5
+    |
+110 |     emit("launcher_descendant", pid, observed, cleanup)
+111 |     # Then receipt settlement must include the owned descendant, not just its parent.
+112 |     assert result.timed_out
+    |     ^^^^^^
+113 |     assert not observed, f"Owned descendant survives launcher receipt: {observed}"
+114 |     assert cleanup == "absent"
+    |
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:113:5
+    |
+111 |     # Then receipt settlement must include the owned descendant, not just its parent.
+112 |     assert result.timed_out
+113 |     assert not observed, f"Owned descendant survives launcher receipt: {observed}"
+    |     ^^^^^^
+114 |     assert cleanup == "absent"
+    |
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:114:5
+    |
+112 |     assert result.timed_out
+113 |     assert not observed, f"Owned descendant survives launcher receipt: {observed}"
+114 |     assert cleanup == "absent"
+    |     ^^^^^^
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:142:5
+    |
+140 |     _ = sys.stdout.write(json.dumps({"resource_warnings": len(recorded)}) + "\n")
+141 |     # Then propagation must not leave the helper running in its separate process group.
+142 |     assert not observed, f"Owned helper survives caller interruption: {observed}"
+    |     ^^^^^^
+143 |     assert cleanup == "absent"
+    |
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:143:5
+    |
+141 |     # Then propagation must not leave the helper running in its separate process group.
+142 |     assert not observed, f"Owned helper survives caller interruption: {observed}"
+143 |     assert cleanup == "absent"
+    |     ^^^^^^
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:159:5
+    |
+157 |     with pytest.raises(LaunchError, match="modified_install"):
+158 |         _ = install_payload(source, profile, tmp_path, tmp_path)
+159 |     assert ordinary.read_bytes() == b"owned by fixture user"
+    |     ^^^^^^
+160 |     ordinary.unlink()
+161 |     nested = target / "user-notes"
+    |
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:182:5
+    |
+180 |     )
+181 |     # Then the root marker exemption must not remove this unmanaged nested file.
+182 |     assert code == "modified_install"
+    |     ^^^^^^
+183 |     assert sentinel.read_bytes() == b"owned by fixture user"
+    |
+
+S101 Use of `assert` detected
+   --> /tmp/logopia-review-code-080/test_review_boundaries.py:183:5
+    |
+181 |     # Then the root marker exemption must not remove this unmanaged nested file.
+182 |     assert code == "modified_install"
+183 |     assert sentinel.read_bytes() == b"owned by fixture user"
+    |     ^^^^^^
+
+Found 10 errors.
+No fixes available (2 hidden fixes can be enabled with the `--unsafe-fixes` option).

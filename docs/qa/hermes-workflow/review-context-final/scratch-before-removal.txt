@@ -1,0 +1,8 @@
+/tmp/logopia-review-context-final-080/readme.response
+/tmp/logopia-review-context-final-080/server.pid
+/tmp/logopia-review-context-final-080/zip.response
+/tmp/logopia-review-context-final-080/immutable.sh
+/tmp/logopia-review-context-final-080/pin.sh
+/tmp/logopia-review-context-final-080/readme.body
+/tmp/logopia-review-context-final-080/zip.body
+/tmp/logopia-review-context-final-080/http.sh

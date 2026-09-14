@@ -1,0 +1,3 @@
+{"scenario": "forced_launcher_actual_helper", "launcher_exit": -9, "timed_out": true, "helper_pid": 71528, "helper_after_receipt": "", "cleanup": "absent"}
+.
+1 passed in 2.33s

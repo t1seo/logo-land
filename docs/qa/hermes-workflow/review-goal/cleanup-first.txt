@@ -1,0 +1,4 @@
+Exit code: 1
+-e:1:in `<main>': Unexpected scratch root (RuntimeError)
+
+The first cleanup guard compared the literal /tmp path with File.realpath on macOS, where /tmp resolves through /private/tmp. It refused before deleting anything. The corrected guard compares against File.join(File.realpath('/tmp'), 'logopia-review-goal-080') and still rejects a symlink or any other root. This is an owned review-harness path error, not a product failure.

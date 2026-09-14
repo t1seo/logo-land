@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-14T17:06:59.560Z",
+  "initialExpectedAllUnchangedAssertion": "failed: 1 !== 0",
+  "changedPaths": [
+    "integrations/hermes/logopia_studio/installer.py"
+  ],
+  "authorizedBy": [
+    "msg_3f32e2a1ed93",
+    "msg_1787ad4f7fdd"
+  ],
+  "pendingDependency": "FIXES_READY",
+  "ownedResourcesAlreadyCleaned": true,
+  "workerDoneSent": false
+}

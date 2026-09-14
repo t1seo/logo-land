@@ -1,0 +1,204 @@
+........................................................................ [  7%]
+........................................F............................... [ 15%]
+........................................................................ [ 22%]
+........................................................................ [ 30%]
+........................................................................ [ 37%]
+........................................................................ [ 45%]
+........................................................................ [ 52%]
+........................................................................ [ 60%]
+...........................................F............................ [ 67%]
+........................................................................ [ 75%]
+........................................................................ [ 82%]
+........................................................................ [ 90%]
+........................................................................ [ 97%]
+....................                                                     [100%]
+=================================== FAILURES ===================================
+___ test_helper_repeated_caller_interrupts_settle_before_original_propagates ___
+
+_signum = 2
+_frame = <frame at 0x10c843b40, file '/Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/selectors.py', line 416, code select>
+
+    def interrupt(_signum: int, _frame: FrameType | None) -> None:
+        error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
+        interrupts.append(error)
+>       raise error
+E       KeyboardInterrupt: caller interrupt 1
+
+tests/hermes/test_helper_interrupt.py:90: KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/Users/cillian/Documents/Github/Projects/logo-generator/output/hermes-final-tests/test_helper_repeated_caller_in0')
+
+    def test_helper_repeated_caller_interrupts_settle_before_original_propagates(
+        tmp_path: Path,
+    ) -> None:
+        # Given a finite helper that repeatedly signals only its invoking caller.
+        interrupts: list[KeyboardInterrupt] = []
+    
+        def interrupt(_signum: int, _frame: FrameType | None) -> None:
+            error = KeyboardInterrupt(f"caller interrupt {len(interrupts) + 1}")
+            interrupts.append(error)
+            raise error
+    
+        previous = signal.signal(signal.SIGINT, interrupt)
+        try:
+            with finite_fixture(tmp_path, HELPER_SOURCE, "repeat") as command:
+                started = time.monotonic()
+                with warnings.catch_warnings(record=True) as recorded:
+                    warnings.simplefilter("always", ResourceWarning)
+                    # When repeated real interrupts reach the caller during invocation and cleanup.
+                    with pytest.raises(KeyboardInterrupt) as caught:
+>                       _ = run_cli(command, timeout=5)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/hermes/test_helper_interrupt.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+integrations/hermes/logopia_studio/helper_process.py:27: in run_cli
+    cleanup_interrupt = settle_group(process, signal.SIGTERM, 2)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+process = <Popen: returncode: None args: ('/Users/cillian/Documents/Github/Projects/lo...>
+initial_signal = <Signals.SIGTERM: 15>, grace_seconds = 2
+include_session = False
+
+    def settle_group(
+        process: subprocess.Popen[str],
+        initial_signal: signal.Signals,
+        grace_seconds: float,
+        *,
+        include_session: bool = False,
+    ) -> KeyboardInterrupt | None:
+        """Reap the leader and owned groups within fixed graceful and forced deadlines."""
+        deadline = time.monotonic() + grace_seconds
+        force_deadline = deadline + _FORCE_SECONDS
+        owned = _OwnedGroups(process.pid, include_session)
+        forced = False
+        interrupted: KeyboardInterrupt | None = None
+        while True:
+            try:
+                exit_code = process.poll()
+                settled = owned.step(signal.SIGKILL if forced else initial_signal, force_deadline)
+                if owned.inspection_error is not None:
+                    forced = True
+                    deadline = force_deadline
+                if settled and exit_code is not None:
+                    owned.raise_inspection_error()
+                    return interrupted
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    if forced:
+                        owned.raise_inspection_error()
+>                       raise subprocess.TimeoutExpired(process.args, grace_seconds + _FORCE_SECONDS)
+E                       subprocess.TimeoutExpired: Command '('/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/Users/cillian/Documents/Github/Projects/logo-generator/output/hermes-final-tests/test_helper_repeated_caller_in0/finite_fixture.py', '/Users/cillian/Documents/Github/Projects/logo-generator/output/hermes-final-tests/test_helper_repeated_caller_in0', 'repeat')' timed out after 12.0 seconds
+
+integrations/hermes/logopia_studio/process_group.py:115: TimeoutExpired
+----------------------------- Captured stdout call -----------------------------
+{"cleanup": "test_helper_repeated_caller_in0", "owned": [[78509, 78509]], "states": [""], "group_exists": false}
+_________________ test_restricted_99_percent_boundary[0-pass] __________________
+
+self = <Popen: returncode: None args: ('/Users/cillian/Documents/Github/Projects/lo...>
+_maxsize = 9223372036854775807, _warn = <built-in function warn>
+
+    def __del__(self, _maxsize=sys.maxsize, _warn=warnings.warn):
+        if not self._child_created:
+            # We didn't get to successfully create a child process.
+            return
+        if self.returncode is None:
+            # Not reading subprocess exit status creates a zombie process which
+            # is only destroyed at the parent python process exit
+>           _warn("subprocess %s is still running" % self.pid,
+                  ResourceWarning, source=self)
+E           ResourceWarning: subprocess 78509 is still running
+
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:1127: ResourceWarning
+
+The above exception was the direct cause of the following exception:
+
+cls = <class '_pytest.runner.CallInfo'>
+func = <function call_and_report.<locals>.<lambda> at 0x10c93b600>
+when = 'call'
+reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
+
+    @classmethod
+    def from_call(
+        cls,
+        func: Callable[[], TResult],
+        when: Literal["collect", "setup", "call", "teardown"],
+        reraise: type[BaseException] | tuple[type[BaseException], ...] | None = None,
+    ) -> CallInfo[TResult]:
+        """Call func, wrapping the result in a CallInfo.
+    
+        :param func:
+            The function to call. Called without arguments.
+        :type func: Callable[[], _pytest.runner.TResult]
+        :param when:
+            The phase in which the function is called.
+        :param reraise:
+            Exception or exceptions that shall propagate if raised by the
+            function, instead of being wrapped in the CallInfo.
+        """
+        excinfo = None
+        instant = timing.Instant()
+        try:
+>           result: TResult | None = func()
+                                     ^^^^^^
+
+.venv/lib/python3.12/site-packages/_pytest/runner.py:361: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/_pytest/runner.py:250: in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/_pytest/logging.py:865: in pytest_runtest_call
+    yield
+.venv/lib/python3.12/site-packages/_pytest/capture.py:900: in pytest_runtest_call
+    return (yield)
+            ^^^^^
+.venv/lib/python3.12/site-packages/_pytest/skipping.py:268: in pytest_runtest_call
+    return (yield)
+            ^^^^^
+.venv/lib/python3.12/site-packages/_pytest/unraisableexception.py:183: in pytest_runtest_call
+    collect_unraisable(item.config)
+.venv/lib/python3.12/site-packages/_pytest/unraisableexception.py:79: in collect_unraisable
+    raise errors[0]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+config = <_pytest.config.Config object at 0x105a96990>
+
+    def collect_unraisable(config: Config) -> None:
+        pop_unraisable = config.stash[unraisable_exceptions].pop
+        errors: list[pytest.PytestUnraisableExceptionWarning | RuntimeError] = []
+        meta = None
+        hook_error = None
+        try:
+            while True:
+                try:
+                    meta = pop_unraisable()
+                except IndexError:
+                    break
+    
+                if isinstance(meta, BaseException):
+                    hook_error = RuntimeError("Failed to process unraisable exception")
+                    hook_error.__cause__ = meta
+                    errors.append(hook_error)
+                    continue
+    
+                msg = meta.msg
+                try:
+>                   warnings.warn(pytest.PytestUnraisableExceptionWarning(msg))
+E                   pytest.PytestUnraisableExceptionWarning: Exception ignored in: <function Popen.__del__ at 0x10ae147c0>
+E                   Enable tracemalloc to get traceback where the object was allocated.
+E                   See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+.venv/lib/python3.12/site-packages/_pytest/unraisableexception.py:67: PytestUnraisableExceptionWarning
+=========================== short test summary info ============================
+FAILED tests/hermes/test_helper_interrupt.py::test_helper_repeated_caller_interrupts_settle_before_original_propagates
+FAILED tests/test_color_analysis.py::test_restricted_99_percent_boundary[0-pass]
+2 failed, 954 passed in 309.89s (0:05:09)

@@ -1,0 +1,20 @@
+{
+  "label": "manual-ruff-first",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "ruff",
+    "check",
+    "--extend-per-file-ignores",
+    "/tmp/logopia-fix-installer-boundary-080/manual.py:S101",
+    "/tmp/logopia-fix-installer-boundary-080/manual.py"
+  ],
+  "pid": 65382,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 1,
+  "reaped": true,
+  "source_sha256_before": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "source_sha256_after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

@@ -1,0 +1,33 @@
+
+Tae-wons-MacBook-Pro% uv run --locked python integrations/hermes/studio.py show --workflow offcut-hermes-demo --json
+{"success":true,"message":"Saved workflow","workflow_id":"offcut-hermes-demo","revision":47,"phase":"delivered","selected_id":"e2","candidate_count":5,"gallery":null,"logs":null,"e
+rror":null,"installation":null}
+Tae-wons-MacBook-Pro% printf "show_exit=%s\n" "$?"
+show_exit=0
+Tae-wons-MacBook-Pro% uv run --locked python integrations/hermes/studio.py show --workflow ../review-code-inert --json
+{"success":false,"message":"Expected a portable lowercase identifier","workflow_id":null,"revision":null,"phase":null,"selected_id":null,"candidate_count":0,"gallery":null,"logs":n
+ull,"error":"invalid_id","installation":null}
+Tae-wons-MacBook-Pro% printf "malformed_exit=%s\n" "$?"
+malformed_exit=1
+Tae-wons-MacBook-Pro%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

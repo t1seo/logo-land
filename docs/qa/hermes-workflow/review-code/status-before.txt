@@ -1,0 +1,26 @@
+ M .codex-plugin/plugin.json
+ M CHANGELOG.md
+ M README.ko.md
+ M README.md
+ M docs/README.ko.md
+ M docs/README.md
+ M docs/releases.md
+ M pyproject.toml
+ M uv.lock
+?? .omo/drafts/hermes-design-ux-research.md
+?? .omo/drafts/hermes-logopia.md
+?? .omo/drafts/hermes-plan-gap.md
+?? .omo/drafts/hermes-repo-research.md
+?? .omo/drafts/hermes-runtime-research.md
+?? .omo/drafts/logo-land-next-capability.md
+?? .omo/drafts/logo-land-next-delivery.md
+?? .omo/drafts/logo-land-next-metis.md
+?? .omo/drafts/logo-land-next-tools.md
+?? docs/hermes-demo/
+?? docs/hermes.ko.md
+?? docs/hermes.md
+?? docs/qa/hermes-workflow/
+?? docs/research/hermes-design-workflow.md
+?? integrations/
+?? plans/logopia-hermes-workflow.md
+?? tests/hermes/

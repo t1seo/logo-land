@@ -1,0 +1,13 @@
+diff --git a/uv.lock b/uv.lock
+index 33ddc8d..872856a 100644
+--- a/uv.lock
++++ b/uv.lock
+@@ -61,7 +61,7 @@ wheels = [
+ 
+ [[package]]
+ name = "logo-land-helper"
+-version = "0.7.0"
++version = "0.8.0"
+ source = { virtual = "." }
+ dependencies = [
+     { name = "coloraide" },

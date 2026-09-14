@@ -1,0 +1,13 @@
+/tmp/logopia-review-security-080/first_rename_probe.py
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re1/fixture-profile/plugins/logopia-studio/.logopia-install.json
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re1/fixture-profile/plugins/logopia-studio/__init__.py
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re1/fixture-profile/plugins/logopia-studio/plugin.yaml
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re1/fixture-profile/plugins/logopia-studio/settings.json
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re1/source/__init__.py
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re1/source/plugin.yaml
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re0/fixture-profile/plugins/logopia-studio/.logopia-install.json
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re0/fixture-profile/plugins/logopia-studio/__init__.py
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re0/fixture-profile/plugins/logopia-studio/plugin.yaml
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re0/fixture-profile/plugins/logopia-studio/settings.json
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re0/source/__init__.py
+/tmp/logopia-review-security-080/first-rename-fixed/test_prior_install_at_first_re0/source/plugin.yaml

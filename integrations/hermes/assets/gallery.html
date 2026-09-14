@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' file:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>$brand · Logopia Studio</title>
+  <style>$style</style>
+</head>
+<body>
+  <a class="skip-link" href="#candidates">후보 비교로 건너뛰기</a>
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="Logopia Studio 맨 위">logopia<span class="wordmark-dot"></span></a>
+    <span class="studio-label">DESIGN STUDIO <span> / </span> LOCAL EDITION</span>
+    <a class="header-link" href="#feedback">피드백 초안 ↗</a>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="brand-title">
+      <div><p class="eyebrow">A DIRECTION WORTH KEEPING</p>
+        <h1 id="brand-title">$brand<span class="hero-period">.</span></h1>
+        <p class="hero-description">$product<span class="separator"> / </span>하나의 생각, 서로 다른 가능성.</p>
+      </div>
+      <div class="hero-note"><span class="status-dot"></span><p class="eyebrow">$phase</p>
+        <p>$next_action</p><a href="#candidates">원본 $count개 비교하기 ↓</a>
+      </div>
+    </section>
+    <aside class="snapshot" aria-label="고정된 게시 상태">
+      <span class="snapshot-label">고정 스냅샷</span>
+      <span id="snapshot-binding">$workflow · r$revision</span>
+      <span>현재 선택 <strong id="canonical-selection">$selected</strong></span>
+      <p id="snapshot-notice">이 페이지는 자동 갱신되지 않습니다. Hermes의 최신 상태와 다를 수 있습니다.</p>
+    </aside>
+    $delivery
+    <section class="strategy" aria-labelledby="strategy-title">
+      <div class="section-label"><span>01</span><h2 id="strategy-title">디자인의 기준</h2><span class="section-aside">짧은 전략, 일관된 선택</span></div>
+      $strategy
+      <p class="exact-text">정확한 문구 <strong>$exact_text</strong></p>
+    </section>
+    <section id="candidates" aria-labelledby="candidate-title">
+      <div class="section-label"><span>02</span><h2 id="candidate-title">방향을 나란히</h2><span class="section-aside">원본은 검토 전에도 받을 수 있습니다</span></div>
+      <div class="candidate-grid">$cards</div>
+    </section>
+    <section id="feedback" aria-labelledby="feedback-title">
+      <div class="feedback-intro"><p class="eyebrow">THE NEXT ITERATION</p><h2 id="feedback-title">좋은 점은 남기고,<br>필요한 만큼 바꿔 주세요.</h2>
+        <p>후보의 ‘이 방향으로 수정’을 누른 뒤 메모를 남겨 주세요. 복사한 초안을 Hermes에 붙여 넣으면 이어서 요청할 수 있습니다.</p>
+        <p class="draft-only">이곳에서는 초안만 작성합니다. 원본·현재 선택·검토 상태는 바뀌지 않습니다.</p>
+      </div>
+      <form id="feedback-form" novalidate>
+        <p id="draft-target" class="draft-target">아직 피드백 대상을 고르지 않았습니다.</p>
+        <label for="feedback-action">Hermes에 요청할 작업</label>
+        <select id="feedback-action" disabled><option value="revise">이 후보에서 수정 요청</option><option value="choose">이 후보 선택 요청</option></select>
+        <label for="keep">유지할 점 <span>선택 사항</span></label>
+        <textarea id="keep" rows="2" maxlength="2000" placeholder="예: 색과 열린 중심" disabled></textarea>
+        <label for="change">바꿀 점</label>
+        <textarea id="change" rows="3" maxlength="2000" placeholder="예: 간격만 넓혀 주세요" disabled></textarea>
+        <div class="feedback-actions"><button id="copy-feedback" type="button" disabled>Hermes용 초안 복사 ↗</button><button id="clear-feedback" class="text-button" type="button" disabled>초안 지우기</button></div>
+        <p id="feedback-status" class="feedback-status" role="status" aria-live="polite">후보를 골라도 현재 선택은 바뀌지 않습니다.</p>
+        <label for="feedback-output">전달할 피드백 <span>검토 후 복사해 주세요</span></label>
+        <textarea id="feedback-output" rows="17" readonly spellcheck="false" aria-describedby="snapshot-notice" placeholder="워크플로·버전·원본과 메모가 여기에 표시됩니다."></textarea>
+        <p class="binding-help">r$revision에 묶인 초안입니다. 오래된 요청은 Hermes가 거절하며, 최신 상태를 확인한 뒤 다시 적용할 수 있습니다.</p>
+      </form>
+    </section>
+    $last_error
+    <noscript><p class="no-script">원본과 상태는 JavaScript 없이도 볼 수 있습니다. 피드백 초안 작성에는 JavaScript가 필요합니다. 후보 ID와 이 페이지의 버전을 Hermes에 알려 주세요.</p></noscript>
+  </main>
+  <footer><span class="wordmark">logopia</span><p>원본에서 시작해, 나다운 방향으로.</p><a href="workflow.json" download>스냅샷 기록 받기</a></footer>
+  <script type="application/json" id="gallery-data">$metadata</script>
+  <script type="module">$script</script>
+</body>
+</html>

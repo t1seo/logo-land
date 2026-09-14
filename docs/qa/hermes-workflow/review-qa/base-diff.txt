@@ -1,0 +1,12 @@
+ .codex-plugin/plugin.json |  2 +-
+ CHANGELOG.md              | 15 ++++++++++++++-
+ README.ko.md              | 29 ++++++++++++++++++++++++-----
+ README.md                 | 29 ++++++++++++++++++++++++-----
+ docs/README.ko.md         | 13 +++++++++----
+ docs/README.md            | 13 +++++++++----
+ docs/releases.md          |  8 +++++---
+ pyproject.toml            | 14 +++++++++-----
+ uv.lock                   |  2 +-
+ 9 files changed, 96 insertions(+), 29 deletions(-)
+
+All relevant untracked files are additionally bound in initial-pin.json.

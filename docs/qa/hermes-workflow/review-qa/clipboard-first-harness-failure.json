@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-14T16:56:59.754Z",
+  "error": "Expected fallback text did not appear within 7000 ms",
+  "permissionDescriptor": {
+    "name": "clipboard-write",
+    "allowWithoutSanitization": true
+  },
+  "origin": "file://",
+  "status": "초안을 복사했습니다. Hermes에 붙여 넣어 요청해 주세요.",
+  "actualPermission": {
+    "write": "granted",
+    "read": "denied"
+  }
+}

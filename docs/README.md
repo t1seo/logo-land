@@ -2,20 +2,22 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Logopia](../README.md)
 
-Start with what your brand should mean, choose a fitting shape, then refine the lettering and recognition at small sizes. Logopia creates custom lettering, brand logos and app icon artwork with Codex’s native image tool.
+Start with what your brand should mean, choose a fitting shape, then refine the lettering and recognition at small sizes. Use the Codex skill or the guided Hermes workflow to create custom lettering, brand logos and app icon artwork.
 
 ## Start here
 
 | You want to… | Open |
 |---|---|
-| See what you can make | [White-background showcase board](../assets/logopia-white-showcase.png) · [Current gallery](gallery.md#showcase) |
-| Try your first logo | [Quickstart and example requests](../README.md#installation) |
+| Direct and review a logo with Hermes | [Hermes workflow and setup](hermes.md) |
+| Try your first logo with Codex | [Quickstart and example requests](../README.md#installation) |
+| See the sixteen-logo showcase | [White-background showcase board](../assets/logopia-white-showcase.png) · [September 2026 gallery](gallery.md#showcase) |
 | Use the skill in other projects | [Full installation guide](installation.md) |
 | Download an example | [Current showcase PNG inventory](showcase/2026-09-white/README.md) |
 
 ## Samples
 
-- [Current visual gallery](gallery.md): ten brand logos and six app icon artworks, newly generated on white with direct original links.
+- [OFFCUT Hermes example](hermes-demo/README.md): three initial originals, two exact-parent edits and the delivered e2 ZIP. The first edit's failed preservation check remains visible. Download the folder and open its HTML page locally for the offline comparison.
+- [September 2026 gallery](gallery.md): ten brand logos and six app icon artworks on white, with all sixteen direct original links preserved.
 - [Brand samples](samples/README.md): the refreshed LUMA, LOOP LAB, 고요, BREAD & BLOOM, KITE, MISO, NORTHLINE / NL, 물결, FERN and NOVA NOTES set, with links to earlier examples.
 - [Logopia identity](brand/README.md): colorful lowercase game-title lettering on white, plus earlier designs.
 - [Earlier app icon studies](app-icons/README.md): six IP candidates and five original/revised pairs from the previous collection.
@@ -28,6 +30,7 @@ Every [sample in the README](../README.md#samples) opens its original PNG direct
 
 | Topic | Guide |
 |---|---|
+| Hermes setup, focused revisions and safe continuation | [Native plugin guide](hermes.md) |
 | Letter shapes and logo forms | [Letter construction](../skills/logo-land/references/lettering.md) · [Logo directions](../skills/logo-land/references/logo-directions.md) · [Lettering and font references](../skills/logo-land/references/typography.md) |
 | Palette choices and changes | [Colors and palettes](../skills/logo-land/references/color-workflow.md) |
 | Small square artwork | [App icon artwork](../skills/logo-land/references/app-icons.md) |
@@ -36,6 +39,8 @@ Every [sample in the README](../README.md#samples) opens its original PNG direct
 | Preparing a reviewed delivery | [Delivery checks](../skills/logo-land/references/delivery-checks.md) |
 
 Artwork is raster PNG. Font names describe appearance; editable vectors, font files and platform-specific app icon packages require separate work. The local helper manages prompts and files; it does not replace the native image tool.
+
+The latest release is **[0.8.0](https://github.com/t1seo/logopia/releases/tag/v0.8.0)**, with the native Hermes workflow. [Release notes](qa/hermes-workflow/release-notes.md) · [Release guide](releases.md)
 
 [Changelog](../CHANGELOG.md) · [Third-party notices](../THIRD_PARTY_NOTICES.md) · [Get help](https://github.com/t1seo/logopia/issues)
 

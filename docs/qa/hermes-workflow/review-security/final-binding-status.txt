@@ -1,0 +1,1 @@
+process_pins=0 public_marker_scan=1

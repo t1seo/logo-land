@@ -1,0 +1,52 @@
+#!/bin/bash
+set -euo pipefail
+repo=/Users/cillian/Documents/Github/Projects/logo-generator
+out="$repo/docs/qa/hermes-workflow/review-context-final"
+cd "$repo"
+canonical=.logo-generator/workflows/offcut-hermes-demo/workflow.json
+cmp "$canonical" output/hermes-demo/final-workflow.json
+jq -e '.revision==47 and .phase=="delivered" and .selected_id=="e2" and (.candidates|length)==5' "$canonical"
+jq -r '.candidates[]|[.id,.sha256,.image_path]|@tsv' "$canonical" | while IFS=$'\t' read -r id expected original; do
+  cmp "$original" "docs/hermes-demo/originals/$id.png"
+  actual=$(shasum -a 256 "$original" | cut -d' ' -f1)
+  test "$actual" = "$expected"
+  printf '%s\t%s\tcanonical=public\n' "$id" "$actual"
+done > "$out/original-bindings.tsv"
+for member in logo.png manifest.json brand-guide.md logo-package.zip; do
+  cmp "docs/hermes-demo/delivery/$member" "output/logopia/offcut-hermes-demo/$member"
+  shasum -a 256 "docs/hermes-demo/delivery/$member" "output/logopia/offcut-hermes-demo/$member"
+done > "$out/delivery.sha256"
+unzip -Z1 docs/hermes-demo/delivery/logo-package.zip > "$out/zip-members.txt"
+test "$(sort "$out/zip-members.txt")" = "$(printf '%s\n' brand-guide.md logo.png manifest.json)"
+for member in logo.png manifest.json brand-guide.md; do
+  unzip -p docs/hermes-demo/delivery/logo-package.zip "$member" | cmp - "docs/hermes-demo/delivery/$member"
+  unzip -p docs/hermes-demo/delivery/logo-package.zip "$member" | cmp - "output/logopia/offcut-hermes-demo/$member"
+  printf '%s\tpublic=canonical=zip-member\n' "$member"
+done > "$out/zip-member-checks.tsv"
+jq -n --slurpfile old output/hermes-demo/before-recovery-workflow.json --slurpfile final "$canonical" '
+  $old[0] as $old | $final[0] as $final |
+  {old_job_count:($old.jobs|length),raw_jobs_equal:($old.jobs==$final.jobs[:7]),
+   normalized_jobs_equal:(($old.jobs|map(.+{retry_of:(.retry_of//null)}))==$final.jobs[:7]),
+   original_error_retained:($old.jobs[6].error==$final.jobs[6].error),
+   critique_recovery:($final.jobs[]|select(.retry_of=="j7")|{id,kind,status,retry_of}),
+   initial_image_jobs:([$final.jobs[]|select(.kind=="image")]|length),
+   edit_jobs:([$final.jobs[]|select(.kind=="edit")]|length),
+   lineage:[$final.candidates[]|{id,parent_id}],
+   e1_preservation:[$final.candidates[]|select(.id=="e1")|.critiques[]|{role,status:(.criteria[]|select(.key=="preservation")|.status)}],
+   e2_all_pass:[$final.candidates[]|select(.id=="e2")|.critiques[]|{role,pass:all(.criteria[];.status=="pass")}]}
+' > "$out/normalized-history.json"
+jq -e '.old_job_count==7 and (.raw_jobs_equal|not) and .normalized_jobs_equal and .original_error_retained and .critique_recovery.retry_of=="j7" and .critique_recovery.status=="succeeded" and .initial_image_jobs==3 and .edit_jobs==2 and all(.e1_preservation[];.status=="needs_revision") and all(.e2_all_pass[];.pass)' "$out/normalized-history.json"
+for doc in README.md README.ko.md; do
+  git show "f7dd3268313d2422b87efea63eef8257b0e651b9:$doc" | rg -o 'href="docs/showcase/2026-09-white/images/[^"]+\.png"' > "$out/$doc-old16-base.txt"
+  rg -o 'href="docs/showcase/2026-09-white/images/[^"]+\.png"' "$doc" > "$out/$doc-old16-current.txt"
+  cmp "$out/$doc-old16-base.txt" "$out/$doc-old16-current.txt"
+  test "$(wc -l < "$out/$doc-old16-current.txt" | tr -d ' ')" = 16
+  for id in c1 e2; do
+    rg -F "<a href=\"docs/hermes-demo/originals/$id.png\"><img src=\"docs/hermes-demo/originals/$id.png\"" "$doc"
+  done
+  rg -F 'https://github.com/s1dashu/ip-as-logo-skill' "$doc"
+done > "$out/readme-structure.txt"
+rg -n 'English|0\.8\.0 \(unreleased\)|Latest release:.*0\.7\.0' README.md >> "$out/readme-structure.txt"
+rg -n 'retry_of|raw job JSON|normalizing' docs/qa/hermes-workflow/native-run.md > "$out/normalized-wording.txt"
+shasum -a 256 -c "$out/immutable-before.sha256" > "$out/immutable-after-local-check.txt"
+printf '%s\n' 'PASS: canonical, five originals, four delivery files, three ZIP members, normalized history, bilingual README direct links and preserved immutable hashes.'

@@ -1,0 +1,179 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["pytest"]
+# ///
+# How to run: uv run --locked python /tmp/logopia-fix-process-integration-080/manual.py
+"""Exercise real run_cli interruption and thread compatibility through the registered tmux pane."""
+
+from __future__ import annotations
+
+import gc
+import hashlib
+import json
+import os
+import signal
+import subprocess
+import sys
+import time
+import warnings
+from pathlib import Path
+from threading import Event, Thread
+from typing import TYPE_CHECKING, Final
+from unittest.mock import patch
+
+if TYPE_CHECKING:
+    from types import FrameType
+
+sys.path.insert(0, str(Path.cwd() / "integrations/hermes"))
+sys.path.insert(0, str(Path.cwd()))
+from logopia_studio.helper_process import run_cli
+from tests.hermes.test_helper_interrupt import HELPER_SOURCE
+from tests.hermes.test_process_group_settlement import finite_fixture, observe, process_state
+
+BASE: Final = Path("/tmp/logopia-fix-process-integration-080/manual")
+POPEN: Final = subprocess.Popen
+captured: list[subprocess.Popen[str]] = []
+interrupts: list[KeyboardInterrupt] = []
+
+
+def emit(event: str, **details: str | int | float | bool) -> None:
+    _ = sys.stdout.write(json.dumps({"event": event, **details}) + "\n")
+    _ = sys.stdout.flush()
+
+
+def spawn(
+    argv: tuple[str, ...], *, stdout: int, stderr: int, text: bool, process_group: int,
+) -> subprocess.Popen[str]:
+    assert text and process_group == 0
+    process = POPEN[str](argv, stdout=stdout, stderr=stderr, text=True, process_group=0)
+    captured.append(process)
+    _ = (BASE / f"spawned-{len(captured)}.pid").write_text(f"{process.pid} {process.pid}")
+    emit("owned_started", pid=process.pid, pgid=process.pid)
+    return process
+
+
+def invoke(command: tuple[str, ...], timeout: float) -> str:
+    with patch("logopia_studio.helper_process.subprocess.Popen", spawn):
+        return run_cli(command, timeout)
+
+
+def interrupt(_sig: int, _frame: FrameType | None) -> None:
+    error = KeyboardInterrupt(f"terminal interrupt {len(interrupts) + 1}")
+    interrupts.append(error)
+    raise error
+
+
+def ready(root: Path, stopped: Event) -> None:
+    deadline = time.monotonic() + 5
+    while not (root / "ready").exists():
+        if stopped.wait(0.01) or time.monotonic() >= deadline:
+            return
+    emit("READY_FOR_TWO_CTRL_C", caller_pid=os.getpid())
+
+
+def terminal_case() -> None:
+    root = BASE / "terminal"
+    root.mkdir()
+    with finite_fixture(root, HELPER_SOURCE, "manual") as command:
+        stopped = Event()
+        notifier = Thread(target=ready, args=(root, stopped), daemon=True)
+        notifier.start()
+        started = time.monotonic()
+        try:
+            try:
+                _ = invoke(command, 7)
+            except KeyboardInterrupt as caught:
+                assert caught is interrupts[0]
+                assert len(interrupts) >= 2
+                emit("original_interrupt", identity_preserved=True, count=len(interrupts))
+            else:
+                raise AssertionError("Caller interrupt did not propagate")
+            elapsed = time.monotonic() - started
+            states, alive = observe(root, elapsed)
+            assert not any(states) and not alive
+            assert captured[-1].returncode is not None
+            assert elapsed < 4
+            assert signal.getsignal(signal.SIGINT) is interrupt
+            emit("terminal_pass", reaped=True, elapsed=round(elapsed, 3))
+        finally:
+            stopped.set()
+            notifier.join(timeout=1)
+            assert not notifier.is_alive()
+
+
+def stdout_case(threaded: bool) -> None:
+    parts = ("start 'quoted'\r\n", "한글 $(literal); \\ tail\n\n")
+    source = (
+        "import signal, sys, time; signal.alarm(3)\n"
+        "for part in sys.argv[1:]:\n"
+        "    sys.stdout.write(part); sys.stdout.flush(); time.sleep(0.15)\n"
+    )
+    command = (sys.executable, "-c", source, *parts)
+    results: list[str] = []
+    errors: list[Exception] = []
+
+    def call() -> None:
+        try:
+            results.append(invoke(command, 2))
+        except Exception as error:
+            errors.append(error)
+
+    started = time.monotonic()
+    if threaded:
+        thread = Thread(target=call, daemon=True)
+        thread.start()
+        thread.join(timeout=4)
+        assert not thread.is_alive()
+    else:
+        call()
+    assert not errors, errors
+    assert results == ["".join(parts).replace("\r\n", "\n")]
+    assert captured[-1].returncode == 0
+    assert signal.getsignal(signal.SIGINT) is interrupt
+    emit("stdout_pass", threaded=threaded, exact=True, elapsed=round(time.monotonic() - started, 3))
+
+
+def watchdog(_sig: int, _frame: FrameType | None) -> None:
+    raise TimeoutError("Manual driver exceeded its finite watchdog")
+
+
+def main() -> None:
+    BASE.mkdir()
+    _ = (BASE / "runner.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+    emit("runtime", pid=os.getpid(), python=sys.version, executable=sys.executable)
+    for name in ("helper_process", "process_scope", "process_group", "launcher_process"):
+        path = Path.cwd() / "integrations/hermes/logopia_studio" / f"{name}.py"
+        emit("source", path=str(path), sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+    previous = signal.signal(signal.SIGINT, interrupt)
+    previous_alarm = signal.signal(signal.SIGALRM, watchdog)
+    _ = signal.alarm(30)
+    try:
+        with warnings.catch_warnings(record=True) as recorded:
+            warnings.simplefilter("always", ResourceWarning)
+            terminal_case()
+            stdout_case(False)
+            stdout_case(True)
+            for process in captured:
+                assert process.returncode is not None
+                assert not process_state(process.pid)
+            emit("owned_absent", count=len(captured), all_reaped=True)
+            captured.clear()
+            interrupts.clear()
+            _ = gc.collect()
+            assert not recorded
+            emit("MANUAL_PASS", resource_warnings=len(recorded))
+    finally:
+        _ = signal.signal(signal.SIGINT, signal.SIG_IGN)
+        try:
+            for process in captured:
+                process.kill()
+                _ = process.wait(timeout=2)
+                assert not process_state(process.pid)
+        finally:
+            _ = signal.alarm(0)
+            _ = signal.signal(signal.SIGALRM, previous_alarm)
+            _ = signal.signal(signal.SIGINT, previous)
+
+
+if __name__ == "__main__":
+    main()

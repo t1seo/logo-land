@@ -1,0 +1,12 @@
+PLR2004 Magic value used in comparison, consider replacing `2` with a constant variable
+  --> /tmp/logopia-review-code-080/run_assigned.py:39:45
+   |
+37 |     started = time.monotonic()
+38 |     timed_out = False
+39 |     label = sys.argv[1] if len(sys.argv) == 2 else "assigned"
+   |                                             ^
+40 |     if label not in {"assigned", "defensive", "defensive-fixed", "defensive-final"}:
+41 |         raise ValueError(label)
+   |
+
+Found 1 error.

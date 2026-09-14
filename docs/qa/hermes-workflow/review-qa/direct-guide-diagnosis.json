@@ -1,0 +1,17 @@
+{
+  "url": "file:///Users/cillian/Documents/Github/Projects/logo-generator/docs/hermes-demo/delivery/brand-guide.md",
+  "headers": {
+    "content-type": "text/markdown",
+    "last-modified": "Mon, 14 Sep 2026 16:42:07 GMT"
+  },
+  "rawSha256": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a",
+  "bodySha256": "df11f46b4141747735bfde8b54bfcc5d4323dcb41950843738377b14148c2124",
+  "rawLength": 10559,
+  "bodyLength": 10564,
+  "decodedWindowsMatches": true,
+  "dom": {
+    "charset": "UTF-8",
+    "contentType": "text/markdown",
+    "text": "# OFFCUT\n\nSelected artifact: e2\n\nInitial brief text: OFFCUT\n\nInitial brief slogan: \n\nInitial brief styles: Resourceful, warm, precise, quietly witty and unpretentious.\n\nInitial brief palette (historical intent, not measured or final color specifications): #23483E, #D97446\n\nInitial brief background (historical intent): opaque\n\nSelected artifact requested background: opaque\n\nIntended uses: A clean ecommerce header and a simple shipping stamp; compare the complete identity at 192 pixels wide.\n\nActual deliverable: PNG raster, 1774 x 887 pixels.\n\nPixels below full opacity: 0. Visible pixels: 1573538.\n\nThe original bytes are preserved. Do not enlarge beyond a useful raster resolution. Keep clear space around the mark and verify legibility at its final display size.\n\nThis package does not include editable SVG/EPS/AI vectors, licensed font files, CMYK print proofs, or trademark/exclusivity guarantees. Initial colors and styles describe historical intent; the supplied PNG is the actual artwork. The selected version request is authoritative for changes to the initial brief. The manifest records the explicit visual review and generation/edit prompt.\n\n## Selected version request\n\n> Edit the at"
+  }
+}

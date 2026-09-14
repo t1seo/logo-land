@@ -1,0 +1,79 @@
+#!/bin/bash
+set -euo pipefail
+repo=/Users/cillian/Documents/Github/Projects/logo-generator
+out="$repo/docs/qa/hermes-workflow/review-context-final"
+installed=/Users/cillian/.hermes/profiles/logopia/plugins/logopia-studio
+marker="$installed/.logopia-install.json"
+cd "$repo"
+test -f output/hermes-demo/installed-final-binding.json
+date -u '+%Y-%m-%dT%H:%M:%SZ' > "$out/final-binding-time.txt"
+test ! -L "$installed"
+test ! -L "$marker"
+jq -e '
+  (keys==["files","schema_version"]) and .schema_version==1 and
+  (.files|type=="array" and length>0 and length<=300) and
+  ((.files|map(.path)|unique|length)==(.files|length)) and
+  all(.files[]; (keys==["path","sha256"]) and
+    (.path|type=="string" and length>0 and startswith("/")==false and contains("\\")==false and (split("/")|index(".."))==null) and
+    (.sha256|type=="string" and test("^[a-f0-9]{64}$")))
+' "$marker" > "$out/marker-schema.txt"
+jq -r '.files[]|[.path,.sha256]|@tsv' "$marker" > "$out/current-managed-records.tsv"
+while IFS=$'\t' read -r relative expected; do
+  test -f "$installed/$relative"
+  test ! -L "$installed/$relative"
+  actual=$(shasum -a 256 "$installed/$relative" | cut -d' ' -f1)
+  test "$actual" = "$expected"
+  if test "$relative" = settings.json; then
+    printf '%s\t%s\t%s\tgenerated-local-settings\n' "$relative" "$expected" "$actual"
+  else
+    test -f "integrations/hermes/$relative"
+    test ! -L "integrations/hermes/$relative"
+    source_sha=$(shasum -a 256 "integrations/hermes/$relative" | cut -d' ' -f1)
+    test "$source_sha" = "$expected"
+    cmp "integrations/hermes/$relative" "$installed/$relative"
+    printf '%s\t%s\t%s\t%s\n' "$relative" "$expected" "$actual" "$source_sha"
+  fi
+done < "$out/current-managed-records.tsv" > "$out/installed-bindings.tsv"
+jq -e --arg repo "$repo" 'keys==["helper_repo","schema_version","workspace"] and .schema_version==1 and .workspace==$repo and .helper_repo==$repo' "$installed/settings.json" > "$out/settings-path-check.txt"
+for required in launcher_process.py helper_process.py process_group.py process_scope.py installer.py; do
+  jq -e --arg required "logopia_studio/$required" 'any(.files[];.path==$required)' "$marker"
+done > "$out/process-payload-inclusion.txt"
+{
+  printf '%s\n' integrations/hermes/__init__.py integrations/hermes/plugin.yaml
+  rg --files --hidden --no-ignore integrations/hermes/logopia_studio integrations/hermes/assets integrations/hermes/skills -g '!__pycache__' -g '!*.pyc'
+} | sed 's|^integrations/hermes/||' | sort > "$out/source-payload-paths.txt"
+jq -r '.files[]|select(.path!="settings.json")|.path' "$marker" | sort > "$out/installed-source-paths.txt"
+cmp "$out/source-payload-paths.txt" "$out/installed-source-paths.txt"
+{
+  rg --files --hidden --no-ignore "$installed" -g '!__pycache__' -g '!*.pyc' -g '!.logopia-install.json'
+} | sed "s|^$installed/||" | sort > "$out/installed-actual-paths.txt"
+jq -r '.files[].path' "$marker" | sort > "$out/installed-record-paths.txt"
+cmp "$out/installed-actual-paths.txt" "$out/installed-record-paths.txt"
+{
+  cat "$out/immutable-paths.txt"
+  rg --files --hidden --no-ignore integrations/hermes tests/hermes skills/logo-land -g '!__pycache__' -g '!*.pyc'
+  printf '%s\n' docs/hermes.md docs/hermes.ko.md docs/qa/hermes-workflow/native-run.md output/hermes-demo/installed-final-binding.json
+} | sort -u > "$out/final-source-paths.txt"
+while IFS= read -r path; do shasum -a 256 "$path"; done < "$out/final-source-paths.txt" > "$out/final-source.sha256"
+{
+  shasum -a 256 "$marker"
+  while IFS=$'\t' read -r relative expected; do shasum -a 256 "$installed/$relative"; done < "$out/current-managed-records.tsv"
+} > "$out/final-installed.sha256"
+jq -n --slurpfile marker "$marker" --slurpfile old55 output/hermes-demo/installed-payload.json --slurpfile old59 output/hermes-demo/installed-080-binding.json '
+  {current_managed_record_count:($marker[0].files|length),
+   source_payload_count:([$marker[0].files[]|select(.path!="settings.json")]|length),
+   settings_record_count:([$marker[0].files[]|select(.path=="settings.json")]|length),
+   old_original_record_count:($old55[0].files|length),
+   old_refresh_record_count:$old59[0].files_verified,
+   old55_equals_current:($old55[0]==$marker[0]),
+   old59_count_equals_current:($old59[0].files_verified==($marker[0].files|length)),
+   all_record_source_install_bytes_match:true,settings_exact_paths:true,source_payload_complete:true,installed_extra_files_absent:true}
+' > "$out/installed-summary.json"
+jq -e '.settings_record_count==1 and (.old55_equals_current|not) and (.old59_count_equals_current|not)' "$out/installed-summary.json"
+shasum -a 256 -c output/hermes-demo/default-config-before.sha256 > "$out/default-config-check-final.txt"
+shasum -a 256 -c "$out/immutable-before.sha256" > "$out/immutable-final-check.txt"
+shasum -a 256 -c "$out/final-source.sha256" > "$out/final-source-check.txt"
+shasum -a 256 -c "$out/final-installed.sha256" > "$out/final-installed-check.txt"
+git diff --check > "$out/diff-check.txt"
+jq . "$out/installed-summary.json"
+wc -l "$out/final-source.sha256" "$out/final-installed.sha256"

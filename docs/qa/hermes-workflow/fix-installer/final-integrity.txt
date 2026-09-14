@@ -1,0 +1,7 @@
+integrations/hermes/logopia_studio/installer.py: OK
+tests/hermes/test_installer_foreign_marker.py: OK
+tests/hermes/test_installer_interruption.py: OK
+docs/qa/hermes-workflow/review-code/defensive-tests.txt: OK
+docs/qa/hermes-workflow/review-code/defensive-probes.py.txt: OK
+docs/qa/hermes-workflow/review-code/install-rollback-tests.txt: OK
+docs/qa/hermes-workflow/review-code/install-rollback-probe.py.txt: OK

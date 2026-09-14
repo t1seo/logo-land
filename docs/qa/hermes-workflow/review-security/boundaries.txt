@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": [
+    "invalid_request",
+    "invalid_request",
+    "invalid_request",
+    "invalid_request",
+    "stale_revision",
+    "stale no-write",
+    "cancelled no-inference",
+    "cancelled no-inference",
+    "cancelled no-inference",
+    "three interruptions no jobs",
+    "exact inert JSON",
+    "literal argv excludes brief",
+    "unsafe_path",
+    "unsafe_path",
+    "invalid_file",
+    "foreign fixture unchanged",
+    "invalid_png",
+    "gallery_source",
+    "gallery_delivery",
+    "invalid_receipt",
+    "deadline visible",
+    "owned child absent"
+  ],
+  "new_native_calls": 0,
+  "deadline_child_pid": 23741,
+  "deadline_child_exit": -2,
+  "deadline_seconds": 1,
+  "grace_seconds": 0.2,
+  "owned_child_absent": true
+}

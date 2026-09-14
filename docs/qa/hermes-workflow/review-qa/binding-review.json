@@ -1,0 +1,64 @@
+{
+  "attribution": "These are read-only comparisons to previously recorded native/installation verification receipts; no new provider session or installer was executed.",
+  "nativeAndFinalSnapshotsExact": true,
+  "curatedChecks": [
+    {
+      "id": "c1",
+      "identityExact": true,
+      "feedbackExact": true,
+      "allReviewTextAndStatusesExact": true
+    },
+    {
+      "id": "c2",
+      "identityExact": true,
+      "feedbackExact": true,
+      "allReviewTextAndStatusesExact": true
+    },
+    {
+      "id": "c3",
+      "identityExact": true,
+      "feedbackExact": true,
+      "allReviewTextAndStatusesExact": true
+    },
+    {
+      "id": "e1",
+      "identityExact": true,
+      "feedbackExact": true,
+      "allReviewTextAndStatusesExact": true
+    },
+    {
+      "id": "e2",
+      "identityExact": true,
+      "feedbackExact": true,
+      "allReviewTextAndStatusesExact": true
+    }
+  ],
+  "continuation": {
+    "revision_before": 23,
+    "revision_after": 27,
+    "new_jobs": [
+      "critique"
+    ],
+    "new_images": 0,
+    "originals_unchanged": 3,
+    "prior_jobs_unchanged": 7,
+    "completed_review_pairs": 3,
+    "old_error_preserved": true
+  },
+  "installation": {
+    "version": "0.8.0",
+    "files_verified": 59,
+    "source_matches_installed": true,
+    "settings_match_workspace": true
+  },
+  "final": {
+    "workflow_id": "offcut-hermes-demo",
+    "revision": 47,
+    "phase": "delivered",
+    "selected_id": "e2",
+    "initial_image_jobs": 3,
+    "edit_jobs": 2,
+    "repeated_delivery_no_inference_or_mutation": true
+  },
+  "privateSessionExportsOpened": 0
+}

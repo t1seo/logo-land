@@ -1,0 +1,1 @@
+PASS: 259 immutable + 274 final source/artifact + 62 installed hash records, default digest, five shell syntaxes, git diff --check, owned PID absent, 8817 free, scratch aliases absent.

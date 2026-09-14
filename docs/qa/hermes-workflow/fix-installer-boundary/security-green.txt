@@ -1,0 +1,4 @@
+{"scenario": "normal_update", "actual_backup_bytes_match": [true], "target_exists": true, "prior_bytes_preserved": false, "source_unchanged": true, "remaining_plugin_entries": ["logopia-studio"]}
+.{"scenario": "first_rename_interrupt", "actual_backup_bytes_match": [true], "target_exists": true, "prior_bytes_preserved": true, "source_unchanged": true, "remaining_plugin_entries": ["logopia-studio"]}
+.
+2 passed in 0.10s

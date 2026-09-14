@@ -1,0 +1,18 @@
+{
+  "temporary_root": "/tmp/logopia-fix-process-080",
+  "temporary_root_absent": true,
+  "owned_session": "logopia-fix-process-080",
+  "owned_session_absent": true,
+  "pane_pid": 47170,
+  "pane_absent": true,
+  "server_pid": 47169,
+  "server_had_only_owned_session": true,
+  "server_absent": true,
+  "ps_stdout": "",
+  "retained_pid_snapshot": "pid-final-before-cleanup.jsonl",
+  "recorded_owned_pids_absent_before_cleanup": 95,
+  "recorded_owned_groups_absent_before_cleanup": 66,
+  "source_hashes_match_reviewer": true,
+  "signals_to_other_processes": 0,
+  "removed_only_registered_tree_and_session": true
+}

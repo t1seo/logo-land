@@ -1,0 +1,3 @@
+brand-guide.md
+logo.png
+manifest.json

@@ -1,0 +1,6 @@
+{
+  "old_job_json_equal": false,
+  "old_jobs_with_declared_default_retry_of_equal": true,
+  "common_fields_unchanged": true,
+  "added_fields_are_null_retry_of": true
+}

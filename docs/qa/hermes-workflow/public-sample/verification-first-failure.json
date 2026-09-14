@@ -1,0 +1,4 @@
+{
+  "scenario": "First final snapshot pass, before cancellation cleanup adjustment",
+  "error": "download.delete: canceled\n    at <workspace>/output/hermes-preflight/public-sample-task9f041573/verify.cjs:174:191\n    at async browserChecks (<workspace>/output/hermes-preflight/public-sample-task9f041573/verify.cjs:176:45)\n    at async <workspace>/output/hermes-preflight/public-sample-task9f041573/verify.cjs:194:21 {\n  log: [],\n  name: 'Error'\n}"
+}

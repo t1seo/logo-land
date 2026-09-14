@@ -1,0 +1,9 @@
+{
+  "selector": "#e1 details.detail>summary",
+  "matches": [
+    "Exact keep / change request",
+    "Read both reviews & inspect at 192 px"
+  ],
+  "error": "Playwright strict mode violation",
+  "productChanged": false
+}

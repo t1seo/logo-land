@@ -1,0 +1,4 @@
+The broad auth/HTTP search matched one source file.
+prompts.py:1 contains the ordinary docstring phrase "native image requests."
+This is not an import or use of the requests HTTP client.
+Full host, helper, launcher and installer source review found no raw provider HTTP/auth or credential-copy code.

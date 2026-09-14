@@ -1,0 +1,31 @@
+#!/bin/bash
+set -euo pipefail
+repo=/Users/cillian/Documents/Github/Projects/logo-generator
+out="$repo/docs/qa/hermes-workflow/review-context-final"
+marker=/Users/cillian/.hermes/profiles/logopia/plugins/logopia-studio/.logopia-install.json
+cd "$repo"
+jq -Rn '[inputs|capture("^(?<sha>[a-f0-9]{64})  docs/hermes-demo/delivery/(?<name>.+)$")|{key:.name,value:.sha}]|from_entries' "$out/delivery.sha256" > "$out/delivery-map.json"
+canonical_sha=$(shasum -a 256 .logo-generator/workflows/offcut-hermes-demo/workflow.json | cut -d' ' -f1)
+jq -n --arg canonical_sha "$canonical_sha" \
+  --slurpfile receipt output/hermes-demo/installed-final-binding.json \
+  --slurpfile marker "$marker" \
+  --slurpfile workflow .logo-generator/workflows/offcut-hermes-demo/workflow.json \
+  --slurpfile delivery "$out/delivery-map.json" '
+  $receipt[0] as $receipt | $marker[0] as $marker | $workflow[0] as $workflow |
+  {version_matches:($receipt.version=="0.8.0"),
+   count_matches:($receipt.files_verified==($marker.files|length)),
+   current_count:($marker.files|length),
+   all_managed_records_match:($receipt.managed_records==($marker.files|map({key:.path,value:.sha256})|from_entries)),
+   install_flags_match:($receipt.source_matches_installed and $receipt.settings_match_workspace and $receipt.default_config_unchanged),
+   canonical_hash_matches:($receipt.canonical_sha256==$canonical_sha),
+   workflow_identity_matches:($receipt.workflow_revision==$workflow.revision and $receipt.phase==$workflow.phase and $receipt.selected_id==$workflow.selected_id),
+   five_originals_match:($receipt.originals==($workflow.candidates|map({key:.id,value:.sha256})|from_entries)),
+   four_delivery_hashes_match:($receipt.delivery==$delivery[0]),
+   three_zip_members_match:(($receipt.zip_members|sort)==["brand-guide.md","logo.png","manifest.json"])}
+' > "$out/coordinator-binding-comparison.json"
+jq -e 'del(.current_count)|all(.[];.==true)' "$out/coordinator-binding-comparison.json"
+shasum -a 256 -c docs/qa/hermes-workflow/fix-process-integration/source-frozen.sha256 > "$out/process-frozen-check.txt"
+shasum -a 256 -c "$out/final-source.sha256" > "$out/final-source-after-binding.txt"
+shasum -a 256 -c "$out/final-installed.sha256" > "$out/final-installed-after-binding.txt"
+shasum -a 256 output/hermes-demo/installed-final-binding.json > "$out/final-coordinator-binding.sha256"
+jq . "$out/coordinator-binding-comparison.json"

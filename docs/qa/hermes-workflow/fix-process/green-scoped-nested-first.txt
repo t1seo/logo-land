@@ -1,0 +1,210 @@
+..........................F...........                                   [100%]
+=================================== FAILURES ===================================
+__ test_rejected_group_signals_do_not_start_an_unbounded_context_wait[False] ___
+
+session_id = 66592, deadline = 2956204.72583025
+
+    def session_groups(session_id: int, deadline: float) -> tuple[SessionGroup, ...]:
+        """Read PID numbers, never names/argv/environment, and select only our fresh session."""
+        if session_id <= 1 or session_id == os.getsid(0):
+            raise ProcessInspectionError("invalid_session")
+        query_deadline = min(deadline, time.monotonic() + _QUERY_SECONDS)
+        try:
+>           pids = _numeric_pids(query_deadline)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+integrations/hermes/logopia_studio/process_scope.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+integrations/hermes/logopia_studio/process_scope.py:78: in _numeric_pids
+    code = process.wait(timeout=max(0, deadline - time.monotonic()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:1264: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: -9 args: ('/bin/ps', '-A', '-o', 'pid=')>
+timeout = 0.005727000068873167
+
+    def _wait(self, timeout):
+        """Internal implementation of wait() on POSIX."""
+        if self.returncode is not None:
+            return self.returncode
+    
+        if timeout is not None:
+            endtime = _time() + timeout
+            # Enter a busy loop if we have a timeout.  This busy loop was
+            # cribbed from Lib/threading.py in Thread.wait() at r71065.
+            delay = 0.0005 # 500 us -> initial delay of 1 ms
+            while True:
+                if self._waitpid_lock.acquire(False):
+                    try:
+                        if self.returncode is not None:
+                            break  # Another thread waited.
+                        (pid, sts) = self._try_wait(os.WNOHANG)
+                        assert pid == self.pid or pid == 0
+                        if pid == self.pid:
+                            self._handle_exitstatus(sts)
+                            break
+                    finally:
+                        self._waitpid_lock.release()
+                remaining = self._remaining_time(endtime)
+                if remaining <= 0:
+>                   raise TimeoutExpired(self.args, timeout)
+E                   subprocess.TimeoutExpired: Command '('/bin/ps', '-A', '-o', 'pid=')' timed out after 0.005727000068873167 seconds
+
+../../../../.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py:2045: TimeoutExpired
+
+The above exception was the direct cause of the following exception:
+
+process = <Popen: returncode: -9 args: ('/Users/cillian/Documents/Github/Projects/logo...>
+initial_signal = <Signals.SIGINT: 2>, grace_seconds = 0.1
+include_session = True
+
+    def retain_process(
+        process: subprocess.Popen[str],
+        initial_signal: signal.Signals,
+        grace_seconds: float,
+        *,
+        include_session: bool = False,
+    ) -> KeyboardInterrupt | None:
+        processes.append(process)
+>       return settle_group(process, initial_signal, grace_seconds, include_session=include_session)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/hermes/test_helper_interrupt.py:169: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+integrations/hermes/logopia_studio/process_group.py:113: in settle_group
+    owned.raise_inspection_error()
+integrations/hermes/logopia_studio/process_group.py:84: in raise_inspection_error
+    raise self.inspection_error
+integrations/hermes/logopia_studio/process_group.py:51: in _refresh
+    for member in session_groups(self._session_id, deadline):
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+session_id = 66592, deadline = 2956204.72583025
+
+    def session_groups(session_id: int, deadline: float) -> tuple[SessionGroup, ...]:
+        """Read PID numbers, never names/argv/environment, and select only our fresh session."""
+        if session_id <= 1 or session_id == os.getsid(0):
+            raise ProcessInspectionError("invalid_session")
+        query_deadline = min(deadline, time.monotonic() + _QUERY_SECONDS)
+        try:
+            pids = _numeric_pids(query_deadline)
+        except (OSError, subprocess.TimeoutExpired) as error:
+>           raise ProcessInspectionError("pid_listing") from error
+E           logopia_studio.process_scope.ProcessInspectionError: [Errno 5] Cannot verify owned process settlement: pid_listing
+
+integrations/hermes/logopia_studio/process_scope.py:100: ProcessInspectionError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/pytest/test_rejected_group_signals_do0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10baea600>
+helper = False
+
+    @pytest.mark.parametrize("helper", [False, True])
+    def test_rejected_group_signals_do_not_start_an_unbounded_context_wait(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch, helper: bool
+    ) -> None:
+        # Given a real finite child and an OS boundary rejecting delivery to that exact group.
+        original_killpg = os.killpg
+        processes: list[subprocess.Popen[str]] = []
+    
+        def retain_process(
+            process: subprocess.Popen[str],
+            initial_signal: signal.Signals,
+            grace_seconds: float,
+            *,
+            include_session: bool = False,
+        ) -> KeyboardInterrupt | None:
+            processes.append(process)
+            return settle_group(process, initial_signal, grace_seconds, include_session=include_session)
+    
+        def reject_delivery(pgid: int, sig: int) -> None:
+            if sig != 0:
+                raise PermissionError(errno.EPERM, "fixture signal delivery rejected", pgid)
+            original_killpg(pgid, sig)
+    
+        monkeypatch.setattr(os, "killpg", reject_delivery)
+        monkeypatch.setattr("logopia_studio.process_group._FORCE_SECONDS", 0.1)
+        monkeypatch.setattr("logopia_studio.launcher_process.settle_group", retain_process)
+        monkeypatch.setattr("logopia_studio.helper_process.settle_group", retain_process)
+        with finite_fixture(tmp_path, HELPER_SOURCE, "manual") as command:
+            started = time.monotonic()
+            # When graceful and forced deadlines expire, the failure must return within those bounds.
+            try:
+                if helper:
+                    with pytest.raises(subprocess.TimeoutExpired):
+                        _ = run_cli(command, timeout=0.2)
+                else:
+                    with pytest.raises(subprocess.TimeoutExpired):
+>                       _ = run_process(command, tmp_path, tmp_path / "logs", 1, grace_seconds=0.1)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/hermes/test_helper_interrupt.py:189: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+command = ('/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python', '/private/tmp/logopia-fix-process-080/pyt...ignals_do0/finite_fixture.py', '/private/tmp/logopia-fix-process-080/pytest/test_rejected_group_signals_do0', 'manual')
+workspace = PosixPath('/private/tmp/logopia-fix-process-080/pytest/test_rejected_group_signals_do0')
+output = PosixPath('/private/tmp/logopia-fix-process-080/pytest/test_rejected_group_signals_do0/logs')
+timeout_seconds = 1, grace_seconds = 0.1
+
+    def run_process(
+        command: tuple[str, ...],
+        workspace: Path,
+        output: Path,
+        timeout_seconds: int,
+        grace_seconds: float = 10,
+    ) -> ProcessReceipt:
+        """Retain exact logs and settle an owned child on deadline or interruption."""
+        if not 1 <= timeout_seconds <= MAX_DEADLINE or not 0 < grace_seconds <= MAX_GRACE:
+            raise LaunchError("invalid_deadline", "Deadline must be 1-3600 seconds; grace at most 10")
+        if not command or not workspace.is_dir():
+            raise LaunchError("invalid_command", "A command and existing workspace are required")
+        try:
+            output.mkdir(parents=True, exist_ok=False)
+        except FileExistsError as error:
+            raise LaunchError("output_exists", "Run logs need a fresh output directory") from error
+        stdout_path = output / "stdout.txt"
+        stderr_path = output / "stderr.txt"
+        timed_out = False
+        interrupted = False
+        try:
+            with (
+                stdout_path.open("x", encoding="utf-8") as stdout,
+                stderr_path.open("x", encoding="utf-8") as stderr,
+            ):
+                process = subprocess.Popen(  # noqa: S603 - internal argv; never a shell or model command.
+                    command,
+                    cwd=workspace,
+                    stdin=subprocess.DEVNULL,
+                    stdout=stdout,
+                    stderr=stderr,
+                    text=True,
+                    start_new_session=True,
+                )
+                try:
+                    try:
+                        _ = process.wait(timeout=timeout_seconds)
+                    except subprocess.TimeoutExpired:
+                        timed_out = True
+                    except KeyboardInterrupt:
+                        interrupted = True
+                finally:
+                    cleanup_interrupt = settle_group(
+                        process, signal.SIGINT, grace_seconds, include_session=True
+                    )
+                interrupted = interrupted or (not timed_out and cleanup_interrupt is not None)
+                exit_code = process.wait(timeout=0)
+        except ProcessInspectionError as error:
+>           raise LaunchError("process_inspection_failed", str(error)) from error
+E           logopia_studio.launcher_process.LaunchError: process_inspection_failed: [Errno 5] Cannot verify owned process settlement: pid_listing
+
+integrations/hermes/logopia_studio/launcher_process.py:126: LaunchError
+----------------------------- Captured stdout call -----------------------------
+{"cleanup": "test_rejected_group_signals_do0", "owned": [[66592, 66592]], "states": [""], "group_exists": false}
+=========================== short test summary info ============================
+FAILED tests/hermes/test_helper_interrupt.py::test_rejected_group_signals_do_not_start_an_unbounded_context_wait[False]
+1 failed, 37 passed in 29.98s

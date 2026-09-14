@@ -1,0 +1,176 @@
+C901 `settle_group` is too complex (19 > 10)
+  --> integrations/hermes/logopia_studio/process_group.py:35:5
+   |
+35 | def settle_group(
+   |     ^^^^^^^^^^^^
+36 |     process: subprocess.Popen[str],
+37 |     initial_signal: signal.Signals,
+   |
+
+PLR0912 Too many branches (19 > 12)
+  --> integrations/hermes/logopia_studio/process_group.py:35:5
+   |
+35 | def settle_group(
+   |     ^^^^^^^^^^^^
+36 |     process: subprocess.Popen[str],
+37 |     initial_signal: signal.Signals,
+   |
+
+PLR0915 Too many statements (58 > 50)
+  --> integrations/hermes/logopia_studio/process_group.py:35:5
+   |
+35 | def settle_group(
+   |     ^^^^^^^^^^^^
+36 |     process: subprocess.Popen[str],
+37 |     initial_signal: signal.Signals,
+   |
+
+TC003 Move standard library import `signal` into a type-checking block
+ --> integrations/hermes/logopia_studio/process_scope.py:7:8
+  |
+5 | import errno
+6 | import os
+7 | import signal
+  |        ^^^^^^
+8 | import subprocess
+9 | import time
+  |
+help: Move into type-checking block
+
+TRY003 Avoid specifying long messages outside the exception class
+  --> integrations/hermes/logopia_studio/process_scope.py:45:19
+   |
+43 |             return False
+44 |         except OSError as error:
+45 |             raise ProcessInspectionError("Cannot verify owned session membership") from error
+   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+46 |         try:
+47 |             os.killpg(self.group_id, sig)
+   |
+
+TRY300 Consider moving this statement to an `else` block
+  --> integrations/hermes/logopia_studio/process_scope.py:63:13
+   |
+61 |             process.kill()
+62 |             _ = process.wait(timeout=max(0, deadline - time.monotonic()))
+63 |             return interrupted
+   |             ^^^^^^^^^^^^^^^^^^
+64 |         except KeyboardInterrupt as error:
+65 |             if interrupted is None:
+   |
+
+S603 `subprocess` call: check for execution of untrusted input
+  --> integrations/hermes/logopia_studio/process_scope.py:71:19
+   |
+69 | def _numeric_pids(deadline: float) -> tuple[int, ...]:
+70 |     with TemporaryFile() as output:
+71 |         process = subprocess.Popen(_PS_COMMAND, stdout=output, stderr=subprocess.DEVNULL)
+   |                   ^^^^^^^^^^^^^^^^
+72 |         try:
+73 |             code = process.wait(timeout=max(0, deadline - time.monotonic()))
+   |
+
+TRY003 Avoid specifying long messages outside the exception class
+  --> integrations/hermes/logopia_studio/process_scope.py:75:23
+   |
+73 |             code = process.wait(timeout=max(0, deadline - time.monotonic()))
+74 |             if code != 0:
+75 |                 raise ProcessInspectionError("Numeric PID enumeration failed")
+   |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+76 |         finally:
+77 |             interrupted = _stop_probe(process)
+   |
+
+TRY003 Avoid specifying long messages outside the exception class
+  --> integrations/hermes/logopia_studio/process_scope.py:83:15
+   |
+81 |         tokens = output.read().split()
+82 |     if any(not token.isdigit() for token in tokens):
+83 |         raise ProcessInspectionError("Numeric PID enumeration returned malformed output")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+84 |     return tuple(int(token) for token in tokens)
+   |
+
+TRY003 Avoid specifying long messages outside the exception class
+  --> integrations/hermes/logopia_studio/process_scope.py:90:15
+   |
+88 |     """Read PID numbers, never names/argv/environment, and select only our fresh session."""
+89 |     if session_id <= 1 or session_id == os.getsid(0):
+90 |         raise ProcessInspectionError("Refusing caller or invalid session ownership")
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+91 |     query_deadline = min(deadline, time.monotonic() + _QUERY_SECONDS)
+92 |     try:
+   |
+
+TRY003 Avoid specifying long messages outside the exception class
+  --> integrations/hermes/logopia_studio/process_scope.py:95:15
+   |
+93 |         pids = _numeric_pids(query_deadline)
+94 |     except (OSError, subprocess.TimeoutExpired) as error:
+95 |         raise ProcessInspectionError("Numeric PID enumeration did not complete") from error
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+96 |     groups: dict[int, SessionGroup] = {}
+97 |     for pid in pids:
+   |
+
+TRY003 Avoid specifying long messages outside the exception class
+   --> integrations/hermes/logopia_studio/process_scope.py:99:19
+    |
+ 97 |     for pid in pids:
+ 98 |         if time.monotonic() >= query_deadline:
+ 99 |             raise ProcessInspectionError("Session membership query exceeded its deadline")
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+100 |         try:
+101 |             if os.getsid(pid) == session_id:
+    |
+
+TRY003 Avoid specifying long messages outside the exception class
+   --> integrations/hermes/logopia_studio/process_scope.py:107:19
+    |
+105 |             continue
+106 |         except OSError as error:
+107 |             raise ProcessInspectionError("Cannot verify numeric PID membership") from error
+    |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+108 |     return tuple(groups.values())
+    |
+
+Q001 [*] Single quote multiline found but double quotes preferred
+   --> tests/hermes/test_helper_interrupt.py:200:21
+    |
+198 |       leaf = tmp_path / "finite_leaf.py"
+199 |       _ = leaf.write_text(HELPER_SOURCE, encoding="utf-8")
+200 |       leader_source = '''# /// script
+    |  _____________________^
+201 | | # requires-python = ">=3.11"
+202 | | # dependencies = []
+203 | | # ///
+204 | | # How to run: launched with literal argv by the finite process fixture.
+205 | | import os, signal, sys
+206 | | from pathlib import Path
+207 | | root = Path(sys.argv[1])
+208 | | signal.alarm(10)
+209 | | signal.signal(signal.SIGINT, signal.SIG_IGN)
+210 | | root.joinpath("leader.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+211 | | sys.path.insert(0, sys.argv[2])
+212 | | from logopia_studio.helper_process import run_cli
+213 | | run_cli((sys.executable, str(root / "finite_leaf.py"), str(root), "manual"), timeout=8)
+214 | | '''
+    | |___^
+215 |       native = str(Path(run_cli.__code__.co_filename).parents[1])
+216 |       with finite_fixture(tmp_path, leader_source, native) as command:
+    |
+help: Replace single multiline quotes with double quotes
+    |
+199 |     _ = leaf.write_text(HELPER_SOURCE, encoding="utf-8")
+    -     leader_source = '''# /// script
+200 +     leader_source = """# /// script
+201 | # requires-python = ">=3.11"
+--------------------------------------------------------------------------------
+213 | run_cli((sys.executable, str(root / "finite_leaf.py"), str(root), "manual"), timeout=8)
+    - '''
+214 + """
+215 |     native = str(Path(run_cli.__code__.co_filename).parents[1])
+    |
+
+Found 14 errors.
+[*] 1 fixable with the `--fix` option (1 hidden fix can be enabled with the `--unsafe-fixes` option).

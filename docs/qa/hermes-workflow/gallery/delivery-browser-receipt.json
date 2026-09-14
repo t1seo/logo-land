@@ -1,0 +1,23 @@
+{
+  "steps": [
+    "three completed downloads: exact ZIP bytes and selected PNG member hash, with reloads",
+    "guide exact bytes, manifest open hash and keyboard package download after back",
+    "unreviewed/newer snapshots have no package; back retains explicit old identity and draft",
+    "390px no horizontal overflow and actual package download without JavaScript"
+  ],
+  "resources": {
+    "fixture": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/fixture-delivery-eqtW3b",
+    "profile": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/chrome-delivery-Rwj7c8",
+    "downloads": "/tmp/logopia-gallery-delivery-ctx_266c0bc431e3.SchZkw/downloads-delivery-DMHzw9"
+  },
+  "cleanup": true,
+  "browserVersion": "152.0.7977.83",
+  "zipSha256": "0260e56c062840819fb1c2736457692f66096dce764d1bc613d25e69e1a860e1",
+  "selectedPngSha256": "cf9efc33175d74fd801fb2ef32e265f31a91b1724154eb7d7f43b99834fb27fe",
+  "packageBytes": 6387,
+  "guideSha256": "ff0848ae44c3e1edc726b6bdd471590ea8417c217c8f0f05f50dc158dbb9d0fc",
+  "mobileWidth": 390,
+  "canonicalUnchanged": true,
+  "externalRequests": 0,
+  "pageErrors": 0
+}

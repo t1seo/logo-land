@@ -1,0 +1,22 @@
+{
+  "pid": 63580,
+  "command": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "-c",
+    "pyproject.toml",
+    "/tmp/logopia-review-goal-080/test_first_rename.py::test_prior_install_survives_first_rename_signal",
+    "--basetemp",
+    "/tmp/logopia-review-goal-080/first-rename-green"
+  ],
+  "deadline_seconds": 60,
+  "timed_out": false,
+  "exit_code": 0,
+  "signal": null,
+  "reaped": true,
+  "source_sha256": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

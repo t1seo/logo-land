@@ -1,0 +1,7 @@
+integrations/hermes/logopia_studio/process_group.py
+integrations/hermes/logopia_studio/process_scope.py
+tests/hermes/test_helper_interrupt.py
+tests/hermes/test_installer_backup_interrupt.py
+tests/hermes/test_installer_foreign_marker.py
+tests/hermes/test_installer_interruption.py
+tests/hermes/test_process_group_settlement.py

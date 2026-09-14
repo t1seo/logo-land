@@ -1,8 +1,10 @@
 # Releases and versioning
 
-Logo Land uses `MAJOR.MINOR.PATCH` versions and Git tags named `vMAJOR.MINOR.PATCH`. The plugin and local helper are released together from [t1seo/logopia](https://github.com/t1seo/logopia). The first tagged release is [v0.3.1](https://github.com/t1seo/logopia/releases/tag/v0.3.1), continuing the earlier internal 0.3.0 plugin builds.
+Logopia uses `MAJOR.MINOR.PATCH` versions and Git tags named `vMAJOR.MINOR.PATCH`. The Codex plugin, Hermes plugin and local helper are released together from [t1seo/logopia](https://github.com/t1seo/logopia). The first tagged release is [v0.3.1](https://github.com/t1seo/logopia/releases/tag/v0.3.1), continuing the earlier internal 0.3.0 plugin builds.
 
-Current version is **[0.7.0](https://github.com/t1seo/logopia/releases/tag/v0.7.0)**: custom lettering guidance, type-aware logo prompts, a new identity and a freshly generated 16-piece showcase. See the [release notes](qa/lettering-refresh/release-notes.md) and [verification record](qa/lettering-refresh/verification.md). Publication was explicitly requested for this update.
+The latest release is **[0.8.0](https://github.com/t1seo/logopia/releases/tag/v0.8.0)**. It adds a guided [native Hermes workflow](hermes.md), with distinct directions, actual image critiques, preserved revisions and checked PNG delivery. See the [release notes](qa/hermes-workflow/release-notes.md) and [real OFFCUT example](hermes-demo/README.md).
+
+The existing Codex workflow and sixteen white-background showcase originals remain available. The earlier [0.7.0 lettering refresh](qa/lettering-refresh/release-notes.md) retains its [verification record](qa/lettering-refresh/verification.md).
 
 The earlier 0.4.0 native color experiments remain [historical failed validation](qa/color-workflow/README.md); their draft and evidence are not republished or reclassified as passing. Strict palette exports still require measured conformance, and generated spelling, alpha and colors need inspection. This release does not guarantee exact raster colors, editable fonts, vectors or platform-ready icon layers.
 
@@ -21,8 +23,8 @@ After 1.0.0, compatible new functionality increments the minor version and compa
 
 ## Preparing a release
 
-1. Set the same clean version in `.codex-plugin/plugin.json` and `pyproject.toml`, then run `uv lock` to update the helper entry in `uv.lock`. Do not upgrade dependencies as part of a version-only change.
-2. Update both root README badges and links, add an entry to [CHANGELOG.md](../CHANGELOG.md), and prepare English release notes. The Release badge must continue to identify the actual published release; the Development badge identifies current source, even while unreleased. Keep the default README and GitHub About description in English. Link generated samples only after their native receipts and actual files exist.
+1. Set the same clean version in `.codex-plugin/plugin.json`, `integrations/hermes/plugin.yaml` and `pyproject.toml`, then run `uv lock` to update the helper entry in `uv.lock`. Do not upgrade dependencies as part of a version-only change.
+2. Update both root README badges and links, add an entry to [CHANGELOG.md](../CHANGELOG.md), and prepare English release notes. Keep the Release badge tied to the actual published release and describe any unreleased source version separately. Keep the default README and GitHub About description in English. Link generated samples only after their native receipts and actual files exist.
 3. Run `uv lock --check`, `uv run --locked pytest`, `uv run --locked ruff check .`, and `uv run --locked basedpyright`. Validate the plugin manifest using the installed `plugin-creator` skill's `scripts/validate_plugin.py`. Check the README badge links and sample images.
 4. When validating a personal installation, sync the existing personal plugin source, apply its local cachebuster, reinstall, and update the [installation record](qa/installation.md) with the returned version. Recheck that the repository version remains clean. Record release checks with their execution source, as in the [v0.3.1 validation record](qa/release-031.md).
 5. Review and commit the release files on `main`, then push the commit. Create an annotated tag at the exact validated commit and push that tag. Publish with `gh release create`, `--verify-tag`, an English `--title`, and `--notes-file` pointing to the prepared notes.
@@ -32,7 +34,7 @@ Before creating a tag or release, check whether the intended version already exi
 
 ## Local plugin installations
 
-Personal development installations may use a version such as `0.7.0+codex.<timestamp>` to refresh the Codex cache. Apply the official cachebuster helper to the personal plugin source and reinstall it from its existing marketplace. Keep the repository manifest, `pyproject.toml` and `uv.lock` at clean `0.7.0`; create a release tag only through an authorized publication workflow. The cachebuster is not a separate public release. Existing installations can retain an older payload until refreshed, so record source and installed-cache versions/hashes separately rather than inferring one from the other.
+Personal development installations may use a version such as `0.8.0+codex.<timestamp>` to refresh the Codex cache. Apply the official cachebuster helper to the personal plugin source and reinstall it from its existing marketplace. Keep the repository manifest, `pyproject.toml` and `uv.lock` at the clean release version `0.8.0`; create a release tag only through an authorized publication workflow. The cachebuster is not a separate public release. Existing installations can retain an older payload until refreshed, so record source and installed-cache versions/hashes separately rather than inferring one from the other.
 
 Open a new Codex conversation after reinstalling so the updated plugin is discovered. The [installation record](qa/installation.md) distinguishes release versions from local cache versions.
 

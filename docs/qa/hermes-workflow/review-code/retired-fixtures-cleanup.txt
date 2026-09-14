@@ -1,0 +1,6 @@
+pytest=absent
+probe-pytest=absent
+install-pytest=absent
+defensive-fixed-pytest=absent
+install-fixed-pytest=absent
+nested-pytest=absent

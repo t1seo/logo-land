@@ -1,0 +1,45 @@
+{"fixture": "test_forced_launcher_settles_n0", "owned": [[52907, 52907], [52906, 52906]], "states": ["52907     1 52907 Ss", ""], "group_exists": true, "elapsed": 2.215}
+{"cleanup": "test_forced_launcher_settles_n0", "owned": [[52907, 52907], [52906, 52906]], "states": ["", ""], "group_exists": false}
+F
+=================================== FAILURES ===================================
+______________ test_forced_launcher_settles_nested_actual_helper _______________
+
+tmp_path = PosixPath('/private/tmp/logopia-fix-process-080/red-nested/test_forced_launcher_settles_n0')
+
+    def test_forced_launcher_settles_nested_actual_helper(tmp_path: Path) -> None:
+        # Given actual run_cli in an unresponsive launcher leader and a finite separate-session helper.
+        leaf = tmp_path / "finite_leaf.py"
+        _ = leaf.write_text(HELPER_SOURCE, encoding="utf-8")
+        leader_source = '''# /// script
+    # requires-python = ">=3.11"
+    # dependencies = []
+    # ///
+    # How to run: launched with literal argv by the finite process fixture.
+    import os, signal, sys
+    from pathlib import Path
+    root = Path(sys.argv[1])
+    signal.alarm(10)
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    root.joinpath("leader.pid").write_text(f"{os.getpid()} {os.getpgrp()}")
+    sys.path.insert(0, sys.argv[2])
+    from logopia_studio.helper_process import run_cli
+    run_cli((sys.executable, str(root / "finite_leaf.py"), str(root), "manual"), timeout=8)
+    '''
+        native = str(Path(run_cli.__code__.co_filename).parents[1])
+        with finite_fixture(tmp_path, leader_source, native) as command:
+            started = time.monotonic()
+            # When the real launcher exhausts grace and must kill its leader.
+            result = run_process(command, tmp_path, tmp_path / "logs", 2, grace_seconds=0.2)
+            states, alive = observe(tmp_path, time.monotonic() - started)
+            # Then its helper's separate group also disappears before the timeout receipt.
+            assert (tmp_path / "ready").read_text(encoding="utf-8") == "ready"
+            assert result.timed_out
+            assert result.exit_code == -signal.SIGKILL
+>           assert not any(states)
+E           AssertionError: assert not True
+E            +  where True = any(('52907     1 52907 Ss', ''))
+
+tests/hermes/test_helper_interrupt.py:224: AssertionError
+=========================== short test summary info ============================
+FAILED tests/hermes/test_helper_interrupt.py::test_forced_launcher_settles_nested_actual_helper
+1 failed, 9 deselected in 2.31s

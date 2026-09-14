@@ -1,0 +1,115 @@
+uv run --locked python /tmp/logopia-fix-process-080/manual.py
+Tae-wons-MacBook-Pro% uv run --locked python /tmp/logopia-fix-process-080/manual.py
+{"event": "runtime", "pid": 47176, "pgid": 47175, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "executable": "/Users/cillian/Documents/Github/Projects/logo-ge
+nerator/.venv/bin/python3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/launcher_process.py", "sha256": "f763b36ff6d76e809dbf86d5f17
+bcbde25630913e90f5131d16df50949e3916d"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", "sha256": "951c02580507b29239beca00cf92f
+5ce0f9243bd7f8a2419c54e6d6fe12dc574"}
+{"fixture": "deadline", "owned": [[47179, 47178], [47178, 47178]], "states": ["", ""], "group_exists": false, "elapsed": 1.221}
+{"event": "launcher_pass", "case": "deadline", "exit_code": -2, "timed_out": true, "all_owned_absent": true}
+{"cleanup": "deadline", "owned": [[47179, 47178], [47178, 47178]], "states": ["", ""], "group_exists": false}
+{"fixture": "exited", "owned": [[47211, 47209], [47209, 47209]], "states": ["", ""], "group_exists": false, "elapsed": 0.252}
+{"event": "launcher_pass", "case": "exited", "exit_code": 0, "timed_out": false, "all_owned_absent": true}
+{"cleanup": "exited", "owned": [[47211, 47209], [47209, 47209]], "states": ["", ""], "group_exists": false}
+{"event": "original_interrupt_retained", "case": "automatic", "interrupt_count": 2, "error": "automatic caller interrupt 1"}
+{"fixture": "automatic", "owned": [[47218, 47218]], "states": [""], "group_exists": false, "elapsed": 0.435}
+{"event": "caller_pass", "case": "automatic", "all_owned_absent": true}
+{"cleanup": "automatic", "owned": [[47218, 47218]], "states": [""], "group_exists": false}
+{"event": "READY_FOR_TWO_TMUX_CTRL_C", "caller_pid": 47176, "helper_pid": 47232}
+^C^C{"event": "original_interrupt_retained", "case": "terminal", "interrupt_count": 2, "error": "terminal caller interrupt 1"}
+{"fixture": "terminal", "owned": [[47232, 47232]], "states": [""], "group_exists": false, "elapsed": 5.688}
+{"event": "caller_pass", "case": "terminal", "all_owned_absent": true}
+{"cleanup": "terminal", "owned": [[47232, 47232]], "states": [""], "group_exists": false}
+{"event": "timeout_retained_after_cleanup_interrupt", "code": "helper_timeout"}
+{"fixture": "helper-timeout", "owned": [[47403, 47403]], "states": [""], "group_exists": false, "elapsed": 0.315}
+{"cleanup": "helper-timeout", "owned": [[47403, 47403]], "states": [""], "group_exists": false}
+{"event": "MANUAL_PASS", "resource_warnings": 0, "resumed_stdout_exact": true}
+Tae-wons-MacBook-Pro% print -r -- "manual_exit=$?"
+manual_exit=0
+Tae-wons-MacBook-Pro% uv run --locked python /tmp/logopia-fix-process-080/manual.py
+{"event": "runtime", "pid": 71302, "pgid": 71301, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "executable": "/Users/cillian/Documents/Github/Projects/logo-ge
+nerator/.venv/bin/python3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/launcher_process.py", "sha256": "30507c70ebfdedaff1373698cb7
+739b49cc71ace6a78a14071d0e3f4d84a31c3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", "sha256": "5763027c3d5147980caa8f356c9f3
+cc9d2f6f0f6db6a362a5e959ccb7ac5efed"}
+{"fixture": "deadline", "owned": [[71312, 71304], [71304, 71304]], "states": ["", ""], "group_exists": false, "elapsed": 1.285}
+{"event": "launcher_pass", "case": "deadline", "exit_code": -2, "timed_out": true, "all_owned_absent": true}
+{"cleanup": "deadline", "owned": [[71312, 71304], [71304, 71304]], "states": ["", ""], "group_exists": false}
+{"fixture": "exited", "owned": [[71341, 71340], [71340, 71340]], "states": ["", ""], "group_exists": false, "elapsed": 0.339}
+{"event": "launcher_pass", "case": "exited", "exit_code": 0, "timed_out": false, "all_owned_absent": true}
+{"cleanup": "exited", "owned": [[71341, 71340], [71340, 71340]], "states": ["", ""], "group_exists": false}
+{"fixture": "nested", "owned": [[71367, 71367], [71365, 71365]], "states": ["", ""], "group_exists": false, "elapsed": 2.294}
+{"event": "nested_pass", "all_owned_absent": true, "shared_session": true, "foreign_control_alive": true, "foreign_pid": 71364}
+{"cleanup": "nested", "owned": [[71367, 71367], [71365, 71365]], "states": ["", ""], "group_exists": false}
+{"event": "foreign_control_finally_absent", "pid": 71364}
+{"event": "original_interrupt_retained", "case": "automatic", "interrupt_count": 2, "error": "automatic caller interrupt 1"}
+{"fixture": "automatic", "owned": [[71453, 71453]], "states": [""], "group_exists": false, "elapsed": 0.442}
+{"event": "caller_pass", "case": "automatic", "all_owned_absent": true}
+{"cleanup": "automatic", "owned": [[71453, 71453]], "states": [""], "group_exists": false}
+{"event": "READY_FOR_TWO_TMUX_CTRL_C", "caller_pid": 71302, "helper_pid": 71460}
+^C{"cleanup": "terminal", "owned": [[71460, 71460]], "states": [""], "group_exists": false}
+Traceback (most recent call last):
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", line 21, in run_cli
+    stdout, stderr = process.communicate(timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/Users/cillian/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '('/Users/cillian/Documents/Github/Projects/logo-generator/.venv/bin/python3', '/tmp/logopia-fix-process-080/manual-final/terminal/finite_fixture
+.py', '/tmp/logopia-fix-process-080/manual-final/terminal', 'manual')' timed out after 7 seconds
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/logopia-fix-process-080/manual.py", line 232, in <module>
+    main()
+  File "/tmp/logopia-fix-process-080/manual.py", line 214, in main
+    caller_case(BASE / "terminal", True)
+  File "/tmp/logopia-fix-process-080/manual.py", line 100, in caller_case
+    _ = run_cli(command, timeout=7)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", line 23, in run_cli
+    raise StudioError(
+logopia_studio.models_base.StudioError: helper_timeout: Helper deadline expired; exact commit may need reconciliation
+Tae-wons-MacBook-Pro%
+Tae-wons-MacBook-Pro% print -r -- "manual_exit=$?"
+manual_exit=130
+Tae-wons-MacBook-Pro% uv run --locked python /tmp/logopia-fix-process-080/manual.py
+{"event": "runtime", "pid": 73542, "pgid": 73540, "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]", "executable": "/Users/cillian/Documents/Github/Projects/logo-ge
+nerator/.venv/bin/python3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/launcher_process.py", "sha256": "30507c70ebfdedaff1373698cb7
+739b49cc71ace6a78a14071d0e3f4d84a31c3"}
+{"event": "source", "path": "/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes/logopia_studio/helper_process.py", "sha256": "5763027c3d5147980caa8f356c9f3
+cc9d2f6f0f6db6a362a5e959ccb7ac5efed"}
+{"fixture": "deadline", "owned": [[73545, 73544], [73544, 73544]], "states": ["", ""], "group_exists": false, "elapsed": 1.288}
+{"event": "launcher_pass", "case": "deadline", "exit_code": -2, "timed_out": true, "all_owned_absent": true}
+{"cleanup": "deadline", "owned": [[73545, 73544], [73544, 73544]], "states": ["", ""], "group_exists": false}
+{"fixture": "exited", "owned": [[73575, 73573], [73573, 73573]], "states": ["", ""], "group_exists": false, "elapsed": 0.319}
+{"event": "launcher_pass", "case": "exited", "exit_code": 0, "timed_out": false, "all_owned_absent": true}
+{"cleanup": "exited", "owned": [[73575, 73573], [73573, 73573]], "states": ["", ""], "group_exists": false}
+{"fixture": "nested", "owned": [[73599, 73599], [73597, 73597]], "states": ["", ""], "group_exists": false, "elapsed": 2.317}
+{"event": "nested_pass", "all_owned_absent": true, "shared_session": true, "foreign_control_alive": true, "foreign_pid": 73596}
+{"cleanup": "nested", "owned": [[73599, 73599], [73597, 73597]], "states": ["", ""], "group_exists": false}
+{"event": "foreign_control_finally_absent", "pid": 73596}
+{"event": "original_interrupt_retained", "case": "automatic", "interrupt_count": 2, "error": "automatic caller interrupt 1"}
+{"fixture": "automatic", "owned": [[73647, 73647]], "states": [""], "group_exists": false, "elapsed": 0.444}
+{"event": "caller_pass", "case": "automatic", "all_owned_absent": true}
+{"cleanup": "automatic", "owned": [[73647, 73647]], "states": [""], "group_exists": false}
+{"event": "READY_FOR_TWO_TMUX_CTRL_C", "caller_pid": 73542, "helper_pid": 73661}
+^C^C{"event": "original_interrupt_retained", "case": "terminal", "interrupt_count": 2, "error": "terminal caller interrupt 1"}
+{"fixture": "terminal", "owned": [[73661, 73661]], "states": [""], "group_exists": false, "elapsed": 0.66}
+{"event": "caller_pass", "case": "terminal", "all_owned_absent": true}
+{"cleanup": "terminal", "owned": [[73661, 73661]], "states": [""], "group_exists": false}
+{"event": "timeout_retained_after_cleanup_interrupt", "code": "helper_timeout"}
+{"fixture": "helper-timeout", "owned": [[73678, 73678]], "states": [""], "group_exists": false, "elapsed": 0.315}
+{"cleanup": "helper-timeout", "owned": [[73678, 73678]], "states": [""], "group_exists": false}
+{"event": "MANUAL_PASS", "resource_warnings": 0, "resumed_stdout_exact": true}
+Tae-wons-MacBook-Pro% print -r -- "manual_exit=$?"
+manual_exit=0
+Tae-wons-MacBook-Pro%

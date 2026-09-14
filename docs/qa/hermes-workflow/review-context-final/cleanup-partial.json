@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-09-14T17:54:46Z",
+  "server_pid": 98366,
+  "server_exit": 143,
+  "server_reaped": true,
+  "server_absent": true,
+  "loopback_port": 8817,
+  "port_free": true,
+  "scratch_root": "/tmp/logopia-review-context-final-080",
+  "scratch_absent": true,
+  "private_tmp_alias_absent": true,
+  "browser_created": false,
+  "environment_overrides": [],
+  "profile_writes": false,
+  "inference_calls": 0
+}

@@ -1,0 +1,20 @@
+--- docs/qa/hermes-workflow/fix-installer/installer.before.py.txt	2026-09-15 02:03:09
++++ integrations/hermes/logopia_studio/installer.py	2026-09-15 02:07:51
+@@ -76,7 +76,7 @@
+             raise LaunchError("modified_install", "Preserving a symlink in the installed plugin")
+         if (
+             path.is_file()
+-            and path.name != _MARKER
++            and relative.as_posix() != _MARKER
+             and relative.as_posix() not in expected
+             and ("__pycache__" not in relative.parts or path.suffix != ".pyc")
+         ):
+@@ -140,7 +140,7 @@
+                 _ = target.rename(backup)
+             try:
+                 _ = stage.rename(target)
+-            except OSError:
++            except (OSError, KeyboardInterrupt):
+                 if backup.exists() and not target.exists():
+                     _ = backup.rename(target)
+                 raise

@@ -1,0 +1,58 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = []
+# ///
+# How to run:
+# /Users/cillian/.hermes/hermes-agent/venv/bin/python \
+#   /tmp/logopia-review-code-080/source_audit.py
+"""Read-only native grammar and broad-type scan under the actual Python 3.11 parser."""
+
+from __future__ import annotations
+
+import ast
+import json
+import sys
+from pathlib import Path
+from typing import Final
+
+ROOT: Final = Path("/Users/cillian/Documents/Github/Projects/logo-generator/integrations/hermes")
+
+
+def main() -> None:
+    """Emit only file counts and source-analysis results; never import runtime settings."""
+    files = sorted(ROOT.rglob("*.py"))
+    escapes: list[str] = []
+    helper_imports: list[str] = []
+    largest = 0
+    for path in files:
+        source = path.read_text(encoding="utf-8")
+        tree = ast.parse(source, filename=str(path))
+        largest = max(
+            largest,
+            sum(
+                bool(line.strip()) and not line.lstrip().startswith("#")
+                for line in source.splitlines()
+            ),
+        )
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Name) and node.id in {"Any", "object", "cast"}:
+                escapes.append(f"{path.relative_to(ROOT)}:{node.lineno}:{node.id}")
+            if isinstance(node, ast.ImportFrom) and (node.module or "").startswith("logo_helper"):
+                helper_imports.append(str(path.relative_to(ROOT)))
+    _ = sys.stdout.write(
+        json.dumps(
+            {
+                "python_version": sys.version.split()[0],
+                "parsed_native_python_files": len(files),
+                "broad_type_names": escapes,
+                "helper_imports": helper_imports,
+                "largest_nonblank_noncomment_lines": largest,
+            },
+            indent=2,
+        )
+        + "\n"
+    )
+
+
+if __name__ == "__main__":
+    main()

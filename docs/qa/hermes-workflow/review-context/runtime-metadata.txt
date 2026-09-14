@@ -1,0 +1,6 @@
+d3e2ace1dde9f1d279f99c9ebc6bce2e761b025d
+Python 3.11.16
+Python 3.12.12
+17:    sequential_call: 1800
+18:    concurrent_batch: 1800
+2bd35fc1d58229630b5a625d7cc7c48ca50bfbd9cfd6fc23e5af3a29798635bd  /Users/cillian/.hermes/config.yaml

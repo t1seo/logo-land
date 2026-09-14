@@ -1,0 +1,21 @@
+# Primary-source support audit
+
+Read on 2026-09-15 KST. Sources below support the named factual premises. The corresponding Logopia design decisions are **inferences**, not controlled findings about professional performance.
+
+| Primary source | Actual support read | Inferred application and limit |
+| --- | --- | --- |
+| [Mozilla: Nearly there](https://blog.mozilla.org/opendesign/nearly-there/) | Four identity directions were assessed against brand attributes; strategic and qualitative factors accompanied surveys. | Brief-led, meaningfully different directions are reasonable; this source does not validate AI logo quality. |
+| [Figma: Design critiques](https://www.figma.com/blog/design-critiques-at-figma/) | Identifies shallow/unactionable feedback and group agreement; discusses goals, context and distinct critique formats. | Separate pixel critiques with specific requested fixes are an adaptation. Two calls to one model are not independent human certification. |
+| [Adobe: Line and character spacing](https://helpx.adobe.com/illustrator/using/line-character-spacing.html) | Defines kerning for specific pairs, tracking for selected text; describes optical spacing and small-size effects. | Pair-specific FF/FC/UT instructions and use-size review are relevant. Generated PNG lettering is not actual Illustrator/font typesetting. |
+| [COLLINS: Mailchimp](https://wearecollins.com/case-studies/mailchimp/) | Links brand strategy to a coordinated logotype, logomark, yellow palette, typography and illustration while retaining identity elements. | Coherent color/construction roles are supported as a design approach, not a universal minimal-logo rule or revenue claim. |
+| [GOV.UK: Question pages](https://design-system.service.gov.uk/patterns/question-pages/) | Ask only necessary information and reuse answers already supplied. | Conversational brief extraction and consequential assumptions are an adaptation; no additional approval workflow is implied. |
+| [Microsoft HAX: Rich and detailed edits](https://www.microsoft.com/en-us/haxtoolkit/pattern/g9-b-rich-and-detailed-edits/) | Supports correcting and refining partially incorrect AI outputs, using explicit controls. Warns repeated correction has costs. | Exact-parent keep/change feedback and a finite revision budget are inferences. The source does not guarantee exact raster preservation. |
+| [Figma Make: Version history](https://help.figma.com/hc/en-us/articles/42009840449175-Edit-a-Figma-Make-file) | Preview does not alter current work; restoring retains other versions. | Separating local preview from canonical selection and retaining parents is a supported analogy, not identical Figma functionality. |
+| [Hermes: Plugin LLM access](https://hermes-agent.nousresearch.com/docs/developer-guide/plugin-llm-access) | Public complete_structured supports text/image inputs, finite timeout, host credentials and returned provider/model attribution. | Source uses those interfaces without provider/model/profile overrides. Current docs include newer auxiliary features; the local SHA is only a local verification identifier. |
+| [Pinned IP source](https://github.com/s1dashu/ip-as-logo-skill/blob/acb834c717bcd0a487c49732d08397ba280d690b/SKILL.md) and [MIT license](https://raw.githubusercontent.com/s1dashu/ip-as-logo-skill/acb834c717bcd0a487c49732d08397ba280d690b/LICENSE) | Native bundled credit points to an actual pinned upstream source; the downloaded license exactly matches the bundled notice. | The adaptation and exclusions are stated; no endorsement, upstream executable code or example artwork is claimed. |
+
+The two explicitly bounded curl downloads returned 200. The Hermes page was checked for the actual API semantics, and the IP license was checked byte-for-byte; a response code alone was insufficient. [Download hashes](primary-downloads.sha256) remain after temporary downloads are removed.
+
+`d3e2ace1dde9f1d279f99c9ebc6bce2e761b025d` exactly matches the installed local Hermes checkout. The research document explicitly calls it a local identifier and does not construct a false public GitHub permalink. [Runtime receipt](runtime-metadata.txt).
+
+Slack, Notion and Mobbin: skipped; no access or evidence from those services was used or invented. This audit verifies existing product decisions and sources, and does not add a new UI inspiration search.

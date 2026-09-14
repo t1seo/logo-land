@@ -1,0 +1,142 @@
+"""Read-only original and recovery checks extracted from the review harness."""
+
+from __future__ import annotations
+
+from hashlib import sha256
+from typing import TYPE_CHECKING, Final
+
+from logopia_studio.checks import review_input, unmet_criteria, verify_critiques
+from logopia_studio.engine_recovery import can_resume_critique
+from logopia_studio.host_images import parse_receipt
+from logopia_studio.models import StudioError, Workflow
+
+if TYPE_CHECKING:
+    from pathlib import Path
+
+INITIAL_COUNT: Final = 3
+EDIT_COUNT: Final = 2
+RECOVERY_REVISION: Final = 23
+
+
+def require(condition: bool, label: str) -> str:
+    if not condition:
+        raise StudioError("review_assertion", label)
+    return label
+
+
+def verify_state(root: Path, state: Workflow, raw: bytes) -> list[str]:
+    checks = [
+        require(
+            (state.revision, state.phase, state.selected_id) == (47, "delivered", "e2"),
+            "strict canonical r47/delivered/e2",
+        )
+    ]
+    checks.append(
+        require(
+            raw == (root / "output/hermes-demo/final-workflow.json").read_bytes(),
+            "canonical equals exact final snapshot",
+        )
+    )
+    checks.append(
+        require(
+            tuple((c.id, c.parent_id) for c in state.candidates)
+            == (("c1", None), ("c2", None), ("c3", None), ("e1", "c1"), ("e2", "e1")),
+            "five originals and exact c1-e1-e2 lineage",
+        )
+    )
+    calls: set[str] = set()
+    for candidate in state.candidates:
+        original = (root / candidate.image_path).read_bytes()
+        public = (root / "docs/hermes-demo/originals" / f"{candidate.id}.png").read_bytes()
+        checks.append(
+            require(
+                original == public and sha256(original).hexdigest() == candidate.sha256,
+                f"{candidate.id}: unchanged exact public PNG",
+            )
+        )
+        verify_critiques(review_input(root, state, candidate), candidate.critiques)
+        checks.append(f"{candidate.id}: both original/parent/target-view bindings verified")
+        for report in candidate.critiques:
+            checks.append(
+                require(report.call_id not in calls, f"{candidate.id}/{report.role}: fresh call")
+            )
+            calls.add(report.call_id)
+    e1, e2 = state.candidates[-2:]
+    checks.append(
+        require(
+            all(
+                any(
+                    c.key == "preservation" and c.status == "needs_revision"
+                    for c in report.criteria
+                )
+                for report in e1.critiques
+            ),
+            "e1 both preservation failures retained",
+        )
+    )
+    checks.append(
+        require(
+            bool(unmet_criteria(state, e1)) and not unmet_criteria(state, e2),
+            "e1 delivery gate fails; e2 passes all required criteria",
+        )
+    )
+    image_jobs = tuple(job for job in state.jobs if job.kind in {"generate", "edit"})
+    checks.append(
+        require(
+            sum(job.kind == "generate" for job in image_jobs) == INITIAL_COUNT
+            and sum(job.kind == "edit" for job in image_jobs) == EDIT_COUNT,
+            "exactly three initial and two edit reservations",
+        )
+    )
+    for job in image_jobs:
+        if job.generated is None:
+            raise StudioError("review_assertion", "missing native image receipt")
+        receipt = parse_receipt(job.generated.receipt)
+        checks.append(
+            require(
+                receipt.provider == "openai-codex"
+                and receipt.model == "gpt-image-2-medium"
+                and receipt.input_image_count == (1 if job.parent_id else 0),
+                f"{job.id}: actual native attribution and parent input count",
+            )
+        )
+    return checks
+
+
+def verify_recovery(root: Path, state: Workflow) -> list[str]:
+    checks: list[str] = []
+    before = Workflow.model_validate_json(
+        (root / "output/hermes-demo/before-recovery-workflow.json").read_bytes()
+    )
+    checks.append(
+        require(
+            before.revision == RECOVERY_REVISION and can_resume_critique(before),
+            "saved unknown critique is eligible for explicit bounded recovery",
+        )
+    )
+    checks.append(
+        require(
+            state.jobs[:7] == before.jobs
+            and state.jobs[7].retry_of == "j7"
+            and state.jobs[7].kind == "critique",
+            "all seven prior jobs preserved; retry is critique only",
+        )
+    )
+    checks.append(
+        require(
+            all(
+                old.model_copy(update={"critiques": ()}) == new.model_copy(update={"critiques": ()})
+                for old, new in zip(before.candidates, state.candidates[:3], strict=True)
+            ),
+            "all pre-recovery originals, prompts and parent metadata retained",
+        )
+    )
+    checks.extend(
+        require(
+            not can_resume_critique(before.model_copy(update={"phase": phase})),
+            f"{phase}: unknown-critique recovery not eligible",
+        )
+        for phase in ("cancelled", "reviewing", "ready", "delivered")
+    )
+    checks.append(require(not can_resume_critique(state), "delivered state cannot resume critique"))
+    return checks

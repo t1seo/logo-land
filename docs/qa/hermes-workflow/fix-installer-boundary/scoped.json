@@ -1,0 +1,24 @@
+{
+  "label": "scoped",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/hermes/test_installer.py",
+    "tests/hermes/test_installer_foreign_marker.py",
+    "tests/hermes/test_installer_interruption.py",
+    "tests/hermes/test_installer_backup_interrupt.py",
+    "tests/hermes/test_launcher_cli_install.py",
+    "--basetemp",
+    "/tmp/logopia-fix-installer-boundary-080/pytest"
+  ],
+  "pid": 61621,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 0,
+  "reaped": true,
+  "source_sha256_before": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116",
+  "source_sha256_after": "8f75ba7f123f2550d405f4015de54319453b867044f635e0c7d3ed4b4de02116"
+}

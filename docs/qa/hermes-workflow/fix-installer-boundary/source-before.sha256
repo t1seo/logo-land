@@ -1,0 +1,5 @@
+768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b  integrations/hermes/logopia_studio/installer.py
+d53eec87cf9c6afe4cc2cb2ce90476aba817819f222cd1618e97b4cca75ddbf0  tests/hermes/test_installer_interruption.py
+0d3a08e93db6a97b104287a672255098c4e7baf2429ff1864c90b6804e288406  tests/hermes/test_installer_foreign_marker.py
+1ce32b0063e7b2d420291f8cdaff9de10577d98e8f6123a848a030d5f1725e71  docs/qa/hermes-workflow/review-goal/first-rename-probe.py.txt
+410b6bc7582103fa022550a9bcd4fc6878380b85a08bdb8d5ba40ee82f158476  docs/qa/hermes-workflow/review-security/first-rename-probe.py.txt

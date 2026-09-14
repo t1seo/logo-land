@@ -1,0 +1,35 @@
+{
+  "baselinePaths": 170,
+  "missing": [],
+  "changed": [
+    "docs/hermes.ko.md",
+    "docs/hermes.md",
+    "docs/qa/hermes-workflow/native-run.md",
+    "README.ko.md",
+    "README.md",
+    "docs/README.ko.md",
+    "docs/README.md"
+  ],
+  "unrelatedDrafts": [
+    {
+      "path": ".omo/drafts/logo-land-next-capability.md",
+      "sha256": "650c8d31b7e0c524ec818941e3e61b65e4f79c9c2d4ee54d8fb715056faa2eea",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-delivery.md",
+      "sha256": "bdcafac3287afaf27a5908fde1dfcffb22981cbaa54102abd360897e6f316a7a",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-metis.md",
+      "sha256": "af8c6e61497651195a5c884ce5af52fb9bb2246e6acdcd0279e128562d4133fa",
+      "unchanged": true
+    },
+    {
+      "path": ".omo/drafts/logo-land-next-tools.md",
+      "sha256": "e8afad487b95bceb7d60a517156882dee5a5639b2f5a86c43d15486c01ed6612",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+true
+{
+  "version_matches": true,
+  "count_matches": true,
+  "current_count": 61,
+  "all_managed_records_match": true,
+  "install_flags_match": true,
+  "canonical_hash_matches": true,
+  "workflow_identity_matches": true,
+  "five_originals_match": true,
+  "four_delivery_hashes_match": true,
+  "three_zip_members_match": true
+}

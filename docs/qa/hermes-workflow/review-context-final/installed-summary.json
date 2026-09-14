@@ -1,0 +1,13 @@
+{
+  "current_managed_record_count": 61,
+  "source_payload_count": 60,
+  "settings_record_count": 1,
+  "old_original_record_count": 55,
+  "old_refresh_record_count": 59,
+  "old55_equals_current": false,
+  "old59_count_equals_current": false,
+  "all_record_source_install_bytes_match": true,
+  "settings_exact_paths": true,
+  "source_payload_complete": true,
+  "installed_extra_files_absent": true
+}

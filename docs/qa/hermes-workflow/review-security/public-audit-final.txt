@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "revision": 47,
+  "phase": "delivered",
+  "selected_id": "e2",
+  "public_files": 14,
+  "public_text_files_scanned": 7,
+  "private_marker_matches": 0,
+  "exact_originals": 5,
+  "verified_delivery_files": 4,
+  "bounded_zip_member_count": 3,
+  "zip_extracted_to_disk": false,
+  "embedded_zip_matches": true,
+  "initial_image_jobs": 3,
+  "edit_jobs": 2,
+  "public_projection_exact": true,
+  "native_session_exports_read": 0,
+  "new_native_calls": 0,
+  "source_snapshot_sha256": "16eea6dc8c32e979c432fbdffee137d76cb68a230aad9e5b65cc740d59e26e04",
+  "example_sha256": "415184581278b1317132c6c380b5255081bb9146dd02db9a1e227f67b4c624fe",
+  "zip_sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04"
+}

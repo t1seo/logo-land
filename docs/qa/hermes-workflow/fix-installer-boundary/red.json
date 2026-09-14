@@ -1,0 +1,21 @@
+{
+  "label": "red",
+  "argv": [
+    "uv",
+    "run",
+    "--locked",
+    "pytest",
+    "-q",
+    "-s",
+    "tests/hermes/test_installer_backup_interrupt.py::test_sigint_restores_prior_bytes_then_allows_explicit_retry[backup]",
+    "--basetemp",
+    "/tmp/logopia-fix-installer-boundary-080/red"
+  ],
+  "pid": 57810,
+  "deadline_seconds": 30,
+  "timed_out": false,
+  "exit_code": 1,
+  "reaped": true,
+  "source_sha256_before": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b",
+  "source_sha256_after": "768da32cdf90da78fd519a39b9b65bd3bdd4cf81c20dc4e45452ffc3e060708b"
+}

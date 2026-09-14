@@ -1,0 +1,3 @@
+integrations/hermes/logopia_studio/installer.py: OK
+tests/hermes/test_installer_interruption.py: OK
+tests/hermes/test_installer_backup_interrupt.py: OK

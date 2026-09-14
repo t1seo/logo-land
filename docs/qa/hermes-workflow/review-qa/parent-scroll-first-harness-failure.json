@@ -1,0 +1,10 @@
+{
+  "error": "End key did not move horizontal parent-pair scroll within 7000 ms",
+  "observed": {
+    "focused": true,
+    "left": 0,
+    "width": 310,
+    "scrollWidth": 400,
+    "overflow": "auto"
+  }
+}
