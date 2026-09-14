@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-13-flow",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "0fbe51fde96e153361bbd9b4a4989eaceec5c3b4772e950717615246556c8784",
+  "image": "../../images/13-flow.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.574Z",
+  "returned_at": "2026-09-14T12:49:44.015Z",
+  "source_file": "exec-a68b3740-a5be-439f-abe5-1693e3bb0a19.png",
+  "sha256": "158ec3f77d7a6afb7ff26d70f260ef15334180d590d15a4f0fea56788dff4041"
+}

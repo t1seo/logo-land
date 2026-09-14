@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-01-luma",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "8f94ae6e20f158405b34ffbedfecfa2296195bd2b1a2c4c4d92e748784784978",
+  "image": "../../images/01-luma-a-v1.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:45:47.300Z",
+  "returned_at": "2026-09-14T12:50:28.616Z",
+  "source_file": "exec-21c9eac6-3c24-4869-ab55-84ff4ac29c2c.png",
+  "sha256": "9d312ff6fb63241a6a5a4a0127e0275ffd81e08a2eb22ba9bbf751faf32f16e1"
+}

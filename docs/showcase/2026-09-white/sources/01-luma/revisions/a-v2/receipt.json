@@ -1,0 +1,17 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-01-luma",
+  "artifact_id": "a-v2",
+  "parent_id": "a-v1",
+  "revision": 1,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "7d042b2ea9c0fcabcbb8dda65a914ea510c84ad2539738abbe9eaf46f8a7ac8e",
+  "image": "../../../../images/01-luma-a-v2.png",
+  "correction": "Correct only the violet third letter M so it has the unmistakable uppercase M skeleton: two outer uprights and two inner diagonal strokes meeting in a generous central V valley. Keep gently rounded outer corners and broad stroke weight, but remove the lowercase m-like pair of arches. The exact word is uppercase LUMA, not LUmA. Preserve the coral L, gold U, teal A, their shapes and spacing, the violet M color, horizontal placement and solid white background. No icon, outline, new text or shadow.",
+  "started_at": "2026-09-14T12:54:17.407227+00:00",
+  "returned_at": "2026-09-14T12:55:09.565594+00:00",
+  "source_file": "exec-87f1883d-7105-493f-9f9f-2bcee05c7296.png",
+  "sha256": "3b49d26a6d5fba9e4f69dad637a0c1e7f39583643e46223c4193c79c77b24225"
+}

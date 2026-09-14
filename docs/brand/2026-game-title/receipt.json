@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "logopia-game-title-20260914",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "09b61705328e1598270ce1d96099fe6f3c5f4302d5bd8de320c94a3cf3b0dc8c",
+  "image": "../../../assets/logopia-game-title.png",
+  "reference_url": "https://pokopia.pokemon.com/assets/en-us/pages/index/logo-pokopia.png",
+  "reference_sha256": "72e21aff23a077d90f195bb39e7aa4a4398d81e86e90c54c6ee539d2b47781ea",
+  "background_probe": "four corner 5 percent patches, declared empty exterior canvas",
+  "started_at": "2026-09-14T12:45:47.316Z",
+  "returned_at": "2026-09-14T12:47:16.027Z",
+  "source_file": "exec-6d8e4751-cab8-46bf-ad62-0d078c9bea3f.png",
+  "sha256": "4f8119477b7d8673ebfbb86d4d3255db28d8843c4522ea5e838f69784835471c"
+}

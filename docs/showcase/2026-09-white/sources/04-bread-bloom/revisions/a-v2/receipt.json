@@ -1,0 +1,17 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-04-bread-bloom",
+  "artifact_id": "a-v2",
+  "parent_id": "a-v1",
+  "revision": 1,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "376fbcd1373965a2cd6989c92e9bdeb573816dae5f4bb2beb1a8a4fcc802366c",
+  "image": "../../../../images/04-bread-bloom-a-v2.png",
+  "correction": "Change only the small pair of coffee-bean-like objects between the two text lines into one unmistakable compact wheat ear with a short sturdy vertical stem and four broad pointed grain lobes, two on each side. Keep the grain symbol simple and burgundy; no curved slit across each lobe that could read as coffee beans. Preserve the exact BREAD & BLOOM lettering, two-line arrangement, serif letter shapes, oval border, color, proportions, spacing and solid white background. This is a bakery relevance correction, not a new layout. No extra text or ornament.",
+  "started_at": "2026-09-14T12:54:17.413411+00:00",
+  "returned_at": "2026-09-14T12:55:37.709639+00:00",
+  "source_file": "exec-26cfa387-a4d4-4331-a358-f87f3f1331ad.png",
+  "sha256": "5120edfaba615320c386d98bfcfb44f6529bded5f1d91131908fb91ca98a6a00"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-02-loop-lab",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "1252c7eb3c61c666188178bfe740494e7254c47b62a5033678c6112a1c5d9447",
+  "image": "../../images/02-loop-lab.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:45:47.306Z",
+  "returned_at": "2026-09-14T12:50:28.454Z",
+  "source_file": "exec-139cea9c-25e5-48c5-9efc-76634f43ebb6.png",
+  "sha256": "57d8e07b8ab0ae657c006a7febe787365597b2d8db469ee383cc994ac9843ccd"
+}

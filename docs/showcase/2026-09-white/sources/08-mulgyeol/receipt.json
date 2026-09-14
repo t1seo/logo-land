@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-08-mulgyeol",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "7b6cec12f4e6fed72f55200aea5945dcde59ded34897b586d857c0b06d9de2dc",
+  "image": "../../images/08-mulgyeol.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.502Z",
+  "returned_at": "2026-09-14T12:50:05.354Z",
+  "source_file": "exec-177e810a-34f6-41e5-9db9-c4f2849a6430.png",
+  "sha256": "29d26d6e674a8f3845f093e2d30a3c5239f5062a5be1e2dd5c48efcbe8d6c6fa"
+}

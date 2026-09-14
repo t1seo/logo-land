@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-03-goyo",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "48c5e43d71ec25dc90e2a74021068276238671c9a3b83238b7af4d7a0bb53274",
+  "image": "../../images/03-goyo.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:45:47.282Z",
+  "returned_at": "2026-09-14T12:50:28.552Z",
+  "source_file": "exec-65166a29-7c14-4d7b-bc9d-62870fa9305e.png",
+  "sha256": "2b488bc638ca055861f38e07267e86f8c402bc1fa7953dd844c02c2dce317d5c"
+}

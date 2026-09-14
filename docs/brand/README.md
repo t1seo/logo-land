@@ -2,34 +2,25 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Docs](../README.md) · [Logopia](../../README.md)
 
-**The letters are the logo.** Rounded custom lettering spells **LOGOPIA** on one line, with mint **LOGO** and lilac **PIA** against deep ink. Open counters and broad strokes give the name a friendly, readable shape.
+**A playful place to find your next logo.** The lowercase name **logopia** uses bright, gently tilted letters, broad white outlines and a lime geometric backplate. Open counters keep the name readable; the patterned plate supports the letters. The exterior background is white.
 
 <p align="center">
-  <a href="../../assets/logopia-wordmark.png"><img src="../../assets/logopia-wordmark.png" width="560" alt="Current Logopia identity: rounded mint LOGO and lilac PIA in one line on deep ink"></a>
+  <a href="../../assets/logopia-game-title.png"><img src="../../assets/logopia-game-title.png" width="560" alt="Colorful lowercase logopia title on a lime patterned badge with a white exterior background"></a>
 </p>
 
 <a id="downloads"></a>
 
-[**Download the master PNG →**](../../assets/logopia-wordmark.png) · [ZIP package](2026-logopia/delivery/logo-package.zip) · [Brand guide](2026-logopia/delivery/brand-guide.md) · [Showcase board](../../assets/logopia-showcase.png) · [Current gallery](../gallery.md#showcase)
+[**Download the master PNG →**](../../assets/logopia-game-title.png) · [ZIP package](2026-game-title/delivery/logo-package.zip) · [Brand guide](2026-game-title/delivery/brand-guide.md) · [White-background samples](../showcase/2026-09-white/README.md)
 
-## Color direction
+## Try this direction
 
-| Color | Design value | Role |
-|---|---|---|
-| Deep ink | `#17352B` | Dark foundation and badge base |
-| Fresh mint | `#B9F582` | Bright primary accent |
-| Lilac | `#B9A4FF` | Companion accent |
-| Paper | `#F7F9F2` | Light supporting surface |
+> $logo-land Create an original playful game-title emblem for Wonder Bay. Keep the exact words Wonder Bay. Use broad custom letters, a bouncy baseline, bright color groups, thick white outlines and one quiet geometric backplate. Keep the exterior background pure white and the title readable at 360px wide.
 
-These HEX values define the brand’s design palette. The generated PNG has its own raster color variation; the values are not a claim that every pixel matches the palette exactly. Paper supports the documentation palette and is not the master image’s background.
+Use the [game-title guide](../../skills/logo-land/references/game-title-logos.md) to describe letter rhythm, outlines, color roles and the optional backplate. This identity takes those broad visual cues from the [official Pokopia title](https://pokopia.pokemon.com/en-us/) and draws the new Logopia name without its parent-brand title or character-specific details.
 
-## Try a similar request
+The native master is a **1536 × 1024 opaque PNG**. Keep its proportions and use it at title/header size. A small app icon, transparent version, font file or editable vector is a separate deliverable.
 
-> $logo-land Create one custom LOGOPIA wordmark. Keep all seven letters on one line. Use chunky rounded letterforms, open counters, fresh mint for LOGO and lilac for PIA on deep ink. Make the lettering itself the design, without a separate symbol, slogan or extra text.
-
-The current master is a **1774 × 887 raster PNG** on an opaque dark background. Keep its proportions when displaying it. A transparent variant, editable vector and font file are not included.
-
-[Generation prompt](2026-logopia/prompt.txt) · [Image record](2026-logopia/receipt.json)
+[Saved prompt](2026-game-title/prompt.txt) · [Image record](2026-game-title/receipt.json)
 
 <a id="historical-identity"></a>
 
@@ -37,6 +28,7 @@ The current master is a **1774 × 887 raster PNG** on an opaque dark background.
 
 | Earlier design | Preserved files |
 |---|---|
+| First Logopia horizontal wordmark | [Original PNG](../../assets/logopia-wordmark.png) · [Historical package](2026-logopia/delivery/logo-package.zip) |
 | Former Logo Land stacked lettering | [Original PNG](../../assets/logo-land-wordmark.png) · [Historical package](2026-lettering/delivery/logo-package.zip) · [Former showcase board](../../assets/logo-land-showcase.png) |
 | Open-frame symbol and horizontal wordmark on ivory | [Original PNG](../../assets/logo-land-studio.png) · [Historical brand guide](2026-identity/delivery/brand-guide.md) |
 | Earlier illustrated identity | [Historical identity record](legacy.md) · [Original PNG](../../assets/logo.png) |

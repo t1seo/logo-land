@@ -2,27 +2,27 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Logopia](../README.ko.md)
 
-이름을 정하고 몇 가지 방향을 살펴본 뒤, 어울리는 이미지를 골라 다듬어 보세요. Logopia는 Codex의 내장 이미지 도구로 개성 있는 레터링, 브랜드 로고와 앱 아이콘 아트워크를 만듭니다.
+브랜드가 전할 의미를 정하고, 어울리는 형태를 고른 뒤, 글자와 작은 크기에서의 식별성을 다듬어 보세요. Logopia는 Codex의 내장 이미지 도구로 개성 있는 레터링, 브랜드 로고와 앱 아이콘 아트워크를 만듭니다.
 
 ## 시작하기
 
 | 하고 싶은 일 | 안내 |
 |---|---|
-| 어떤 디자인을 만들 수 있는지 보기 | [2026년 9월 쇼케이스 보드](../assets/logopia-showcase.png) · [현재 갤러리](gallery.ko.md#showcase) |
+| 어떤 디자인을 만들 수 있는지 보기 | [흰색 배경 쇼케이스 보드](../assets/logopia-white-showcase.png) · [현재 갤러리](gallery.ko.md#showcase) |
 | 첫 로고 만들기 | [빠른 시작과 요청 예제](../README.ko.md#설치) |
 | 다른 프로젝트에서 스킬 사용하기 | [전체 설치 안내](installation.ko.md) |
-| 예제 파일 다운로드하기 | [현재 쇼케이스 PNG 목록](showcase/2026-09/README.ko.md) |
+| 예제 파일 다운로드하기 | [현재 쇼케이스 PNG 목록](showcase/2026-09-white/README.ko.md) |
 
 ## 샘플
 
-- [현재 비주얼 갤러리](gallery.ko.md): 가상 브랜드 10개와 앱 아이콘 예제 6개를 먼저 보고, 구분된 보관 섹션에서 이전 결과를 살펴보실 수 있습니다.
+- [현재 비주얼 갤러리](gallery.ko.md): 흰색 배경으로 새로 만든 브랜드 로고 10개와 앱 아이콘 예제 6개를 바로 열어 보실 수 있습니다.
 - [브랜드 샘플](samples/README.ko.md): 새로 만든 LUMA, LOOP LAB, 고요, BREAD & BLOOM, KITE, MISO, NORTHLINE / NL, 물결, FERN, NOVA NOTES와 이전 예제 링크입니다.
-- [Logopia 로고](brand/README.ko.md): 한 줄로 이어지는 LOGOPIA 레터링 마스터, 잉크·민트·라일락·페이퍼 팔레트와 이전 디자인입니다.
+- [Logopia 로고](brand/README.ko.md): 흰색 배경 위 다채로운 소문자 게임 타이틀 레터링과 이전 디자인입니다.
 - [이전 앱 아이콘 예제](app-icons/README.ko.md): 앞선 컬렉션의 IP 시안 6개와 원본·수정 방향 비교 5쌍입니다.
 - [이전 색상·타이포그래피 사례](colors/README.ko.md): 프로젝트 7개의 사례 8개와 당시 기록된 결과입니다.
 - [투명 PNG 예제](samples/transparency.ko.md): 이전에 만든 GROVE 예제와 배경 사용 안내입니다.
 
-현재 쇼케이스와 이전 사례는 서로 다른 세트입니다. 제공 파일과 제작 출처는 각 세트의 목록에서 확인해 주세요.
+[README의 샘플](../README.ko.md#샘플)을 누르면 원본 PNG가 바로 열립니다. [이전 컬러 쇼케이스](showcase/2026-09/README.ko.md)는 별도로 보관했습니다.
 
 ## 사용 안내
 

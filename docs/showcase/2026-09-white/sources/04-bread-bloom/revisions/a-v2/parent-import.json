@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "id": "craft-04-bread-bloom",
+  "revision": 1,
+  "created_at": "2026-09-14T12:43:05.375991Z",
+  "updated_at": "2026-09-14T12:54:06.804630Z",
+  "brief": {
+    "brand_name": "BREAD & BLOOM",
+    "exact_text": "BREAD & BLOOM",
+    "industry": "neighborhood bakery",
+    "audience": "neighborhood food lovers",
+    "slogan": "",
+    "logo_type": "emblem",
+    "styles": [
+      "modern bakery seal"
+    ],
+    "palette": [
+      "Burgundy #783D47",
+      "Background: solid pure white #FFFFFF"
+    ],
+    "forbidden": [
+      "unsolicited lettering",
+      "mockup scenes",
+      "watermarks",
+      "colored canvas",
+      "transparent background",
+      "external cast shadows"
+    ],
+    "use_cases": [
+      "Brand identity at 240px width and README previews"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; new concept approved for one sample by the user.",
+      "All new showcase images must have a genuine opaque white background.",
+      "Foreground palette is design intent, not exact-pixel certification."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "288aa8f627961713f07a18fdcd8b1e768b7b42b9c279209db23826ca7fc16393",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one emblem logo for BREAD & BLOOM. Exact text (copy verbatim, no other words): 'BREAD & BLOOM'. Exact slogan: ''.\nRender only the supplied exact text and nonempty slogan; the brand context is not additional lettering. Empty strings request no corresponding text.\nIndustry: neighborhood bakery. Audience: neighborhood food lovers.\nStyles: modern bakery seal. Original brief palette context: Burgundy #783D47, Background: solid pure white #FFFFFF.\nAvoid: unsolicited lettering, mockup scenes, watermarks, colored canvas, transparent background, external cast shadows. Use cases: Brand identity at 240px width and README previews.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A neighborhood bakery known for slow fermentation: a modern typographic oval bakery seal, exact BREAD & BLOOM rendered in two clearly readable lines BREAD & above BLOOM, a small integrated pair of wheat kernels at the center gap rather than a full illustration. Sturdy warm flared-serif letterforms, generous counters, carefully balanced ampersand, confident thick oval border with ample interior space. One burgundy color on white. Avoid distressed stamps, tiny perimeter slogans, ribbons, flour clouds and ornamental flourishes.. Assumptions: Fictional demonstration brand; new concept approved for one sample by the user., All new showcase images must have a genuine opaque white background., Foreground palette is design intent, not exact-pixel certification..\nLogo construction: Build an emblem with the supplied lettering enclosed in a coherent badge or seal. Keep the border separate from glyphs and preserve readable interior gaps. Use style references for broad construction traits, not their brand words or traced signature shapes. The identity should remain recognizable in a one-color silhouette at the intended use size. This construction check does not replace the requested palette or request an extra monochrome image.\nLettering fidelity: preserve every Unicode character, capitalization, punctuation, space and reading order in the applicable text. Keep Hangul syllable blocks intact; do not translate, romanize, abbreviate or substitute lookalike glyphs. Shape changes must keep required text readable, including counters and joins at the intended size.\nFinal presentation: one standalone PNG, approximately 1536 by 1536 pixels. Opaque pure white #FFFFFF exterior canvas, unoccupied corners and margins; no off-white tint, texture, backdrop gradient, ambient vignette or external cast shadow. Center the complete design with generous even clear space. Keep its distinguishing construction and correct text recognizable at the declared use size. One original only, not a mockup, contact sheet or labeled presentation.\n",
+      "parent_id": null,
+      "created_at": "2026-09-14T12:54:06.804405Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

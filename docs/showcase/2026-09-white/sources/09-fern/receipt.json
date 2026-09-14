@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-09-fern",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "b43727ce737616598ab73e881412ce694f6134bc02ad056e6119a6f2bd6b0d14",
+  "image": "../../images/09-fern.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.513Z",
+  "returned_at": "2026-09-14T12:47:34.496Z",
+  "source_file": "exec-aae350c4-7747-4332-8315-7ed094e4495d.png",
+  "sha256": "9610b4389a7218cf46529a0f3b38e10df428e30ef8518fc518782162f535ed50"
+}

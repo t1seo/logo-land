@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-11-reading-owl",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "21045e26a95f00bb753c54a98fb8da209d59fff9ebe845846e70c346f96633e6",
+  "image": "../../images/11-reading-owl.png",
+  "background_probe": "upper two corner 5% patches and upper left edge; lower right may contain the character",
+  "started_at": "2026-09-14T12:46:04.590Z",
+  "returned_at": "2026-09-14T12:49:01.868Z",
+  "source_file": "exec-25af323d-3b15-4bef-bded-4df3071f1a70.png",
+  "sha256": "691097f42f608f1e908be3a3ac3712f0a715dc2dce356111b4db420e1479b52a"
+}

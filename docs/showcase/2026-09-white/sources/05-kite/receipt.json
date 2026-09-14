@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-05-kite",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "2d57c13c005efe4c44c703ed38a59244b16444307231d917113d70ef7cbfbdd2",
+  "image": "../../images/05-kite.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.455Z",
+  "returned_at": "2026-09-14T12:50:28.631Z",
+  "source_file": "exec-56b5b370-31a5-49ed-8f94-812205262185.png",
+  "sha256": "22985e993c4574dedeb494ba83a7eced4856ffc3e6437958bcdb42361950f342"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-14-notes",
+  "artifact_id": "a-v2",
+  "parent_id": "a-v1",
+  "revision": 1,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "8bd2b7c3981dd965081c5a7f0d20f6ee76739d93aff66ad2aa95fd4e9e1a1494",
+  "image": "../../../../images/14-notes-a-v2.png",
+  "correction": "Correct only the malformed upper consonant of the exact single Korean syllable 틈. It currently resembles an F with two rightward bars. A correct ㅌ MUST have THREE distinct horizontal bars: top, middle, bottom, joined by a left vertical spine. Then, BELOW the complete ㅌ, retain a SEPARATE horizontal vowel ㅡ with a clear white gap; BELOW that retain a closed rectangular ㅁ with its white counter. Thus four horizontal bars exist ABOVE the final ㅁ: three belonging to ㅌ, plus the separate ㅡ. Do not collapse the bottom bar of ㅌ into the vowel. Keep the same dark teal, rounded stroke family, centered compact square composition, thick strokes and white background. Allow a modest spacing adjustment solely to fit the missing consonant bar. No other characters or decoration.",
+  "started_at": "2026-09-14T12:54:17.400969+00:00",
+  "returned_at": "2026-09-14T12:55:37.703464+00:00",
+  "source_file": "exec-c68b57ce-7d01-42da-aa69-90b3bd0fc1ba.png",
+  "sha256": "5fac76281959aaf4b503590870e09e0a5ec3ef301ff3877f6ca6eed83f5acc36"
+}

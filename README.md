@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="docs/brand/README.md"><img src="assets/logopia-wordmark.png" width="360" alt="Logopia — rounded LOGOPIA lettering in mint and lilac on deep ink"></a>
+  <a href="docs/brand/README.md"><img src="assets/logopia-game-title.png" width="360" alt="Logopia — colorful lowercase logopia game-title lettering on white"></a>
 </p>
 
 <a id="logo-land"></a><a id="logopia"></a>
@@ -22,15 +22,46 @@
 
 <a id="samples"></a><a id="ten-real-samples"></a><a id="transparent-background-logos"></a>
 
-## A little of what you can make
+## Brand logos + app icon artwork
 
-Playful multicolor wordmarks, fast-moving lettering, geometric initials and small characters with personality. The September 2026 showcase brings ten fictional brands and six app icon studies together on one board.
+Ten brand logos and six app icon artworks, newly made on white. **Click any sample to open its original PNG.**
 
-<p align="center">
-  <a href="assets/logopia-showcase.png"><img src="assets/logopia-showcase.png" width="960" alt="Logopia showcase: ten fictional brand logos and six app icon studies, including Korean lettering"></a>
-</p>
+<table>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/01-luma.png"><img src="docs/showcase/2026-09-white/images/01-luma.png" width="400" alt="LUMA — Wordmark, white background"></a><br><strong>LUMA</strong><br><sub>Logo · Wordmark</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/02-loop-lab.png"><img src="docs/showcase/2026-09-white/images/02-loop-lab.png" width="400" alt="LOOP LAB · LL — Monogram, white background"></a><br><strong>LOOP LAB · LL</strong><br><sub>Logo · Monogram</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/03-goyo.png"><img src="docs/showcase/2026-09-white/images/03-goyo.png" width="400" alt="고요 — Symbol + Korean lettering, white background"></a><br><strong>고요</strong><br><sub>Logo · Symbol + Korean lettering</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/04-bread-bloom.png"><img src="docs/showcase/2026-09-white/images/04-bread-bloom.png" width="400" alt="BREAD &amp; BLOOM — Emblem, white background"></a><br><strong>BREAD &amp; BLOOM</strong><br><sub>Logo · Emblem</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/05-kite.png"><img src="docs/showcase/2026-09-white/images/05-kite.png" width="400" alt="KITE — Abstract mark, white background"></a><br><strong>KITE</strong><br><sub>Logo · Abstract mark</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/06-miso.png"><img src="docs/showcase/2026-09-white/images/06-miso.png" width="400" alt="MISO — Mascot + wordmark, white background"></a><br><strong>MISO</strong><br><sub>Logo · Mascot + wordmark</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/07-northline.png"><img src="docs/showcase/2026-09-white/images/07-northline.png" width="400" alt="NORTHLINE · NL — Lettermark, white background"></a><br><strong>NORTHLINE · NL</strong><br><sub>Logo · Lettermark</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/08-mulgyeol.png"><img src="docs/showcase/2026-09-white/images/08-mulgyeol.png" width="400" alt="물결 — Korean wordmark, white background"></a><br><strong>물결</strong><br><sub>Logo · Korean wordmark</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/09-fern.png"><img src="docs/showcase/2026-09-white/images/09-fern.png" width="400" alt="FERN — Pictorial symbol, white background"></a><br><strong>FERN</strong><br><sub>Logo · Pictorial symbol</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/10-nova-notes.png"><img src="docs/showcase/2026-09-white/images/10-nova-notes.png" width="400" alt="NOVA NOTES — Kinetic combination, white background"></a><br><strong>NOVA NOTES</strong><br><sub>Logo · Kinetic combination</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/11-reading-owl.png"><img src="docs/showcase/2026-09-white/images/11-reading-owl.png" width="400" alt="Reading Owl — IP character, white background"></a><br><strong>Reading Owl</strong><br><sub>App icon · IP character</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/12-weather.png"><img src="docs/showcase/2026-09-white/images/12-weather.png" width="400" alt="Daybreak — Pictogram, white background"></a><br><strong>Daybreak</strong><br><sub>App icon · Pictogram</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/13-flow.png"><img src="docs/showcase/2026-09-white/images/13-flow.png" width="400" alt="Flow — Abstract icon, white background"></a><br><strong>Flow</strong><br><sub>App icon · Abstract icon</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/14-notes.png"><img src="docs/showcase/2026-09-white/images/14-notes.png" width="400" alt="틈 — Korean monogram, white background"></a><br><strong>틈</strong><br><sub>App icon · Korean monogram</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/15-cloud.png"><img src="docs/showcase/2026-09-white/images/15-cloud.png" width="400" alt="Cloud Pocket — Soft 3D, white background"></a><br><strong>Cloud Pocket</strong><br><sub>App icon · Soft 3D</sub></td>
+    <td align="center" width="50%"><a href="docs/showcase/2026-09-white/images/16-sprout.png"><img src="docs/showcase/2026-09-white/images/16-sprout.png" width="400" alt="Sprout — Pixel art, white background"></a><br><strong>Sprout</strong><br><sub>App icon · Pixel art</sub></td>
+  </tr>
+</table>
 
-[**Open the showcase board →**](assets/logopia-showcase.png) · [Browse the current gallery](docs/gallery.md#showcase) · [Individual PNG downloads](docs/showcase/2026-09/README.md)
+[View as one board](assets/logopia-white-showcase.png) · [Gallery](docs/gallery.md#showcase) · [All sample files](docs/showcase/2026-09-white/README.md)
 
 <a id="get-started"></a><a id="use-the-repository-directly"></a><a id="image-generation-and-the-file-helper"></a>
 
@@ -65,7 +96,7 @@ Version **0.7.0**. [Release notes](https://github.com/t1seo/logopia/releases/tag
 
 > $logo-land Create a chunky, playful wordmark for LOOP LAB. Use several bright colors, rounded letterforms and lively spacing. Keep the exact text LOOP LAB, with no extra icon or slogan.
 
-> $logo-land Create a kinetic, sporty wordmark for KITE. Use forward-leaning custom letters and sharp cuts. Show only the exact text KITE; do not add a kite symbol.
+> $logo-land Create an original game-title logo for logopia. Use the exact lowercase text logopia, rounded multicolor letters and a sticker-like outline on a white background.
 
 > $logo-land 물결의 한글 워드마크를 만들어 주세요. 정확한 글자는 물결이며, 굵고 둥근 글자에 민트와 라일락을 사용해 주세요. 한글이 또렷하게 읽히도록 하고, 별도의 파도 아이콘이나 문구는 넣지 말아 주세요.
 
@@ -83,11 +114,11 @@ Version **0.7.0**. [Release notes](https://github.com/t1seo/logopia/releases/tag
 
 | Make | Explore |
 |---|---|
-| **Lettering** | Playful multicolor and kinetic wordmarks, geometric lettermarks and monograms, Korean and Latin brand names |
+| **Lettering** | Playful and kinetic wordmarks, game titles, geometric initials, Korean and Latin brand names |
 | **Brand logos** | Wordmarks, lettermarks, monograms, symbols, abstract marks, combinations, emblems and mascots |
 | **App icon artwork** | IP characters, pictograms, abstract forms, monograms, soft 3D and pixel art |
 
-Choose colors yourself or ask Logopia to suggest them. Compare candidates across saved projects, keep a note of what works, and revise the selected original while preserving its history.
+Describe what your brand should mean, choose a shape that fits, then refine its lettering, spacing and recognition at small sizes. Pick colors yourself or ask Logopia to suggest them. Continue from a selected original with its revision history saved.
 
 > Compare my candidates in one gallery with app-home, website-header and 16px previews. Keep the selected design’s wording and colors, and widen only the spacing between its letters.
 

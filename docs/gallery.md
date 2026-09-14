@@ -2,61 +2,61 @@
 
 [English](gallery.md) · [한국어](gallery.ko.md) · [Docs](README.md) · [Logopia](../README.md)
 
-[**Open the current showcase board →**](../assets/logopia-showcase.png) · [Individual PNG inventory](showcase/2026-09/README.md)
-
-[Current showcase](#showcase) · [Logopia identity](#identity) · [Earlier outputs](#historical-outputs)
+[Current samples](#showcase) · [Logopia identity](#identity) · [Earlier outputs](#historical-outputs)
 
 <a id="showcase"></a>
 
-## September 2026 showcase
+## White-background showcase
 
-Ten fictional brands and six app icon studies, collected on one board. Explore lettering with playful color, sporty movement and geometric structure, alongside Korean names and character-led artwork.
+Ten brand logos and six app icon artworks, newly generated on white. [See all sixteen directly in the README](../README.md#samples), where every thumbnail opens its original PNG.
 
 <p align="center">
-  <a href="../assets/logopia-showcase.png"><img src="../assets/logopia-showcase.png" width="960" alt="September 2026 Logopia showcase: ten fictional brands and six app icon studies"></a>
+  <a href="../assets/logopia-white-showcase.png"><img src="../assets/logopia-white-showcase.png" width="960" alt="Ten brand logos and six app icon artworks, newly generated on white backgrounds"></a>
 </p>
 
-The board is a presentation of the collection. Open a PNG below for an individual image, or visit the [download inventory](showcase/2026-09/README.md) and [manifest](showcase/2026-09/manifest.json) for the current files and their source records.
+[Open the board](../assets/logopia-white-showcase.png) · [All sample files](showcase/2026-09-white/README.md) · [Local HTML gallery](showcase/2026-09-white/index.html)
 
-### Ten fictional brands
+### Ten brand logos
 
-| Brand | Current PNG |
-|---|---|
-| LUMA | [Open](showcase/2026-09/images/01-luma.png) |
-| LOOP LAB | [Open](showcase/2026-09/images/02-loop-lab.png) |
-| 고요 | [Open](showcase/2026-09/images/03-goyo.png) |
-| BREAD & BLOOM | [Open](showcase/2026-09/images/04-bread-bloom.png) |
-| KITE | [Open](showcase/2026-09/images/05-kite.png) |
-| MISO | [Open](showcase/2026-09/images/06-miso.png) |
-| NORTHLINE / NL | [Open](showcase/2026-09/images/07-northline.png) |
-| 물결 | [Open](showcase/2026-09/images/08-mulgyeol.png) |
-| FERN | [Open](showcase/2026-09/images/09-fern.png) |
-| NOVA NOTES | [Open](showcase/2026-09/images/10-nova-notes.png) |
-
-### Six app icon studies
-
-| Study | Direction | Current PNG |
+| Name | Form | Original PNG |
 |---|---|---|
-| Reading owl | IP character | [Open](showcase/2026-09/images/11-reading-owl.png) |
-| Daybreak · weather | Pictogram | [Open](showcase/2026-09/images/12-weather.png) |
-| Flow | Abstract | [Open](showcase/2026-09/images/13-flow.png) |
-| 틈 · notes | Monogram | [Open](showcase/2026-09/images/14-notes.png) |
-| Cloud Pocket | Soft 3D | [Open](showcase/2026-09/images/15-cloud.png) |
-| Sprout | Pixel art | [Open](showcase/2026-09/images/16-sprout.png) |
+| LUMA | Wordmark | [Open](showcase/2026-09-white/images/01-luma.png) |
+| LOOP LAB · LL | Monogram | [Open](showcase/2026-09-white/images/02-loop-lab.png) |
+| 고요 | Symbol + Korean lettering | [Open](showcase/2026-09-white/images/03-goyo.png) |
+| BREAD & BLOOM | Emblem | [Open](showcase/2026-09-white/images/04-bread-bloom.png) |
+| KITE | Abstract mark | [Open](showcase/2026-09-white/images/05-kite.png) |
+| MISO | Mascot + wordmark | [Open](showcase/2026-09-white/images/06-miso.png) |
+| NORTHLINE · NL | Lettermark | [Open](showcase/2026-09-white/images/07-northline.png) |
+| 물결 | Korean wordmark | [Open](showcase/2026-09-white/images/08-mulgyeol.png) |
+| FERN | Pictorial symbol | [Open](showcase/2026-09-white/images/09-fern.png) |
+| NOVA NOTES | Kinetic combination | [Open](showcase/2026-09-white/images/10-nova-notes.png) |
 
-These are raster PNG studies. Exact lettering, dimensions, background and color appearance should be checked in the individual image. The showcase does not include editable vectors, font files or platform-ready app icon packages.
+### Six app icon artworks
+
+| Name | Form | Original PNG |
+|---|---|---|
+| Reading Owl | IP character | [Open](showcase/2026-09-white/images/11-reading-owl.png) |
+| Daybreak | Pictogram | [Open](showcase/2026-09-white/images/12-weather.png) |
+| Flow | Abstract icon | [Open](showcase/2026-09-white/images/13-flow.png) |
+| 틈 | Korean monogram | [Open](showcase/2026-09-white/images/14-notes.png) |
+| Cloud Pocket | Soft 3D | [Open](showcase/2026-09-white/images/15-cloud.png) |
+| Sprout | Pixel art | [Open](showcase/2026-09-white/images/16-sprout.png) |
+
+These are raster PNG examples. See the [manifest](showcase/2026-09-white/manifest.json) for actual dimensions and file details. Editable vectors, font files and platform-specific app icon packages require separate work.
 
 <a id="identity"></a><a id="current-logo-land-identity"></a>
 
 ## Logopia identity
 
-Custom rounded **LOGOPIA** lettering in one line: mint LOGO and lilac PIA on deep ink. [Open the master PNG](../assets/logopia-wordmark.png) · [Identity and palette](brand/README.md)
+Original game-title lettering: rounded, colorful lowercase **logopia** on white. [Open the original PNG](../assets/logopia-game-title.png) · [Identity and downloads](brand/README.md)
 
 <a id="historical-outputs"></a>
 
 ## Earlier outputs — preserved archive
 
-The images below belong to earlier collections and experiments. Their original files, prompts, observations and packages remain attached to those earlier outputs. They are not the source records or review results for the September 2026 showcase.
+[September 2026 colored showcase](showcase/2026-09/README.md) · [Its original file inventory](showcase/2026-09/manifest.json)
+
+The images below belong to earlier collections and experiments. Their original files, prompts, observations and packages remain attached to those earlier outputs. They are not the source records or review results for the current white-background collection.
 
 [Comparison study](#new-samples) · [10 earlier brands](#brands) · [16 earlier app icons](#app-icons) · [8 color cases](#colors) · [Earlier identities](#historical-identity)
 

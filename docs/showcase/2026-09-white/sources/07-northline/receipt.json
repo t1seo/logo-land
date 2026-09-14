@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-07-northline",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "3a26090dc8ac08e2b0cc47852507d42f5b41054af6b2cfdc1813e8edba4bfdfd",
+  "image": "../../images/07-northline.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.436Z",
+  "returned_at": "2026-09-14T12:47:09.154Z",
+  "source_file": "exec-43df188f-8cef-4772-9a8e-4f0e01aa7f16.png",
+  "sha256": "29a4b49efe2af236b618d799d21b2d1659eca5a501097d5bea0ceda7574d7f89"
+}

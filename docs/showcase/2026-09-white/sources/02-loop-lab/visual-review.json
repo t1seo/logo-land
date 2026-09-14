@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex visual inspection",
+  "notes": "At 240px the dark and coral upright Ls remain separately readable. The white step-shaped gap separates their feet. The construction is offset rather than a literal physical interlock; no additional word or enclosure appears. Inspected native full-size image and Chrome intended-size board. Exterior visually white; predefined corner probes contain near-white RGB 253–255 (up to 2 levels of channel variation), not exact #FFFFFF at every pixel. Original native bytes preserved.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

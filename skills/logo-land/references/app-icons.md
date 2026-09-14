@@ -2,6 +2,11 @@
 
 Use this branch when the user asks for mobile app icon artwork. A creation or editing request authorizes that operation; no second palette approval, named-model check or API-key gate is required. If the user only asks to discuss directions, stay with the discussion. Infer the product, subject and style from the conversation, and ask only for consequential missing choices. Never infer monogram lettering from a brand name.
 
+The shared [craft workflow](logo-craft.md) connects the product to a distinguishing
+construction and concrete size checks. Keep the icon contracts below, including IP
+candidate defaults. A decorative word-title emblem is a brand-logo direction, not an
+extra icon preset or permission to put long title text into a non-monogram icon.
+
 ## Select a direction through conversation
 
 | Preset ID | Direction | Example |
@@ -16,6 +21,15 @@ Use this branch when the user asks for mobile app icon artwork. A creation or ed
 Discover the current IDs with `icon-presets`. For an unspecified IP subject, propose three product-related directions with a short reason for each, then generate two separate candidates per direction, one lower-left and one lower-right, unless the user specifies a different scope. For a specified subject, vary three treatments of that subject. Follow [ip-mascot.md](ip-mascot.md) for the adapted character recipe and attribution. Other presets default to the requested count, or the ordinary three concepts when no count is supplied.
 
 Placement defaults to lower corners for IP and center for other presets. Honor explicit alternatives for every preset, including centered IP or off-center monograms. Explain choices in conversation; the image prompt describes the image itself. A character's two color families and one background color are semantic guidance, not a request for an exact three-color raster. Record free-text colors in `brief.palette` and optional structured palette roles for subject/background mapping. Only explicit locks, allowed/required colors or count restrictions enable hard constraints. Explicit user colors and strict palettes take precedence over style defaults, including soft shading.
+
+When the user requests white, keep the brief's `background: "opaque"` and describe
+the color in its palette and concept as “solid white #FFFFFF filling the entire square.”
+For IP, keep alpha/opaque/transparency vocabulary out of the descriptive fields and
+final image prompt, following [ip-mascot.md](ip-mascot.md).
+Request that color across the full square canvas, including
+unoccupied areas, with no off-white tint or exterior shadow. This does not change the
+two character color families for IP or impose white on other projects; a white gallery
+card cannot substitute for the generated icon's actual background.
 
 ## Construct a non-IP concept
 

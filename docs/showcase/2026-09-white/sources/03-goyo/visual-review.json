@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex visual inspection",
+  "notes": "At 240px the exact 고요 syllables remain readable below two broad opposing arcs. The pause gap and symbol-to-name separation remain open. The symbol also resembles lips, so the meditation association is a proposed reading rather than guaranteed audience recognition. Inspected native full-size image and Chrome intended-size board. Exterior visually white; predefined corner probes contain near-white RGB 253–255 (up to 2 levels of channel variation), not exact #FFFFFF at every pixel. Original native bytes preserved.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

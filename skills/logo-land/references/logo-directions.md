@@ -10,7 +10,7 @@ Use these categories to help the user choose. They are design directions for nat
 | `symbol` | Recognizable pictorial mark | Establish the subject; an icon-only output may use empty `exact_text`. |
 | `abstract` | Nonliteral geometric or organic mark | Tie shape and negative space to a concept without relying on stock motifs. |
 | `combination` | Symbol plus exact brand text and any requested slogan | Record horizontal/stacked layout, symbol position, text alignment and typeface appearance; inspect symbol/text balance. |
-| `emblem` | Text enclosed in a badge or seal | Keep borders and lettering readable at the intended size. |
+| `emblem` | Text integrated into a badge, seal or shared decorative backplate | Keep borders, pattern and lettering distinct at the intended size; a game-title plate can have an irregular silhouette. |
 | `mascot` | Character represents the brand | Clarify expression, personality and detail level; keep a compact silhouette. |
 
 Styles are a separate list: minimal, geometric, organic, playful, elegant, premium, vintage, hand-drawn, bold, futuristic, or another user-defined direction. Avoid describing a type as universally suitable for an industry. Intended use matters more than a category label.
@@ -19,6 +19,10 @@ For natural Korean/English text-logo requests, read [lettering.md](lettering.md)
 It routes full names, readable initials and integrated initials, then gives construction
 guidance for playful sculpted, forward-slanted athletic and geometric stacked lettering.
 These use existing `exact_text`, `styles` and `concept`; they are not additional types.
+
+For expressive titles, use [game-title-logos.md](game-title-logos.md): lettering on a
+shared plate is an emblem, lettering alone is a wordmark, and an independent motif
+plus title is a combination mark. Per-letter keylines are not themselves a badge.
 
 Combination marks are existing functionality. Their structured layout and typography intent make requested variants and later inheritance explicit; see [typography.md](typography.md). A wordmark does not gain an icon unless requested, and an icon-only variant does not fulfill required lettering. Color direction is independent of logo type: use [color-workflow.md](color-workflow.md) for composable anchor/reference/count constraints and preserve one selected palette per requested concept.
 
@@ -29,6 +33,11 @@ Combination marks are existing functionality. Their structured layout and typogr
 **Complete brief / quick start:** Extract all supplied fields, record modest assumptions and generate directly. Do not run a fixed questionnaire just because competing sites do.
 
 **Reference-led:** Identify which image is a style reference, an existing logo, or a sketch. Ask only if the role cannot be inferred. Use the source as a tool input, not a verbal guess about its contents.
+
+Read [logo-craft.md](logo-craft.md) to extract observable reference traits, connect the
+brief to a distinguishing construction and inspect that construction at its intended
+size. A professional-looking result requires visible judgment, not a promise attached
+to adjectives such as “premium” or “timeless.”
 
 **Explore:** Offer genuinely different design concepts, for example typographic, geometric-symbol, and organic-symbol. If these use different logo types, create separate briefs/sessions or retain the concept's true type in its saved prompt; do not silently mislabel the resulting artifact.
 

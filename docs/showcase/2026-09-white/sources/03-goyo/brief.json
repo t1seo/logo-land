@@ -1,0 +1,32 @@
+{
+  "brand_name": "고요",
+  "exact_text": "고요",
+  "industry": "meditation studio",
+  "audience": "people seeking calm",
+  "logo_type": "combination",
+  "styles": [
+    "calm Korean symbol and lettering"
+  ],
+  "palette": [
+    "Deep pine #21483F",
+    "Background: solid pure white #FFFFFF"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "Brand identity at 240px width and README previews"
+  ],
+  "forbidden": [
+    "unsolicited lettering",
+    "mockup scenes",
+    "watermarks",
+    "colored canvas",
+    "transparent background",
+    "external cast shadows"
+  ],
+  "assumptions": [
+    "Fictional demonstration brand; new concept approved for one sample by the user.",
+    "All new showcase images must have a genuine opaque white background.",
+    "Foreground palette is design intent, not exact-pixel certification."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-06-miso",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "b99109f9b036b2ef189857099b24b7596bd1cee568e466774c09b85e4cf61d00",
+  "image": "../../images/06-miso.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.505Z",
+  "returned_at": "2026-09-14T12:50:28.518Z",
+  "source_file": "exec-a4f0a6ac-6aa7-4ae5-a5c6-98efdc6ac6e0.png",
+  "sha256": "c513aa948995d94316627cf37ec8076956defb71df89060e211d54c807e03adf"
+}

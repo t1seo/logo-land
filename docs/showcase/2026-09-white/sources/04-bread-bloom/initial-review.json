@@ -1,0 +1,7 @@
+{
+  "artifact_id": "a-v1",
+  "status": "requires_correction",
+  "composition_ok": false,
+  "observation": "Initial center objects read as coffee beans, not the intended bakery wheat; corrected in a-v2.",
+  "replacement_artifact": "a-v2"
+}

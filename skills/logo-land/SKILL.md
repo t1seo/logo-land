@@ -1,6 +1,6 @@
 ---
 name: logo-land
-description: Create, compare, refine, and export logos and mobile app icon artwork using native image generation. Use for text logos (글자 로고, 레터링 로고), custom wordmarks, lettermarks, monograms, symbols, combination marks, mascots, exact Hangul lettering, IP characters, soft 3D, pixel art, guided palettes, and saved revisions.
+description: Create, compare, refine, and export logos and mobile app icon artwork using native image generation. Use for custom lettering (글자 로고, 레터링 로고), game-title emblems, wordmarks, symbols, combination marks, exact Hangul, character icons, guided palettes, and saved revisions.
 ---
 
 # Logopia
@@ -20,8 +20,10 @@ Read [native-image.md](references/native-image.md) before the first image call. 
 - For a new logo, extract information already supplied. Ask only consequential missing questions, usually brand name/exact text, what the business does, audience, and desired feel or use. Offer a short choice when useful. Never make a user re-enter a complete brief.
 - A concrete request to create or edit is authorization to perform that operation. Do not insert another mandatory approval gate. When the user asks only to discuss directions, keep the work at that stage.
 - If the user has no visual preference, propose distinct directions in ordinary language. Use [logo-directions.md](references/logo-directions.md) to distinguish logo type from style. Record assumptions. Default to three separate concepts unless the user specifies another count or only one image is appropriate.
+- Read [logo-craft.md](references/logo-craft.md) when developing a new direction or improving an existing design. Connect the brief to a distinguishing construction, deliberate color roles and observable checks at the intended size. Adapt exploration to the requested count; this is not an extra questionnaire or approval gate.
 - Read [color-workflow.md](references/color-workflow.md) when selecting or changing colors: automatic, anchor, restricted, and reference requests compose. Preserve exact locks, select when delegated, and map one palette to each concept without multiplying generation calls. For optional already-connected Leonardo, read [color-providers.md](references/color-providers.md).
 - For “글자 로고”, “레터링 로고”, “text logo”, “wordmark”, or initials-based requests, read [lettering.md](references/lettering.md). A full name made into lettering routes to `wordmark`; readable initials to `lettermark`; integrated initials to `monogram`. Build identity into the letters and preserve the exact supplied string. Chunky sculpted, forward-slanted athletic and geometric stacked lettering are construction directions using existing `styles` and `concept`, not extra logo types or app-icon presets.
+- For a game title, outlined multicolor title or a Pokopia-like reference, also read [game-title-logos.md](references/game-title-logos.md). Inspect the actual reference. Lettering with a shared decorative backplate is `emblem`; lettering alone is `wordmark`; a separate motif plus title is `combination`. Preserve the user's exact wording and requested effects within their palette constraints.
 - For symbol-plus-text layouts or typography changes, also read [typography.md](references/typography.md). The existing `combination` type supports horizontal and stacked symbol/text lockups; stacking letters alone does not require a lockup or a symbol. Record layout and typeface appearance while preserving exact brand and slogan text. A requested font name is a visual reference, not proof of a font file used.
 - Resolve the skill folder from the location of this file; its plugin root is two directories above it. Store data in the user's workspace, never in the plugin installation. Create a brief and session with the helper. The complete schema is in [project-files.md](references/project-files.md), with a working [example](assets/brief.example.json).
 
@@ -39,7 +41,7 @@ Use `compare-gallery` with an explicit selection file for candidates from severa
 
 1. Build a focused prompt per concept. Include intended use, exact lettering, logo type, subject, selected palette/roles/constraints, lockup when relevant, background, and exclusions. For lettering-first logos, the letters are the subject: specify their shape, spacing, counters and any readable joins instead of inventing a separate motif. Distinguish candidates structurally, not just by recoloring a font. Reject conflicting color constraints before image calls. Save the prompt's revision and effective intent for import. Favor a legible silhouette and useful negative space; avoid adding unsolicited slogans or symbols.
 2. Call the actual native image tool once per separate concept. A contact sheet is a presentation, not several independent logo files. Save the exact final prompt used, including any additions to the helper's proposed prompt.
-3. Inspect each returned image. Copy/import only the artifact identified by that call; never choose the newest file from a shared generation folder. Preserve every requested concept in the workspace with stable IDs such as `a-v1`, `b-v1`, `c-v1`.
+3. Inspect each returned image at native size and its intended display size. Compare the identifying construction, letter spacing/counters and color-role separation against the brief; record concrete strengths and limitations using [logo-craft.md](references/logo-craft.md#inspect-and-refine). Copy/import only the artifact identified by that call; never choose the newest file from a shared generation folder. Preserve every requested concept in the workspace with stable IDs such as `a-v1`, `b-v1`, `c-v1`.
 4. Show the images with their IDs and one sentence explaining each direction. Ask which direction to refine when selection is still needed. Do not call any option user-approved until the user selects it or explicitly delegates the choice.
 
 ## Refine
@@ -69,7 +71,7 @@ For the initial app-icon candidate set, preserve all returned originals and show
 
 ### Final checks
 
-Read [delivery-checks.md](references/delivery-checks.md) for final QA. Inspect exact text (especially Hangul and slogans), margins, recognizable shape at small display size, background, lockup, color-role placement, and edit preservation. For text logos, also follow the [lettering checks](references/lettering.md#inspect-the-lettering): letter identity, counters, spacing and one-color behavior must not rely on decoration or color alone. Report actual findings; do not mark every check true by default.
+Read [delivery-checks.md](references/delivery-checks.md) for final QA. Inspect exact text (especially Hangul and slogans), margins, recognizable shape at the intended display size, background, lockup, color-role placement, and edit preservation. For text logos, also follow the [lettering checks](references/lettering.md#inspect-the-lettering): inspect letter identity, counters and spacing separately from decoration; report color dependence and the scope of any one-color observation. Report actual findings; do not mark every check true by default.
 
 Use the helper to select the final ID, record the visual review, and export. It verifies actual PNG format, visible content, hashes, and transparency requirements before packaging. If a transparent brief produces an opaque image, request a real background edit and inspect it; do not lower the requirement to make export pass.
 

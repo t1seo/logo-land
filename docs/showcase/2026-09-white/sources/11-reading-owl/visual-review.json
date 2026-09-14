@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex visual inspection",
+  "notes": "At 32, 64 and 128px the broad ochre owl, dark eyelids and lower-right placement remain recognizable. Wing lines and toes lose detail at 32px; the outline and eyes carry recognition. Lower/right cropping is intentional IP composition. Inspected native full-size image and Chrome intended-size board. Exterior visually white; predefined corner probes contain near-white RGB 253–255 (up to 2 levels of channel variation), not exact #FFFFFF at every pixel. Original native bytes preserved.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

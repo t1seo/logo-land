@@ -16,6 +16,7 @@ classifier in the Python helper.
 | “두 이니셜의 획을 합쳐”, “interlock the initials”, “woven monogram” | `monogram`: integrate the exact characters through a shared stroke or interlock while keeping each identifiable. |
 | “심볼 옆에 이름”, “symbol above the name”, “icon plus text” | `combination`: a separate symbol and exact lettering; use the existing symbol/text `lockup`. |
 | “통통하고 말랑한 다색 글자”, “chunky sculpted lettering”, “앞으로 기울어진 스포츠 글자”, “athletic wordmark” | Style and construction of the requested text type, normally `wordmark`; these are not new types. |
+| “게임 타이틀”, “포코피아처럼”, “outlined game title” with a shared decorative backplate | `emblem`; read [game-title-logos.md](game-title-logos.md). Without a plate, lettering stays `wordmark`; a separate motif plus lettering uses `combination`. |
 
 Infer from the supplied string and intended structure, not a single word: “letter logo”
 alone may mean a name, readable initials or integrated initials. Ask for the exact text
@@ -53,6 +54,11 @@ counter shape or slant plus spacing. Respect the requested count. Do not multipl
 candidates into a matrix of colors, effects and layouts.
 
 ## Three reference-led directions
+
+For a title with keylines, facets and a shared backplate, use the separate
+[game-title recipe](game-title-logos.md). The lettering-only directions below do not
+add a badge. Apply the [craft workflow](logo-craft.md) to connect the visual reference
+to this brand's construction and intended use rather than copying its source words.
 
 Extract broad visual traits from the actual supplied reference. Create new lettering
 for the user's exact text; do not copy the reference's brand words, trace its letter
@@ -113,9 +119,10 @@ symbol/text lockup inheritance and typeface-appearance edits.
    stroke consistency, edge margins and row spacing. A wide wordmark need not work as
    a favicon unless that use was requested. Check italic overhang and 3D shadows for
    clipping; surface gloss must not conceal the letters.
-3. Check whether identity depends on color alone: adjoining letters and defining gaps
-   should still separate in silhouette. Record this as a construction assessment, not
-   a verified monochrome deliverable. If a one-color proof is requested, make a separate
+3. Inspect how color, outlines and letter geometry separate adjoining forms. Record
+   color dependence or merged gaps at the intended size; a deliberately multicolor
+   title need not become a one-color mark unless that use is required. A silhouette
+   assessment is not a verified monochrome deliverable. If a one-color proof is requested, make a separate
    native edit with its own parent and artifact ID, inspect it, and preserve the color
    master. Do not recolor the PNG with a script or claim an unmade variant passed.
 4. Compare parent and child against the keep/change notes. Record actual text, spacing,

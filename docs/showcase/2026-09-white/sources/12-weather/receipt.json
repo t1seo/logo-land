@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-12-weather",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "6fe932faa1cf2e0474ce18e67703eb2f1cef270d5f493dc7c2bb263437c218ac",
+  "image": "../../images/12-weather-a-v1.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.517Z",
+  "returned_at": "2026-09-14T12:48:22.869Z",
+  "source_file": "exec-4c1f29a3-da0c-483d-a5d2-0b62e51a5480.png",
+  "sha256": "1d37d45cc51eb2e81033ec0b14d7b4c3d66d02532c864081b9f4bc3b0ee2af8f"
+}

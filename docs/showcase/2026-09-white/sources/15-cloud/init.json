@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "craft-15-cloud",
+  "revision": 0,
+  "created_at": "2026-09-14T12:43:09.473102Z",
+  "updated_at": "2026-09-14T12:43:09.473102Z",
+  "brief": {
+    "brand_name": "Cloud Pocket",
+    "exact_text": "",
+    "industry": "personal cloud storage",
+    "audience": "people organizing files",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [
+      "soft 3D"
+    ],
+    "palette": [
+      "Midtone lavender #AA85D2 and deeper violet #7757A6",
+      "Background: solid pure white #FFFFFF"
+    ],
+    "forbidden": [
+      "unsolicited lettering",
+      "mockup scenes",
+      "watermarks",
+      "colored canvas",
+      "transparent background",
+      "external cast shadows"
+    ],
+    "use_cases": [
+      "App artwork at 32, 64 and 128px"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; new concept approved for one sample by the user.",
+      "All new showcase images must have a genuine opaque white background.",
+      "Foreground palette is design intent, not exact-pixel certification."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "soft_3d",
+      "subject": "one lavender sculpted cloud with a gentle envelope-like pocket fold",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

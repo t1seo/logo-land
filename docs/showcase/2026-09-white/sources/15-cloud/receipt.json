@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-15-cloud",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "2d232bc265b91287cc676b1585c872698dd281c7196b438d3edf64afb6713400",
+  "image": "../../images/15-cloud.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.517Z",
+  "returned_at": "2026-09-14T12:50:28.537Z",
+  "source_file": "exec-d314124d-7cc2-48d8-ab70-7b2e0dba04ba.png",
+  "sha256": "d215022d9a033ee69ba2488d6e7493cf0b3ee0f8eb96cf67b2983674403a3921"
+}

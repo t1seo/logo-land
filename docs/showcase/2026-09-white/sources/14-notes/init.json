@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "craft-14-notes",
+  "revision": 0,
+  "created_at": "2026-09-14T12:43:09.116890Z",
+  "updated_at": "2026-09-14T12:43:09.116890Z",
+  "brief": {
+    "brand_name": "틈",
+    "exact_text": "틈",
+    "industry": "quick notes app",
+    "audience": "Korean-speaking writers",
+    "slogan": "",
+    "logo_type": "monogram",
+    "styles": [
+      "Hangul monogram"
+    ],
+    "palette": [
+      "Dark teal #24584B",
+      "Background: solid pure white #FFFFFF"
+    ],
+    "forbidden": [
+      "unsolicited lettering",
+      "mockup scenes",
+      "watermarks",
+      "colored canvas",
+      "transparent background",
+      "external cast shadows"
+    ],
+    "use_cases": [
+      "App artwork at 32, 64 and 128px"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; new concept approved for one sample by the user.",
+      "All new showcase images must have a genuine opaque white background.",
+      "Foreground palette is design intent, not exact-pixel certification."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "monogram",
+      "subject": "the exact Hangul syllable 틈 with a distinctive open horizontal rhythm",
+      "placement": "center",
+      "text": "틈"
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

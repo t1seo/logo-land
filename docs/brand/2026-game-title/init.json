@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "logopia-game-title-20260914",
+  "revision": 0,
+  "created_at": "2026-09-14T12:43:10.465491Z",
+  "updated_at": "2026-09-14T12:43:10.465491Z",
+  "brief": {
+    "brand_name": "Logopia",
+    "exact_text": "logopia",
+    "industry": "conversational logo and app icon creation toolkit",
+    "audience": "designers and makers exploring playful identities",
+    "slogan": "",
+    "logo_type": "emblem",
+    "styles": [
+      "playful game-title lettering",
+      "bright geometric facets",
+      "bouncy lowercase letters",
+      "thick white keylines and shared lime backplate"
+    ],
+    "palette": [
+      "cyan, coral, violet, orange and emerald letter faces",
+      "lime backplate with quieter geometric color patches",
+      "Solid pure white #FFFFFF exterior background"
+    ],
+    "forbidden": [
+      "Pokemon brand header",
+      "Pokopia wording",
+      "monster or ball symbols",
+      "extra slogans",
+      "mockups",
+      "colored exterior canvas",
+      "transparent background"
+    ],
+    "use_cases": [
+      "README hero at 360px wide",
+      "brand documentation at 560px wide"
+    ],
+    "assumptions": [
+      "User requested a Pokopia-like Logopia logo; lowercase logopia was chosen to fit the playful reference.",
+      "Use the official logo as a style reference; create new glyphs and arrangement for logopia.",
+      "White-background requirement applies to this new identity and the regenerated showcase."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

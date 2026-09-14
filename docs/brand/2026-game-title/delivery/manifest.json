@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "session_id": "logopia-game-title-20260914",
+  "revision": 4,
+  "exported_at": "2026-09-14T12:58:14.971393Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v1",
+    "path": "artifacts/a-v1.png",
+    "sha256": "4f8119477b7d8673ebfbb86d4d3255db28d8843c4522ea5e838f69784835471c",
+    "image": {
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1572864
+    },
+    "prompt": "Create one emblem logo for Logopia. Exact text (copy verbatim, no other words): 'logopia'. Exact slogan: ''.\nRender only the supplied exact text and nonempty slogan; the brand context is not additional lettering. Empty strings request no corresponding text.\nIndustry: conversational logo and app icon creation toolkit. Audience: designers and makers exploring playful identities.\nStyles: playful game-title lettering, bright geometric facets, bouncy lowercase letters, thick white keylines and shared lime backplate. Original brief palette context: cyan, coral, violet, orange and emerald letter faces, lime backplate with quieter geometric color patches, Solid pure white #FFFFFF exterior background.\nAvoid: Pokemon brand header, Pokopia wording, monster or ball symbols, extra slogans, mockups, colored exterior canvas, transparent background. Use cases: README hero at 360px wide, brand documentation at 560px wide.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Logopia makes discovering visual identities feel like play. Design the exact lowercase name logopia as an original bright game-title emblem inspired by the supplied official Pokopia reference. Seven distinct lowercase letters, left-to-right l o g o p i a, a single-storey g with a clear descender and a clearly dotted i. Broad custom glyphs with large counters, playful individually varied tilts and alternating baseline heights, thick smooth white keylines around the glyphs. Give the letters cyan, orange, violet, coral, emerald, sky blue and tangerine faces, with one or two restrained angular facets within each. Behind the whole word place one shallow asymmetric lime-green backplate with a quiet pattern of broad angled color patches and generously rounded corners, a new contour that fits logopia rather than tracing the reference. A restrained darker-green offset under the letters adds shallow graphic depth; all depth stays inside the foreground badge. The word must lead, the badge must support. No Pokemon header, Pokopia text, mascot faces or ball-shaped counters. Do not imitate the previous minimalist Logopia wordmark. New friendly letter geometry. The entire exterior canvas must be pure opaque white, with at least 10 percent empty margins. No exterior shadow, no floor, no scene, no subtitle. Landscape PNG about 1536 by 1024, comfortably readable at 360px wide.. Assumptions: User requested a Pokopia-like Logopia logo; lowercase logopia was chosen to fit the playful reference., Use the official logo as a style reference; create new glyphs and arrangement for logopia., White-background requirement applies to this new identity and the regenerated showcase..\nLogo construction: Build an emblem with the supplied lettering enclosed in a coherent badge or seal. Keep the border separate from glyphs and preserve readable interior gaps. Use style references for broad construction traits, not their brand words or traced signature shapes. The identity should remain recognizable in a one-color silhouette at the intended use size. This construction check does not replace the requested palette or request an extra monochrome image.\nLettering fidelity: preserve every Unicode character, capitalization, punctuation, space and reading order in the applicable text. Keep Hangul syllable blocks intact; do not translate, romanize, abbreviate or substitute lookalike glyphs. Shape changes must keep required text readable, including counters and joins at the intended size.\nReference role: the supplied official Pokopia image is a visual-style reference only. Make the new word logopia; reproduce no parent-brand header, source words or character-specific symbols. Pure white #FFFFFF exterior background, no alpha or colored canvas.\n",
+    "parent_id": null,
+    "created_at": "2026-09-14T12:58:14.374079Z",
+    "requested_background": "opaque",
+    "palette_id": null,
+    "lockup": null,
+    "review": {
+      "reviewer": "Codex visual inspection",
+      "notes": "Inspected the native 1536×1024 PNG and a Chrome rendering at 360 CSS px. Exact lowercase logopia is readable in seven letters; the dot of i, g/p counters and final a remain distinct. Rounded multicolor lettering, white keyline, shallow green offset and a lime irregular patterned backplate create the requested cheerful game-title treatment. At 360px the plate texture simplifies while the name remains readable. White exterior contains subtle neutral native RGB 253–255 variation in predefined corner probes; no claim of exact white pixels, strict color matching, compact icon suitability or vector construction. This is a new native output; its original bytes are retained.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-14T12:58:14.772067Z"
+  },
+  "brief": {
+    "brand_name": "Logopia",
+    "exact_text": "logopia",
+    "industry": "conversational logo and app icon creation toolkit",
+    "audience": "designers and makers exploring playful identities",
+    "slogan": "",
+    "logo_type": "emblem",
+    "styles": [
+      "playful game-title lettering",
+      "bright geometric facets",
+      "bouncy lowercase letters",
+      "thick white keylines and shared lime backplate"
+    ],
+    "palette": [
+      "cyan, coral, violet, orange and emerald letter faces",
+      "lime backplate with quieter geometric color patches",
+      "Solid pure white #FFFFFF exterior background"
+    ],
+    "forbidden": [
+      "Pokemon brand header",
+      "Pokopia wording",
+      "monster or ball symbols",
+      "extra slogans",
+      "mockups",
+      "colored exterior canvas",
+      "transparent background"
+    ],
+    "use_cases": [
+      "README hero at 360px wide",
+      "brand documentation at 560px wide"
+    ],
+    "assumptions": [
+      "User requested a Pokopia-like Logopia logo; lowercase logopia was chosen to fit the playful reference.",
+      "Use the official logo as a style reference; create new glyphs and arrangement for logopia.",
+      "White-background requirement applies to this new identity and the regenerated showcase."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "media_kind": "raster",
+  "requested_background": "opaque",
+  "transparency_verified": false,
+  "intended_palette": null,
+  "color_report": {
+    "id": "export-5cf3e298e357450e9aae77456d479a5b",
+    "artifact_id": "a-v1",
+    "artifact_sha256": "4f8119477b7d8673ebfbb86d4d3255db28d8843c4522ea5e838f69784835471c",
+    "palette_id": null,
+    "palette_digest": null,
+    "analysis_policy": "logo-color-v1",
+    "color_engine_version": "not_used",
+    "pillow_version": "12.3.0",
+    "profile_treatment": "assumed_srgb",
+    "sampling": {
+      "width": 1536,
+      "height": 1024,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "grid_128_pixel_centers",
+      "sampled_positions": 16384,
+      "sampled_fraction": 0.010416666666666666,
+      "visible_samples": 16384,
+      "core_samples": 16384,
+      "partial_alpha_samples": 0
+    },
+    "status": "unverified",
+    "reasons": [
+      "No structured palette intent is recorded for this artifact"
+    ],
+    "measured_swatches": [
+      {
+        "hex": "#FEFEFE",
+        "samples": 5066,
+        "share": 0.3092041015625
+      },
+      {
+        "hex": "#D4F06E",
+        "samples": 3922,
+        "share": 0.2393798828125
+      },
+      {
+        "hex": "#FEFDFD",
+        "samples": 3275,
+        "share": 0.19989013671875
+      },
+      {
+        "hex": "#97A07E",
+        "samples": 2283,
+        "share": 0.13934326171875
+      },
+      {
+        "hex": "#FFFFFF",
+        "samples": 675,
+        "share": 0.04119873046875
+      },
+      {
+        "hex": "#FDFDFE",
+        "samples": 482,
+        "share": 0.0294189453125
+      },
+      {
+        "hex": "#FFFEFE",
+        "samples": 476,
+        "share": 0.029052734375
+      },
+      {
+        "hex": "#FEFDFE",
+        "samples": 205,
+        "share": 0.01251220703125
+      }
+    ],
+    "targets": [],
+    "matched_fraction": null,
+    "unmatched_fraction": null,
+    "observed_colors": null,
+    "minor_swatches": [],
+    "contrasts": [],
+    "delta_e_threshold": 5.0,
+    "created_at": "2026-09-14T12:58:14.971393Z"
+  },
+  "color_policy": "unverified",
+  "warnings": [
+    "Color-unverified: no structured palette intent is bound to this artifact.",
+    "No structured palette intent is recorded for this artifact",
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "color_method": "sRGB to Lab D50; CIEDE2000, ColorAide method=2000",
+  "color_limits": [
+    "Sampled raster evidence, not an exact-pixel, Pantone, or print-proof guarantee.",
+    "At most 16384 original-coordinate samples; small accents may be missed.",
+    "Alpha-zero pixels are excluded; conformance uses alpha >=250 and preserves white.",
+    "Strict evidence needs 128 core samples and at most 10% partial-alpha visible samples.",
+    "Restricted fit requires 99% core coverage within delta-E00 <=5; design colors need 1% share.",
+    "Locks/required colors need 32 matching core samples and 0.5% core share.",
+    "Quantized measured swatches are estimates; conformance uses original sampled colors.",
+    "Color roles, lettering, and placement require visual review; histograms cannot prove them.",
+    "ROI evidence covers only the stated region; opaque full-image evidence includes background.",
+    "Contrast ratios on explicit composited surfaces are guidance, not logo AA certification."
+  ],
+  "lockup_intent": null,
+  "font_reference_usage": "appearance-reference-only",
+  "app_icon": null,
+  "artwork_limitations": null
+}

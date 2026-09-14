@@ -1,0 +1,17 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-12-weather",
+  "artifact_id": "a-v2",
+  "parent_id": "a-v1",
+  "revision": 1,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "bb671bbe0a8d37493fda5faccf8cee3515bf43bb7729ac52b6634cbb7f563925",
+  "image": "../../../../images/12-weather-a-v2.png",
+  "correction": "Round sun must read as daybreak rather than a crescent moon",
+  "started_at": "2026-09-14T12:50:06.141Z",
+  "source_file": "exec-172cde2a-96e4-4a9c-a989-24e3d51d2fcb.png",
+  "returned_at": "2026-09-14T12:50:27.585Z",
+  "sha256": "10a955d2e0a07e61353a7092d5221227f6960665b1ce74a8bbdc609f83a24a77"
+}

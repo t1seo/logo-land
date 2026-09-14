@@ -2,27 +2,27 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Logopia](../README.md)
 
-Start with a name, explore a few directions and refine the image that fits. Logopia creates custom lettering, brand logos and app icon artwork with Codex’s native image tool.
+Start with what your brand should mean, choose a fitting shape, then refine the lettering and recognition at small sizes. Logopia creates custom lettering, brand logos and app icon artwork with Codex’s native image tool.
 
 ## Start here
 
 | You want to… | Open |
 |---|---|
-| See what you can make | [September 2026 showcase board](../assets/logopia-showcase.png) · [Current gallery](gallery.md#showcase) |
+| See what you can make | [White-background showcase board](../assets/logopia-white-showcase.png) · [Current gallery](gallery.md#showcase) |
 | Try your first logo | [Quickstart and example requests](../README.md#installation) |
 | Use the skill in other projects | [Full installation guide](installation.md) |
-| Download an example | [Current showcase PNG inventory](showcase/2026-09/README.md) |
+| Download an example | [Current showcase PNG inventory](showcase/2026-09-white/README.md) |
 
 ## Samples
 
-- [Current visual gallery](gallery.md): ten fictional brands and six app icon studies, followed by a clearly marked archive.
+- [Current visual gallery](gallery.md): ten brand logos and six app icon artworks, newly generated on white with direct original links.
 - [Brand samples](samples/README.md): the refreshed LUMA, LOOP LAB, 고요, BREAD & BLOOM, KITE, MISO, NORTHLINE / NL, 물결, FERN and NOVA NOTES set, with links to earlier examples.
-- [Logopia identity](brand/README.md): the horizontal LOGOPIA lettering master, ink/mint/lilac/paper palette and historical designs.
+- [Logopia identity](brand/README.md): colorful lowercase game-title lettering on white, plus earlier designs.
 - [Earlier app icon studies](app-icons/README.md): six IP candidates and five original/revised pairs from the previous collection.
 - [Earlier color and typography cases](colors/README.md): eight cases across seven projects, with their recorded outcomes.
 - [Transparent PNG example](samples/transparency.md): the earlier GROVE example and background guidance.
 
-The current showcase and the earlier studies are separate sets. Follow each set’s own inventory for available files and provenance.
+Every [sample in the README](../README.md#samples) opens its original PNG directly. The [earlier colored showcase](showcase/2026-09/README.md) remains a separate archive.
 
 ## Guides
 

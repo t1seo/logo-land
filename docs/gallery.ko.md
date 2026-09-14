@@ -1,62 +1,62 @@
-# 전체 비주얼 갤러리
+# 비주얼 갤러리
 
 [English](gallery.md) · [한국어](gallery.ko.md) · [문서](README.ko.md) · [Logopia](../README.ko.md)
 
-[**현재 쇼케이스 보드 크게 보기 →**](../assets/logopia-showcase.png) · [개별 PNG 목록](showcase/2026-09/README.ko.md)
-
-[현재 쇼케이스](#showcase) · [Logopia 로고](#identity) · [이전 결과물](#historical-outputs)
+[현재 샘플](#showcase) · [Logopia 로고](#identity) · [이전 결과물](#historical-outputs)
 
 <a id="showcase"></a>
 
-## 2026년 9월 쇼케이스
+## 흰색 배경 쇼케이스
 
-가상 브랜드 10개와 앱 아이콘 예제 6개를 한 장에 모았습니다. 경쾌한 색감, 스포츠의 속도감, 기하학적인 구성을 담은 레터링부터 한글 이름과 캐릭터까지 살펴보세요.
+브랜드 로고 10개와 앱 아이콘 아트워크 6개를 흰색 배경으로 새로 만들었습니다. [README에서는 16개 샘플을 바로 보실 수 있으며](../README.ko.md#샘플), 각 이미지를 누르면 원본 PNG가 열립니다.
 
 <p align="center">
-  <a href="../assets/logopia-showcase.png"><img src="../assets/logopia-showcase.png" width="960" alt="가상 브랜드 10개와 앱 아이콘 예제 6개를 모은 2026년 9월 Logopia 쇼케이스"></a>
+  <a href="../assets/logopia-white-showcase.png"><img src="../assets/logopia-white-showcase.png" width="960" alt="흰색 배경으로 새로 만든 브랜드 로고 10개와 앱 아이콘 아트워크 6개"></a>
 </p>
 
-보드는 컬렉션을 함께 보여 주는 이미지입니다. 개별 이미지는 아래 PNG 링크로 열고, 현재 파일과 제작 출처는 [다운로드 목록](showcase/2026-09/README.ko.md)과 [매니페스트](showcase/2026-09/manifest.json)에서 확인해 주세요.
+[보드 크게 보기](../assets/logopia-white-showcase.png) · [전체 파일 목록](showcase/2026-09-white/README.ko.md) · [로컬 HTML 갤러리](showcase/2026-09-white/index.html)
 
-### 가상 브랜드 10개
+### 브랜드 로고 10개
 
-| 브랜드 | 현재 PNG |
-|---|---|
-| LUMA | [열기](showcase/2026-09/images/01-luma.png) |
-| LOOP LAB | [열기](showcase/2026-09/images/02-loop-lab.png) |
-| 고요 | [열기](showcase/2026-09/images/03-goyo.png) |
-| BREAD & BLOOM | [열기](showcase/2026-09/images/04-bread-bloom.png) |
-| KITE | [열기](showcase/2026-09/images/05-kite.png) |
-| MISO | [열기](showcase/2026-09/images/06-miso.png) |
-| NORTHLINE / NL | [열기](showcase/2026-09/images/07-northline.png) |
-| 물결 | [열기](showcase/2026-09/images/08-mulgyeol.png) |
-| FERN | [열기](showcase/2026-09/images/09-fern.png) |
-| NOVA NOTES | [열기](showcase/2026-09/images/10-nova-notes.png) |
-
-### 앱 아이콘 예제 6개
-
-| 예제 | 방향 | 현재 PNG |
+| 이름 | 유형 | 원본 PNG |
 |---|---|---|
-| 독서 부엉이 | IP 캐릭터 | [열기](showcase/2026-09/images/11-reading-owl.png) |
-| Daybreak · 날씨 | 픽토그램 | [열기](showcase/2026-09/images/12-weather.png) |
-| Flow | 추상형 | [열기](showcase/2026-09/images/13-flow.png) |
-| 틈 · 메모 | 모노그램 | [열기](showcase/2026-09/images/14-notes.png) |
-| Cloud Pocket | 소프트 3D | [열기](showcase/2026-09/images/15-cloud.png) |
-| Sprout | 픽셀 아트 | [열기](showcase/2026-09/images/16-sprout.png) |
+| LUMA | 워드마크 | [열기](showcase/2026-09-white/images/01-luma.png) |
+| LOOP LAB · LL | 모노그램 | [열기](showcase/2026-09-white/images/02-loop-lab.png) |
+| 고요 | 한글 조합형 | [열기](showcase/2026-09-white/images/03-goyo.png) |
+| BREAD & BLOOM | 엠블럼 | [열기](showcase/2026-09-white/images/04-bread-bloom.png) |
+| KITE | 추상형 | [열기](showcase/2026-09-white/images/05-kite.png) |
+| MISO | 마스코트 | [열기](showcase/2026-09-white/images/06-miso.png) |
+| NORTHLINE · NL | 레터마크 | [열기](showcase/2026-09-white/images/07-northline.png) |
+| 물결 | 한글 워드마크 | [열기](showcase/2026-09-white/images/08-mulgyeol.png) |
+| FERN | 심볼 | [열기](showcase/2026-09-white/images/09-fern.png) |
+| NOVA NOTES | 속도감 있는 조합형 | [열기](showcase/2026-09-white/images/10-nova-notes.png) |
 
-래스터 PNG 예제입니다. 정확한 글자, 크기, 배경과 색 표현은 개별 이미지에서 확인해 주세요. 쇼케이스에는 편집 가능한 벡터, 폰트 파일이나 플랫폼에 바로 제출할 앱 아이콘 패키지가 포함되지 않습니다.
+### 앱 아이콘 아트워크 6개
 
-<a id="identity"></a><a id="현재-logo-land-로고"></a>
+| 이름 | 유형 | 원본 PNG |
+|---|---|---|
+| Reading Owl | IP 캐릭터 | [열기](showcase/2026-09-white/images/11-reading-owl.png) |
+| Daybreak | 픽토그램 | [열기](showcase/2026-09-white/images/12-weather.png) |
+| Flow | 추상형 아이콘 | [열기](showcase/2026-09-white/images/13-flow.png) |
+| 틈 | 한글 모노그램 | [열기](showcase/2026-09-white/images/14-notes.png) |
+| Cloud Pocket | 소프트 3D | [열기](showcase/2026-09-white/images/15-cloud.png) |
+| Sprout | 픽셀 아트 | [열기](showcase/2026-09-white/images/16-sprout.png) |
+
+래스터 PNG 예제입니다. 실제 크기와 파일 정보는 [매니페스트](showcase/2026-09-white/manifest.json)를 확인해 주세요. 편집 가능한 벡터·폰트 파일·플랫폼별 앱 아이콘 패키지는 별도 작업이 필요합니다.
+
+<a id="identity"></a><a id="current-logo-land-identity"></a>
 
 ## Logopia 로고
 
-**LOGOPIA**를 굵고 둥근 맞춤 글자로 한 줄에 배치했습니다. 짙은 잉크색 바탕에 LOGO는 민트, PIA는 라일락으로 표현했습니다. [마스터 PNG 열기](../assets/logopia-wordmark.png) · [로고와 팔레트 안내](brand/README.ko.md)
+흰색 배경 위에 둥글고 다채로운 소문자 **logopia**를 담은 오리지널 게임 타이틀 레터링입니다. [원본 PNG](../assets/logopia-game-title.png) · [로고 설명과 다운로드](brand/README.ko.md)
 
 <a id="historical-outputs"></a>
 
 ## 이전 결과물 — 보관 자료
 
-아래 이미지는 앞선 컬렉션과 실험에서 만든 결과물입니다. 당시 원본, 프롬프트, 관찰과 패키지를 그대로 연결했습니다. 이 기록을 2026년 9월 쇼케이스의 제작 출처나 검수 결과로 사용하지 않습니다.
+[2026년 9월 컬러 쇼케이스](showcase/2026-09/README.ko.md) · [당시 PNG 목록](showcase/2026-09/manifest.json)
+
+아래 이미지는 앞선 컬렉션과 실험에서 만든 결과물입니다. 당시 원본, 프롬프트, 관찰과 패키지를 그대로 연결했습니다. 이 기록은 현재 흰색 배경 컬렉션의 제작 출처나 검수 결과가 아닙니다.
 
 [비교 실험](#new-samples) · [이전 브랜드 10개](#brands) · [이전 앱 아이콘 16개](#app-icons) · [색상 사례 8개](#colors) · [이전 로고](#historical-identity)
 

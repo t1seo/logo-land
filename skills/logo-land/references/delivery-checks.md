@@ -14,6 +14,19 @@ The helper validates file facts; the assistant evaluates design. Both are requir
 
 Open the actual image with the available viewer. For transparent files, view on light and dark backgrounds when the viewer/browser allows it; CSS backgrounds do not change the image bytes. Display the logo near its intended small usage size as well as large.
 
+Use [logo-craft.md](logo-craft.md#inspect-and-refine) for concrete construction,
+hierarchy and optical observations. Record the actual display size and what remains
+readable there. A wide title inspected at 360px does not prove a 32px icon works;
+subjective preference is separate from a required spelling, color or background check.
+
+For a requested opaque white canvas, inspect the original's exterior for tint,
+texture, gradients and cast shadows. Sample regions declared empty for that composition
+before generation, including margins where applicable; do not require all corners to
+be empty for a lower-corner IP character. Report actual RGB/alpha observations and
+region coordinates as sampled evidence, not proof of every background pixel. A
+requested colored emblem backplate is foreground. A white HTML card around a tinted
+image does not satisfy a white-background request.
+
 Record these review fields based on what was observed:
 
 ```json
@@ -54,6 +67,12 @@ order and Hangul components. Distinguish a silhouette-based one-color assessment
 an actually generated and inspected monochrome proof; the former does not authorize
 recoloring the original or claiming a delivered variant. Record any dependence on
 color or sculpted shading, and assess legibility at the intended use size.
+
+For a decorated title emblem, also inspect the exact lettering, keyline thickness,
+counter openings, depth offsets and backplate pattern at title size. Record if the
+pattern loses detail while the name remains readable; do not treat a flattened title
+as a complete responsive identity. Generate and inspect a compact alternate only
+when its use is part of the request. See [game-title-logos.md](game-title-logos.md).
 
 ## Color evidence and export policy
 

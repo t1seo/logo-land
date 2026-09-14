@@ -1,0 +1,1053 @@
+{
+  "method": "Read-only analysis of native PNGs. Empty corner regions were declared before generation. No pixels were modified. These samples cannot establish every background pixel or strict HEX conformance.",
+  "observed": "Sampled exterior RGB values are reported below; subtle near-white native raster variation is retained. Visual inspection determines the white-canvas presentation.",
+  "items": [
+    {
+      "id": "01-luma",
+      "image": "images/01-luma.png",
+      "sha256": "3b49d26a6d5fba9e4f69dad637a0c1e7f39583643e46223c4193c79c77b24225",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1561
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2011
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1579
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1285
+        }
+      ]
+    },
+    {
+      "id": "02-loop-lab",
+      "image": "images/02-loop-lab.png",
+      "sha256": "57d8e07b8ab0ae657c006a7febe787365597b2d8db469ee383cc994ac9843ccd",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0848
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1342
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0861
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0963
+        }
+      ]
+    },
+    {
+      "id": "03-goyo",
+      "image": "images/03-goyo.png",
+      "sha256": "2b488bc638ca055861f38e07267e86f8c402bc1fa7953dd844c02c2dce317d5c",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1756
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2716
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1613
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2042
+        }
+      ]
+    },
+    {
+      "id": "04-bread-bloom",
+      "image": "images/04-bread-bloom.png",
+      "sha256": "5120edfaba615320c386d98bfcfb44f6529bded5f1d91131908fb91ca98a6a00",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1056
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1168
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1012
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1041
+        }
+      ]
+    },
+    {
+      "id": "05-kite",
+      "image": "images/05-kite.png",
+      "sha256": "22985e993c4574dedeb494ba83a7eced4856ffc3e6437958bcdb42361950f342",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1134
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1283
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1126
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1134
+        }
+      ]
+    },
+    {
+      "id": "06-miso",
+      "image": "images/06-miso.png",
+      "sha256": "c513aa948995d94316627cf37ec8076956defb71df89060e211d54c807e03adf",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.095
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1381
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0939
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0981
+        }
+      ]
+    },
+    {
+      "id": "07-northline",
+      "image": "images/07-northline.png",
+      "sha256": "29a4b49efe2af236b618d799d21b2d1659eca5a501097d5bea0ceda7574d7f89",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2404
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2755
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1886
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2443
+        }
+      ]
+    },
+    {
+      "id": "08-mulgyeol",
+      "image": "images/08-mulgyeol.png",
+      "sha256": "29d26d6e674a8f3845f093e2d30a3c5239f5062a5be1e2dd5c48efcbe8d6c6fa",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1868
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2505
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1556
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1751
+        }
+      ]
+    },
+    {
+      "id": "09-fern",
+      "image": "images/09-fern.png",
+      "sha256": "9610b4389a7218cf46529a0f3b38e10df428e30ef8518fc518782162f535ed50",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1236
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2053
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0924
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.123
+        }
+      ]
+    },
+    {
+      "id": "10-nova-notes",
+      "image": "images/10-nova-notes.png",
+      "sha256": "dbd2e8bf107d1001715d9f9fd23eae16d883dccf97119c76c7849ad729e5f771",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2253
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2653
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1969
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2063
+        }
+      ]
+    },
+    {
+      "id": "11-reading-owl",
+      "image": "images/11-reading-owl.png",
+      "sha256": "691097f42f608f1e908be3a3ac3712f0a715dc2dce356111b4db420e1479b52a",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "upper two corner 5% patches and upper left edge; lower right may contain the character",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0497
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0924
+        }
+      ]
+    },
+    {
+      "id": "12-weather",
+      "image": "images/12-weather.png",
+      "sha256": "10a955d2e0a07e61353a7092d5221227f6960665b1ce74a8bbdc609f83a24a77",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0884
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1067
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0947
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1035
+        }
+      ]
+    },
+    {
+      "id": "13-flow",
+      "image": "images/13-flow.png",
+      "sha256": "158ec3f77d7a6afb7ff26d70f260ef15334180d590d15a4f0fea56788dff4041",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.237
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2739
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.2125
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.199
+        }
+      ]
+    },
+    {
+      "id": "14-notes",
+      "image": "images/14-notes.png",
+      "sha256": "5fac76281959aaf4b503590870e09e0a5ec3ef301ff3877f6ca6eed83f5acc36",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0739
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1501
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0822
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0957
+        }
+      ]
+    },
+    {
+      "id": "15-cloud",
+      "image": "images/15-cloud.png",
+      "sha256": "d215022d9a033ee69ba2488d6e7493cf0b3ee0f8eb96cf67b2983674403a3921",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0853
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0942
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0697
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.077
+        }
+      ]
+    },
+    {
+      "id": "16-sprout",
+      "image": "images/16-sprout.png",
+      "sha256": "ce5d6629c5bf71dd5cb9eff11c22ae3349df8dd7f63a409eefacde118e6adb46",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty in the centered composition",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            62,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0942
+        },
+        {
+          "box": [
+            1192,
+            0,
+            1254,
+            62
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.1184
+        },
+        {
+          "box": [
+            0,
+            1192,
+            62,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.102
+        },
+        {
+          "box": [
+            1192,
+            1192,
+            1254,
+            1254
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0976
+        }
+      ]
+    },
+    {
+      "id": "logopia",
+      "image": "../../../assets/logopia-game-title.png",
+      "sha256": "4f8119477b7d8673ebfbb86d4d3255db28d8843c4522ea5e838f69784835471c",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "background_probe_plan": "four corner 5% patches, declared empty exterior",
+      "probes": [
+        {
+          "box": [
+            0,
+            0,
+            76,
+            51
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0524
+        },
+        {
+          "box": [
+            1460,
+            0,
+            1536,
+            51
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0802
+        },
+        {
+          "box": [
+            0,
+            973,
+            76,
+            1024
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0372
+        },
+        {
+          "box": [
+            1460,
+            973,
+            1536,
+            1024
+          ],
+          "rgb_min": 253,
+          "rgb_max": 255,
+          "max_channel_spread": 2,
+          "exact_white_fraction": 0.0488
+        }
+      ]
+    }
+  ]
+}

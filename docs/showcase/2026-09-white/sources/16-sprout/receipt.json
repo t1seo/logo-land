@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-16-sprout",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "d2ae015bd1a4dff5bfd8cd7a28b0cbda6925da36d20cf708eda34377376193bd",
+  "image": "../../images/16-sprout.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.599Z",
+  "returned_at": "2026-09-14T12:48:37.621Z",
+  "source_file": "exec-76bee486-c065-4649-996a-d5e5a548eaf1.png",
+  "sha256": "ce5d6629c5bf71dd5cb9eff11c22ae3349df8dd7f63a409eefacde118e6adb46"
+}

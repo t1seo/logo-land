@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-14-notes",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "d502d12a5ba2887fc2256effe6c9a12634c269c2473b75cb67f696cc73f56470",
+  "image": "../../images/14-notes-a-v1.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.599Z",
+  "returned_at": "2026-09-14T12:49:21.307Z",
+  "source_file": "exec-085e4ebf-4c4f-4843-8dfe-025b74ab651a.png",
+  "sha256": "032ab18939312dd195f8f9362643960b523d4b5006efe87cb7b635a3f722b5a8"
+}

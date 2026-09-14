@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex visual inspection",
+  "notes": "At 240px MISO reads correctly below a broad winking orange cat face; the ears and asymmetrical expression are clear. Native brown/ink tonal variation and short side tufts remain, so this is not an exact two-HEX proof. Inspected native full-size image and Chrome intended-size board. Exterior visually white; predefined corner probes contain near-white RGB 253–255 (up to 2 levels of channel variation), not exact #FFFFFF at every pixel. Original native bytes preserved.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

@@ -2,34 +2,25 @@
 
 [English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logopia](../../README.ko.md)
 
-**글자 자체가 로고입니다.** 굵고 둥근 맞춤 글자로 **LOGOPIA**를 한 줄에 배치했습니다. 짙은 잉크색 바탕에 **LOGO**는 민트, **PIA**는 라일락으로 표현했습니다. 넉넉한 속공간과 두꺼운 획으로 친근하고 또렷하게 읽히도록 구성했습니다.
+**새 로고를 발견하는 즐거운 공간.** 소문자 **logopia**를 밝은 색과 살짝 기울어진 글자, 두꺼운 흰 테두리, 연두색 기하학 배경판으로 표현했습니다. 글자 속공간을 열어 이름이 읽히도록 하고, 무늬는 글자를 받쳐 주는 정도로 사용했습니다. 바깥 배경은 흰색입니다.
 
 <p align="center">
-  <a href="../../assets/logopia-wordmark.png"><img src="../../assets/logopia-wordmark.png" width="560" alt="현재 Logopia 로고: 짙은 잉크색 바탕에 민트 LOGO와 라일락 PIA를 한 줄에 배치한 둥근 레터링"></a>
+  <a href="../../assets/logopia-game-title.png"><img src="../../assets/logopia-game-title.png" width="560" alt="흰 바깥 배경 위에 연두색 무늬 배경판과 다채로운 소문자 logopia를 배치한 타이틀 로고"></a>
 </p>
 
 <a id="다운로드"></a>
 
-[**마스터 PNG 다운로드 →**](../../assets/logopia-wordmark.png) · [ZIP 패키지](2026-logopia/delivery/logo-package.zip) · [브랜드 안내](2026-logopia/delivery/brand-guide.md) · [쇼케이스 보드](../../assets/logopia-showcase.png) · [현재 갤러리](../gallery.ko.md#showcase)
+[**마스터 PNG 다운로드 →**](../../assets/logopia-game-title.png) · [ZIP 패키지](2026-game-title/delivery/logo-package.zip) · [브랜드 안내](2026-game-title/delivery/brand-guide.md) · [흰 배경 샘플](../showcase/2026-09-white/README.ko.md)
 
-## 색상 방향
+## 이렇게 요청해 보세요
 
-| 색상 | 디자인 기준값 | 역할 |
-|---|---|---|
-| 딥 잉크 | `#17352B` | 짙은 바탕과 배지 기본색 |
-| 프레시 민트 | `#B9F582` | 밝은 주요 강조색 |
-| 라일락 | `#B9A4FF` | 함께 사용하는 강조색 |
-| 페이퍼 | `#F7F9F2` | 밝은 보조 바탕 |
+> $logo-land Wonder Bay의 경쾌한 게임 타이틀형 로고를 만들어 주세요. 정확한 글자는 Wonder Bay입니다. 굵은 맞춤 글자, 생동감 있는 높낮이, 밝은 색, 두꺼운 흰 테두리와 차분한 기하학 무늬 배경판을 사용해 주세요. 바깥 배경은 순백색이고, 가로 360px에서도 이름이 읽히게 해 주세요.
 
-이 HEX 값은 브랜드 디자인의 기준 팔레트입니다. 생성된 PNG에는 래스터 색상 변화가 있으므로, 모든 픽셀이 이 값과 정확히 일치한다는 뜻은 아닙니다. 페이퍼는 문서를 위한 보조색이며, 마스터 이미지의 배경색이 아닙니다.
+[게임 타이틀 안내](../../skills/logo-land/references/game-title-logos.md)에서 글자의 리듬·테두리·색상 역할·배경판 유무를 정하실 수 있습니다. 이번 로고는 [포코피아 공식 타이틀](https://pokopia.pokemon.com/en-us/)의 넓은 시각적 특징을 참고해 새 이름을 그렸으며, 상위 브랜드 문구나 캐릭터 형태의 글자 장식은 넣지 않았습니다.
 
-## 비슷하게 요청해 보세요
+원본은 **1536 × 1024 불투명 PNG**입니다. 가로세로 비율을 유지하고 타이틀·헤더 크기로 사용해 주세요. 작은 앱 아이콘·투명 버전·폰트 파일·편집 가능한 벡터는 별도 결과물입니다.
 
-> $logo-land LOGOPIA의 맞춤 워드마크 한 개를 만들어 주세요. 일곱 글자를 한 줄에 배치해 주세요. 굵고 둥근 글자와 넉넉한 속공간을 사용하고, 짙은 잉크색 바탕에 LOGO는 프레시 민트, PIA는 라일락으로 표현해 주세요. 글자 자체가 디자인이 되도록 하고, 별도 심볼·슬로건·추가 글자는 넣지 말아 주세요.
-
-현재 마스터는 불투명한 어두운 배경의 **1774 × 887 래스터 PNG**입니다. 표시할 때 가로세로 비율을 유지해 주세요. 투명 버전, 편집 가능한 벡터와 폰트 파일은 포함되지 않습니다.
-
-[생성 요청문](2026-logopia/prompt.txt) · [이미지 기록](2026-logopia/receipt.json)
+[생성 요청문](2026-game-title/prompt.txt) · [이미지 기록](2026-game-title/receipt.json)
 
 <a id="historical-identity"></a>
 
@@ -37,6 +28,7 @@
 
 | 이전 디자인 | 보존한 파일 |
 |---|---|
+| 첫 Logopia 가로형 워드마크 | [원본 PNG](../../assets/logopia-wordmark.png) · [당시 패키지](2026-logopia/delivery/logo-package.zip) |
 | 이전 Logo Land의 두 줄 레터링 | [원본 PNG](../../assets/logo-land-wordmark.png) · [당시 패키지](2026-lettering/delivery/logo-package.zip) · [이전 쇼케이스 보드](../../assets/logo-land-showcase.png) |
 | 아이보리 바탕의 열린 프레임 심볼과 가로형 워드마크 | [원본 PNG](../../assets/logo-land-studio.png) · [당시 브랜드 가이드](2026-identity/delivery/brand-guide.md) |
 | 더 이전의 일러스트 로고 | [당시 로고 기록](legacy.md) · [원본 PNG](../../assets/logo.png) |

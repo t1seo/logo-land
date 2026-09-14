@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "id": "craft-09-fern",
+  "revision": 0,
+  "created_at": "2026-09-14T12:43:07.473946Z",
+  "updated_at": "2026-09-14T12:43:07.473946Z",
+  "brief": {
+    "brand_name": "FERN",
+    "exact_text": "",
+    "industry": "plant care",
+    "audience": "urban gardeners",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [
+      "organic pictorial brand symbol"
+    ],
+    "palette": [
+      "Botanical green #287054",
+      "Background: solid pure white #FFFFFF"
+    ],
+    "forbidden": [
+      "unsolicited lettering",
+      "mockup scenes",
+      "watermarks",
+      "colored canvas",
+      "transparent background",
+      "external cast shadows"
+    ],
+    "use_cases": [
+      "Brand identity at 240px width and README previews"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; new concept approved for one sample by the user.",
+      "All new showcase images must have a genuine opaque white background.",
+      "Foreground palette is design intent, not exact-pixel certification."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

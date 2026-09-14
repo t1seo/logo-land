@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-10-nova-notes",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "87f6468669e6ec33b1c159f5aa06d122b589c7f3cb4ae059ebe621d366677712",
+  "image": "../../images/10-nova-notes.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:46:04.515Z",
+  "returned_at": "2026-09-14T12:47:55.902Z",
+  "source_file": "exec-364a4d16-24fa-40e0-9de2-3ee4c41f924d.png",
+  "sha256": "dbd2e8bf107d1001715d9f9fd23eae16d883dccf97119c76c7849ad729e5f771"
+}

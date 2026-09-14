@@ -1,0 +1,16 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "craft-04-bread-bloom",
+  "artifact_id": "a-v1",
+  "revision": 0,
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "2c9ec84e67c53fd2cbbdb54c346be88596fd856ec3ae2c55ac0bdb9494d96d43",
+  "image": "../../images/04-bread-bloom-a-v1.png",
+  "background_probe": "four corner 5% patches, declared empty in the centered composition",
+  "started_at": "2026-09-14T12:45:47.326Z",
+  "returned_at": "2026-09-14T12:47:36.788Z",
+  "source_file": "exec-ffea339d-6990-4938-9de7-2e967af2df0c.png",
+  "sha256": "288aa8f627961713f07a18fdcd8b1e768b7b42b9c279209db23826ca7fc16393"
+}

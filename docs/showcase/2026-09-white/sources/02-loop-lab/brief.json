@@ -1,0 +1,32 @@
+{
+  "brand_name": "LOOP LAB",
+  "exact_text": "LL",
+  "industry": "creative coding studio",
+  "audience": "creative technologists",
+  "logo_type": "monogram",
+  "styles": [
+    "geometric interlocking monogram"
+  ],
+  "palette": [
+    "Ink #1D2830 and signal coral #ED624C",
+    "Background: solid pure white #FFFFFF"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "Brand identity at 240px width and README previews"
+  ],
+  "forbidden": [
+    "unsolicited lettering",
+    "mockup scenes",
+    "watermarks",
+    "colored canvas",
+    "transparent background",
+    "external cast shadows"
+  ],
+  "assumptions": [
+    "Fictional demonstration brand; new concept approved for one sample by the user.",
+    "All new showcase images must have a genuine opaque white background.",
+    "Foreground palette is design intent, not exact-pixel certification."
+  ]
+}

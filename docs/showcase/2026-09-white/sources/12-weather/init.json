@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "id": "craft-12-weather",
+  "revision": 0,
+  "created_at": "2026-09-14T12:43:08.360541Z",
+  "updated_at": "2026-09-14T12:43:08.360541Z",
+  "brief": {
+    "brand_name": "Daybreak",
+    "exact_text": "",
+    "industry": "weather app",
+    "audience": "daily commuters",
+    "slogan": "",
+    "logo_type": "symbol",
+    "styles": [
+      "pictogram"
+    ],
+    "palette": [
+      "Sky blue #3E91C4 and warm gold #EBAA3B",
+      "Background: solid pure white #FFFFFF"
+    ],
+    "forbidden": [
+      "unsolicited lettering",
+      "mockup scenes",
+      "watermarks",
+      "colored canvas",
+      "transparent background",
+      "external cast shadows"
+    ],
+    "use_cases": [
+      "App artwork at 32, 64 and 128px"
+    ],
+    "assumptions": [
+      "Fictional demonstration brand; new concept approved for one sample by the user.",
+      "All new showcase images must have a genuine opaque white background.",
+      "Foreground palette is design intent, not exact-pixel certification."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "pictogram",
+      "subject": "one warm sun partially tucked behind a soft cloud",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}
