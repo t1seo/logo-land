@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "release": {
+    "assets": [
+      {
+        "browser_download_url": "https://github.com/t1seo/logopia/releases/download/v0.8.0/logo-package.zip",
+        "digest": "sha256:0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+        "name": "logo-package.zip",
+        "size": 711451
+      }
+    ],
+    "draft": false,
+    "html_url": "https://github.com/t1seo/logopia/releases/tag/v0.8.0",
+    "id": 388611593,
+    "name": "Logopia 0.8.0 — A guided workflow in Hermes",
+    "prerelease": false,
+    "published_at": "2026-09-14T18:14:38Z",
+    "tag_name": "v0.8.0"
+  },
+  "latest": {
+    "html_url": "https://github.com/t1seo/logopia/releases/tag/v0.8.0",
+    "tag_name": "v0.8.0"
+  },
+  "repo": {
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Create brand logos and app icon artwork with Codex or Hermes. Compare originals, refine lettering and spacing, and export verified PNG packages.",
+    "url": "https://github.com/t1seo/logopia"
+  },
+  "http_status_chain": [
+    "HTTP/2 302 ",
+    "HTTP/2 200 "
+  ],
+  "download_bytes": 711451,
+  "download_sha256": "0d1a4c2266ad6f04b3d1b78ab32c41b89ed5bd6c3b0c0d514fd580a9513d7c04",
+  "zip_members_sha256": {
+    "logo.png": "882dd3318064ef2573344d9b4dfef5bf9d460f5a9bb0aaf2f585dd2473c887bb",
+    "manifest.json": "51de33aaa6b85fe3103b0440ceb22a0bd7a3158a7df5f69ebafbb084d0791f8d",
+    "brand-guide.md": "c2dbb61367f5a16b732660de1289b4799e0b4eb356434f0a86431e1d9259699a"
+  },
+  "download_matches_original": true,
+  "cleanup": {
+    "status": "PASS",
+    "removed": "output/hermes-release-checks/release-package.zip",
+    "removed_bytes": 711451,
+    "original_preserved": true,
+    "temporary_server_or_browser_profile_created": false,
+    "all_download_commands_settled": true
+  },
+  "refs_at_release_verification": {
+    "refs/heads/main": "c09072da07da7af5b6c08c5345bb32a3adb726be",
+    "refs/tags/v0.8.0": "bcd95fe49492e4be773e00091fabe72bdebf7ea5",
+    "refs/tags/v0.8.0^{}": "c09072da07da7af5b6c08c5345bb32a3adb726be"
+  },
+  "source_bindings_unchanged": 209,
+  "protected_drafts_unchanged": [
+    ".omo/drafts/logo-land-next-capability.md",
+    ".omo/drafts/logo-land-next-delivery.md",
+    ".omo/drafts/logo-land-next-metis.md",
+    ".omo/drafts/logo-land-next-tools.md"
+  ],
+  "chrome": {
+    "path": "docs/hermes-demo/index.html",
+    "active_tab_verified": true,
+    "retained": "Intentional user-facing sample tab"
+  },
+  "orchestration": {
+    "run_id": "run_ad4a666ccb76",
+    "tasks": 23,
+    "unfinished_tasks": 0,
+    "pending_messages": 0,
+    "all_task_worker_resources_released": "See final-integration.md and review-summary.md"
+  }
+}

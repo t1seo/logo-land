@@ -1,6 +1,6 @@
 # Hermes workflow independent review
 
-**PASS. All five review roles approved the final source and their owned cleanup.** The final integration run passed **957 tests in 295.48s**, with strict static checks, real native installation and exact original/delivery bindings. Publication remains the separate T6 step.
+**PASS. All five review roles approved the final source and their owned cleanup.** The final integration run passed **957 tests in 295.48s**, with strict static checks, real native installation and exact original/delivery bindings. The subsequent main push, release and actual download are recorded in [publication](publication.md).
 
 | Review | Final evidence | Result |
 | --- | --- | --- |
@@ -30,4 +30,4 @@ All original review workers and the additional final provenance reviewer were re
 
 Reviewers' exact temporary roots, browsers, tmux sessions, PIDs and ports are accounted for in their cleanup receipts. Root removed both full-pytest basetemps; final input hashes remained unchanged. The [temporary debug journal and its single exclude entry](final-integration/debug-cleanup.json) were removed after promoting the findings.
 
-The plan's five phases—source/contract review, automated checks, real manual channels, applicable adversarial cases and cleanup—are complete for T5. T6 owns the commit, main push, release verification and final gallery opening.
+The plan's five phases—source/contract review, automated checks, real manual channels, applicable adversarial cases and cleanup—are complete for T5. T6 records the commit, main push, release verification and final gallery opening.

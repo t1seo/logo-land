@@ -1,6 +1,6 @@
 # Logopia: Hermes production workflow
 
-Status: implementation. Six gap-review findings are resolved in the binding section of `integrations/hermes/CONTRACT.md`.
+Status: completed. Research, native workflow, real sample, documentation, independent review and v0.8.0 publication are verified. See `docs/qa/hermes-workflow/publication.md` and `review-summary.md`.
 
 ## Goal
 
@@ -44,7 +44,7 @@ The coordinator owns the plan, shared contract, payload installer, process wrapp
   - Five Orca reviews: goal, code, safety, hands-on QA, context/provenance. Resolve findings without deleting failed evidence.
   - Existing full tests, new tests, strict typecheck/lint, real plugin doctor, Chrome keyboard/mobile/direct-download checks and real Hermes evidence.
   - Probe malformed input, instruction-like brief/feedback as inert data, cancel/resume, stale state, dirty worktree, long calls/deadlines, flaky-test handling, misleading success and repeated interruption where applicable. Record explicit N/A reasons otherwise.
-- [ ] T6 — Commit, push and verify main; finish cleanup and delivery record.
+- [x] T6 — Commit, push and verify main; finish cleanup and delivery record.
   - Stage only reviewed task files, preserve unrelated drafts and private sessions. No force/reset/amend. Verify actual remote main SHA, finish all worker/resource cleanup, and show the local sample in Chrome.
 
 ## Verification and cleanup contract

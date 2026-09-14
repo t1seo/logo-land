@@ -1,6 +1,6 @@
 # Final Hermes integration gate
 
-**PASS on the final source.** The five independent review verdicts are collected separately in [review-summary](review-summary.md); publication is a later step.
+**PASS on the final source.** The five independent review verdicts are collected separately in [review-summary](review-summary.md); the subsequent release and actual download are recorded in [publication](publication.md).
 
 ## Final checks
 
@@ -37,4 +37,4 @@ The first installation-binding harness used system python3 without Pydantic and 
 
 The final foreground commands all exited. Pytest shell **7060** is absent; its **7,518** temporary entries were removed. The first attempt's **7,513** entries and exact shell/helper PIDs were separately removed. See [final cleanup](final-integration/final-run-cleanup.json) and [first cleanup](final-integration/first-run-cleanup.json). Private raw logs and source pins remain under ignored output/hermes-final-checks; the native profile, workflow and originals are intentional deliverables.
 
-The focused process worker verified that 43 recorded PIDs and 31 PGIDs were absent, and removed its tmux/scratch resources. Orca retained its reused terminal as external. The coordinator checked the original task-created terminal receipt, the same live incarnation and completed task-only transcript, then closed exactly term_bdee4753-d84f-4fe3-be75-878b1ed3029b and verified its absence. No user or other worker terminal was closed. Remaining independent review terminals are released upon their accepted completion, before the plan is marked verified.
+The focused process worker verified that 43 recorded PIDs and 31 PGIDs were absent, and removed its tmux/scratch resources. Orca retained its reused terminal as external. The coordinator checked the original task-created terminal receipt, the same live incarnation and completed task-only transcript, then closed exactly term_bdee4753-d84f-4fe3-be75-878b1ed3029b and verified its absence. No user or other worker terminal was closed. All remaining independent review terminals were released after their accepted completion, before the plan was marked verified.
