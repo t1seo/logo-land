@@ -46,12 +46,29 @@ def test_real_pre_icon_reads_and_first_mutation(harness: Harness, version: int) 
 
 
 @pytest.mark.parametrize("mode", ["generation", "edit"])
-def test_full_pre_icon_prompt_snapshot_and_no_write(harness: Harness, mode: str) -> None:
+def test_pre_icon_prompt_preserves_intent_and_saved_history(harness: Harness, mode: str) -> None:
     before = install_baseline(harness, 2)
+    state = Session.model_validate_json(harness.ok("show", "--session", "demo"))
+    original_image = (harness.state_path.parent / state.artifacts[0].path).read_bytes()
     extra = ("--parent", "v1", "--changes", "Use navy blue") if mode == "edit" else ()
     prompt = PromptResult.model_validate_json(harness.ok("prompt", "--session", "demo", *extra))
-    assert prompt.prompt == (FIXTURES / f"prompt-{mode}.txt").read_text(encoding="utf-8")
+    # New construction guidance may evolve; historical bytes and effective intent cannot.
+    assert prompt.mode == mode
+    assert prompt.revision == state.revision
+    assert repr(state.brief.exact_text) in prompt.prompt
+    assert repr(state.brief.slogan) in prompt.prompt
+    assert prompt.palette_id is None
+    assert prompt.app_icon is None
+    if mode == "edit":
+        assert prompt.parent_id == "v1"
+        assert prompt.lockup is None
+        assert "Use navy blue" in prompt.prompt
+        assert "Create one" not in prompt.prompt
+    else:
+        assert prompt.parent_id is None
+        assert prompt.lockup == state.brief.lockup
     assert harness.state_path.read_bytes() == before
+    assert (harness.state_path.parent / state.artifacts[0].path).read_bytes() == original_image
 
 
 def test_legacy_import_keeps_unknown_lockup_and_original_prompt(harness: Harness) -> None:

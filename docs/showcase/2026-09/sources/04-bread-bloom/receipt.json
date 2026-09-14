@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-04-bread-bloom",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-b6ff49de-a466-42a1-ae5e-6e3f92137a08.png",
+  "image": "../../images/04-bread-bloom.png",
+  "sha256": "d7295087b1ff5e18437455e4c882b3ffed0c2709bb65d83836ffce10a10fa83a",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "349d06064d3c925961f988ef3652c4db70f3f4b345897ed481d43768ce24f1cb"
+}

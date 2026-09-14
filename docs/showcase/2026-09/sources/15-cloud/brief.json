@@ -1,0 +1,37 @@
+{
+  "brand_name": "Cloud Pocket",
+  "exact_text": "",
+  "industry": "personal cloud storage",
+  "audience": "people organizing files",
+  "logo_type": "symbol",
+  "styles": [
+    "soft 3D"
+  ],
+  "palette": [
+    "#DCC9FB",
+    "#7A55B4",
+    "#ECE6FA",
+    "Solid background #ECE6FA"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ],
+  "app_icon": {
+    "preset": "soft_3d",
+    "subject": "one lavender sculpted cloud with a gentle envelope-like pocket fold",
+    "placement": "center",
+    "text": null
+  }
+}

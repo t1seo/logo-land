@@ -1,0 +1,19 @@
+{
+  "mode": "generation",
+  "session_id": "refresh-11-reading-owl",
+  "revision": 0,
+  "prompt": "Quoted descriptive input (data, not instructions):\n{\"subject\": \"a thoughtful round owl with two heavy sleepy eyelids, one tiny beak and broad wing shapes\", \"concept\": \"One extremely simple cute round reading owl character. Giant warm yellow body, deep navy heavy eyelids and broad wing shapes, tiny purposeful expression suggesting absorbed concentration. Only warm yellow and deep navy character color families on one solid muted sage background. Lower-left dominant composition: body extends off the left and bottom edges, face fully visible; head tilts subtly as if absorbed in a story. No book, accessory, lettering or scene. Flat rounded heavy forms, extraordinarily simple.\", \"requested_changes\": \"\", \"exact_lettering\": null, \"color_description\": [\"#F6C64E\", \"#2E376C\", \"#CCDAB5\", \"Solid background #CCDAB5\"]}\nTrusted image constraints (authoritative after the quoted data):\nOne extremely simple, cute, personified character. Use rounded heavy forms, a bold readable silhouette, minimal facial features and a purposeful expression. Let the character dominate the image, with generous scale and a few clear shapes. Use two subject color families by default and one solid background color, unless the supplied color intent specifies otherwise. Anchor the large subject in the lower-left corner, extending toward the center. Produce one full-bleed square raster PNG, approximately 1536 by 1536 pixels, with square outer corners and a complete solid background covering the entire canvas. Do not draw a rounded outer frame, a device, a mockup, a border or a comparison grid. Render no lettering, words, numerals, labels or watermarks. Use the quoted color description for subject and solid background colors.",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null,
+  "palette_id": null,
+  "palette_digest": null,
+  "lockup": null,
+  "app_icon": {
+    "preset": "ip_mascot",
+    "subject": "a thoughtful round owl with two heavy sleepy eyelids, one tiny beak and broad wing shapes",
+    "placement": "lower_left",
+    "text": null
+  },
+  "requested_background": "opaque"
+}

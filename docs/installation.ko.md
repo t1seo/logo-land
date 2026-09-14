@@ -11,8 +11,8 @@ Codex 내장 이미지 생성·편집 도구, Python 3.12 이상과 `uv`가 필�
 ## 저장소에서 바로 사용
 
 ```sh
-git clone https://github.com/t1seo/logo-land.git
-cd logo-land
+git clone https://github.com/t1seo/logopia.git
+cd logopia
 uv sync --locked
 codex
 ```
@@ -38,7 +38,7 @@ codex
       "name": "logo-land",
       "source": {
         "source": "local",
-        "path": "/absolute/path/to/logo-land"
+        "path": "/absolute/path/to/logopia"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -71,14 +71,14 @@ codex plugin add --help
 
 ## 소스·릴리스·설치 버전
 
-현재 저장소의 플러그인 manifest, Python 프로젝트와 잠금 파일의 보조 패키지는 **0.6.0 개발 버전**입니다. 최신 정식 릴리스는 [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1)이며, v0.4.0은 미게시 초안입니다. 위 명령은 현재 저장소를 사용하며 정식 출시된 0.6.0 패키지를 의미하지 않습니다.
+현재 저장소의 플러그인 manifest, Python 프로젝트와 잠금 파일의 보조 패키지는 **0.7.0**입니다. 같은 버전의 소스는 [v0.7.0 릴리스](https://github.com/t1seo/logopia/releases/tag/v0.7.0)에서 받으시거나, 복제 후 `git checkout v0.7.0`으로 선택하실 수 있습니다. 저장소 이름은 `logopia`이며, 플러그인 이름과 호출은 기존의 `logo-land`, `$logo-land`를 사용합니다.
 
-기존 설치 캐시는 갱신 전까지 이전 버전일 수 있습니다. `0.6.0+codex.<timestamp>` 같은 로컬 버전은 캐시 갱신을 표시하며, 소스 버전 `0.6.0` 및 정식 릴리스 `0.3.1`과 구분합니다. 소스 갱신과 재설치 후에는 새 대화를 시작해 변경된 스킬을 불러와 주세요. GitHub 소스 압축 파일은 저장소 스냅샷이며 플러그인 설치 패키지가 아닙니다. [릴리스 안내](releases.md)와 [변경 이력](../CHANGELOG.md)을 참고해 주세요.
+기존 설치 캐시는 갱신 전까지 이전 버전일 수 있습니다. `0.7.0+codex.<timestamp>` 같은 로컬 버전은 캐시 갱신을 표시하며 릴리스 버전 `0.7.0`과 구분합니다. 소스 갱신과 재설치 후에는 새 대화를 시작해 변경된 스킬을 불러와 주세요. GitHub 소스 압축 파일은 저장소 스냅샷이며 자동 설치 프로그램이 아닙니다. [릴리스 안내](releases.md)와 [변경 이력](../CHANGELOG.md)을 참고해 주세요.
 
 ## 프로젝트 파일
 
 작업은 `.logo-generator/sessions/<id>/`에 저장되며, 기본 전달 경로는 `output/logo-generator/<id>/`입니다. 이전 `logo-generator` 이름을 사용하는 호환 경로입니다. 새 대화에서는 `$logo-land`를 사용하시고, 기존 프로젝트 폴더 이름은 바꾸실 필요가 없습니다.
 
-다른 작업 폴더에서 보조 명령을 실행할 때는 `uv run --locked --project /absolute/path/to/logo-land`에 플러그인 루트를, 보조 명령의 `--workspace`에 프로젝트 폴더를 지정해 주세요. [프로젝트 파일 안내](../skills/logo-land/references/project-files.md)에 전체 명령과 스키마 1 마이그레이션·복구 범위를 설명했습니다. 백업과 PNG 원본을 보존해 주세요. 이전 v0.3.1 설치본이 스키마 2 프로젝트를 읽는다고 보장하지는 않습니다.
+다른 작업 폴더에서 보조 명령을 실행할 때는 `uv run --locked --project /absolute/path/to/logopia`에 플러그인 루트를, 보조 명령의 `--workspace`에 프로젝트 폴더를 지정해 주세요. [프로젝트 파일 안내](../skills/logo-land/references/project-files.md)에 전체 명령과 스키마 1 마이그레이션·복구 범위를 설명했습니다. 백업과 PNG 원본을 보존해 주세요. 이전 v0.3.1 설치본이 스키마 2 프로젝트를 읽는다고 보장하지는 않습니다.
 
 [요청 예시](../README.ko.md#이렇게-요청해-보세요) · [샘플 보기](samples/README.ko.md)

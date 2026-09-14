@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-12-weather",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-7a0d910c-7cf9-4454-90ce-619455d5f953.png",
+  "image": "../../images/12-weather.png",
+  "sha256": "f97386ee67dd50130c3bc24dcc364187953df860ba186403d07eaf5879d14cca",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "056378fd3958cf46f7ccb3dc648c95cc75f5ebbc6d1031f740f8410a07535548"
+}

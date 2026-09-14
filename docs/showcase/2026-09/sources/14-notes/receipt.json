@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-14-notes",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-b581375f-22ae-4b0e-8796-df00a33d94d9.png",
+  "image": "../../images/14-notes.png",
+  "sha256": "44c3b2de6fe2ead4a3be4dbea8c53e3a67e6f74be8eeacaf1fcfe567f46e045c",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "cfcb51ebc7efc2f7061ba7ac856b160e9c0eabb8b8462cf527d9d55ce4d85b84"
+}

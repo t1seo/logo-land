@@ -2,36 +2,43 @@
 
 [English](README.md) · [한국어](README.ko.md) · [Logo Land](../README.md)
 
-Create a logo, compare app icon artwork, or continue a saved project with Codex.
+Start with a name, explore a few directions and refine the image that fits. Logo Land creates custom lettering, brand logos and app icon artwork with Codex’s native image tool.
 
 ## Start here
 
-- [Installation](installation.md): use the repository directly or enable the plugin in other projects.
-- [Example requests](../README.md#try-it): start with a brand, an IP character or cross-project comparison and refinement.
+| You want to… | Open |
+|---|---|
+| See what you can make | [September 2026 showcase board](../assets/logo-land-showcase.png) · [Current gallery](gallery.md#showcase) |
+| Try your first logo | [Quickstart and example requests](../README.md#installation) |
+| Use the skill in other projects | [Full installation guide](installation.md) |
+| Download an example | [Current showcase PNG inventory](showcase/2026-09/README.md) |
 
 ## Samples
 
-- [Complete visual gallery](gallery.md): see every original on one page and click any image to open its PNG.
+- [Current visual gallery](gallery.md): ten fictional brands and six app icon studies, followed by a clearly marked archive.
+- [Brand samples](samples/README.md): the refreshed LUMA, LOOP LAB, 고요, BREAD & BLOOM, KITE, MISO, NORTHLINE / NL, 물결, FERN and NOVA NOTES set, with links to earlier examples.
+- [Logo Land identity](brand/README.md): the stacked lettering master, ink/mint/lilac/paper palette and historical designs.
+- [Earlier app icon studies](app-icons/README.md): six IP candidates and five original/revised pairs from the previous collection.
+- [Earlier color and typography cases](colors/README.md): eight cases across seven projects, with their recorded outcomes.
+- [Transparent PNG example](samples/transparency.md): the earlier GROVE example and background guidance.
 
-- [Brand logos](samples/README.md): ten individual brands across eight logo types.
-- [Colors and typography](colors/README.md): eight cases across seven projects, with their actual outcomes.
-- [App icons](app-icons/README.md): six IP candidates and five original/revised pairs.
-- [Transparent logos](samples/transparency.md): a GROVE example and background guidance.
-- [Logo Land identity](brand/README.md): the current logo, downloads and earlier identity.
+The current showcase and the earlier studies are separate sets. Follow each set’s own inventory for available files and provenance.
 
 ## Guides
 
-- [Compare candidates across projects and refine](../skills/logo-land/references/comparison-workflow.md)
+| Topic | Guide |
+|---|---|
+| Letter shapes and logo forms | [Letter construction](../skills/logo-land/references/lettering.md) · [Logo directions](../skills/logo-land/references/logo-directions.md) · [Lettering and font references](../skills/logo-land/references/typography.md) |
+| Palette choices and changes | [Colors and palettes](../skills/logo-land/references/color-workflow.md) |
+| Small square artwork | [App icon artwork](../skills/logo-land/references/app-icons.md) |
+| Choosing and refining a candidate | [Comparison workflow](../skills/logo-land/references/comparison-workflow.md) |
+| Resuming a saved project | [Revision history and project files](../skills/logo-land/references/project-files.md) |
+| Preparing a reviewed delivery | [Delivery checks](../skills/logo-land/references/delivery-checks.md) |
 
-- [Logo directions](../skills/logo-land/references/logo-directions.md)
-- [Colors and palettes](../skills/logo-land/references/color-workflow.md)
-- [Lettering and font references](../skills/logo-land/references/typography.md)
-- [App icon artwork](../skills/logo-land/references/app-icons.md)
-- [Revision history and project files](../skills/logo-land/references/project-files.md)
-- [Delivery checks](../skills/logo-land/references/delivery-checks.md)
+Artwork is raster PNG. Font names describe appearance; editable vectors, font files and platform-specific app icon packages require separate work. The local helper manages prompts and files; it does not replace the native image tool.
 
-[Changelog](../CHANGELOG.md) · [Third-party notices](../THIRD_PARTY_NOTICES.md) · [Get help](https://github.com/t1seo/logo-land/issues)
+[Changelog](../CHANGELOG.md) · [Third-party notices](../THIRD_PARTY_NOTICES.md) · [Get help](https://github.com/t1seo/logopia/issues)
 
 <a id="logo-land-research-and-implementation"></a><a id="earlier-research-and-releases"></a>
 
-[Archive](archive.md): preserved research, implementation and verification records.
+[Historical outputs](gallery.md#historical-outputs) · [Research and verification archive](archive.md)

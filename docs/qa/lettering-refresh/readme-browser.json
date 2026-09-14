@@ -1,0 +1,62 @@
+{
+  "renderer": "markdown-it CommonMark plus tables and raw HTML, GitHub-like local stylesheet (not GitHub production renderer)",
+  "pages": [
+    {
+      "language": "en",
+      "images": [
+        {
+          "src": "assets/logo-land-wordmark.png",
+          "loaded": true
+        },
+        {
+          "src": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+          "loaded": true
+        },
+        {
+          "src": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+          "loaded": true
+        },
+        {
+          "src": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+          "loaded": true
+        },
+        {
+          "src": "assets/logo-land-showcase.png",
+          "loaded": true
+        }
+      ],
+      "desktop_width": 1280,
+      "mobile_width": 390,
+      "no_horizontal_overflow": true
+    },
+    {
+      "language": "ko",
+      "images": [
+        {
+          "src": "assets/logo-land-wordmark.png",
+          "loaded": true
+        },
+        {
+          "src": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+          "loaded": true
+        },
+        {
+          "src": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+          "loaded": true
+        },
+        {
+          "src": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+          "loaded": true
+        },
+        {
+          "src": "assets/logo-land-showcase.png",
+          "loaded": true
+        }
+      ],
+      "desktop_width": 1280,
+      "mobile_width": 390,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "actual_size_preview": "actual-size.png"
+}

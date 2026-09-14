@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-09-fern",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-b283dda0-f5b0-40a6-870a-62267d9970b1.png",
+  "image": "../../images/09-fern.png",
+  "sha256": "80e320200f8d3632582c3abb2fa374c578a09f57c05741388a54d5c75d49b90d",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "895dea032c0d36246f05303c09c25bfa7ec4a161f7b02c9069682d5124a2bc70"
+}

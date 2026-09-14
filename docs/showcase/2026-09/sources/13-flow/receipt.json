@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-13-flow",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-d8be89a6-77f3-4790-ac71-66f0307091d3.png",
+  "image": "../../images/13-flow.png",
+  "sha256": "d9a3059986a2ddf301343ada7e91950e49fa10d6dbcd142299ff78b46da5a5aa",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "933e0eabcc0f1896cd278850785ba70b2cae85fd2ebf6aee452085c97957ea9e"
+}

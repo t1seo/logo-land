@@ -1,0 +1,52 @@
+{
+  "observed_at_utc": "2026-09-14T07:50:21.380534+00:00",
+  "branch": "main",
+  "base_commit": "a472e5061e22ea0bbf47a224cd084512a121ffc7",
+  "assets": [
+    {
+      "path": "assets/logo-land-wordmark.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994"
+    },
+    {
+      "path": "assets/logo-land-showcase.png",
+      "dimensions": [
+        2400,
+        3182
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "sha256": "421a6fc561c96204bccdbc15a35e41374f436bd29540050b042707e86333b5c9"
+    }
+  ],
+  "narrow_preview": {
+    "surface": "Orca embedded browser, local MarkdownIt rendering with GitHub-like CSS",
+    "viewport_css_px": 390,
+    "document_scroll_width": 390,
+    "local_images_loaded": 2,
+    "badges_loaded": 3,
+    "wordmark_display_css_px": 358,
+    "board_display_css_px": [
+      358,
+      475
+    ],
+    "screenshot": "docs-narrow-ko.png"
+  },
+  "cleanup": {
+    "owned_orca_page": "9bb07d11-ae37-4403-8068-5dde66dd8544",
+    "tab_closed": true,
+    "owned_server_pid": 42658,
+    "server_stopped": true
+  }
+}

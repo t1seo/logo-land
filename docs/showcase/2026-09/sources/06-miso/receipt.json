@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-06-miso",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-acabe7cd-6a95-4cdb-94d3-f91de45f4705.png",
+  "image": "../../images/06-miso.png",
+  "sha256": "84645e5de116b9cb1287cca1f94b2f67eb3df3e7da82bed156c97ec49fbadbc9",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "75dc2893f3099e6caebb0d47e6b83715352abf1d20c3e5163bab77e4dad47597"
+}

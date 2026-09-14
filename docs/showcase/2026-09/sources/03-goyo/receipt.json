@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-03-goyo",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-05dcb19e-2501-450c-ad6f-220bb20247de.png",
+  "image": "../../images/03-goyo.png",
+  "sha256": "282cc82fecb919fbcb8fe433291f0e98699007080828f8a6729dc5f75eae3b9b",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "d280f5b8dbf0f8859bd3dc6ef9a756b3f72741b69ab49c7eabdcdf17bc83981c"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-10-nova-notes",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-451dbbe8-f6e3-4c84-ba9c-310918899aba.png",
+  "image": "../../images/10-nova-notes.png",
+  "sha256": "6a60ef795f62bb39274d96757c9ff68b340cd142efb2d7e963f3a4b090c7cf72",
+  "format": "PNG",
+  "width": 1536,
+  "height": 1024,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "e1c6b77f28f280cfc7305bde2727f47c6bdc87ebea3222d7654bf792bbc5f100"
+}

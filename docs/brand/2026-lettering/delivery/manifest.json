@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "session_id": "refresh-00-logo-land",
+  "revision": 4,
+  "exported_at": "2026-09-14T07:50:07.033796Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v1",
+    "path": "artifacts/a-v1.png",
+    "sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994",
+    "image": {
+      "format": "PNG",
+      "width": 1254,
+      "height": 1254,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1572516
+    },
+    "prompt": "Create one wordmark logo for Logo Land. Industry: conversational logo design toolkit. Audience: designers and makers.\nExact text (copy verbatim, no other words): 'LOGO LAND'. Exact slogan: ''.\nStyles: custom playful geometric lettering. Original brief palette context: #17352B, #B9F582, #B9A4FF, Solid background #17352B.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: The lettering IS the identity. Two exact words arranged as two close-fitting lines: LOGO on top, LAND below. Invent massive friendly architectural letterforms with rounded outer corners and precise open rectangular/circular counters. LOGO in acid mint #B9F582; LAND in pale lilac #B9A4FF. Both lines equal optical width, nearly interlocking but with clear readable separation. A distinctive rectangular cut in the G echoes the L corner. Bright flat fills on deep forest ink #17352B. Beautiful independent studio identity, mature and confident yet playful. Entire composition a compact centered block with 15% safe margins. No separate emblem, no small tagline, no framing shape, no trademark sign. Square canvas. Exact content L O G O then L A N D. No bevels, gradients, textures or shadows.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..\nRender one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.",
+    "parent_id": null,
+    "created_at": "2026-09-14T07:39:10.875624Z",
+    "requested_background": "opaque",
+    "palette_id": null,
+    "lockup": null,
+    "review": {
+      "reviewer": "Codex visual inspection, native original and 240px browser preview",
+      "notes": "The exact words LOGO and LAND read clearly as two stacked lines. Lime-mint upper lettering and lilac lower lettering have open counters, consistent bold weight and wide outer margins on an opaque dark-green square. At 240px the text remains readable. This is a new design, so there is no parent to preserve. Generated colors have slight raster texture and variation; no exact-HEX or strict palette claim is made. The brand name refers to this project; the generic fictional-demo wording in the saved generation brief was used for the sample collection and does not rename the project.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-14T07:50:06.411478Z"
+  },
+  "brief": {
+    "brand_name": "Logo Land",
+    "exact_text": "LOGO LAND",
+    "industry": "conversational logo design toolkit",
+    "audience": "designers and makers",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "custom playful geometric lettering"
+    ],
+    "palette": [
+      "#17352B",
+      "#B9F582",
+      "#B9A4FF",
+      "Solid background #17352B"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "media_kind": "raster",
+  "requested_background": "opaque",
+  "transparency_verified": false,
+  "intended_palette": null,
+  "color_report": {
+    "id": "export-b9a6fd1f00a14c5bbc7199976bf95e29",
+    "artifact_id": "a-v1",
+    "artifact_sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994",
+    "palette_id": null,
+    "palette_digest": null,
+    "analysis_policy": "logo-color-v1",
+    "color_engine_version": "not_used",
+    "pillow_version": "12.3.0",
+    "profile_treatment": "assumed_srgb",
+    "sampling": {
+      "width": 1254,
+      "height": 1254,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "grid_128_pixel_centers",
+      "sampled_positions": 16384,
+      "sampled_fraction": 0.010418971889634192,
+      "visible_samples": 16384,
+      "core_samples": 16384,
+      "partial_alpha_samples": 0
+    },
+    "status": "unverified",
+    "reasons": [
+      "No structured palette intent is recorded for this artifact"
+    ],
+    "measured_swatches": [
+      {
+        "hex": "#17362D",
+        "samples": 4823,
+        "share": 0.29437255859375
+      },
+      {
+        "hex": "#B1C6B9",
+        "samples": 3697,
+        "share": 0.22564697265625
+      },
+      {
+        "hex": "#17362C",
+        "samples": 3094,
+        "share": 0.1888427734375
+      },
+      {
+        "hex": "#17352C",
+        "samples": 2411,
+        "share": 0.14715576171875
+      },
+      {
+        "hex": "#16352C",
+        "samples": 1478,
+        "share": 0.0902099609375
+      },
+      {
+        "hex": "#16362C",
+        "samples": 661,
+        "share": 0.04034423828125
+      },
+      {
+        "hex": "#15332B",
+        "samples": 182,
+        "share": 0.0111083984375
+      },
+      {
+        "hex": "#2F464E",
+        "samples": 38,
+        "share": 0.0023193359375
+      }
+    ],
+    "targets": [],
+    "matched_fraction": null,
+    "unmatched_fraction": null,
+    "observed_colors": null,
+    "minor_swatches": [],
+    "contrasts": [],
+    "delta_e_threshold": 5.0,
+    "created_at": "2026-09-14T07:50:07.033796Z"
+  },
+  "color_policy": "unverified",
+  "warnings": [
+    "Color-unverified: no structured palette intent is bound to this artifact.",
+    "No structured palette intent is recorded for this artifact",
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "color_method": "sRGB to Lab D50; CIEDE2000, ColorAide method=2000",
+  "color_limits": [
+    "Sampled raster evidence, not an exact-pixel, Pantone, or print-proof guarantee.",
+    "At most 16384 original-coordinate samples; small accents may be missed.",
+    "Alpha-zero pixels are excluded; conformance uses alpha >=250 and preserves white.",
+    "Strict evidence needs 128 core samples and at most 10% partial-alpha visible samples.",
+    "Restricted fit requires 99% core coverage within delta-E00 <=5; design colors need 1% share.",
+    "Locks/required colors need 32 matching core samples and 0.5% core share.",
+    "Quantized measured swatches are estimates; conformance uses original sampled colors.",
+    "Color roles, lettering, and placement require visual review; histograms cannot prove them.",
+    "ROI evidence covers only the stated region; opaque full-image evidence includes background.",
+    "Contrast ratios on explicit composited surfaces are guidance, not logo AA certification."
+  ],
+  "lockup_intent": null,
+  "font_reference_usage": "appearance-reference-only",
+  "app_icon": null,
+  "artwork_limitations": null
+}

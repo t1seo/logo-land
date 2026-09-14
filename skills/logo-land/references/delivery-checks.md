@@ -47,6 +47,14 @@ proof of a missing or incorrect visible layout.
 
 For a combination logo, compare the selected artifact's lockup with the actual image: horizontal/stacked arrangement, symbol before/after the text, alignment, clear space and requested typography character. Check the exact English or Hangul string and slogan, including spacing and punctuation. Confirm role placement visually, such as the fixed green in the symbol or white in the lettering. A histogram cannot prove those placements. A requested font family remains a visual reference; generated raster lettering does not identify an installed or licensed font file.
 
+For a wordmark, lettermark or monogram, follow the [lettering checks](lettering.md#inspect-the-lettering).
+Inspect the applicable exact text from the chosen parent's history and latest request,
+not only the initial brief. Check letter identity, counters, spacing, joins, reading
+order and Hangul components. Distinguish a silhouette-based one-color assessment from
+an actually generated and inspected monochrome proof; the former does not authorize
+recoloring the original or claiming a delivered variant. Record any dependence on
+color or sculpted shading, and assess legibility at the intended use size.
+
 ## Color evidence and export policy
 
 Resolve the selected artifact's palette, not the session's active palette or the initial brief. A green original still exports its green intent after a navy child exists. Geometry-only edits inherit the actual parent's palette/lockup. A color edit creates a new palette version and keeps the earlier version intact.

@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-14",
+  "collection": "Lettering & logo refresh",
+  "palette": {
+    "ink": "#17352B",
+    "mint": "#B9F582",
+    "lilac": "#B9A4FF",
+    "paper": "#F7F9F2"
+  },
+  "items": [
+    {
+      "id": "00-logo-land",
+      "brand": "Logo Land",
+      "text": "LOGO LAND",
+      "type": "wordmark",
+      "industry": "conversational logo design toolkit",
+      "audience": "designers and makers",
+      "colors": [
+        "#17352B",
+        "#B9F582",
+        "#B9A4FF"
+      ],
+      "bg": "#17352B",
+      "style": "custom playful geometric lettering",
+      "concept": "The lettering IS the identity. Two exact words arranged as two close-fitting lines: LOGO on top, LAND below. Invent massive friendly architectural letterforms with rounded outer corners and precise open rectangular/circular counters. LOGO in acid mint #B9F582; LAND in pale lilac #B9A4FF. Both lines equal optical width, nearly interlocking but with clear readable separation. A distinctive rectangular cut in the G echoes the L corner. Bright flat fills on deep forest ink #17352B. Beautiful independent studio identity, mature and confident yet playful. Entire composition a compact centered block with 15% safe margins. No separate emblem, no small tagline, no framing shape, no trademark sign. Square canvas. Exact content L O G O then L A N D. No bevels, gradients, textures or shadows."
+    },
+    {
+      "id": "01-luma",
+      "brand": "LUMA",
+      "text": "LUMA",
+      "type": "wordmark",
+      "industry": "creative play and lighting",
+      "audience": "curious families",
+      "colors": [
+        "#F45538",
+        "#F3C745",
+        "#C2ADFF",
+        "#17352B"
+      ],
+      "bg": "#FFF2D3",
+      "style": "playful multicolor custom wordmark",
+      "concept": "A delightful compact word LUMA built from four original huge chunky characterful letterforms. L is tangerine vermilion, U is golden yellow, M is lilac and A is deep green. Exaggerated soft inflated silhouettes, charming alternation of heights and tiny rotations, smart cutout counters, lively snug kerning; every letter unmistakable. One tiny cheeky notch within the A leg is the identifying feature. Flat graphical fills with restrained solid offset ink outline only if it helps, no gradients. No animals, floating shapes or extra icon. Horizontal lettering centered, taking 78% of square width, ample cream background. A premium game-like wordmark, exact text LUMA only."
+    },
+    {
+      "id": "02-loop-lab",
+      "brand": "LOOP LAB",
+      "text": "LL",
+      "type": "monogram",
+      "industry": "creative coding studio",
+      "audience": "creative technologists",
+      "colors": [
+        "#D7FF48",
+        "#25233A"
+      ],
+      "bg": "#25233A",
+      "style": "geometric interlocking monogram",
+      "concept": "Exact initials LL only, fused into one distinctive geometric monogram: two thick L-shaped continuous bands rotated in complementary orientations with a clearly visible woven crossover and a square negative-space window. Still reads as two L letters, not an infinity symbol, chain icon, or abstract loop. Bold acid yellow-green #D7FF48 on deep purple-charcoal #25233A. Confident geometric flat mark, centered, about 62% of square canvas. No full brand name, no caption, no extra symbols, no shading."
+    },
+    {
+      "id": "03-goyo",
+      "brand": "고요",
+      "text": "고요",
+      "type": "combination",
+      "industry": "meditation studio",
+      "audience": "people seeking calm",
+      "colors": [
+        "#235D4C",
+        "#F5EEE1"
+      ],
+      "bg": "#F5EEE1",
+      "style": "calm Korean symbol and lettering",
+      "concept": "A minimal still pebble ripple symbol above exact Korean 고요. Two simple broad soft oval rings subtly offset as a quiet pause, no fine lines. Below, custom balanced rounded Hangul lettering 고요 in medium-heavy weight, unmistakable syllables with open counters. Dark forest green #235D4C on warm ivory #F5EEE1. Stacked centered arrangement, quiet generous space between symbol and text, overall mark 66% canvas width with wide margins. Entirely flat. No romanization, no slogan."
+    },
+    {
+      "id": "04-bread-bloom",
+      "brand": "BREAD & BLOOM",
+      "text": "BREAD & BLOOM",
+      "type": "emblem",
+      "industry": "neighborhood bakery",
+      "audience": "neighborhood food lovers",
+      "colors": [
+        "#7B3249",
+        "#F8DEC2"
+      ],
+      "bg": "#F8DEC2",
+      "style": "modern bakery seal",
+      "concept": "A distinctive bold modern bakery emblem with a scalloped oval seal, large expressive soft-serif BREAD curved across upper portion, one clear ampersand & in middle, BLOOM along bottom. Exact BREAD & BLOOM, no other words. A very simple wheat-sprout carved as negative space at the center beside the ampersand. Berry-brown #7B3249 on pale peach #F8DEC2. Broad strokes, readable from small scale, snug polished composition, no vintage distress texture, no dates, no ribbons, no fine ornamental border. 65% square canvas."
+    },
+    {
+      "id": "05-kite",
+      "brand": "KITE",
+      "text": "",
+      "type": "abstract",
+      "industry": "independent travel planning",
+      "audience": "curious explorers",
+      "colors": [
+        "#E95440",
+        "#FFF0D5"
+      ],
+      "bg": "#FFF0D5",
+      "style": "abstract folded geometry",
+      "concept": "One dynamic abstract mark combining two offset broad folded angular ribbons to imply a rising kite and a path opening toward the sky. Asymmetric, distinctive diagonal central cutout, confident clean silhouettes. Flat vermilion coral #E95440 on soft cream #FFF0D5. Compact diamond-like upward gesture, centered at 62% canvas width. Absolutely no text, no literal string, no bird, no gradient, no shadow."
+    },
+    {
+      "id": "06-miso",
+      "brand": "MISO",
+      "text": "MISO",
+      "type": "mascot",
+      "industry": "cat treats",
+      "audience": "cat owners",
+      "colors": [
+        "#F28343",
+        "#512F27",
+        "#FFF0D8"
+      ],
+      "bg": "#FFF0D8",
+      "style": "friendly compact cat mascot",
+      "concept": "One ultra-simple plump smiling orange cat head with two rounded triangular ears and tiny closed eyes, heavy dark brown contour and one asymmetric cream cheek patch. Beneath it exact MISO in a chunky custom soft rounded wordmark, dark brown with unusually round M shoulders. An original compact cat-treat identity, flat shapes, no body or accessory, no sparkles. Orange #F28343, dark cocoa #512F27 and cream #FFF0D8. Centered stacked composition about 65% square width. No tagline."
+    },
+    {
+      "id": "07-northline",
+      "brand": "NORTHLINE",
+      "text": "NL",
+      "type": "lettermark",
+      "industry": "outdoor running equipment",
+      "audience": "trail runners",
+      "colors": [
+        "#102F29",
+        "#C9E8D1"
+      ],
+      "bg": "#C9E8D1",
+      "style": "minimal architectural lettermark",
+      "concept": "Exact initials NL only. An exceptionally simple original lettermark made from thick dark green strokes: a geometric uppercase N stacked immediately above a clear uppercase L, aligned to one compact vertical axis. Share a precise diagonal terminal cut between N and L; large open negative space and equal heavy stroke weights create distinctive architectural silhouette. Upper N still reads N, lower L still reads L. Strong minimal sportswear identity, no arrows or trademark icons. Dark green #102F29 on mist mint #C9E8D1, centered 55% canvas. Do not render NORTHLINE."
+    },
+    {
+      "id": "08-mulgyeol",
+      "brand": "물결",
+      "text": "물결",
+      "type": "wordmark",
+      "industry": "independent publishing",
+      "audience": "poetry readers",
+      "colors": [
+        "#3D47B8",
+        "#DADBFF"
+      ],
+      "bg": "#DADBFF",
+      "style": "custom flowing Hangul wordmark",
+      "concept": "Exact Korean 물결 only, two correct syllable blocks. A bold contemporary Hangul custom wordmark where broad rounded strokes subtly flow like water. The bottom horizontal strokes have one gentle repeating wave, while the letter construction stays unmistakable: 물 then 결. Indigo ink #3D47B8 on pale lavender #DADBFF. Pleasant compact wide block, smooth geometric counters and intentional rhythm, about 74% square canvas width. No separate wave icon, no English, no slogan, no decorative pseudo-Hangul, flat colors."
+    },
+    {
+      "id": "09-fern",
+      "brand": "FERN",
+      "text": "",
+      "type": "symbol",
+      "industry": "plant care",
+      "audience": "urban gardeners",
+      "colors": [
+        "#214A35",
+        "#D1F28C"
+      ],
+      "bg": "#D1F28C",
+      "style": "organic pictorial brand symbol",
+      "concept": "One simple original fern-leaf pictorial logo, built from a continuous bent stem with three broad rounded leaf pairs that alternate naturally and one folded tip. Soft bulbous friendly silhouette instead of a thin realistic botanical drawing. Deep botanical green #214A35 on fresh pale lime #D1F28C. Centered about 60% canvas with generous empty space, balanced asymmetric structure. No text, no pot, no badge, no drop shadow, flat ink-like fill."
+    },
+    {
+      "id": "10-nova-notes",
+      "brand": "NOVA NOTES",
+      "text": "NOVA NOTES",
+      "type": "combination",
+      "industry": "fast ideas and notes app",
+      "audience": "students and writers",
+      "colors": [
+        "#F4F1E8",
+        "#142E6D",
+        "#F77755"
+      ],
+      "bg": "#142E6D",
+      "style": "kinetic custom wordmark with integrated spark",
+      "concept": "A confident fast forward-slanted uppercase custom wordmark NOVA NOTES on one line, large extra-bold oblique letters, consistent 12-degree lean and tight optical spacing. Distinctive diagonal cut across the V and A crossbar evokes ideas moving forward. A small simple coral four-point spark is integrated into the O counter of NOVA, rather than floating above the design. Exact words NOVA NOTES with a clear space. Off-white #F4F1E8 letters, coral #F77755 tiny accent, rich ultramarine navy #142E6D background. Horizontal composition 86% canvas width, approximately 3:2 canvas; no slogan, no bird or swoosh, no outline, no gradients."
+    },
+    {
+      "id": "11-reading-owl",
+      "brand": "Reading Owl",
+      "text": "",
+      "type": "mascot",
+      "industry": "reading app",
+      "audience": "book lovers",
+      "colors": [
+        "#F6C64E",
+        "#2E376C",
+        "#CCDAB5"
+      ],
+      "bg": "#CCDAB5",
+      "style": "IP character",
+      "icon": {
+        "preset": "ip_mascot",
+        "subject": "a thoughtful round owl with two heavy sleepy eyelids, one tiny beak and broad wing shapes",
+        "placement": "lower_left",
+        "text": null
+      },
+      "concept": "One extremely simple cute round reading owl character. Giant warm yellow body, deep navy heavy eyelids and broad wing shapes, tiny purposeful expression suggesting absorbed concentration. Only warm yellow and deep navy character color families on one solid muted sage background. Lower-left dominant composition: body extends off the left and bottom edges, face fully visible; head tilts subtly as if absorbed in a story. No book, accessory, lettering or scene. Flat rounded heavy forms, extraordinarily simple."
+    },
+    {
+      "id": "12-weather",
+      "brand": "Daybreak",
+      "text": "",
+      "type": "symbol",
+      "industry": "weather app",
+      "audience": "daily commuters",
+      "colors": [
+        "#F4B83F",
+        "#FFF9EB",
+        "#7A97C2"
+      ],
+      "bg": "#7A97C2",
+      "style": "pictogram",
+      "icon": {
+        "preset": "pictogram",
+        "subject": "one warm sun partially tucked behind a soft cloud",
+        "placement": "center",
+        "text": null
+      },
+      "concept": "A beautiful compact weather pictogram: one large buttery golden sun disc half visible behind a broad warm-white cloud with three soft lobes and a level base. A restrained three thick ray construction, clearly attached to visual rhythm, nothing hairline. Clean flat filled shapes, strongly recognizable at 32px. Dusty periwinkle blue complete solid square background. Centered, large, no circle badge or border."
+    },
+    {
+      "id": "13-flow",
+      "brand": "Flow",
+      "text": "",
+      "type": "abstract",
+      "industry": "focus and flow app",
+      "audience": "creative professionals",
+      "colors": [
+        "#FFF7E7",
+        "#E5AAEF",
+        "#633DC6"
+      ],
+      "bg": "#633DC6",
+      "style": "abstract",
+      "icon": {
+        "preset": "abstract",
+        "subject": "two nested curved ribbons forming an open fluid f-like gesture",
+        "placement": "center",
+        "text": null
+      },
+      "concept": "One original coherent abstract flowing gesture: two thick smooth tapered ribbons, cream and blush lilac, nest into an asymmetric open arch with an unmistakable diagonal gap. The ends use the same rounded geometry and the broad internal negative space remains open. Contemporary and lively focus-app symbol. Full solid electric violet square background, flat fills, no literal alphabet glyph, no arrows, dots or faces."
+    },
+    {
+      "id": "14-notes",
+      "brand": "틈",
+      "text": "틈",
+      "type": "monogram",
+      "industry": "quick notes app",
+      "audience": "Korean-speaking writers",
+      "colors": [
+        "#D9ED88",
+        "#1C423B"
+      ],
+      "bg": "#1C423B",
+      "style": "Hangul monogram",
+      "icon": {
+        "preset": "monogram",
+        "subject": "the exact Hangul syllable 틈 with a distinctive open horizontal rhythm",
+        "placement": "center",
+        "text": "틈"
+      },
+      "concept": "A superb graphic single Hangul syllable 틈. Preserve exact Korean construction: ㅌ over ㅡ over ㅁ, tightly combined as one readable syllable block. Thick rounded rectangular strokes, broad open negative spaces; one subtle corner softening makes it approachable. Fresh citron yellow-green on a complete deep teal square background. One centered large glyph, beautifully optically balanced, no other letters, captions or decorative symbols."
+    },
+    {
+      "id": "15-cloud",
+      "brand": "Cloud Pocket",
+      "text": "",
+      "type": "symbol",
+      "industry": "personal cloud storage",
+      "audience": "people organizing files",
+      "colors": [
+        "#DCC9FB",
+        "#7A55B4",
+        "#ECE6FA"
+      ],
+      "bg": "#ECE6FA",
+      "style": "soft 3D",
+      "icon": {
+        "preset": "soft_3d",
+        "subject": "one lavender sculpted cloud with a gentle envelope-like pocket fold",
+        "placement": "center",
+        "text": null
+      },
+      "concept": "One tactile lavender cloud object, three broad soft pillowy lobes and a sculpted envelope-pocket crease in its lower half suggesting a place to safely tuck files. Smooth matte clay surface, near-frontal view, one broad soft light reveals simple volume. Light lavender solid background clearly separate from the darker lilac subject. Rich restrained lavender shading on the subject only, no external cast shadow or floor, no stars, no props, no lettering."
+    },
+    {
+      "id": "16-sprout",
+      "brand": "Sprout",
+      "text": "",
+      "type": "symbol",
+      "industry": "daily habit tracking",
+      "audience": "people building small routines",
+      "colors": [
+        "#C2E58A",
+        "#3D744E",
+        "#F1CBB0",
+        "#754938"
+      ],
+      "bg": "#F1CBB0",
+      "style": "pixel art",
+      "icon": {
+        "preset": "pixel_art",
+        "subject": "a small two-leaf seedling emerging from a chunky terracotta pot",
+        "placement": "center",
+        "text": null
+      },
+      "concept": "One friendly coarse-grid pixel sprite of a two-leaf seedling in a terracotta flowerpot. Fixed consistent square pixel module throughout, short stem with one broad leaf left and another right, pot as large coherent warm brown cluster and one lighter rim. Sage and pale mint leaves, brown pot, one complete solid peach background. Flat hard square edges, no outlines in a different pixel scale, no dithering, no stray pixels, no shading gradients, no extra objects. Centered large sprite."
+    }
+  ]
+}

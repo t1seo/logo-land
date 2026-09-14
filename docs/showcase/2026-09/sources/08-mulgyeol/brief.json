@@ -1,0 +1,30 @@
+{
+  "brand_name": "물결",
+  "exact_text": "물결",
+  "industry": "independent publishing",
+  "audience": "poetry readers",
+  "logo_type": "wordmark",
+  "styles": [
+    "custom flowing Hangul wordmark"
+  ],
+  "palette": [
+    "#3D47B8",
+    "#DADBFF",
+    "Solid background #DADBFF"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

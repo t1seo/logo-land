@@ -1,0 +1,7 @@
+Create one abstract logo for KITE. Industry: independent travel planning. Audience: curious explorers.
+Exact text (copy verbatim, no other words): ''. Exact slogan: ''.
+Styles: abstract folded geometry. Original brief palette context: #E95440, #FFF0D5, Solid background #FFF0D5.
+Avoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.
+Background: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: One dynamic abstract mark combining two offset broad folded angular ribbons to imply a rising kite and a path opening toward the sky. Asymmetric, distinctive diagonal central cutout, confident clean silhouettes. Flat vermilion coral #E95440 on soft cream #FFF0D5. Compact diamond-like upward gesture, centered at 62% canvas width. Absolutely no text, no literal string, no bird, no gradient, no shadow.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..
+Render one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.

@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "id": "refresh-00-logo-land",
+  "revision": 1,
+  "created_at": "2026-09-14T07:37:25.547326Z",
+  "updated_at": "2026-09-14T07:39:10.876081Z",
+  "brief": {
+    "brand_name": "Logo Land",
+    "exact_text": "LOGO LAND",
+    "industry": "conversational logo design toolkit",
+    "audience": "designers and makers",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "custom playful geometric lettering"
+    ],
+    "palette": [
+      "#17352B",
+      "#B9F582",
+      "#B9A4FF",
+      "Solid background #17352B"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one wordmark logo for Logo Land. Industry: conversational logo design toolkit. Audience: designers and makers.\nExact text (copy verbatim, no other words): 'LOGO LAND'. Exact slogan: ''.\nStyles: custom playful geometric lettering. Original brief palette context: #17352B, #B9F582, #B9A4FF, Solid background #17352B.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: The lettering IS the identity. Two exact words arranged as two close-fitting lines: LOGO on top, LAND below. Invent massive friendly architectural letterforms with rounded outer corners and precise open rectangular/circular counters. LOGO in acid mint #B9F582; LAND in pale lilac #B9A4FF. Both lines equal optical width, nearly interlocking but with clear readable separation. A distinctive rectangular cut in the G echoes the L corner. Bright flat fills on deep forest ink #17352B. Beautiful independent studio identity, mature and confident yet playful. Entire composition a compact centered block with 15% safe margins. No separate emblem, no small tagline, no framing shape, no trademark sign. Square canvas. Exact content L O G O then L A N D. No bevels, gradients, textures or shadows.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..\nRender one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.",
+      "parent_id": null,
+      "created_at": "2026-09-14T07:39:10.875624Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

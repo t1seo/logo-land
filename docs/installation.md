@@ -11,8 +11,8 @@ Use a Codex environment with native image generation and editing, Python 3.12+ a
 ## Use the repository directly
 
 ```sh
-git clone https://github.com/t1seo/logo-land.git
-cd logo-land
+git clone https://github.com/t1seo/logopia.git
+cd logopia
 uv sync --locked
 codex
 ```
@@ -38,7 +38,7 @@ This repository contains plugin source; it does not provide a public marketplace
       "name": "logo-land",
       "source": {
         "source": "local",
-        "path": "/absolute/path/to/logo-land"
+        "path": "/absolute/path/to/logopia"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -71,14 +71,14 @@ codex plugin add --help
 
 ## Source, release and installed versions
 
-This checkout's plugin manifest, Python project and locked helper package are **0.6.0 development**. The latest published release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1); v0.4.0 remains an unpublished draft. The commands above use the current checkout, not a promised released 0.6.0 package.
+This checkout's plugin manifest, Python project and locked helper package are **0.7.0**. For the matching release snapshot, use [v0.7.0](https://github.com/t1seo/logopia/releases/tag/v0.7.0), or run `git checkout v0.7.0` after cloning. The plugin name and invocation remain `logo-land` and `$logo-land`; the repository is named `logopia`.
 
-An existing installed cache may contain an older version until refreshed. A local version such as `0.6.0+codex.<timestamp>` identifies a cache refresh, separately from source version `0.6.0` and published release `0.3.1`. After an update and reinstall, start a new conversation to load the changed skill. GitHub source archives are repository snapshots, not plugin installation packages. See [release guidance](releases.md) and the [changelog](../CHANGELOG.md).
+An existing installed cache may contain an older version until refreshed. A local version such as `0.7.0+codex.<timestamp>` identifies a cache refresh, separately from release version `0.7.0`. After an update and reinstall, start a new conversation to load the changed skill. GitHub source archives are repository snapshots, not one-click plugin installers. See [release guidance](releases.md) and the [changelog](../CHANGELOG.md).
 
 ## Project files
 
 Saved projects use `.logo-generator/sessions/<id>/`; default deliveries use `output/logo-generator/<id>/`. These compatibility names remain unchanged from the earlier `logo-generator` name. New conversations use `$logo-land`; existing project folders do not need to be renamed.
 
-For helper commands from another workspace, set `uv run --locked --project /absolute/path/to/logo-land` to the plugin root and the helper's `--workspace` to your project folder. The [project-file guide](../skills/logo-land/references/project-files.md) contains full commands and schema-1 migration/recovery limits. Preserve backups and original PNGs; older v0.3.1 installations are not guaranteed to read schema-2 projects.
+For helper commands from another workspace, set `uv run --locked --project /absolute/path/to/logopia` to the plugin root and the helper's `--workspace` to your project folder. The [project-file guide](../skills/logo-land/references/project-files.md) contains full commands and schema-1 migration/recovery limits. Preserve backups and original PNGs; older v0.3.1 installations are not guaranteed to read schema-2 projects.
 
 [Try the example requests](../README.md#try-it) · [Browse samples](samples/README.md)

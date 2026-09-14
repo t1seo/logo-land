@@ -2,15 +2,69 @@
 
 [English](gallery.md) · [한국어](gallery.ko.md) · [Docs](README.md) · [Logo Land](../README.md)
 
-Browse all sample originals on this page. Click any image to open its actual PNG; individual explanations and available packages are secondary links.
+[**Open the current showcase board →**](../assets/logo-land-showcase.png) · [Individual PNG inventory](showcase/2026-09/README.md)
 
-[8 new originals](#new-samples) · [10 brands](#brands) · [16 app icons](#app-icons) · [8 color cases](#colors) · [Identity and archive](#identity)
+[Current showcase](#showcase) · [Logo Land identity](#identity) · [Earlier outputs](#historical-outputs)
 
-Failed and indeterminate attempts are preserved alongside reviewed results. These are raster PNGs; font names describe appearance. Editable vectors, font files and platform-specific app icon packages are not included.
+<a id="showcase"></a>
 
-<a id="new-samples"></a>
+## September 2026 showcase
 
-## Eight new originals: six directions and two refinements
+Ten fictional brands and six app icon studies, collected on one board. Explore lettering with playful color, sporty movement and geometric structure, alongside Korean names and character-led artwork.
+
+<p align="center">
+  <a href="../assets/logo-land-showcase.png"><img src="../assets/logo-land-showcase.png" width="960" alt="September 2026 Logo Land showcase: ten fictional brands and six app icon studies"></a>
+</p>
+
+The board is a presentation of the collection. Open a PNG below for an individual image, or visit the [download inventory](showcase/2026-09/README.md) and [manifest](showcase/2026-09/manifest.json) for the current files and their source records.
+
+### Ten fictional brands
+
+| Brand | Current PNG |
+|---|---|
+| LUMA | [Open](showcase/2026-09/images/01-luma.png) |
+| LOOP LAB | [Open](showcase/2026-09/images/02-loop-lab.png) |
+| 고요 | [Open](showcase/2026-09/images/03-goyo.png) |
+| BREAD & BLOOM | [Open](showcase/2026-09/images/04-bread-bloom.png) |
+| KITE | [Open](showcase/2026-09/images/05-kite.png) |
+| MISO | [Open](showcase/2026-09/images/06-miso.png) |
+| NORTHLINE / NL | [Open](showcase/2026-09/images/07-northline.png) |
+| 물결 | [Open](showcase/2026-09/images/08-mulgyeol.png) |
+| FERN | [Open](showcase/2026-09/images/09-fern.png) |
+| NOVA NOTES | [Open](showcase/2026-09/images/10-nova-notes.png) |
+
+### Six app icon studies
+
+| Study | Direction | Current PNG |
+|---|---|---|
+| Reading owl | IP character | [Open](showcase/2026-09/images/11-reading-owl.png) |
+| Daybreak · weather | Pictogram | [Open](showcase/2026-09/images/12-weather.png) |
+| Flow | Abstract | [Open](showcase/2026-09/images/13-flow.png) |
+| 틈 · notes | Monogram | [Open](showcase/2026-09/images/14-notes.png) |
+| Cloud Pocket | Soft 3D | [Open](showcase/2026-09/images/15-cloud.png) |
+| Sprout | Pixel art | [Open](showcase/2026-09/images/16-sprout.png) |
+
+These are raster PNG studies. Exact lettering, dimensions, background and color appearance should be checked in the individual image. The showcase does not include editable vectors, font files or platform-ready app icon packages.
+
+<a id="identity"></a><a id="current-logo-land-identity"></a>
+
+## Logo Land identity
+
+Custom chunky **LOGO LAND** lettering, stacked in two lines: mint above lilac on deep ink. [Open the master PNG](../assets/logo-land-wordmark.png) · [Identity and palette](brand/README.md)
+
+<a id="historical-outputs"></a>
+
+## Earlier outputs — preserved archive
+
+The images below belong to earlier collections and experiments. Their original files, prompts, observations and packages remain attached to those earlier outputs. They are not the source records or review results for the September 2026 showcase.
+
+[Comparison study](#new-samples) · [10 earlier brands](#brands) · [16 earlier app icons](#app-icons) · [8 color cases](#colors) · [Earlier identities](#historical-identity)
+
+Failed and indeterminate attempts remain alongside reviewed results. The descriptions retain their recorded limitations.
+
+<a id="new-samples"></a><a id="eight-new-originals-six-directions-and-two-refinements"></a>
+
+## Earlier comparison study: six directions and two refinements
 
 Six initial originals plus two refinements based on the Relay and Sprig originals. These are creative comparisons, with no candidate selected or approved for delivery. The descriptions summarize the generator’s observations of originals and small sizes; they do not establish improvement across all results.
 
@@ -90,11 +144,11 @@ An open meeting-space symbol accompanies the exact COMMON wordmark. The full loc
 
 [Saved sources and keep/change notes](gallery-workflow/samples.json) retain each candidate’s record.
 
-<a id="brands"></a>
+<a id="brands"></a><a id="ten-brand-logos"></a>
 
-## Ten brand logos
+## Earlier ten brand logos
 
-Ten fictional brands, all with opaque original backgrounds.
+The earlier ten fictional brands, all with opaque original backgrounds. These are separate from the September 2026 showcase above; the linked briefs and packages describe these earlier images.
 
 ### LUMA · Wordmark
 
@@ -176,9 +230,9 @@ Ten fictional brands, all with opaque original backgrounds.
 
 [Request and downloads](samples/items/10-nova-notes/README.md)
 
-<a id="app-icons"></a>
+<a id="app-icons"></a><a id="sixteen-app-icon-originals"></a>
 
-## Sixteen app icon originals
+## Earlier sixteen app icon originals
 
 Six IP candidates and five original/revised direction pairs. A revised direction is not a claim of improvement in every respect.
 
@@ -266,9 +320,9 @@ Six IP candidates and five original/revised direction pairs. A revised direction
 
 [Request and original details](app-icons/samples/pixel-art.md)
 
-<a id="colors"></a>
+<a id="colors"></a><a id="colors-and-lettering-eight-cases"></a>
 
-## Colors and lettering: eight cases
+## Earlier colors and lettering: eight cases
 
 All 17 stored originals across seven projects are shown. GROVE original/warmer count as two cases; the 밤결 parent appears again for the white comparison. Images follow each stated version sequence.
 
@@ -366,17 +420,17 @@ parent-v1 → white-v1 → white-v2 → white-v3. The parent is the existing 밤
 
 [Case details and available files](colors/projects/white-bamgyeol/README.md)
 
-<a id="identity"></a>
+<a id="historical-identity"></a><a id="current-identity-and-archived-originals"></a>
 
-## Current identity and archived originals
+## Earlier identities — archived originals
 
-### Current Logo Land identity
+### Previous open-frame identity
 
 <p>
-<a href="../assets/logo-land-studio.png"><img src="../assets/logo-land-studio.png" width="240" alt="Current Logo Land open-frame identity"></a>
+<a href="../assets/logo-land-studio.png"><img src="../assets/logo-land-studio.png" width="240" alt="Archived Logo Land open-frame identity"></a>
 </p>
 
-The current identity has an opaque ivory background. See [identity details and downloads](brand/README.md). For a transparent example, see [GROVE a-v1 above](#colors-grove) and [background guidance](samples/transparency.md).
+The previous open-frame design has an opaque ivory background. Its [historical brand guide](brand/2026-identity/delivery/brand-guide.md) describes that image, not the current lettering master. See [current identity and downloads](brand/README.md). For a transparent example, see [GROVE a-v1 above](#colors-grove) and [background guidance](samples/transparency.md).
 
 ### Archived earlier identity · opaque original → transparent revision
 
@@ -391,7 +445,7 @@ These belong to the earlier identity, not the current brand. The transparent rev
 
 Compare candidates across projects in app-home, website-header and 16px previews. Retain each source with keep/change notes, then refine the chosen original. Copying notes does not select a candidate or approve delivery. Contexts are illustrative layouts, not platform-specific files.
 
-[New candidate comparison HTML: download/open locally](gallery-workflow/comparison/index.html)
+[Earlier candidate comparison HTML: download/open locally](gallery-workflow/comparison/index.html)
 
 GitHub displays the images in this Markdown gallery directly. For interactive HTML, download the repository and open the file locally. [App icon comparison HTML: download/open locally](app-icons-quality-v1/index.html) · [Color comparison HTML: download/open locally](colors/index.html)
 

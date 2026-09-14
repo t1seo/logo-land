@@ -1,0 +1,7 @@
+Create one symbol logo for FERN. Industry: plant care. Audience: urban gardeners.
+Exact text (copy verbatim, no other words): ''. Exact slogan: ''.
+Styles: organic pictorial brand symbol. Original brief palette context: #214A35, #D1F28C, Solid background #D1F28C.
+Avoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.
+Background: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: One simple original fern-leaf pictorial logo, built from a continuous bent stem with three broad rounded leaf pairs that alternate naturally and one folded tip. Soft bulbous friendly silhouette instead of a thin realistic botanical drawing. Deep botanical green #214A35 on fresh pale lime #D1F28C. Centered about 60% canvas with generous empty space, balanced asymmetric structure. No text, no pot, no badge, no drop shadow, flat ink-like fill.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..
+Render one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.

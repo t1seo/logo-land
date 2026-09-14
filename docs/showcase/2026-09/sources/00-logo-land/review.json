@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex visual inspection, native original and 240px browser preview",
+  "notes": "The exact words LOGO and LAND read clearly as two stacked lines. Lime-mint upper lettering and lilac lower lettering have open counters, consistent bold weight and wide outer margins on an opaque dark-green square. At 240px the text remains readable. This is a new design, so there is no parent to preserve. Generated colors have slight raster texture and variation; no exact-HEX or strict palette claim is made. The brand name refers to this project; the generic fictional-demo wording in the saved generation brief was used for the sample collection and does not rename the project.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

@@ -1,0 +1,38 @@
+{
+  "brand_name": "Sprout",
+  "exact_text": "",
+  "industry": "daily habit tracking",
+  "audience": "people building small routines",
+  "logo_type": "symbol",
+  "styles": [
+    "pixel art"
+  ],
+  "palette": [
+    "#C2E58A",
+    "#3D744E",
+    "#F1CBB0",
+    "#754938",
+    "Solid background #F1CBB0"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ],
+  "app_icon": {
+    "preset": "pixel_art",
+    "subject": "a small two-leaf seedling emerging from a chunky terracotta pot",
+    "placement": "center",
+    "text": null
+  }
+}

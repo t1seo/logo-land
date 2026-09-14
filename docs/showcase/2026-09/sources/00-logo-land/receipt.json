@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-00-logo-land",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-cef3f2e6-69a6-4610-bc59-9c6de6ff70c1.png",
+  "image": "../../images/00-logo-land.png",
+  "sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "3ff73e4891ce000c75c6c2e7294f05776736039aa88e2faf9a8105847f4d741b"
+}

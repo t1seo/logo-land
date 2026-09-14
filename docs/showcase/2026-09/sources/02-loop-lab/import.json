@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "refresh-02-loop-lab",
+  "revision": 1,
+  "created_at": "2026-09-14T07:37:27.797566Z",
+  "updated_at": "2026-09-14T07:40:24.357433Z",
+  "brief": {
+    "brand_name": "LOOP LAB",
+    "exact_text": "LL",
+    "industry": "creative coding studio",
+    "audience": "creative technologists",
+    "slogan": "",
+    "logo_type": "monogram",
+    "styles": [
+      "geometric interlocking monogram"
+    ],
+    "palette": [
+      "#D7FF48",
+      "#25233A",
+      "Solid background #25233A"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "165aba66fc3f983f6ed0dca6c6f11af18ed762bcf187abcf2c106e6c81fd590a",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one monogram logo for LOOP LAB. Industry: creative coding studio. Audience: creative technologists.\nExact text (copy verbatim, no other words): 'LL'. Exact slogan: ''.\nStyles: geometric interlocking monogram. Original brief palette context: #D7FF48, #25233A, Solid background #25233A.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Exact initials LL only, fused into one distinctive geometric monogram: two thick L-shaped continuous bands rotated in complementary orientations with a clearly visible woven crossover and a square negative-space window. Still reads as two L letters, not an infinity symbol, chain icon, or abstract loop. Bold acid yellow-green #D7FF48 on deep purple-charcoal #25233A. Confident geometric flat mark, centered, about 62% of square canvas. No full brand name, no caption, no extra symbols, no shading.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..\nRender one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.",
+      "parent_id": null,
+      "created_at": "2026-09-14T07:40:24.356856Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

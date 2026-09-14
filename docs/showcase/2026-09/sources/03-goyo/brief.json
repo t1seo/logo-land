@@ -1,0 +1,30 @@
+{
+  "brand_name": "고요",
+  "exact_text": "고요",
+  "industry": "meditation studio",
+  "audience": "people seeking calm",
+  "logo_type": "combination",
+  "styles": [
+    "calm Korean symbol and lettering"
+  ],
+  "palette": [
+    "#235D4C",
+    "#F5EEE1",
+    "Solid background #F5EEE1"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

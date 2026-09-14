@@ -1,0 +1,178 @@
+{
+  "browser": "152.0.7977.83",
+  "desktop_viewport": 1600,
+  "device_scale_factor": 1.5,
+  "images": [
+    {
+      "src": "images/01-luma.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/10-nova-notes.png",
+      "width": 1536,
+      "height": 1024,
+      "loaded": true
+    },
+    {
+      "src": "images/07-northline.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/08-mulgyeol.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/02-loop-lab.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/03-goyo.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/04-bread-bloom.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/06-miso.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/05-kite.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/09-fern.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/11-reading-owl.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/12-weather.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/13-flow.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/14-notes.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/15-cloud.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    },
+    {
+      "src": "images/16-sprout.png",
+      "width": 1254,
+      "height": 1254,
+      "loaded": true
+    }
+  ],
+  "http": [
+    {
+      "path": "showcase/2026-09/images/01-luma.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/10-nova-notes.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/07-northline.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/08-mulgyeol.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/02-loop-lab.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/03-goyo.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/04-bread-bloom.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/06-miso.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/05-kite.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/09-fern.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/11-reading-owl.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/12-weather.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/13-flow.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/14-notes.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/15-cloud.png",
+      "status": 200
+    },
+    {
+      "path": "showcase/2026-09/images/16-sprout.png",
+      "status": 200
+    }
+  ],
+  "original_link_navigation": true,
+  "mobile": {
+    "width": 390,
+    "no_horizontal_overflow": true,
+    "images": 16
+  },
+  "page_errors": [],
+  "board": "assets/logo-land-showcase.png",
+  "method": "Chromium screenshot of HTML layout using the unchanged original PNGs; no logo redrawing or recoloring."
+}

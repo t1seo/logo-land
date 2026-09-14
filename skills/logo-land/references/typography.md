@@ -2,6 +2,12 @@
 
 Read this for combination marks, wordmarks, exact lettering or changes to typeface appearance. These are native raster-generation instructions; a saved font name is only a requested visual reference. A generated image does not prove that the named font file was used, licensed, embedded or made editable.
 
+For lettering-first construction, natural request routing and the distinction between
+readable lettermarks and integrated monograms, read [lettering.md](lettering.md).
+Store letter shape and spacing decisions in `styles` and `concept`, not a new preset
+or a fabricated symbol/text lockup. The layouts below arrange a separate symbol with
+text; stacked letters alone remain a lettering-only arrangement.
+
 ## Choose the actual logo type
 
 The existing `logo_type=combination` means a symbol plus the requested text in one logo. Make its arrangement explicit. A `wordmark` contains the lettering itself without an unsolicited icon. An icon-only variant omits text deliberately; it is not a complete combination mark, and cannot satisfy a request that requires a name or slogan. Record a deliberately text-free brief with empty `exact_text`, or record a variant's actual omission in its final prompt and provenance; do not imply the missing words passed exact-text review.
@@ -36,6 +42,12 @@ Keep `exact_text` and `slogan` as separate source strings, preserving every char
 Include symbol subject, layout/position, relative symbol-to-text size, text alignment, exact brand string, exact slogan when supplied, typeface appearance, palette roles and background. Use quotation-delimited verbatim text, such as brand `"달빛 빵집"` and slogan `"오늘도, 따뜻하게!"`. Never turn an example into the user's brand.
 
 For an edit, inspect and supply the exact selected image. Omitted lockup intent inherits the parent's saved intent; an explicit override replaces it for the new child. New generations may use the brief's lockup. A legacy parent's unknown intent stays unknown unless supplied; do not invent structured historical typography from appearance alone. Save the effective lockup returned by the helper and use it consistently at prompt/import.
+
+If the chosen parent already contains revised lettering, preserve that visible text
+unless the latest request replaces it. The initial brief's strings and logo type are
+historical context; do not restore them during a color or geometry edit. Quote an
+explicit replacement string in `changes` and save the final submitted prompt so the
+next review can identify the applicable text without rewriting the original brief.
 
 For “make it stacked,” change layout and only the necessary arrangement while preserving symbol identity, exact lettering/slogan, palette, typeface appearance and requested background. For “rounder lettering,” change the typography appearance while keeping layout/position and other identity features. Geometry-only and color-only edits retain the parent's lockup. Neither a newly active palette nor the original brief should reset a parent's revised typography.
 

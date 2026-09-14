@@ -1,0 +1,107 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "6207718dbdf58989b03ddc29247713aa8ce97c1ff4a24f50738158a5d31fe458",
+      "links": 31,
+      "anchors": 22
+    },
+    {
+      "path": "README.ko.md",
+      "sha256": "8e3538a25da9cdf27f0e0d80f926fb020830f7498778a1a4ba11e05547ef2b69",
+      "links": 31,
+      "anchors": 22
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "f1aa953bb92311002e1902691a8be2c946158442906621d28fb5f08405619b06",
+      "links": 27,
+      "anchors": 6
+    },
+    {
+      "path": "docs/README.ko.md",
+      "sha256": "86dd33bd4598712b322c913324bea1236d01f0e1eba8ec5724ce5ec2833225d1",
+      "links": 27,
+      "anchors": 6
+    },
+    {
+      "path": "docs/gallery.md",
+      "sha256": "ae31f642915bc6694886cf75ae712d849273aecc102016359e357c5bfa5354e8",
+      "links": 194,
+      "anchors": 64
+    },
+    {
+      "path": "docs/gallery.ko.md",
+      "sha256": "b99df400d35aff93f3cfada30535b0bf00e2055c63b8c51c4e94475fefd2b242",
+      "links": 194,
+      "anchors": 64
+    },
+    {
+      "path": "docs/samples/README.md",
+      "sha256": "ec6af5bf0667170856d6a936b9969ffe48be0149096da4f3bb486f95cc3bf442",
+      "links": 35,
+      "anchors": 5
+    },
+    {
+      "path": "docs/samples/README.ko.md",
+      "sha256": "dbc5e9058a3157f13ed989e47509b24cadd427ec2c43a48e0c66ad6c68584396",
+      "links": 35,
+      "anchors": 5
+    },
+    {
+      "path": "docs/brand/README.md",
+      "sha256": "362006b8397186b96c1e84aada7cc0e39ec76f4beb34eb2b61bc10c6ce8e59c0",
+      "links": 17,
+      "anchors": 6
+    },
+    {
+      "path": "docs/brand/README.ko.md",
+      "sha256": "65aa06e550bf5e31ce0ba50214d0a4804130b69c82421f2f750f0e106458afad",
+      "links": 17,
+      "anchors": 6
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "f6badd8569efb8d2359b3538106337cda80f2913bda341e1923a160bfd6c6769",
+      "links": 13,
+      "anchors": 15
+    }
+  ],
+  "missing_files": [],
+  "missing_fragments": [],
+  "lost_historical_anchors": [],
+  "duplicate_ids": [],
+  "readmes": {
+    "README.md": {
+      "local_images": [
+        "assets/logo-land-wordmark.png",
+        "assets/logo-land-showcase.png"
+      ],
+      "badge_count": 3,
+      "image_alt_present": true,
+      "correct_repository": true,
+      "lettering_guidance_linked": true,
+      "historical_assets_inline": false
+    },
+    "README.ko.md": {
+      "local_images": [
+        "assets/logo-land-wordmark.png",
+        "assets/logo-land-showcase.png"
+      ],
+      "badge_count": 3,
+      "image_alt_present": true,
+      "correct_repository": true,
+      "lettering_guidance_linked": true,
+      "historical_assets_inline": false
+    }
+  },
+  "external_urls": [
+    "https://github.com/s1dashu/ip-as-logo-skill",
+    "https://github.com/t1seo/logopia/issues",
+    "https://github.com/t1seo/logopia/releases",
+    "https://github.com/t1seo/logopia/releases/tag/v0.7.0",
+    "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+    "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+    "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B"
+  ]
+}

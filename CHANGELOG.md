@@ -1,10 +1,21 @@
 # Changelog
 
-Logo Land's plugin and local helper share one release version. Tagged releases and their notes are available on [GitHub Releases](https://github.com/t1seo/logo-land/releases). See the [release guide](docs/releases.md) for versioning and publication steps.
+Logo Land's plugin and local helper share one release version. Tagged releases and their notes are available on [GitHub Releases](https://github.com/t1seo/logopia/releases). See the [release guide](docs/releases.md) for versioning and publication steps.
+
+## 0.7.0 — 2026-09-14
+
+Lettering and showcase refresh.
+
+- Added lettering-first guidance for playful multicolor wordmarks, kinetic/sporty wordmarks, geometric lettermarks and integrated monograms, using the existing logo forms and saved creative intent.
+- Made exact Korean/Latin spelling, letter construction and the exclusion of unsolicited icons explicit in example requests and review guidance.
+- Rebuilt both READMEs around the stacked LOGO LAND lettering master, one consolidated showcase board and three purposeful badges in the ink, mint, lilac and paper palette.
+- Added the [September 2026 showcase](docs/showcase/2026-09/README.md) for ten newly generated fictional brand samples and six app icon studies, with separate PNG links and collection records.
+- Reorganized bilingual documentation, sample indexes and identity guidance around the current collection while retaining earlier images, deep links and their historical findings.
+- Kept raster, native-image-tool, font and platform limitations explicit; the refresh does not introduce a new lettering API, preset or session schema.
 
 ## 0.6.0 — Unreleased
 
-Prepared on 2026-09-13 as the comparison and focused revision development update. Source metadata is 0.6.0; the published release remains v0.3.1. Earlier unreleased drafts and their historical color-gate failures remain unchanged.
+Prepared on 2026-09-13 as the comparison and focused revision development update. At that checkpoint source metadata was 0.6.0 and the published release was v0.3.1; this draft was not published separately. Earlier unreleased drafts and their historical color-gate failures remain unchanged.
 
 - Added `compare-gallery` to compare explicit candidates across saved projects, retaining exact original PNGs, prompts, source identities and parent lineage in a portable gallery.
 - Carry selection reasons, features to preserve, requested changes and observations into comparison notes and focused revisions. App and web-header contexts are illustrative previews, not platform packages.
@@ -43,7 +54,7 @@ See the [app icon contract](plans/logo-land-app-icons.md) and [documentation ver
 
 ## 0.4.0 — Unreleased
 
-Prepared on 2026-09-13. Publication is withheld because the required restricted-color and white-transparent native samples did not pass after the bounded repair attempts. At that checkpoint source and personal development versions were 0.4.0; the published release was 0.3.1. This historical draft remains unpublished as development continues at 0.6.0.
+Prepared on 2026-09-13. Publication is withheld because the required restricted-color and white-transparent native samples did not pass after the bounded repair attempts. At that checkpoint source and personal development versions were 0.4.0; the published release was 0.3.1. This historical draft remained unpublished as subsequent development continued at 0.6.0.
 
 ### Added
 

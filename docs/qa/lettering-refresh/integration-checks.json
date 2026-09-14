@@ -1,0 +1,234 @@
+{
+  "date": "2026-09-14",
+  "source": "coordinator final integration inspection",
+  "checked_markdown_files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "f6badd8569efb8d2359b3538106337cda80f2913bda341e1923a160bfd6c6769",
+      "local_links": 12
+    },
+    {
+      "path": "README.ko.md",
+      "sha256": "8e3538a25da9cdf27f0e0d80f926fb020830f7498778a1a4ba11e05547ef2b69",
+      "local_links": 24
+    },
+    {
+      "path": "README.md",
+      "sha256": "6207718dbdf58989b03ddc29247713aa8ce97c1ff4a24f50738158a5d31fe458",
+      "local_links": 24
+    },
+    {
+      "path": "docs/README.ko.md",
+      "sha256": "86dd33bd4598712b322c913324bea1236d01f0e1eba8ec5724ce5ec2833225d1",
+      "local_links": 26
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "f1aa953bb92311002e1902691a8be2c946158442906621d28fb5f08405619b06",
+      "local_links": 26
+    },
+    {
+      "path": "docs/brand/2026-lettering/delivery/brand-guide.md",
+      "sha256": "097db8eb8b8c2b30d97af4133d859ddd4a65e2048476f02c2faaf96eddc0308f",
+      "local_links": 0
+    },
+    {
+      "path": "docs/brand/README.ko.md",
+      "sha256": "9f74eb468df9fdf840d2b590e62e99a9646c9b74cf868735476987f413264796",
+      "local_links": 19
+    },
+    {
+      "path": "docs/brand/README.md",
+      "sha256": "aaa05aaf6e23491a3cfe7490e342b4cbe069d78cdd56d8c9dc204d0e25e2919a",
+      "local_links": 19
+    },
+    {
+      "path": "docs/gallery.ko.md",
+      "sha256": "b99df400d35aff93f3cfada30535b0bf00e2055c63b8c51c4e94475fefd2b242",
+      "local_links": 193
+    },
+    {
+      "path": "docs/gallery.md",
+      "sha256": "ae31f642915bc6694886cf75ae712d849273aecc102016359e357c5bfa5354e8",
+      "local_links": 193
+    },
+    {
+      "path": "docs/installation.ko.md",
+      "sha256": "22bf4b4b8fc2d6daf8b60225eab271795873879ffbfa7f317e77efdad535ddbe",
+      "local_links": 10
+    },
+    {
+      "path": "docs/installation.md",
+      "sha256": "fa0f6d6db49ee0503e8709ff13801feda4ec83edc2e5bcb0f77c723af95d4e65",
+      "local_links": 10
+    },
+    {
+      "path": "docs/qa/lettering-refresh/core-report.md",
+      "sha256": "b5379a8f1c303ce8e53e6cd6df2db5004284f1a301c2efce4d596f6254ed2fdb",
+      "local_links": 0
+    },
+    {
+      "path": "docs/qa/lettering-refresh/docs-report.md",
+      "sha256": "964aed6d1a68ffb4f9f8c8c0541b212484b28b83fe352ec78dd764dfbaf2cf5d",
+      "local_links": 4
+    },
+    {
+      "path": "docs/qa/lettering-refresh/independent-review.md",
+      "sha256": "caf38babb9e4092af5974cb0c3f594a5bbfb88d83345bd2da62e12002374928e",
+      "local_links": 31
+    },
+    {
+      "path": "docs/qa/lettering-refresh/release-notes.md",
+      "sha256": "fced449ef36ba91f163d3d3c6a9cedced8fdd028dcd1c6fd9ed3261a64c91228",
+      "local_links": 0
+    },
+    {
+      "path": "docs/qa/lettering-refresh/verification.md",
+      "sha256": "014b172fe6924c148f102056536908b34d3b166b9a0da90732dc012ea0ea3e02",
+      "local_links": 22
+    },
+    {
+      "path": "docs/releases.md",
+      "sha256": "f357f4780e9b5f7017c29f5d6559977c310b04317ab7ee1a1104c5501643f594",
+      "local_links": 9
+    },
+    {
+      "path": "docs/samples/README.ko.md",
+      "sha256": "dbc5e9058a3157f13ed989e47509b24cadd427ec2c43a48e0c66ad6c68584396",
+      "local_links": 35
+    },
+    {
+      "path": "docs/samples/README.md",
+      "sha256": "ec6af5bf0667170856d6a936b9969ffe48be0149096da4f3bb486f95cc3bf442",
+      "local_links": 35
+    },
+    {
+      "path": "docs/showcase/2026-09/README.ko.md",
+      "sha256": "49928480e787198e92f98e9e5934f5e790551b9d7f7319104cf8303b54dcd0ce",
+      "local_links": 63
+    },
+    {
+      "path": "docs/showcase/2026-09/README.md",
+      "sha256": "124cd90425b3cfba1003fc0d63c6dc48490379f95993e98bb70e03d56fbfeba5",
+      "local_links": 64
+    },
+    {
+      "path": "skills/logo-land/SKILL.md",
+      "sha256": "a52f0001f82e8bab3d13f72984642e4218a712f158afdf838e300ecbfd422762",
+      "local_links": 16
+    },
+    {
+      "path": "skills/logo-land/references/delivery-checks.md",
+      "sha256": "8ddfb57b7e07098c6865190b2f8cbdd41ff83c92d94e451bc7405aab0b827206",
+      "local_links": 5
+    },
+    {
+      "path": "skills/logo-land/references/lettering.md",
+      "sha256": "4b78269ccc8a40ceae71f7d9429f55b12ad8e5e931a8dd780c883a7c99500d63",
+      "local_links": 3
+    },
+    {
+      "path": "skills/logo-land/references/logo-directions.md",
+      "sha256": "9918e8055e1b0f0a0ecea31c9ff42e9772f4b6d5980fc3f4def68a176b8afe34",
+      "local_links": 4
+    },
+    {
+      "path": "skills/logo-land/references/typography.md",
+      "sha256": "b4d472f47fb71bc8f4e6f1d2715bf77588b69c4a9c91e46aa31ff6ea8d337470",
+      "local_links": 2
+    }
+  ],
+  "local_links_checked": 849,
+  "missing": [],
+  "selected_artworks": [
+    {
+      "id": "00-logo-land",
+      "sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "01-luma",
+      "sha256": "da6073476b84145cec0d518282bb63fda2a2a88af91f119de693640fad56ff32",
+      "artifact_id": "a-v2"
+    },
+    {
+      "id": "02-loop-lab",
+      "sha256": "165aba66fc3f983f6ed0dca6c6f11af18ed762bcf187abcf2c106e6c81fd590a",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "03-goyo",
+      "sha256": "282cc82fecb919fbcb8fe433291f0e98699007080828f8a6729dc5f75eae3b9b",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "04-bread-bloom",
+      "sha256": "d7295087b1ff5e18437455e4c882b3ffed0c2709bb65d83836ffce10a10fa83a",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "05-kite",
+      "sha256": "042e998788abb771bffa06cfa585517b4fefac66dfbd0a2c9b95b07361ec2369",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "06-miso",
+      "sha256": "84645e5de116b9cb1287cca1f94b2f67eb3df3e7da82bed156c97ec49fbadbc9",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "07-northline",
+      "sha256": "41cb662bca8de319d5fe05d404ba1e94711cb9c43b8612f60e50ccf5be78c451",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "08-mulgyeol",
+      "sha256": "7a86929630223ce0c79c4f3e965d4abab11f097a4c890ff6f783bbcb8292a864",
+      "artifact_id": "a-v2"
+    },
+    {
+      "id": "09-fern",
+      "sha256": "80e320200f8d3632582c3abb2fa374c578a09f57c05741388a54d5c75d49b90d",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "10-nova-notes",
+      "sha256": "6a60ef795f62bb39274d96757c9ff68b340cd142efb2d7e963f3a4b090c7cf72",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "11-reading-owl",
+      "sha256": "0f3b73be47c1322d0cedf0bfe39452a0c79dc0af452a8b50969cd8979cd54005",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "12-weather",
+      "sha256": "f97386ee67dd50130c3bc24dcc364187953df860ba186403d07eaf5879d14cca",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "13-flow",
+      "sha256": "d9a3059986a2ddf301343ada7e91950e49fa10d6dbcd142299ff78b46da5a5aa",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "14-notes",
+      "sha256": "44c3b2de6fe2ead4a3be4dbea8c53e3a67e6f74be8eeacaf1fcfe567f46e045c",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "15-cloud",
+      "sha256": "b0cc5a29c73509c47e4960c0fb609680d30571d2854d0019fcb4b9ffc1116799",
+      "artifact_id": "a-v1"
+    },
+    {
+      "id": "16-sprout",
+      "sha256": "6b7adbefe43ae299e8e4ca4ff7a98022e202eeb7982ecf4f15d69ebc5f9786d4",
+      "artifact_id": "a-v1"
+    }
+  ],
+  "all_native_receipts_checked": 19,
+  "brand_delivery_byte_identity": true,
+  "aligned_version": "0.7.0",
+  "source_dependency_upgrades": false
+}

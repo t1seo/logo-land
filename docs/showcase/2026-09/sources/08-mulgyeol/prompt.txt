@@ -1,0 +1,7 @@
+Create one wordmark logo for 물결. Industry: independent publishing. Audience: poetry readers.
+Exact text (copy verbatim, no other words): '물결'. Exact slogan: ''.
+Styles: custom flowing Hangul wordmark. Original brief palette context: #3D47B8, #DADBFF, Solid background #DADBFF.
+Avoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.
+Background: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: Exact Korean 물결 only, two correct syllable blocks. A bold contemporary Hangul custom wordmark where broad rounded strokes subtly flow like water. The bottom horizontal strokes have one gentle repeating wave, while the letter construction stays unmistakable: 물 then 결. Indigo ink #3D47B8 on pale lavender #DADBFF. Pleasant compact wide block, smooth geometric counters and intentional rhythm, about 74% square canvas width. No separate wave icon, no English, no slogan, no decorative pseudo-Hangul, flat colors.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..
+Render one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.

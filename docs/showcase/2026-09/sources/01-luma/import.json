@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "id": "refresh-01-luma",
+  "revision": 1,
+  "created_at": "2026-09-14T07:37:26.834827Z",
+  "updated_at": "2026-09-14T07:40:23.597013Z",
+  "brief": {
+    "brand_name": "LUMA",
+    "exact_text": "LUMA",
+    "industry": "creative play and lighting",
+    "audience": "curious families",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "playful multicolor custom wordmark"
+    ],
+    "palette": [
+      "#F45538",
+      "#F3C745",
+      "#C2ADFF",
+      "#17352B",
+      "Solid background #FFF2D3"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "a0f3c32fca0c7e3f1b503ad51ff6740e4d225a5c9d3d3aee13e33d019542a8a4",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "transparent_pixels": 1570310,
+        "visible_pixels": 281546
+      },
+      "prompt": "Create one wordmark logo for LUMA. Industry: creative play and lighting. Audience: curious families.\nExact text (copy verbatim, no other words): 'LUMA'. Exact slogan: ''.\nStyles: playful multicolor custom wordmark. Original brief palette context: #F45538, #F3C745, #C2ADFF, #17352B, Solid background #FFF2D3.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: A delightful compact word LUMA built from four original huge chunky characterful letterforms. L is tangerine vermilion, U is golden yellow, M is lilac and A is deep green. Exaggerated soft inflated silhouettes, charming alternation of heights and tiny rotations, smart cutout counters, lively snug kerning; every letter unmistakable. One tiny cheeky notch within the A leg is the identifying feature. Flat graphical fills with restrained solid offset ink outline only if it helps, no gradients. No animals, floating shapes or extra icon. Horizontal lettering centered, taking 78% of square width, ample cream background. A premium game-like wordmark, exact text LUMA only.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..\nRender one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.",
+      "parent_id": null,
+      "created_at": "2026-09-14T07:40:23.596184Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

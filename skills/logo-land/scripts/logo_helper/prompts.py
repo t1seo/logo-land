@@ -9,6 +9,7 @@ from pydantic import Field
 from logo_helper.app_icon_models import omit_absent
 from logo_helper.app_icon_prompts import build_app_icon_prompt
 from logo_helper.intent import resolve_intent
+from logo_helper.logo_prompts import logo_construction
 from logo_helper.models import (
     AppIconIntent,
     ArtifactId,
@@ -87,11 +88,32 @@ def build_prompt(  # noqa: PLR0913 - Shared explicit intent options mirror the C
     background_label = (
         "Initial brief background (historical intent)" if parent_id is not None else "Background"
     )
+    # A resolved symbol/text layout is stronger evidence than an original type label.
+    # Parent edits never receive fresh type defaults: their visible type may have changed.
+    logo_type = "combination" if intent.lockup is not None else brief.logo_type
+    subject = (
+        (
+            f"Original brief logo type (historical intent): {brief.logo_type}. "
+            f"Original brand context: {brief.brand_name}. "
+        )
+        if parent_id is not None
+        else f"Create one {logo_type} logo for {brief.brand_name}. "
+    )
+    lettering = (
+        (
+            f"Initial brief exact text (historical intent): {brief.exact_text!r}. "
+            f"Initial brief slogan (historical intent): {brief.slogan!r}.\n"
+        )
+        if parent_id is not None
+        else (
+            f"Exact text (copy verbatim, no other words): {brief.exact_text!r}. "
+            f"Exact slogan: {brief.slogan!r}.\n"
+            "Render only the supplied exact text and nonempty slogan; the brand context is "
+            "not additional lettering. Empty strings request no corresponding text.\n"
+        )
+    )
     direction = (
-        f"Create one {brief.logo_type} logo for {brief.brand_name}. "
-        f"Industry: {brief.industry}. Audience: {brief.audience}.\n"
-        f"Exact text (copy verbatim, no other words): {brief.exact_text!r}. "
-        f"Exact slogan: {brief.slogan!r}.\n"
+        f"{subject}{lettering}Industry: {brief.industry}. Audience: {brief.audience}.\n"
         f"Styles: {', '.join(brief.styles)}. Original brief palette context: "
         f"{', '.join(brief.palette)}.\n"
         f"Avoid: {', '.join(brief.forbidden)}. Use cases: {', '.join(brief.use_cases)}.\n"
@@ -100,6 +122,14 @@ def build_prompt(  # noqa: PLR0913 - Shared explicit intent options mirror the C
         "Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\n"
         f"Concept direction: {concept}. Assumptions: {', '.join(brief.assumptions)}."
     )
+    if parent_id is None:
+        direction += (
+            f"\nLogo construction: {logo_construction(logo_type)} "
+            "Use style references for broad construction traits, not their brand words or "
+            "traced signature shapes. The identity should remain recognizable in a "
+            "one-color silhouette at the intended use size. This construction check does not "
+            "replace the requested palette or request an extra monochrome image."
+        )
     parent_path: str | None = None
     parent_background: Background | None = None
     mode: Literal["generation", "edit"] = "generation"
@@ -113,9 +143,13 @@ def build_prompt(  # noqa: PLR0913 - Shared explicit intent options mirror the C
             f"Parent requested background: {parent_background}; preserve it unless the latest "
             "requested changes specify another background.\n"
             f"Latest requested changes (authoritative): {changes}. Preserve all unrequested "
-            "text, geometry, layout, silhouette, and brand identity from that parent. "
+            "text, geometry, layout, silhouette, and brand identity from that parent, including "
+            "its letter shapes, counters, spacing and ligatures. "
             "Requested changes override conflicting parent intent and fields in the following "
-            f"original brief context; its background is historical, not a new request.\n{direction}"
+            "original brief context; its type, lettering, styles and background are historical, "
+            "not new requests. Do not restore historical text or apply new logo-type defaults. "
+            "Use explicitly requested replacement lettering verbatim; otherwise preserve the "
+            f"parent's visible text and slogan.\n{direction}"
         )
     if intent.palette is not None:
         palette = intent.palette
@@ -130,9 +164,17 @@ def build_prompt(  # noqa: PLR0913 - Shared explicit intent options mirror the C
         direction += (
             f"\nEffective symbol-plus-text lockup: {intent.lockup.model_dump_json()}. "
             "Horizontal start/end means symbol left/right of text; stacked start/end means "
-            "symbol above/below text. Preserve the exact text and slogan. Font reference is "
+            "symbol above/below text. For edits, latest requested changes take precedence; "
+            "preserve unrequested parent lettering instead of restoring historical strings. "
+            "Font reference is "
             "a requested visual direction, not proof of an installed or licensed font file."
         )
+    direction += (
+        "\nLettering fidelity: preserve every Unicode character, capitalization, punctuation, "
+        "space and reading order in the applicable text. Keep Hangul syllable blocks intact; "
+        "do not translate, romanize, abbreviate or substitute lookalike glyphs. Shape changes "
+        "must keep required text readable, including counters and joins at the intended size."
+    )
     return PromptResult(
         mode=mode,
         session_id=state.id,

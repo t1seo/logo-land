@@ -1,0 +1,31 @@
+{
+  "brand_name": "MISO",
+  "exact_text": "MISO",
+  "industry": "cat treats",
+  "audience": "cat owners",
+  "logo_type": "mascot",
+  "styles": [
+    "friendly compact cat mascot"
+  ],
+  "palette": [
+    "#F28343",
+    "#512F27",
+    "#FFF0D8",
+    "Solid background #FFF0D8"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

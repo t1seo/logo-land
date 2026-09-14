@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-07-northline",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-4fbf63ba-41ae-42e9-8655-faece1650086.png",
+  "image": "../../images/07-northline.png",
+  "sha256": "41cb662bca8de319d5fe05d404ba1e94711cb9c43b8612f60e50ccf5be78c451",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "0326c6f259601155ed4d6c84b642a0ad8c690eeecb8f3852563cd611dd4741fd"
+}

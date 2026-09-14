@@ -1,0 +1,30 @@
+{
+  "brand_name": "LOOP LAB",
+  "exact_text": "LL",
+  "industry": "creative coding studio",
+  "audience": "creative technologists",
+  "logo_type": "monogram",
+  "styles": [
+    "geometric interlocking monogram"
+  ],
+  "palette": [
+    "#D7FF48",
+    "#25233A",
+    "Solid background #25233A"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

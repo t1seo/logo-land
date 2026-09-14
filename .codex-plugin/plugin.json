@@ -1,21 +1,22 @@
 {
   "name": "logo-land",
-  "version": "0.6.0",
-  "description": "Create logos and app icons with native Codex images, compare multiple projects with exact originals, and carry your decisions into focused revisions.",
+  "version": "0.7.0",
+  "description": "Create custom lettering, logos and app icons with native Codex images, then compare, refine and export saved originals.",
   "author": {
     "name": "t1seo"
   },
-  "repository": "https://github.com/t1seo/logo-land",
+  "repository": "https://github.com/t1seo/logopia",
   "skills": "./skills/",
   "interface": {
     "displayName": "Logo Land",
-    "shortDescription": "Logos and app icons start with a conversation.",
-    "longDescription": "Create eight logo types and six app icon styles through conversation. Compare candidates across saved projects with exact prompts, original PNGs and illustrative app or header previews. Keep selection reasons and features to preserve alongside focused revision requests. Refine saved images and export reviewed artwork with color evidence; platform layers and store approval are separate work.",
+    "shortDescription": "Custom lettering, logos and app icons through conversation.",
+    "longDescription": "Create playful wordmarks, kinetic lettering, geometric lettermarks and monograms alongside eight logo types and six app icon styles. Keep exact English or Korean text, compare original PNGs across saved projects, and refine the chosen design. Export reviewed artwork with color evidence. Results are raster images; font files, vectors and platform icon layers are separate deliverables.",
     "developerName": "t1seo",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
       "$logo-land Help me create a logo that fits my brand.",
+      "$logo-land Create a playful LUMA wordmark with chunky multicolor lettering and no separate icon.",
       "$logo-land Create six independent IP character candidates for my reading app, using three directions.",
       "$logo-land Create a centered notes-app monogram using the exact Korean text 메모 on a solid cream background.",
       "Keep #247A52 and suggest warmer companion colors for the selected logo.",
@@ -23,7 +24,7 @@
       "Create a transparent PNG logo and preserve intentional white lettering.",
       "Resume my saved logo project and export the selected reviewed PNG."
     ],
-    "brandColor": "#B75E45",
-    "logo": "./assets/logo-land-studio.png"
+    "brandColor": "#17352B",
+    "logo": "./assets/logo-land-wordmark.png"
   }
 }

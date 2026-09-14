@@ -1,0 +1,7 @@
+Create one monogram logo for LOOP LAB. Industry: creative coding studio. Audience: creative technologists.
+Exact text (copy verbatim, no other words): 'LL'. Exact slogan: ''.
+Styles: geometric interlocking monogram. Original brief palette context: #D7FF48, #25233A, Solid background #25233A.
+Avoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.
+Background: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.
+Concept direction: Exact initials LL only, fused into one distinctive geometric monogram: two thick L-shaped continuous bands rotated in complementary orientations with a clearly visible woven crossover and a square negative-space window. Still reads as two L letters, not an infinity symbol, chain icon, or abstract loop. Bold acid yellow-green #D7FF48 on deep purple-charcoal #25233A. Confident geometric flat mark, centered, about 62% of square canvas. No full brand name, no caption, no extra symbols, no shading.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..
+Render one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.

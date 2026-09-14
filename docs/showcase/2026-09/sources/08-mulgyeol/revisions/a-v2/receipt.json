@@ -1,0 +1,20 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-08-mulgyeol",
+  "artifact_id": "a-v2",
+  "parent_artifact_id": "a-v1",
+  "revision": 1,
+  "prompt_file": "prompt.txt",
+  "selected_for_showcase": true,
+  "source_file": "exec-a6ab1e4f-7820-4162-a605-2aba4d908d73.png",
+  "image": "../../../../images/08-mulgyeol.png",
+  "sha256": "7a86929630223ce0c79c4f3e965d4abab11f097a4c890ff6f783bbcb8292a864",
+  "prompt_sha256": "d0daf78d67d81c598a99032ff2fd38bc35c95a01436a958509aeff4b96b94621",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false
+}

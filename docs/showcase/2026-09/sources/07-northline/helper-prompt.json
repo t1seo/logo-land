@@ -1,0 +1,12 @@
+{
+  "mode": "generation",
+  "session_id": "refresh-07-northline",
+  "revision": 0,
+  "prompt": "Create one lettermark logo for NORTHLINE. Industry: outdoor running equipment. Audience: trail runners.\nExact text (copy verbatim, no other words): 'NL'. Exact slogan: ''.\nStyles: minimal architectural lettermark. Original brief palette context: #102F29, #C9E8D1, Solid background #C9E8D1.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Exact initials NL only. An exceptionally simple original lettermark made from thick dark green strokes: a geometric uppercase N stacked immediately above a clear uppercase L, aligned to one compact vertical axis. Share a precise diagonal terminal cut between N and L; large open negative space and equal heavy stroke weights create distinctive architectural silhouette. Upper N still reads N, lower L still reads L. Strong minimal sportswear identity, no arrows or trademark icons. Dark green #102F29 on mist mint #C9E8D1, centered 55% canvas. Do not render NORTHLINE.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null,
+  "palette_id": null,
+  "palette_digest": null,
+  "lockup": null
+}

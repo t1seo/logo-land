@@ -1,0 +1,19 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-01-luma",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-d4982f24-90a5-48b5-a028-9e5d2883b4f4.png",
+  "image": "../../images/01-luma-a-v1.png",
+  "sha256": "a0f3c32fca0c7e3f1b503ad51ff6740e4d225a5c9d3d3aee13e33d019542a8a4",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGBA",
+  "has_transparent_pixels": true,
+  "prompt_sha256": "d09b00d761cd7013dd7634bc6e52cf12609a477b5e9480c4f56343c00c15bcd2",
+  "selected_for_showcase": false
+}

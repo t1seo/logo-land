@@ -2,15 +2,69 @@
 
 [English](gallery.md) · [한국어](gallery.ko.md) · [문서](README.ko.md) · [Logo Land](../README.ko.md)
 
-모든 샘플 원본을 이 페이지에서 바로 보실 수 있습니다. 이미지를 누르면 실제 PNG 원본이 열리며, 별도의 샘플 설명과 패키지는 보조 링크에서 확인하실 수 있습니다.
+[**현재 쇼케이스 보드 크게 보기 →**](../assets/logo-land-showcase.png) · [개별 PNG 목록](showcase/2026-09/README.ko.md)
 
-[새 원본 8개](#new-samples) · [브랜드 10개](#brands) · [앱 아이콘 16개](#app-icons) · [색상 사례 8개](#colors) · [현재 로고와 보관 원본](#identity)
+[현재 쇼케이스](#showcase) · [Logo Land 로고](#identity) · [이전 결과물](#historical-outputs)
 
-실패·미확정 시도도 함께 보존했습니다. 결과는 래스터 PNG이며 폰트명은 외형 참고입니다. 편집 가능한 벡터·폰트 파일이나 플랫폼별 앱 아이콘 패키지는 포함되지 않습니다.
+<a id="showcase"></a>
 
-<a id="new-samples"></a>
+## 2026년 9월 쇼케이스
 
-## 새 원본 8개: 여섯 방향과 두 수정
+가상 브랜드 10개와 앱 아이콘 예제 6개를 한 장에 모았습니다. 경쾌한 색감, 스포츠의 속도감, 기하학적인 구성을 담은 레터링부터 한글 이름과 캐릭터까지 살펴보세요.
+
+<p align="center">
+  <a href="../assets/logo-land-showcase.png"><img src="../assets/logo-land-showcase.png" width="960" alt="가상 브랜드 10개와 앱 아이콘 예제 6개를 모은 2026년 9월 Logo Land 쇼케이스"></a>
+</p>
+
+보드는 컬렉션을 함께 보여 주는 이미지입니다. 개별 이미지는 아래 PNG 링크로 열고, 현재 파일과 제작 출처는 [다운로드 목록](showcase/2026-09/README.ko.md)과 [매니페스트](showcase/2026-09/manifest.json)에서 확인해 주세요.
+
+### 가상 브랜드 10개
+
+| 브랜드 | 현재 PNG |
+|---|---|
+| LUMA | [열기](showcase/2026-09/images/01-luma.png) |
+| LOOP LAB | [열기](showcase/2026-09/images/02-loop-lab.png) |
+| 고요 | [열기](showcase/2026-09/images/03-goyo.png) |
+| BREAD & BLOOM | [열기](showcase/2026-09/images/04-bread-bloom.png) |
+| KITE | [열기](showcase/2026-09/images/05-kite.png) |
+| MISO | [열기](showcase/2026-09/images/06-miso.png) |
+| NORTHLINE / NL | [열기](showcase/2026-09/images/07-northline.png) |
+| 물결 | [열기](showcase/2026-09/images/08-mulgyeol.png) |
+| FERN | [열기](showcase/2026-09/images/09-fern.png) |
+| NOVA NOTES | [열기](showcase/2026-09/images/10-nova-notes.png) |
+
+### 앱 아이콘 예제 6개
+
+| 예제 | 방향 | 현재 PNG |
+|---|---|---|
+| 독서 부엉이 | IP 캐릭터 | [열기](showcase/2026-09/images/11-reading-owl.png) |
+| Daybreak · 날씨 | 픽토그램 | [열기](showcase/2026-09/images/12-weather.png) |
+| Flow | 추상형 | [열기](showcase/2026-09/images/13-flow.png) |
+| 틈 · 메모 | 모노그램 | [열기](showcase/2026-09/images/14-notes.png) |
+| Cloud Pocket | 소프트 3D | [열기](showcase/2026-09/images/15-cloud.png) |
+| Sprout | 픽셀 아트 | [열기](showcase/2026-09/images/16-sprout.png) |
+
+래스터 PNG 예제입니다. 정확한 글자, 크기, 배경과 색 표현은 개별 이미지에서 확인해 주세요. 쇼케이스에는 편집 가능한 벡터, 폰트 파일이나 플랫폼에 바로 제출할 앱 아이콘 패키지가 포함되지 않습니다.
+
+<a id="identity"></a><a id="현재-logo-land-로고"></a>
+
+## Logo Land 로고
+
+**LOGO LAND**를 굵은 맞춤 글자로 두 줄에 쌓았습니다. 짙은 잉크색 바탕에 윗줄은 민트, 아랫줄은 라일락으로 표현했습니다. [마스터 PNG 열기](../assets/logo-land-wordmark.png) · [로고와 팔레트 안내](brand/README.ko.md)
+
+<a id="historical-outputs"></a>
+
+## 이전 결과물 — 보관 자료
+
+아래 이미지는 앞선 컬렉션과 실험에서 만든 결과물입니다. 당시 원본, 프롬프트, 관찰과 패키지를 그대로 연결했습니다. 이 기록을 2026년 9월 쇼케이스의 제작 출처나 검수 결과로 사용하지 않습니다.
+
+[비교 실험](#new-samples) · [이전 브랜드 10개](#brands) · [이전 앱 아이콘 16개](#app-icons) · [색상 사례 8개](#colors) · [이전 로고](#historical-identity)
+
+실패·미확정 시도도 검수된 결과와 함께 보존했으며, 당시 기록한 한계를 유지했습니다.
+
+<a id="new-samples"></a><a id="새-원본-8개-여섯-방향과-두-수정"></a>
+
+## 이전 비교 실험: 여섯 방향과 두 수정
 
 독립 원본 6개와 Relay·Sprig의 원본 기준 수정 2개입니다. 창작 비교용이며 선택·전달 승인된 결과는 아닙니다. 아래 설명은 생성 담당자가 원본과 작은 크기를 확인하며 남긴 관찰이며, 모든 결과가 좋아졌다는 뜻은 아닙니다.
 
@@ -90,9 +144,9 @@
 
 [원본 출처와 유지·변경 메모](gallery-workflow/samples.json)에서 각 후보의 기록을 확인하실 수 있습니다.
 
-<a id="brands"></a>
+<a id="brands"></a><a id="브랜드-로고-10개"></a>
 
-## 브랜드 로고 10개
+## 이전 브랜드 로고 10개
 
 가상 브랜드 10개의 원본이며 모두 불투명 배경입니다.
 
@@ -176,9 +230,9 @@
 
 [요청 예시와 다운로드](samples/items/10-nova-notes/README.ko.md)
 
-<a id="app-icons"></a>
+<a id="app-icons"></a><a id="앱-아이콘-16개"></a>
 
-## 앱 아이콘 16개
+## 이전 앱 아이콘 16개
 
 IP 시안 6개와 원본·수정 방향 5쌍입니다. 수정 방향이 모든 면에서 더 낫다는 의미는 아닙니다.
 
@@ -266,9 +320,9 @@ IP 시안 6개와 원본·수정 방향 5쌍입니다. 수정 방향이 모든 �
 
 [요청 예시와 원본 설명](app-icons/samples/pixel-art.ko.md)
 
-<a id="colors"></a>
+<a id="colors"></a><a id="색상과-글자-8개-사례"></a>
 
-## 색상과 글자: 8개 사례
+## 이전 색상과 글자: 8개 사례
 
 프로젝트 7개의 저장 원본 17개를 모두 표시했습니다. GROVE의 원본·따뜻한 수정은 두 사례이며, 밤결 부모 원본은 흰색 비교에서 다시 표시됩니다. 각 행은 아래 설명에 적힌 버전 순서입니다.
 
@@ -366,17 +420,17 @@ parent-v1 → white-v1 → white-v2 → white-v3 순서입니다. 부모는 앞�
 
 [사례 설명과 제공 파일](colors/projects/white-bamgyeol/README.ko.md)
 
-<a id="identity"></a>
+<a id="historical-identity"></a><a id="현재-로고와-보관-원본"></a>
 
-## 현재 로고와 보관 원본
+## 이전 로고 — 보관 원본
 
-### 현재 Logo Land 로고
+### 이전 열린 프레임 로고
 
 <p>
-<a href="../assets/logo-land-studio.png"><img src="../assets/logo-land-studio.png" width="240" alt="현재 Logo Land 열린 프레임 로고"></a>
+<a href="../assets/logo-land-studio.png"><img src="../assets/logo-land-studio.png" width="240" alt="보관된 Logo Land 열린 프레임 로고"></a>
 </p>
 
-현재 로고는 불투명 아이보리 배경입니다. [로고 설명과 다운로드](brand/README.ko.md)를 확인해 주세요. 투명 배경 사례는 위의 [GROVE a-v1](#colors-grove)와 [배경 안내](samples/transparency.ko.md)에서 보실 수 있습니다.
+이전 열린 프레임 로고는 불투명 아이보리 배경입니다. [당시 브랜드 가이드](brand/2026-identity/delivery/brand-guide.md)는 이 이미지에 대한 기록이며, 현재 레터링 마스터의 가이드가 아닙니다. [현재 로고 설명과 다운로드](brand/README.ko.md)를 확인해 주세요. 투명 배경 사례는 위의 [GROVE a-v1](#colors-grove)와 [배경 안내](samples/transparency.ko.md)에서 보실 수 있습니다.
 
 ### 보관된 이전 로고 · 불투명 원본 → 투명 수정
 
@@ -391,7 +445,7 @@ parent-v1 → white-v1 → white-v2 → white-v3 순서입니다. 부모는 앞�
 
 여러 프로젝트의 후보를 앱 홈 화면·웹 헤더·16px 미리보기로 비교하고, 각 원본과 유지할 점·바꿀 점을 메모로 남긴 뒤 선택한 원본을 기준으로 수정하실 수 있습니다. 메모 복사는 후보 선택이나 전달 승인이 아닙니다. 사용 장면은 예시 배치이며 플랫폼별 파일을 대신하지 않습니다.
 
-[새 후보 비교 HTML 다운로드/로컬 열기](gallery-workflow/comparison/index.html)
+[이전 후보 비교 HTML 다운로드/로컬 열기](gallery-workflow/comparison/index.html)
 
 GitHub에서는 이 Markdown 갤러리의 이미지를 바로 보실 수 있습니다. 인터랙티브 HTML은 저장소를 다운로드한 뒤 로컬에서 열어 주세요. [기존 앱 아이콘 비교 HTML 다운로드/로컬 열기](app-icons-quality-v1/index.html) · [색상 비교 HTML 다운로드/로컬 열기](colors/index.html)
 

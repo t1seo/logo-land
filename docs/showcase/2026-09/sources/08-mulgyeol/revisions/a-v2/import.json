@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "id": "refresh-08-mulgyeol",
+  "revision": 2,
+  "created_at": "2026-09-14T07:37:34.761857Z",
+  "updated_at": "2026-09-14T07:45:20.664837Z",
+  "brief": {
+    "brand_name": "물결",
+    "exact_text": "물결",
+    "industry": "independent publishing",
+    "audience": "poetry readers",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "custom flowing Hangul wordmark"
+    ],
+    "palette": [
+      "#3D47B8",
+      "#DADBFF",
+      "Solid background #DADBFF"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "02f55add8604056edc77af18699563c16cda560d472f05eae43e85cbcdd1443e",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Create one wordmark logo for 물결. Industry: independent publishing. Audience: poetry readers.\nExact text (copy verbatim, no other words): '물결'. Exact slogan: ''.\nStyles: custom flowing Hangul wordmark. Original brief palette context: #3D47B8, #DADBFF, Solid background #DADBFF.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Exact Korean 물결 only, two correct syllable blocks. A bold contemporary Hangul custom wordmark where broad rounded strokes subtly flow like water. The bottom horizontal strokes have one gentle repeating wave, while the letter construction stays unmistakable: 물 then 결. Indigo ink #3D47B8 on pale lavender #DADBFF. Pleasant compact wide block, smooth geometric counters and intentional rhythm, about 74% square canvas width. No separate wave icon, no English, no slogan, no decorative pseudo-Hangul, flat colors.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..\nRender one standalone master artwork, approximately 1536 x 1536 pixels unless the concept requests a wide composition. Maintain the exact supplied text; no other text.",
+      "parent_id": null,
+      "created_at": "2026-09-14T07:41:31.327982Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    },
+    {
+      "id": "a-v2",
+      "path": "artifacts/a-v2.png",
+      "sha256": "7a86929630223ce0c79c4f3e965d4abab11f097a4c890ff6f783bbcb8292a864",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Edit the supplied parent logo a-v1; do not recreate an unrelated logo.\nParent requested background: opaque; preserve it unless the latest requested changes specify another background.\nLatest requested changes (authoritative): Correct only the exact Korean word to 물결. The current left syllable looks like 믈 because the downward vertical stem of the vowel ㅜ is missing. In the LEFT syllable, render ㅁ at top, then ㅜ with a CLEAR SHORT CENTRAL DOWNWARD VERTICAL STEM below its horizontal bar, then ㄹ at bottom. This must unmistakably read 물, never 믈. The right syllable 결 must remain ㄱ + ㅕ + ㄹ and read 결. Keep the same two-syllable left-to-right arrangement, indigo color, pale lavender solid background, thick rounded flowing letter style, wave-like bottom strokes, scale and margins. Exact text 물결 only, no extra words. Ensure the ㅜ stem is clearly separated from the bottom ㄹ and visible at small display size. 첫 글자는 반드시 물입니다. 모음 ㅜ의 아래쪽 세로 획을 명확하게 그려 주세요.. Preserve all unrequested text, geometry, layout, silhouette, and brand identity from that parent, including its letter shapes, counters, spacing and ligatures. Requested changes override conflicting parent intent and fields in the following original brief context; its type, lettering, styles and background are historical, not new requests. Do not restore historical text or apply new logo-type defaults. Use explicitly requested replacement lettering verbatim; otherwise preserve the parent's visible text and slogan.\nOriginal brief logo type (historical intent): wordmark. Original brand context: 물결. Initial brief exact text (historical intent): '물결'. Initial brief slogan (historical intent): ''.\nIndustry: independent publishing. Audience: poetry readers.\nStyles: custom flowing Hangul wordmark. Original brief palette context: #3D47B8, #DADBFF, Solid background #DADBFF.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nInitial brief background (historical intent): opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Distinct, simple brand identity. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..\nLettering fidelity: preserve every Unicode character, capitalization, punctuation, space and reading order in the applicable text. Keep Hangul syllable blocks intact; do not translate, romanize, abbreviate or substitute lookalike glyphs. Shape changes must keep required text readable, including counters and joins at the intended size.",
+      "parent_id": "a-v1",
+      "created_at": "2026-09-14T07:45:20.663661Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

@@ -1,0 +1,74 @@
+{
+  "reviewer": "Codex visual inspection of actual native outputs",
+  "status": "observed creative showcase; not blanket export approval",
+  "items": [
+    {
+      "id": "00-logo-land",
+      "observation": "Stacked LOGO / LAND reads correctly; mint upper line and lilac lower line are clearly separated on an opaque dark green square. Wide exterior margins; subtle raster texture and color variation are visible. Intended HEX values are not pixel certification."
+    },
+    {
+      "id": "01-luma",
+      "observation": "LUMA is readable with four distinct chunky colored letters. Initial a-v1 unexpectedly had transparency; a-v2 restores an opaque cream exterior and counters while preserving the playful shapes. Minor raster variation is visible."
+    },
+    {
+      "id": "02-loop-lab",
+      "observation": "Two bold L forms remain distinguishable in an interlocking arrangement. The crossover has slight generated depth despite a flat-style intent; this is shown as returned, not claimed as perfectly flat."
+    },
+    {
+      "id": "03-goyo",
+      "observation": "Exact 고요 is readable below the pebble-and-ripple symbol. Stacked arrangement and generous margins are clear; fine ripple tips are less prominent at small size."
+    },
+    {
+      "id": "04-bread-bloom",
+      "observation": "BREAD & BLOOM is spelled correctly with a visible ampersand, scalloped seal and wheat motif. This emblem needs more display space than a single lettermark."
+    },
+    {
+      "id": "05-kite",
+      "observation": "Text-free coral folded form has a strong upward silhouette and an open diagonal channel. The long pointed tips are delicate at very small size."
+    },
+    {
+      "id": "06-miso",
+      "observation": "MISO is spelled correctly; smiling cat, cream cheek and chunky lettering form a clear stacked mascot identity. Whisker detail recedes at icon size."
+    },
+    {
+      "id": "07-northline",
+      "observation": "The exact initials N above L are legible, with a diagonal separating cut and consistent heavy stems. This is a lettermark, not the full NORTHLINE wordmark."
+    },
+    {
+      "id": "08-mulgyeol",
+      "observation": "Initial a-v1 omitted the downward ㅜ stem, making the first syllable ambiguous. Native a-v2 adds that stem; selected text now reads 물결 while the wavy lower strokes, palette and spacing remain recognizable."
+    },
+    {
+      "id": "09-fern",
+      "observation": "A clear text-free leaf-and-stem symbol with a folded tip. The returned plant has two lateral leaf pairs, fewer than the concept's three; it remains shown as the actual creative result."
+    },
+    {
+      "id": "10-nova-notes",
+      "observation": "NOVA NOTES reads correctly in strong forward-slanted lettering, with a coral spark inside the first O. The wide format needs enough horizontal space; favicon suitability is not claimed."
+    },
+    {
+      "id": "11-reading-owl",
+      "observation": "The yellow owl has the requested lower-left crop and heavy sleepy eyelids. Cream eye areas introduce a third subject color beyond the requested two-family default; the original is retained without a strict-color pass claim."
+    },
+    {
+      "id": "12-weather",
+      "observation": "The sun/cloud silhouette and three broad rays are recognizable. Rounded overlap is clean; fine raster color variation remains."
+    },
+    {
+      "id": "13-flow",
+      "observation": "Two curved bands and their broad negative-space channel remain distinct. The final gesture is more parallel than nested; it is preserved as a creative candidate."
+    },
+    {
+      "id": "14-notes",
+      "observation": "Exact Hangul 틈 is readable as ㅌ + ㅡ + ㅁ with open internal spaces. The full opaque square is artwork, not a platform icon bundle."
+    },
+    {
+      "id": "15-cloud",
+      "observation": "A cloud silhouette with an envelope-like pocket fold and soft matte shading is clear. Depth adds tonal variation; it is not a flat restricted-palette sample."
+    },
+    {
+      "id": "16-sprout",
+      "observation": "The seedling and pot use a consistent stepped silhouette. Subtle generated texture is present inside broad regions; this is raster pixel-art styling, not a guaranteed integer-grid sprite."
+    }
+  ]
+}

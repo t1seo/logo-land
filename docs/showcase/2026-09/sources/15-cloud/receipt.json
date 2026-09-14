@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-15-cloud",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-df18d960-f535-4f71-9298-40719c1c1973.png",
+  "image": "../../images/15-cloud.png",
+  "sha256": "b0cc5a29c73509c47e4960c0fb609680d30571d2854d0019fcb4b9ffc1116799",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "9f6dc58bd3b044fa47ecbb57fd6d312a80e8cf1209049e3d1efa2405f41ab6b5"
+}

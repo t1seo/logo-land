@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-05-kite",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-97817e0b-cfed-4291-a965-1900cf97e4d9.png",
+  "image": "../../images/05-kite.png",
+  "sha256": "042e998788abb771bffa06cfa585517b4fefac66dfbd0a2c9b95b07361ec2369",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "040b39dc480451e840924c41b5c5f838cd9d2d0d43767f88c199507d42fc2caf"
+}

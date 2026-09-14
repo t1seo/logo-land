@@ -1,0 +1,36 @@
+{
+  "brand_name": "틈",
+  "exact_text": "틈",
+  "industry": "quick notes app",
+  "audience": "Korean-speaking writers",
+  "logo_type": "monogram",
+  "styles": [
+    "Hangul monogram"
+  ],
+  "palette": [
+    "#D9ED88",
+    "#1C423B",
+    "Solid background #1C423B"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ],
+  "app_icon": {
+    "preset": "monogram",
+    "subject": "the exact Hangul syllable 틈 with a distinctive open horizontal rhythm",
+    "placement": "center",
+    "text": "틈"
+  }
+}

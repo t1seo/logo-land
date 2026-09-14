@@ -1,0 +1,30 @@
+{
+  "brand_name": "BREAD & BLOOM",
+  "exact_text": "BREAD & BLOOM",
+  "industry": "neighborhood bakery",
+  "audience": "neighborhood food lovers",
+  "logo_type": "emblem",
+  "styles": [
+    "modern bakery seal"
+  ],
+  "palette": [
+    "#7B3249",
+    "#F8DEC2",
+    "Solid background #F8DEC2"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

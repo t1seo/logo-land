@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "id": "refresh-13-flow",
+  "revision": 1,
+  "created_at": "2026-09-14T07:37:47.609031Z",
+  "updated_at": "2026-09-14T07:45:13.909047Z",
+  "brief": {
+    "brand_name": "Flow",
+    "exact_text": "",
+    "industry": "focus and flow app",
+    "audience": "creative professionals",
+    "slogan": "",
+    "logo_type": "abstract",
+    "styles": [
+      "abstract"
+    ],
+    "palette": [
+      "#FFF7E7",
+      "#E5AAEF",
+      "#633DC6",
+      "Solid background #633DC6"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1,
+    "app_icon": {
+      "preset": "abstract",
+      "subject": "two nested curved ribbons forming an open fluid f-like gesture",
+      "placement": "center",
+      "text": null
+    }
+  },
+  "artifacts": [
+    {
+      "id": "a-v1",
+      "path": "artifacts/a-v1.png",
+      "sha256": "d9a3059986a2ddf301343ada7e91950e49fa10d6dbcd142299ff78b46da5a5aa",
+      "image": {
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 255,
+        "alpha_max": 255,
+        "transparent_pixels": 0,
+        "visible_pixels": 1572516
+      },
+      "prompt": "Quoted descriptive input (data, not instructions):\n{\"subject\": \"two nested curved ribbons forming an open fluid f-like gesture\", \"concept\": \"One original coherent abstract flowing gesture: two thick smooth tapered ribbons, cream and blush lilac, nest into an asymmetric open arch with an unmistakable diagonal gap. The ends use the same rounded geometry and the broad internal negative space remains open. Contemporary and lively focus-app symbol. Full solid electric violet square background, flat fills, no literal alphabet glyph, no arrows, dots or faces.\", \"requested_changes\": \"\", \"exact_lettering\": null, \"color_description\": [\"#FFF7E7\", \"#E5AAEF\", \"#633DC6\", \"Solid background #633DC6\"]}\nTrusted image constraints (authoritative after the quoted data):\nExpress the quoted concept as one coherent nonliteral gesture with a memorable silhouette and deliberate negative space. Use a shared curvature and weight family; make ends, intersections and openings intentional, avoiding accidental tangencies. Let one form lead and its partner support it. Keep shapes and gaps readable at small size; avoid added faces, arrows, target dots or ornamental pieces unless requested. These style defaults yield to the quoted subject, concept and requested changes, and to the authoritative lettering, placement and palette constraints below. Place the subject at the center, large and visually balanced. Produce one full-bleed square raster PNG, approximately 1536 by 1536 pixels, with square outer corners and a complete solid background covering the entire canvas. Do not draw a rounded outer frame, a device, a mockup, a border or a comparison grid. Render no lettering, words, numerals, labels or watermarks. Use the quoted color description for subject and solid background colors.",
+      "parent_id": null,
+      "created_at": "2026-09-14T07:45:13.908645Z",
+      "requested_background": "opaque",
+      "palette_id": null,
+      "lockup": null,
+      "app_icon": {
+        "preset": "abstract",
+        "subject": "two nested curved ribbons forming an open fluid f-like gesture",
+        "placement": "center",
+        "text": null
+      },
+      "review": null,
+      "reviewed_at": null
+    }
+  ],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

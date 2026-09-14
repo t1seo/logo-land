@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-11-reading-owl",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-0d6a869f-0b8b-4af7-a66e-273eaacb3eb8.png",
+  "image": "../../images/11-reading-owl.png",
+  "sha256": "0f3b73be47c1322d0cedf0bfe39452a0c79dc0af452a8b50969cd8979cd54005",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "1eee33b33fee4d931a3938e6da761efeabd7fa6940d32350401f8070bf2ce35e"
+}

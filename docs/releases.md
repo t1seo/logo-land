@@ -1,10 +1,12 @@
 # Releases and versioning
 
-Logo Land uses `MAJOR.MINOR.PATCH` versions and Git tags named `vMAJOR.MINOR.PATCH`. The plugin and local helper are released together. The first tagged release is [v0.3.1](https://github.com/t1seo/logo-land/releases/tag/v0.3.1), continuing the earlier internal 0.3.0 plugin builds.
+Logo Land uses `MAJOR.MINOR.PATCH` versions and Git tags named `vMAJOR.MINOR.PATCH`. The plugin and local helper are released together from [t1seo/logopia](https://github.com/t1seo/logopia). The first tagged release is [v0.3.1](https://github.com/t1seo/logopia/releases/tag/v0.3.1), continuing the earlier internal 0.3.0 plugin builds.
 
-Current source is **0.6.0, unreleased**, for the [comparison and focused revision update](../plans/logo-land-next-improvements.md). The published release remains **0.3.1**. The prior **0.4.0 draft remains unpublished** because its required native color samples failed; this update does not rename its gates, erase failure records or publish/retarget that draft. See the [historical validation](qa/color-workflow/README.md). All sixteen app icon originals now have verified native receipts, gallery hashes and [Chrome comparison evidence](qa/app-icons/quality-comparison.md). This development task does not authorize public release publication.
+Current version is **[0.7.0](https://github.com/t1seo/logopia/releases/tag/v0.7.0)**: custom lettering guidance, type-aware logo prompts, a new identity and a freshly generated 16-piece showcase. See the [release notes](qa/lettering-refresh/release-notes.md) and [verification record](qa/lettering-refresh/verification.md). Publication was explicitly requested for this update.
 
-The helper's earlier 0.1.0 metadata is aligned to 0.3.1 with this first tag. Initial release notes summarize existing capabilities and release preparation changes; do not link a comparison against a nonexistent v0.3.0 tag.
+The earlier 0.4.0 native color experiments remain [historical failed validation](qa/color-workflow/README.md); their draft and evidence are not republished or reclassified as passing. Strict palette exports still require measured conformance, and generated spelling, alpha and colors need inspection. This release does not guarantee exact raster colors, editable fonts, vectors or platform-ready icon layers.
+
+For v0.3.1, the helper's earlier 0.1.0 metadata was aligned with the plugin version. Those initial release notes summarize existing capabilities and release preparation changes; there is no earlier v0.3.0 tag to compare against.
 
 ## Choosing a version
 
@@ -30,7 +32,7 @@ Before creating a tag or release, check whether the intended version already exi
 
 ## Local plugin installations
 
-Personal development installations may use a version such as `0.6.0+codex.<timestamp>` to refresh the Codex cache. Apply the official cachebuster helper to the personal plugin source and reinstall it from its existing marketplace. Keep the repository manifest, `pyproject.toml` and `uv.lock` at clean `0.6.0`; create a release tag only through a separately authorized publication workflow. The cachebuster is not a separate public release. Existing installations can retain an older payload until refreshed, so record source and installed-cache versions/hashes separately rather than inferring one from the other.
+Personal development installations may use a version such as `0.7.0+codex.<timestamp>` to refresh the Codex cache. Apply the official cachebuster helper to the personal plugin source and reinstall it from its existing marketplace. Keep the repository manifest, `pyproject.toml` and `uv.lock` at clean `0.7.0`; create a release tag only through an authorized publication workflow. The cachebuster is not a separate public release. Existing installations can retain an older payload until refreshed, so record source and installed-cache versions/hashes separately rather than inferring one from the other.
 
 Open a new Codex conversation after reinstalling so the updated plugin is discovered. The [installation record](qa/installation.md) distinguishes release versions from local cache versions.
 

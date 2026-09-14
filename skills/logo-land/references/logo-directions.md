@@ -4,9 +4,9 @@ Use these categories to help the user choose. They are design directions for nat
 
 | `logo_type` | Meaning | Useful guidance |
 |---|---|---|
-| `wordmark` | Brand name is the logo | Exact spelling, spacing and letterform character dominate. Avoid an unsolicited icon. |
-| `lettermark` | Short initials as readable letters | Confirm the intended initials. Do not invent an acronym. |
-| `monogram` | Interwoven or integrated initials | Keep each initial intentional and the silhouette readable. |
+| `wordmark` | Brand name is the logo | Build identity into the exact letters' silhouette, counters, spacing and readable joins; no separate unsolicited icon. |
+| `lettermark` | Supplied initials as distinct readable letters | Confirm the literal initials; stacked or side-by-side arrangement does not imply interweaving or a symbol. |
+| `monogram` | Interwoven or integrated supplied characters | Use deliberate shared strokes or interlocks while keeping each character identifiable; do not invent an acronym. |
 | `symbol` | Recognizable pictorial mark | Establish the subject; an icon-only output may use empty `exact_text`. |
 | `abstract` | Nonliteral geometric or organic mark | Tie shape and negative space to a concept without relying on stock motifs. |
 | `combination` | Symbol plus exact brand text and any requested slogan | Record horizontal/stacked layout, symbol position, text alignment and typeface appearance; inspect symbol/text balance. |
@@ -14,6 +14,11 @@ Use these categories to help the user choose. They are design directions for nat
 | `mascot` | Character represents the brand | Clarify expression, personality and detail level; keep a compact silhouette. |
 
 Styles are a separate list: minimal, geometric, organic, playful, elegant, premium, vintage, hand-drawn, bold, futuristic, or another user-defined direction. Avoid describing a type as universally suitable for an industry. Intended use matters more than a category label.
+
+For natural Korean/English text-logo requests, read [lettering.md](lettering.md).
+It routes full names, readable initials and integrated initials, then gives construction
+guidance for playful sculpted, forward-slanted athletic and geometric stacked lettering.
+These use existing `exact_text`, `styles` and `concept`; they are not additional types.
 
 Combination marks are existing functionality. Their structured layout and typography intent make requested variants and later inheritance explicit; see [typography.md](typography.md). A wordmark does not gain an icon unless requested, and an icon-only variant does not fulfill required lettering. Color direction is independent of logo type: use [color-workflow.md](color-workflow.md) for composable anchor/reference/count constraints and preserve one selected palette per requested concept.
 
@@ -26,6 +31,10 @@ Combination marks are existing functionality. Their structured layout and typogr
 **Reference-led:** Identify which image is a style reference, an existing logo, or a sketch. Ask only if the role cannot be inferred. Use the source as a tool input, not a verbal guess about its contents.
 
 **Explore:** Offer genuinely different design concepts, for example typographic, geometric-symbol, and organic-symbol. If these use different logo types, create separate briefs/sessions or retain the concept's true type in its saved prompt; do not silently mislabel the resulting artifact.
+
+For a lettering-only request, keep exploration within letters: vary silhouette,
+proportion, counters, kerning or legible joins. Do not substitute symbol concepts for
+the requested wordmark or present the same typesetting recolored as distinct concepts.
 
 **Revise / extend:** Start from the selected artifact. Handle one targeted request or a clearly specified set of changes. Monochrome, reversed, lockup variations, and avatar variants reuse the chosen identity as an input.
 

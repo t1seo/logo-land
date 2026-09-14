@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-16-sprout",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-ad7fc471-a5a4-4885-b618-9b0826e5e06d.png",
+  "image": "../../images/16-sprout.png",
+  "sha256": "6b7adbefe43ae299e8e4ca4ff7a98022e202eeb7982ecf4f15d69ebc5f9786d4",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "55871416ee4952f8f45e834f3f620e830b40280c66c5c0ca6b0b0b56347f3dd1"
+}

@@ -1,0 +1,31 @@
+{
+  "brand_name": "NOVA NOTES",
+  "exact_text": "NOVA NOTES",
+  "industry": "fast ideas and notes app",
+  "audience": "students and writers",
+  "logo_type": "combination",
+  "styles": [
+    "kinetic custom wordmark with integrated spark"
+  ],
+  "palette": [
+    "#F4F1E8",
+    "#142E6D",
+    "#F77755",
+    "Solid background #142E6D"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

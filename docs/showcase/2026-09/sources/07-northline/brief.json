@@ -1,0 +1,30 @@
+{
+  "brand_name": "NORTHLINE",
+  "exact_text": "NL",
+  "industry": "outdoor running equipment",
+  "audience": "trail runners",
+  "logo_type": "lettermark",
+  "styles": [
+    "minimal architectural lettermark"
+  ],
+  "palette": [
+    "#102F29",
+    "#C9E8D1",
+    "Solid background #C9E8D1"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

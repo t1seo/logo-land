@@ -1,0 +1,12 @@
+{
+  "mode": "generation",
+  "session_id": "refresh-06-miso",
+  "revision": 0,
+  "prompt": "Create one mascot logo for MISO. Industry: cat treats. Audience: cat owners.\nExact text (copy verbatim, no other words): 'MISO'. Exact slogan: ''.\nStyles: friendly compact cat mascot. Original brief palette context: #F28343, #512F27, #FFF0D8, Solid background #FFF0D8.\nAvoid: mockup, watermarks, unsolicited text, existing brand symbols. Use cases: README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: One ultra-simple plump smiling orange cat head with two rounded triangular ears and tiny closed eyes, heavy dark brown contour and one asymmetric cream cheek patch. Beneath it exact MISO in a chunky custom soft rounded wordmark, dark brown with unusually round M shoulders. An original compact cat-treat identity, flat shapes, no body or accessory, no sparkles. Orange #F28343, dark cocoa #512F27 and cream #FFF0D8. Centered stacked composition about 65% square width. No tagline.. Assumptions: Fictional demonstration requested by the user; one original per showcase entry., Color values are design intent; generated raster colors are not guaranteed exact..",
+  "parent_id": null,
+  "parent_image_path": null,
+  "parent_requested_background": null,
+  "palette_id": null,
+  "palette_digest": null,
+  "lockup": null
+}

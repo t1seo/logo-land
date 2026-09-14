@@ -1,0 +1,32 @@
+{
+  "brand_name": "LUMA",
+  "exact_text": "LUMA",
+  "industry": "creative play and lighting",
+  "audience": "curious families",
+  "logo_type": "wordmark",
+  "styles": [
+    "playful multicolor custom wordmark"
+  ],
+  "palette": [
+    "#F45538",
+    "#F3C745",
+    "#C2ADFF",
+    "#17352B",
+    "Solid background #FFF2D3"
+  ],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": [
+    "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+  ],
+  "forbidden": [
+    "mockup",
+    "watermarks",
+    "unsolicited text",
+    "existing brand symbols"
+  ],
+  "assumptions": [
+    "Fictional demonstration requested by the user; one original per showcase entry.",
+    "Color values are design intent; generated raster colors are not guaranteed exact."
+  ]
+}

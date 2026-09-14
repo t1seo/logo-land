@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "id": "refresh-04-bread-bloom",
+  "revision": 0,
+  "created_at": "2026-09-14T07:37:30.150025Z",
+  "updated_at": "2026-09-14T07:37:30.150025Z",
+  "brief": {
+    "brand_name": "BREAD & BLOOM",
+    "exact_text": "BREAD & BLOOM",
+    "industry": "neighborhood bakery",
+    "audience": "neighborhood food lovers",
+    "slogan": "",
+    "logo_type": "emblem",
+    "styles": [
+      "modern bakery seal"
+    ],
+    "palette": [
+      "#7B3249",
+      "#F8DEC2",
+      "Solid background #F8DEC2"
+    ],
+    "forbidden": [
+      "mockup",
+      "watermarks",
+      "unsolicited text",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README showcase; brand wordmarks at 240px width or wider; app artwork previews at 64px"
+    ],
+    "assumptions": [
+      "Fictional demonstration requested by the user; one original per showcase entry.",
+      "Color values are design intent; generated raster colors are not guaranteed exact."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "artifacts": [],
+  "selected_id": null,
+  "failures": [],
+  "exports": [],
+  "palettes": [],
+  "active_palette_id": null,
+  "references": [],
+  "color_reports": []
+}

@@ -1,0 +1,18 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "refresh-02-loop-lab",
+  "artifact_id": "a-v1",
+  "prompt_file": "prompt.txt",
+  "revision": 0,
+  "source_file": "exec-40ceb7c2-c0b4-4235-a63c-e8494e4a72dd.png",
+  "image": "../../images/02-loop-lab.png",
+  "sha256": "165aba66fc3f983f6ed0dca6c6f11af18ed762bcf187abcf2c106e6c81fd590a",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "prompt_sha256": "b555c40289e0715fcb9de229bdb1c117ed0f4c795402329470c9ced1e74a8fdf"
+}
