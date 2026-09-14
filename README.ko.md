@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="docs/brand/README.ko.md"><img src="assets/logo-land-wordmark.png" width="360" alt="Logo Land — 짙은 잉크색 바탕에 민트와 라일락으로 굵게 쌓아 올린 LOGO LAND 레터링"></a>
+  <a href="docs/brand/README.ko.md"><img src="assets/logopia-wordmark.png" width="360" alt="Logopia — 짙은 잉크색 바탕에 민트와 라일락으로 그린 LOGOPIA 레터링"></a>
 </p>
 
-<a id="logo-land-로고랜드"></a>
-<h1 align="center">Logo Land</h1>
+<a id="logo-land-로고랜드"></a><a id="logopia"></a>
+<h1 align="center">Logopia · 로고피아</h1>
 
 <p align="center">
   <strong>이름에 어울리는 모양을 만들어 보세요.</strong><br>
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/t1seo/logopia/releases/tag/v0.7.0"><img src="https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logo Land v0.7.0"></a>
+  <a href="https://github.com/t1seo/logopia/releases/tag/v0.7.0"><img src="https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logopia v0.7.0"></a>
   <img src="https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&amp;labelColor=17352B" alt="Codex 플러그인">
   <img src="https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&amp;labelColor=17352B" alt="래스터 PNG 출력">
 </p>
@@ -27,10 +27,10 @@
 여러 색을 쓴 경쾌한 워드마크부터 속도감 있는 레터링, 기하학적인 이니셜과 작은 캐릭터까지 살펴보세요. 2026년 9월 쇼케이스는 가상 브랜드 10개와 앱 아이콘 예제 6개를 한 장에 담았습니다.
 
 <p align="center">
-  <a href="assets/logo-land-showcase.png"><img src="assets/logo-land-showcase.png" width="960" alt="한글 레터링을 포함한 가상 브랜드 로고 10개와 앱 아이콘 예제 6개를 모은 Logo Land 쇼케이스"></a>
+  <a href="assets/logopia-showcase.png"><img src="assets/logopia-showcase.png" width="960" alt="한글 레터링을 포함한 가상 브랜드 로고 10개와 앱 아이콘 예제 6개를 모은 Logopia 쇼케이스"></a>
 </p>
 
-[**쇼케이스 보드 크게 보기 →**](assets/logo-land-showcase.png) · [현재 갤러리](docs/gallery.ko.md#showcase) · [개별 PNG 다운로드](docs/showcase/2026-09/README.ko.md)
+[**쇼케이스 보드 크게 보기 →**](assets/logopia-showcase.png) · [현재 갤러리](docs/gallery.ko.md#showcase) · [개별 PNG 다운로드](docs/showcase/2026-09/README.ko.md)
 
 <a id="시작하기"></a><a id="저장소에서-바로-사용"></a><a id="이미지-생성과-파일-보조-도구의-차이"></a>
 
@@ -51,7 +51,7 @@ codex
 
 <a id="codex-플러그인으로-설치"></a>
 
-**다른 프로젝트에서 `$logo-land`를 사용하시려면** [전체 플러그인 설치 안내](docs/installation.ko.md)를 따라 주세요. 로컬 마켓플레이스 설정, 업데이트와 프로젝트 저장 위치를 설명합니다.
+**다른 프로젝트에서 `$logo-land`를 사용하시려면** [전체 플러그인 설치 안내](docs/installation.ko.md)를 따라 주세요. 로컬 마켓플레이스 설정, 업데이트와 프로젝트 저장 위치를 설명합니다. 스킬 호출명은 기존 `$logo-land`를 사용합니다.
 
 <a id="릴리스와-버전-관리"></a>
 
@@ -87,7 +87,7 @@ codex
 | **브랜드 로고** | 워드마크, 레터마크, 모노그램, 심볼, 추상형, 조합형, 엠블럼, 마스코트 |
 | **앱 아이콘 아트워크** | IP 캐릭터, 픽토그램, 추상형, 모노그램, 소프트 3D, 픽셀 아트 |
 
-색을 직접 정하거나 Logo Land에 제안을 맡기실 수 있습니다. 저장한 여러 프로젝트의 후보를 비교하고, 마음에 드는 점을 기록한 뒤 원본과 이력을 보존하며 선택한 디자인을 수정해 보세요.
+색을 직접 정하거나 Logopia에 제안을 맡기실 수 있습니다. 저장한 여러 프로젝트의 후보를 비교하고, 마음에 드는 점을 기록한 뒤 원본과 이력을 보존하며 선택한 디자인을 수정해 보세요.
 
 > 후보들을 한 갤러리에서 앱 홈 화면·웹 헤더·16px 크기로 비교해 주세요. 선택한 디자인의 글자와 색은 유지하고, 글자 사이 간격만 넓혀 주세요.
 
@@ -101,4 +101,4 @@ codex
 
 IP 캐릭터 지침은 [s1dashu/ip-as-logo-skill](https://github.com/s1dashu/ip-as-logo-skill)을 바탕으로 각색했습니다. [고정된 원본과 각색 안내](skills/logo-land/references/ip-mascot.md), [MIT 라이선스 고지](skills/logo-land/assets/ip-as-logo.LICENSE), [제3자 출처 고지](THIRD_PARTY_NOTICES.md)를 확인해 주세요.
 
-[문서](docs/README.ko.md) · [Logo Land 로고](docs/brand/README.ko.md) · [도움 요청](https://github.com/t1seo/logopia/issues)
+[문서](docs/README.ko.md) · [Logopia 로고](docs/brand/README.ko.md) · [도움 요청](https://github.com/t1seo/logopia/issues)

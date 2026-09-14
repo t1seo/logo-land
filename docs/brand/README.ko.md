@@ -1,16 +1,16 @@
-# Logo Land 로고
+# Logopia · 로고피아 로고
 
-[English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logo Land](../../README.ko.md)
+[English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logopia](../../README.ko.md)
 
-**글자 자체가 로고입니다.** 굵은 맞춤 레터링으로 **LOGO** 아래에 **LAND**를 쌓고, 짙은 잉크색 바탕에 윗줄은 민트, 아랫줄은 라일락으로 표현했습니다. 둥근 모서리, 풍성한 글자 형태와 촘촘한 간격이 이름의 개성을 만듭니다.
+**글자 자체가 로고입니다.** 굵고 둥근 맞춤 글자로 **LOGOPIA**를 한 줄에 배치했습니다. 짙은 잉크색 바탕에 **LOGO**는 민트, **PIA**는 라일락으로 표현했습니다. 넉넉한 속공간과 두꺼운 획으로 친근하고 또렷하게 읽히도록 구성했습니다.
 
 <p align="center">
-  <a href="../../assets/logo-land-wordmark.png"><img src="../../assets/logo-land-wordmark.png" width="560" alt="현재 Logo Land 로고: 짙은 잉크색 바탕에 민트 LOGO와 라일락 LAND를 두 줄로 쌓은 굵은 레터링"></a>
+  <a href="../../assets/logopia-wordmark.png"><img src="../../assets/logopia-wordmark.png" width="560" alt="현재 Logopia 로고: 짙은 잉크색 바탕에 민트 LOGO와 라일락 PIA를 한 줄에 배치한 둥근 레터링"></a>
 </p>
 
 <a id="다운로드"></a>
 
-[**마스터 PNG 다운로드 →**](../../assets/logo-land-wordmark.png) · [ZIP 패키지](2026-lettering/delivery/logo-package.zip) · [브랜드 안내](2026-lettering/delivery/brand-guide.md) · [쇼케이스 보드](../../assets/logo-land-showcase.png) · [현재 갤러리](../gallery.ko.md#showcase)
+[**마스터 PNG 다운로드 →**](../../assets/logopia-wordmark.png) · [ZIP 패키지](2026-logopia/delivery/logo-package.zip) · [브랜드 안내](2026-logopia/delivery/brand-guide.md) · [쇼케이스 보드](../../assets/logopia-showcase.png) · [현재 갤러리](../gallery.ko.md#showcase)
 
 ## 색상 방향
 
@@ -25,9 +25,11 @@
 
 ## 비슷하게 요청해 보세요
 
-> $logo-land LOGO LAND의 맞춤 워드마크 한 개를 만들어 주세요. 정확한 글자 LOGO를 첫 줄, LAND를 둘째 줄에 배치해 주세요. 굵고 둥근 글자와 촘촘한 간격을 사용하고, 짙은 잉크색 바탕에 LOGO는 프레시 민트, LAND는 라일락으로 표현해 주세요. 글자 자체가 디자인이 되도록 하고, 별도 심볼·슬로건·추가 글자는 넣지 말아 주세요.
+> $logo-land LOGOPIA의 맞춤 워드마크 한 개를 만들어 주세요. 일곱 글자를 한 줄에 배치해 주세요. 굵고 둥근 글자와 넉넉한 속공간을 사용하고, 짙은 잉크색 바탕에 LOGO는 프레시 민트, PIA는 라일락으로 표현해 주세요. 글자 자체가 디자인이 되도록 하고, 별도 심볼·슬로건·추가 글자는 넣지 말아 주세요.
 
-현재 마스터는 불투명한 어두운 배경의 래스터 PNG입니다. 표시할 때 가로세로 비율을 유지해 주세요. 투명 버전, 편집 가능한 벡터와 폰트 파일은 포함되지 않습니다.
+현재 마스터는 불투명한 어두운 배경의 **1774 × 887 래스터 PNG**입니다. 표시할 때 가로세로 비율을 유지해 주세요. 투명 버전, 편집 가능한 벡터와 폰트 파일은 포함되지 않습니다.
+
+[생성 요청문](2026-logopia/prompt.txt) · [이미지 기록](2026-logopia/receipt.json)
 
 <a id="historical-identity"></a>
 
@@ -35,6 +37,7 @@
 
 | 이전 디자인 | 보존한 파일 |
 |---|---|
+| 이전 Logo Land의 두 줄 레터링 | [원본 PNG](../../assets/logo-land-wordmark.png) · [당시 패키지](2026-lettering/delivery/logo-package.zip) · [이전 쇼케이스 보드](../../assets/logo-land-showcase.png) |
 | 아이보리 바탕의 열린 프레임 심볼과 가로형 워드마크 | [원본 PNG](../../assets/logo-land-studio.png) · [당시 브랜드 가이드](2026-identity/delivery/brand-guide.md) |
 | 더 이전의 일러스트 로고 | [당시 로고 기록](legacy.md) · [원본 PNG](../../assets/logo.png) |
 | 이전 투명 배경 수정 | [PNG](../../assets/logo-transparent.png) · [배경 제거 기록](../transparency/README.md) |

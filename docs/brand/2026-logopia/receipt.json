@@ -1,0 +1,29 @@
+{
+  "status": "returned",
+  "tool": "image_gen__imagegen",
+  "model": "unreported",
+  "session_id": "logopia-identity-20260914",
+  "artifact_id": "a-v1",
+  "revision_at_import": 0,
+  "source_file": "exec-7ce41695-8230-43d7-9d8a-32a09585b492.png",
+  "image": "../../../assets/logopia-wordmark.png",
+  "reference_images": [
+    {
+      "image": "../../../assets/logo-land-wordmark.png",
+      "role": "former identity, supplied to native image tool as a style and rebranding reference",
+      "sha256": "3b8c127df99e54b76eb6588204f9b2efdfbb908ad649f6a9891118f9d9a38994"
+    }
+  ],
+  "prompt_file": "prompt.txt",
+  "prompt_sha256": "a5373ea87ab72fdd91fb26e87dd16aabdec04de56157f5b337bfc0ee6853661d",
+  "sha256": "245e35c7266fcdeb5b262248f5403ec364ea16403af0091c2b928d2c80e8c89f",
+  "format": "PNG",
+  "width": 1774,
+  "height": 887,
+  "mode": "RGB",
+  "has_transparent_pixels": false,
+  "selection_authority": "assistant, under the user request to regenerate and apply the renamed identity",
+  "delivery": "delivery/logo-package.zip",
+  "color_policy": "unverified",
+  "notes": "Original native PNG bytes preserved. Approximate design palette, with subtle tonal variation; no vector or transparent variant claimed."
+}

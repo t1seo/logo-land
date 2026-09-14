@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="docs/brand/README.md"><img src="assets/logo-land-wordmark.png" width="360" alt="Logo Land — chunky LOGO stacked above LAND in mint and lilac on deep ink"></a>
+  <a href="docs/brand/README.md"><img src="assets/logopia-wordmark.png" width="360" alt="Logopia — rounded LOGOPIA lettering in mint and lilac on deep ink"></a>
 </p>
 
-<a id="logo-land"></a>
-<h1 align="center">Logo Land</h1>
+<a id="logo-land"></a><a id="logopia"></a>
+<h1 align="center">Logopia</h1>
 
 <p align="center">
   <strong>Give your name a shape of its own.</strong><br>
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/t1seo/logopia/releases/tag/v0.7.0"><img src="https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logo Land v0.7.0"></a>
+  <a href="https://github.com/t1seo/logopia/releases/tag/v0.7.0"><img src="https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&amp;labelColor=17352B" alt="Logopia v0.7.0"></a>
   <img src="https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&amp;labelColor=17352B" alt="Codex plugin">
   <img src="https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&amp;labelColor=17352B" alt="Raster PNG output">
 </p>
@@ -27,10 +27,10 @@
 Playful multicolor wordmarks, fast-moving lettering, geometric initials and small characters with personality. The September 2026 showcase brings ten fictional brands and six app icon studies together on one board.
 
 <p align="center">
-  <a href="assets/logo-land-showcase.png"><img src="assets/logo-land-showcase.png" width="960" alt="Logo Land showcase: ten fictional brand logos and six app icon studies, including Korean lettering"></a>
+  <a href="assets/logopia-showcase.png"><img src="assets/logopia-showcase.png" width="960" alt="Logopia showcase: ten fictional brand logos and six app icon studies, including Korean lettering"></a>
 </p>
 
-[**Open the showcase board →**](assets/logo-land-showcase.png) · [Browse the current gallery](docs/gallery.md#showcase) · [Individual PNG downloads](docs/showcase/2026-09/README.md)
+[**Open the showcase board →**](assets/logopia-showcase.png) · [Browse the current gallery](docs/gallery.md#showcase) · [Individual PNG downloads](docs/showcase/2026-09/README.md)
 
 <a id="get-started"></a><a id="use-the-repository-directly"></a><a id="image-generation-and-the-file-helper"></a>
 
@@ -51,7 +51,7 @@ In that Codex conversation, start with:
 
 <a id="install-as-a-codex-plugin"></a>
 
-To use **`$logo-land` in other projects**, follow the [full plugin installation guide](docs/installation.md). It covers local marketplace setup, updates and saved project locations.
+To use **`$logo-land` in other projects**, follow the [full plugin installation guide](docs/installation.md). It covers local marketplace setup, updates and saved project locations. The skill command remains `$logo-land`.
 
 <a id="releases-and-versioning"></a>
 
@@ -87,7 +87,7 @@ Version **0.7.0**. [Release notes](https://github.com/t1seo/logopia/releases/tag
 | **Brand logos** | Wordmarks, lettermarks, monograms, symbols, abstract marks, combinations, emblems and mascots |
 | **App icon artwork** | IP characters, pictograms, abstract forms, monograms, soft 3D and pixel art |
 
-Choose colors yourself or ask Logo Land to suggest them. Compare candidates across saved projects, keep a note of what works, and revise the selected original while preserving its history.
+Choose colors yourself or ask Logopia to suggest them. Compare candidates across saved projects, keep a note of what works, and revise the selected original while preserving its history.
 
 > Compare my candidates in one gallery with app-home, website-header and 16px previews. Keep the selected design’s wording and colors, and widen only the spacing between its letters.
 
@@ -101,4 +101,4 @@ Results are **raster PNGs**. Reviewed exports can include the original PNG, a ZI
 
 IP character guidance is adapted from [s1dashu/ip-as-logo-skill](https://github.com/s1dashu/ip-as-logo-skill). See the [pinned adaptation reference](skills/logo-land/references/ip-mascot.md), [MIT license notice](skills/logo-land/assets/ip-as-logo.LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-[Documentation](docs/README.md) · [Logo Land identity](docs/brand/README.md) · [Get help](https://github.com/t1seo/logopia/issues)
+[Documentation](docs/README.md) · [Logopia identity](docs/brand/README.md) · [Get help](https://github.com/t1seo/logopia/issues)

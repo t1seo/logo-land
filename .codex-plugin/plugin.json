@@ -8,7 +8,7 @@
   "repository": "https://github.com/t1seo/logopia",
   "skills": "./skills/",
   "interface": {
-    "displayName": "Logo Land",
+    "displayName": "Logopia",
     "shortDescription": "Custom lettering, logos and app icons through conversation.",
     "longDescription": "Create playful wordmarks, kinetic lettering, geometric lettermarks and monograms alongside eight logo types and six app icon styles. Keep exact English or Korean text, compare original PNGs across saved projects, and refine the chosen design. Export reviewed artwork with color evidence. Results are raster images; font files, vectors and platform icon layers are separate deliverables.",
     "developerName": "t1seo",
@@ -25,6 +25,6 @@
       "Resume my saved logo project and export the selected reviewed PNG."
     ],
     "brandColor": "#17352B",
-    "logo": "./assets/logo-land-wordmark.png"
+    "logo": "./assets/logopia-wordmark.png"
   }
 }

@@ -1,0 +1,180 @@
+{
+  "schema_version": 2,
+  "session_id": "logopia-identity-20260914",
+  "revision": 4,
+  "exported_at": "2026-09-14T09:26:34.497123Z",
+  "image_file": "logo.png",
+  "source": {
+    "id": "a-v1",
+    "path": "artifacts/a-v1.png",
+    "sha256": "245e35c7266fcdeb5b262248f5403ec364ea16403af0091c2b928d2c80e8c89f",
+    "image": {
+      "format": "PNG",
+      "width": 1774,
+      "height": 887,
+      "alpha_min": 255,
+      "alpha_max": 255,
+      "transparent_pixels": 0,
+      "visible_pixels": 1573538
+    },
+    "prompt": "Create one wordmark logo for Logopia. Exact text (copy verbatim, no other words): 'LOGOPIA'. Exact slogan: ''.\nRender only the supplied exact text and nonempty slogan; the brand context is not additional lettering. Empty strings request no corresponding text.\nIndustry: conversational logo and app icon design toolkit. Audience: designers and makers.\nStyles: custom playful geometric lettering, chunky rounded strokes, clean flat editorial identity. Original brief palette context: Fresh mint #B9F582 for LOGO, Lilac #B9A4FF for PIA, Deep ink #17352B opaque background.\nAvoid: old brand name, unsolicited text, mockups, watermarks, separate pictograms, existing brand symbols. Use cases: README identity at 360 pixels wide, plugin identity and documentation headers.\nBackground: opaque. Produce a real PNG raster image. Use clean, readable shapes at small sizes; leave safe margins. Do not draw a transparency checkerboard, mockup, watermarks, or a concept grid.\nConcept direction: Create a fresh horizontal identity for LOGOPIA: seven distinct uppercase characters on a single baseline, chunky rounded geometric strokes, generous circular O and P counters, an unmistakable open G, a broad stem I, and an open triangular A counter. Read left to right as exactly L O G O P I A with natural kerning and no word spaces. Color LOGO fresh mint and PIA lilac on a flat deep forest ink background. Use a wide landscape canvas approximately 1536 by 768, center the wordmark at about 82 percent canvas width with balanced clear space. Flat shapes, crisp edges, consistent weight, custom lettering only; no stacked lines, shading, gradients, extrusions, captions or extra symbols. Match the friendly geometric character and palette of the reference, but replace the old name completely.. Assumptions: The user renamed the project and repository to Logopia (로고피아) and authorized a replacement logo and publication., Retain the current mint, lilac and deep-ink color direction while drawing new LOGOPIA lettering., Use a single horizontal wordmark to keep the seven-letter brand name together., Palette HEX values are design intent, not an exact-pixel guarantee..\nLogo construction: Make a lettering-only wordmark: the supplied exact text itself is the identity. Do not add a separate icon, mascot, badge or decorative symbol. Build original letterforms from the requested styles and concept: choose a coherent width, weight, slant, curve and terminal family, then make the identifying counter shape, spacing rhythm or readable ligature deliberate. Do not merely place ordinary typeset text beside a motif. Keep every letter recognizable; a ligature must not hide, replace or invent characters. Optical kerning may balance gaps but must preserve the supplied word spaces and reading order. For requested sculpted lettering, keep volume within the letter bodies and counters open; depth and extra tones must obey the palette and gradient policy. For requested athletic lettering, use a coherent forward slant, strong strokes and purposeful cuts without adding speed symbols. Apply these treatments only when requested by the styles or concept, not as mandatory embellishments. Use style references for broad construction traits, not their brand words or traced signature shapes. The identity should remain recognizable in a one-color silhouette at the intended use size. This construction check does not replace the requested palette or request an extra monochrome image.\nLettering fidelity: preserve every Unicode character, capitalization, punctuation, space and reading order in the applicable text. Keep Hangul syllable blocks intact; do not translate, romanize, abbreviate or substitute lookalike glyphs. Shape changes must keep required text readable, including counters and joins at the intended size.\n",
+    "parent_id": null,
+    "created_at": "2026-09-14T09:25:24.166913Z",
+    "requested_background": "opaque",
+    "palette_id": null,
+    "lockup": null,
+    "review": {
+      "reviewer": "Codex visual inspection",
+      "notes": "Inspected the native 1774 x 887 RGB PNG and the English desktop and Korean mobile README screenshots. The seven uppercase characters read LOGOPIA in order, with no additional text. LOGO is mint and PIA lilac on opaque deep ink. O/P/A counters are open, the G is identifiable, and the outer letters have clear margins. The complete word remains readable at the README's 360px desktop and 358px mobile display width. The previous identity's rounded weight and palette direction are retained while its old name and stacked arrangement are replaced. Subtle raster texture and tonal variation remain; no exact-HEX or strictly flat-color conformance is claimed. Selected by the assistant under the user's request to generate and apply the replacement identity; no user candidate selection is implied.",
+      "text_correct": true,
+      "composition_ok": true,
+      "small_size_ok": true,
+      "preservation_ok": true,
+      "background_checked": true
+    },
+    "reviewed_at": "2026-09-14T09:26:34.214459Z"
+  },
+  "brief": {
+    "brand_name": "Logopia",
+    "exact_text": "LOGOPIA",
+    "industry": "conversational logo and app icon design toolkit",
+    "audience": "designers and makers",
+    "slogan": "",
+    "logo_type": "wordmark",
+    "styles": [
+      "custom playful geometric lettering",
+      "chunky rounded strokes",
+      "clean flat editorial identity"
+    ],
+    "palette": [
+      "Fresh mint #B9F582 for LOGO",
+      "Lilac #B9A4FF for PIA",
+      "Deep ink #17352B opaque background"
+    ],
+    "forbidden": [
+      "old brand name",
+      "unsolicited text",
+      "mockups",
+      "watermarks",
+      "separate pictograms",
+      "existing brand symbols"
+    ],
+    "use_cases": [
+      "README identity at 360 pixels wide",
+      "plugin identity and documentation headers"
+    ],
+    "assumptions": [
+      "The user renamed the project and repository to Logopia (로고피아) and authorized a replacement logo and publication.",
+      "Retain the current mint, lilac and deep-ink color direction while drawing new LOGOPIA lettering.",
+      "Use a single horizontal wordmark to keep the seven-letter brand name together.",
+      "Palette HEX values are design intent, not an exact-pixel guarantee."
+    ],
+    "lockup": null,
+    "background": "opaque",
+    "concept_count": 1
+  },
+  "media_kind": "raster",
+  "requested_background": "opaque",
+  "transparency_verified": false,
+  "intended_palette": null,
+  "color_report": {
+    "id": "export-c7073c9857ed4d2d92596af601cc032d",
+    "artifact_id": "a-v1",
+    "artifact_sha256": "245e35c7266fcdeb5b262248f5403ec364ea16403af0091c2b928d2c80e8c89f",
+    "palette_id": null,
+    "palette_digest": null,
+    "analysis_policy": "logo-color-v1",
+    "color_engine_version": "not_used",
+    "pillow_version": "12.3.0",
+    "profile_treatment": "assumed_srgb",
+    "sampling": {
+      "width": 1774,
+      "height": 887,
+      "roi": null,
+      "scope": "full_image",
+      "coordinate_policy": "grid_128_pixel_centers",
+      "sampled_positions": 16384,
+      "sampled_fraction": 0.010412204853012764,
+      "visible_samples": 16384,
+      "core_samples": 16384,
+      "partial_alpha_samples": 0
+    },
+    "status": "unverified",
+    "reasons": [
+      "No structured palette intent is recorded for this artifact"
+    ],
+    "measured_swatches": [
+      {
+        "hex": "#14372E",
+        "samples": 4103,
+        "share": 0.25042724609375
+      },
+      {
+        "hex": "#14362E",
+        "samples": 3288,
+        "share": 0.20068359375
+      },
+      {
+        "hex": "#13362D",
+        "samples": 2467,
+        "share": 0.15057373046875
+      },
+      {
+        "hex": "#B6F487",
+        "samples": 1956,
+        "share": 0.119384765625
+      },
+      {
+        "hex": "#15372F",
+        "samples": 1578,
+        "share": 0.0963134765625
+      },
+      {
+        "hex": "#7371A9",
+        "samples": 1205,
+        "share": 0.07354736328125
+      },
+      {
+        "hex": "#13372D",
+        "samples": 1026,
+        "share": 0.0626220703125
+      },
+      {
+        "hex": "#13342D",
+        "samples": 761,
+        "share": 0.04644775390625
+      }
+    ],
+    "targets": [],
+    "matched_fraction": null,
+    "unmatched_fraction": null,
+    "observed_colors": null,
+    "minor_swatches": [],
+    "contrasts": [],
+    "delta_e_threshold": 5.0,
+    "created_at": "2026-09-14T09:26:34.497123Z"
+  },
+  "color_policy": "unverified",
+  "warnings": [
+    "Color-unverified: no structured palette intent is bound to this artifact.",
+    "No structured palette intent is recorded for this artifact",
+    "Untagged PNG colors are assumed sRGB; no embedded profile confirms this."
+  ],
+  "color_method": "sRGB to Lab D50; CIEDE2000, ColorAide method=2000",
+  "color_limits": [
+    "Sampled raster evidence, not an exact-pixel, Pantone, or print-proof guarantee.",
+    "At most 16384 original-coordinate samples; small accents may be missed.",
+    "Alpha-zero pixels are excluded; conformance uses alpha >=250 and preserves white.",
+    "Strict evidence needs 128 core samples and at most 10% partial-alpha visible samples.",
+    "Restricted fit requires 99% core coverage within delta-E00 <=5; design colors need 1% share.",
+    "Locks/required colors need 32 matching core samples and 0.5% core share.",
+    "Quantized measured swatches are estimates; conformance uses original sampled colors.",
+    "Color roles, lettering, and placement require visual review; histograms cannot prove them.",
+    "ROI evidence covers only the stated region; opaque full-image evidence includes background.",
+    "Contrast ratios on explicit composited surfaces are guidance, not logo AA certification."
+  ],
+  "lockup_intent": null,
+  "font_reference_usage": "appearance-reference-only",
+  "app_icon": null,
+  "artwork_limitations": null
+}

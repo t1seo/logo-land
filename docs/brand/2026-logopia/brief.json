@@ -1,0 +1,19 @@
+{
+  "brand_name": "Logopia",
+  "exact_text": "LOGOPIA",
+  "industry": "conversational logo and app icon design toolkit",
+  "audience": "designers and makers",
+  "logo_type": "wordmark",
+  "styles": ["custom playful geometric lettering", "chunky rounded strokes", "clean flat editorial identity"],
+  "palette": ["Fresh mint #B9F582 for LOGO", "Lilac #B9A4FF for PIA", "Deep ink #17352B opaque background"],
+  "background": "opaque",
+  "concept_count": 1,
+  "use_cases": ["README identity at 360 pixels wide", "plugin identity and documentation headers"],
+  "forbidden": ["old brand name", "unsolicited text", "mockups", "watermarks", "separate pictograms", "existing brand symbols"],
+  "assumptions": [
+    "The user renamed the project and repository to Logopia (로고피아) and authorized a replacement logo and publication.",
+    "Retain the current mint, lilac and deep-ink color direction while drawing new LOGOPIA lettering.",
+    "Use a single horizontal wordmark to keep the seven-letter brand name together.",
+    "Palette HEX values are design intent, not an exact-pixel guarantee."
+  ]
+}

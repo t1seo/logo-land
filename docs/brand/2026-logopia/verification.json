@@ -1,0 +1,164 @@
+{
+  "date": "2026-09-14",
+  "scope": "Logopia identity and current documentation branding",
+  "integration": {
+    "local_link_checks": 784,
+    "documents": 17,
+    "readme_branding": "PASS",
+    "ip_credit_preserved": "PASS",
+    "native_prompt_and_image_hashes": "PASS",
+    "delivery_png_and_all_zip_entries": "PASS",
+    "showcase_original_links_unchanged": "PASS",
+    "plugin_identifier": "logo-land",
+    "display_name": "Logopia",
+    "runtime_code_changed": false
+  },
+  "plugin_validation": "PASS",
+  "skill_validation": "PASS",
+  "browser": {
+    "renderer": "Local MarkdownIt preview and installed Google Chrome; not the GitHub production renderer",
+    "pages": [
+      {
+        "language": "en",
+        "viewport": 1280,
+        "heading": "Logopia",
+        "overflow": false,
+        "images": [
+          {
+            "src": "assets/logopia-wordmark.png",
+            "loaded": true,
+            "width": 360
+          },
+          {
+            "src": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 98
+          },
+          {
+            "src": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 88
+          },
+          {
+            "src": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 82
+          },
+          {
+            "src": "assets/logopia-showcase.png",
+            "loaded": true,
+            "width": 960
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "viewport": 390,
+        "heading": "Logopia",
+        "overflow": false,
+        "images": [
+          {
+            "src": "assets/logopia-wordmark.png",
+            "loaded": true,
+            "width": 358
+          },
+          {
+            "src": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 98
+          },
+          {
+            "src": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 88
+          },
+          {
+            "src": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 82
+          },
+          {
+            "src": "assets/logopia-showcase.png",
+            "loaded": true,
+            "width": 358
+          }
+        ]
+      },
+      {
+        "language": "ko",
+        "viewport": 1280,
+        "heading": "Logopia · 로고피아",
+        "overflow": false,
+        "images": [
+          {
+            "src": "assets/logopia-wordmark.png",
+            "loaded": true,
+            "width": 360
+          },
+          {
+            "src": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 98
+          },
+          {
+            "src": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 88
+          },
+          {
+            "src": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 82
+          },
+          {
+            "src": "assets/logopia-showcase.png",
+            "loaded": true,
+            "width": 960
+          }
+        ]
+      },
+      {
+        "language": "ko",
+        "viewport": 390,
+        "heading": "Logopia · 로고피아",
+        "overflow": false,
+        "images": [
+          {
+            "src": "assets/logopia-wordmark.png",
+            "loaded": true,
+            "width": 358
+          },
+          {
+            "src": "https://img.shields.io/badge/Release-v0.7.0-B9F582?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 98
+          },
+          {
+            "src": "https://img.shields.io/badge/Codex-Plugin-B9A4FF?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 88
+          },
+          {
+            "src": "https://img.shields.io/badge/Output-PNG-F7F9F2?style=flat-square&labelColor=17352B",
+            "loaded": true,
+            "width": 82
+          },
+          {
+            "src": "assets/logopia-showcase.png",
+            "loaded": true,
+            "width": 358
+          }
+        ]
+      }
+    ],
+    "gallery": {
+      "cards": 16,
+      "loaded_images": 16,
+      "original_link": "PASS",
+      "mobile_overflow": false,
+      "showcase_png": "assets/logopia-showcase.png"
+    },
+    "cleanup": "All QA browser contexts and the temporary Chrome instance closed; no server or listening port created."
+  },
+  "delivery_note": "Only trailing whitespace in the generated brand guide was normalized; its ZIP entry was updated to match. Native PNG and manifest bytes were preserved."
+}

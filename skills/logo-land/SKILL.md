@@ -3,7 +3,7 @@ name: logo-land
 description: Create, compare, refine, and export logos and mobile app icon artwork using native image generation. Use for text logos (글자 로고, 레터링 로고), custom wordmarks, lettermarks, monograms, symbols, combination marks, mascots, exact Hangul lettering, IP characters, soft 3D, pixel art, guided palettes, and saved revisions.
 ---
 
-# Logo Land
+# Logopia
 
 Turn the user's brief into actual logo images or app icon artwork, refine their selected direction, and deliver original files with truthful evidence. Respond in the user's language; use polite Korean when speaking Korean.
 

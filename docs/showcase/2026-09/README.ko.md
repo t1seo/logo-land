@@ -1,10 +1,10 @@
 # 2026년 9월 샘플 모음
 
-[Logo Land](../../../README.ko.md) · [English](README.md) · [갤러리](../../gallery.ko.md)
+[Logopia](../../../README.ko.md) · [English](README.md) · [갤러리](../../gallery.ko.md)
 
 기존 가상 브랜드 10개와 앱 아이콘 스타일 6종을 모두 새롭게 만들었습니다. 첫 줄에서는 다채로운 영문 글자형, 역동적인 워드마크, 기하학적인 이니셜, 한글 워드마크를 보실 수 있습니다.
 
-[![새로 생성한 로고와 앱 아이콘 16개](../../../assets/logo-land-showcase.png)](../../../assets/logo-land-showcase.png)
+[![새로 생성한 로고와 앱 아이콘 16개](../../../assets/logopia-showcase.png)](../../../assets/logopia-showcase.png)
 
 ## 개별 원본 받기
 
@@ -27,7 +27,7 @@
 | [Cloud Pocket](images/15-cloud.png) | soft 3d | [PNG](images/15-cloud.png) · [생성 요청문](sources/15-cloud/prompt.txt) |
 | [Sprout](images/16-sprout.png) | pixel art | [PNG](images/16-sprout.png) · [생성 요청문](sources/16-sprout/prompt.txt) |
 
-[새 Logo Land 로고](../../../assets/logo-land-wordmark.png) · [로고 생성 요청문](sources/00-logo-land/prompt.txt) · [로컬에서 여는 갤러리](index.html)
+[현재 Logopia 로고](../../brand/README.ko.md) · [Logopia 생성 요청문](../../brand/2026-logopia/prompt.txt) · [이전 Logo Land 로고](images/00-logo-land.png) · [로컬에서 여는 갤러리](index.html)
 
 선택한 정사각형 원본은 **1254 × 1254 PNG**이며, NOVA NOTES는 **1536 × 1024**입니다. 모두 불투명 배경입니다. 한 판 이미지는 원본을 브라우저에서 배치한 미리보기입니다. 개별 로고가 필요하시면 위의 PNG 링크를 사용해 주세요. GitHub에서는 PNG와 Markdown 페이지를, 로컬에서는 HTML 갤러리를 여실 수 있습니다.
 
@@ -38,6 +38,8 @@ LUMA의 첫 결과에는 투명 배경이 생겨 이미지 도구로 크림색 �
 부엉이의 눈에는 두 가지 캐릭터 색 외에 크림색이 들어갔으며, 일부 평면 스타일에는 미세한 질감이나 명암이 남아 있습니다. 픽셀 아트는 래스터 표현으로, 정확한 정수 격자를 보장하는 스프라이트는 아닙니다. 자세한 관찰 결과는 [검토 기록](visual-review.json)에 남겼습니다.
 
 ## 생성 기록
+
+아래 기록은 이전 Logo Land 로고를 포함한 원래 컬렉션에 대한 것입니다. 원본과 기록을 보존했으며, 새 [Logopia 로고](../../brand/README.ko.md)의 생성 기록은 별도로 관리합니다. 현재 보드에는 새 이름을 표시했습니다.
 
 내장 `image_gen__imagegen`으로 **대표 로고와 샘플 16개를 각각 생성**한 뒤, **두 번의 부분 수정**을 진행했습니다. [파일 목록](manifest.json)과 개별 기록에 실제 요청문, 세션·이미지 ID, 크기, SHA-256, 이미지 도구가 반환한 파일명을 보관했습니다. 도구가 모델 이름을 제공하지 않아 특정 모델을 사용했다고 표기하지 않았습니다.
 

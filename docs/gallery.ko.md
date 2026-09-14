@@ -1,10 +1,10 @@
 # 전체 비주얼 갤러리
 
-[English](gallery.md) · [한국어](gallery.ko.md) · [문서](README.ko.md) · [Logo Land](../README.ko.md)
+[English](gallery.md) · [한국어](gallery.ko.md) · [문서](README.ko.md) · [Logopia](../README.ko.md)
 
-[**현재 쇼케이스 보드 크게 보기 →**](../assets/logo-land-showcase.png) · [개별 PNG 목록](showcase/2026-09/README.ko.md)
+[**현재 쇼케이스 보드 크게 보기 →**](../assets/logopia-showcase.png) · [개별 PNG 목록](showcase/2026-09/README.ko.md)
 
-[현재 쇼케이스](#showcase) · [Logo Land 로고](#identity) · [이전 결과물](#historical-outputs)
+[현재 쇼케이스](#showcase) · [Logopia 로고](#identity) · [이전 결과물](#historical-outputs)
 
 <a id="showcase"></a>
 
@@ -13,7 +13,7 @@
 가상 브랜드 10개와 앱 아이콘 예제 6개를 한 장에 모았습니다. 경쾌한 색감, 스포츠의 속도감, 기하학적인 구성을 담은 레터링부터 한글 이름과 캐릭터까지 살펴보세요.
 
 <p align="center">
-  <a href="../assets/logo-land-showcase.png"><img src="../assets/logo-land-showcase.png" width="960" alt="가상 브랜드 10개와 앱 아이콘 예제 6개를 모은 2026년 9월 Logo Land 쇼케이스"></a>
+  <a href="../assets/logopia-showcase.png"><img src="../assets/logopia-showcase.png" width="960" alt="가상 브랜드 10개와 앱 아이콘 예제 6개를 모은 2026년 9월 Logopia 쇼케이스"></a>
 </p>
 
 보드는 컬렉션을 함께 보여 주는 이미지입니다. 개별 이미지는 아래 PNG 링크로 열고, 현재 파일과 제작 출처는 [다운로드 목록](showcase/2026-09/README.ko.md)과 [매니페스트](showcase/2026-09/manifest.json)에서 확인해 주세요.
@@ -48,9 +48,9 @@
 
 <a id="identity"></a><a id="현재-logo-land-로고"></a>
 
-## Logo Land 로고
+## Logopia 로고
 
-**LOGO LAND**를 굵은 맞춤 글자로 두 줄에 쌓았습니다. 짙은 잉크색 바탕에 윗줄은 민트, 아랫줄은 라일락으로 표현했습니다. [마스터 PNG 열기](../assets/logo-land-wordmark.png) · [로고와 팔레트 안내](brand/README.ko.md)
+**LOGOPIA**를 굵고 둥근 맞춤 글자로 한 줄에 배치했습니다. 짙은 잉크색 바탕에 LOGO는 민트, PIA는 라일락으로 표현했습니다. [마스터 PNG 열기](../assets/logopia-wordmark.png) · [로고와 팔레트 안내](brand/README.ko.md)
 
 <a id="historical-outputs"></a>
 

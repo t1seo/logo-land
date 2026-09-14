@@ -1,6 +1,6 @@
 # Installation
 
-[English](installation.md) · [한국어](installation.ko.md) · [Docs](README.md) · [Logo Land](../README.md)
+[English](installation.md) · [한국어](installation.ko.md) · [Docs](README.md) · [Logopia](../README.md)
 
 Use the checkout directly, or register it in a local marketplace to enable `$logo-land` in other projects.
 

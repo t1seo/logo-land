@@ -1,0 +1,9 @@
+{
+  "reviewer": "Codex visual inspection",
+  "notes": "Inspected the native 1774 x 887 RGB PNG and the English desktop and Korean mobile README screenshots. The seven uppercase characters read LOGOPIA in order, with no additional text. LOGO is mint and PIA lilac on opaque deep ink. O/P/A counters are open, the G is identifiable, and the outer letters have clear margins. The complete word remains readable at the README's 360px desktop and 358px mobile display width. The previous identity's rounded weight and palette direction are retained while its old name and stacked arrangement are replaced. Subtle raster texture and tonal variation remain; no exact-HEX or strictly flat-color conformance is claimed. Selected by the assistant under the user's request to generate and apply the replacement identity; no user candidate selection is implied.",
+  "text_correct": true,
+  "composition_ok": true,
+  "small_size_ok": true,
+  "preservation_ok": true,
+  "background_checked": true
+}

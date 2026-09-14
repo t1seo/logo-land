@@ -1,10 +1,10 @@
 # Visual gallery
 
-[English](gallery.md) · [한국어](gallery.ko.md) · [Docs](README.md) · [Logo Land](../README.md)
+[English](gallery.md) · [한국어](gallery.ko.md) · [Docs](README.md) · [Logopia](../README.md)
 
-[**Open the current showcase board →**](../assets/logo-land-showcase.png) · [Individual PNG inventory](showcase/2026-09/README.md)
+[**Open the current showcase board →**](../assets/logopia-showcase.png) · [Individual PNG inventory](showcase/2026-09/README.md)
 
-[Current showcase](#showcase) · [Logo Land identity](#identity) · [Earlier outputs](#historical-outputs)
+[Current showcase](#showcase) · [Logopia identity](#identity) · [Earlier outputs](#historical-outputs)
 
 <a id="showcase"></a>
 
@@ -13,7 +13,7 @@
 Ten fictional brands and six app icon studies, collected on one board. Explore lettering with playful color, sporty movement and geometric structure, alongside Korean names and character-led artwork.
 
 <p align="center">
-  <a href="../assets/logo-land-showcase.png"><img src="../assets/logo-land-showcase.png" width="960" alt="September 2026 Logo Land showcase: ten fictional brands and six app icon studies"></a>
+  <a href="../assets/logopia-showcase.png"><img src="../assets/logopia-showcase.png" width="960" alt="September 2026 Logopia showcase: ten fictional brands and six app icon studies"></a>
 </p>
 
 The board is a presentation of the collection. Open a PNG below for an individual image, or visit the [download inventory](showcase/2026-09/README.md) and [manifest](showcase/2026-09/manifest.json) for the current files and their source records.
@@ -48,9 +48,9 @@ These are raster PNG studies. Exact lettering, dimensions, background and color 
 
 <a id="identity"></a><a id="current-logo-land-identity"></a>
 
-## Logo Land identity
+## Logopia identity
 
-Custom chunky **LOGO LAND** lettering, stacked in two lines: mint above lilac on deep ink. [Open the master PNG](../assets/logo-land-wordmark.png) · [Identity and palette](brand/README.md)
+Custom rounded **LOGOPIA** lettering in one line: mint LOGO and lilac PIA on deep ink. [Open the master PNG](../assets/logopia-wordmark.png) · [Identity and palette](brand/README.md)
 
 <a id="historical-outputs"></a>
 

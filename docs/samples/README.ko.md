@@ -1,8 +1,8 @@
 # 브랜드 샘플
 
-[English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logo Land](../../README.ko.md)
+[English](README.md) · [한국어](README.ko.md) · [문서](../README.ko.md) · [Logopia](../../README.ko.md)
 
-[**현재 쇼케이스 보드 크게 보기 →**](../../assets/logo-land-showcase.png) · [현재 갤러리](../gallery.ko.md#showcase) · [전체 PNG 목록](../showcase/2026-09/README.ko.md)
+[**현재 쇼케이스 보드 크게 보기 →**](../../assets/logopia-showcase.png) · [현재 갤러리](../gallery.ko.md#showcase) · [전체 PNG 목록](../showcase/2026-09/README.ko.md)
 
 ## 2026년 9월 컬렉션
 

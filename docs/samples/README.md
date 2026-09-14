@@ -1,8 +1,8 @@
 # Brand samples
 
-[English](README.md) · [한국어](README.ko.md) · [Docs](../README.md) · [Logo Land](../../README.md)
+[English](README.md) · [한국어](README.ko.md) · [Docs](../README.md) · [Logopia](../../README.md)
 
-[**Open the current showcase board →**](../../assets/logo-land-showcase.png) · [Current gallery](../gallery.md#showcase) · [Full PNG inventory](../showcase/2026-09/README.md)
+[**Open the current showcase board →**](../../assets/logopia-showcase.png) · [Current gallery](../gallery.md#showcase) · [Full PNG inventory](../showcase/2026-09/README.md)
 
 ## September 2026 collection
 

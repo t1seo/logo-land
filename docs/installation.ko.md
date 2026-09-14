@@ -1,6 +1,6 @@
 # 설치
 
-[English](installation.md) · [한국어](installation.ko.md) · [문서](README.ko.md) · [Logo Land](../README.ko.md)
+[English](installation.md) · [한국어](installation.ko.md) · [문서](README.ko.md) · [Logopia](../README.ko.md)
 
 저장소에서 바로 사용하거나, 로컬 마켓플레이스에 등록하여 다른 프로젝트에서도 `$logo-land`를 사용하실 수 있습니다.
 
