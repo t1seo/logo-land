@@ -29,7 +29,7 @@ The skill worker owns only skill Markdown and the research note. The coordinator
   Verify: native output path and SHA256, actual PNG size and alpha, predefined white-background pixel regions, exact spelling, distinct construction and intended-use size. Record unresolved limitations; never mark a failed image approved.
 - [x] 4. Update bilingual README, current identity/gallery/download links and white presentation board.
   Verify: real Chrome desktop/mobile, all 16 images loaded, direct original links work, no horizontal overflow, new identity and IP attribution visible. Old outputs remain explicitly archived.
-- [ ] 5. Complete integrated verification and independent reviews, then commit and push main.
+- [x] 5. Complete integrated verification and independent reviews, then commit and push main.
   Verify: local links, prompt/image hashes, original-preserving ZIP, plugin/skill validators, clean diff, remote commit equality. Run appropriate existing tests only if runtime code changes become necessary. Close QA browser contexts/processes and record cleanup.
 
 ## Completion standard
@@ -37,5 +37,8 @@ The skill worker owns only skill Markdown and the research note. The coordinator
 Verification record: [logo craft QA](../docs/qa/logo-craft.md). The final README uses
 two columns after actual Chrome testing found mobile overflow in the initial four-column
 layout. All five independent reviews passed after the IP prompt vocabulary correction.
+Implementation commit `fa6c1422de6dc3216b04a7e00acc47ccf9531966` was pushed to
+`origin/main`; `git ls-remote` matched the local commit. Final local link validation
+checked 856 targets without a missing file. Unrelated draft files were preserved.
 
 Report actual changes and sampled/visual evidence, with a direct README/commit link. No aesthetic guarantee, vector/font-file claim, platform-ready icon claim, or invented strict color pass. Research and execution details belong in supporting files rather than the main README.
